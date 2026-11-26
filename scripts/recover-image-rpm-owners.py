@@ -27,6 +27,8 @@ def main():
     rpm_files = defaultdict(list)
     for row in image.rows(args.rpm_files):
         rpm_files[row["snapshot"], row["arch"], row["path"], row["sha256"]].append(row)
+    buildlogs = args.data / "buildlog-package-evidence.csv"
+    sources = {(r["snapshot"], r["arch"], r["package"]): r for r in image.rows(buildlogs)} if buildlogs.exists() else {}
     result = []
     for row in image.rows(args.data / "unattributed-lld-instances.csv"):
         target = row["path"].removeprefix("/mnt/initrd-recovery")
@@ -52,12 +54,18 @@ def main():
             raise ValueError(f"Expected one installed RPM match for {row['image']} {row['path']}: {matched}")
         rpm, label = matched[0]
         source, revision = packages[label]
+        source_package = rpm["source"].removesuffix(".src.rpm").rsplit("-", 2)[0]
+        compiler = sources.get((row["snapshot"], row["arch"], source_package), {})
         result.append(dict(snapshot=row["snapshot"], image=row["image"], arch=row["arch"],
                            partition=row["partition"], path=row["path"], sha256=row["sha256"],
                            rpm_payload_path=rpm["path"], rpm_payload_sha256=rpm["sha256"], rpm_label=label,
                            rpm_nevra=rpm["nevra"], rpm_url=rpm["url"], rpm_digest=rpm["digest"],
                            source=source, source_commit=revision, image_package_list=listing.name,
                            debug_url=rpm["debug_url"], debug_path=rpm["debug_path"],
+                           compiler_observed=compiler.get("compiler_observed", ""),
+                           gcc_only_by_recipe="no" if compiler.get("compiler_observed") == "Clang" else "undetermined",
+                           compiler_log=compiler.get("url", ""),
+                           compiler_log_lines=compiler.get("cc_cxx_export", ""),
                            recovery_note=("recovery ramdisk copy of RPM file" if row["partition"] == "ramdisk-recovery"
                                           else "profile-suffixed installed RPM file with the same payload SHA256")))
     if len(result) != 32:

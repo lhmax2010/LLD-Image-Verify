@@ -16,6 +16,15 @@ The two ARM rounds each contain **6,892 confirmed LLD instances out of 10,875**.
 
 Each round has 6,014 distinct native SHA256 hashes. The 12 static archive records per round are outside the native denominator. An ELF can occur in multiple images or partitions. The [per-instance CSV for QB 1234653](../data/image-instances-20261119.012153.csv) and the [per-instance CSV for the Patchset 3 round](../data/image-instances-20261120.082536.csv) preserve those occurrences. The 10 instances per round with multiple candidate RPM owners carry their candidate labels and an empty single-owner NEVRA. The [RPM table](../data/image-rpm-verdicts.csv) has 2,556 rows per round. Its verdicts cover observed native files, and packages with ambiguous ownership or unresolved linker evidence may have an `open` verdict. An RPM containing confirmed LLD files and externally built files is mixed. The `no native files` image verdict means the scan attributed zero native instances to the package. [Archived instance inputs](../evidence/archive/statistics/)
 
+| Image RPM verdict | Per round |
+| --- | ---: |
+| All LLD | 1,396 / 2,556 |
+| Mixed | 8 / 2,556 |
+| Confirmed non-LLD | 20 / 2,556 |
+| Prebuilt-only | 16 / 2,556 |
+| No attributed native files | 863 / 2,556 |
+| Open | 253 / 2,556 |
+
 ### The original 179 Unified exceptions
 
 The [instance list](../data/unified-exception-instances.csv) and [package and architecture table](../data/unified-exceptions-by-rpm.csv) retain all 179 original exceptions per round, the revised evidence class, the package-level cause or evidence gap, and the GCC-only scope decision. GCC-only means the observed recipe explicitly selected GCC or its Fortran frontend. The tag records the recipe decision. Portability requires a separate build test.
@@ -31,7 +40,7 @@ The [instance list](../data/unified-exception-instances.csv) and [package and ar
 
 The additional 58 prebuilt matches in the historical layout bucket include 20 more STT/VC instances, 8 more Homescreen files, and 30 speech, push, and pen-wave artifacts. The source RPM URL, VCS, RPM SHA256, member path and matching SHA256 are recorded for each. [QB 1234653 prebuilt proof](../evidence/prebuilt-20261119.012153.csv) · [Patchset 3 prebuilt proof](../evidence/prebuilt-20261120.082536.csv) · [Linux RPi published spec](../evidence/linux-rpi-published.spec) · [Dart Build ID proofs](../evidence/archive/results/2026-11-23-unresolved/)
 
-The 16 historically unattributed LLD instances per round are 12 rootfs paths and four recovery ramdisk copies. The rootfs paths match exact bytes in installed profile-specific `org.tizen.powerkey-syspopup.common`, `org.tizen.system-syspopup.common`, `firmware-update-system-ui-common`, and `system-servant-profile_common` payloads for the same architecture. The payload basenames have a profile suffix or alias. The MIC package lists and payload paths explain why the original path-only ownership join missed them. [Instances](../data/unattributed-lld-instances.csv) · [RPM payloads and MIC membership](../evidence/recovered-image-rpm-owners.csv)
+The 16 historically unattributed LLD instances per round are 12 rootfs paths and four recovery ramdisk copies. The rootfs paths match exact bytes in installed profile-specific `org.tizen.powerkey-syspopup.common`, `org.tizen.system-syspopup.common`, `firmware-update-system-ui-common`, and `system-servant-profile_common` payloads for the same architecture. The payload basenames have a profile suffix or alias. The MIC package lists and payload paths explain why the original path-only ownership join missed them. The recovered RPM source builds export Clang on both architectures. [Instances](../data/unattributed-lld-instances.csv) · [RPM payloads and MIC membership](../evidence/recovered-image-rpm-owners.csv)
 
 ### Debuginfo rule
 
