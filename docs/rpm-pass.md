@@ -23,6 +23,8 @@ Pending and error rows carry the incomplete verdict.
 | no native files | 10,128 / 21,942 |
 <!-- rpm-coverage-end -->
 
+All 32,628 repository entries map to checksum-verified archives. The two incomplete entries are the Base `golang-tests-0:1.25.3-1.1.noarch` RPMs. Both contain `test-badbase.zip` and `test-baddirsz.zip` under Go's archive/zip test data. The first fails ZIP file-header parsing and the second fails central-directory parsing. The RPM verdict table retains both file-level errors and the archive checksums. [RPM verdicts and parse errors](../data/rpm-pass.csv.gz)
+
 | Data | Coverage |
 | --- | --- |
 | [RPM verdicts](../data/rpm-pass.csv.gz) | One row per repository RPM entry. Runtime verdicts distinguish confirmed LLD, mixed and confirmed other evidence, open linker identity, and zero observed native payload files. Debuginfo RPM rows report inspection as debug evidence. |
