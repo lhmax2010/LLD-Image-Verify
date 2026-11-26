@@ -2,7 +2,26 @@
 
 This pass covers runtime RPMs outside the archived ARM image package lists for each release, all published x86_64 runtime RPMs, and their available debuginfo repositories. It uses the Base and Unified snapshots from both rounds. Identical archive checksums share a payload receipt. Repository entries retain their own snapshot, architecture, NEVRA, URL and recorded checksum. [Inventory](../data/rpm-inventory.csv.gz) · [Coverage by snapshot and architecture](../data/rpm-coverage.csv)
 
-The current checkpoint inspected **31,947 / 32,628** repository RPM records. Another 678 are pending and 3 have an acquisition or parsing error. The pending and error rows have an explicit incomplete verdict. The payload scanner continues to acquire the pending RPMs. RPM counts, archive deduplication and architecture partitions are recorded in the coverage table.
+<!-- rpm-coverage-begin -->
+This published pass inspected **31,947 / 32,628** repository RPM records.
+The table records 678 pending entries and 3 acquisition or parsing errors.
+Pending and error rows carry the incomplete verdict.
+
+| Architecture | Runtime RPMs scanned | Debuginfo RPMs scanned |
+| --- | ---: | ---: |
+| aarch64 | 7,140 / 7,296 | 3,496 / 3,576 |
+| armv7l | 7,029 / 7,164 | 3,487 / 3,564 |
+| x86_64 | 6,864 / 6,994 | 3,451 / 3,544 |
+| noarch | 480 / 490 | — |
+
+| Runtime verdict | Per inspected runtime RPMs |
+| --- | ---: |
+| all-LLD | 9,229 / 21,513 |
+| mixed | 0 / 21,513 |
+| non-LLD | 0 / 21,513 |
+| open | 2,272 / 21,513 |
+| no native files | 10,012 / 21,513 |
+<!-- rpm-coverage-end -->
 
 | Data | Coverage |
 | --- | --- |

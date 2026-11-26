@@ -12,6 +12,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--scan", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
+    parser.add_argument("--report", type=Path, help="Refresh the coverage section in the RPM Markdown report.")
     args = parser.parse_args()
     inventory = {p["url"] for p in csvio.rows(args.scan / "rpm-inventory.csv")}
     summary = defaultdict(Counter)
@@ -42,6 +43,34 @@ def main():
     ])
     total = sum(summary.values(), Counter())
     assert total["listed"] == total["scanned"] + total["pending"] + total["failed"]
+    if args.report:
+        current = args.report.read_text()
+        begin = "<!-- rpm-coverage-begin -->"
+        end = "<!-- rpm-coverage-end -->"
+        before, sep, rest = current.partition(begin)
+        _, close, after = rest.partition(end)
+        if not sep or not close:
+            raise ValueError("RPM report is missing its coverage markers")
+        text = [
+            f"This published pass inspected **{total['scanned']:,} / {total['listed']:,}** repository RPM records.",
+            f"The table records {total['pending']:,} pending entries and {total['failed']:,} acquisition or parsing errors.",
+            "Pending and error rows carry the incomplete verdict.",
+            "",
+            "| Architecture | Runtime RPMs scanned | Debuginfo RPMs scanned |",
+            "| --- | ---: | ---: |",
+        ]
+        for arch in ("aarch64", "armv7l", "x86_64", "noarch"):
+            cells = []
+            for kind in ("packages", "debug"):
+                counts = sum((value for (_, a, k), value in summary.items() if a == arch and k == kind), Counter())
+                cells.append(f"{counts['scanned']:,} / {counts['listed']:,}" if counts["listed"] else "—")
+            text.append(f"| {arch} | {cells[0]} | {cells[1]} |")
+        runtime = sum((value for (_, _, kind), value in summary.items() if kind == "packages"), Counter())
+        text.extend(("", "| Runtime verdict | Per inspected runtime RPMs |",
+                     "| --- | ---: |"))
+        for name in ("all-LLD", "mixed", "non-LLD", "open", "no native files"):
+            text.append(f"| {name} | {runtime[name]:,} / {runtime['scanned']:,} |")
+        args.report.write_text(before + begin + "\n" + "\n".join(text) + "\n" + end + after)
     print(f"{total['scanned']} / {total['listed']} RPM records checked, "
           f"{total['pending']} pending, {total['failed']} with acquisition or parsing errors.")
 
