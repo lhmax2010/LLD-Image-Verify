@@ -1,6 +1,6 @@
 # Tizen LLVM 镜像 LLD 验证
 
-本文记录两轮 Tizen Unified Toolchain 镜像的链接器验证结果。**整镜像每轮有 6,892 / 10,875 个 ELF 或内核文件实例确认使用 LLD（63.4%）。只看 Unified RPM 来源为 6,876 / 7,055（97.5%）。** 镜像同时包含 GNU ld、MetaWare 和 Dart AOT 产物。
+本文记录两轮 Tizen Unified Toolchain 镜像的链接器验证结果。**整镜像每轮有 6,892 / 10,875 个 ELF 或内核文件实例确认使用 LLD（63.4%）。补查确认 16 个原无归属的实例来自 Unified RPM，Unified 来源为 6,892 / 7,071（97.5%）。** 镜像同时包含 GNU ld、MetaWare 和 Dart AOT 产物。
 
 ## 验证范围
 
@@ -11,7 +11,7 @@
 
 [旧轮发布镜像](https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261119.012153/images/standard/) · [后续轮发布镜像](https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/) · [后续轮消费的 Base](https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/build.xml)
 
-## 每轮结果
+## 原始每轮结果
 
 | 证据分类 | ELF 或内核文件实例 |
 | --- | ---: |
@@ -30,7 +30,7 @@
 - **关键目标。** 后续轮的 Base 和 Unified manifest 与 58 个预期源码 SHA 全部匹配。`deviced`、`deviced-request-shutdown`、`wrt-loader` 在两个架构共六个目标。其镜像、发布 RPM 与 debuginfo 的身份均已核对，确认 LLD 22.1.8。六个 ELF 也分别与旧轮的对应文件完整 SHA256 一致。
 - **LLD 版本。** 每轮的 6,892 个确证实例包含 6,735 个 LLD 22.1.8、29 个 Chromium 工具链 LLD 20.0.0、2 个 Rust 标准库 LLD 20.1.0，以及 126 个由 Kbuild 目标日志确证的模块。模块日志未逐个记录版本。
 - **GNU ld 证据。** `libdrm` 与 `nntrainer` 用具体目标链接日志和 RPM 哈希确认。Toybox 用 GNU ld.bfd 2.43 重现完整文件 SHA256。ZIP、libbz2、`sed` 和 `tzdata` 通过 BFD/LLD 对照重放确认，重放哈希比较只忽略了调试链接的四字节 CRC。
-- **Base 来源。** 每轮 3,804 个实例中，126 个确认使用 GNU ld，234 个可排除 LLD 22.1.8，3,421 个是 GNU ld 类布局，23 个证据不足。另有 16 个确认 LLD 的实例无 RPM 来源归属。
+- **Base 来源。** 每轮 3,804 个实例中，126 个确认使用 GNU ld，234 个可排除 LLD 22.1.8，3,421 个是 GNU ld 类布局，23 个证据不足。原有 16 个无归属的 LLD 实例已与已安装的 Unified RPM 字节匹配。
 - **RPM 口径。** 每轮 2,556 个 RPM 中有 1,687 个可关联本轮观察到的原生文件。同一个 RPM 可能包含来自多个链接器的文件。镜像实例比例按 ELF 或内核文件计算。
 
 [验证方法和可复现的公开 RPM 示例](docs/verification-methods.md) · [后续验证交接](docs/handoff.md)

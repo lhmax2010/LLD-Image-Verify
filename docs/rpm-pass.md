@@ -1,0 +1,24 @@
+# Published RPM coverage
+
+This pass covers runtime RPMs outside the archived ARM image package lists for each release, all published x86_64 runtime RPMs, and their available debuginfo repositories. It uses the Base and Unified snapshots from both rounds. Identical archive checksums share a payload receipt. Repository entries retain their own snapshot, architecture, NEVRA, URL and recorded checksum. [Inventory](../data/rpm-inventory.csv.gz) · [Coverage by snapshot and architecture](../data/rpm-coverage.csv)
+
+The current checkpoint inspected **31,947 / 32,628** repository RPM records. Another 678 are pending and 3 have an acquisition or parsing error. The pending and error rows have an explicit incomplete verdict. The payload scanner continues to acquire the pending RPMs. RPM counts, archive deduplication and architecture partitions are recorded in the coverage table.
+
+| Data | Coverage |
+| --- | --- |
+| [RPM verdicts](../data/rpm-pass.csv.gz) | One row per repository RPM entry. Runtime verdicts distinguish confirmed LLD, mixed and confirmed other evidence, open linker identity, and zero observed native payload files. Debuginfo RPM rows report inspection as debug evidence. |
+| [Runtime ELF evidence](../data/rpm-elf-evidence.csv.gz) | Native payloads with file SHA256, Build ID, direct linker evidence and the matched debug member where available. |
+| [Debuginfo ELF evidence](../data/debuginfo-evidence.csv.gz) | Parsed debug member identities, comments, GNU Gold section presence and CRC32. |
+
+The payload pass checks the archive digest against repository metadata. It reads regular RPM payload files and native members of the same ZIP-family containers used by the image scan. This scope treats a rootstrap or other bundled tarball as a package payload file. It counts payload entries carrying the native bytes when a cpio hardlink group shares one body. Only explicit linker markers in an ELF or matched debuginfo can confirm the linker in this pass. A missing marker stays open. The `no native files` verdict describes the successfully inspected payload under this scope.
+
+```bash
+mkdir -p results/rpm-replay/cache
+python3 scripts/sweep-rpms.py \
+  --output results/rpm-replay --cache results/rpm-replay/cache \
+  --inventory data/image-rpm-membership.csv --retry-errors
+python3 scripts/summarize-rpm-pass.py \
+  --scan results/rpm-replay --output results/rpm-replay/rpm-coverage.csv
+```
+
+One full pass lists about 79 GB before checksum deduplication. The scanner retains the completed receipts and resumes interrupted archive fetches within its cache.

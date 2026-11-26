@@ -43,7 +43,9 @@ The rule fires when the paired debuginfo has compiler strings, lacks `Linker: LL
 | armv7l | 64 / 64 | 3,329 / 3,329 | 3,393 / 3,393 (100%) | 3,393 / 3,516 |
 | x86_64 | — | — | — | 0 image controls |
 
-The GNU ld controls have target or replay evidence independent of the rule. The paired LLD controls are positive mostly because the same debuginfo contains an LLD marker, and no independently confirmed LLD control in either ARM round has an eligible pair. The 100% agreement therefore measures consistency on these controls. It does not validate promotion to a confirmed linker class from marker absence. [Independent-control rows](../data/debuginfo-rule-summary.csv)
+A separate x86_64 controlled build agrees on 2 / 2 debug pairs. GNU ld 2.42 produces a GCC-only comment and the rule fires. LLD 22.1.8 produces its marker and the rule stays silent. This control validates the split-debug procedure on x86_64. [x86_64 linker versions, Build IDs and comments](../evidence/x86-debuginfo-control/)
+
+The GNU ld image controls have target or replay evidence independent of the rule. The paired LLD controls are positive mostly because the same debuginfo contains an LLD marker, and no independently confirmed LLD control in either ARM round has an eligible pair. The 100% agreement therefore measures consistency on these controls. It does not validate promotion to a confirmed linker class from marker absence. [Independent-control rows](../data/debuginfo-rule-summary.csv)
 
 In the Patchset 3 round, the rule fires on 1,682 / 1,760 aarch64 and 1,677 / 1,757 armv7l historical GNU ld-like cases. On the 58 historical insufficient-evidence cases it fires on 4 / 25 aarch64 and 11 / 33 armv7l. Those 15 flags are also 15 / 23 of the remaining Base cases after the STT/VC provenance corrections. None of the 24 `nnfw` ELFs has a usable pair. The rule also fires on 234 / 234 version-definition exclusions. The CSV preserves historical buckets and the later provenance class so each count can be recomputed without promoting a heuristic. [Rule application](../data/debuginfo-rule-summary.csv)
 
@@ -67,7 +69,9 @@ The source change was authored on November 17, 2026. Gerrit 362074/1 adds the se
 
 The new spec captures the project `_toolchain` before choosing LLVM's bootstrap compiler and passes `-DCLANG_DEFAULT_LINKER=lld` for Clang projects. That compiled driver preference selects `ld.lld`. The installed `clang.cfg` sets its target, resource directory and `-Wl,-z,nostart-stop-gc` in the Clang project. The `clang++.cfg` symlink selects the same configuration. Clang's explicit linker overrides remain available. Unified `deviced` in `20261120.082536` kept Clang 1.6 at aarch64 line 265, armv7l line 424 and x86_64 line 264. Its ARM targets have independently paired LLD 22.1.8 evidence and its published logs contain no `-fuse-ld` override. [Patchset 2 spec change](../evidence/llvm-362074-2-spec.diff) · [Driver and binary control](../evidence/archive/evidence/2026-11-23/latest-base-probe/) · [Deviced build-log rows](../data/buildlog-package-evidence.csv) · [Deviced image, RPM and debuginfo identities](../evidence/archive/evidence/2026-11-23/ps3/identity.tsv)
 
-QB's project config specifies `Required: binutils glibc rpm-build libtool` and `Support: clang llvm-devel` at lines 1330 and 1333. In the matching spec `clang` requires the same-version and same-release `llvm` RPM. All 779 logged roots for the QB have Clang and LLVM. The earlier historical x86_64 LLVM 1.5 payload lists `/usr/bin/ld.lld -> lld`. ARM Clang accelerator RPMs also contain a separate `/emul/usr/bin/ld.lld`, and the project preinstalls the accelerator on ARM. The published post-build driver probe uses the RPM's sibling linker and demonstrates lookup sensitivity. The probe does not resolve the executable pathname and hash used by every historical ARM link. [QB project config](../evidence/qb-1234794/parent-log-excerpts.txt) · [LLVM files and dependencies](../evidence/llvm-parent-spec-excerpts.txt) · [Earlier LLVM 1.5 payload](../evidence/historical-llvm-1.5-x86_64-payload.json) · [Accelerator receipts](../evidence/accelerator/)
+QB's project config specifies `Required: binutils glibc rpm-build libtool` and `Support: clang llvm-devel` at lines 1330 and 1333. In the matching spec `clang` requires the same-version and same-release `llvm` RPM. All 779 logged roots for the QB have Clang and LLVM. The earlier historical x86_64 LLVM 1.5 payload lists `/usr/bin/ld.lld -> lld`. ARM Clang accelerator RPMs also contain a separate `/emul/usr/bin/ld.lld`, and the project preinstalls the accelerator on ARM. A direct RPM control also distinguishes the Base input and output. On both ARM architectures, `20261030.061318` publishes a Release 1.6 driver from `f999bd40` that selects `ld`. The Release 1.6 driver from `f346dd75` in `20261119.042539` selects `ld.lld`. Both choices survive `--no-default-config`, and both package sets contain `ld.lld -> lld`. [Matched RPM identities and driver commands](../evidence/base-driver-controls/)
+
+The accelerator probe uses the RPM's sibling linker and demonstrates lookup sensitivity. The probe does not resolve the executable pathname and hash used by every historical ARM link. [QB project config](../evidence/qb-1234794/parent-log-excerpts.txt) · [LLVM files and dependencies](../evidence/llvm-parent-spec-excerpts.txt) · [Earlier LLVM 1.5 payload](../evidence/historical-llvm-1.5-x86_64-payload.json) · [Accelerator receipts](../evidence/accelerator/)
 
 ### GCC recipe inventory
 
@@ -103,6 +107,10 @@ The sweep read all 7,598 listed logs for the two image rounds and their Base inp
 | Unified `20261120.082536` | 1,023 / 1,023 | 1,006 / 1,006 | 991 / 991 |
 
 The numerator is scanned logs and the denominator is published log files discovered across the snapshot's standard architecture directories. Repository RPM files and source packages have different denominators. Logs retained by a newer snapshot can refer to an earlier actual build date. [Directory receipts](../data/buildlog-indexes.csv)
+
+## RPM package and debuginfo pass
+
+The [RPM coverage report](rpm-pass.md) records confirmed classifications, inspected payloads, and the remaining acquisition state for every repository and architecture. These denominators cover the off-image RPMs and the whole published x86_64 RPM scope. They are separate from the image count.
 
 ## Reproduce the audit
 

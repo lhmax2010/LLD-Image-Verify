@@ -1,0 +1,1 @@
+https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/x86_64/libxml2-2.15.1-1.7.x86_64.rpm 91b10abbb1ae9b9fae1a1bb986bb5958ea564a04ce3b4ddb418255e182a8a745

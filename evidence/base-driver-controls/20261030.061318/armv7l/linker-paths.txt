@@ -1,0 +1,4 @@
+ld -> (regular file)
+ld.bfd -> (regular file)
+ld.lld -> lld
+lld -> (regular file)
