@@ -12,10 +12,10 @@ SOURCES = {
     "yaca": ("yaca", "yes", "The recipe exports GNU CC and CXX. CMake calls the GCC driver for libyaca.so. The exact linker remains open."),
     "openblas": ("openblas", "yes", "The recipe selects GCC and passes FC=gfortran for the OpenBLAS variants. The exact linker remains open."),
     "nnfw": ("nnfw", "no", "The package builds with Clang 22.1.8 in CMake. The tested image ELFs have LLD-like layout and lack a paired debuginfo linker marker or target-level linker trace."),
-    "pkgmgr-server": ("pkgmgr-server", "undetermined", "The package configures CMake with Clang, while the matching target debuginfo contains rustc strings. The final Rust linker is unverified."),
-    "rust": ("rust", "undetermined", "The exception is one Rust standard-library shared object. Package-wide Clang environment settings do not identify that target's final linker."),
-    "rust-regex": ("rust-regex", "undetermined", "The exception is a Rust dylib. The recipe's CC/CXX setting does not identify rustc's final linker for this file."),
-    "rust-regex-syntax": ("rust-regex-syntax", "undetermined", "The exception is a Rust dylib. The recipe's CC/CXX setting does not identify rustc's final linker for this file."),
+    "pkgmgr-server": ("pkgmgr-server", "no", "The final binary is built by rustc. The command has no explicit linker selection. CMake separately configures Clang for the native components."),
+    "rust": ("rust", "not applicable", "The Rust RPM installs a distribution rust-std component. The original linker of the layout-only std object remains open."),
+    "rust-regex": ("rust-regex", "no", "The target is built by rustc as a dylib. The command has no explicit linker selection."),
+    "rust-regex-syntax": ("rust-regex-syntax", "no", "The target is built by rustc as a dylib. The command has no explicit linker selection."),
     "tizen-debug": ("tizen-debug", "not applicable", "The package takes Base glibc debuginfo files and repacks them with eu-elfcompress."),
     "linux-rpi": ("linux-rpi", "not applicable", "The kernel spec installs four already-linked VideoCore firmware files. Source patch bytes match the image SHA256 and the ELF comments identify MetaWare."),
     "homescreen-app": ("org.tizen.homescreen", "not applicable", "The image bytes are present in the source RPM's TPK member. Dart produced libapp.so directly."),
@@ -29,7 +29,8 @@ SOURCES = {
     "stt": ("stt", "not applicable", "The RPM installs a source-distributed voice_getengine helper. The other targets in the package have Clang build logs."),
     "tts": ("tts", "not applicable", "The RPM installs a source-distributed tts_getengine helper. The other targets in the package have Clang build logs."),
 }
-SOURCE_TARGET_EVIDENCE = {"tizen-debug", "yaca", "openblas", "nnfw", "stt", "tts", "voice-control", "wakeup-engine-default"}
+SOURCE_TARGET_EVIDENCE = {"tizen-debug", "yaca", "openblas", "nnfw", "stt", "tts", "voice-control", "wakeup-engine-default",
+                          "rust", "pkgmgr-server", "rust-regex", "rust-regex-syntax"}
 
 
 def main():
@@ -46,7 +47,7 @@ def main():
     for (snapshot, arch, rpm, source, old_class, verdict), files in sorted(by_package.items()):
         project = source.rsplit("/", 1)[1]
         package, gcc_only, reason = SOURCES[project]
-        if gcc_only == "not applicable" and verdict != "not-linked-by-our-toolchain" and project != "tizen-debug":
+        if gcc_only == "not applicable" and verdict != "not-linked-by-our-toolchain" and project not in {"tizen-debug", "rust"}:
             reason = "Source prebuilt provenance is unverified for these bytes. " + reason
             gcc_only = "undetermined"
         log = buildlogs.get((snapshot, arch, package), {})

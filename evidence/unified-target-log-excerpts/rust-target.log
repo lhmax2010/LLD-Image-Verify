@@ -1,0 +1,12 @@
+20261119.012153 aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261119.012153/builddata/buildlogs/standard/aarch64/succeeded/rust.buildlog.txt
+496:[ 1193s] + components=rustc,rust-std-aarch64-unknown-linux-gnu,cargo,clippy-preview
+500:[ 1222s] install: installing component 'rust-std-aarch64-unknown-linux-gnu'
+20261119.012153 armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261119.012153/builddata/buildlogs/standard/armv7l/succeeded/rust.buildlog.txt
+483:[ 1219s] + components=rustc,rust-std-arm-unknown-linux-gnueabi,cargo,clippy-preview
+487:[ 1284s] install: installing component 'rust-std-arm-unknown-linux-gnueabi'
+20261120.082536 aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/rust.buildlog.txt
+497:[  475s] + components=rustc,rust-std-aarch64-unknown-linux-gnu,cargo,clippy-preview
+501:[  508s] install: installing component 'rust-std-aarch64-unknown-linux-gnu'
+20261120.082536 armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/rust.buildlog.txt
+489:[  423s] + components=rustc,rust-std-arm-unknown-linux-gnueabi,cargo,clippy-preview
+493:[  467s] install: installing component 'rust-std-arm-unknown-linux-gnueabi'
