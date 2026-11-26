@@ -1,0 +1,5 @@
+530: [   86s] checking version of /usr/lib64/gcc/aarch64-tizen-linux-gnu/14.2.0/../../../../aarch64-tizen-linux-gnu/bin/ld... 2.43, ok
+24070: [  302s] + aarch64-tizen-linux-gnu-gcc -static -O2 -fno-inline-functions -fstack-protector-strong -feliminate-unused-debug-types -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Os /home/abuild/rpmbuild/SOURCES/glibc_post_upgrade.c -o glibc_post_upgrade -L. -Bcsu -DREMOVE_TLS_DIRS -DREMOVE_PPC_OPTIMIZE_POWER5 '-DLIBDIR="/lib64"' '-DGCONV_MODULES_DIR="/usr/lib64/gconv"'
+27690: [  612s] + install -m 0700 build/glibc_post_upgrade /home/abuild/rpmbuild/BUILDROOT/glibc-2.40-1.7.aarch64/usr/sbin
+28597: [  651s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/glibc-2.40-1.7.aarch64/usr/sbin/glibc_post_upgrade
+28843: [  715s] Wrote: /home/abuild/rpmbuild/RPMS/aarch64/glibc-2.40-1.7.aarch64.rpm

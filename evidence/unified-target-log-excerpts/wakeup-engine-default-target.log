@@ -1,0 +1,6 @@
+aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/wakeup-engine-default.buildlog.txt
+261:[   21s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/wakeup-engine-default-0.2.5-1.aarch64/usr/share/multiassistant/engines/wakeup-engine-default/libwakeup-engine.so
+319:[   28s] Provides: libwakeup-engine.so()(64bit) wakeup-engine-default = 0.2.5-1 wakeup-engine-default(aarch-64) = 0.2.5-1
+armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/wakeup-engine-default.buildlog.txt
+290:[   24s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/wakeup-engine-default-0.2.5-1.arm/usr/share/multiassistant/engines/wakeup-engine-default/libwakeup-engine.so
+348:[   29s] Provides: libwakeup-engine.so wakeup-engine-default = 0.2.5-1 wakeup-engine-default(armv7l-32) = 0.2.5-1

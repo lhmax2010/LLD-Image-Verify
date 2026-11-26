@@ -1,0 +1,53 @@
+{
+  "source_rpm": "tzdata-2026d-1.1.src.rpm",
+  "source_rpm_sha256": "4363766f0518b8ed202089c5a50be51b2288e76b1b81220ad66c69be533623fd",
+  "runtime_rpm": "tzdata-2026d-1.1.aarch64.rpm",
+  "runtime_rpm_sha256": "4937a7ee099066e4daf71cab3ca40fa8e4dc81cd941650bf95cae703ea73ee81",
+  "build_log_sha256": "a0b83f299f2310319af572e08d4c73e220d8d28268a44e45eb974f5ee3081991",
+  "targets": {
+    "zdump": {
+      "image": {
+        "sha256": "ba895cae78fc5896ae569c9f03d65963201eaa13b3a53fab76e7870bd36bd1d2",
+        "debug_crc_le_bytes": "3743267c",
+        "sha256_without_debug_crc": "62ddc731dce83af8e7a574e334fe47836e17c5673f6e457e546cf59d22de3c13"
+      },
+      "rpm": {
+        "sha256": "ba895cae78fc5896ae569c9f03d65963201eaa13b3a53fab76e7870bd36bd1d2",
+        "debug_crc_le_bytes": "3743267c",
+        "sha256_without_debug_crc": "62ddc731dce83af8e7a574e334fe47836e17c5673f6e457e546cf59d22de3c13"
+      },
+      "bfd": {
+        "sha256": "553f97e19837185e377dbbd99426f5564a37fe23f22ee6f3eb4d87569e360532",
+        "debug_crc_le_bytes": "7d0da843",
+        "sha256_without_debug_crc": "62ddc731dce83af8e7a574e334fe47836e17c5673f6e457e546cf59d22de3c13"
+      },
+      "lld": {
+        "sha256": "77056c12a5654686b2b79c586511d2e65f94b191a52b52cdb22c6717dd2f641c",
+        "debug_crc_le_bytes": "a969871a",
+        "sha256_without_debug_crc": "0e451d7dff937797f23c48850f8d17690dbff0f4a3b6f5c0e029fa731e8cf631"
+      }
+    },
+    "zic": {
+      "image": {
+        "sha256": "9b61bccde175df88fd3762313276ffb6f7612b77108203133ea6380cba3f0b64",
+        "debug_crc_le_bytes": "1b959be3",
+        "sha256_without_debug_crc": "0b31f3e293eb4e7e5166fe69eb0e016206b6d72d18c4061e7ee45850f1120dd8"
+      },
+      "rpm": {
+        "sha256": "9b61bccde175df88fd3762313276ffb6f7612b77108203133ea6380cba3f0b64",
+        "debug_crc_le_bytes": "1b959be3",
+        "sha256_without_debug_crc": "0b31f3e293eb4e7e5166fe69eb0e016206b6d72d18c4061e7ee45850f1120dd8"
+      },
+      "bfd": {
+        "sha256": "48b5ec68e7c8998f825fc6485a91b3530aa2af873bd44a2cd66d23db9fd70704",
+        "debug_crc_le_bytes": "0416c7dc",
+        "sha256_without_debug_crc": "0b31f3e293eb4e7e5166fe69eb0e016206b6d72d18c4061e7ee45850f1120dd8"
+      },
+      "lld": {
+        "sha256": "f383c7fc19d97e6dd32a6ea960927b0a3b2e5a42e0e2d7b22ec9c775d0084348",
+        "debug_crc_le_bytes": "0c5fddd1",
+        "sha256_without_debug_crc": "874c01e7f9f4c1d30987613102e975699b34200c8785916033ee6af9262c68e6"
+      }
+    }
+  }
+}

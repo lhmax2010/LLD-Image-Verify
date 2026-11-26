@@ -1,0 +1,72 @@
+aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/nnfw.buildlog.txt
+6:[    0s] ip-192-168-56-121 started "build nnfw.spec" at Fri Nov 20 08:43:29 UTC 2026.
+9:[    0s] processing recipe /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/nnfw-1.28.0-1/nnfw.spec ...
+10:[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/aarch64/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/ --repository
+148:[   25s] ----- building nnfw.spec (user abuild)
+151:[   26s] + exec rpmbuild --define 'jobs 8' --define '_smp_mflags -j8' --define '_costomized_smp_mflags -j20' --define '_srcdefattr (-,root,root)' --nosignature --target=aarch64-tizen-linux --define '_build_create_debug 1' -ba /home/abuild/rpmbuild/SOURCES/nnfw.spec
+158:[   26s] + rm -rf nnfw-1.28.0
+159:[   26s] + /bin/gzip -dc /home/abuild/rpmbuild/SOURCES/nnfw-1.28.0.tar.gz
+163:[   31s] + cd nnfw-1.28.0
+169:[   31s] patching file infra/nnfw/cmake/CfgOptionFlags.cmake
+170:[   31s] patching file infra/nnfw/cmake/options/options_aarch64-tizen.cmake
+171:[   31s] patching file infra/nnfw/cmake/options/options_armv7hl-tizen.cmake
+172:[   31s] patching file infra/nnfw/cmake/options/options_armv7l-tizen.cmake
+173:[   31s] patching file infra/nnfw/cmake/options/options_i686-tizen.cmake
+174:[   31s] patching file infra/nnfw/cmake/options/options_riscv64-tizen.cmake
+175:[   31s] patching file infra/nnfw/cmake/options/options_x86_64-tizen.cmake
+215:[   31s] patching file infra/nnfw/cmake/options/options_aarch64-tizen.cmake
+216:[   31s] patching file infra/nnfw/cmake/options/options_armv7hl-tizen.cmake
+217:[   31s] patching file infra/nnfw/cmake/options/options_armv7l-tizen.cmake
+236:[   31s] + cp /home/abuild/rpmbuild/SOURCES/nnfw.manifest .
+265:[   36s] + cd nnfw-1.28.0
+305:[   39s] + ./nnfw configure -DCMAKE_BUILD_TYPE=Release -DTARGET_ARCH=aarch64 -DTARGET_OS=tizen -DEXTERNALS_BUILD_THREAD=8 -DBUILD_MINIMAL_SAMPLE=ON -DNNFW_OVERLAY_DIR=/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/build/overlay -DENABLE_TEST=OFF
+323:[   41s] CMake Deprecation Warning at /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/CPUINFO/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+345:[   42s] -- Build files have been written to: /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/build/obj
+347:[   42s] + ./nnfw build -j8
+351:[   42s] [  0%] Building CXX object runtime/libs/circle-schema/CMakeFiles/flatbuffers-23.5.26.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/FLATBUFFERS-23.5.26/src/annotated_binary_text_gen.cpp.o
+352:[   42s] [  0%] Building CXX object externals/ruy/CMakeFiles/ruy_instrumentation.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/TENSORFLOW-2.16.1-RUY/ruy/profiler/instrumentation.cc.o
+353:[   42s] [  0%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/EnvConfigSource.cpp.o
+355:[   42s] [  0%] Building CXX object runtime/libs/profiling/CMakeFiles/nnfw_lib_profiling.dir/src/profiling/time.cpp.o
+358:[   42s] [  1%] Linking CXX static library libnnfw_lib_profiling.a
+361:[   42s] [  1%] Built target nnfw_lib_profiling
+362:[   42s] [  1%] Building CXX object runtime/libs/circle-schema/CMakeFiles/flatbuffers-23.5.26.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/FLATBUFFERS-23.5.26/src/bfbs_gen_lua.cpp.o
+365:[   42s] /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/CPUINFO/src/log.c:50:13: warning: unused function 'cpuinfo_vlog' [-Wunused-function]
+370:[   42s] [  4%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/GeneralConfigSource.cpp.o
+372:[   43s] [  5%] Building CXX object runtime/libs/circle-schema/CMakeFiles/flatbuffers-23.5.26.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/FLATBUFFERS-23.5.26/src/bfbs_gen_nim.cpp.o
+373:[   43s] [  5%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/tensor/Comparator.cpp.o
+armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/nnfw.buildlog.txt
+6:[    0s] ip-192-168-56-41 started "build nnfw.spec" at Fri Nov 20 08:40:44 UTC 2026.
+9:[    0s] processing recipe /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/nnfw-1.28.0-1/nnfw.spec ...
+10:[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/ --repository 
+144:[   20s] ----- building nnfw.spec (user abuild)
+147:[   20s] + exec rpmbuild --define 'jobs 8' --define '_smp_mflags -j8' --define '_costomized_smp_mflags -j20' --define '_srcdefattr (-,root,root)' --nosignature --target=armv7l-tizen-linux --define '_build_create_debug 1' -ba /home/abuild/rpmbuild/SOURCES/nnfw.spec
+154:[   20s] + rm -rf nnfw-1.28.0
+155:[   20s] + /bin/gzip -dc /home/abuild/rpmbuild/SOURCES/nnfw-1.28.0.tar.gz
+159:[   24s] + cd nnfw-1.28.0
+165:[   25s] patching file infra/nnfw/cmake/CfgOptionFlags.cmake
+166:[   25s] patching file infra/nnfw/cmake/options/options_aarch64-tizen.cmake
+167:[   25s] patching file infra/nnfw/cmake/options/options_armv7hl-tizen.cmake
+168:[   25s] patching file infra/nnfw/cmake/options/options_armv7l-tizen.cmake
+169:[   25s] patching file infra/nnfw/cmake/options/options_i686-tizen.cmake
+170:[   25s] patching file infra/nnfw/cmake/options/options_riscv64-tizen.cmake
+171:[   25s] patching file infra/nnfw/cmake/options/options_x86_64-tizen.cmake
+211:[   25s] patching file infra/nnfw/cmake/options/options_aarch64-tizen.cmake
+212:[   25s] patching file infra/nnfw/cmake/options/options_armv7hl-tizen.cmake
+213:[   25s] patching file infra/nnfw/cmake/options/options_armv7l-tizen.cmake
+232:[   25s] + cp /home/abuild/rpmbuild/SOURCES/nnfw.manifest .
+261:[   30s] + cd nnfw-1.28.0
+300:[   35s] + ./nnfw configure -DCMAKE_BUILD_TYPE=Release -DTARGET_ARCH=armv7l -DTARGET_OS=tizen -DEXTERNALS_BUILD_THREAD=8 -DBUILD_MINIMAL_SAMPLE=ON -DNNFW_OVERLAY_DIR=/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/build/overlay -DENABLE_TEST=OFF
+318:[   38s] CMake Deprecation Warning at /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/CPUINFO/CMakeLists.txt:1 (CMAKE_MINIMUM_REQUIRED):
+340:[   38s] -- Build files have been written to: /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/build/obj
+342:[   38s] + ./nnfw build -j8
+345:[   39s] [  0%] Building CXX object externals/ruy/CMakeFiles/ruy_instrumentation.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/TENSORFLOW-2.16.1-RUY/ruy/profiler/instrumentation.cc.o
+347:[   39s] [  0%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/EnvConfigSource.cpp.o
+348:[   39s] [  1%] Building CXX object runtime/libs/profiling/CMakeFiles/nnfw_lib_profiling.dir/src/profiling/time.cpp.o
+349:[   39s] [  1%] Building CXX object runtime/libs/circle-schema/CMakeFiles/flatbuffers-23.5.26.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/FLATBUFFERS-23.5.26/src/annotated_binary_text_gen.cpp.o
+353:[   39s] [  2%] Linking CXX static library libnnfw_lib_profiling.a
+354:[   39s] [  2%] Building CXX object runtime/libs/circle-schema/CMakeFiles/flatbuffers-23.5.26.dir/home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/FLATBUFFERS-23.5.26/src/bfbs_gen_lua.cpp.o
+355:[   39s] [  2%] Built target nnfw_lib_profiling
+356:[   39s] [  3%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/GeneralConfigSource.cpp.o
+359:[   39s] [  3%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/tensor/Comparator.cpp.o
+361:[   39s] /home/abuild/rpmbuild/BUILD/nnfw-1.28.0/externals/CPUINFO/src/log.c:50:13: warning: unused function 'cpuinfo_vlog' [-Wunused-function]
+364:[   39s] [  3%] Building CXX object runtime/libs/misc/CMakeFiles/nnfw_lib_misc.dir/src/tensor/IndexFormatter.cpp.o

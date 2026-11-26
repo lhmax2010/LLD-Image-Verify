@@ -1,0 +1,48 @@
+taskset -c 0,1 bwrap --unshare-all --new-session --die-with-parent --clearenv --ro-bind /tmp/toybox-linker-repro-old.QoVOAM/gbs-armv7l/local/BUILD-ROOTS/scratch.armv7l.0 / --dev /dev --proc /proc --tmpfs /tmp --bind /tmp/lld-sed-tzdata.R4AQni/qb1234653/armv7l/build-tzdata-2 /home/abuild/rpmbuild/BUILD --chdir /home/abuild/rpmbuild/BUILD/tzdata-2026d --setenv PATH /usr/bin:/usr/sbin:/bin:/sbin --setenv LC_ALL C bash ./replay.sh
++ umask 022
++ export AR=llvm-ar RANLIB=llvm-ranlib
++ AR=llvm-ar
++ RANLIB=llvm-ranlib
++ /bin/make -j2 CC=armv7l-tizen-linux-gnueabi-clang TZDIR=/usr/share/zoneinfo 'CFLAGS=-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='\''"/etc/localtime"'\'' -fPIE' 'LDFLAGS= -pie ' AWK=awk KSHELL=/bin/sh zdump zic
+read -r VERSION <version && printf '%s\n' \
+	  'static char const PKGVERSION[]="(tzcode) ";' \
+	  "static char const TZVERSION[]=\"$VERSION\";" \
+	  'static char const REPORT_BUGS_TO[]="tz@iana.org";' \
+	  >version.h.out
+printf '%s\n' >tzdir.h.out \
+	  '#ifndef TZDEFAULT' \
+	  '# define TZDEFAULT "/etc/localtime" /* default zone */' \
+	  '#endif' \
+	  '#ifndef TZDIR' \
+	  '# define TZDIR "/usr/share/zoneinfo" /* TZif directory */' \
+	  '#endif'
+mv version.h.out version.h
+mv tzdir.h.out tzdir.h
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE   -c -o localtime.o localtime.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE   -c -o strftime.o strftime.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE   -c -o zic.o zic.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE   -c -o zdump.o zdump.c
+armv7l-tizen-linux-gnueabi-clang -o zdump -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE -pie  zdump.o localtime.o strftime.o 
+armv7l-tizen-linux-gnueabi-clang -o zic -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 -DTZDEFAULT='"/etc/localtime"' -fPIE -pie  zic.o 
++ mkdir bfd
++ armv7l-tizen-linux-gnueabi-clang -fuse-ld=bfd -Wl,-v -o zdump -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 '-DTZDEFAULT="/etc/localtime"' -fPIE -pie zdump.o localtime.o strftime.o
+GNU ld (GNU Binutils) 2.43
++ mv zdump bfd/
++ cd bfd
++ eu-strip --remove-comment -f zdump.debug zdump
++ armv7l-tizen-linux-gnueabi-clang -fuse-ld=bfd -Wl,-v -o zic -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 '-DTZDEFAULT="/etc/localtime"' -fPIE -pie zic.o
+GNU ld (GNU Binutils) 2.43
++ mv zic bfd/
++ cd bfd
++ eu-strip --remove-comment -f zic.debug zic
++ mkdir lld
++ armv7l-tizen-linux-gnueabi-clang -fuse-ld=lld -Wl,-v -o zdump -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 '-DTZDEFAULT="/etc/localtime"' -fPIE -pie zdump.o localtime.o strftime.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zdump lld/
++ cd lld
++ eu-strip --remove-comment -f zdump.debug zdump
++ armv7l-tizen-linux-gnueabi-clang -fuse-ld=lld -Wl,-v -o zic -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -DHAVE_GETTEXT=1 '-DTZDEFAULT="/etc/localtime"' -fPIE -pie zic.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zic lld/
++ cd lld
++ eu-strip --remove-comment -f zic.debug zic

@@ -1,0 +1,13 @@
+round	arch	package	target	rpm_image_full_sha_match	bfd_matches_outside_crc	lld_matches_outside_crc	bfd_matches_full_sha	evidence_file
+latest	aarch64	sed	sed	True	True	False	False	latest/aarch64/sed/results.json
+latest	aarch64	tzdata	zdump	True	True	False	False	latest/aarch64/tzdata/results.json
+latest	aarch64	tzdata	zic	True	True	False	False	latest/aarch64/tzdata/results.json
+latest	armv7l	sed	sed	True	True	False	False	latest/armv7l/sed/results.json
+latest	armv7l	tzdata	zdump	True	True	False	False	latest/armv7l/tzdata/results.json
+latest	armv7l	tzdata	zic	True	True	False	False	latest/armv7l/tzdata/results.json
+qb1234653	aarch64	sed	sed	True	True	False	False	qb1234653/aarch64/sed/results.json
+qb1234653	aarch64	tzdata	zdump	True	True	False	False	qb1234653/aarch64/tzdata/results.json
+qb1234653	aarch64	tzdata	zic	True	True	False	False	qb1234653/aarch64/tzdata/results.json
+qb1234653	armv7l	sed	sed	True	True	False	False	qb1234653/armv7l/sed/results.json
+qb1234653	armv7l	tzdata	zdump	True	True	False	False	qb1234653/armv7l/tzdata/results.json
+qb1234653	armv7l	tzdata	zic	True	True	False	False	qb1234653/armv7l/tzdata/results.json

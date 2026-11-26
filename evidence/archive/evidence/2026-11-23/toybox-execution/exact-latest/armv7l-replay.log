@@ -1,0 +1,76 @@
+["taskset", "-c", "0,1", "bwrap", "--unshare-all", "--new-session", "--die-with-parent", "--clearenv", "--ro-bind", "/tmp/toybox-linker-repro.klbdzx/gbs-armv7l/local/BUILD-ROOTS/scratch.armv7l.0", "/", "--dev", "/dev", "--proc", "/proc", "--tmpfs", "/tmp", "--bind", "/tmp/toybox-link-replay-wgf99b0d/source", "/home/abuild/rpmbuild/BUILD/toybox-0.8.14", "--chdir", "/home/abuild/rpmbuild/BUILD/toybox-0.8.14", "--setenv", "PATH", "/usr/bin:/usr/sbin:/bin:/sbin", "--setenv", "LC_ALL", "C", "--setenv", "CPUS", "2", "--setenv", "CFLAGS", "-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g", "--setenv", "CXXFLAGS", "-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g", "--setenv", "LDFLAGS", "-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections", "--setenv", "AR", "llvm-ar", "--setenv", "RANLIB", "llvm-ranlib", "--setenv", "CC", "armv7l-tizen-linux-gnueabi-clang", "--setenv", "CXX", "armv7l-tizen-linux-gnueabi-clang++", "make", "-j2", "CFLAGS= -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIE -Wno-nonnull -Wno-incompatible-pointer-types", "LDOPTIMIZE= -Wl,--gc-sections -pie -Wl,-v"]
+scripts/make.sh
+
+[1;31mwarning: using unfinished code from toys/pending[0m
+Compile toybox
+...............lib/xwrap.c:201:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  201 |   chdir("/");
+      |   ^~~~~~~~~~
+1 warning generated.
+......................................................................................................................toys/pending/bootchartd.c:203:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  203 |   system(toybuf);
+      |   ^~~~~~~~~~~~~~
+1 warning generated.
+..toys/pending/crontab.c:244:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  244 |   fchown(fdout, pwd->pw_uid, pwd->pw_gid);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+.toys/pending/csplit.c:102:39: warning: format specifies type 'unsigned long *' but the argument has type 'size_t *' (aka 'unsigned int *') [-Wformat]
+  102 |       } else if (!sscanf(rule,"{%lu}",&TT.btc)) abrt("bad rule");
+      |                                 ~~~   ^~~~~~~
+      |                                 %zu
+toys/pending/csplit.c:119:52: warning: format specifies type 'unsigned long' but the argument has type 'size_t' (aka 'unsigned int') [-Wformat]
+  119 |           toys.optargs[TT.indx] = xmprintf("{%lu}",TT.btc-1);
+      |                                              ~~~   ^~~~~~~~
+      |                                              %zu
+./generated/flags.h:4469:12: note: expanded from macro 'TT'
+ 4469 | #define TT this.csplit
+      |            ^
+2 warnings generated.
+.toys/pending/dhcp.c:357:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  357 |     write(pidfile, pidbuf, strlen(pidbuf));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+toys/pending/dhcp.c:1346:11: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 1346 |           daemon(0, 0);
+      |           ^~~~~~~~~~~~
+toys/pending/dhcp.c:1483:13: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 1483 |             daemon(0, 0);
+      |             ^~~~~~~~~~~~
+3 warnings generated.
+.toys/pending/dhcpd.c:448:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  448 |     write(pidfile, pidbuf, strlen(pidbuf));
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+toys/pending/dhcpd.c:1596:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 1596 |     daemon(0, 0);
+      |     ^~~~~~~~~~~~
+2 warnings generated.
+....toys/pending/fdisk.c:639:7: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  639 |       fgets(toybuf, 80, stdin);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~
+toys/pending/fdisk.c:735:7: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  735 |       fgets(str, 80, stdin);
+      |       ^~~~~~~~~~~~~~~~~~~~~
+2 warnings generated.
+..toys/pending/getty.c:76:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+   76 |     chown(TT.tty_name, 0, 0); // change ownership, Hope login will change this
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+1 warning generated.
+.....toys/pending/mdev.c:237:7: warning: misleading indentation; statement is not part of the previous 'else' [-Wmisleading-indentation]
+  237 |       if ((temp=getenv("ACTION")) && !strcmp(temp, "remove")) {
+      |       ^
+toys/pending/mdev.c:234:5: note: previous statement is here
+  234 |     else
+      |     ^
+1 warning generated.
+........toys/pending/telnetd.c:284:19: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  284 |     if (!FLAG(F)) daemon(0, 0);
+      |                   ^~~~~~~~~~~~
+1 warning generated.
+.......toys/posix/chmod.c:92:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+   92 |     pipe(pp);
+      |     ^~~~~~~~
+1 warning generated.
+................................................................
+TOYBOX_FINAL_LINK armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIE -Wno-nonnull -Wno-incompatible-pointer-types -Wall -Wundef -Werror=implicit-function-declaration -Wno-char-subscripts -Wno-pointer-sign -funsigned-char -Wno-string-plus-int -Wno-invalid-source-encoding -I . -Os -ffunction-sections -fdata-sections -fno-asynchronous-unwind-tables -fno-strict-aliasing   generated/unstripped/obj/lib_args.o generated/unstripped/obj/lib_commas.o generated/unstripped/obj/lib_deflate.o generated/unstripped/obj/lib_dirtree.o generated/unstripped/obj/lib_elf.o generated/unstripped/obj/lib_env.o generated/unstripped/obj/lib_hash.o generated/unstripped/obj/lib_lib.o generated/unstripped/obj/lib_llist.o generated/unstripped/obj/lib_net.o generated/unstripped/obj/lib_password.o generated/unstripped/obj/lib_portability.o generated/unstripped/obj/lib_tty.o generated/unstripped/obj/lib_utf8.o generated/unstripped/obj/lib_xwrap.o generated/unstripped/obj/main.o generated/unstripped/obj/hostid.o generated/unstripped/obj/dmesg.o generated/unstripped/obj/gzip.o generated/unstripped/obj/hostname.o generated/unstripped/obj/killall.o generated/unstripped/obj/md5sum.o generated/unstripped/obj/mknod.o generated/unstripped/obj/mktemp.o generated/unstripped/obj/mount.o generated/unstripped/obj/passwd.o generated/unstripped/obj/pidof.o generated/unstripped/obj/seq.o generated/unstripped/obj/su.o generated/unstripped/obj/sync.o generated/unstripped/obj/umount.o generated/unstripped/obj/ftpget.o generated/unstripped/obj/host.o generated/unstripped/obj/httpd.o generated/unstripped/obj/ifconfig.o generated/unstripped/obj/microcom.o generated/unstripped/obj/netcat.o generated/unstripped/obj/netstat.o generated/unstripped/obj/ping.o generated/unstripped/obj/rfkill.o generated/unstripped/obj/sntp.o generated/unstripped/obj/tunctl.o generated/unstripped/obj/wget.o generated/unstripped/obj/acpi.o generated/unstripped/obj/ascii.o generated/unstripped/obj/base64.o generated/unstripped/obj/blkdiscard.o generated/unstripped/obj/blkid.o generated/unstripped/obj/bzcat.o generated/unstripped/obj/chroot.o generated/unstripped/obj/chrt.o generated/unstripped/obj/clear.o generated/unstripped/obj/count.o generated/unstripped/obj/devmem.o generated/unstripped/obj/dos2unix.o generated/unstripped/obj/eject.o generated/unstripped/obj/factor.o generated/unstripped/obj/fallocate.o generated/unstripped/obj/flock.o generated/unstripped/obj/fmt.o generated/unstripped/obj/free.o generated/unstripped/obj/freeramdisk.o generated/unstripped/obj/fsync.o generated/unstripped/obj/getopt.o generated/unstripped/obj/gpiod.o generated/unstripped/obj/hd.o generated/unstripped/obj/help.o generated/unstripped/obj/hexedit.o generated/unstripped/obj/hwclock.o generated/unstripped/obj/inotifyd.o generated/unstripped/obj/insmod.o generated/unstripped/obj/ionice.o generated/unstripped/obj/linux32.o generated/unstripped/obj/login.o generated/unstripped/obj/losetup.o generated/unstripped/obj/lsmod.o generated/unstripped/obj/lsusb.o generated/unstripped/obj/makedevs.o generated/unstripped/obj/mcookie.o generated/unstripped/obj/memeater.o generated/unstripped/obj/mix.o generated/unstripped/obj/mkpasswd.o generated/unstripped/obj/mkswap.o generated/unstripped/obj/modinfo.o generated/unstripped/obj/mountpoint.o generated/unstripped/obj/nbd_client.o generated/unstripped/obj/nbd_server.o generated/unstripped/obj/nologin.o generated/unstripped/obj/nsenter.o generated/unstripped/obj/oneit.o generated/unstripped/obj/openvt.o generated/unstripped/obj/partprobe.o generated/unstripped/obj/pivot_root.o generated/unstripped/obj/pmap.o generated/unstripped/obj/printenv.o generated/unstripped/obj/pwdx.o generated/unstripped/obj/pwgen.o generated/unstripped/obj/readahead.o generated/unstripped/obj/readelf.o generated/unstripped/obj/readlink.o generated/unstripped/obj/reboot.o generated/unstripped/obj/reset.o generated/unstripped/obj/rev.o generated/unstripped/obj/rmmod.o generated/unstripped/obj/rtcwake.o generated/unstripped/obj/setfattr.o generated/unstripped/obj/setsid.o generated/unstripped/obj/sha3sum.o generated/unstripped/obj/shred.o generated/unstripped/obj/shuf.o generated/unstripped/obj/stat.o generated/unstripped/obj/swapoff.o generated/unstripped/obj/swapon.o generated/unstripped/obj/switch_root.o generated/unstripped/obj/sysctl.o generated/unstripped/obj/tac.o generated/unstripped/obj/taskset.o generated/unstripped/obj/timeout.o generated/unstripped/obj/truncate.o generated/unstripped/obj/ts.o generated/unstripped/obj/uclampset.o generated/unstripped/obj/uptime.o generated/unstripped/obj/usleep.o generated/unstripped/obj/uuidgen.o generated/unstripped/obj/vconfig.o generated/unstripped/obj/vmstat.o generated/unstripped/obj/w.o generated/unstripped/obj/watch.o generated/unstripped/obj/watchdog.o generated/unstripped/obj/which.o generated/unstripped/obj/xxd.o generated/unstripped/obj/yes.o generated/unstripped/obj/bootchartd.o generated/unstripped/obj/crond.o generated/unstripped/obj/crontab.o generated/unstripped/obj/csplit.o generated/unstripped/obj/dhcp.o generated/unstripped/obj/dhcpd.o generated/unstripped/obj/diff.o generated/unstripped/obj/dumpleases.o generated/unstripped/obj/expr.o generated/unstripped/obj/fdisk.o generated/unstripped/obj/fsck.o generated/unstripped/obj/getty.o generated/unstripped/obj/init.o generated/unstripped/obj/ipcrm.o generated/unstripped/obj/ipcs.o generated/unstripped/obj/last.o generated/unstripped/obj/mdev.o generated/unstripped/obj/modprobe.o generated/unstripped/obj/more.o generated/unstripped/obj/route.o generated/unstripped/obj/sh.o generated/unstripped/obj/stty.o generated/unstripped/obj/sulogin.o generated/unstripped/obj/telnet.o generated/unstripped/obj/telnetd.o generated/unstripped/obj/tr.o generated/unstripped/obj/traceroute.o generated/unstripped/obj/basename.o generated/unstripped/obj/cal.o generated/unstripped/obj/cat.o generated/unstripped/obj/chgrp.o generated/unstripped/obj/chmod.o generated/unstripped/obj/cksum.o generated/unstripped/obj/cmp.o generated/unstripped/obj/comm.o generated/unstripped/obj/cp.o generated/unstripped/obj/cpio.o generated/unstripped/obj/cut.o generated/unstripped/obj/date.o generated/unstripped/obj/dd.o generated/unstripped/obj/df.o generated/unstripped/obj/dirname.o generated/unstripped/obj/du.o generated/unstripped/obj/echo.o generated/unstripped/obj/env.o generated/unstripped/obj/expand.o generated/unstripped/obj/false.o generated/unstripped/obj/file.o generated/unstripped/obj/find.o generated/unstripped/obj/fold.o generated/unstripped/obj/getconf.o generated/unstripped/obj/grep.o generated/unstripped/obj/head.o generated/unstripped/obj/iconv.o generated/unstripped/obj/id.o generated/unstripped/obj/kill.o generated/unstripped/obj/link.o generated/unstripped/obj/ln.o generated/unstripped/obj/ls.o generated/unstripped/obj/mkdir.o generated/unstripped/obj/mkfifo.o generated/unstripped/obj/nice.o generated/unstripped/obj/nl.o generated/unstripped/obj/nohup.o generated/unstripped/obj/od.o generated/unstripped/obj/paste.o generated/unstripped/obj/patch.o generated/unstripped/obj/printf.o generated/unstripped/obj/ps.o generated/unstripped/obj/pwd.o generated/unstripped/obj/renice.o generated/unstripped/obj/rm.o generated/unstripped/obj/rmdir.o generated/unstripped/obj/sed.o generated/unstripped/obj/sleep.o generated/unstripped/obj/sort.o generated/unstripped/obj/split.o generated/unstripped/obj/strings.o generated/unstripped/obj/tail.o generated/unstripped/obj/tar.o generated/unstripped/obj/tee.o generated/unstripped/obj/test.o generated/unstripped/obj/time.o generated/unstripped/obj/touch.o generated/unstripped/obj/true.o generated/unstripped/obj/tsort.o generated/unstripped/obj/tty.o generated/unstripped/obj/ulimit.o generated/unstripped/obj/uname.o generated/unstripped/obj/uniq.o generated/unstripped/obj/unlink.o generated/unstripped/obj/uudecode.o generated/unstripped/obj/uuencode.o generated/unstripped/obj/wc.o generated/unstripped/obj/who.o generated/unstripped/obj/xargs.o -Wl,--gc-sections -pie -Wl,-v -Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections -lattr -lcrypt -lm -lresolv -lsmack -lutil -o generated/unstripped/toybox
+.LLD 22.1.8 (compatible with GNU linkers)
+..

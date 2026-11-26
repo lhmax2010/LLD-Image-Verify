@@ -1,0 +1,40 @@
+aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/tizen-debug.buildlog.txt
+20:[   12s] [1/1] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/glibc-debuginfo-2.40-1.6.aarch64.rpm ... 
+22:[   13s] reordering...cycle: libxcrypt-devel -> glibc-devel
+23:[   13s]   breaking dependency libxcrypt-devel -> glibc-devel
+62:[   22s] [1/110] cumulate glibc-debuginfo-2.40-1.6
+66:[   22s] [5/110] keeping glibc-2.40-1.6
+138:[   23s] [77/110] keeping glibc-locale-2.40-1.6
+146:[   23s] [85/110] keeping linux-glibc-devel-6.6-1.8
+166:[   23s] [105/110] keeping glibc-devel-2.40-1.6
+175:[   24s] glibc-debuginfo-2.40-1.6              ########################################
+215:[   28s] +++ readlink -f /lib/ld-linux-aarch64.so.1
+216:[   28s] ++ basename /usr/lib64/ld-linux-aarch64.so.1
+217:[   28s] + LD_SO=ld-linux-aarch64.so.1
+220:[   29s] + eu-elfcompress /usr/lib/debug//lib64/libc.so.6.debug -o /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/libc.so.6.debug
+221:[   35s] eu-elfcompress: Couldn't fchown /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/libc.so.6.debug: Operation not permitted
+222:[   35s] + eu-elfcompress /usr/lib/debug//lib64/ld-linux-aarch64.so.1.debug -o /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/ld-linux-aarch64.so.1.debug
+223:[   36s] eu-elfcompress: Couldn't fchown /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/ld-linux-aarch64.so.1.debug: Operation not permitted
+224:[   36s] + chmod 444 /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/ld-linux-aarch64.so.1.debug /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/libc.so.6.debug
+226:[   36s] ++ readelf -n /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/ld-linux-aarch64.so.1.debug
+239:[   37s] ++ readelf -n /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.aarch64/usr/lib/debug//lib64/libc.so.6.debug
+armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/tizen-debug.buildlog.txt
+20:[    8s] [1/1] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/glibc-debuginfo-2.40-1.8.armv7l.rpm ... 
+22:[    9s] reordering...cycle: libxcrypt-devel -> glibc-devel
+23:[    9s]   breaking dependency libxcrypt-devel -> glibc-devel
+38:[   12s] [1/109] cumulate glibc-debuginfo-2.40-1.8
+42:[   12s] [5/109] keeping glibc-2.40-1.8
+112:[   12s] [75/109] keeping glibc-locale-2.40-1.8
+122:[   12s] [85/109] keeping linux-glibc-devel-6.6-1.8
+141:[   12s] [104/109] keeping glibc-devel-2.40-1.8
+150:[   13s] glibc-debuginfo-2.40-1.8              ########################################
+190:[   15s] +++ readlink -f /lib/ld-linux.so.3
+191:[   15s] ++ basename /usr/lib/ld-linux.so.3
+192:[   15s] + LD_SO=ld-linux.so.3
+195:[   15s] + eu-elfcompress /usr/lib/debug//lib/libc.so.6.debug -o /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/libc.so.6.debug
+196:[   17s] eu-elfcompress: Couldn't fchown /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/libc.so.6.debug: Operation not permitted
+197:[   17s] + eu-elfcompress /usr/lib/debug//lib/ld-linux.so.3.debug -o /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/ld-linux.so.3.debug
+198:[   18s] eu-elfcompress: Couldn't fchown /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/ld-linux.so.3.debug: Operation not permitted
+199:[   18s] + chmod 444 /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/ld-linux.so.3.debug /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/libc.so.6.debug
+202:[   18s] ++ readelf -n /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/ld-linux.so.3.debug
+214:[   18s] ++ readelf -n /home/abuild/rpmbuild/BUILDROOT/tizen-debug-2.40-1.arm/usr/lib/debug//lib/libc.so.6.debug

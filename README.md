@@ -34,3 +34,7 @@
 - **RPM 口径。** 每轮 2,556 个 RPM 中有 1,687 个可关联本轮观察到的原生文件。同一个 RPM 可能包含来自多个链接器的文件。镜像实例比例按 ELF 或内核文件计算。
 
 [验证方法和可复现的公开 RPM 示例](docs/verification-methods.md) · [后续验证交接](docs/handoff.md)
+
+## 2026-11-25 补查
+
+[补查报告](docs/follow-up-audit.md)记录了 QB 1234794 的输入、同轮编译器切换、预编译字节证据、x86_64 RPM 样本和重复验证方法。[逐 ELF、RPM 与构建日志数据](data/)和[复跑脚本](scripts/)可直接核对。补查将每轮 16 个原无归属的 LLD 实例匹配到已安装的 Unified RPM。新版 Unified 分母为 7,071，LLD 确证为 6,892。

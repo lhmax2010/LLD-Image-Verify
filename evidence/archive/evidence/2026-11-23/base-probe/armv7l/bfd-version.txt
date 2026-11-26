@@ -1,0 +1,7 @@
+["qemu-arm-static", "-L", "/tmp/tizen-lld-base-probe-20261117/armv7l/tools", "-E", "LD_LIBRARY_PATH=/tmp/tizen-lld-base-probe-20261117/armv7l/tools/usr/lib:/home/linhao/lss/qb-1234653-linker-audit/extracted/tizen-headed-armv7l/rootfs/usr/lib", "/tmp/tizen-lld-base-probe-20261117/armv7l/tools/usr/bin/ld.bfd", "--version"]
+GNU ld (GNU Binutils) 2.43
+Copyright (C) 2024 Free Software Foundation, Inc.
+This program is free software; you may redistribute it under the terms of
+the GNU General Public License version 3 or (at your option) a later version.
+This program has absolutely no warranty.
+

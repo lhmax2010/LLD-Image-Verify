@@ -1,0 +1,27 @@
+{
+  "clang": {
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/armv7l/clang-22.1.8-1.7.armv7l.rpm",
+    "sha256": "6344df543181a92a0147661135b31665ea271e84ee24b461a876ce3e0f49e213",
+    "vcs": "platform/upstream/llvm#2c661e1c3976c8108987e05049af5cafd665a18d"
+  },
+  "llvm": {
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/armv7l/llvm-22.1.8-1.7.armv7l.rpm",
+    "sha256": "63815bfe9dbecf56bc90f90a470ddfd895b68e6f8aa7b53fa9b4f9b8dcd97605",
+    "vcs": "platform/upstream/llvm#2c661e1c3976c8108987e05049af5cafd665a18d"
+  },
+  "libllvm": {
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/armv7l/libllvm-22.1.8-1.7.armv7l.rpm",
+    "sha256": "6ff36be736ae4ff15300831718683f8e60ff364541d61fc8dd2f7dfdbc429290",
+    "vcs": "platform/upstream/llvm#2c661e1c3976c8108987e05049af5cafd665a18d"
+  },
+  "binutils": {
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/armv7l/binutils-2.43-1.9.armv7l.rpm",
+    "sha256": "40048f5af6a9d6d9f60828f9c8c27989dd7b50a60eeb48fa6657de8d8491ddaf",
+    "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+  },
+  "binutils-libs": {
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/armv7l/binutils-libs-2.43-1.9.armv7l.rpm",
+    "sha256": "421c44c56dd5dec6ff4120317a2eca6c690dbcad340b7a8f1467894e1876ba13",
+    "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+  }
+}

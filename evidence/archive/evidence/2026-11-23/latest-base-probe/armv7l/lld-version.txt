@@ -1,0 +1,3 @@
+["qemu-arm-static", "-L", "/tmp/tizen-lld-base-probe-20261119/armv7l/tools", "-E", "LD_LIBRARY_PATH=/tmp/tizen-lld-base-probe-20261119/armv7l/tools/usr/lib:/tmp/tizen-lld-20261120.082536/extracted/tizen-headed-armv7l/rootfs/usr/lib", "/tmp/tizen-lld-base-probe-20261119/armv7l/tools/usr/bin/ld.lld", "--version"]
+LLD 22.1.8 (compatible with GNU linkers)
+

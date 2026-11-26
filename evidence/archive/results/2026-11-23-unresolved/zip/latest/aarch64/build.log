@@ -1,0 +1,1070 @@
+taskset -c 0,1 bwrap --unshare-all --new-session --die-with-parent --clearenv --ro-bind /tmp/toybox-linker-repro.klbdzx/gbs-aarch64/local/BUILD-ROOTS/scratch.aarch64.0 / --dev /dev --proc /proc --tmpfs /tmp --bind /tmp/lld-unresolved.lkZbPR/zip-replay-latest-aarch64 /home/abuild/rpmbuild/BUILD --chdir /home/abuild/rpmbuild/BUILD/zip30 --setenv PATH /usr/bin:/usr/sbin:/bin:/sbin --setenv LC_ALL C bash ./replay.sh
++ make -j2 -f unix/Makefile generic 'CC=aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie' 'CPP=aarch64-tizen-linux-gnu-clang -E' prefix=/usr
+sh unix/configure "aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie" "-I. -DUNIX -DIZ_ISO2OEM_ARRAY " ""
+Check C compiler type (optimization options)
+  GNU C (-O3)
+Check bzip2 support
+  Check for bzip2 in bzip2 directory
+  Check if OS already has bzip2 library installed
+-- Either bzlib.h or libbz2.a not found - no bzip2
+Check for the C preprocessor
+Check if we can use asm code
+Check for ANSI options
+Check for prototypes
+Check the handling of const
+Check for time_t
+Check for size_t
+Check for off_t
+Check size of UIDs and GIDs
+(Now zip stores variable size UIDs/GIDs using a new extra field.  This
+ tests if this OS uses 16-bit UIDs/GIDs and so if the old 16-bit storage
+ should also be used for backward compatibility.)
+  s.st_uid is 4 bytes
+  s.st_gid is 4 bytes
+-- UID not 2 bytes - disabling old 16-bit UID/GID support
+Check for Large File Support
+  off_t is 8 bytes
+-- yes we have Large File Support!
+Check for wide char support
+-- have wchar_t - enabling Unicode support
+Check for gcc no-builtin flag
+Check for rmdir
+Check for strchr
+Check for strrchr
+Check for rename
+Check for mktemp
+Check for mktime
+Check for mkstemp
+Check for memset
+unix/configure: line 530: conftest.c: command not found
+Check for memmove
+Check for strerror
+Check for errno declaration
+Check for directory libraries
+Check for readlink
+Check for directory include file
+Check for nonexistent include files
+Check for term I/O include file
+Check for valloc
+Check for /usr/local/bin and /usr/local/man
+Check for OS-specific flags
+Check for symbolic links
+eval make -f unix/Makefile zips `cat flags`
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/zip30'
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zip.c
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zipfile.c
+zipfile.c:243:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | local int zqcmp(a, b)
+      |           ^
+zipfile.c:255:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  255 | local int zuqcmp(a, b)
+      |           ^
+zipfile.c:275:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  275 | local int rqcmp(a, b)
+      |           ^
+zipfile.c:285:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  285 | local int zbcmp(n, z)
+      |           ^
+zipfile.c:295:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  295 | local int zubcmp(n, z)
+      |           ^
+zipfile.c:333:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  333 | struct zlist far *zsearch(n)
+      |                   ^
+zipfile.c:361:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  361 | char *ziptyp(s)
+      |       ^
+zip.c:239:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  239 | local int finish(e)
+      |           ^
+zip.c:330:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  330 | void ziperr(c, h)
+      |      ^
+zip.c:440:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  440 | void error(h)
+      |      ^
+zip.c:448:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  448 | local void handler(s)
+      |            ^
+zip.c:466:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  466 | void zipmessage_nl(a, nl)
+      |      ^
+zip.c:505:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  505 | void zipmessage(a, b)
+      |      ^
+zip.c:526:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  526 | void zipzipfile.c:469:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  469 | local void write_ulong_to_mem(uValue, pPtr)
+      |            ^
+zipfile.c:479:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  479 | local void write_int64_to_mem(l64Value,pPtr)
+      |            ^
+zipfile.c:492:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  492 | local void write_string_to_mem(strValue, pPtr)
+      |            ^
+zipfile.c:579:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  579 | local void append_ulong_to_mem(uValue, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:607:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  607 | local void append_int64_to_mem(l64Value, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:636:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  636 | local void append_string_to_mem(strValue, strLength, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:715:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  715 | char *copy_nondup_extra_fields(oldExtra, oldExtraLen, newExtra, newExtraLen, newLen)
+      |       ^
+zipfile.c:783:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  783 | local void read_Unicode_Path_entry(pZipListEntry)
+      |            ^
+zipfile.c:887:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  887 | local void read_Unicode_Path_local_entry(pZipListEntry)
+      |            ^
+zipfile.c:997:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  997 | local void adjust_zip_central_entry(pZipListEntry)
+      |            ^
+zipfile.c:1045:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1045 | local int adjust_zip_local_entry(pZipListEntry)
+      |           ^
+zipfile.c:1080:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1080 | local int add_central_zip64_extra_field(pZipListEntry)
+      |           ^
+zipfile.c:1322:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1322 | local int add_local_zip64_extra_field(pZEntry)
+      |           ^
+zipfile.c:1416:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1416 | local int add_Unicode_Path_local_extra_field(pZEntry)
+      |           ^
+zipfile.c:1548:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1548 | local int add_Unicode_Path_cen_extra_field(pZEntry)
+      |           ^
+zipfile.c:1692:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1692 | zoff_t ffile_size( file)
+      |        ^
+zipfile.c:1696:10: warning: variable 'siz' set but not used [-Wunused-but-set-variable]
+ 1696 |   size_t siz;
+      |          ^
+zipfile.c:1766:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1766 | local void zipoddities(z)
+      |            ^
+zipfile.c:2159:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2159 | int readlocal(localz, z)
+      |     ^
+warn(a, b)
+      |      ^
+zip.c:1283:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1283 | local int check_unzip_version(unzippath)
+      |           ^
+zip.c:1327:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1327 | local void check_zipfile(zipname, zippath)
+      |            ^
+zip.c:1431:11: warning: explicitly assigning value of variable of type 'char *' to itself [-Wself-assign]
+ 1431 |   zippath = zippath;
+      |   ~~~~~~~ ^ ~~~~~~~
+zip.c:1532:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1532 | local int add_filter(flag, pattern)
+      |           ^
+zip.c:1647:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1647 | local long add_name(filearg)
+      |            ^
+zip.c:1787:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1787 | int encr_passwd(modeflag, pwbuf, size, zfn)
+      |     ^
+zip.c:1796:9: warning: explicitly assigning value of variable of type 'const char *' to itself [-Wself-assign]
+ 1796 |     zfn = zfn;
+      |     ~~~ ^ ~~~
+zip.c:1826:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1826 | int rename_split(temp_name, out_path)
+      |     ^
+zip.c:1846:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1846 | int set_filetype(out_path)
+      |     ^
+zip.c:2122:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2122 | int main(argc, argv)
+      |     ^
+zipfile.c:2168:11: warning: variable 'start_offset' set but not used [-Wunused-but-set-variable]
+ 2168 |   uzoff_t start_offset = 0;
+      |           ^
+zipfile.c:2955:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2955 | local int find_next_signature(f)
+      |           ^
+zipfile.c:3034:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3034 | local int find_signature(f, signature)
+      |           ^
+zipfile.c:3080:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3080 | local int is_signature(sig1, sig2)
+      |           ^
+zipfile.c:3128:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3128 | local int at_signature(f, signature)
+      |           ^
+zipfile.c:3223:11: warning: variable 'cd_total_entries' set but not used [-Wunused-but-set-variable]
+ 3223 |   uzoff_t cd_total_entries = 0; /* number of entries according to EOCDR */
+      |           ^
+zipfile.c:3225:11: warning: variable 'in_cd_start_offset' set but not used [-Wunused-but-set-variable]
+ 3225 |   uzoff_t in_cd_start_offset;   /* offset of start of cd on cd start disk */
+      |           ^
+zipfile.c:4029:11: warning: variable 'z64eocdr_size' set but not used [-Wunused-but-set-variable]
+ 4029 |   uzoff_t z64eocdr_size;
+      |           ^
+zipfile.c:4030:11: warning: variable 'version_made' set but not used [-Wunused-but-set-variable]
+ 4030 |   ush     version_made;
+      |           ^
+zipfile.c:5271:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5271 | int putlocal(z, rewrite)
+      |     ^
+zipfile.c:5509:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5509 | int putextended(z)
+      |     ^
+zipfile.c:5610:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5610 | int putcentral(z)
+      |     ^
+zipfile.c:5826:7: warning: variable 'iNeedZip64' set but not used [-Wunused-but-set-variable]
+ 5826 |   int iNeedZip64 = 0;
+      |       ^
+zipfile.c:6003:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 6003 | int zipcopy(z)
+      |     ^
+zipfile.c:6544:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 6544 | local int ef_scan_ut_time(ef_buf, ef_len, ef_is_cent, z_utim)
+      |           ^
+zipfile.c:6661:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 6661 | int get_ef_ut_ztime(z, z_utim)
+      |     ^
+zipfile.c:6685:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 6685 | local void cutpath(p, delim)
+      |            ^
+17 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zipup.c
+zipup.c:223:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  223 | int is_seekable(y)
+      |     ^
+zipup.c:243:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | int percent(n, m)
+      |     ^
+zipup.c:303:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  303 | local int suffixes(a, s)
+      |           ^
+zipup.c:388:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  388 | int zipup(z)
+      |     ^
+zipup.c:403:17: warning: variable 'p' set but not used [-Wunused-but-set-variable]
+  403 |   zoff_t o = 0, p;      /* offsets in zip file */
+      |                 ^
+zipup.c:1149:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1149 | local unsigned file_read(buf, size)
+      |                ^
+zipup.c:1264:10: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 1264 |          zread(ifile, buf, 1); len = 1; /* keep single \r if EOF */
+      |          ^~~~~~~~~~~~~~~~~~~~
+./unix/zipup.h:21:22: note: expanded from macro 'zread'
+   21 | #define zread(f,b,n) read(f,b,n)
+      |                      ^~~~~~~~~~~
+zipup.c:1386:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1386 | void flush_outbuf(o_buf, o_idx)
+      |      ^
+zipup.c:1417:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1417 | local zoff_t filecompress(z_entry, cmpr_method)
+      |              ^
+43 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC fileio.c
+9 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC util.c
+fileio.c:105:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  105 | char *getnam(fp)
+      |       ^
+fileio.c:147:19: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  147 | struct flist far *fexpel(f)
+      |                   ^
+fileio.c:181:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  181 | local int fqcmp(a, b)
+      |           ^
+fileio.c:189:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  189 | local int fqcmpz(a, b)
+      |           ^
+fileio.c:197:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  197 | char *last(p, c)
+      |       ^
+fileio.c:254:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  254 | char *msname(n)
+      |       ^
+fileio.c:311:10: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  311 | wchar_t *msnamew(nw)
+      |          ^
+fileio.c:369:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  369 | int proc_archive_name(n, caseflag)
+      |     ^
+fileio.c:495:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  495 | int filter(name, casesensitive)
+      |     ^
+In file included from util.c:28:
+./timezone.c:635:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  635 | time_t mktime(tm)
+      |        ^
+fileio.c:851:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  851 | int newname(name, isdir, casesensitive)
+      |     ^
+./timezone.c:743:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  743 | time_t mkgmtime(tm)
+      |        ^
+util.c:78:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   78 | int fseekable( fp)
+      |     ^
+fileio.c:1074:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1074 | ulg dostime(y, n, d, h, m, s)
+      |     ^
+fileio.c:1091:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1091 | ulg unix2dostime(t)
+      |     ^
+util.c:92:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   92 | char *isshexp(p)
+      |       ^
+fileio.c:1112:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1112 | int issymlnk(a)
+      |     ^
+util.c:274:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  274 | local int recmatch(p, s, cs)
+      |           ^
+fileio.c:1152:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1152 | time_t dos2unixtime(dostime)
+      |        ^
+fileio.c:1180:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1180 | int destroy(f)
+      |     ^
+fileio.c:1188:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1188 | int replace(d, s)
+      |     ^
+util.c:489:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  489 | int shmatch(p, s, cs)
+      |     ^
+util.c:564:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  564 | zvoid far **search(b, a, n, cmp)
+      |             ^
+fileio.c:1290:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1290 | int getfileattr(f)
+      |     ^
+fileio.c:1306:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1306 | int setfileattr(f, a)
+      |     ^
+fileio.c:1327:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1327 | char *tempname(zip)
+      |       ^
+util.c:664:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  664 | int namecmp(string1, string2)
+      |     ^
+util.c:723:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  723 | char *str_iso_to_oem(dst, src)
+      |       ^
+fileio.c:1510:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1510 | int fcopy(f, g, n)
+      |     ^
+util.c:811:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  811 | void envargs(Pargc, Pargv, envstr, envstr2)
+      |      ^
+fileio.c:1567:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1567 | int bfcopy(n)
+      |     ^
+util.c:913:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  913 | local int count_args(s)
+      |           ^
+util.c:972:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  972 | void expand_args(argcp, argvp)
+      |      ^
+util.c:1026:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1026 | int is_text_buf(buf_ptr, buf_size)
+      |     ^
+util.c:1109:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1109 | char *zip_fzofft( val, pre, post)
+      |       ^
+util.c:1158:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1158 | char *zip_fuzofft( val, pre, post)
+      |       ^
+util.c:1207:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1207 | int DisplayNumString(file, i)
+      |     ^
+util.c:1229:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1229 | uzoff_t ReadNumString( numstring )
+      |         ^
+fileio.c:1939:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1939 | int rename(from, to)
+      |     ^
+util.c:1293:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1293 | int WriteNumString( num, outstring )
+      |     ^
+fileio.c:2040:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2040 | int ask_for_split_read_path(current_disk)
+      |     ^
+fileio.c:2127:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2127 |     fgets(buf, SPLIT_MAXPATH, stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+util.c:1419:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1419 | int abbrevmatch (matchstring, abbrev, case_sensitive, minmatch)
+      |     ^
+fileio.c:2150:7: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2150 |       fgets(buf, SPLIT_MAXPATH, stdin);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fileio.c:2286:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2286 | int ask_for_split_write_path(current_disk)
+      |     ^
+fileio.c:2331:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2331 |     fgets(buf, FNMAX, stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+fileio.c:2420:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2420 | char *get_in_split_path(base_path, disk_number)
+      |       ^
+fileio.c:2491:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2491 | char *get_out_split_path(base_path, disk_number)
+      |       ^
+fileio.c:2552:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2552 | int close_split(disk_number, tempfile, temp_name)
+      |     ^
+fileio.c:2575:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2575 | size_t bfwrite(buffer, size, count, mode)
+      |        ^
+fileio.c:2867:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2867 | local int utf8_char_bytes(utf8)
+      |           ^
+fileio.c:2909:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2909 | long ucs4_char_from_utf8(utf8)
+      |      ^
+fileio.c:2936:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2936 | local int utf8_from_ucs4_char(utf8buf, ch)
+      |           ^
+fileio.c:2975:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2975 | local int utf8_to_ucs4_string(utf8, ucs4buf, buflen)
+      |           ^
+fileio.c:3003:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3003 | local int ucs4_string_to_utf8(ucs4, utf8buf, buflen)
+      |           ^
+fileio.c:3107:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3107 | int is_ascii_string(mbstring)
+      |     ^
+fileio.c:3125:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3125 | char *local_to_utf8_string(local_string)
+      |       ^
+fileio.c:3157:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3157 | char *wide_char_to_escape_string(wide_char)
+      |       ^
+fileio.c:3256:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3256 | char *local_to_escape_string(local_string)
+      |       ^
+fileio.c:3282:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3282 | char *wide_to_local_string(wide_string)
+      |       ^
+fileio.c:3288:7: warning: variable 'state_dependent' set but not used [-Wunused-but-set-variable]
+ 3288 |   int state_dependent;
+      |       ^
+fileio.c:3361:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3361 | char *wide_to_escape_string(wide_string)
+      |       ^
+fileio.c:3402:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3402 | char *local_to_display_string(local_string)
+      |       ^
+fileio.c:3472:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3472 | char *utf8_to_local_string(utf8_string)
+      |       ^
+fileio.c:3483:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3483 | char *utf8_to_escape_string(utf8_string)
+      |       ^
+fileio.c:3494:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3494 | zwchar *local_to_wide_string(local_string)
+      |         ^
+fileio.c:3549:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3549 | char *wide_to_utf8_string(wide_string)
+      |       ^
+fileio.c:3570:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3570 | zwchar *utf8_to_wide_string(utf8_string)
+      |         ^
+fileio.c:3746:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3746 | local int optionerr(buf, err, optind, islong)
+      |           ^
+fileio.c:3782:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3782 | char **copy_args(args, max_args)
+      |        ^
+fileio.c:3819:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3819 | int free_args(args)
+      |     ^
+fileio.c:3846:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3846 | int insert_arg(pargs, arg, at_arg, free_args)
+      |     ^
+fileio.c:3940:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3940 | local unsigned long get_shortopt(args, argnum, optchar, negated, value,
+      |                     ^
+fileio.c:4177:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 4177 | local unsigned long get_longopt(args, argnum, optchar, negated, value,
+      |                     ^
+fileio.c:4555:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 4555 | unsigned long get_option(pargs, argc, argnum, optchar, value,
+      |               ^
+fileio.c:3734:24: warning: unused variable 'no_arg_files_err' [-Wunused-const-variable]
+ 3734 | static ZCONST char Far no_arg_files_err[] = "argument files not enabled\n";
+      |                        ^~~~~~~~~~~~~~~~
+19 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC globals.c
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC crypt.c
+crypt.c:139:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  139 | int update_keys(__G__ c)
+      |     ^
+./crypt.h:110:28: note: expanded from macro 'update_keys'
+  110 | #  define  update_keys     zp_update_keys
+      |                            ^
+crypt.c:159:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  159 | void init_keys(__G__ passwd)
+      |      ^
+./crypt.h:111:28: note: expanded from macro 'init_keys'
+  111 | #  define  init_keys       zp_init_keys
+      |                            ^
+crypt.c:207:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  207 | void crypthead(passwd, crc)
+      |      ^
+crypt.c:455:10: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  455 | unsigned zfwrite(buf, item_size, nb)
+      |          ^
+4 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC ttyio.c
+ttyio.c:303:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  303 | void Echoff(__G__ f)
+      |      ^
+ttyio.c:599:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  599 | char *getp(__G__ m, p, n)
+      |       ^
+ttyio.c:628:13: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  628 |             read(f, &c, 1);
+      |             ^~~~~~~~~~~~~~
+3 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC unix/unix.c
+unix/unix.c:96:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   96 | local char *readd(d)
+      |             ^
+unix/unix.c:107:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  107 | int procname(n, caseflag)
+      |     ^
+unix/unix.c:228:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  228 | char *ex2in(x, isdir, pdosflag)
+      |       ^
+unix/unix.c:290:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  290 | char *in2ex(n)
+      |       ^
+unix/unix.c:310:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  310 | void stamp(f, d)
+      |      ^
+unix/unix.c:332:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  332 | ulg filetime(f, a, n, t)
+      |     ^
+unix/unix.c:443:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  443 | int set_new_unix_extra_field(z, s)
+      |     ^
+unix/unix.c:570:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  570 | int set_extra_field(z, z_utim)
+      |     ^
+unix/unix.c:694:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  694 | int deletedir(d)
+      |     ^
+9 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC crc32.c
+crc32.c:680:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  680 | ulg crc32(crc, buf, len)
+      |     ^
+57 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zbz2err.c
+1 warning generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC deflate.c
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC trees.c
+deflate.c:303:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  303 | void lm_init (pack_level, flags)
+      |      ^
+deflate.c:416:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  416 | int longest_match(cur_match)
+      |     ^
+trees.c:472:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  472 | void ct_init(attr, method)
+      |      ^
+trees.c:603:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  603 | local void pqdownheap(tree, k)
+      |            ^
+trees.c:639:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  639 | local void gen_bitlen(desc)
+      |            ^
+trees.c:724:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  724 | local void gen_codes (tree, max_code)
+      |            ^
+trees.c:765:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  765 | local void build_tree(desc)
+      |            ^
+trees.c:852:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  852 | local void scan_tree (tree, max_code)
+      |            ^
+trees.c:896:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  896 | local void send_tree (tree, max_code)
+      |            ^
+trees.c:979:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  979 | local void send_all_trees(lcodes, dcodes, blcodes)
+      |            ^
+trees.c:1014:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1014 | uzoff_t flush_block(buf, stored_len, eof)
+      |         ^
+trees.c:1144:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1144 | int ct_tally (dist, lc)
+      |     ^
+trees.c:1197:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1197 | local void compress_block(ltree, dtree)
+      |            ^
+trees.c:1301:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1301 | void bi_init (tgt_buf, tgt_size, flsh_allowed)
+      |      ^
+trees.c:1323:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1323 | local void send_bits(value, length)
+      |            ^
+trees.c:1351:16: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1351 | local unsigned bi_reverse(code, len)
+      |                ^
+trees.c:1425:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1425 | local void copy_block(block, len, header)
+      |            ^
+2 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zipcloak.c
+zipcloak.c:54:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   54 | int set_filetype(out_path)
+      |     ^
+zipcloak.c:83:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   83 | int rename_split(temp_name, out_path)
+      |     ^
+zipcloak.c:102:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  102 | void zipmessage_nl(a, nl)
+      |      ^
+zipcloak.c:120:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  120 | void zipmessage(a, b)
+      |      ^
+zipcloak.c:137:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  137 | void ziperr(code, msg)
+      |      ^
+zipcloak.c:155:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  155 | void zipwarn(msg1, msg2)
+      |      ^
+zipcloak.c:166:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  166 | local void handler(sig)
+      |            ^
+zipcloak.c:308:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  308 | int main(argc, argv)
+      |     ^
+8 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o zipfile_.o zipfile.c
+zipfile.c:243:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | local int zqcmp(a, b)
+      |           ^
+zipfile.c:255:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  255 | local int zuqcmp(a, b)
+      |           ^
+zipfile.c:361:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  361 | char *ziptyp(s)
+      |       ^
+zipfile.c:469:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  469 | local void write_ulong_to_mem(uValue, pPtr)
+      |            ^
+zipfile.c:479:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  479 | local void write_int64_to_mem(l64Value,pPtr)
+      |            ^
+zipfile.c:492:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  492 | local void write_string_to_mem(strValue, pPtr)
+      |            ^
+zipfile.c:579:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  579 | local void append_ulong_to_mem(uValue, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:607:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  607 | local void append_int64_to_mem(l64Value, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:636:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  636 | local void append_string_to_mem(strValue, strLength, pPtr, offset, blocksize)
+      |            ^
+zipfile.c:715:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  715 | char *copy_nondup_extra_fields(oldExtra, oldExtraLen, newExtra, newExtraLen, newLen)
+      |       ^
+zipfile.c:783:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  783 | local void read_Unicode_Path_entry(pZipListEntry)
+      |            ^
+zipfile.c:887:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  887 | local void read_Unicode_Path_local_entry(pZipListEntry)
+      |            ^
+zipfile.c:997:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  997 | local void adjust_zip_central_entry(pZipListEntry)
+      |            ^
+zipfile.c:1045:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1045 | local int adjust_zip_local_entry(pZipListEntry)
+      |           ^
+zipfile.c:1080:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1080 | local int add_central_zip64_extra_field(pZipListEntry)
+      |           ^
+zipfile.c:1322:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1322 | local int add_local_zip64_extra_field(pZEntry)
+      |           ^
+zipfile.c:1416:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1416 | local int add_Unicode_Path_local_extra_field(pZEntry)
+      |           ^
+zipfile.c:1548:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1548 | local int add_Unicode_Path_cen_extra_field(pZEntry)
+      |           ^
+zipfile.c:1692:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1692 | zoff_t ffile_size( file)
+      |        ^
+zipfile.c:1696:10: warning: variable 'siz' set but not used [-Wunused-but-set-variable]
+ 1696 |   size_t siz;
+      |          ^
+zipfile.c:2159:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2159 | int readlocal(localz, z)
+      |     ^
+zipfile.c:2955:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2955 | local int find_next_signature(f)
+      |           ^
+zipfile.c:3034:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3034 | local int find_signature(f, signature)
+      |           ^
+zipfile.c:3080:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3080 | local int is_signature(sig1, sig2)
+      |           ^
+zipfile.c:3128:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3128 | local int at_signature(f, signature)
+      |           ^
+zipfile.c:4029:11: warning: variable 'z64eocdr_size' set but not used [-Wunused-but-set-variable]
+ 4029 |   uzoff_t z64eocdr_size;
+      |           ^
+zipfile.c:4030:11: warning: variable 'version_made' set but not used [-Wunused-but-set-variable]
+ 4030 |   ush     version_made;
+      |           ^
+zipfile.c:5271:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5271 | int putlocal(z, rewrite)
+      |     ^
+zipfile.c:5509:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5509 | int putextended(z)
+      |     ^
+zipfile.c:5610:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 5610 | int putcentral(z)
+      |     ^
+zipfile.c:5826:7: warning: variable 'iNeedZip64' set but not used [-Wunused-but-set-variable]
+ 5826 |   int iNeedZip64 = 0;
+      |       ^
+zipfile.c:6003:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 6003 | int zipcopy(z)
+      |     ^
+15 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o fileio_.o fileio.c
+fileio.c:1180:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1180 | int destroy(f)
+      |     ^
+fileio.c:1188:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1188 | int replace(d, s)
+      |     ^
+fileio.c:1290:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1290 | int getfileattr(f)
+      |     ^
+fileio.c:1306:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1306 | int setfileattr(f, a)
+      |     ^
+fileio.c:1327:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1327 | char *tempname(zip)
+      |       ^
+fileio.c:1510:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1510 | int fcopy(f, g, n)
+      |     ^
+fileio.c:1567:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1567 | int bfcopy(n)
+      |     ^
+fileio.c:1939:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1939 | int rename(from, to)
+      |     ^
+fileio.c:2040:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2040 | int ask_for_split_read_path(current_disk)
+      |     ^
+fileio.c:2127:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2127 |     fgets(buf, SPLIT_MAXPATH, stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fileio.c:2150:7: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2150 |       fgets(buf, SPLIT_MAXPATH, stdin);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+fileio.c:2286:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2286 | int ask_for_split_write_path(current_disk)
+      |     ^
+fileio.c:2331:5: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+ 2331 |     fgets(buf, FNMAX, stdin);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+fileio.c:2420:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2420 | char *get_in_split_path(base_path, disk_number)
+      |       ^
+fileio.c:2491:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2491 | char *get_out_split_path(base_path, disk_number)
+      |       ^
+fileio.c:2552:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2552 | int close_split(disk_number, tempfile, temp_name)
+      |     ^
+fileio.c:2575:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2575 | size_t bfwrite(buffer, size, count, mode)
+      |        ^
+fileio.c:2867:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2867 | local int utf8_char_bytes(utf8)
+      |           ^
+fileio.c:2909:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2909 | long ucs4_char_from_utf8(utf8)
+      |      ^
+fileio.c:2936:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2936 | local int utf8_from_ucs4_char(utf8buf, ch)
+      |           ^
+fileio.c:2975:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 2975 | local int utf8_to_ucs4_string(utf8, ucs4buf, buflen)
+      |           ^
+fileio.c:3003:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3003 | local int ucs4_string_to_utf8(ucs4, utf8buf, buflen)
+      |           ^
+fileio.c:3107:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3107 | int is_ascii_string(mbstring)
+      |     ^
+fileio.c:3125:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3125 | char *local_to_utf8_string(local_string)
+      |       ^
+fileio.c:3157:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3157 | char *wide_char_to_escape_string(wide_char)
+      |       ^
+fileio.c:3256:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3256 | char *local_to_escape_string(local_string)
+      |       ^
+fileio.c:3282:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3282 | char *wide_to_local_string(wide_string)
+      |       ^
+fileio.c:3288:7: warning: variable 'state_dependent' set but not used [-Wunused-but-set-variable]
+ 3288 |   int state_dependent;
+      |       ^
+fileio.c:3361:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3361 | char *wide_to_escape_string(wide_string)
+      |       ^
+fileio.c:3402:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3402 | char *local_to_display_string(local_string)
+      |       ^
+fileio.c:3472:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3472 | char *utf8_to_local_string(utf8_string)
+      |       ^
+fileio.c:3483:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3483 | char *utf8_to_escape_string(utf8_string)
+      |       ^
+fileio.c:3494:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3494 | zwchar *local_to_wide_string(local_string)
+      |         ^
+fileio.c:3549:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3549 | char *wide_to_utf8_string(wide_string)
+      |       ^
+fileio.c:3570:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3570 | zwchar *utf8_to_wide_string(utf8_string)
+      |         ^
+fileio.c:3746:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3746 | local int optionerr(buf, err, optind, islong)
+      |           ^
+fileio.c:3782:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3782 | char **copy_args(args, max_args)
+      |        ^
+fileio.c:3819:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3819 | int free_args(args)
+      |     ^
+fileio.c:3846:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3846 | int insert_arg(pargs, arg, at_arg, free_args)
+      |     ^
+fileio.c:3940:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 3940 | local unsigned long get_shortopt(args, argnum, optchar, negated, value,
+      |                     ^
+fileio.c:4177:21: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 4177 | local unsigned long get_longopt(args, argnum, optchar, negated, value,
+      |                     ^
+fileio.c:4555:15: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 4555 | unsigned long get_option(pargs, argc, argnum, optchar, value,
+      |               ^
+fileio.c:3734:24: warning: unused variable 'no_arg_files_err' [-Wunused-const-variable]
+ 3734 | static ZCONST char Far no_arg_files_err[] = "argument files not enabled\n";
+      |                        ^~~~~~~~~~~~~~~~
+32 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o util_.o util.c
+In file included from util.c:28:
+./timezone.c:635:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  635 | time_t mktime(tm)
+      |        ^
+./timezone.c:743:8: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  743 | time_t mkgmtime(tm)
+      |        ^
+util.c:664:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  664 | int namecmp(string1, string2)
+      |     ^
+util.c:723:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  723 | char *str_iso_to_oem(dst, src)
+      |       ^
+util.c:1109:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1109 | char *zip_fzofft( val, pre, post)
+      |       ^
+util.c:1158:7: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1158 | char *zip_fuzofft( val, pre, post)
+      |       ^
+util.c:1207:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1207 | int DisplayNumString(file, i)
+      |     ^
+util.c:1229:9: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1229 | uzoff_t ReadNumString( numstring )
+      |         ^
+util.c:1293:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1293 | int WriteNumString( num, outstring )
+      |     ^
+util.c:1419:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1419 | int abbrevmatch (matchstring, abbrev, case_sensitive, minmatch)
+      |     ^
+43 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o unix_.o unix/unix.c
+10 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o crc32_.o crc32.c
+crc32.c:680:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  680 | ulg crc32(crc, buf, len)
+      |     ^
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC -DUTIL -o crypt_.o crypt.c
+1 warning generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zipnote.c
+crypt.c:139:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  139 | int update_keys(__G__ c)
+      |     ^
+./crypt.h:110:28: note: expanded from macro 'update_keys'
+  110 | #  define  update_keys     zp_update_keys
+      |                            ^
+crypt.c:159:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  159 | void init_keys(__G__ passwd)
+      |      ^
+./crypt.h:111:28: note: expanded from macro 'init_keys'
+  111 | #  define  init_keys       zp_init_keys
+      |                            ^
+crypt.c:207:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  207 | void crypthead(passwd, crc)
+      |      ^
+crypt.c:246:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  246 | int zipcloak(z, passwd)
+      |     ^
+crypt.c:333:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  333 | int zipbare(z, passwd)
+      |     ^
+zipnote.c:72:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   72 | int set_filetype(out_path)
+      |     ^
+zipnote.c:101:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  101 | int rename_split(temp_name, out_path)
+      |     ^
+zipnote.c:120:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  120 | void zipmessage_nl(a, nl)
+      |      ^
+zipnote.c:139:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  139 | void zipmessage(a, b)
+      |      ^
+zipnote.c:153:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  153 | void ziperr(c, h)
+      |      ^
+zipnote.c:174:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  174 | local void handler(s)
+      |            ^
+zipnote.c:186:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  186 | void zipwarn(a, b)
+      |      ^
+zipnote.c:313:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  313 | local void putclean(s, n)
+      |            ^
+zipnote.c:338:13: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  338 | local char *zgetline(buf, size)
+      |             ^
+zipnote.c:361:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  361 | local int catalloc(a, s)
+      |           ^
+zipnote.c:384:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  384 | int main(argc, argv)
+      |     ^
+5 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -c -I. -DUNIX -DIZ_ISO2OEM_ARRAY -O3 -DUIDGID_NOT_16BIT -DLARGE_FILE_SUPPORT -DUNICODE_SUPPORT -DNO_RMDIR -DNO_STRCHR -DNO_STRRCHR -DNO_RENAME -DNO_MKTEMP -DNO_MKTIME -DNO_MKSTEMP -DNO_ERRNO -DHAVE_DIRENT_H -DHAVE_TERMIOS_H -DNO_VALLOC zipsplit.c
+zipsplit.c:96:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   96 | int set_filetype(out_path)
+      |     ^
+zipsplit.c:131:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  131 | int rename_split(temp_name, out_path)
+      |     ^
+zipsplit.c:150:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  150 | void zipmessage_nl(a, nl)
+      |      ^
+zipsplit.c:169:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  169 | void zipmessage(a, b)
+      |      ^
+zipsplit.c:183:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  183 | local zvoid *talloc(s)
+      |              ^
+zipsplit.c:196:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  196 | local void tfree(p)
+      |            ^
+zipsplit.c:224:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  224 | void ziperr(c, h)
+      |      ^
+zipsplit.c:249:12: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  249 | local void handler(s)
+      |            ^
+zipsplit.c:261:6: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  261 | void zipwarn(a, b)
+      |      ^
+zipsplit.c:356:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  356 | local extent simple(a, n, c, d)
+      |              ^
+zipsplit.c:384:11: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  384 | local int descmp(a, b)
+      |           ^
+zipsplit.c:393:14: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  393 | local extent greedy(a, n, c, d)
+      |              ^
+zipsplit.c:496:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  496 |   fgets(m, 10, stdin);
+      |   ^~~~~~~~~~~~~~~~~~~
+zipsplit.c:502:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  502 | int main(argc, argv)
+      |     ^
+zipsplit.c:884:7: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  884 |       fgets(m, 10, stdin);
+      |       ^~~~~~~~~~~~~~~~~~~
+11 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zip  zip.o zipfile.o zipup.o fileio.o util.o globals.o crypt.o ttyio.o unix.o crc32.o zbz2err.o deflate.o trees.o  
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipcloak  zipcloak.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o   crypt_.o ttyio.o 
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipnote  zipnote.o  zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o  
+15 warnings generated.
+aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipsplit  zipsplit.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o  
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/zip30'
++ mkdir -p bfd
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zip zip.o zipfile.o zipup.o fileio.o util.o globals.o crypt.o ttyio.o unix.o crc32.o zbz2err.o deflate.o trees.o
+GNU ld (GNU Binutils) 2.43
++ mv zip bfd/
++ cd bfd
++ eu-strip --remove-comment -f zip.debug zip
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipcloak zipcloak.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o crypt_.o ttyio.o
+GNU ld (GNU Binutils) 2.43
++ mv zipcloak bfd/
++ cd bfd
++ eu-strip --remove-comment -f zipcloak.debug zipcloak
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipnote zipnote.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o
+GNU ld (GNU Binutils) 2.43
++ mv zipnote bfd/
++ cd bfd
++ eu-strip --remove-comment -f zipnote.debug zipnote
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipsplit zipsplit.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o
+GNU ld (GNU Binutils) 2.43
++ mv zipsplit bfd/
++ cd bfd
++ eu-strip --remove-comment -f zipsplit.debug zipsplit
++ mkdir -p lld
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zip zip.o zipfile.o zipup.o fileio.o util.o globals.o crypt.o ttyio.o unix.o crc32.o zbz2err.o deflate.o trees.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zip lld/
++ cd lld
++ eu-strip --remove-comment -f zip.debug zip
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipcloak zipcloak.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o crypt_.o ttyio.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zipcloak lld/
++ cd lld
++ eu-strip --remove-comment -f zipcloak.debug zipcloak
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipnote zipnote.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zipnote lld/
++ cd lld
++ eu-strip --remove-comment -f zipnote.debug zipnote
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -DLARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -fPIC -pie -o zipsplit zipsplit.o zipfile_.o fileio_.o util_.o globals.o unix_.o crc32_.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv zipsplit lld/
++ cd lld
++ eu-strip --remove-comment -f zipsplit.debug zipsplit

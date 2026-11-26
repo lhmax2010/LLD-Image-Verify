@@ -1,0 +1,12 @@
+https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261120.145751/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm
+fae028aa562a2d0995b072b278c784d1451a05fd9a7ec386450b8a09f787ad9b  results/2026-11-25-linker-evidence/cache/clang-accel/20261120.145751-clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm
+VCS platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126
+/emul/usr/bin/armv7l-tizen-linux-gnueabi-clang
+/emul/usr/bin/clang
+/emul/usr/bin/clang-22
+/emul/usr/bin/ld.lld
+/emul/usr/bin/lld
+/emul/usr/bin/llvm-rtdyld
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+#CLANG_POSTIN#

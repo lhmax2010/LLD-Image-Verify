@@ -1,0 +1,24 @@
+#!/bin/bash
+set -eux
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c blocksort.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c huffman.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c crctable.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c randtable.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c compress.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c decompress.c
+armv7l-tizen-linux-gnueabi-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c bzlib.c
+mkdir -p default
+armv7l-tizen-linux-gnueabi-clang  -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+mv libbz2.so.1.0.8 default/
+cp default/libbz2.so.1.0.8 default/unstripped.so
+(cd default && eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8)
+mkdir -p bfd
+armv7l-tizen-linux-gnueabi-clang -fuse-ld=bfd -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+mv libbz2.so.1.0.8 bfd/
+cp bfd/libbz2.so.1.0.8 bfd/unstripped.so
+(cd bfd && eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8)
+mkdir -p lld
+armv7l-tizen-linux-gnueabi-clang -fuse-ld=lld -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+mv libbz2.so.1.0.8 lld/
+cp lld/libbz2.so.1.0.8 lld/unstripped.so
+(cd lld && eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8)

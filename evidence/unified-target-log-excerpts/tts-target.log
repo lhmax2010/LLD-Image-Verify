@@ -1,0 +1,4 @@
+aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/tts.buildlog.txt
+1070:[   78s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/tts-1.100.10-1.aarch64/usr/bin/tts_getengine
+armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/tts.buildlog.txt
+1065:[  100s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/tts-1.100.10-1.arm/usr/bin/tts_getengine

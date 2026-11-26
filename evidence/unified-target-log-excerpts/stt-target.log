@@ -1,0 +1,4 @@
+aarch64 https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/aarch64/succeeded/stt.buildlog.txt
+704:[   59s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/stt-1.110.1-1.aarch64/usr/bin/voice_getengine
+armv7l https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/stt.buildlog.txt
+804:[   94s] -- Installing: /home/abuild/rpmbuild/BUILDROOT/stt-1.110.1-1.arm/usr/bin/voice_getengine

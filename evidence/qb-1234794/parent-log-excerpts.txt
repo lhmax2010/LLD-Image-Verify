@@ -1,0 +1,69 @@
+   6 04:25:46,752 DEBUG - Child step names of step 'master': [TRIGGER, BUILD_ABS, BUILD, SNAPSHOT, IMAGE]
+   7 04:25:46,754 DEBUG - Child steps to trigger sequentially: [master>TRIGGER, master>BUILD_ABS, master>BUILD, master>SNAPSHOT, master>IMAGE]
+  12 04:25:46,892 DEBUG - Child step names of step 'TRIGGER': [Change_Variable_To_File, Chk_Abnormal_Input_Variables, Update_Meta_for_RBS, Src_Server_Sync, Parallel_Build, Src_Server_Clear, AggregateReport]
+  13 04:25:46,893 DEBUG - Child steps to trigger sequentially: [master>TRIGGER>Change_Variable_To_File, master>TRIGGER>Chk_Abnormal_Input_Variables, master>TRIGGER>Update_Meta_for_RBS, master>TRIGGER>Src_Server_Sync, master>TRIGGER>Parallel_Build, master>TRIGGER>Src_Server_Clear, master>TRIGGER>AggregateReport]
+  55 04:25:48,120 INFO  - reference -> build_id change: base_url : http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.061318/repos/standard
+ 209 04:25:48,121 INFO  - platform/upstream/llvm@f346dd75e87de324dc2abe61454ca1c49969d12d
+ 369 04:25:48,122 INFO  - platform/upstream/llvm@f346dd75e87de324dc2abe61454ca1c49969d12d
+ 383 04:25:48,122 INFO  - BUILD_TYPE:
+ 384 04:25:48,122 INFO  - ---------------------------------
+1183 04:25:48,125 INFO  - %_toolchain %{?_toolchain_override}%{!?_toolchain_override:clang}
+1184 04:25:48,125 INFO  - %toolchain_is() %((echo "%_toolchain" | %{__grep} -qE "%{1}") && echo 1 || echo 0)
+1251 04:25:48,125 INFO  - Preinstall: qemu-accel-%{build_hostarch}-armv7l
+1252 04:25:48,125 INFO  - Runscripts: qemu-accel-%{build_hostarch}-armv7l
+1253 04:25:48,125 INFO  - Preinstall: clang-accel-%{build_hostarch}-armv7l
+1254 04:25:48,125 INFO  - Runscripts: clang-accel-%{build_hostarch}-armv7l
+1267 04:25:48,125 INFO  - Preinstall: qemu-accel-%{build_hostarch}-aarch64
+1268 04:25:48,125 INFO  - Runscripts: qemu-accel-%{build_hostarch}-aarch64
+1269 04:25:48,125 INFO  - Preinstall: clang-accel-%{build_hostarch}-aarch64
+1270 04:25:48,125 INFO  - Runscripts: clang-accel-%{build_hostarch}-aarch64
+1325 04:25:48,125 INFO  - Preinstall: util-linux util-linux-su
+1330 04:25:48,125 INFO  - Required: binutils glibc rpm-build libtool
+1331 04:25:48,125 INFO  - 
+1332 04:25:48,125 INFO  - Support: gcc gcc-c++
+1333 04:25:48,125 INFO  - Support: clang llvm-devel
+1334 04:25:48,125 INFO  - Support: glibc-locale
+1404 04:25:48,126 INFO  - %build_ldflags -Wl,-z,relro,--as-needed%{?_ldflags_arch_extra} %{__ldflags_toolchain}
+1588 export TARGET_SNAPSHOT_URL='http://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539'
+1597 export QB_TRIGGER_ID='1234794'
+1767 04:27:31,697 INFO  -                build_type: Fulluild_category: RBS
+1768 04:27:31,697 INFO  - build_reference: Live
+1769 04:27:31,697 INFO  - target_snapshot_url: http://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539
+1777 04:27:31,698 INFO  -                base_path_url: standard http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.061318/repos/standard
+2366 04:27:42,005 DEBUG - Child step names of step 'Parallel_Build': [Trigger_Each_Build]
+2367 04:27:42,006 INFO  - Processing repetition 'REPO_ARCHS' of child step 'Trigger_Each_Build'...
+2368 04:27:42,010 INFO  - Checking step execute condition...
+2369 04:27:42,010 INFO  - Step execute condition satisfied, executing...
+2370 04:27:42,132 INFO  - Executing pre-execute action...
+2371 04:27:42,132 INFO  - Running step...
+2372 04:27:42,133 WARN  - use_ngbs from project_env: yes
+2373 21:27:12,355 INFO  - Executing post-execute action...
+2468 21:27:15,819 DEBUG - Child step names of step 'SNAPSHOT': [Update_Trigger_Description, Snapshot_Create, Trigger_Image_Create]
+2469 21:27:15,820 DEBUG - Child steps to trigger sequentially: [master>SNAPSHOT>Update_Trigger_Description, master>SNAPSHOT>Snapshot_Create, master>SNAPSHOT>Trigger_Image_Create]
+2488       <td> Build Type </td>
+2489       <td>Full</td>
+2490    </tr>
+2492       <td> Build Reference </td>
+2493       <td>Live</td>
+2494    </tr>
+2500       <td> Base URL </td>
+2501       <td>http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/reference</td>
+2502    </tr>
+2503    <tr>
+2646 21:27:17,681 INFO  - target_snapshot_url: http://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539
+2654 21:27:48,398 INFO  -                base_path_url: standard http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.061318/repos/standard
+2665 21:27:48,398 INFO  - 	tizen-base-toolchain_20261119.042539
+2666 21:27:48,398 INFO  - 	[{'Name': 'standard', 'Architectures': ['armv7l', 'aarch64', 'x86_64']}]
+2668 21:27:48,398 INFO  - 	RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539
+2669 21:27:48,398 INFO  - 	['http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.061318']
+2690 21:27:48,398 INFO  - prepare_trigger_data, images: {}
+2691 21:27:48,398 INFO  - trigger_data in trigger_image_creation: {}
+2696 21:27:48,710 INFO  - Running step...
+2697 21:27:48,710 DEBUG - Child step names of step 'Trigger_Image_Create': [Trigger_Each_Image_Create]
+2698 21:27:48,710 INFO  - Processing repetition 'KS_NAME' of child step 'Trigger_Each_Image_Create'...
+2699 21:27:48,711 INFO  - Executing post-execute action...
+2700 21:27:48,899 INFO  - Executing post-execute action...
+2701 21:27:49,046 INFO  - Checking step execute condition...
+2702 21:27:49,046 INFO  - Step execute condition not satisfied, step will be skipped.
+2703 21:27:49,156 INFO  - Executing post-execute action...
+2704 

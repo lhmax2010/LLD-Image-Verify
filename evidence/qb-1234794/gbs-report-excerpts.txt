@@ -1,0 +1,6 @@
+  16 <td>armv7l</td>
+  18 succeeded: 258
+  23 <td>aarch64</td>
+  25 succeeded: 258
+  30 <td>x86_64</td>
+  32 succeeded: 263

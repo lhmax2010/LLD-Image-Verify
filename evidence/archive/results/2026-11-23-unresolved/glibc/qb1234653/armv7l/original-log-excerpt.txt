@@ -1,0 +1,5 @@
+532: [  142s] checking version of /usr/lib/gcc/armv7l-tizen-linux-gnueabi/14.2.0/../../../../armv7l-tizen-linux-gnueabi/bin/ld... 2.43, ok
+22566: [  339s] + armv7l-tizen-linux-gnueabi-gcc -static -O2 -fno-inline-functions -fstack-protector-strong --param=ssp-buffer-size=4 -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -Os /home/abuild/rpmbuild/SOURCES/glibc_post_upgrade.c -o glibc_post_upgrade -L. -Bcsu -DREMOVE_TLS_DIRS -DREMOVE_PPC_OPTIMIZE_POWER5 '-DLIBDIR="/lib"' '-DGCONV_MODULES_DIR="/usr/lib/gconv"'
+26157: [  542s] + install -m 0700 build/glibc_post_upgrade /home/abuild/rpmbuild/BUILDROOT/glibc-2.40-1.9.arm/usr/sbin
+27050: [  572s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/glibc-2.40-1.9.arm/usr/sbin/glibc_post_upgrade
+27305: [  620s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/glibc-2.40-1.9.armv7l.rpm

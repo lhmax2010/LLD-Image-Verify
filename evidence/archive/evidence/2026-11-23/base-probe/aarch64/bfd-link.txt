@@ -1,0 +1,2 @@
+["qemu-arm64-static", "-L", "/tmp/tizen-lld-base-probe-20261117/aarch64/tools", "-E", "LD_LIBRARY_PATH=/tmp/tizen-lld-base-probe-20261117/aarch64/tools/usr/lib64:/home/linhao/lss/qb-1234653-linker-audit/extracted/tizen-headed-aarch64/rootfs/usr/lib64", "/tmp/tizen-lld-base-probe-20261117/aarch64/tools/usr/bin/ld.bfd", "-shared", "-m", "aarch64linux", "-z", "relro", "--version-script", "/tmp/tizen-lld-base-probe-20261117/aarch64/control.map", "-o", "/tmp/tizen-lld-base-probe-20261117/aarch64/bfd.so", "/tmp/tizen-lld-base-probe-20261117/aarch64/control.o"]
+

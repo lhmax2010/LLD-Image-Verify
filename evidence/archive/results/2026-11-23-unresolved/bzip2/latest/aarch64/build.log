@@ -1,0 +1,29 @@
+taskset -c 0,1 bwrap --unshare-all --new-session --die-with-parent --clearenv --ro-bind /tmp/toybox-linker-repro.klbdzx/gbs-aarch64/local/BUILD-ROOTS/scratch.aarch64.0 / --dev /dev --proc /proc --tmpfs /tmp --bind /tmp/lld-unresolved.lkZbPR/replay-latest-aarch64 /home/abuild/rpmbuild/BUILD --chdir /home/abuild/rpmbuild/BUILD/bzip2-1.0.8 --setenv PATH /usr/bin:/usr/sbin:/bin:/sbin --setenv LC_ALL C bash ./replay.sh
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c blocksort.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c huffman.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c crctable.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c randtable.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c compress.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c decompress.c
++ aarch64-tizen-linux-gnu-clang -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -fPIC -fpic -fPIC -Wall -Winline -O2 -g -D_FILE_OFFSET_BITS=64 -c bzlib.c
++ mkdir -p default
++ aarch64-tizen-linux-gnu-clang -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv libbz2.so.1.0.8 default/
++ cp default/libbz2.so.1.0.8 default/unstripped.so
++ cd default
++ eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8
++ mkdir -p bfd
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+GNU ld (GNU Binutils) 2.43
++ mv libbz2.so.1.0.8 bfd/
++ cp bfd/libbz2.so.1.0.8 bfd/unstripped.so
++ cd bfd
++ eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8
++ mkdir -p lld
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -shared -Wl,-soname -Wl,libbz2.so.1 -o libbz2.so.1.0.8 blocksort.o huffman.o crctable.o randtable.o compress.o decompress.o bzlib.o
+LLD 22.1.8 (compatible with GNU linkers)
++ mv libbz2.so.1.0.8 lld/
++ cp lld/libbz2.so.1.0.8 lld/unstripped.so
++ cd lld
++ eu-strip --remove-comment -f libbz2.so.1.0.8.debug libbz2.so.1.0.8

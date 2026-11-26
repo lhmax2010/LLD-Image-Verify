@@ -1,0 +1,1744 @@
+taskset -c 0,1 bwrap --unshare-all --new-session --die-with-parent --clearenv --ro-bind /tmp/toybox-linker-repro-old.QoVOAM/gbs-aarch64/local/BUILD-ROOTS/scratch.aarch64.0 / --dev /dev --proc /proc --tmpfs /tmp --bind /tmp/lld-sed-tzdata.R4AQni/qb1234653/aarch64/build-sed-2 /home/abuild/rpmbuild/BUILD --ro-bind /tmp/lld-sed-tzdata.R4AQni/qb1234653/aarch64/build-sed-2/compiler-rt/usr/lib64/clang/22 /usr/lib64/clang/22 --chdir /home/abuild/rpmbuild/BUILD/sed-4.1c --setenv PATH /usr/bin:/usr/sbin:/bin:/sbin --setenv LC_ALL C bash ./replay.sh
++ umask 022
++ install -m 755 /usr/lib/rpm/config.guess ./build-aux/config.guess
++ export AR=llvm-ar RANLIB=llvm-ranlib
++ AR=llvm-ar
++ RANLIB=llvm-ranlib
++ export 'CFLAGS=-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC'
++ CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC'
++ export 'LDFLAGS= -pie'
++ LDFLAGS=' -pie'
++ export CC=aarch64-tizen-linux-gnu-clang CXX=aarch64-tizen-linux-gnu-clang++
++ CC=aarch64-tizen-linux-gnu-clang
++ CXX=aarch64-tizen-linux-gnu-clang++
++ ./configure --build=aarch64-tizen-linux-gnu --host=aarch64-tizen-linux-gnu --program-prefix= --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib64 --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --disable-nls --without-included-regex aarch64-tizen-linux
+configure: WARNING: you should use --build, --host, --target
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for gawk... gawk
+checking whether make sets $(MAKE)... yes
+checking for aarch64-tizen-linux-gnu-gcc... aarch64-tizen-linux-gnu-clang
+checking for C compiler default output file name... a.out
+checking whether the C compiler works... yes
+checking whether we are cross compiling... no
+checking for suffix of executables... 
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether aarch64-tizen-linux-gnu-clang accepts -g... yes
+checking for aarch64-tizen-linux-gnu-clang option to accept ISO C89... none needed
+checking for style of include used by make... GNU
+checking dependency style of aarch64-tizen-linux-gnu-clang... gcc3
+checking for aarch64-tizen-linux-gnu-ranlib... llvm-ranlib
+checking how to run the C preprocessor... aarch64-tizen-linux-gnu-clang -E
+checking for grep that handles long lines and -e... /usr/bin/grep
+checking for egrep... /usr/bin/grep -E
+checking for AIX... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking minix/config.h usability... no
+checking minix/config.h presence... no
+checking for minix/config.h... no
+checking whether it is safe to define __EXTENSIONS__... yes
+checking build system type... aarch64-tizen-linux-gnu
+checking host system type... aarch64-tizen-linux-gnu
+checking for ld used by GCC... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for shared library run path origin... done
+checking whether imported symbols can be declared weak... yes
+checking pthread.h usability... yes
+checking pthread.h presence... yes
+checking for pthread.h... yes
+checking for pthread_kill in -lpthread... yes
+checking for pthread_rwlock_t... yes
+checking for multithread API to use... posix
+checking for strerror in -lcposix... no
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking for long file names... yes
+checking whether -lcP is needed... no
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking io.h usability... no
+checking io.h presence... no
+checking for io.h... no
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking locale.h usability... yes
+checking locale.h presence... yes
+checking for locale.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking alloca.h usability... yes
+checking alloca.h presence... yes
+checking for alloca.h... yes
+checking stddef.h usability... yes
+checking stddef.h presence... yes
+checking for stddef.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking wchar.h usability... yes
+checking wchar.h presence... yes
+checking for wchar.h... yes
+checking wctype.h usability... yes
+checking wctype.h presence... yes
+checking for wctype.h... yes
+checking sys/file.h usability... yes
+checking sys/file.h presence... yes
+checking for sys/file.h... yes
+checking mcheck.h usability... yes
+checking mcheck.h presence... yes
+checking for mcheck.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/param.h usability... yes
+checking sys/param.h presence... yes
+checking for sys/param.h... yes
+checking for stdint.h... (cached) yes
+checking for sys/stat.h... (cached) yes
+checking for an ANSI C-conforming const... yes
+checking for size_t... yes
+checking for ssize_t... yes
+checking for vprintf... yes
+checking for _doprnt... no
+checking whether NLS is requested... no
+checking for msgfmt... no
+checking for gmsgfmt... :
+checking for xgettext... no
+checking for msgmerge... no
+checking whether we are using the GNU C Library 2 or newer... yes
+checking for simple visibility declarations... yes
+checking for inline... inline
+checking for stdint.h... yes
+checking for working alloca.h... yes
+checking for alloca... yes
+checking for stdlib.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for getpagesize... yes
+checking for working mmap... yes
+checking whether integer division by zero raises SIGFPE... no
+checking for inttypes.h... yes
+checking for unsigned long long int... yes
+checking for inttypes.h... (cached) yes
+checking whether the inttypes.h PRIxNN macros are broken... no
+checking argz.h usability... yes
+checking argz.h presence... yes
+checking for argz.h... yes
+checking for inttypes.h... (cached) yes
+checking for limits.h... (cached) yes
+checking for unistd.h... (cached) yes
+checking for sys/param.h... (cached) yes
+checking for getcwd... yes
+checking for getegid... yes
+checking for geteuid... yes
+checking for getgid... yes
+checking for getuid... yes
+checking for mempcpy... yes
+checking for munmap... yes
+checking for stpcpy... yes
+checking for strcasecmp... yes
+checking for strdup... yes
+checking for strtoul... yes
+checking for tsearch... yes
+checking for argz_count... yes
+checking for argz_stringify... yes
+checking for argz_next... yes
+checking for __fsetlocking... yes
+checking whether feof_unlocked is declared... yes
+checking whether fgets_unlocked is declared... yes
+checking for iconv... yes
+checking for iconv declaration... 
+         extern size_t iconv (iconv_t cd, char * *inbuf, size_t *inbytesleft, char * *outbuf, size_t *outbytesleft);
+checking for NL_LOCALE_NAME macro... yes
+checking for bison... no
+checking for signed... yes
+checking for long long int... yes
+checking for long double... yes
+checking for wchar_t... yes
+checking for wint_t... yes
+checking for intmax_t... yes
+checking whether printf() supports POSIX/XSI format strings... yes
+checking whether we are using the GNU C Library 2.1 or newer... yes
+checking for stdint.h... (cached) yes
+checking for SIZE_MAX... yes
+checking for stdint.h... (cached) yes
+checking for CFPreferencesCopyAppValue... no
+checking for CFLocaleCopyCurrent... no
+checking for ptrdiff_t... yes
+checking for stddef.h... (cached) yes
+checking for stdlib.h... (cached) yes
+checking for string.h... (cached) yes
+checking for asprintf... yes
+checking for fwprintf... yes
+checking for putenv... yes
+checking for setenv... yes
+checking for setlocale... yes
+checking for snprintf... yes
+checking for wcslen... yes
+checking whether _snprintf is declared... no
+checking whether _snwprintf is declared... no
+checking whether getc_unlocked is declared... yes
+checking for nl_langinfo and CODESET... yes
+checking for LC_MESSAGES... yes
+checking for CFPreferencesCopyAppValue... (cached) no
+checking for CFLocaleCopyCurrent... (cached) no
+checking whether to use NLS... no
+checking whether strerror_r is declared... yes
+checking for strerror_r... yes
+checking whether strerror_r returns char *... yes
+checking whether getdelim is declared... yes
+checking getopt.h usability... yes
+checking getopt.h presence... yes
+checking for getopt.h... yes
+checking for getopt_long_only... yes
+checking whether optreset is declared... no
+checking for working GNU getopt function... yes
+checking whether getenv is declared... yes
+checking whether getc_unlocked is declared... (cached) yes
+checking for setlocale... (cached) yes
+checking for iswprint... yes
+checking for mbsinit... yes
+checking for mbrtowc... yes
+checking for mempcpy... (cached) yes
+checking for wcrtomb... yes
+checking for wcscoll... yes
+checking for lstat... yes
+checking for wcwidth... yes
+checking for isatty... yes
+checking for bcopy... yes
+checking for bzero... yes
+checking for isascii... yes
+checking for memcpy... yes
+checking for memset... yes
+checking for strchr... yes
+checking for strtoul... (cached) yes
+checking for popen... yes
+checking for pathconf... yes
+checking for isblank... yes
+checking for fchown... yes
+checking for fchmod... yes
+checking for btowc... yes
+checking for mbstate_t... yes
+checking whether mbrtowc and mbstate_t are properly declared... yes
+checking for working memcmp... yes
+checking for C/C++ restrict keyword... restrict
+checking whether stat file-mode macros are broken... no
+checking for stdbool.h that conforms to C99... yes
+checking for _Bool... yes
+checking whether clearerr_unlocked is declared... yes
+checking whether feof_unlocked is declared... (cached) yes
+checking whether ferror_unlocked is declared... yes
+checking whether fflush_unlocked is declared... yes
+checking whether fgets_unlocked is declared... (cached) yes
+checking whether fputc_unlocked is declared... yes
+checking whether fputs_unlocked is declared... yes
+checking whether fread_unlocked is declared... yes
+checking whether fwrite_unlocked is declared... yes
+checking whether getchar_unlocked is declared... yes
+checking whether putc_unlocked is declared... yes
+checking whether putchar_unlocked is declared... yes
+checking sys/acl.h usability... no
+checking sys/acl.h presence... no
+checking for sys/acl.h... no
+checking for acl... no
+checking for library containing acl_get_file... no
+checking acl/libacl.h usability... no
+checking acl/libacl.h presence... no
+checking for acl/libacl.h... no
+checking for acl_get_file... no
+checking for acl_get_fd... no
+checking for acl_set_file... no
+checking for acl_set_fd... no
+checking for acl_free... no
+checking for acl_from_mode... no
+checking for acl_from_text... no
+checking for acl_to_text... no
+checking for acl_delete_def_file... no
+checking for acl_entries... no
+checking for acl_extended_file... no
+checking for error_at_line... yes
+checking for getdelim... yes
+checking whether getline is declared... yes
+checking for getline... yes
+checking for working getline function... yes
+checking for stdlib.h... (cached) yes
+checking for GNU libc compatible malloc... yes
+checking for iswcntrl... yes
+checking for memchr... yes
+checking for memmove... yes
+checking for working mkstemp... yes
+checking for obstacks... yes
+checking for mbstate_t... (cached) yes
+checking whether mbrtowc and mbstate_t are properly declared... (cached) yes
+checking for ssize_t... yes
+checking absolute name of <stdint.h>... ///usr/lib64/clang/22/include/stdint.h
+checking whether stdint.h conforms to C99... no
+checking sys/inttypes.h usability... no
+checking sys/inttypes.h presence... no
+checking for sys/inttypes.h... no
+checking sys/bitypes.h usability... yes
+checking sys/bitypes.h presence... yes
+checking for sys/bitypes.h... yes
+checking for bit size of ptrdiff_t... 64
+checking for bit size of sig_atomic_t... 32
+checking for bit size of size_t... 64
+checking for bit size of wchar_t... 32
+checking for bit size of wint_t... 32
+checking whether sig_atomic_t is signed... yes
+checking whether wchar_t is signed... no
+checking whether wint_t is signed... no
+checking for ptrdiff_t integer literal suffix... l
+checking for sig_atomic_t integer literal suffix... 
+checking for size_t integer literal suffix... ul
+checking for wchar_t integer literal suffix... u
+checking for wint_t integer literal suffix... u
+checking for strncasecmp... yes
+checking for strerror... yes
+checking for strverscmp... yes
+checking whether mkdir is declared... yes
+checking for unistd.h... (cached) yes
+checking whether wcwidth is declared... yes
+checking for lstat... (cached) yes
+checking for readlink... yes
+checking how to build HTML documentation... not built
+configure: creating ./config.status
+config.status: creating bootstrap.sh
+config.status: creating testsuite/version.good
+config.status: creating Makefile
+config.status: creating doc/Makefile
+config.status: creating lib/Makefile
+config.status: creating sed/Makefile
+config.status: creating testsuite/Makefile
+config.status: creating po/Makefile.in
+config.status: creating intl/Makefile
+config.status: creating config.h
+config.status: executing depfiles commands
+config.status: executing po-directories commands
+config.status: creating po/POTFILES
+config.status: creating po/Makefile
++ /bin/make -j2 'CFLAGS=-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate' 'LDFLAGS= -pie -fuse-ld=bfd'
+/bin/make  all-recursive
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+Making all in intl
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+Making all in lib
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+cp -f ./alloca_.h alloca.h-t
+rm -f configmake.h-t configmake.h
+( \
+  echo '#define PREFIX "/usr"'; \
+  echo '#define EXEC_PREFIX "/usr"'; \
+  echo '#define BINDIR "/usr/bin"'; \
+  echo '#define SBINDIR "/usr/sbin"'; \
+  echo '#define LIBEXECDIR "/usr/libexec"'; \
+  echo '#define DATAROOTDIR "/usr/share"'; \
+  echo '#define DATADIR "/usr/share"'; \
+  echo '#define SYSCONFDIR "/etc"'; \
+  echo '#define SHAREDSTATEDIR "/usr/com"'; \
+  echo '#define LOCALSTATEDIR "/var"'; \
+  echo '#define INCLUDEDIR "/usr/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/usr/share/doc/sed"'; \
+  echo '#define INFODIR "/usr/share/info"'; \
+  echo '#define HTMLDIR "/usr/share/doc/sed"'; \
+  echo '#define DVIDIR "/usr/share/doc/sed"'; \
+  echo '#define PDFDIR "/usr/share/doc/sed"'; \
+  echo '#define PSDIR "/usr/share/doc/sed"'; \
+  echo '#define LIBDIR "/usr/lib64"'; \
+  echo '#define LISPDIR ""'; \
+  echo '#define LOCALEDIR "/usr/share/locale"'; \
+  echo '#define MANDIR "/usr/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGLIBDIR "/usr/lib64/sed"'; \
+  echo '#define PKGINCLUDEDIR "/usr/include/sed"'; \
+  echo '#define PKGDATADIR "/usr/share/sed"'; \
+:) | sed '/""/d' >configmake.h-t
+mv -f alloca.h-t alloca.h
+mv configmake.h-t configmake.h
+rm -f stdint.h-t stdint.h
+sed -e 's/@''HAVE_WCHAR_H''@/1/g' \
+    -e 's/@''HAVE_STDINT_H''@/1/g' \
+    -e 's|@''ABSOLUTE_STDINT_H''@|"///usr/lib64/clang/22/include/stdint.h"|g' \
+    -e 's/@''HAVE_SYS_TYPES_H''@/1/g' \
+    -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+    -e 's/@''HAVE_SYS_INTTYPES_H''@/0/g' \
+    -e 's/@''HAVE_SYS_BITYPES_H''@/1/g' \
+    -e 's/@''HAVE_LONG_LONG_INT''@/1/g' \
+    -e 's/@''BITSIZEOF_PTRDIFF_T''@/64/g' \
+    -e 's/@''PTRDIFF_T_SUFFIX''@/l/g' \
+    -e 's/@''BITSIZEOF_SIG_ATOMIC_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_SIG_ATOMIC_T''@/1/g' \
+    -e 's/@''SIG_ATOMIC_T_SUFFIX''@//g' \
+    -e 's/@''BITSIZEOF_SIZE_T''@/64/g' \
+    -e 's/@''SIZE_T_SUFFIX''@/ul/g' \
+    -e 's/@''BITSIZEOF_WCHAR_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_WCHAR_T''@/0/g' \
+    -e 's/@''WCHAR_T_SUFFIX''@/u/g' \
+    -e 's/@''BITSIZEOF_WINT_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_WINT_T''@/0/g' \
+    -e 's/@''WINT_T_SUFFIX''@/u/g' \
+    < ./stdint_.h > stdint.h-t
+mv stdint.h-t stdint.h
+/bin/make  all-am
+make[3]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT localcharset.o -MD -MP -MF ".deps/localcharset.Tpo" -c -o localcharset.o localcharset.c; \
+then mv -f ".deps/localcharset.Tpo" ".deps/localcharset.Po"; else rm -f ".deps/localcharset.Tpo"; exit 1; fi
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT strnlen1.o -MD -MP -MF ".deps/strnlen1.Tpo" -c -o strnlen1.o strnlen1.c; \
+then mv -f ".deps/strnlen1.Tpo" ".deps/strnlen1.Po"; else rm -f ".deps/strnlen1.Tpo"; exit 1; fi
+warning: warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+
+1 warning generated.
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT xalloc-die.o -MD -MP -MF ".deps/xalloc-die.Tpo" -c -o xalloc-die.o xalloc-die.c; \
+then mv -f ".deps/xalloc-die.Tpo" ".deps/xalloc-die.Po"; else rm -f ".deps/xalloc-die.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+In file included from xalloc-die.c:29:
+./gettext.h:147:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  147 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:171:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  171 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:186:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  186 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:217:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  217 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:232:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  232 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+6 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT acl.o -MD -MP -MF ".deps/acl.Tpo" -c -o acl.o acl.c; \
+then mv -f ".deps/acl.Tpo" ".deps/acl.Po"; else rm -f ".deps/acl.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT exitfail.o -MD -MP -MF ".deps/exitfail.Tpo" -c -o exitfail.o exitfail.c; \
+then mv -f ".deps/exitfail.Tpo" ".deps/exitfail.Po"; else rm -f ".deps/exitfail.Tpo"; exit 1; fi
+1 warning generated.
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT mbchar.o -MD -MP -MF ".deps/mbchar.Tpo" -c -o mbchar.o mbchar.c; \
+then mv -f ".deps/mbchar.Tpo" ".deps/mbchar.Po"; else rm -f ".deps/mbchar.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT quote.o -MD -MP -MF ".deps/quote.Tpo" -c -o quote.o quote.c; \
+then mv -f ".deps/quote.Tpo" ".deps/quote.Po"; else rm -f ".deps/quote.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT quotearg.o -MD -MP -MF ".deps/quotearg.Tpo" -c -o quotearg.o quotearg.c; \
+then mv -f ".deps/quotearg.Tpo" ".deps/quotearg.Po"; else rm -f ".deps/quotearg.Tpo"; exit 1; fi
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT strcasecmp.o -MD -MP -MF ".deps/strcasecmp.Tpo" -c -o strcasecmp.o strcasecmp.c; \
+then mv -f ".deps/strcasecmp.Tpo" ".deps/strcasecmp.Po"; else rm -f ".deps/strcasecmp.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+In file included from quotearg.c:35:
+./gettext.h:147:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  147 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:171:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  171 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:186:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  186 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:217:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  217 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:232:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  232 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT xmalloc.o -MD -MP -MF ".deps/xmalloc.Tpo" -c -o xmalloc.o xmalloc.c; \
+then mv -f ".deps/xmalloc.Tpo" ".deps/xmalloc.Po"; else rm -f ".deps/xmalloc.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+rm -f t-charset.alias charset.alias
+6 warnings generated.
+/bin/sh ./config.charset 'aarch64-tizen-linux-gnu' > t-charset.alias
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-add.sin > t-ref-add.sed
+mv t-ref-add.sed ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-del.sin > t-ref-del.sed
+mv t-ref-del.sed ref-del.sed
+rm -f libsed.a
+ar cru libsed.a localcharset.o strnlen1.o xalloc-die.o acl.o exitfail.o mbchar.o quote.o quotearg.o strcasecmp.o xmalloc.o 
+llvm-ranlib libsed.a
+make[3]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+Making all in po
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+Making all in sed
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT sed.o -MD -MP -MF ".deps/sed.Tpo" -c -o sed.o sed.c; \
+then mv -f ".deps/sed.Tpo" ".deps/sed.Po"; else rm -f ".deps/sed.Tpo"; exit 1; fi
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT compile.o -MD -MP -MF ".deps/compile.Tpo" -c -o compile.o compile.c; \
+then mv -f ".deps/compile.Tpo" ".deps/compile.Po"; else rm -f ".deps/compile.Tpo"; exit 1; fi
+warning: warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+
+sed.c:95:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   95 | usage(status)
+      | ^
+sed.c:156:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  156 | main(argc, argv)
+      | ^
+compile.c:194:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  194 | bad_command(ch)
+      | ^
+compile.c:205:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  205 | bad_prog(why)
+      | ^
+compile.c:226:7: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  226 | inchar()
+      |       ^
+      |        void
+compile.c:248:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  248 | savchar(ch)
+      | ^
+compile.c:268:12: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  268 | in_nonblank()
+      |            ^
+      |             void
+compile.c:280:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  280 | in_integer(ch)
+      | ^
+compile.c:296:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  296 | add_then_next(b, ch)
+      | ^
+compile.c:306:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  306 | convert_number(result, buf, bufend, base, maxdigits, default_char)
+      | ^
+compile.c:354:14: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  354 | read_filename()
+      |              ^
+      |               void
+compile.c:379:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | get_openfile(file_ptrs, mode, fail)
+      | ^
+compile.c:382:11: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  382 |      bool fail;
+      |           ^
+compile.c:377:90: note: previous declaration is here
+  377 | static struct output *get_openfile P_((struct output **file_ptrs, const char *mode, bool fail));
+      |                                                                                          ^
+compile.c:427:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  427 | next_cmd_entry(vectorp)
+      | ^
+compile.c:453:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  453 | snarf_char_class(b, cur_stat)
+      | ^
+compile.c:533:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  533 | match_slash(slash, regex)
+      | ^
+compile.c:535:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  535 |   bool regex;
+      |        ^
+compile.c:531:55: note: previous declaration is here
+  531 | static struct buffer *match_slash P_((int slash, bool regex));
+      |                                                       ^
+compile.c:592:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  592 | mark_subst_opts(cmd)
+      | ^
+compile.c:684:11: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  684 | read_label()
+      |           ^
+      |            void
+compile.c:711:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  711 | setup_label(list, idx, name, err_info)
+      | ^
+compile.c:728:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  728 | release_label(list_head)
+      | ^
+compile.c:749:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  749 | new_replacement(text, length, type)
+      | ^
+compile.c:767:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  767 | setup_replacement(sub, text, length)
+      | ^
+compile.c:863:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  863 | read_text(buf, leadin_ch)
+      | ^
+compile.c:923:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  923 | compile_address(addr, ch)
+      | ^
+compile.c:1018:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1018 | compile_program(vector)
+      | ^
+compile.c:1361:31: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1361 |                 cur_cmd->x.translate = translate;
+      |                                      ^ ~~~~~~~~~
+compile.c:1390:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1390 | normalize_text(buf, len, buftype)
+      | ^
+compile.c:1549:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1549 | compile_string(cur_program, str, len)
+      | ^
+compile.c:1579:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1579 | compile_file(cur_program, cmdfile)
+      | ^
+compile.c:1606:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1606 | check_final_program(program)
+      | ^
+compile.c:1674:18: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+ 1674 | rewind_read_files()
+      |                  ^
+      |                   void
+compile.c:1685:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1685 | finish_program(program)
+      | ^
+3 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT execute.o -MD -MP -MF ".deps/execute.Tpo" -c -o execute.o execute.c; \
+then mv -f ".deps/execute.Tpo" ".deps/execute.Po"; else rm -f ".deps/execute.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+In file included from execute.c:38:
+../lib/acl.h:28:40: warning: declaration of 'struct stat' will not be visible outside of this function [-Wvisibility]
+   28 | int file_has_acl (char const *, struct stat const *);
+      |                                        ^
+execute.c:196:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  196 | resize_line(lb, len)
+      | ^
+execute.c:229:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  229 | str_append(to, string, length)
+      | ^
+execute.c:268:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  268 | str_append_modified(to, string, length, type)
+      | ^
+execute.c:379:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | line_init(buf, state, initial_size)
+      | ^
+execute.c:402:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  402 | line_reset(buf, state)
+      | ^
+execute.c:424:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  424 | line_copy(from, to, state)
+      | ^
+execute.c:427:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  427 |   bool state;
+      |        ^
+execute.c:422:68: note: previous declaration is here
+  422 | static void line_copy P_((struct line *from, struct line *to, bool state));
+      |                                                                    ^
+execute.c:460:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  460 | line_append(from, to, state)
+      | ^
+execute.c:463:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  463 |   bool state;
+      |        ^
+execute.c:458:70: note: previous declaration is here
+  458 | static void line_append P_((struct line *from, struct line *to, bool state));
+      |                                                                      ^
+execute.c:479:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  479 | line_exchange(a, b, state)
+      | ^
+execute.c:482:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  482 |   bool state;
+      |        ^
+execute.c:477:68: note: previous declaration is here
+  477 | static void line_exchange P_((struct line *a, struct line *b, bool state));
+      |                                                                    ^
+execute.c:504:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  504 | read_always_fail(input)
+      | ^
+execute.c:512:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  512 | read_file_line(input)
+      | ^
+execute.c:535:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  535 | output_missing_newline(outf)
+      | ^
+execute.c:547:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  547 | flush_output(fp)
+      | ^
+execute.c:556:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  556 | output_line(text, length, nl, outf)
+      | ^
+execute.c:559:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  559 |   bool nl;
+      |        ^
+execute.c:554:55: note: previous declaration is here
+  554 | static void output_line P_((const char *, size_t, bool, struct output *));
+      |                                                       ^
+execute.c:577:17: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  577 | next_append_slot()
+      |                 ^
+      |                  void
+execute.c:596:21: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  596 | release_append_queue()
+      |                     ^
+      |                      void
+execute.c:613:18: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  613 | dump_append_queue()
+      |                  ^
+      |                   void
+execute.c:651:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  651 | get_backup_file_name(name)
+      | ^
+execute.c:659:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:659:17: note: place parentheses around the assignment to silence this warning
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^                          
+      |        (                                   )
+execute.c:659:17: note: use '==' to turn this assignment into an equality comparison
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^
+      |                 ==
+execute.c:667:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:667:17: note: place parentheses around the assignment to silence this warning
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^                          
+      |        (                                   )
+execute.c:667:17: note: use '==' to turn this assignment into an equality comparison
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^
+      |                 ==
+execute.c:684:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  684 | open_next_file(name, input)
+      | ^
+execute.c:713:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |           ~~^~~~~~~~~~~~~~~~~~~~~~
+execute.c:713:13: note: place parentheses around the assignment to silence this warning
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |             ^                     
+      |           (                       )
+execute.c:713:13: note: use '==' to turn this assignment into an equality comparison
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |             ^
+      |             ==
+execute.c:738:9: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  738 |         fchown (output_fd, -1, st.st_gid);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:752:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  752 | closedown(input)
+      | ^
+execute.c:786:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  786 | reset_addresses(vec)
+      | ^
+execute.c:805:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  805 | read_pattern_space(input, the_program, append)
+      | ^
+execute.c:808:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  808 |   bool append;
+      |        ^
+execute.c:803:73: note: previous declaration is here
+  803 | static bool read_pattern_space P_((struct input *, struct vector *, bool));
+      |                                                                         ^
+execute.c:849:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  849 | last_file_with_data_p(input)
+      | ^
+execute.c:874:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  874 | test_eof(input)
+      | ^
+execute.c:895:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  895 | match_an_address_p(addr, input)
+      | ^
+execute.c:933:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  933 | match_address_p(cmd, input)
+      | ^
+execute.c:1012:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1012 | do_list(line_len)
+      | ^
+execute.c:1075:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1075 | append_replacement (buf, p, regs, repl_mod)
+      | ^
+execute.c:1121:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1121 | do_subst(sub)
+      | ^
+execute.c:1334:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1334 | execute_program(vec, input)
+      | ^
+execute.c:1767:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1767 | process_files(the_program, argv)
+      | ^
+32 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT regexp.o -MD -MP -MF ".deps/regexp.Tpo" -c -o regexp.o regexp.c; \
+then mv -f ".deps/regexp.Tpo" ".deps/regexp.Po"; else rm -f ".deps/regexp.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+regexp.c:47:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   47 | compile_regex_1 (new_regex, needed_sub)
+      | ^
+regexp.c:138:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  138 | compile_regex(b, flags, needed_sub)
+      | ^
+regexp.c:209:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  209 | match_regex(regex, buf, buflen, buf_start_offset, regarray, regsize)
+      | ^
+41 warnings generated.
+4 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT fmt.o -MD -MP -MF ".deps/fmt.Tpo" -c -o fmt.o fmt.c; \
+then mv -f ".deps/fmt.Tpo" ".deps/fmt.Po"; else rm -f ".deps/fmt.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT mbcs.o -MD -MP -MF ".deps/mbcs.Tpo" -c -o mbcs.o mbcs.c; \
+then mv -f ".deps/mbcs.Tpo" ".deps/mbcs.Po"; else rm -f ".deps/mbcs.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+fmt.c:235:15: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  235 | get_paragraph ()
+      |               ^
+      |                void
+mbcs.c:31:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   31 | int brlen (ch, cur_stat)
+      |     ^
+mbcs.c:52:17: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   52 | initialize_mbcs ()
+      |                 ^
+      |                  void
+3 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate -MT utils.o -MD -MP -MF ".deps/utils.Tpo" -c -o utils.o utils.c; \
+then mv -f ".deps/utils.Tpo" ".deps/utils.Po"; else rm -f ".deps/utils.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+2 warnings generated.
+utils.c:99:8: warning: unused variable 'fd' [-Wunused-variable]
+   99 |           int fd = fileno (open_files->fp);
+      |               ^~
+utils.c:117:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  117 | utils_fp_name(fp)
+      | ^
+utils.c:136:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  136 | register_open_file (fp, name, temp)
+      | ^
+utils.c:163:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  163 | ck_fopen(name, mode, fail)
+      | ^
+utils.c:166:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  166 |   bool fail;
+      |        ^
+./utils.h:25:61: note: previous declaration is here
+   25 | FILE *ck_fopen P_((const char *name, const char *mode, bool fail));
+      |                                                             ^
+utils.c:185:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  185 | ck_fdopen(fd, name, mode, fail)
+      | ^
+utils.c:189:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  189 |   bool fail;
+      |        ^
+./utils.h:26:70: note: previous declaration is here
+   26 | FILE *ck_fdopen P_((int fd, const char *name, const char *mode, bool fail));
+      |                                                                      ^
+utils.c:207:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  207 | ck_mkstemp (p_filename, tmpdir, base)
+      | ^
+utils.c:243:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | ck_fwrite(ptr, size, nmemb, stream)
+      | ^
+utils.c:258:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  258 | ck_fread(ptr, size, nmemb, stream)
+      | ^
+utils.c:272:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  272 | ck_getline(text, buflen, stream)
+      | ^
+utils.c:278:7: warning: variable 'result' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+  278 |   if (!ferror (stream))
+      |       ^~~~~~~~~~~~~~~~
+utils.c:284:10: note: uninitialized use occurs here
+  284 |   return result;
+      |          ^~~~~~
+utils.c:278:3: note: remove the 'if' if its condition is always true
+  278 |   if (!ferror (stream))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+  279 |     result = getline (text, buflen, stream);
+utils.c:277:13: note: initialize the variable 'result' to silence this warning
+  277 |   int result;
+      |             ^
+      |              = 0
+utils.c:289:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  289 | ck_fflush(stream)
+      | ^
+utils.c:299:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  299 | ck_fclose(stream)
+      | ^
+utils.c:336:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  336 | do_ck_fclose(fp)
+      | ^
+utils.c:428:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  428 | ck_rename (from, to, unlink_if_fail)
+      | ^
+utils.c:457:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  457 | ck_malloc(size)
+      | ^
+utils.c:468:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  468 | ck_realloc(ptr, size)
+      | ^
+utils.c:489:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  489 | ck_strdup(str)
+      | ^
+utils.c:498:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  498 | ck_memdup(buf, len)
+      | ^
+utils.c:508:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  508 | ck_free(ptr)
+      | ^
+utils.c:529:12: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  529 | init_buffer()
+      |            ^
+      |             void
+utils.c:539:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  539 | get_buffer(b)
+      | ^
+utils.c:546:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  546 | size_buffer(b)
+      | ^
+utils.c:554:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  554 | resize_buffer(b, newlen)
+      | ^
+utils.c:576:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  576 | add_buffer(b, p, n)
+      | ^
+utils.c:590:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  590 | add1_buffer(b, c)
+      | ^
+utils.c:614:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  614 | free_buffer(b)
+      | ^
+29 warnings generated.
+aarch64-tizen-linux-gnu-clang  -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-generate  -pie -fuse-ld=bfd -o sed  sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o ../lib/libsed.a 
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+Making all in doc
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+Making all in testsuite
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
++ export LLVM_PROFILE_FILE=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed-%p.profraw
++ LLVM_PROFILE_FILE=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed-%p.profraw
++ /bin/make -j2 check
+Making check in intl
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+Making check in lib
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+/bin/make  check-am
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+make[2]: Nothing to be done for 'check-am'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+Making check in po
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+Making check in sed
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+Making check in doc
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+make[1]: Nothing to be done for 'check'.
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+Making check in testsuite
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+/bin/make  
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+/bin/make  check-TESTS
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+PASS: appquit
+PASS: enable
+PASS: sep
+PASS: inclib
+PASS: 8bit
+PASS: newjis
+PASS: xabcx
+PASS: dollar
+PASS: noeol
+PASS: noeolw
+PASS: modulo
+PASS: numsub
+PASS: numsub2
+PASS: numsub3
+PASS: numsub4
+PASS: numsub5
+PASS: 0range
+PASS: bkslashes
+PASS: head
+PASS: madding
+PASS: mac-mf
+PASS: empty
+PASS: xbxcx
+PASS: xbxcx3
+PASS: recall
+PASS: recall2
+PASS: xemacs
+PASS: fasts
+PASS: uniq
+PASS: manis
+PASS: khadafy
+PASS: linecnt
+PASS: eval
+PASS: distrib
+PASS: 8to7
+PASS: y-bracket
+PASS: y-newline
+PASS: allsub
+PASS: cv-vars
+PASS: classes
+PASS: middle
+PASS: bsd
+PASS: stdin
+PASS: flipcase
+PASS: insens
+PASS: subwrite
+PASS: writeout
+PASS: readin
+PASS: help
+PASS: version
+PASS: file
+PASS: quiet
+PASS: factor
+PASS: binary3
+PASS: binary2
+PASS: binary
+PASS: dc
+===================
+All 57 tests passed
+===================
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+++ find . -maxdepth 1 -name '*.profraw'
+++ wc -l
++ profile_count=185
++ printf 'Training raw profiles: %s\n' 185
+Training raw profiles: 185
++ llvm-profdata merge -output=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata ./sed-7737.profraw ./sed-7754.profraw ./sed-7771.profraw ./sed-7788.profraw ./sed-7805.profraw ./sed-7822.profraw ./sed-7839.profraw ./sed-7856.profraw ./sed-7873.profraw ./sed-7890.profraw ./sed-7911.profraw ./sed-7928.profraw ./sed-7945.profraw ./sed-7962.profraw ./sed-7979.profraw ./sed-7996.profraw ./sed-8013.profraw ./sed-8030.profraw ./sed-8047.profraw ./sed-8064.profraw ./sed-8081.profraw ./sed-8098.profraw ./sed-8115.profraw ./sed-8132.profraw ./sed-8149.profraw ./sed-8166.profraw ./sed-8183.profraw ./sed-8200.profraw ./sed-8217.profraw ./sed-8234.profraw ./sed-8251.profraw ./sed-8268.profraw ./sed-8288.profraw ./sed-8290.profraw ./sed-8295.profraw ./sed-8297.profraw ./sed-8300.profraw ./sed-8305.profraw ./sed-8307.profraw ./sed-8310.profraw ./sed-8313.profraw ./sed-8316.profraw ./sed-8336.profraw ./sed-8353.profraw ./sed-8370.profraw ./sed-8387.profraw ./sed-8404.profraw ./sed-8421.profraw ./sed-8438.profraw ./sed-8455.profraw ./sed-8474.profraw ./sed-8476.profraw ./sed-8478.profraw ./sed-8480.profraw ./sed-8482.profraw ./sed-8484.profraw ./sed-8486.profraw ./sed-8488.profraw ./sed-8490.profraw ./sed-8492.profraw ./sed-8494.profraw ./sed-8496.profraw ./sed-8498.profraw ./sed-8500.profraw ./sed-8502.profraw ./sed-8504.profraw ./sed-8506.profraw ./sed-8508.profraw ./sed-8510.profraw ./sed-8512.profraw ./sed-8514.profraw ./sed-8516.profraw ./sed-8518.profraw ./sed-8520.profraw ./sed-8522.profraw ./sed-8524.profraw ./sed-8526.profraw ./sed-8534.profraw ./sed-8542.profraw ./sed-8550.profraw ./sed-8558.profraw ./sed-8566.profraw ./sed-8574.profraw ./sed-8582.profraw ./sed-8590.profraw ./sed-8598.profraw ./sed-8606.profraw ./sed-8614.profraw ./sed-8622.profraw ./sed-8630.profraw ./sed-8638.profraw ./sed-8646.profraw ./sed-8654.profraw ./sed-8662.profraw ./sed-8670.profraw ./sed-8680.profraw ./sed-8688.profraw ./sed-8696.profraw ./sed-8704.profraw ./sed-8712.profraw ./sed-8720.profraw ./sed-8728.profraw ./sed-8736.profraw ./sed-8744.profraw ./sed-8752.profraw ./sed-8760.profraw ./sed-8768.profraw ./sed-8776.profraw ./sed-8784.profraw ./sed-8792.profraw ./sed-8800.profraw ./sed-8808.profraw ./sed-8816.profraw ./sed-8824.profraw ./sed-8832.profraw ./sed-8840.profraw ./sed-8848.profraw ./sed-8856.profraw ./sed-8864.profraw ./sed-8872.profraw ./sed-8880.profraw ./sed-8888.profraw ./sed-8896.profraw ./sed-8904.profraw ./sed-8912.profraw ./sed-8920.profraw ./sed-8928.profraw ./sed-8936.profraw ./sed-8944.profraw ./sed-8952.profraw ./sed-8960.profraw ./sed-8968.profraw ./sed-8976.profraw ./sed-8984.profraw ./sed-8992.profraw ./sed-9000.profraw ./sed-9008.profraw ./sed-9016.profraw ./sed-9024.profraw ./sed-9032.profraw ./sed-9040.profraw ./sed-9049.profraw ./sed-9057.profraw ./sed-9067.profraw ./sed-9077.profraw ./sed-9085.profraw ./sed-9093.profraw ./sed-9101.profraw ./sed-9109.profraw ./sed-9117.profraw ./sed-9125.profraw ./sed-9133.profraw ./sed-9141.profraw ./sed-9149.profraw ./sed-9157.profraw ./sed-9165.profraw ./sed-9173.profraw ./sed-9181.profraw ./sed-9191.profraw ./sed-9201.profraw ./sed-9209.profraw ./sed-9217.profraw ./sed-9225.profraw ./sed-9234.profraw ./sed-9254.profraw ./sed-9256.profraw ./sed-9261.profraw ./sed-9264.profraw ./sed-9281.profraw ./sed-9298.profraw ./sed-9315.profraw ./sed-9334.profraw ./sed-9353.profraw ./sed-9370.profraw ./sed-9371.profraw ./sed-9375.profraw ./sed-9376.profraw ./sed-9394.profraw ./sed-9411.profraw ./sed-9428.profraw ./sed-9445.profraw ./sed-9462.profraw ./sed-9479.profraw ./sed-9496.profraw ./sed-9513.profraw
++ sha256sum sed.profdata
+cd0857899d143f6448f92d2f4bb05befd101ab3c16111a692c92c4304111bfc9  sed.profdata
++ /bin/make clean
+Making clean in testsuite
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+test -z "" || rm -f 
+test -z "tmp* core *.core  *.*out *.log" || rm -f tmp* core *.core  *.*out *.log
+test x. = x. || rm -f readin.in2 eval.in2
+rm -f *.o
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+Making clean in doc
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+test -z "sed.html" || rm -f sed.html
+rm -rf sed.aux sed.cp sed.cps sed.fn sed.fns sed.ky sed.log sed.op sed.pg \
+  sed.tmp sed.toc sed.tp sed.vr sed.vrs sed.dvi sed.pdf sed.ps \
+  sed.html
+rm -f vti.tmp
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+Making clean in sed
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+test -z "sed" || rm -f sed
+rm -f *.o
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+Making clean in po
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+rm -f *.insert-header
+rm -f remove-potcdate.sed
+rm -f stamp-poT
+rm -f core core.* sed.po sed.1po sed.2po *.new.po
+rm -fr *.o
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+Making clean in lib
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+test -z "configmake.h configmake.h-t charset.alias ref-add.sed ref-del.sed" || rm -f configmake.h configmake.h-t charset.alias ref-add.sed ref-del.sed
+test -z "libsed.a" || rm -f libsed.a
+rm -f *.o
+test -z "core *.stackdump alloca.h alloca.h-t getopt.h getopt.h-t stdbool.h stdbool.h-t stdint.h stdint.h-t sys/stat.h sys/stat.h-t unistd.h" || rm -f core *.stackdump alloca.h alloca.h-t getopt.h getopt.h-t stdbool.h stdbool.h-t stdint.h stdint.h-t sys/stat.h sys/stat.h-t unistd.h
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+Making clean in intl
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+rm -f *.a *.la *.o *.obj *.lo core core.*
+rm -f libgnuintl.h libintl.h charset.alias ref-add.sed ref-del.sed
+rm -f -r .libs _libs
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+Making clean in .
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[1]: Nothing to be done for 'clean-am'.
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
++ /bin/make -j2 'CFLAGS=-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata'
+/bin/make  all-recursive
+make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+Making all in intl
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/intl'
+Making all in lib
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+cp -f ./alloca_.h alloca.h-t
+rm -f configmake.h-t configmake.h
+( \
+  echo '#define PREFIX "/usr"'; \
+  echo '#define EXEC_PREFIX "/usr"'; \
+  echo '#define BINDIR "/usr/bin"'; \
+  echo '#define SBINDIR "/usr/sbin"'; \
+  echo '#define LIBEXECDIR "/usr/libexec"'; \
+  echo '#define DATAROOTDIR "/usr/share"'; \
+  echo '#define DATADIR "/usr/share"'; \
+  echo '#define SYSCONFDIR "/etc"'; \
+  echo '#define SHAREDSTATEDIR "/usr/com"'; \
+  echo '#define LOCALSTATEDIR "/var"'; \
+  echo '#define INCLUDEDIR "/usr/include"'; \
+  echo '#define OLDINCLUDEDIR "/usr/include"'; \
+  echo '#define DOCDIR "/usr/share/doc/sed"'; \
+  echo '#define INFODIR "/usr/share/info"'; \
+  echo '#define HTMLDIR "/usr/share/doc/sed"'; \
+  echo '#define DVIDIR "/usr/share/doc/sed"'; \
+  echo '#define PDFDIR "/usr/share/doc/sed"'; \
+  echo '#define PSDIR "/usr/share/doc/sed"'; \
+  echo '#define LIBDIR "/usr/lib64"'; \
+  echo '#define LISPDIR ""'; \
+  echo '#define LOCALEDIR "/usr/share/locale"'; \
+  echo '#define MANDIR "/usr/share/man"'; \
+  echo '#define MANEXT ""'; \
+  echo '#define PKGLIBDIR "/usr/lib64/sed"'; \
+  echo '#define PKGINCLUDEDIR "/usr/include/sed"'; \
+  echo '#define PKGDATADIR "/usr/share/sed"'; \
+:) | sed '/""/d' >configmake.h-t
+mv -f alloca.h-t alloca.h
+mv configmake.h-t configmake.h
+rm -f stdint.h-t stdint.h
+sed -e 's/@''HAVE_WCHAR_H''@/1/g' \
+    -e 's/@''HAVE_STDINT_H''@/1/g' \
+    -e 's|@''ABSOLUTE_STDINT_H''@|"///usr/lib64/clang/22/include/stdint.h"|g' \
+    -e 's/@''HAVE_SYS_TYPES_H''@/1/g' \
+    -e 's/@''HAVE_INTTYPES_H''@/1/g' \
+    -e 's/@''HAVE_SYS_INTTYPES_H''@/0/g' \
+    -e 's/@''HAVE_SYS_BITYPES_H''@/1/g' \
+    -e 's/@''HAVE_LONG_LONG_INT''@/1/g' \
+    -e 's/@''BITSIZEOF_PTRDIFF_T''@/64/g' \
+    -e 's/@''PTRDIFF_T_SUFFIX''@/l/g' \
+    -e 's/@''BITSIZEOF_SIG_ATOMIC_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_SIG_ATOMIC_T''@/1/g' \
+    -e 's/@''SIG_ATOMIC_T_SUFFIX''@//g' \
+    -e 's/@''BITSIZEOF_SIZE_T''@/64/g' \
+    -e 's/@''SIZE_T_SUFFIX''@/ul/g' \
+    -e 's/@''BITSIZEOF_WCHAR_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_WCHAR_T''@/0/g' \
+    -e 's/@''WCHAR_T_SUFFIX''@/u/g' \
+    -e 's/@''BITSIZEOF_WINT_T''@/32/g' \
+    -e 's/@''HAVE_SIGNED_WINT_T''@/0/g' \
+    -e 's/@''WINT_T_SUFFIX''@/u/g' \
+    < ./stdint_.h > stdint.h-t
+mv stdint.h-t stdint.h
+/bin/make  all-am
+make[3]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT localcharset.o -MD -MP -MF ".deps/localcharset.Tpo" -c -o localcharset.o localcharset.c; \
+then mv -f ".deps/localcharset.Tpo" ".deps/localcharset.Po"; else rm -f ".deps/localcharset.Tpo"; exit 1; fi
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT strnlen1.o -MD -MP -MF ".deps/strnlen1.Tpo" -c -o strnlen1.o strnlen1.c; \
+then mv -f ".deps/strnlen1.Tpo" ".deps/strnlen1.Po"; else rm -f ".deps/strnlen1.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT xalloc-die.o -MD -MP -MF ".deps/xalloc-die.Tpo" -c -o xalloc-die.o xalloc-die.c; \
+then mv -f ".deps/xalloc-die.Tpo" ".deps/xalloc-die.Po"; else rm -f ".deps/xalloc-die.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+In file included from xalloc-die.c:29:
+./gettext.h:147:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  147 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:171:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  171 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:186:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  186 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:217:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  217 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:232:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  232 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT acl.o -MD -MP -MF ".deps/acl.Tpo" -c -o acl.o acl.c; \
+then mv -f ".deps/acl.Tpo" ".deps/acl.Po"; else rm -f ".deps/acl.Tpo"; exit 1; fi
+6 warnings generated.
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT exitfail.o -MD -MP -MF ".deps/exitfail.Tpo" -c -o exitfail.o exitfail.c; \
+then mv -f ".deps/exitfail.Tpo" ".deps/exitfail.Po"; else rm -f ".deps/exitfail.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT mbchar.o -MD -MP -MF ".deps/mbchar.Tpo" -c -o mbchar.o mbchar.c; \
+then mv -f ".deps/mbchar.Tpo" ".deps/mbchar.Po"; else rm -f ".deps/mbchar.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT quote.o -MD -MP -MF ".deps/quote.Tpo" -c -o quote.o quote.c; \
+then mv -f ".deps/quote.Tpo" ".deps/quote.Po"; else rm -f ".deps/quote.Tpo"; exit 1; fi
+1 warning generated.
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT quotearg.o -MD -MP -MF ".deps/quotearg.Tpo" -c -o quotearg.o quotearg.c; \
+then mv -f ".deps/quotearg.Tpo" ".deps/quotearg.Po"; else rm -f ".deps/quotearg.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT strcasecmp.o -MD -MP -MF ".deps/strcasecmp.Tpo" -c -o strcasecmp.o strcasecmp.c; \
+then mv -f ".deps/strcasecmp.Tpo" ".deps/strcasecmp.Po"; else rm -f ".deps/strcasecmp.Tpo"; exit 1; fi
+In file included from quotearg.c:35:
+./gettext.h:147:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  147 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:171:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  171 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:186:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  186 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:217:5: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  217 | #if _LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |     ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+./gettext.h:232:6: warning: macro expansion producing 'defined' has undefined behavior [-Wexpansion-to-defined]
+  232 | #if !_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS
+      |      ^
+./gettext.h:145:21: note: expanded from macro '_LIBGETTEXT_HAVE_VARIABLE_SIZE_ARRAYS'
+  145 |   (__GNUC__ >= 3 || defined __cplusplus)
+      |                     ^
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+1 warning generated.
+6 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -I../intl   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT xmalloc.o -MD -MP -MF ".deps/xmalloc.Tpo" -c -o xmalloc.o xmalloc.c; \
+then mv -f ".deps/xmalloc.Tpo" ".deps/xmalloc.Po"; else rm -f ".deps/xmalloc.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+rm -f t-charset.alias charset.alias
+1 warning generated.
+/bin/sh ./config.charset 'aarch64-tizen-linux-gnu' > t-charset.alias
+mv t-charset.alias charset.alias
+rm -f t-ref-add.sed ref-add.sed
+rm -f t-ref-del.sed ref-del.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-add.sin > t-ref-add.sed
+mv t-ref-add.sed ref-add.sed
+sed -e '/^#/d' -e 's/@''PACKAGE''@/sed/g' ref-del.sin > t-ref-del.sed
+mv t-ref-del.sed ref-del.sed
+rm -f libsed.a
+ar cru libsed.a localcharset.o strnlen1.o xalloc-die.o acl.o exitfail.o mbchar.o quote.o quotearg.o strcasecmp.o xmalloc.o 
+llvm-ranlib libsed.a
+make[3]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/lib'
+Making all in po
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/po'
+Making all in sed
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT sed.o -MD -MP -MF ".deps/sed.Tpo" -c -o sed.o sed.c; \
+then mv -f ".deps/sed.Tpo" ".deps/sed.Po"; else rm -f ".deps/sed.Tpo"; exit 1; fi
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT compile.o -MD -MP -MF ".deps/compile.Tpo" -c -o compile.o compile.c; \
+then mv -f ".deps/compile.Tpo" ".deps/compile.Po"; else rm -f ".deps/compile.Tpo"; exit 1; fi
+warning: warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+sed.c:95:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   95 | usage(status)
+      | ^
+sed.c:156:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  156 | main(argc, argv)
+      | ^
+compile.c:194:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  194 | bad_command(ch)
+      | ^
+compile.c:205:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  205 | bad_prog(why)
+      | ^
+compile.c:226:7: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  226 | inchar()
+      |       ^
+      |        void
+compile.c:248:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  248 | savchar(ch)
+      | ^
+compile.c:268:12: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  268 | in_nonblank()
+      |            ^
+      |             void
+compile.c:280:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  280 | in_integer(ch)
+      | ^
+compile.c:296:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  296 | add_then_next(b, ch)
+      | ^
+compile.c:306:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  306 | convert_number(result, buf, bufend, base, maxdigits, default_char)
+      | ^
+compile.c:354:14: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  354 | read_filename()
+      |              ^
+      |               void
+compile.c:379:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | get_openfile(file_ptrs, mode, fail)
+      | ^
+compile.c:382:11: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  382 |      bool fail;
+      |           ^
+compile.c:377:90: note: previous declaration is here
+  377 | static struct output *get_openfile P_((struct output **file_ptrs, const char *mode, bool fail));
+      |                                                                                          ^
+compile.c:427:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  427 | next_cmd_entry(vectorp)
+      | ^
+compile.c:453:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  453 | snarf_char_class(b, cur_stat)
+      | ^
+compile.c:533:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  533 | match_slash(slash, regex)
+      | ^
+compile.c:535:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  535 |   bool regex;
+      |        ^
+compile.c:531:55: note: previous declaration is here
+  531 | static struct buffer *match_slash P_((int slash, bool regex));
+      |                                                       ^
+compile.c:592:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  592 | mark_subst_opts(cmd)
+      | ^
+compile.c:684:11: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  684 | read_label()
+      |           ^
+      |            void
+compile.c:711:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  711 | setup_label(list, idx, name, err_info)
+      | ^
+compile.c:728:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  728 | release_label(list_head)
+      | ^
+compile.c:749:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  749 | new_replacement(text, length, type)
+      | ^
+compile.c:767:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  767 | setup_replacement(sub, text, length)
+      | ^
+compile.c:863:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  863 | read_text(buf, leadin_ch)
+      | ^
+compile.c:923:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  923 | compile_address(addr, ch)
+      | ^
+compile.c:1018:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1018 | compile_program(vector)
+      | ^
+compile.c:1361:31: warning: assigning to 'unsigned char *' from 'char *' converts between pointers to integer types where one is of the unique plain 'char' type and the other is not [-Wpointer-sign]
+ 1361 |                 cur_cmd->x.translate = translate;
+      |                                      ^ ~~~~~~~~~
+compile.c:1390:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1390 | normalize_text(buf, len, buftype)
+      | ^
+compile.c:1549:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1549 | compile_string(cur_program, str, len)
+      | ^
+compile.c:1579:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1579 | compile_file(cur_program, cmdfile)
+      | ^
+compile.c:1606:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1606 | check_final_program(program)
+      | ^
+compile.c:1674:18: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+ 1674 | rewind_read_files()
+      |                  ^
+      |                   void
+compile.c:1685:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1685 | finish_program(program)
+      | ^
+3 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT execute.o -MD -MP -MF ".deps/execute.Tpo" -c -o execute.o execute.c; \
+then mv -f ".deps/execute.Tpo" ".deps/execute.Po"; else rm -f ".deps/execute.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+In file included from execute.c:38:
+../lib/acl.h:28:40: warning: declaration of 'struct stat' will not be visible outside of this function [-Wvisibility]
+   28 | int file_has_acl (char const *, struct stat const *);
+      |                                        ^
+execute.c:196:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  196 | resize_line(lb, len)
+      | ^
+execute.c:229:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  229 | str_append(to, string, length)
+      | ^
+execute.c:268:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  268 | str_append_modified(to, string, length, type)
+      | ^
+execute.c:379:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  379 | line_init(buf, state, initial_size)
+      | ^
+execute.c:402:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  402 | line_reset(buf, state)
+      | ^
+execute.c:424:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  424 | line_copy(from, to, state)
+      | ^
+execute.c:427:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  427 |   bool state;
+      |        ^
+execute.c:422:68: note: previous declaration is here
+  422 | static void line_copy P_((struct line *from, struct line *to, bool state));
+      |                                                                    ^
+execute.c:460:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  460 | line_append(from, to, state)
+      | ^
+execute.c:463:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  463 |   bool state;
+      |        ^
+execute.c:458:70: note: previous declaration is here
+  458 | static void line_append P_((struct line *from, struct line *to, bool state));
+      |                                                                      ^
+execute.c:479:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  479 | line_exchange(a, b, state)
+      | ^
+execute.c:482:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  482 |   bool state;
+      |        ^
+execute.c:477:68: note: previous declaration is here
+  477 | static void line_exchange P_((struct line *a, struct line *b, bool state));
+      |                                                                    ^
+execute.c:504:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  504 | read_always_fail(input)
+      | ^
+execute.c:512:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  512 | read_file_line(input)
+      | ^
+execute.c:535:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  535 | output_missing_newline(outf)
+      | ^
+execute.c:547:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  547 | flush_output(fp)
+      | ^
+execute.c:556:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  556 | output_line(text, length, nl, outf)
+      | ^
+execute.c:559:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  559 |   bool nl;
+      |        ^
+execute.c:554:55: note: previous declaration is here
+  554 | static void output_line P_((const char *, size_t, bool, struct output *));
+      |                                                       ^
+execute.c:577:17: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  577 | next_append_slot()
+      |                 ^
+      |                  void
+execute.c:596:21: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  596 | release_append_queue()
+      |                     ^
+      |                      void
+execute.c:613:18: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  613 | dump_append_queue()
+      |                  ^
+      |                   void
+execute.c:651:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  651 | get_backup_file_name(name)
+      | ^
+execute.c:659:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:659:17: note: place parentheses around the assignment to silence this warning
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^                          
+      |        (                                   )
+execute.c:659:17: note: use '==' to turn this assignment into an equality comparison
+  659 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^
+      |                 ==
+execute.c:667:17: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |        ~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:667:17: note: place parentheses around the assignment to silence this warning
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^                          
+      |        (                                   )
+execute.c:667:17: note: use '==' to turn this assignment into an equality comparison
+  667 |        asterisk = strchr(old_asterisk, '*');
+      |                 ^
+      |                 ==
+execute.c:684:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  684 | open_next_file(name, input)
+      | ^
+execute.c:713:13: warning: using the result of an assignment as a condition without parentheses [-Wparentheses]
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |           ~~^~~~~~~~~~~~~~~~~~~~~~
+execute.c:713:13: note: place parentheses around the assignment to silence this warning
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |             ^                     
+      |           (                       )
+execute.c:713:13: note: use '==' to turn this assignment into an equality comparison
+  713 |       if (p = strrchr(tmpdir, '/'))
+      |             ^
+      |             ==
+execute.c:738:9: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+  738 |         fchown (output_fd, -1, st.st_gid);
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+execute.c:752:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  752 | closedown(input)
+      | ^
+execute.c:786:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  786 | reset_addresses(vec)
+      | ^
+execute.c:805:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  805 | read_pattern_space(input, the_program, append)
+      | ^
+execute.c:808:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  808 |   bool append;
+      |        ^
+execute.c:803:73: note: previous declaration is here
+  803 | static bool read_pattern_space P_((struct input *, struct vector *, bool));
+      |                                                                         ^
+execute.c:849:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  849 | last_file_with_data_p(input)
+      | ^
+execute.c:874:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  874 | test_eof(input)
+      | ^
+execute.c:895:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  895 | match_an_address_p(addr, input)
+      | ^
+execute.c:933:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  933 | match_address_p(cmd, input)
+      | ^
+execute.c:1012:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1012 | do_list(line_len)
+      | ^
+execute.c:1075:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1075 | append_replacement (buf, p, regs, repl_mod)
+      | ^
+execute.c:1121:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1121 | do_subst(sub)
+      | ^
+execute.c:1334:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1334 | execute_program(vec, input)
+      | ^
+execute.c:1767:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+ 1767 | process_files(the_program, argv)
+      | ^
+32 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT regexp.o -MD -MP -MF ".deps/regexp.Tpo" -c -o regexp.o regexp.c; \
+then mv -f ".deps/regexp.Tpo" ".deps/regexp.Po"; else rm -f ".deps/regexp.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+regexp.c:47:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   47 | compile_regex_1 (new_regex, needed_sub)
+      | ^
+regexp.c:138:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  138 | compile_regex(b, flags, needed_sub)
+      | ^
+regexp.c:209:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  209 | match_regex(regex, buf, buflen, buf_start_offset, regarray, regsize)
+      | ^
+4 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT fmt.o -MD -MP -MF ".deps/fmt.Tpo" -c -o fmt.o fmt.c; \
+then mv -f ".deps/fmt.Tpo" ".deps/fmt.Po"; else rm -f ".deps/fmt.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+41 warnings generated.
+fmt.c:235:15: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  235 | get_paragraph ()
+      |               ^
+      |                void
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT mbcs.o -MD -MP -MF ".deps/mbcs.Tpo" -c -o mbcs.o mbcs.c; \
+then mv -f ".deps/mbcs.Tpo" ".deps/mbcs.Po"; else rm -f ".deps/mbcs.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+mbcs.c:31:5: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+   31 | int brlen (ch, cur_stat)
+      |     ^
+mbcs.c:52:17: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   52 | initialize_mbcs ()
+      |                 ^
+      |                  void
+2 warnings generated.
+3 warnings generated.
+if aarch64-tizen-linux-gnu-clang -DHAVE_CONFIG_H -I. -I. -I..  -I../lib -I../intl -I.. -I../lib -I../intl -DLOCALEDIR=\"/usr/share/locale\"   -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -MT utils.o -MD -MP -MF ".deps/utils.Tpo" -c -o utils.o utils.c; \
+then mv -f ".deps/utils.Tpo" ".deps/utils.Po"; else rm -f ".deps/utils.Tpo"; exit 1; fi
+warning: unknown warning option '-Werror=coverage-mismatch' [-Wunknown-warning-option]
+utils.c:99:8: warning: unused variable 'fd' [-Wunused-variable]
+   99 |           int fd = fileno (open_files->fp);
+      |               ^~
+utils.c:117:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  117 | utils_fp_name(fp)
+      | ^
+utils.c:136:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  136 | register_open_file (fp, name, temp)
+      | ^
+utils.c:163:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  163 | ck_fopen(name, mode, fail)
+      | ^
+utils.c:166:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  166 |   bool fail;
+      |        ^
+./utils.h:25:61: note: previous declaration is here
+   25 | FILE *ck_fopen P_((const char *name, const char *mode, bool fail));
+      |                                                             ^
+utils.c:185:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  185 | ck_fdopen(fd, name, mode, fail)
+      | ^
+utils.c:189:8: warning: promoted type 'int' of K&R function parameter is not compatible with the parameter type 'bool' declared in a previous prototype [-Wknr-promoted-parameter]
+  189 |   bool fail;
+      |        ^
+./utils.h:26:70: note: previous declaration is here
+   26 | FILE *ck_fdopen P_((int fd, const char *name, const char *mode, bool fail));
+      |                                                                      ^
+utils.c:207:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  207 | ck_mkstemp (p_filename, tmpdir, base)
+      | ^
+utils.c:243:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  243 | ck_fwrite(ptr, size, nmemb, stream)
+      | ^
+utils.c:258:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  258 | ck_fread(ptr, size, nmemb, stream)
+      | ^
+utils.c:272:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  272 | ck_getline(text, buflen, stream)
+      | ^
+utils.c:278:7: warning: variable 'result' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+  278 |   if (!ferror (stream))
+      |       ^~~~~~~~~~~~~~~~
+utils.c:284:10: note: uninitialized use occurs here
+  284 |   return result;
+      |          ^~~~~~
+utils.c:278:3: note: remove the 'if' if its condition is always true
+  278 |   if (!ferror (stream))
+      |   ^~~~~~~~~~~~~~~~~~~~~
+  279 |     result = getline (text, buflen, stream);
+utils.c:277:13: note: initialize the variable 'result' to silence this warning
+  277 |   int result;
+      |             ^
+      |              = 0
+utils.c:289:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  289 | ck_fflush(stream)
+      | ^
+utils.c:299:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  299 | ck_fclose(stream)
+      | ^
+utils.c:336:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  336 | do_ck_fclose(fp)
+      | ^
+utils.c:428:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  428 | ck_rename (from, to, unlink_if_fail)
+      | ^
+utils.c:457:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  457 | ck_malloc(size)
+      | ^
+utils.c:468:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  468 | ck_realloc(ptr, size)
+      | ^
+utils.c:489:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  489 | ck_strdup(str)
+      | ^
+utils.c:498:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  498 | ck_memdup(buf, len)
+      | ^
+utils.c:508:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  508 | ck_free(ptr)
+      | ^
+utils.c:529:12: warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  529 | init_buffer()
+      |            ^
+      |             void
+utils.c:539:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  539 | get_buffer(b)
+      | ^
+utils.c:546:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  546 | size_buffer(b)
+      | ^
+utils.c:554:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  554 | resize_buffer(b, newlen)
+      | ^
+utils.c:576:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  576 | add_buffer(b, p, n)
+      | ^
+utils.c:590:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  590 | add1_buffer(b, c)
+      | ^
+utils.c:614:1: warning: a function definition without a prototype is deprecated in all versions of C and is not supported in C23 [-Wdeprecated-non-prototype]
+  614 | free_buffer(b)
+      | ^
+29 warnings generated.
+aarch64-tizen-linux-gnu-clang  -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata  -pie -o sed  sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o ../lib/libsed.a 
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/sed'
+Making all in doc
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/doc'
+Making all in testsuite
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[2]: Nothing to be done for 'all'.
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c/testsuite'
+make[2]: Entering directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[2]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
+make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/sed-4.1c'
++ cd sed
++ mkdir bfd
++ aarch64-tizen-linux-gnu-clang -fuse-ld=bfd -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -pie -o sed sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o ../lib/libsed.a
+GNU ld (GNU Binutils) 2.43
++ mv sed bfd/
++ cd bfd
++ eu-strip --remove-comment -f sed.debug sed
++ mkdir lld
++ aarch64-tizen-linux-gnu-clang -fuse-ld=lld -Wl,-v -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv8-a+fp+simd+crc+crypto -mtune=cortex-a53 -g -Wall -Wstrict-prototypes -Wpointer-arith -Wformat-security -fPIC -Wno-error=coverage-mismatch -fprofile-use=/home/abuild/rpmbuild/BUILD/sed-4.1c/sed.profdata -pie -o sed sed.o compile.o execute.o regexp.o fmt.o mbcs.o utils.o ../lib/libsed.a
+LLD 22.1.8 (compatible with GNU linkers)
++ mv sed lld/
++ cd lld
++ eu-strip --remove-comment -f sed.debug sed

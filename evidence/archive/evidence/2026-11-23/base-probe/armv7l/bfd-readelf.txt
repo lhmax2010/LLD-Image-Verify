@@ -1,0 +1,36 @@
+["readelf", "-WVl", "/tmp/tizen-lld-base-probe-20261117/armv7l/bfd.so"]
+
+Elf file type is DYN (Shared object file)
+Entry point 0x0
+There are 6 program headers, starting at offset 52
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  EXIDX          0x000248 0x00000248 0x00000248 0x00008 0x00008 R   0x4
+  LOAD           0x000000 0x00000000 0x00000000 0x00250 0x00250 R E 0x1000
+  LOAD           0x001000 0x00001000 0x00001000 0x0100c 0x0100c RW  0x1000
+  DYNAMIC        0x001000 0x00001000 0x00001000 0x00078 0x00078 RW  0x4
+  GNU_STACK      0x000000 0x00000000 0x00000000 0x00000 0x00000 RW  0x10
+  GNU_RELRO      0x001000 0x00001000 0x00001000 0x01000 0x01000 R   0x1
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .ARM.exidx 
+   01     .hash .gnu.hash .dynsym .dynstr .gnu.version .gnu.version_d .text .ARM.exidx 
+   02     .dynamic .got 
+   03     .dynamic 
+   04     
+   05     .dynamic 
+
+Version symbols section '.gnu.version' contains 5 entries:
+ Addr: 0x00000000000001c2  Offset: 0x000001c2  Link: 3 (.dynsym)
+  000:   0 (*local*)       3 (VERS_2)        2 (VERS_1)        3 (VERS_2)     
+  004:   2 (VERS_1)     
+
+Version definition section '.gnu.version_d' contains 3 entries:
+ Addr: 0x00000000000001cc  Offset: 0x000001cc  Link: 4 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: bfd.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VERS_1
+  0x0038: Rev: 1  Flags: none  Index: 3  Cnt: 2  Name: VERS_2
+  0x0054: Parent 1: VERS_1
+

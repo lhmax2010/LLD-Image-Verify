@@ -1,0 +1,7 @@
+{
+  "image_sha256": "fe32a6a2f09833747ff1821b01ecaae27a1935b4be4080fba8f7fc4ef4959bbb",
+  "rpm_elf_sha256": "fe32a6a2f09833747ff1821b01ecaae27a1935b4be4080fba8f7fc4ef4959bbb",
+  "rpm_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261117.165617/repos/standard/packages/aarch64/glibc-2.40-1.7.aarch64.rpm",
+  "rpm_sha256": "ec75c637f26b6c8a63a39a798bc0aa72bf2ef9afdc6fadf215b1437410e70132",
+  "linker": "GNU ld (GNU Binutils) 2.43"
+}

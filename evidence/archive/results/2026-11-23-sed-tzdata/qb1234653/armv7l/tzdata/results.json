@@ -1,0 +1,53 @@
+{
+  "source_rpm": "tzdata-2026d-1.1.src.rpm",
+  "source_rpm_sha256": "f6bfe6c76806b3511e1cc61e2bacdf6f4ad1a437f53577eca36229df1c320c06",
+  "runtime_rpm": "tzdata-2026d-1.1.armv7l.rpm",
+  "runtime_rpm_sha256": "e315dddc40a5bb864f3424e025911f65e0878aa404f35c6c76d910f1fb8e68e3",
+  "build_log_sha256": "87544cb7d250b5d9e623da99cfb2bec7f7dae23aae541bcc1739d7b90fabf278",
+  "targets": {
+    "zdump": {
+      "image": {
+        "sha256": "e2a35db18d9f5c22f827de6e56ab0f97f293add68abb10c153bde03f1edf7d97",
+        "debug_crc_le_bytes": "dbfe2d00",
+        "sha256_without_debug_crc": "d3f4f95cacb67126dfd34ad7e2ff5a3dffd5df025482a8c5df960cc430587ee6"
+      },
+      "rpm": {
+        "sha256": "e2a35db18d9f5c22f827de6e56ab0f97f293add68abb10c153bde03f1edf7d97",
+        "debug_crc_le_bytes": "dbfe2d00",
+        "sha256_without_debug_crc": "d3f4f95cacb67126dfd34ad7e2ff5a3dffd5df025482a8c5df960cc430587ee6"
+      },
+      "bfd": {
+        "sha256": "580b4b34fe731221c7498522c7765ed6090496f87645f07647c27a2c6c8fc029",
+        "debug_crc_le_bytes": "27475f31",
+        "sha256_without_debug_crc": "d3f4f95cacb67126dfd34ad7e2ff5a3dffd5df025482a8c5df960cc430587ee6"
+      },
+      "lld": {
+        "sha256": "d965a4135218cca4aa2e893fd6730b9b9e5ca4a65d844ad5bc00ab3d96e6399d",
+        "debug_crc_le_bytes": "dc6a9d5f",
+        "sha256_without_debug_crc": "f9cc00881852a41692b6b07306be955f153318349b215957573980daba2292a1"
+      }
+    },
+    "zic": {
+      "image": {
+        "sha256": "b558f9b86c163f3d8c87d078f724a0e24bb49892d0254dc86fe27b2ca35946af",
+        "debug_crc_le_bytes": "86154f5e",
+        "sha256_without_debug_crc": "ac4b45b423753196094960386c1c949f71c6a8e47c954410aefc60829492e976"
+      },
+      "rpm": {
+        "sha256": "b558f9b86c163f3d8c87d078f724a0e24bb49892d0254dc86fe27b2ca35946af",
+        "debug_crc_le_bytes": "86154f5e",
+        "sha256_without_debug_crc": "ac4b45b423753196094960386c1c949f71c6a8e47c954410aefc60829492e976"
+      },
+      "bfd": {
+        "sha256": "31bd1df195e81573fa225470a6adedea33e8c8f64d78c7e182088708e07cb5fe",
+        "debug_crc_le_bytes": "b7744e32",
+        "sha256_without_debug_crc": "ac4b45b423753196094960386c1c949f71c6a8e47c954410aefc60829492e976"
+      },
+      "lld": {
+        "sha256": "edcf121f290cf4589303e2704c48da1254fd155d359f9d225507eadb3ada27bb",
+        "debug_crc_le_bytes": "0d5eb577",
+        "sha256_without_debug_crc": "fc441b69bcbf3e9aed4863b0a121ec983c5f6613bc5588d170a1158a6eace8bb"
+      }
+    }
+  }
+}

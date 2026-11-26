@@ -1,0 +1,24 @@
+{
+  "default": {
+    "sha256": "df3ecb962379bb648af8eef0d941c43f90062e6a6e9aac3dd6bd998e48bcb04b",
+    "debug_crc_le_bytes": "4f8d58d6",
+    "sha256_without_debug_crc": "22db334b18574777e7f40341b3f59374752d7e4391123082f5b83a1e4e74a6e4"
+  },
+  "bfd": {
+    "sha256": "b7e762ca4eaa09e8615d600797cb32c1194dc0515b14268d51919c631dd86fde",
+    "debug_crc_le_bytes": "4e7eb42d",
+    "sha256_without_debug_crc": "e0377fc78ba3a7f1f28c56aa93d621b4f84baabc2b81ac5e1caca652cfb2e3d9"
+  },
+  "lld": {
+    "sha256": "df3ecb962379bb648af8eef0d941c43f90062e6a6e9aac3dd6bd998e48bcb04b",
+    "debug_crc_le_bytes": "4f8d58d6",
+    "sha256_without_debug_crc": "22db334b18574777e7f40341b3f59374752d7e4391123082f5b83a1e4e74a6e4"
+  },
+  "image": {
+    "sha256": "88b4c455937344642f3820d13aed907e2b8ce01866af6d863ff4545558dad494",
+    "debug_crc_le_bytes": "99951c43",
+    "sha256_without_debug_crc": "e0377fc78ba3a7f1f28c56aa93d621b4f84baabc2b81ac5e1caca652cfb2e3d9"
+  },
+  "srpm_sha256": "9b4d7b23c535d54051360e9f618124f7de2e39b290318e3b9577a437395c0b99",
+  "strip_comparison": "Ignoring only the 4-byte CRC at the end of .gnu_debuglink"
+}

@@ -1,0 +1,35 @@
+{
+  "source_rpm": "sed-4.1c-1.7.src.rpm",
+  "source_rpm_sha256": "2ae2280415a752d0fef4c58de442f8b46ea6ee3cc50e2ce98970f39f4aef9cd8",
+  "runtime_rpm": "sed-4.1c-1.7.armv7l.rpm",
+  "runtime_rpm_sha256": "9aa878a521569953e9f16bd68561fa6bb743f98a7c74fd8781dd276ffc77bafa",
+  "build_log_sha256": "e2516bd8a0355430f3cffcc6c2147fb6110de3c12ba5933e1cc9d88da06d03a7",
+  "targets": {
+    "sed": {
+      "image": {
+        "sha256": "a440846667a2bc4c082501d4a332994921432658786b738472fefb09bfba86ae",
+        "debug_crc_le_bytes": "1aac6ac0",
+        "sha256_without_debug_crc": "2d3a9ccec2a4d5fa5237cf5d3e2e10dfa782c23624b5540ec042745084458b8c"
+      },
+      "rpm": {
+        "sha256": "a440846667a2bc4c082501d4a332994921432658786b738472fefb09bfba86ae",
+        "debug_crc_le_bytes": "1aac6ac0",
+        "sha256_without_debug_crc": "2d3a9ccec2a4d5fa5237cf5d3e2e10dfa782c23624b5540ec042745084458b8c"
+      },
+      "bfd": {
+        "sha256": "b53c2c1004977d5e5feeb920dad96048faea1f5c77a2143d9dce101a0429a56c",
+        "debug_crc_le_bytes": "e5e695bf",
+        "sha256_without_debug_crc": "2d3a9ccec2a4d5fa5237cf5d3e2e10dfa782c23624b5540ec042745084458b8c"
+      },
+      "lld": {
+        "sha256": "43630cb7a7ec2064eb9683a9294484e0f1d95675546a73ce6c81eb7c3c26c44b",
+        "debug_crc_le_bytes": "dc94a22d",
+        "sha256_without_debug_crc": "334b529df02f49d27d5f65d8c1265a2de582116380d82906ad07a37091059076"
+      }
+    }
+  },
+  "compiler_rt": "compiler-rt-22.1.8-1.6.armv7l.rpm",
+  "compiler_rt_sha256": "f8228b43c73a2e0b94cff958525f0d0b4a14631bc1b933345388c01ed2a4e625",
+  "training_linker": "bfd",
+  "profile_sha256": "8d19ce4782352c8c0e22d2d0c4662c0cd088e668bf63a68024925573ed881aed"
+}

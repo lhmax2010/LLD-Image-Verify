@@ -1,0 +1,78 @@
+    49	%endif
+    50	
+    51	Name:      llvm
+    52	Summary:   The LLVM Project is a collection of modular and reusable compiler and toolchain technologies
+    53	Version:   22.1.8
+    54	Release:   1
+    55	Group:     Development/Toolchain
+    56	License:   NCSA
+    57	Source0:   %{name}-%{version}.tar.gz
+    58	Source1001: llvm.manifest
+    59	
+    60	# Bundled MLGO AOT assets for the inliner and regalloc models.
+    61	# These override build-time AOT compilation, avoiding the need for TensorFlow
+    62	# Python in GBS.
+    63	Source1002: mlgo_arm_model.tar.gz
+   137	%package -n clang
+   138	Summary: Clang %{version} (C Language family frontend for LLVM)
+   139	License: NCSA
+   140	Requires: llvm = %{version}-%{release}
+   141	Provides: libclang.so.%{version}
+   142	
+   143	%description -n clang
+   144	A new front-end for the C family of languages is in development.
+   145	
+   146	%package -n clang-devel
+   147	Summary: Clang %{version} Development Library
+   148	Requires: clang = %{version}-%{release}
+   149	
+   150	%description -n clang-devel
+   151	This package contains the clang (C language) frontend for LLVM.
+   428	    -DLLVM_LINK_LLVM_DYLIB=OFF \
+   429	    -DCLANG_LINK_CLANG_DYLIB=OFF \
+   430	%endif
+   431	%else
+   432	%if %{defined _toolchain}
+   433	    -DLLVM_LINK_LLVM_DYLIB=ON \
+   434	    -DCLANG_LINK_CLANG_DYLIB=ON \
+   435	%endif
+   436	%endif
+   437	    -DLLVM_ENABLE_PROJECTS="clang;lldb;clang-tools-extra;lld;compiler-rt;openmp" \
+   438	    -DLLVM_ENABLE_PER_TARGET_RUNTIME_DIR=OFF \
+   439	    -DLLVM_BUILD_EXAMPLES=OFF \
+   440	    -DLLVM_INCLUDE_EXAMPLES=OFF \
+   441	    -DLLVM_BUILD_TESTS=OFF \
+   442	    -DLLVM_INCLUDE_TESTS=OFF \
+   443	    -DLLVM_ENABLE_DOXYGEN=OFF \
+   696	-resource-dir %{_prefix}/%{_lib}/clang/%{llvm_version}
+   697	EOF
+   698	ln -sf clang.cfg %{buildroot}/%{_prefix}/bin/clang++.cfg
+   699	
+   700	# copy lldb for sdk
+   701	mkdir -p %{buildroot}%{sdk_bin_dir}
+   702	mkdir -p %{buildroot}%{sdk_lib_dir}
+   703	
+   704	mv %{buildroot}%{_prefix}/bin/lldb %{buildroot}%{sdk_bin_dir}
+   705	mv %{buildroot}%{_prefix}/bin/lldb-argdumper %{buildroot}%{sdk_bin_dir}
+   706	mv %{buildroot}%{_prefix}/bin/lldb-server %{buildroot}%{sdk_bin_dir}
+   707	
+   708	ln -sf %{sdk_bin_dir}/lldb %{buildroot}%{_prefix}/bin/
+   765	%{_prefix}/bin/intercept-build
+   766	%{_prefix}/bin/llc
+   767	%{_prefix}/bin/lld
+   768	%{_prefix}/bin/ld.lld
+   769	%{_prefix}/bin/ld64.lld
+   770	%{_prefix}/bin/lld-link
+   771	%{_prefix}/bin/wasm-ld
+   772	%{_prefix}/bin/lli
+   773	%{_prefix}/bin/llvm-ar
+   774	%{_prefix}/bin/llvm-as
+   775	%{_prefix}/bin/llvm-bcanalyzer
+   776	%{_prefix}/bin/llvm-bitcode-strip
+   777	%{_prefix}/bin/llvm-c-test
+   778	%{_prefix}/bin/llvm-cat
+   779	%{_prefix}/bin/llvm-cgdata
+   780	%{_prefix}/bin/llvm-ctxprof-util
+   781	%{_prefix}/bin/llvm-config
+   782	%{_prefix}/bin/llvm-cov
+   783	%{_prefix}/bin/llvm-cvtres

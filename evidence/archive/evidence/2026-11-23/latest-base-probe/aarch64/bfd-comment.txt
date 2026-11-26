@@ -1,0 +1,6 @@
+["readelf", "-p", ".comment", "/tmp/tizen-lld-base-probe-20261119/aarch64/bfd.so"]
+
+String dump of section '.comment':
+  [     0]  clang version 22.1.8
+
+

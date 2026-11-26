@@ -1,0 +1,7 @@
+["readelf", "-p", ".comment", "/tmp/tizen-lld-base-probe-20261119/aarch64/lld.so"]
+
+String dump of section '.comment':
+  [     1]  clang version 22.1.8
+  [    16]  Linker: LLD 22.1.8
+
+

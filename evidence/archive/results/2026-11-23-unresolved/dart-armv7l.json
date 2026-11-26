@@ -1,0 +1,11 @@
+{
+  "elf": "/tmp/tizen-lld-20261120.082536/extracted/tizen-headed-armv7l/rootfs/usr/apps/org.tizen.homescreen/lib/libapp.so",
+  "tpk": "/tmp/tizen-lld-20261120.082536/trace/homescreen-armv7l.tpk",
+  "elf_sha256": "11b05d6f143b265ac2895a8224a826edf044e7469af5c92c58f9efd80c7ec9a8",
+  "tpk_member_sha256": "11b05d6f143b265ac2895a8224a826edf044e7469af5c92c58f9efd80c7ec9a8",
+  "tpk_member_matches": true,
+  "dart_symbols": true,
+  "build_id": "1414365c27fcad0ab81de21e361d0d57",
+  "calculated_build_id": "1414365c27fcad0ab81de21e361d0d57",
+  "build_id_matches": true
+}

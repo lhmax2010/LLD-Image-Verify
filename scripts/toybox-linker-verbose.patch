@@ -1,0 +1,23 @@
+diff --git a/packaging/toybox.spec b/packaging/toybox.spec
+--- a/packaging/toybox.spec
++++ b/packaging/toybox.spec
+@@ -134,7 +134,7 @@
+ export CC="gcc"
+ }
+ KCONFIG_ALLCONFIG=%{SOURCE1} scripts/genconfig.sh -n
+-make %{?_smp_mflags} CFLAGS=" $CFLAGS -fPIE -Wno-nonnull -Wno-incompatible-pointer-types" LDOPTIMIZE=" -Wl,--gc-sections -pie"
++make %{?_smp_mflags} CFLAGS=" $CFLAGS -fPIE -Wno-nonnull -Wno-incompatible-pointer-types" LDOPTIMIZE=" -Wl,--gc-sections -pie -Wl,-v"
+ 
+ %install
+ rm -rf $RPM_BUILD_ROOT
+diff --git a/scripts/make.sh b/scripts/make.sh
+--- a/scripts/make.sh
++++ b/scripts/make.sh
+@@ -246,6 +246,7 @@
+ [ $DONE -ne 0 ] && exit 1
+ 
+ UNSTRIPPED="$UNSTRIPPED/${OUTNAME/*\//}"
++printf "TOYBOX_FINAL_LINK %s\n" "$BUILD $LNKFILES $LINK -o $UNSTRIPPED" >&2
+ do_loudly $BUILD $LNKFILES $LINK -o "$UNSTRIPPED" || exit 1
+ if [ -n "$NOSTRIP" ] ||
+   ! do_loudly ${CROSS_COMPILE}${STRIP} "$UNSTRIPPED" -o "$OUTNAME"

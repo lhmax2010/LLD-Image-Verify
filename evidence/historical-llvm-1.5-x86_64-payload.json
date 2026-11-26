@@ -1,0 +1,12 @@
+{
+  "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261020.074527/repos/standard/packages/x86_64/llvm-22.1.8-1.5.x86_64.rpm",
+  "sha256": "6c62f3d63bb69477b96bae6302c37d5b04a0e7cdd2da9b9d1cb148f523f30f5b",
+  "rpm": "llvm-22.1.8-1.5.x86_64.rpm",
+  "ld_lld_symlink": "lld",
+  "matching_elf": [
+    {
+      "path": "/usr/bin/lld",
+      "build_id": ""
+    }
+  ]
+}

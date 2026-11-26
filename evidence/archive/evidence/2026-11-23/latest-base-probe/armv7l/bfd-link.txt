@@ -1,0 +1,2 @@
+["qemu-arm-static", "-L", "/tmp/tizen-lld-base-probe-20261119/armv7l/tools", "-E", "LD_LIBRARY_PATH=/tmp/tizen-lld-base-probe-20261119/armv7l/tools/usr/lib:/tmp/tizen-lld-20261120.082536/extracted/tizen-headed-armv7l/rootfs/usr/lib", "/tmp/tizen-lld-base-probe-20261119/armv7l/tools/usr/bin/ld.bfd", "-shared", "-m", "armelf_linux_eabi", "-z", "relro", "--version-script", "/tmp/tizen-lld-base-probe-20261119/armv7l/control.map", "-o", "/tmp/tizen-lld-base-probe-20261119/armv7l/bfd.so", "/tmp/tizen-lld-base-probe-20261119/armv7l/control.o"]
+

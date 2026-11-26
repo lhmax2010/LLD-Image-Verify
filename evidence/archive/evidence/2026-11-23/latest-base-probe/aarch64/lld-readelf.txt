@@ -1,0 +1,36 @@
+["readelf", "-WVl", "/tmp/tizen-lld-base-probe-20261119/aarch64/lld.so"]
+
+Elf file type is DYN (Shared object file)
+Entry point 0x0
+There are 7 program headers, starting at offset 64
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000000040 0x0000000000000040 0x000188 0x000188 R   0x8
+  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x00034c 0x00034c R   0x10000
+  LOAD           0x00034c 0x000000000001034c 0x000000000001034c 0x000010 0x000010 R E 0x10000
+  LOAD           0x000360 0x0000000000020360 0x0000000000020360 0x0000a0 0x000ca0 RW  0x10000
+  DYNAMIC        0x000360 0x0000000000020360 0x0000000000020360 0x0000a0 0x0000a0 RW  0x8
+  GNU_RELRO      0x000360 0x0000000000020360 0x0000000000020360 0x0000a0 0x000ca0 R   0x1
+  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .dynsym .gnu.version .gnu.version_d .gnu.hash .hash .dynstr .eh_frame 
+   02     .text 
+   03     .dynamic .relro_padding 
+   04     .dynamic 
+   05     .dynamic .relro_padding 
+   06     
+
+Version symbols section '.gnu.version' contains 3 entries:
+ Addr: 0x0000000000000210  Offset: 0x00000210  Link: 1 (.dynsym)
+  000:   0 (*local*)       2 (VERS_1)        3 (VERS_2)     
+
+Version definition section '.gnu.version_d' contains 3 entries:
+ Addr: 0x0000000000000218  Offset: 0x00000218  Link: 6 (.dynstr)
+  000000: Rev: 1  Flags: BASE  Index: 1  Cnt: 1  Name: /tmp/tizen-lld-base-probe-20261119/aarch64/lld.so
+  0x001c: Rev: 1  Flags: none  Index: 2  Cnt: 1  Name: VERS_1
+  0x0038: Rev: 1  Flags: none  Index: 3  Cnt: 1  Name: VERS_2
+
