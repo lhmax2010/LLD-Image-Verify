@@ -225,6 +225,8 @@ def main():
     parser.add_argument("--inventory", type=Path, required=True, help="Image RPM CSV with snapshot and rpm label")
     parser.add_argument("--local-cache", type=Path, action="append", default=[])
     parser.add_argument("--workers", type=int, default=16)
+    parser.add_argument("--largest-first", action="store_true",
+                        help="Start large RPM transfers early to shorten the final download tail.")
     parser.add_argument("--snapshot", action="append")
     parser.add_argument("--extra-base", action="append", default=[])
     parser.add_argument("--package-pattern", help="Regular expression on binary package names.")
@@ -295,7 +297,8 @@ def main():
                 local[path.name].append(path)
         with ThreadPoolExecutor(args.workers) as pool:
             futures = {pool.submit(scan, entries[0], args.cache, local, args.retry_errors, args.mirror): digest
-                       for digest, entries in sorted(by_digest.items(), key=lambda item: item[1][0]["bytes"])}
+                       for digest, entries in sorted(by_digest.items(), key=lambda item: item[1][0]["bytes"],
+                                                     reverse=args.largest_first)}
             for number, future in enumerate(as_completed(futures), 1):
                 results[futures[future]] = future.result()
                 if number % 250 == 0:

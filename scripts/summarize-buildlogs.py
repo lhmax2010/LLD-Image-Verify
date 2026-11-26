@@ -105,7 +105,19 @@ def main():
             image_elf_evidence_counts=json.dumps(elf[effect], sort_keys=True),
         ))
     image.write_csv(args.data / "buildlog-package-evidence.csv", output)
-    image.write_csv(args.data / "base-build-roots.csv", [r for r in output if r["repository"] == "Base"])
+    base_roots = [r for r in output if r["repository"] == "Base"]
+    image.write_csv(args.data / "base-build-roots.csv", base_roots)
+    by_toolchain = defaultdict(Counter)
+    for row in base_roots:
+        if row["image_elf_instances"]:
+            key = row["snapshot"], row["arch"], row["root_clang_evr"], row["compiler_observed"]
+            by_toolchain[key].update(json.loads(row["image_elf_evidence_counts"]))
+    image.write_csv(args.data / "base-image-cross-check.csv", [
+        dict(snapshot=snapshot, arch=arch, clang_build_root=clang, compiler=compiler,
+             evidence_class=category, instances=count, denominator=sum(counts.values()))
+        for (snapshot, arch, clang, compiler), counts in sorted(by_toolchain.items())
+        for category, count in sorted(counts.items())
+    ])
     image.write_csv(args.data / "base-build-window.csv", [
         dict(snapshot=snapshot, arch=arch, logs_in_build_window=len(times),
              first_build_start=min(t[0] for t in times).isoformat(),
