@@ -1,0 +1,17 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/armv7l/lapack/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/lapack /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/lapack.spec
+Full local trial log SHA256 95b929d7c7623a7a782c7dde693b9d927dfe5a7aa1c15867c7f81803ee34d42b
+Exit pending
+
+65	-- The Fortran compiler identification is GNU 14.2.0
+66	-- The C compiler identification is GNU 14.2.0
+71	CMake Error at /usr/share/cmake/Modules/CMakeTestFortranCompiler.cmake:59 (message):
+87	    Linking Fortran executable cmTC_6edb6
+89	    ld.lld: error: unable to find library -lgfortran
+90	    ld.lld: error: unable to find library -lm
+91	    ld.lld: error: unable to find library -lgcc_s
+92	    ld.lld: error: unable to find library -lm
+93	    ld.lld: error: unable to find library -lc
+94	    ld.lld: error: unable to find library -lgcc_s
+95	    collect2: error: ld returned 1 exit status
+111	error: Bad exit status from /work/tmp/rpm-tmp.yoNHjL (%build)

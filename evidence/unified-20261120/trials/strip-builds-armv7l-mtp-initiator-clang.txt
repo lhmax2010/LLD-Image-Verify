@@ -1,0 +1,11 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-builds/armv7l/mtp-initiator/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-trials/sources/mtp-initiator /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/mtp-initiator.spec
+Full local trial log SHA256 bb0284239eaf76a71ac4c2ffa7e52e7fd44f5ff9676f12ac9b4c9be3074cd7f0
+Exit 1
+
+68	-- The C compiler identification is Clang 22.1.8
+69	-- The CXX compiler identification is Clang 22.1.8
+119	qemu: uncaught target signal 4 (Illegal instruction) - core dumped
+120	/bin/sh: line 5:   226 Illegal instruction     (core dumped) /usr/bin/gdbus-codegen --generate-c-code /work/BUILD/mtp-initiator-1.4.39/src/daemon/mtp_gdbuslib --c-namespace mtp_gdbuslib --interface-prefix org.tizen.mtp. /work/BUILD/mtp-initiator-1.4.39/src/daemon/mtp_gdbuslib.xml 2>&1
+167	/work/BUILD/mtp-initiator-1.4.39/src/daemon/include/mtp_daemon.h:35:10: fatal error: 'mtp_gdbuslib.h' file not found
+176	error: Bad exit status from /work/tmp/rpm-tmp.SFwRgY (%build)

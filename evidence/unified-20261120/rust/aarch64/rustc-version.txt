@@ -1,0 +1,10 @@
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/aarch64 /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C /usr/bin/rustc -Vv
+<jemalloc>: MADV_DONTNEED does not work (memset will be used instead)
+<jemalloc>: (This is the expected behaviour if you are running under QEMU)
+rustc 1.90.0 (1159e78c4 2025-09-14)
+binary: rustc
+commit-hash: 1159e78c4747b02ef996e55082b704c09b970588
+commit-date: 2025-09-14
+host: aarch64-unknown-linux-gnu
+release: 1.90.0
+LLVM version: 20.1.8

@@ -1,0 +1,14 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/armv7l/yaca/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
+Full local trial log SHA256 d0363ea1c876a9f52092fdd4130289a3f24595394f93c74e93b8ad609611058d
+Exit pending
+
+55	-- The C compiler identification is GNU 14.2.0
+56	-- The CXX compiler identification is GNU 14.2.0
+61	CMake Error at /usr/share/cmake/Modules/CMakeTestCCompiler.cmake:67 (message):
+77	    Linking C executable cmTC_34b0d
+79	    ld.lld: error: unable to find library -lgcc_s
+80	    ld.lld: error: unable to find library -lc
+81	    ld.lld: error: unable to find library -lgcc_s
+82	    collect2: error: ld returned 1 exit status
+98	error: Bad exit status from /work/tmp/rpm-tmp.qTM3J4 (%build)

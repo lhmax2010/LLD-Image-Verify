@@ -1,0 +1,28 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-fixed/aarch64/yaca/clang-fixed /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
+Full local trial log SHA256 812db8b22db09ab907ff0b66b9d30a8df131be2826351f645ad780ebc53f72e6
+Exit pending
+
+58	-- The C compiler identification is Clang 22.1.8
+59	-- The CXX compiler identification is Clang 22.1.8
+150	[ 10%] Linking C shared library libyaca.so
+203	/work/BUILD/yaca-0.0.6/examples/digest.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+222	/work/BUILD/yaca-0.0.6/examples/digest_simple.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+241	/work/BUILD/yaca-0.0.6/examples/encrypt.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+260	/work/BUILD/yaca-0.0.6/examples/encrypt_gcm.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+279	/work/BUILD/yaca-0.0.6/examples/encrypt_ccm.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+298	/work/BUILD/yaca-0.0.6/examples/encrypt_simple.c:36:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+317	/work/BUILD/yaca-0.0.6/examples/key_wrap.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+336	/work/BUILD/yaca-0.0.6/examples/key_gen.c:29:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+355	/work/BUILD/yaca-0.0.6/examples/key_password.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+374	/work/BUILD/yaca-0.0.6/examples/key_exchange.c:58:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+393	/work/BUILD/yaca-0.0.6/examples/key_import_export_sym.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+412	/work/BUILD/yaca-0.0.6/examples/key_import_export_asym.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+431	/work/BUILD/yaca-0.0.6/examples/rsa_private.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+450	/work/BUILD/yaca-0.0.6/examples/rsa_public.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+469	/work/BUILD/yaca-0.0.6/examples/seal.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+488	/work/BUILD/yaca-0.0.6/examples/sign.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+507	/work/BUILD/yaca-0.0.6/examples/sign_hmac.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+526	/work/BUILD/yaca-0.0.6/examples/sign_simple.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+545	/work/BUILD/yaca-0.0.6/examples/sign_simple_cmac.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+564	/work/BUILD/yaca-0.0.6/examples/cert.c:559:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]

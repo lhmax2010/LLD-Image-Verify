@@ -1,0 +1,29 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-native/armv7l/yaca/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
+Full local trial log SHA256 603fd5f494bca3e243db89e35bf21910fd2ba65969eb3af6381a917f9471b5be
+Exit pending
+
+55	-- The C compiler identification is GNU 14.2.0
+56	-- The CXX compiler identification is GNU 14.2.0
+97	qemu: uncaught target signal 4 (Illegal instruction) - core dumped
+147	[ 10%] Linking C shared library libyaca.so
+202	[ 23%] Linking C executable yaca-example-digest
+217	[ 25%] Linking C executable yaca-example-digest-simple
+232	[ 28%] Linking C executable yaca-example-encrypt
+247	[ 30%] Linking C executable yaca-example-encrypt-gcm
+262	[ 32%] Linking C executable yaca-example-encrypt-ccm
+277	[ 34%] Linking C executable yaca-example-encrypt-simple
+292	[ 36%] Linking C executable yaca-example-key-wrap
+307	[ 38%] Linking C executable yaca-example-key-gen
+322	[ 40%] Linking C executable yaca-example-key-password
+337	[ 43%] Linking C executable yaca-example-key-exchange
+352	[ 46%] Linking C executable yaca-example-key-impexp-sym
+367	[ 48%] Linking C executable yaca-example-key-impexp-asym
+382	[ 51%] Linking C executable yaca-example-rsa-private
+397	[ 53%] Linking C executable yaca-example-rsa-public
+412	[ 55%] Linking C executable yaca-example-seal
+427	[ 58%] Linking C executable yaca-example-sign
+442	[ 60%] Linking C executable yaca-example-sign-hmac
+457	[ 62%] Linking C executable yaca-example-sign-simple
+472	[ 64%] Linking C executable yaca-example-sign-simple-cmac
+487	[ 67%] Linking C executable yaca-example-cert

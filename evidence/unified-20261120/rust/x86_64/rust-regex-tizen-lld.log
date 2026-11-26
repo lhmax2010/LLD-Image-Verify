@@ -1,0 +1,22 @@
+strace -f -e trace=execve,execveat -s 300 -o /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/x86_64/rust-regex-tizen-lld.strace bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/x86_64 / --dev /dev --proc /proc --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/x86_64 /work --chdir /work/rust-regex-1.7.1 --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C /usr/bin/rustc -C prefer-dynamic --extern std=/usr/lib64/libstd-210854cf1daa4bec.so -C codegen-units=1 -C debuginfo=2 -C opt-level=3 -C relocation-model=pic -C overflow-checks=on -C symbol-mangling-version=v0 -L/usr/lib64/rustlib -L/usr/lib64/rustlib/dylib --crate-type=dylib --crate-name=regex --edition=2018 '--cfg=feature="std"' '--cfg=feature="perf"' '--cfg=feature="unicode"' '--cfg=feature="unicode-age"' '--cfg=feature="unicode-bool"' '--cfg=feature="unicode-case"' '--cfg=feature="unicode-gencat"' '--cfg=feature="unicode-perl"' '--cfg=feature="unicode-script"' '--cfg=feature="unicode-segment"' '--cfg=feature="regex-syntax/unicode"' '--cfg=feature="regex-syntax/default"' ./src/lib.rs -C linker=/usr/bin/x86_64-tizen-linux-gnu-clang -C link-arg=--ld-path=/usr/bin/ld.lld -C link-self-contained=-linker --print link-args -o /work/rust-regex-tizen-lld.elf
+warning: fields `dfa`, `dfa_reverse`, and `suffixes` are never read
+  --> ./src/exec.rs:81:5
+   |
+67 | struct ExecReadOnly {
+   |        ------------ fields in this struct
+...
+81 |     dfa: Program,
+   |     ^^^
+...
+85 |     dfa_reverse: Program,
+   |     ^^^^^^^^^^^
+...
+90 |     suffixes: LiteralSearcher,
+   |     ^^^^^^^^
+   |
+   = note: `ExecReadOnly` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+
+LC_ALL="C" PATH="/usr/lib64/rustlib/x86_64-unknown-linux-gnu/bin:/usr/lib64/rustlib/x86_64-unknown-linux-gnu/bin/self-contained:/usr/bin:/bin" VSLANG="1033" "/usr/bin/x86_64-tizen-linux-gnu-clang" "-Wl,--version-script=/work/tmp/rustcFBRQl0/list" "-Wl,--no-undefined-version" "-m64" "/work/tmp/rustcFBRQl0/symbols.o" "/work/rust-regex-tizen-lld.regex.3e585920f7d8593f-cgu.0.rcgu.o" "/work/tmp/rustcFBRQl0/rmeta.o" "-Wl,--as-needed" "-Wl,-Bdynamic" "/usr/lib64/rustlib/dylib/libregex_syntax.so" "/usr/lib64/libstd-210854cf1daa4bec.so" "-Wl,-Bstatic" "/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib/libcompiler_builtins-8e6617d0a0e102d3.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/work/tmp/rustcFBRQl0/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "/usr/lib64/rustlib" "-L" "/usr/lib64/rustlib/dylib" "-L" "/usr/lib64/rustlib/x86_64-unknown-linux-gnu/lib" "-o" "/work/rust-regex-tizen-lld.elf" "-shared" "-Wl,-soname=rust-regex-tizen-lld.elf" "-Wl,-z,relro,-z,now" "-Wl,-O1" "-nodefaultlibs" "--ld-path=/usr/bin/ld.lld"
+warning: 1 warning emitted
+

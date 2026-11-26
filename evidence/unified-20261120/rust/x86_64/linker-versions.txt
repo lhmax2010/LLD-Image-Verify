@@ -1,0 +1,6 @@
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/x86_64 / --dev /dev --proc /proc --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/x86_64 /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C /bin/bash -c 'readlink -f /usr/bin/cc; cc -print-prog-name=ld; ld --version | head -1; ld.lld --version; find /usr -path '"'"'*/bin/rust-lld'"'"' -exec {} -flavor gnu --version \;'
+/usr/bin/gcc
+/usr/lib64/gcc/x86_64-tizen-linux-gnu/14.2.0/../../../../x86_64-tizen-linux-gnu/bin/ld
+GNU ld (GNU Binutils) 2.43
+LLD 22.1.8 (compatible with GNU linkers)
+LLD 20.1.8 (/checkout/src/llvm-project/llvm e8a2ffcf322f45b8dce82c65ab27a3e2430a6b51) (compatible with GNU linkers)

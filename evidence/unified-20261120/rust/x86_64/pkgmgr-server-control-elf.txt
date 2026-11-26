@@ -1,0 +1,52 @@
+readelf -W -p .comment -d /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/x86_64/pkgmgr-server-control.elf
+
+Dynamic section at offset 0x60078 contains 42 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libdlog.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libtidl_pkgmgr_server.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libsystemd.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpkgmgr_installer.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libutil_pkgmgr_server.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpkgmgr-info.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libaul.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpkgmgr_parser.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgobject-2.0.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgum.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libregex.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd-210854cf1daa4bec.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libglib-2.0.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x46d0
+ 0x0000000000000008 (RELASZ)             33504 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          1182
+ 0x0000000000000017 (JMPREL)             0xc9b0
+ 0x0000000000000002 (PLTRELSZ)           48 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x629b8
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x308
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x202c
+ 0x000000000000000a (STRSZ)              9889 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x1958
+ 0x0000000000000004 (HASH)               0x1974
+ 0x0000000000000019 (INIT_ARRAY)         0x5bf28
+ 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x5bf20
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x5aec4
+ 0x000000000000000d (FINI)               0x5aedc
+ 0x000000006ffffff0 (VERSYM)             0x1718
+ 0x000000006ffffffe (VERNEED)            0x18c4
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x0000000000000000 (NULL)               0x0
+
+String dump of section '.comment':
+  [     0]  rustc version 1.90.0 (1159e78c4 2025-09-14)
+  [    2c]  GCC: (Tizen GCC 14.2.0 20240801 1.6) 14.2.0
+  [    59]  Linker: LLD 20.1.8 (/checkout/src/llvm-project/llvm e8a2ffcf322f45b8dce82c65ab27a3e2430a6b51)
+

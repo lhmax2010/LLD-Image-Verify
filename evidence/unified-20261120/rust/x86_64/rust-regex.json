@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "package": "rust-regex",
+  "published_command_line": 226,
+  "published_log_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/x86_64/succeeded/rust-regex.buildlog.txt",
+  "tizen_lld_marker": true,
+  "exports_equal_control": true,
+  "exports_equal_published": true,
+  "exports": {
+    "control": 201,
+    "tizen-lld": 201,
+    "published": 201
+  },
+  "export_delta": {
+    "published": {
+      "added": [],
+      "removed": []
+    },
+    "control": {
+      "added": [],
+      "removed": []
+    }
+  },
+  "sha256": {
+    "control": "271cb1668082793968e8e7d559f2cbb2bda5c5411a834180f375e507c97ea647",
+    "tizen-lld": "48ebee9958b565dca837d0ebc7cfea3c825d1dafff38cffa9562dd9e290d4feb",
+    "published": "f9ece11ee781c21752e5f9c6729e2c7390f5fbe06e2e1b179bc5cf1b04a1e7c9"
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "package": "nntrainer",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/nntrainer-0.5.0-0.src.rpm",
+    "rpm": "nntrainer-0.5.0-0.src.rpm",
+    "evr": "0.5.0-0",
+    "vcs": "platform/core/ml/nntrainer#97ddb43dcd9e5173d7cb4245ff9bae5d760e5834",
+    "sha256": "b167840b935b780848a32bffc9c4d6bc0ad72f81dfc54d863eab8978d0a59715"
+  },
+  {
+    "package": "yaca",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/yaca-0.0.6-0.src.rpm",
+    "rpm": "yaca-0.0.6-0.src.rpm",
+    "evr": "0.0.6-0",
+    "vcs": "platform/core/security/yaca#7d15808625be1517afbd37693e42cd7be0d4c464",
+    "sha256": "5f8df5fe7246e84e939dd29982bdb432699864e0b6283e97f380447df7824c0d"
+  },
+  {
+    "package": "onnxruntime",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/onnxruntime-1.16.3-1.src.rpm",
+    "rpm": "onnxruntime-1.16.3-1.src.rpm",
+    "evr": "1.16.3-1",
+    "vcs": "platform/upstream/onnxruntime#240b59d913d4608d256056d08c36884d5a168c33",
+    "sha256": "d75d6011e5d7d5a2c8c5d7697d77fdc69d528c01b276f576f508c95c441c2891"
+  },
+  {
+    "package": "openblas",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/openblas-0.3.21-1.src.rpm",
+    "rpm": "openblas-0.3.21-1.src.rpm",
+    "evr": "0.3.21-1",
+    "vcs": "platform/upstream/openblas#7e5bd8aafc7212a0badd98d229a01afd9d37a1cf",
+    "sha256": "5f12b668b0f199d86e61ec5f4d7a52d315c4dcb3581bd2291f70a220a273ea39"
+  },
+  {
+    "package": "lapack",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/lapack-3.7.1-1.src.rpm",
+    "rpm": "lapack-3.7.1-1.src.rpm",
+    "evr": "3.7.1-1",
+    "vcs": "platform/upstream/lapack#4f4bd05001b7a98fbb4f8b9f1df62f26207774fb",
+    "sha256": "0d68e35889fb0bb56671a39167aa6e34fbc6caa6a4dda4ed17cf2e9104bac69b"
+  },
+  {
+    "package": "hdf5",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/hdf5-1.10.1-0.src.rpm",
+    "rpm": "hdf5-1.10.1-0.src.rpm",
+    "evr": "1.10.1-0",
+    "vcs": "platform/upstream/hdf5#d9910744476d5f9aa602d5b06611e6652d1bbaf4",
+    "sha256": "7a31c24f2ce8548eb452b5610a773aa71bf3c93883940e068396aa02eff762bd"
+  },
+  {
+    "package": "angle",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/angle-2.1-1.src.rpm",
+    "rpm": "angle-2.1-1.src.rpm",
+    "evr": "2.1-1",
+    "vcs": "platform/upstream/angle#f2bdc8655536088e3003ac1537b3bed3fcdbd23f",
+    "sha256": "ab91e54839404ad07a6ce9fab25bac46d46f1110e1d2e7c630975d2b02140180"
+  }
+]

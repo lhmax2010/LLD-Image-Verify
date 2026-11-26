@@ -1,0 +1,42 @@
+readelf -W -p .comment -d /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/armv7l/rust-regex-control.elf
+
+Dynamic section at offset 0x26dd0 contains 32 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libregex_syntax.so]
+ 0x00000001 (NEEDED)                     Shared library: [libstd-82981c869470ee41.so]
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [ld-linux.so.3]
+ 0x0000000e (SONAME)                     Library soname: [rust-regex-control.elf]
+ 0x0000000c (INIT)                       0x9a0c
+ 0x0000000d (FINI)                       0x22f80
+ 0x00000019 (INIT_ARRAY)                 0x26000
+ 0x0000001b (INIT_ARRAYSZ)               4 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x26004
+ 0x0000001c (FINI_ARRAYSZ)               4 (bytes)
+ 0x00000004 (HASH)                       0x158
+ 0x6ffffef5 (GNU_HASH)                   0xedc
+ 0x00000005 (STRTAB)                     0x2c10
+ 0x00000006 (SYMTAB)                     0x1940
+ 0x0000000a (STRSZ)                      24361 (bytes)
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000003 (PLTGOT)                     0x26ef0
+ 0x00000002 (PLTRELSZ)                   1000 (bytes)
+ 0x00000014 (PLTREL)                     REL
+ 0x00000017 (JMPREL)                     0x9624
+ 0x00000011 (REL)                        0x8e04
+ 0x00000012 (RELSZ)                      2080 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x0000001e (FLAGS)                      BIND_NOW
+ 0x6ffffffb (FLAGS_1)                    Flags: NOW
+ 0x6ffffffe (VERNEED)                    0x8d94
+ 0x6fffffff (VERNEEDNUM)                 3
+ 0x6ffffff0 (VERSYM)                     0x8b3a
+ 0x6ffffffa (RELCOUNT)                   247
+ 0x00000000 (NULL)                       0x0
+
+String dump of section '.comment':
+  [     0]  GCC: (Tizen GCC 14.2.0 20240801 1.1) 14.2.0
+  [    2c]  rustc version 1.90.0 (1159e78c4 2025-09-14)
+  [    58]  GCC: (crosstool-NG UNKNOWN) 8.5.0
+

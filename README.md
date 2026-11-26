@@ -2,6 +2,8 @@
 
 本文记录两轮 Tizen Unified Toolchain 镜像的链接器验证结果。**整镜像每轮有 6,892 / 10,875 个 ELF 或内核文件实例确认使用 LLD（63.4%）。补查确认 16 个原无归属的实例来自 Unified RPM，Unified 来源为 6,892 / 7,071（97.5%）。** 镜像同时包含 GNU ld、MetaWare 和 Dart AOT 产物。
 
+[Unified 20261120.082536 链接器补查](docs/unified-linker-follow-up.md)记录 Rust 三架构复现、逐包构建日志、配方试验和源 RPM 的 SHA256 匹配。
+
 ## 验证范围
 
 | 轮次 | Unified Toolchain 快照 | Base Toolchain 快照 | 范围 |

@@ -1,0 +1,98 @@
+
+nntrainer.spec
+18:%define         _toolchain_override gcc
+392:%build
+
+yaca.spec
+23:%define _toolchain_override gcc
+46:%build
+
+onnxruntime.spec
+36:%define _toolchain_override gcc
+85:%build
+90:# '-Wno-error=stringop-overflow' option is added to CFLAGS and CXXFLAGS.
+91:EXTRA_CFLAGS="${CFLAGS} -Wno-error=stringop-overflow"
+92:EXTRA_CXXFLAGS="${CXXFLAGS} -Wno-error=stringop-overflow"
+108:  -DCMAKE_C_FLAGS="${EXTRA_CFLAGS}" \
+109:  -DCMAKE_CXX_FLAGS="${EXTRA_CXXFLAGS}" \
+
+openblas.spec
+128:%define _toolchain_override gcc
+147:%build
+174:        FC=gfortran COMMON_OPT="%{optflags}" NUM_THREADS=64 V=1
+176:        FC=gfortran COMMON_OPT="%{optflags}" NUM_THREADS=64 V=1
+178:        FC=gfortran COMMON_OPT="%{optflags}" NUM_THREADS=64 V=1
+
+hdf5.spec
+373:%build
+374:export F9X=gfortran
+
+lapack.spec
+16:%define _toolchain_override gcc
+126:%build
+
+angle.spec
+78:%build
+80:./gn gen out/Debug --args='target_os="linux" target_cpu="%{_angle_target_cpu}" arm_version="%{_angle_arm_ver}" arm_float_abi="softfp" arm_arch="%{_angle_arm_arch}" is_debug=false angle_use_wayland=true angle_use_tbm=true angle_use_gbm=false angle_enable_vulkan=true angle_enable_swiftshader=false use_libpci=false angle_use_x11=false target_sysroot = "/" angle_enable_wgpu=false ozone_platform_x11=false use_goma=false is_component_build=false angle_enable_trace=false angle_enable_trace_events=false  angle_assert_always_on=false angle_enable_vulkan_gpu_trace_events=false angle_use_custom_libvulkan=false angle_build_vulkan_system_info=false angle_debug_layers_enabled=false angle_enable_vulkan_validation_layers=false enable_dsyms=true symbol_level=2 strip_debug_info=false use_dwarf5=false use_ozone=false angle_enable_commit_id=false use_custom_libcxx=false is_clang=false treat_warnings_as_errors=false angle_enable_perf_counter_output=false build_angle_deqp_tests=false angle_has_histograms=false angle_has_astc_encoder=false'
+
+gbs_sample.spec
+66:%prep
+72:%build
+74:tizen build-native -a %{_arch} -c gcc -C %{configuration} %{?jobs:-j %jobs} -r %{SDK_PLATFORM}
+75:#tizen build-native -a %{_arch} -c gcc -r %{SDK_PLATFORM}
+81:    /usr/bin/strip -v -s ./lib/*.so
+86:/usr/bin/strip -v -s ./%{configuration}/%{exec_name}
+
+fluoride.spec
+57:%prep
+65:%build
+76:gn gen --root=$PWD/.floss/staging '--args=platform_subdir="bt" cc="gcc" cxx="g++" ar="llvm-ar" pkg_config="pkg-config" clang_cc=false clang_cxx=false OS="tizen" sysroot="/" libdir="/usr/lib" build_root="\$PWD/.floss/output" platform2_root="\$PWD/.floss/staging" libbase_ver="NOT-INSTALLED" enable_exceptions=false external_cflags=["-fPIC", "-O2"] external_cxxflags=["-DNDEBUG","-I/usr/include/", "-fPIC", "-O2", "-Wno-attributes", "-DTIZEN_FEATURE_AURACAST", "-DTIZEN_FEATURE_EXCLUDE_AOSP_FLAGS"] enable_werror=false use={bt_dynlib=true dbus=false crypto=false mojo=false asan=false coverage=false cros_host=false cros_debug=false floss_rootcanal=false function_elimination_experiment=false fuzzer=false lto_experiment=false msan=false profiling=false proto_force_optimize_speed=false tcmalloc=false test=false ubsan=false android=false bt_nonstandard_codecs=false clang=false dualaudio_mtk=true dualaudio_rtk=false}' $PWD/.floss/output/out/Default
+96:install -D -m 0644 liblc3/%{_target_cpu}/liblc3.so %{buildroot}%{_libdir}/liblc3.so
+
+emuld.spec
+62:%prep
+78:    -DCMAKE_INSTALL_PREFIX=%{_prefix} \
+85:%build
+
+nnfw.spec
+168:%define build_options -DCMAKE_BUILD_TYPE=%{build_type} -DTARGET_ARCH=%{target_arch} -DTARGET_OS=tizen \\\
+172:%define strip_options %{nil}
+174:%define strip_options --strip
+177:%prep
+211:%build
+215:%{nncc_env} ./nncc configure -DBUILD_GTEST=OFF -DENABLE_TEST=OFF -DEXTERNALS_BUILD_THREADS=%{nproc} -DCMAKE_BUILD_TYPE=%{build_type} -DTARGET_ARCH=%{target_arch} -DTARGET_OS=tizen \
+216:        -DCMAKE_INSTALL_PREFIX=$(pwd)/%{overlay_path} \
+
+mtp-initiator.spec
+48:%prep
+52:%build
+84:unrpm %{_builddir}/%{name}-%{version}/res/libmtp-1.1.11-5.5.aarch64.rpm
+89:unrpm %{_builddir}/%{name}-%{version}/res/libmtp-1.1.11-5.5.armv7l.rpm
+110:%files haltests
+
+ANGLE BUILD.gn
+56:  angle_enable_abseil = angle_has_build && is_clang
+
+ANGLE build/config/BUILDCONFIG.gn
+147:  custom_toolchain = ""
+277:if (custom_toolchain != "") {
+278:  set_default_toolchain(custom_toolchain)
+
+ANGLE build/config/compiler/compiler.gni
+38:  use_lld = is_clang && current_os != "zos"
+242:  use_gold = !use_lld && !(is_castos &&
+
+ANGLE build/config/compiler/BUILD.gn
+391:      ldflags += [ "-fuse-ld=lld" ]
+521:    ldflags += [ "-fuse-ld=gold" ]
+524:      # it with -fuse-ld=gold, and clang gets a --gcc-toolchain flag passed
+1200:        cflags += [ "--target=aarch64-linux-gnu" ]
+1201:        ldflags += [ "--target=aarch64-linux-gnu" ]
+1205:      if (custom_toolchain == "") {
+1290:      if (custom_toolchain == "") {
+1336:      if (custom_toolchain == "") {
+1399:      if (custom_toolchain == "") {
+
+ANGLE build/toolchain/linux/BUILD.gn
+34:  toolprefix = "aarch64-tizen-linux-gnu-"
+55:  toolprefix = "armv7l-tizen-linux-gnueabi-"

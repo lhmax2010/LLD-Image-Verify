@@ -1,0 +1,18 @@
+[
+  {
+    "package": "u-boot",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/u-boot-2025.10-0.src.rpm",
+    "rpm": "u-boot-2025.10-0.src.rpm",
+    "evr": "2025.10-0",
+    "vcs": "platform/kernel/u-boot#136798fd140f7e19843ea2806ed449188944d240",
+    "sha256": "6b1ac2fdebbdfe74d3c60144d5f9fda78f4f6dfcf86338dd2d8de975d4b8382e"
+  },
+  {
+    "package": "u-boot-rpi4",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/u-boot-rpi4-2025.10-0.src.rpm",
+    "rpm": "u-boot-rpi4-2025.10-0.src.rpm",
+    "evr": "2025.10-0",
+    "vcs": "platform/kernel/u-boot#136798fd140f7e19843ea2806ed449188944d240",
+    "sha256": "fee5ef51b4744de25bb38ee0e6b1683e1423745c753587128a84e4a81d31a08b"
+  }
+]

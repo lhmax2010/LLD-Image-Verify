@@ -1,0 +1,21 @@
+arch,package,variant,batch,path,sha256,marker
+aarch64,hdf5,gcc-lld,recipe-builds,hdf5-1.10.1/build/c++/src/.libs/libhdf5_cpp.so.101.0.0,2441e279e6fcc676b308818ee2687d2418d40c805dc52cb2aa8af692a4959b87,[    16]  Linker: LLD 22.1.8
+aarch64,hdf5,gcc-lld,recipe-builds,hdf5-1.10.1/build/src/.libs/libhdf5.so.101.0.0,a5abb760c8c7cbecf316963cdbe7b9be577c41ce64ae2e90ba3da09b9e0f7242,[    16]  Linker: LLD 22.1.8
+aarch64,lapack,gcc-lld,recipe-builds,lapack-3.7.1/build/lib/libblas.so.3.7.1,7b2f72c3bcbeb7c80e7347840e5a9188af9be77f7a1638bfdac356b624c5e710,[     1]  Linker: LLD 22.1.8
+aarch64,openblas,clang,recipe-builds,serial/libopenblas_serial_armv8-r0.3.21.so,0d89dc6d97402c2a66e487e174f42135c0ed9269375fa61ad0f98e7ffcf1f0b8,[    16]  Linker: LLD 22.1.8
+aarch64,yaca,clang,recipe-builds,yaca-0.0.6/src/libyaca.so.0.0.6,b1e2ad2eec06f0d5c69709c6b06220806d608202eda6606bc3a64315b61cd0c3,[    16]  Linker: LLD 22.1.8
+aarch64,yaca,gcc-lld,recipe-builds,yaca-0.0.6/src/libyaca.so.0.0.6,9c5594045ea79dc61312dd8a44d4346c5296d39e14f958aed99fcf89aab29e81,[     1]  Linker: LLD 22.1.8
+armv7l,openblas,clang,recipe-builds,serial/libopenblas_serial_armv7-r0.3.21.so,ee76dac2833e842fbb802c00e20cedf16d63c0ffeec4fc933f9f99db5332f5da,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,clang,recipe-builds,yaca-0.0.6/src/libyaca.so.0.0.6,aac67e4bf3ab1347119f53a209cc000e94a4a7fe8ab6b4343d5773b720be3ea0,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,clang,recipe-builds-arm-retry,yaca-0.0.6/src/libyaca.so.0.0.6,aac67e4bf3ab1347119f53a209cc000e94a4a7fe8ab6b4343d5773b720be3ea0,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,gcc-lld,recipe-builds-arm-retry,yaca-0.0.6/src/libyaca.so.0.0.6,935c90418e6195cea7e1ef35a57232a5a4134334bed1de4495cd0446d67ef47f,[    2d]  Linker: LLD 22.1.8
+aarch64,yaca,clang-fixed,recipe-builds-final,yaca-0.0.6/src/libyaca.so.0.0.6,f510c2fd048892d39008109a606a5644ca8d81ced632b2ca6835612c805a09ca,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,clang-fixed,recipe-builds-final,yaca-0.0.6/src/libyaca.so.0.0.6,fdf1e7efa35f99a9bbcce82f9dfc0926e85c95a8e2ac0ea787ec89dfab7f1092,[    16]  Linker: LLD 22.1.8
+aarch64,yaca,clang-fixed,recipe-builds-fixed,yaca-0.0.6/src/libyaca.so.0.0.6,f510c2fd048892d39008109a606a5644ca8d81ced632b2ca6835612c805a09ca,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,clang-fixed,recipe-builds-fixed,yaca-0.0.6/src/libyaca.so.0.0.6,fdf1e7efa35f99a9bbcce82f9dfc0926e85c95a8e2ac0ea787ec89dfab7f1092,[    16]  Linker: LLD 22.1.8
+aarch64,yaca,clang,recipe-builds-native,yaca-0.0.6/src/libyaca.so.0.0.6,b1e2ad2eec06f0d5c69709c6b06220806d608202eda6606bc3a64315b61cd0c3,[    16]  Linker: LLD 22.1.8
+aarch64,yaca,gcc-lld,recipe-builds-native,yaca-0.0.6/src/libyaca.so.0.0.6,fa327c323b817e8a3cc7817b41232aacea582be9531bfb489106c8803af13160,[    2d]  Linker: LLD 22.1.8
+armv7l,yaca,clang,recipe-builds-native,yaca-0.0.6/src/libyaca.so.0.0.6,aac67e4bf3ab1347119f53a209cc000e94a4a7fe8ab6b4343d5773b720be3ea0,[    16]  Linker: LLD 22.1.8
+armv7l,yaca,gcc-lld,recipe-builds-native,yaca-0.0.6/src/libyaca.so.0.0.6,935c90418e6195cea7e1ef35a57232a5a4134334bed1de4495cd0446d67ef47f,[    2d]  Linker: LLD 22.1.8
+aarch64,mtp-initiator,clang,strip-builds,mtp-initiator-1.4.39/haltest/mtp-initiator-haltests,9fe1aa771b5a9af3c1d444027ae56ab0434cac800032515109220523747fbd03,[    16]  Linker: LLD 22.1.8
+aarch64,mtp-initiator,clang,strip-builds,mtp-initiator-1.4.39/src/daemon/mtp-initiator,e7a8995b0192c66d0dd2af6bd3ae71693fb3c38775766e172d62a495fa3e09c8,[    16]  Linker: LLD 22.1.8

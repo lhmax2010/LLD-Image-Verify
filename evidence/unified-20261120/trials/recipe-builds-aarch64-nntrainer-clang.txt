@@ -1,0 +1,10 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/aarch64/nntrainer/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/nntrainer /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/nntrainer.spec
+Full local trial log SHA256 629ff35c89adb085456f22dc812ea9cf0329e21756bdde0d546b9d6988b6d3ab
+Exit 1
+
+58	C linker for the host machine: aarch64-tizen-linux-gnu-clang ld.lld 22.1.8
+60	C++ linker for the host machine: aarch64-tizen-linux-gnu-clang++ ld.lld 22.1.8
+208	FAILED: [code=1] nntrainer/libnntrainer.so.p/_work_BUILD_nntrainer-0.5.0_nntrainer_compiler_tflite_interpreter.cpp.o
+210	/work/BUILD/nntrainer-0.5.0/nntrainer/compiler/tflite_interpreter.cpp:337:24: error: unqualified call to 'std::move' [-Werror,-Wunqualified-std-cast-call]
+218	error: Bad exit status from /work/tmp/rpm-tmp.s5tVFD (%build)

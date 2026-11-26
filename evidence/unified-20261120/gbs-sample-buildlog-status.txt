@@ -1,0 +1,9 @@
+aarch64/succeeded 404
+aarch64/failed 404
+aarch64/excluded 404
+armv7l/succeeded 404
+armv7l/failed 404
+armv7l/excluded 404
+x86_64/succeeded 404
+x86_64/failed 404
+x86_64/excluded 404

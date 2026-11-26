@@ -1,0 +1,15 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/armv7l/onnxruntime/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/onnxruntime /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/onnxruntime.spec
+Full local trial log SHA256 f3b86728a9a515826cf60d098ff0db5e84d6caef8126ef0e94ae42ce7b7c8b17
+Exit pending
+
+9176	-- The C compiler identification is GNU 14.2.0
+9177	-- The CXX compiler identification is GNU 14.2.0
+9178	-- The ASM compiler identification is GNU
+9184	CMake Error at /usr/share/cmake/Modules/CMakeTestCCompiler.cmake:67 (message):
+9199	    FAILED: [code=1] cmTC_39178
+9201	    ld.lld: error: unable to find library -lgcc_s
+9202	    ld.lld: error: unable to find library -lc
+9203	    ld.lld: error: unable to find library -lgcc_s
+9204	    collect2: error: ld returned 1 exit status
+9217	error: Bad exit status from /work/tmp/rpm-tmp.M17cML (%build)

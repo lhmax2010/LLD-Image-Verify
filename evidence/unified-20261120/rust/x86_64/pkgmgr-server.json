@@ -1,0 +1,29 @@
+{
+  "arch": "x86_64",
+  "package": "pkgmgr-server",
+  "published_command_line": 664,
+  "published_log_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/x86_64/succeeded/pkgmgr-server.buildlog.txt",
+  "tizen_lld_marker": true,
+  "exports_equal_control": true,
+  "exports_equal_published": true,
+  "exports": {
+    "control": 0,
+    "tizen-lld": 0,
+    "published": 0
+  },
+  "export_delta": {
+    "published": {
+      "added": [],
+      "removed": []
+    },
+    "control": {
+      "added": [],
+      "removed": []
+    }
+  },
+  "sha256": {
+    "control": "557cba3fc10de6dac83e16cc1cbf70be01167135279a5e6f6035b5a9cdcf7ee9",
+    "tizen-lld": "18a6acb0222887026b501ca2768c25e337dbf6c5194e1c9a64b06d49237e4d01",
+    "published": "d8aaae1bd0d94bf1abcf9d94ac6d6f5568c2adb823911f52de48ac62cd7375f9"
+  }
+}

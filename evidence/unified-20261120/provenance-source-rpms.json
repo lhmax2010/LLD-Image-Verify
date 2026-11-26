@@ -1,0 +1,130 @@
+[
+  {
+    "package": "augeas",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/augeas-1.14.1-0.src.rpm",
+    "rpm": "augeas-1.14.1-0.src.rpm",
+    "evr": "1.14.1-0",
+    "vcs": "platform/upstream/augeas#f8321bfc8b2a29ac7bd05217b315c4ed18ba48ea",
+    "sha256": "b00f7431c620628d8f555576022bbc1feb451403d1325b5d122772c734e0fe72"
+  },
+  {
+    "package": "nnfw",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/nnfw-1.28.0-1.src.rpm",
+    "rpm": "nnfw-1.28.0-1.src.rpm",
+    "evr": "1.28.0-1",
+    "vcs": "platform/core/ml/nnfw#91297fc56cca1d4df16bebe2f92a9e9d2cb6d488",
+    "sha256": "b3671d633afc2803a265f6d260c28ef60aa9a1627ec134b016bee3b8337a79bf"
+  },
+  {
+    "package": "push",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/push-0.7.6-1.src.rpm",
+    "rpm": "push-0.7.6-1.src.rpm",
+    "evr": "0.7.6-1",
+    "vcs": "platform/core/appfw/sppc#804c813d19ee8de8620b21041c0e0cc138262251",
+    "sha256": "5a8cc8af014aeea218e6857e9a8866709d2ed83c71b66b602d18041734818c94"
+  },
+  {
+    "package": "stt",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/stt-1.110.1-1.src.rpm",
+    "rpm": "stt-1.110.1-1.src.rpm",
+    "evr": "1.110.1-1",
+    "vcs": "platform/core/uifw/stt#789c2555dcedc408f0f191fdc6f516ae2df604bc",
+    "sha256": "28a8796f3fc03aecf2bb97f4aea53adb210222fc40e58ab6898f0fb80137470b"
+  },
+  {
+    "package": "tts",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/tts-1.100.10-1.src.rpm",
+    "rpm": "tts-1.100.10-1.src.rpm",
+    "evr": "1.100.10-1",
+    "vcs": "platform/core/uifw/tts#306b8ea9fe0210995e71b36efc0abf8e15060131",
+    "sha256": "e1ccf026d81088823df11df7397f742d82dc920cff55041d55f72da4b6e824ce"
+  },
+  {
+    "package": "voice-control",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/voice-control-1.101.6-1.src.rpm",
+    "rpm": "voice-control-1.101.6-1.src.rpm",
+    "evr": "1.101.6-1",
+    "vcs": "platform/core/uifw/voice-control#ed4dc9728943f52383ab871e9e219fa877e79eff",
+    "sha256": "254fddb678d426aa69f5f411951466b039e3227e809e08ffe5f36da50ffe134f"
+  },
+  {
+    "package": "wakeup-engine-default",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/wakeup-engine-default-0.2.5-1.src.rpm",
+    "rpm": "wakeup-engine-default-0.2.5-1.src.rpm",
+    "evr": "0.2.5-1",
+    "vcs": "platform/core/uifw/wakeup-engine-default#f308d8518d30cc2f79352c1e822fe7eae3f89093",
+    "sha256": "15123aac0e0446c69717bb791141fd93f84a48fe32ef08750b998959b0b1db30"
+  },
+  {
+    "package": "security-config",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/security-config-1.0-1.src.rpm",
+    "rpm": "security-config-1.0-1.src.rpm",
+    "evr": "1.0-1",
+    "vcs": "platform/core/security/security-config#1e550298b147a50f85e188dff15b2c457262c324",
+    "sha256": "963ebdf8ece2a120be64ab2d335658911222fb6e870455259d06b8e2f0f0f56a"
+  },
+  {
+    "package": "mtp-initiator",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/mtp-initiator-1.4.39-0.src.rpm",
+    "rpm": "mtp-initiator-1.4.39-0.src.rpm",
+    "evr": "1.4.39-0",
+    "vcs": "platform/core/connectivity/mtp-initiator#62e49acf659c3b46a21f22076ba41f005d13c5f1",
+    "sha256": "e1ac2687c21d720d206911d03d90fda51815b04ead9e3cde7ddb8c162ed95521"
+  },
+  {
+    "package": "org.tizen.stt-engine-default",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/org.tizen.stt-engine-default-1.100.3-1.src.rpm",
+    "rpm": "org.tizen.stt-engine-default-1.100.3-1.src.rpm",
+    "evr": "1.100.3-1",
+    "vcs": "platform/core/uifw/stt-engine-default#f95830f8d06b0c4beaadd8a9ca050f52c3433dd4",
+    "sha256": "86de8559371bb3c76a5b8565210d19eb9d78b0c29fbae5eedd79f9decffb00c4"
+  },
+  {
+    "package": "org.tizen.tts-engine-default",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/org.tizen.tts-engine-default-1.100.1-1.src.rpm",
+    "rpm": "org.tizen.tts-engine-default-1.100.1-1.src.rpm",
+    "evr": "1.100.1-1",
+    "vcs": "platform/core/uifw/tts-engine-default#0152d18bd4941af72d29b77935662cb077d45671",
+    "sha256": "64d8f468719b0dc0680330d8371429283943eb9498131c04c10b77f6ce9cfadd"
+  },
+  {
+    "package": "org.tizen.vc-engine-default",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/org.tizen.vc-engine-default-1.90.1-1.src.rpm",
+    "rpm": "org.tizen.vc-engine-default-1.90.1-1.src.rpm",
+    "evr": "1.90.1-1",
+    "vcs": "platform/core/uifw/vc-engine-default#4caf824b104e9841397a7eb8b2e32b82c0d4d606",
+    "sha256": "7ea59c37efcb474f0948af43672fdce52d662cf32a407ab4d1b4fdbf99992a0e"
+  },
+  {
+    "package": "org.example.gbs-sample",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/org.example.gbs-sample-1.0.0-1.src.rpm",
+    "rpm": "org.example.gbs-sample-1.0.0-1.src.rpm",
+    "evr": "1.0.0-1",
+    "vcs": "sdk/tools/gbs-sample#bee6463f5903c3621ab989f902abf24f30adcfea",
+    "sha256": "65e23b4f708e25cf7bd0ff6695791a9c38e90ea0354be87c8660d08195b4a085"
+  },
+  {
+    "package": "fluoride",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/fluoride-0.0.1-1.src.rpm",
+    "rpm": "fluoride-0.0.1-1.src.rpm",
+    "evr": "0.0.1-1",
+    "vcs": "platform/upstream/fluoride#81446d749965f8778bad4470e7dea9cd98484a18",
+    "sha256": "84c6c362d83b2a85b76b3b537152e66019d2915d736670556aab7fb98de459bf"
+  },
+  {
+    "package": "netcoredbg",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/netcoredbg-3.2.1-1.src.rpm",
+    "rpm": "netcoredbg-3.2.1-1.src.rpm",
+    "evr": "3.2.1-1",
+    "vcs": "sdk/tools/netcoredbg#3dfca8f9cce141f37e33081c325ff68d37ef92c0",
+    "sha256": "a87159b53a0778ff7407d19baf9b408ac0a629d6acd0e7a2117c3b9c1fdc1d06"
+  },
+  {
+    "package": "emuld",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/emuld-0.11.3-0.src.rpm",
+    "rpm": "emuld-0.11.3-0.src.rpm",
+    "evr": "0.11.3-0",
+    "vcs": "platform/adaptation/emulator/emulator-daemon#8c02103bd4028d68649b6931eb986de96f387e0d",
+    "sha256": "6fa2afdc824d827e622a842ac054c125ddcd1a5585b735ac9331477e6fe20ad3"
+  }
+]

@@ -1,0 +1,22 @@
+strace -f -e trace=execve,execveat -s 300 -o /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/armv7l/rust-regex-tizen-lld.strace bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/armv7l /work --chdir /work/rust-regex-1.7.1 --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C /usr/bin/rustc -C prefer-dynamic --extern std=/usr/lib/libstd-82981c869470ee41.so -C codegen-units=1 -C debuginfo=2 -C opt-level=3 -C relocation-model=pic -C overflow-checks=on -C symbol-mangling-version=v0 -L/usr/lib/rustlib -L/usr/lib/rustlib/dylib --crate-type=dylib --crate-name=regex --edition=2018 '--cfg=feature="std"' '--cfg=feature="perf"' '--cfg=feature="unicode"' '--cfg=feature="unicode-age"' '--cfg=feature="unicode-bool"' '--cfg=feature="unicode-case"' '--cfg=feature="unicode-gencat"' '--cfg=feature="unicode-perl"' '--cfg=feature="unicode-script"' '--cfg=feature="unicode-segment"' '--cfg=feature="regex-syntax/unicode"' '--cfg=feature="regex-syntax/default"' ./src/lib.rs -C linker=/usr/bin/armv7l-tizen-linux-gnueabi-clang -C link-arg=--ld-path=/usr/bin/ld.lld --print link-args -o /work/rust-regex-tizen-lld.elf
+warning: fields `dfa`, `dfa_reverse`, and `suffixes` are never read
+  --> ./src/exec.rs:81:5
+   |
+67 | struct ExecReadOnly {
+   |        ------------ fields in this struct
+...
+81 |     dfa: Program,
+   |     ^^^
+...
+85 |     dfa_reverse: Program,
+   |     ^^^^^^^^^^^
+...
+90 |     suffixes: LiteralSearcher,
+   |     ^^^^^^^^
+   |
+   = note: `ExecReadOnly` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+   = note: `#[warn(dead_code)]` on by default
+
+LC_ALL="C" PATH="/usr/lib/rustlib/arm-unknown-linux-gnueabi/bin:/usr/bin:/bin" VSLANG="1033" "/usr/bin/armv7l-tizen-linux-gnueabi-clang" "-Wl,--version-script=/work/tmp/rustcNKnYkS/list" "-Wl,--no-undefined-version" "/work/tmp/rustcNKnYkS/symbols.o" "/work/rust-regex-tizen-lld.regex.3e585920f7d8593f-cgu.0.rcgu.o" "/work/tmp/rustcNKnYkS/rmeta.o" "-Wl,--as-needed" "-Wl,-Bdynamic" "/usr/lib/rustlib/dylib/libregex_syntax.so" "/usr/lib/libstd-82981c869470ee41.so" "-Wl,-Bstatic" "/usr/lib/rustlib/arm-unknown-linux-gnueabi/lib/libcompiler_builtins-7cd8d77e7d995806.rlib" "-Wl,-Bdynamic" "-lgcc_s" "-lutil" "-lrt" "-lpthread" "-lm" "-ldl" "-lc" "-L" "/work/tmp/rustcNKnYkS/raw-dylibs" "-Wl,--eh-frame-hdr" "-Wl,-z,noexecstack" "-L" "/usr/lib/rustlib" "-L" "/usr/lib/rustlib/dylib" "-L" "/usr/lib/rustlib/arm-unknown-linux-gnueabi/lib" "-o" "/work/rust-regex-tizen-lld.elf" "-shared" "-Wl,-soname=rust-regex-tizen-lld.elf" "-Wl,-z,relro,-z,now" "-Wl,-O1" "-nodefaultlibs" "--ld-path=/usr/bin/ld.lld"
+warning: 1 warning emitted
+

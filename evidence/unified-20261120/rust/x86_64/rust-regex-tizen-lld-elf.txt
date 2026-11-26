@@ -1,0 +1,41 @@
+readelf -W -p .comment -d /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/runs/x86_64/rust-regex-tizen-lld.elf
+
+Dynamic section at offset 0x2c648 contains 31 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libregex_syntax.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstd-210854cf1daa4bec.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x000000000000000e (SONAME)             Library soname: [rust-regex-tizen-lld.elf]
+ 0x000000000000001e (FLAGS)              BIND_NOW
+ 0x000000006ffffffb (FLAGS_1)            Flags: NOW
+ 0x0000000000000007 (RELA)               0x8630
+ 0x0000000000000008 (RELASZ)             9024 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          244
+ 0x0000000000000017 (JMPREL)             0xa970
+ 0x0000000000000002 (PLTRELSZ)           72 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x2ec40
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x270
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x2724
+ 0x000000000000000a (STRSZ)              24331 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x2128
+ 0x0000000000000019 (INIT_ARRAY)         0x2d018
+ 0x000000000000001b (INIT_ARRAYSZ)       8 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x2d010
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x2bfa0
+ 0x000000000000000d (FINI)               0x2bfb8
+ 0x000000006ffffff0 (VERSYM)             0x1e60
+ 0x000000006ffffffe (VERNEED)            0x20b4
+ 0x000000006fffffff (VERNEEDNUM)         3
+ 0x0000000000000000 (NULL)               0x0
+
+String dump of section '.comment':
+  [     0]  rustc version 1.90.0 (1159e78c4 2025-09-14)
+  [    2c]  GCC: (Tizen GCC 14.2.0 20240801 1.6) 14.2.0
+  [    59]  Linker: LLD 22.1.8
+

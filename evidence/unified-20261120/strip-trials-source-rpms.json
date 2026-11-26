@@ -1,0 +1,34 @@
+[
+  {
+    "package": "augeas",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/augeas-1.14.1-0.src.rpm",
+    "rpm": "augeas-1.14.1-0.src.rpm",
+    "evr": "1.14.1-0",
+    "vcs": "platform/upstream/augeas#f8321bfc8b2a29ac7bd05217b315c4ed18ba48ea",
+    "sha256": "b00f7431c620628d8f555576022bbc1feb451403d1325b5d122772c734e0fe72"
+  },
+  {
+    "package": "nnfw",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/nnfw-1.28.0-1.src.rpm",
+    "rpm": "nnfw-1.28.0-1.src.rpm",
+    "evr": "1.28.0-1",
+    "vcs": "platform/core/ml/nnfw#91297fc56cca1d4df16bebe2f92a9e9d2cb6d488",
+    "sha256": "b3671d633afc2803a265f6d260c28ef60aa9a1627ec134b016bee3b8337a79bf"
+  },
+  {
+    "package": "mtp-initiator",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/mtp-initiator-1.4.39-0.src.rpm",
+    "rpm": "mtp-initiator-1.4.39-0.src.rpm",
+    "evr": "1.4.39-0",
+    "vcs": "platform/core/connectivity/mtp-initiator#62e49acf659c3b46a21f22076ba41f005d13c5f1",
+    "sha256": "e1ac2687c21d720d206911d03d90fda51815b04ead9e3cde7ddb8c162ed95521"
+  },
+  {
+    "package": "security-config",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/source/security-config-1.0-1.src.rpm",
+    "rpm": "security-config-1.0-1.src.rpm",
+    "evr": "1.0-1",
+    "vcs": "platform/core/security/security-config#1e550298b147a50f85e188dff15b2c457262c324",
+    "sha256": "963ebdf8ece2a120be64ab2d335658911222fb6e870455259d06b8e2f0f0f56a"
+  }
+]
