@@ -66,8 +66,8 @@ def recipe_text(package, arch, group):
         return ("Inspect Kbuild controls and per-module link actions in the kernel table.",
                 "Set LLVM=1 or explicit LD=ld.lld in each Kbuild step where target policy requires it; capture V=1 and module ABI checks.")
     if package.startswith("u-boot"):
-        return ("dtc and fw_printenv are HOSTLD targets; inspect HOSTCC at the actual stage.",
-                "Control HOSTCC/HOSTLDFLAGS separately from target CROSS_COMPILE.")
+        return ("dtc is relinked in a later make using the Makefile's HOSTCC default. fw_printenv overrides HOSTCC with target CC.",
+                "Set HOSTCC at each dtc stage and set the intended target CC for envtools.")
     if package.endswith("-engine-default"):
         return ("Published image and RPM ELF files match executable members of source tar/TPK where listed.",
                 "Track matched vendor ELF provenance; verify any newly linked targets separately.")
@@ -112,7 +112,7 @@ def main():
     trial_table = args.evidence / "trial-builds.csv"
     if trial_table.exists():
         for item in csv_rows(trial_table):
-            trials[item["package"], item["arch"]].append({key: item[key] for key in ("variant", "exit", "evidence")})
+            trials[item["package"], item["arch"]].append({key: item[key] for key in ("variant", "state", "exit", "evidence")})
     sources = index_sources(args.data)
     paths = defaultdict(Counter)
     per_rpm = defaultdict(Counter)

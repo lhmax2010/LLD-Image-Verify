@@ -1,7 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-native/armv7l/yaca/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
-Full local trial log SHA256 603fd5f494bca3e243db89e35bf21910fd2ba65969eb3af6381a917f9471b5be
-Exit pending
+Full local trial log SHA256 a90c3b7eec62edb4a52f19b0eec7b902b6df6a2bac163da634de8611005bb3a7
+State timed-out, exit 124
 
 55	-- The C compiler identification is GNU 14.2.0
 56	-- The CXX compiler identification is GNU 14.2.0

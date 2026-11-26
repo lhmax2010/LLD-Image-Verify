@@ -1,5 +1,5 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-arm-retry/armv7l/hdf5/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/hdf5 /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/hdf5.spec
-Full local trial log SHA256 c587de8da269a0f3e2c0959dcbaccd9e67f608718e89a1a29c45d2a0d5525168
-Exit pending
+Full local trial log SHA256 1d2e1ea3a431b85f5840e89b6d748286549834b67d8479ed1bec53fcc14b6360
+State timed-out, exit 124
 

@@ -1,0 +1,6 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/u-boot-builds/aarch64/u-boot/published-verbose /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/u-boot-trials/sources/u-boot /work/SOURCES --setenv PATH /work/tools:/usr/bin:/bin --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" --define "__tar /work/tools/tar" /work/SPECS/u-boot.spec
+Full local trial log SHA256 1a3f49aa6b2e97a9c32d49a7c9fbc78ec1cbcbc0944837455175da8e5d9dc60a
+State failed, exit 1
+
+2	error: Architecture is not included: aarch64

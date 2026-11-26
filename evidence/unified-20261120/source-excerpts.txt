@@ -96,3 +96,45 @@ ANGLE build/config/compiler/BUILD.gn
 ANGLE build/toolchain/linux/BUILD.gn
 34:  toolprefix = "aarch64-tizen-linux-gnu-"
 55:  toolprefix = "armv7l-tizen-linux-gnueabi-"
+
+u-boot.spec
+79:make %{?_smp_mflags} HOSTCC="%{__cc} $RPM_OPT_FLAGS" HOSTSTRIP=/bin/true tools
+80:make HOSTCC="%{__cc} $RPM_OPT_FLAGS" envtools
+84:make %{?_smp_mflags} EXTRAVERSION=`echo %{vcs} | sed 's/.*u-boot.*#\(.\{9\}\).*/-g\1-TIZEN.org/'`
+104:install -p -m 0755 tools/env/fw_printenv %{buildroot}%{_bindir}
+105:install -p -m 0755 scripts/dtc/dtc %{buildroot}%{_bindir}
+
+u-boot Makefile
+419:HOSTCC       = cc
+450:LD		= $(CROSS_COMPILE)ld
+451:CC		= $(CROSS_COMPILE)gcc
+2186:envtools: $(defaultenv_h)
+2429:envtools: u-boot-initial-env scripts_basic $(version_h) $(timestamp_h) tools/version.h
+
+u-boot scripts/Makefile.host
+101:quiet_cmd_host-cmulti	= HOSTLD  $@
+102:      cmd_host-cmulti	= $(HOSTCC) $(KBUILD_HOSTLDFLAGS) -o $@ \
+
+u-boot tools/env/Makefile
+9:override HOSTCC = $(CC)
+
+u-boot-rpi4.spec
+72:make %{?_smp_mflags} HOSTCC="%{__cc} $RPM_OPT_FLAGS" HOSTSTRIP=/bin/true tools
+74:make HOSTCC="%{__cc} $RPM_OPT_FLAGS" envtools
+78:make %{?_smp_mflags} EXTRAVERSION=`echo %{vcs} | sed 's/.*u-boot.*#\(.\{9\}\).*/-g\1-TIZEN.org/'`
+94:install -p -m 0755 tools/env/fw_printenv %{buildroot}%{_bindir}
+95:install -p -m 0755 scripts/dtc/dtc %{buildroot}%{_bindir}
+
+u-boot-rpi4 Makefile
+419:HOSTCC       = cc
+450:LD		= $(CROSS_COMPILE)ld
+451:CC		= $(CROSS_COMPILE)gcc
+2186:envtools: $(defaultenv_h)
+2429:envtools: u-boot-initial-env scripts_basic $(version_h) $(timestamp_h) tools/version.h
+
+u-boot-rpi4 scripts/Makefile.host
+101:quiet_cmd_host-cmulti	= HOSTLD  $@
+102:      cmd_host-cmulti	= $(HOSTCC) $(KBUILD_HOSTLDFLAGS) -o $@ \
+
+u-boot-rpi4 tools/env/Makefile
+9:override HOSTCC = $(CC)

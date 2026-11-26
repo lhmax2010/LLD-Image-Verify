@@ -1,7 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/aarch64/hdf5/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/hdf5 /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/hdf5.spec
 Full local trial log SHA256 9877370c65653e91cd6169bfa565c761371d8f573d410c2a4af617736fa19e39
-Exit 1
+State failed, exit 1
 
 173	configure: error: Fortran compiler requires either intrinsic functions SIZEOF or STORAGE_SIZE
 174	error: Bad exit status from /work/tmp/rpm-tmp.i48MRc (%build)

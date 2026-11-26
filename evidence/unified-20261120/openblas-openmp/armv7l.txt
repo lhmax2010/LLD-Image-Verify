@@ -1,0 +1,43 @@
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/armv7l/openblas/clang /work --chdir /work/BUILD/openmp/exports --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C armv7l-tizen-linux-gnueabi-clang -O2 -g -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=vfpv3 -mfloat-abi=softfp -D__SOFTFP__ -DMAX_STACK_ALLOC=2048 -fopenmp -marm -mfloat-abi=softfp -Wall -Wno-implicit-function-declaration -Wno-incompatible-pointer-types -DF_INTERFACE_GFORT -fPIC -DSMP_SERVER -DUSE_OPENMP -DNO_WARMUP -DMAX_CPU_NUMBER=64 -DMAX_PARALLEL_NUMBER=1 -DBUILD_SINGLE=1 -DBUILD_DOUBLE=1 -DBUILD_COMPLEX=1 -DBUILD_COMPLEX16=1 '-DVERSION="0.3.21"' -mfpu=vfpv3 -march=armv7-a -UASMNAME -UASMFNAME -UNAME -UCNAME -UCHAR_NAME -UCHAR_CNAME -DASMNAME= -DASMFNAME=_ -DNAME=_ -DCNAME= '-DCHAR_NAME="_"' '-DCHAR_CNAME=""' -DNO_AFFINITY -I.. -Wl,-z,noexecstack -shared -o ../libopenblas_openmp_armv7p-r0.3.21.so -Wl,--whole-archive ../libopenblas_openmp_armv7p-r0.3.21.a -Wl,--no-whole-archive -Wl,-soname,libopenblas_openmp.so.0 -lm -lpthread -lgfortran -lm -lpthread -lgfortran
+Original local log lines 22573–22575
+Exit 0
+
+Dynamic section at offset 0x9343b4 contains 31 entries:
+  Tag        Type                         Name/Value
+ 0x00000001 (NEEDED)                     Shared library: [libm.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [libpthread.so.0]
+ 0x00000001 (NEEDED)                     Shared library: [libgfortran.so.5]
+ 0x00000001 (NEEDED)                     Shared library: [libomp.so]
+ 0x00000001 (NEEDED)                     Shared library: [libgcc_s.so.1]
+ 0x00000001 (NEEDED)                     Shared library: [libc.so.6]
+ 0x00000001 (NEEDED)                     Shared library: [ld-linux.so.3]
+ 0x0000000e (SONAME)                     Library soname: [libopenblas_openmp.so.0]
+ 0x00000011 (REL)                        0x41268
+ 0x00000012 (RELSZ)                      21464 (bytes)
+ 0x00000013 (RELENT)                     8 (bytes)
+ 0x6ffffffa (RELCOUNT)                   12
+ 0x00000017 (JMPREL)                     0x46660
+ 0x00000002 (PLTRELSZ)                   33184 (bytes)
+ 0x00000003 (PLTGOT)                     0x965780
+ 0x00000014 (PLTREL)                     REL
+ 0x00000006 (SYMTAB)                     0x194
+ 0x0000000b (SYMENT)                     16 (bytes)
+ 0x00000005 (STRTAB)                     0x2a9dc
+ 0x0000000a (STRSZ)                      92297 (bytes)
+ 0x6ffffef5 (GNU_HASH)                   0x1e548
+ 0x00000019 (INIT_ARRAY)                 0x951aa8
+ 0x0000001b (INIT_ARRAYSZ)               8 (bytes)
+ 0x0000001a (FINI_ARRAY)                 0x951aa0
+ 0x0000001c (FINI_ARRAYSZ)               8 (bytes)
+ 0x0000000c (INIT)                       0x93172c
+ 0x0000000d (FINI)                       0x931738
+ 0x6ffffff0 (VERSYM)                     0x1aeb4
+ 0x6ffffffe (VERNEED)                    0x1e458
+ 0x6fffffff (VERNEEDNUM)                 6
+ 0x00000000 (NULL)                       0x0
+
+String dump of section '.comment':
+  [     1]  clang version 22.1.8
+  [    16]  Linker: LLD 22.1.8
+  [    29]  GCC: (Tizen GCC 14.2.0 20240801 1.1) 14.2.0
+

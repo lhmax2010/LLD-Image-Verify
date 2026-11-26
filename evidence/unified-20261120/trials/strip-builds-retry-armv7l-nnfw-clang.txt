@@ -1,0 +1,10 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-builds-retry/armv7l/nnfw/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-trials/sources/nnfw /work/SOURCES --setenv PATH /work/tools:/usr/bin:/bin --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" --define "__tar /work/tools/tar" /work/SPECS/nnfw.spec
+Full local trial log SHA256 fed4ecf19403ef6af67ee18caec09e1c0a2dd540a33701de158e97dd33e7b597
+State failed, exit 1
+
+150	-- The C compiler identification is Clang 22.1.8
+151	-- The CXX compiler identification is Clang 22.1.8
+182	CMake Error at /work/BUILD/nnfw-1.28.0/runtime/libs/circle-schema/CMakeLists.txt:5 (target_link_libraries):
+195	CMake Error at /work/BUILD/nnfw-1.28.0/runtime/onert/core/CMakeLists.txt:21 (target_link_libraries):
+216	error: Bad exit status from /work/tmp/rpm-tmp.89EDlq (%build)

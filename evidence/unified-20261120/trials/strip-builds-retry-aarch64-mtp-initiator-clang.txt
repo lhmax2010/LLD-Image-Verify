@@ -1,0 +1,9 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-builds-retry/aarch64/mtp-initiator/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/strip-trials/sources/mtp-initiator /work/SOURCES --setenv PATH /work/tools:/usr/bin:/bin --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" --define "__tar /work/tools/tar" /work/SPECS/mtp-initiator.spec
+Full local trial log SHA256 3e530094b4e5c4d811ce5d6782f08e5d2c4534e9070178eefd23a1aea9ed4e83
+State completed, exit 0
+
+69	-- The C compiler identification is Clang 22.1.8
+70	-- The CXX compiler identification is Clang 22.1.8
+199	[ 85%] Linking C executable mtp-initiator
+212	[100%] Linking CXX executable mtp-initiator-haltests

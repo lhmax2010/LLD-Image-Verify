@@ -1,0 +1,41 @@
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/aarch64/openblas/clang /work --chdir /work/BUILD/openmp/exports --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C aarch64-tizen-linux-gnu-clang -O2 -g -DMAX_STACK_ALLOC=2048 -fopenmp -Wall -Wno-implicit-function-declaration -Wno-incompatible-pointer-types -DF_INTERFACE_GFORT -fPIC -DSMP_SERVER -DUSE_OPENMP -DNO_WARMUP -DMAX_CPU_NUMBER=64 -DMAX_PARALLEL_NUMBER=1 -DBUILD_SINGLE=1 -DBUILD_DOUBLE=1 -DBUILD_COMPLEX=1 -DBUILD_COMPLEX16=1 '-DVERSION="0.3.21"' -march=armv8-a -UASMNAME -UASMFNAME -UNAME -UCNAME -UCHAR_NAME -UCHAR_CNAME -DASMNAME= -DASMFNAME=_ -DNAME=_ -DCNAME= '-DCHAR_NAME="_"' '-DCHAR_CNAME=""' -DNO_AFFINITY -I.. -Wl,-z,noexecstack -shared -o ../libopenblas_openmp_armv8p-r0.3.21.so -Wl,--whole-archive ../libopenblas_openmp_armv8p-r0.3.21.a -Wl,--no-whole-archive -Wl,-soname,libopenblas_openmp.so.0 -lm -lpthread -lgfortran -lm -lpthread -lgfortran
+Original local log lines 38510–38512
+Exit 0
+
+Dynamic section at offset 0x9a7eb8 contains 29 entries:
+  Tag        Type                         Name/Value
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libpthread.so.0]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgfortran.so.5]
+ 0x0000000000000001 (NEEDED)             Shared library: [libomp.so]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x000000000000000e (SONAME)             Library soname: [libopenblas_openmp.so.0]
+ 0x0000000000000007 (RELA)               0x4ea18
+ 0x0000000000000008 (RELASZ)             64512 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          13
+ 0x0000000000000017 (JMPREL)             0x5e618
+ 0x0000000000000002 (PLTRELSZ)           101184 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x9d9550
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x270
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x38180
+ 0x000000000000000a (STRSZ)              92312 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0x2bcc8
+ 0x0000000000000019 (INIT_ARRAY)         0x9c2d40
+ 0x000000000000001b (INIT_ARRAYSZ)       24 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x9c2d30
+ 0x000000000000001c (FINI_ARRAYSZ)       16 (bytes)
+ 0x000000000000000c (INIT)               0x9a255c
+ 0x000000000000000d (FINI)               0x9a2574
+ 0x000000006ffffff0 (VERSYM)             0x28668
+ 0x000000006ffffffe (VERNEED)            0x2bc14
+ 0x000000006fffffff (VERNEEDNUM)         4
+ 0x0000000000000000 (NULL)               0x0
+
+String dump of section '.comment':
+  [     1]  clang version 22.1.8
+  [    16]  Linker: LLD 22.1.8
+  [    29]  GCC: (Tizen GCC 14.2.0 20240801 1.1) 14.2.0
+

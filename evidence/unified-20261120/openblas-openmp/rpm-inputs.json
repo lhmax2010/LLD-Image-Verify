@@ -1,0 +1,62 @@
+[
+  {
+    "snapshot": "tizen-base-toolchain_20261119.042539",
+    "arch": "aarch64",
+    "kind": "packages",
+    "name": "libomp",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/aarch64/libomp-22.1.8-1.6.aarch64.rpm",
+    "rpm": "libomp-22.1.8-1.6.aarch64.rpm",
+    "algo": "sha256",
+    "digest": "871a3ab0d3c0a74d5610040e1cb84f49410c6087a1e1dcaff8f0f7e3e7c73a5f",
+    "nevra": "libomp-0:22.1.8-1.6.aarch64",
+    "image_key": "libomp.aarch64 22.1.8-1.6",
+    "source": "llvm-22.1.8-1.6.src.rpm",
+    "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+    "bytes": 336661
+  },
+  {
+    "snapshot": "tizen-base-toolchain_20261119.042539",
+    "arch": "armv7l",
+    "kind": "packages",
+    "name": "libomp",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/libomp-22.1.8-1.6.armv7l.rpm",
+    "rpm": "libomp-22.1.8-1.6.armv7l.rpm",
+    "algo": "sha256",
+    "digest": "63de1c0dd2f7c0916313c7576911f623dc61f7454b7cd5cbb99bc025a0cb6ddc",
+    "nevra": "libomp-0:22.1.8-1.6.armv7l",
+    "image_key": "libomp.armv7l 22.1.8-1.6",
+    "source": "llvm-22.1.8-1.6.src.rpm",
+    "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+    "bytes": 209761
+  },
+  {
+    "snapshot": "tizen-base-toolchain_20261119.042539",
+    "arch": "aarch64",
+    "kind": "packages",
+    "name": "libomp-devel",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/aarch64/libomp-devel-22.1.8-1.6.aarch64.rpm",
+    "rpm": "libomp-devel-22.1.8-1.6.aarch64.rpm",
+    "algo": "sha256",
+    "digest": "a43c25e85bb610f28c0fea8fb0b21a8a1716fc8c820e90d0761b333b8529ad7e",
+    "nevra": "libomp-devel-0:22.1.8-1.6.aarch64",
+    "image_key": "libomp-devel.aarch64 22.1.8-1.6",
+    "source": "llvm-22.1.8-1.6.src.rpm",
+    "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+    "bytes": 250437
+  },
+  {
+    "snapshot": "tizen-base-toolchain_20261119.042539",
+    "arch": "armv7l",
+    "kind": "packages",
+    "name": "libomp-devel",
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/libomp-devel-22.1.8-1.6.armv7l.rpm",
+    "rpm": "libomp-devel-22.1.8-1.6.armv7l.rpm",
+    "algo": "sha256",
+    "digest": "94e116772356a9669e77e5146ada0ac1db3facd97368a659297d67a3a4e7ce93",
+    "nevra": "libomp-devel-0:22.1.8-1.6.armv7l",
+    "image_key": "libomp-devel.armv7l 22.1.8-1.6",
+    "source": "llvm-22.1.8-1.6.src.rpm",
+    "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+    "bytes": 10689
+  }
+]

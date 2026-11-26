@@ -1,0 +1,7 @@
+Command
+bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-native/aarch64/lapack/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/lapack /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/lapack.spec
+Full local trial log SHA256 ebe6ec6b462a57040c435256baa92ca089c2da249bdaa7f13c5455e7d377fbeb
+State timed-out, exit 124
+
+66	-- The Fortran compiler identification is GNU 14.2.0
+67	-- The C compiler identification is GNU 14.2.0

@@ -1,5 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-arm-retry/armv7l/nntrainer/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/nntrainer /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/nntrainer.spec
-Full local trial log SHA256 856d9834eb66c579581e4258aad1b5320ce86063bc2c88fb7082886ad61518ed
-Exit pending
+Full local trial log SHA256 b6149dd60230632b7a76e8d67de7b3c2d62429aadc2e42572e3e8cde0bceabb1
+State timed-out, exit 124
 
+59	C linker for the host machine: armv7l-tizen-linux-gnueabi-gcc ld.lld 22.1.8
+61	C++ linker for the host machine: armv7l-tizen-linux-gnueabi-g++ ld.lld 22.1.8

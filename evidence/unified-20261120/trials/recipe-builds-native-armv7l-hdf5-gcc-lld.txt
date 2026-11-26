@@ -1,5 +1,5 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-binfmt --ro-bind /usr/bin/qemu-arm-static /usr/bin/qemu-arm --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-native/armv7l/hdf5/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/hdf5 /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/hdf5.spec
-Full local trial log SHA256 b83cfdda4d16f9a850255aba44ac56d24a5cde9b8e734fec2e1595a0842e08e7
-Exit pending
+Full local trial log SHA256 7fd0a0427d45df67354cf6eea9772a7f7b48252f8a212acebdb8a4b16a379ff6
+State timed-out, exit 124
 

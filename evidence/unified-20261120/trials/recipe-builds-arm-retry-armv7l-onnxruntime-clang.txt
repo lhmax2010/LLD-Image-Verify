@@ -1,7 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/armv7l / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-arm-retry/armv7l/onnxruntime/clang /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/onnxruntime /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target armv7l-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/armv7l-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/onnxruntime.spec
-Full local trial log SHA256 8dfd2f607b515e9fd3e31f8d3c52ae7613d3205c4dc45fcd55fe60dc67aaec1a
-Exit pending
+Full local trial log SHA256 500dc3c4560e1897ad3069d64f8c7712afbeb30a68d267139088251066563f43
+State timed-out, exit 124
 
 9174	-- The C compiler identification is Clang 22.1.8
 9175	-- The CXX compiler identification is Clang 22.1.8

@@ -1,7 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-fixed/aarch64/yaca/clang-fixed /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
-Full local trial log SHA256 812db8b22db09ab907ff0b66b9d30a8df131be2826351f645ad780ebc53f72e6
-Exit pending
+Full local trial log SHA256 423df9ec78c1ef266e5de06f022c82f00dbecb5984182162ef96ef7bd807c3ab
+State timed-out, exit 124
 
 58	-- The C compiler identification is Clang 22.1.8
 59	-- The CXX compiler identification is Clang 22.1.8
@@ -26,3 +26,30 @@ Exit pending
 526	/work/BUILD/yaca-0.0.6/examples/sign_simple.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
 545	/work/BUILD/yaca-0.0.6/examples/sign_simple_cmac.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
 564	/work/BUILD/yaca-0.0.6/examples/cert.c:559:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+610	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+623	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+636	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+649	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+662	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression
+675	/work/BUILD/yaca-0.0.6/tests/common.h:64:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_DH_RFC' must be initialized by a constant expression
+688	/work/BUILD/yaca-0.0.6/tests/common.h:66:1: error: constexpr variable 'YACA_INVALID_ENCRYPT_ALGORITHM' must be initialized by a constant expression
+701	/work/BUILD/yaca-0.0.6/tests/common.h:67:1: error: constexpr variable 'YACA_INVALID_BLOCK_CIPHER_MODE' must be initialized by a constant expression
+714	/work/BUILD/yaca-0.0.6/tests/common.h:68:1: error: constexpr variable 'YACA_INVALID_PROPERTY' must be initialized by a constant expression
+727	/work/BUILD/yaca-0.0.6/tests/common.h:69:1: error: constexpr variable 'YACA_INVALID_PADDING' must be initialized by a constant expression
+740	/work/BUILD/yaca-0.0.6/tests/common.h:70:1: error: constexpr variable 'YACA_INVALID_KDF' must be initialized by a constant expression
+760	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+773	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+786	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+799	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+812	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression
+825	/work/BUILD/yaca-0.0.6/tests/common.h:64:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_DH_RFC' must be initialized by a constant expression
+838	/work/BUILD/yaca-0.0.6/tests/common.h:66:1: error: constexpr variable 'YACA_INVALID_ENCRYPT_ALGORITHM' must be initialized by a constant expression
+851	/work/BUILD/yaca-0.0.6/tests/common.h:67:1: error: constexpr variable 'YACA_INVALID_BLOCK_CIPHER_MODE' must be initialized by a constant expression
+864	/work/BUILD/yaca-0.0.6/tests/common.h:68:1: error: constexpr variable 'YACA_INVALID_PROPERTY' must be initialized by a constant expression
+877	/work/BUILD/yaca-0.0.6/tests/common.h:69:1: error: constexpr variable 'YACA_INVALID_PADDING' must be initialized by a constant expression
+890	/work/BUILD/yaca-0.0.6/tests/common.h:70:1: error: constexpr variable 'YACA_INVALID_KDF' must be initialized by a constant expression
+952	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+965	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+978	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+991	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+1004	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression

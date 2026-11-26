@@ -1,8 +1,55 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --tmpfs /emul --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds-final/aarch64/yaca/clang-fixed /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/yaca /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/yaca.spec
-Full local trial log SHA256 9d1bcb34e314211e15ecc353a9471e0facb7954d7d6eb6ce24a0ec459411f37d
-Exit pending
+Full local trial log SHA256 2d98fad884ad3572aeac9953d271f490b966bba621d0461e92ddb3e2c08d807a
+State timed-out, exit 124
 
 58	-- The C compiler identification is Clang 22.1.8
 59	-- The CXX compiler identification is Clang 22.1.8
 150	[ 10%] Linking C shared library libyaca.so
+203	/work/BUILD/yaca-0.0.6/examples/digest.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+222	/work/BUILD/yaca-0.0.6/examples/digest_simple.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+241	/work/BUILD/yaca-0.0.6/examples/encrypt.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+260	/work/BUILD/yaca-0.0.6/examples/encrypt_gcm.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+279	/work/BUILD/yaca-0.0.6/examples/encrypt_ccm.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+298	/work/BUILD/yaca-0.0.6/examples/encrypt_simple.c:36:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+317	/work/BUILD/yaca-0.0.6/examples/key_wrap.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+336	/work/BUILD/yaca-0.0.6/examples/key_gen.c:29:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+355	/work/BUILD/yaca-0.0.6/examples/key_password.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+374	/work/BUILD/yaca-0.0.6/examples/key_exchange.c:58:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+393	/work/BUILD/yaca-0.0.6/examples/key_import_export_sym.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+412	/work/BUILD/yaca-0.0.6/examples/key_import_export_asym.c:34:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+431	/work/BUILD/yaca-0.0.6/examples/rsa_private.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+450	/work/BUILD/yaca-0.0.6/examples/rsa_public.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+469	/work/BUILD/yaca-0.0.6/examples/seal.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+488	/work/BUILD/yaca-0.0.6/examples/sign.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+507	/work/BUILD/yaca-0.0.6/examples/sign_hmac.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+526	/work/BUILD/yaca-0.0.6/examples/sign_simple.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+545	/work/BUILD/yaca-0.0.6/examples/sign_simple_cmac.c:35:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+564	/work/BUILD/yaca-0.0.6/examples/cert.c:559:9: error: a function declaration without a prototype is deprecated in all versions of C [-Werror,-Wstrict-prototypes]
+610	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+623	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+636	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+649	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+662	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression
+675	/work/BUILD/yaca-0.0.6/tests/common.h:64:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_DH_RFC' must be initialized by a constant expression
+688	/work/BUILD/yaca-0.0.6/tests/common.h:66:1: error: constexpr variable 'YACA_INVALID_ENCRYPT_ALGORITHM' must be initialized by a constant expression
+701	/work/BUILD/yaca-0.0.6/tests/common.h:67:1: error: constexpr variable 'YACA_INVALID_BLOCK_CIPHER_MODE' must be initialized by a constant expression
+714	/work/BUILD/yaca-0.0.6/tests/common.h:68:1: error: constexpr variable 'YACA_INVALID_PROPERTY' must be initialized by a constant expression
+727	/work/BUILD/yaca-0.0.6/tests/common.h:69:1: error: constexpr variable 'YACA_INVALID_PADDING' must be initialized by a constant expression
+740	/work/BUILD/yaca-0.0.6/tests/common.h:70:1: error: constexpr variable 'YACA_INVALID_KDF' must be initialized by a constant expression
+760	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+773	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+786	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+799	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+812	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression
+825	/work/BUILD/yaca-0.0.6/tests/common.h:64:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_DH_RFC' must be initialized by a constant expression
+838	/work/BUILD/yaca-0.0.6/tests/common.h:66:1: error: constexpr variable 'YACA_INVALID_ENCRYPT_ALGORITHM' must be initialized by a constant expression
+851	/work/BUILD/yaca-0.0.6/tests/common.h:67:1: error: constexpr variable 'YACA_INVALID_BLOCK_CIPHER_MODE' must be initialized by a constant expression
+864	/work/BUILD/yaca-0.0.6/tests/common.h:68:1: error: constexpr variable 'YACA_INVALID_PROPERTY' must be initialized by a constant expression
+877	/work/BUILD/yaca-0.0.6/tests/common.h:69:1: error: constexpr variable 'YACA_INVALID_PADDING' must be initialized by a constant expression
+890	/work/BUILD/yaca-0.0.6/tests/common.h:70:1: error: constexpr variable 'YACA_INVALID_KDF' must be initialized by a constant expression
+952	/work/BUILD/yaca-0.0.6/tests/common.h:59:1: error: constexpr variable 'YACA_INVALID_KEY_FORMAT' must be initialized by a constant expression
+965	/work/BUILD/yaca-0.0.6/tests/common.h:60:1: error: constexpr variable 'YACA_INVALID_KEY_FILE_FORMAT' must be initialized by a constant expression
+978	/work/BUILD/yaca-0.0.6/tests/common.h:61:1: error: constexpr variable 'YACA_INVALID_KEY_TYPE' must be initialized by a constant expression
+991	/work/BUILD/yaca-0.0.6/tests/common.h:62:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH' must be initialized by a constant expression
+1004	/work/BUILD/yaca-0.0.6/tests/common.h:63:1: error: constexpr variable 'YACA_INVALID_KEY_BIT_LENGTH_EC' must be initialized by a constant expression

@@ -1,7 +1,7 @@
 Command
 bwrap --unshare-user --uid 0 --gid 0 --unshare-pid --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/rust/root/aarch64 / --dev /dev --proc /proc --ro-bind /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-aarch64-binfmt --ro-bind /usr/bin/qemu-arm64-static /usr/bin/qemu-aarch64 --bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipe-builds/aarch64/nntrainer/gcc-lld /work --chdir /work --clearenv --setenv PATH /usr/bin:/bin --setenv HOME /work --setenv TMPDIR /work/tmp --setenv LC_ALL C --ro-bind /home/linhao/lss/LLD_Image_Check/results/2026-11-25-unified-linkers/recipes/sources/nntrainer /work/SOURCES --setenv LD_LIBRARY_PATH /usr/lib64:/usr/lib /usr/bin/rpmbuild -bc --nodeps --noclean --target aarch64-tizen-linux --macros /usr/lib/rpm/macros:/usr/lib/rpm/platform/aarch64-linux/macros:/usr/lib/rpm/macros.*:/etc/rpm/macros.*:/work/profile.macros --define "_topdir /work" --define "_tmppath /work/tmp" /work/SPECS/nntrainer.spec
 Full local trial log SHA256 9261ac1e9ccc7b8c22ec3a6f7c58b728cc4d10795905865d4bea2f552ac47aa0
-Exit 1
+State failed, exit 1
 
 60	C linker for the host machine: aarch64-tizen-linux-gnu-gcc ld.lld 22.1.8
 62	C++ linker for the host machine: aarch64-tizen-linux-gnu-g++ ld.lld 22.1.8
