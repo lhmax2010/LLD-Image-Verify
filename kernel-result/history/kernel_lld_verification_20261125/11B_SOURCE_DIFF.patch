@@ -1,0 +1,9 @@
+diff --git a/kernel/Makefile b/kernel/Makefile
+--- a/kernel/Makefile
++++ b/kernel/Makefile
+@@ -1,5 +1,4 @@
+ PWD := $(shell pwd)
+-LD = ${CROSS_COMPILE}ld
+ 
+ LOGGER_MAIN_BUFFER_SIZE ?= 256
+ LOGGER_EVENTS_BUFFER_SIZE ?= 256

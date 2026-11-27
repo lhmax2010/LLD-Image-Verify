@@ -1,0 +1,19 @@
+{
+  "status": "EXACT_LIVE_NOTES_AND_BANNER_MATCH",
+  "rpm": "arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+  "rpm_published_sha256": "46c00b2a01af0301dad12e56393be72cbf6d8aa87e84633c5622318f615cd52a",
+  "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+  "rpm_member": "/boot/zImage",
+  "zimage_sha256": "c7bb5ba8a5d7731e9715b4df59daee7308b4931afe3aa365ba62e1a34237ced4",
+  "raw_image_sha256": "2bd412c5bdac45238d8a218457319d557599cb08b388ce97e46a68d51c427378",
+  "raw_image_size": 41721980,
+  "gzip_offset": 33353,
+  "device_note_offset_in_raw": 28707264,
+  "device_note_sha256": "0ae62c21ea77419084385da0888ce9ed32e51acc70ed65c0823a24c3df987652",
+  "device_kernel_build_id": "8d5da0f28ffc7a57a290127a26fc17cbbd103558",
+  "device_note_length": 84,
+  "device_banner_offset_in_raw": 24180028,
+  "device_banner": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-02) (clang version 22.1.8, LLD 22.1.8) #1 SMP Wed Nov 25 14:04:26 UTC 2026",
+  "sdk_vmlinux_build_id_reference": "b0449fe7b89ffc0f19584f789e3c73c6240fba28",
+  "sdk_reference_build_id_same_as_live": false
+}

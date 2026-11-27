@@ -1,0 +1,117 @@
+{
+  "status": "ENGINEERING_CLOSED_STRICT_CONDITIONAL",
+  "decision": {
+    "ENGINEERING_ACCEPTANCE": "PASS",
+    "ENGINEERING_SCOPE": "KERNEL_AND_MODULE_FINAL_LINK",
+    "STRICT_ACCEPTANCE": "CONDITIONAL_PASS",
+    "FULL_INTERMEDIATE_LINK_COVERAGE": "NOT_VERIFIED",
+    "HISTORICAL_E4_EVIDENCE": "UNAVAILABLE",
+    "KDBUS_INTERMEDIATE_LINK": "OPEN",
+    "pm_decision": "APPROVED_AND_CLOSED",
+    "snapshot": "tizen-unified-toolchain_20261120.082536",
+    "target": "6.12.80-arm-rpi4-v7l, standard/armv7l, Raspberry Pi 4 non-RT",
+    "accepted_primary_target_levels": {
+      "vmlinux.o": "E3",
+      "vmlinux": "E3",
+      "ARM Decompressor": "E3"
+    },
+    "individually_approved_intermediate": "vmlinux.o (E3)",
+    "module_coverage": {
+      "repository": {
+        "total": 59,
+        "original_lld_confirmed": 0,
+        "original_lld_indicated": 59,
+        "e3_engineering_verified": 59,
+        "e4_direct_execution_verified": 0,
+        "e3_plus_e4_engineering_acceptance": 1.0
+      },
+      "device": {
+        "total": 59,
+        "original_lld_confirmed": 0,
+        "original_lld_indicated": 59,
+        "e3_engineering_verified": 59,
+        "e4_direct_execution_verified": 0,
+        "e3_plus_e4_engineering_acceptance": 1.0
+      },
+      "in-tree": {
+        "total": 52,
+        "original_lld_confirmed": 0,
+        "original_lld_indicated": 52,
+        "e3_engineering_verified": 52,
+        "e4_direct_execution_verified": 0,
+        "e3_plus_e4_engineering_acceptance": 1.0
+      },
+      "out-of-tree": {
+        "total": 7,
+        "original_lld_confirmed": 0,
+        "original_lld_indicated": 7,
+        "e3_engineering_verified": 7,
+        "e4_direct_execution_verified": 0,
+        "e3_plus_e4_engineering_acceptance": 1.0
+      }
+    },
+    "open_issue": "LLD-KERNEL-001",
+    "phase9_pm_instruction": "evidence/pm-decision-original.txt",
+    "pm_instruction_sha256": "b0df90775efc64c08f9fba7f5369f5e874772a4460bb1375f8460507ba453fc1",
+    "prior_summary": "evidence/round2-summary.json",
+    "prior_summary_sha256": "b6156750d72639c3c1bdee87b2d662e734ef3ff27bacce00ea6718977b909266"
+  },
+  "issue": {
+    "id": "LLD-KERNEL-001",
+    "state": "OPEN",
+    "historical_result": "BFD_PATH_POSSIBLE",
+    "historical_direct_execution": false,
+    "source_revision": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+    "source_file": "Makefile",
+    "source_line": 2,
+    "original_assignment": "LD = ${CROSS_COMPILE}ld",
+    "affected_target": "kdbus/kdbus.o",
+    "separate_final_target": "kdbus/kdbus.ko"
+  },
+  "minimal_reproduction": {
+    "status": "PASS",
+    "scope": "isolated_make_model",
+    "gnu_make_model": "GNU Make 4.3",
+    "gnu_make_historical": "4.4.1",
+    "cases": 21,
+    "observations": 147,
+    "mocked_linker_argv": 42,
+    "compiled": false,
+    "actual_linker_executed": false
+  },
+  "audit": {
+    "scope": "already acquired matching Kernel and Kernel Module build source and relevant job logs",
+    "source_hit_rows": 153,
+    "classification_totals": {
+      "CONFIRMED_BYPASS": 0,
+      "POTENTIAL_BYPASS": 1,
+      "SAFE_INHERITANCE": 56,
+      "EXPECTED_HOST_TOOL": 26,
+      "FALSE_POSITIVE": 70
+    },
+    "other_plausible_target_bypass_in_reviewed_scope": false
+  },
+  "candidate": {
+    "option": "A",
+    "path": "KDBUS_LD_FIX_CANDIDATE.patch",
+    "added_lines": 0,
+    "deleted_lines": 1,
+    "dry_run": "PASS",
+    "applied_to_product_source": false,
+    "actual_build_regression_tested": false
+  },
+  "standalone_kdbus_rebuild_required_for_approved_closure": false,
+  "standalone_build_started": false,
+  "unresolved": [
+    "Historical kdbus.o executable, full argv, CROSS_COMPILE and PATH.",
+    "Direct execution evidence for historical approved links.",
+    "Candidate compatibility at actual module build and ABI level."
+  ],
+  "pm_decisions_requested": [
+    "Approve one-line removal of the external LD assignment when the source change is scheduled.",
+    "Choose next normal build with E4 capture or approve a separate targeted kdbus build if earlier new evidence is needed.",
+    "Keep LLD-KERNEL-001 open until risk is resolved under a separately reviewed scope."
+  ],
+  "report": "PM_REVIEW_ROUND3_REPORT.md",
+  "bundle": "PM_REVIEW_ROUND3_EVIDENCE_BUNDLE.tar.gz"
+}

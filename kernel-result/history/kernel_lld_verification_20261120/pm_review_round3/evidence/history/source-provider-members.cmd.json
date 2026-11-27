@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "rpm",
+    "-qpl",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round2/evidence/external/linux-tizen-modules-source-11.0.0-0.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3",
+  "started_utc": "2026-11-25T11:33:51.732154+00:00",
+  "elapsed_seconds": 0.007,
+  "exit_status": 0
+}

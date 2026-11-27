@@ -1,0 +1,74 @@
+[MODULE_ROOT]
+/usr/lib/modules/6.12.80-arm-rpi4-v7l
+[MODULE_SHA256]
+fc413dafcf3033b807af1493c4e202703e2bc7af87a8aca691308ec0aae321ea  ./kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+5a590b032cd31827fb6fa5ffcb2a474b1d620887f4e1783ad579e1f519e0b32a  ./kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+c69fc3666fdd9f3e6c267a5f94f1a76f4d67e5475233ccd46808bcdae46c7dae  ./kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko
+2b0907341d597cf8cf0ecb7c01c7cd787630b7324eb60f9020569ff21654a255  ./kernel/sound/soc/codecs/snd-soc-pcm512x.ko
+6ad207b9a3c89aa9c8aeded975211d3841f1673ee5a839a582f8d2a226d1cba8  ./kernel/sound/soc/codecs/snd-soc-cs42xx8.ko
+61d5d287ff1865277809f63fd4673974c6780cd90912533fc63ab09d2e64e250  ./kernel/sound/soc/codecs/snd-soc-wm8741.ko
+5b5952740e08a565c0533ccdba891719ce3cfb44e10c81d6aaa1705f2ce500ea  ./kernel/sound/soc/codecs/snd-soc-sgtl5000.ko
+6ca9d56c1fd38bafd32e9676f9b669bace37692f2b4a9ef23104ceefa710588e  ./kernel/drivers/input/joydev.ko
+dc375fb61c073fdd30419e8869cc976ffe73c3e0a494e1b946972e24943ed5e5  ./kernel/drivers/mfd/wl1273-core.ko
+036ed5022d53193bb4d47e17c42909b9e218dde1aa444c805f3902666ef32be1  ./kernel/drivers/spi/spi-bcm2835aux.ko
+82cae9ad687f72db7c5469dcff924b5bf5531baa0ef6242309df6ee3b182be9e  ./kernel/drivers/media/usb/gspca/gspca_zc3xx.ko
+b1a0fa3ca8a3ca3c89aeaf893574670d5ebf2d3cfa982dfbd2a965aec83ed06a  ./kernel/drivers/media/usb/gspca/gspca_main.ko
+d7fbefca5a65ccc36ea7d2844a7d022cd55e32c1c4756053d78de3fbaaf94a89  ./kernel/drivers/bluetooth/hci_uart.ko
+c7a3cb3f4cf51b5c7e78cc543dc6d2c891410d51d7443d9e43bf901e7e3e8ed8  ./kernel/drivers/bluetooth/btrtl.ko
+2a6e3482e6fbec834948cb276b5ae2f02f85561f50cf0ffa7481e65306cd251c  ./kernel/drivers/bluetooth/btbcm.ko
+eeb6eae622eb18f59470d3bf7895a09ecde80843a0a6a0f54de907346b4852d6  ./kernel/drivers/bluetooth/btusb.ko
+dc9e742bd79d3fefa8b364b6dc17bf5c337d68412dcd0c6e1a3660344e3eee58  ./kernel/drivers/bluetooth/btintel.ko
+6273a60ef905360592a512f5eabcebf3995d4d0cdcca0c543417a28d05c45d6c  ./kernel/drivers/bluetooth/bcm203x.ko
+617064b2d986801ba894dd74416e34ea2a519b452fc50eca326a2e9bf2217f52  ./kernel/drivers/char/broadcom/bcm2835_smi_dev.ko
+7703432ecfb07b274a7df88873dc1d119e1e492f15516677c4e0ce27e8bc1323  ./kernel/drivers/usb/class/cdc-acm.ko
+38dabe47f873ee09829c96d73126ee72ff95b09dd66b600f842711f040ad5b08  ./kernel/drivers/usb/gadget/udc/dummy_hcd.ko
+5d2ec3759419742ea6f4086fa68bf801a7d5815dbea20ece536baae4c9cfa3f7  ./kernel/drivers/usb/serial/usb_wwan.ko
+82eaabf13b6ddd6c0db252bdd3e4e22f828aa379464aa67804bf4b8901fe485f  ./kernel/drivers/usb/serial/cp210x-stlink.ko
+defffac4b152f0c469f04409054693a94d5c79e1844f313fbde1a7133c6b89ae  ./kernel/drivers/usb/serial/cp210x.ko
+2e332c1c6da5c08f689561d48d18e8b11a9a950108bb724fc751f54b7574d817  ./kernel/drivers/usb/serial/ftdi_sio.ko
+5ef033f840e70becc0c795baeace9edba9045a6e8446a00703dfc4174670a77f  ./kernel/drivers/usb/serial/option.ko
+fe838ed5142f467ea4fa05b0a3f8661089555290edd518e9462c11fc2c2bd8e5  ./kernel/drivers/usb/serial/pl2303.ko
+bf40dcdf5242570a1a4d82fd81aeb0b4af7c7fa71e5036a993b9c8d019a9ff5d  ./kernel/drivers/watchdog/gpio_wdt.ko
+ef96b01ef813301c348efc39dd8f918d69b43ae684415c0f5eed2235fca6a3fd  ./kernel/drivers/leds/trigger/ledtrig-transient.ko
+801ddafab0e5a94a4bbb9a461985cac1414e1ebfa3d2a9ef18e80a04b54f532a  ./kernel/drivers/leds/trigger/ledtrig-camera.ko
+d456cf95b902e646470ea1a4205ada28b30d1ff4bef4e7c50c3ad68ff1afabb2  ./kernel/drivers/hid/hid-led.ko
+d028f1caea1b82669564fa55dac1ec298bcfe73ee37c57656edf1ad1d5625bd2  ./kernel/drivers/i2c/i2c-stub.ko
+f307ce4c84e4dfe836f44c5c2bcf667bd2f053d64eb106e1332146123f6fe7fe  ./kernel/drivers/i2c/busses/i2c-bcm2708.ko
+19a6352d248e370414fb55ad6e2619a9538041f7923fbd3409c78c1c46218482  ./kernel/drivers/block/nbd.ko
+1734161e06796796dfd077ce9e34c56c86c57605c39673bd4d09c60752c5eb30  ./kernel/drivers/misc/bcm2835_smi.ko
+d5a51e9a0b269a6ee0ebc00b1d06d164609a82e3dc3452e9ac77eac7066a0fc4  ./kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+76da218b5c7038809267c306768420dcb2f7b4fbdc8b7d10957bc3728d579255  ./kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+77c6026549a1f1afc7f5d565308b5d215fd2e2a193f7ed329977ea4081b895c3  ./kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+282e55bfb9a0e6d682875f9da3c62b4c60a3b01a271bdeb746626f1bbf26735f  ./kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+d38e6a6921a8025313e199ac24abe61604204043c0297cec08efa933049e9acc  ./kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+b16eb3c98386d89d12353555379d3aea0cef98ad88726b4d0729ee1df02aa730  ./kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+a699b5616938594af0e77746720eb7cad8d9817816c0e984b9ced95c58e6ef90  ./kernel/drivers/net/wireless/mediatek/mt76/mt76.ko
+ce14f535ae2a35ca1f7099cf9602feab3c56bbe95bf8c16d218c7e0f793306a9  ./kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+91f4777a0e53d7fa8c645adfc91934834bb9c8c23efd15305d5ed93372229e30  ./kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+5a612b582aefed1374189747d37ef171b61b1d8f132772dd9acfcdfebf44a12e  ./kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+49285620dd404b6121f043d2a804ddaf7e4bca0b8755d5f0de2c9fbff943051d  ./kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+bc60f089dc15e7dcb820f13e8e0824fae290a8540b89014f825cf381938c82b6  ./kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+4a5db39ec0bdb89dbc516677711d4e659b01749080d104bedda54256d2d26c76  ./kernel/lib/crc7.ko
+8218df03a96c057c9e743d0b718db569163d6b1dfe21b2e0d329a3e74ec8542a  ./kernel/crypto/md5.ko
+75f81b49af093efec8a60054b2fbbf202f1f512a05af55a20f4d8a4d2aa57df6  ./kernel/fs/ecryptfs/ecryptfs.ko
+e5ddaf0b8e991f0656508051870a055dcad5fa023d9b1a322b48accccf223439  ./kernel/fs/binfmt_misc.ko
+49cfc2dfe5c8d674f7368ffda2e2a77e3e34d3a91453ee81d9f1d84b15c6578b  ./kernel/net/netfilter/xt_LED.ko
+1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860  ./extra/kdbus/kdbus.ko
+69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520  ./extra/logger.ko
+22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98  ./extra/zlogger/zlogger.ko
+ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f  ./extra/inform-reboot.ko
+cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531  ./extra/proc-tsm.ko
+2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d  ./extra/dm-bow.ko
+0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb  ./extra/extcon-usb-fixed.ko
+[MODULE_SYMLINKS]
+[RPM_HEADER]
+package arm-rpi4-linux-kernel-modules is not installed
+package linux-tizen-modules-rpi4 is not installed
+[RPM_HEADER_EXIT]
+2
+[RPM_FILE_DIGESTS]
+package arm-rpi4-linux-kernel-modules is not installed
+package linux-tizen-modules-rpi4 is not installed
+[RPM_FILE_DIGESTS_EXIT]
+2
+[END]

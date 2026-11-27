@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "readelf",
+    "-hSWn",
+    "-p",
+    ".comment",
+    "-p",
+    ".gnu_debuglink",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/kernel_binary/payload/linux-tizen-modules-rpi4-11.0.0-0.armv7l/files/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3",
+  "started_utc": "2026-11-25T11:33:51.794893+00:00",
+  "elapsed_seconds": 0.002,
+  "exit_status": 0
+}

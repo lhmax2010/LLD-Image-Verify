@@ -1,0 +1,2111 @@
+{
+  "old": {
+    "id": "tizen-unified-toolchain_20261120.082536",
+    "base_id": "tizen-base-toolchain_20261119.042539",
+    "build_xml": "evidence/repository/publication-build.out",
+    "build_xml_sha256": "fdad9e4bd5bf30c673fc1ae78022418be286e94805ea1b90223e0fac9d4d34ee",
+    "manifest": "evidence/repository/manifest.out",
+    "manifest_sha256": "93753c5dc53b90173cf1fa73389ceac85daa90e3c5d744495d168667437e2162",
+    "project_revisions": {
+      "platform/kernel/linux-rpi": "42aeefac58edeb081aff440f0b60be71cbe49755",
+      "platform/kernel/linux-tizen-modules": "458baad02d812098938663971d1b8560a4813375",
+      "platform/kernel/linux-tizen-modules-source": "25797e8af7ed95a5783bbe84c11959560aaf7e92"
+    }
+  },
+  "new": {
+    "id": "tizen-unified-toolchain_20261125.130358",
+    "base_id": "tizen-base-toolchain_20261030.120529",
+    "build_xml": "evidence/repository/build-identity.out",
+    "build_xml_sha256": "df80e1d7d41d66880bb28d0f1ce484aaaed92d1df3e3971f649d8bec13c51eb9",
+    "manifest": "evidence/repository/manifest.out",
+    "manifest_sha256": "9078d6d70c1f2308dbb4ec87796ca78f58e4fdf9a249d248fcad376818ec859a",
+    "project_revisions": {
+      "platform/kernel/linux-rpi": "42aeefac58edeb081aff440f0b60be71cbe49755",
+      "platform/kernel/linux-tizen-modules": "458baad02d812098938663971d1b8560a4813375",
+      "platform/kernel/linux-tizen-modules-source": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8"
+    }
+  },
+  "metadata": {
+    "packages": {
+      "repomd_path": "evidence/repository/packages-repomd.out",
+      "repomd_sha256": "6d210ea9212130982bebc5fab4c34b43d7b9975141db7e846666cff25e3d735e",
+      "primary": {
+        "path": "evidence/repository/packages-primary.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/repodata/7a8d43bf09b162d8cbd74146b5af02b91d9b1adfbb4562a0e6162cfd641ebac0-primary.xml.gz",
+        "compressed": "7a8d43bf09b162d8cbd74146b5af02b91d9b1adfbb4562a0e6162cfd641ebac0",
+        "open_checksum": "e972be55423660913cec31dd549d623019d93807d4a0bc6495cf539f3595e97c",
+        "compressed_size": 1564787,
+        "verified": true
+      },
+      "filelists": {
+        "path": "evidence/repository/packages-filelists.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/repodata/a3026f95a7944d13d72a6c6768be82f2659139f780420b750ccef574f7b84f97-filelists.xml.gz",
+        "compressed": "a3026f95a7944d13d72a6c6768be82f2659139f780420b750ccef574f7b84f97",
+        "open_checksum": "919db77fd401905edab73712b1033fab1564c491b53caa185fee9f2a1b87cb18",
+        "compressed_size": 5706314,
+        "verified": true
+      },
+      "signature_http_status": 404
+    },
+    "debug": {
+      "repomd_path": "evidence/repository/debug-repomd.out",
+      "repomd_sha256": "890ff3c69e1ab06576dbcc9dbf007dd8fe66e1bd90cb9e57ad6b03ff60f9e287",
+      "primary": {
+        "path": "evidence/repository/debug-primary.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/repodata/0d7e1e6c8672f1d9fe3c0e74e5da403075bb4d87c5ea322effa8a51a6e8873a7-primary.xml.gz",
+        "compressed": "0d7e1e6c8672f1d9fe3c0e74e5da403075bb4d87c5ea322effa8a51a6e8873a7",
+        "open_checksum": "5a83deec6582228586d5b324cc81764c54c8f78bcba7c28e5307ff9b46923002",
+        "compressed_size": 755390,
+        "verified": true
+      },
+      "filelists": {
+        "path": "evidence/repository/debug-filelists.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/repodata/46bd11960e884628ccbccbebacb39d0ecc920de4098fab1c2d4060924fcdcf14-filelists.xml.gz",
+        "compressed": "46bd11960e884628ccbccbebacb39d0ecc920de4098fab1c2d4060924fcdcf14",
+        "open_checksum": "4ab9884509aae07ce673d4c49f2ecb627a85b6ad9e4f0535ac5a1e4d93f819c4",
+        "compressed_size": 3173022,
+        "verified": true
+      },
+      "signature_http_status": 404
+    },
+    "source": {
+      "repomd_path": "evidence/repository/source-repomd.out",
+      "repomd_sha256": "7a9c487ce7c88b65dcedffb7cc37b56fef7ecfcc09f386d54ace6d29e3978166",
+      "primary": {
+        "path": "evidence/repository/source-primary.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/source/repodata/858b2b46eeca541248f06e39a0658c93f349530114ba3787dfd27e6e2a7500c7-primary.xml.gz",
+        "compressed": "858b2b46eeca541248f06e39a0658c93f349530114ba3787dfd27e6e2a7500c7",
+        "open_checksum": "fce526e798866e15da1981225911bd3f9d0064b26c5ac340b9227abf5ed6877c",
+        "compressed_size": 254096,
+        "verified": true
+      },
+      "filelists": {
+        "path": "evidence/repository/source-filelists.out",
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/source/repodata/7cb4ef04454962718a47de1ac2066906d2ab972cab31fc8deba5e4d9ccbcd408-filelists.xml.gz",
+        "compressed": "7cb4ef04454962718a47de1ac2066906d2ab972cab31fc8deba5e4d9ccbcd408",
+        "open_checksum": "ba0460617d6680994af4d1d808ad198b4fa5613b8d717f8b297a16c278ff2c69",
+        "compressed_size": 103324,
+        "verified": true
+      },
+      "signature_http_status": 404
+    }
+  },
+  "rpm_rows": [
+    {
+      "role": "KERNEL_IMAGE",
+      "area": "packages",
+      "name": "arm-rpi4-linux-kernel",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "arm-rpi4-linux-kernel-0:6.12.80-0.armv7l",
+      "filename": "arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:58+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "published_bytes": 17596028,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "46c00b2a01af0301dad12e56393be72cbf6d8aa87e84633c5622318f615cd52a",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 412,
+      "old_metadata_checksum": "3a5c433d89858a89c1a83a54806bde67e6f0bfa001850188e3b33807185c3a68",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15236,
+      "job_wrote_raw": "[ 4102s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "KERNEL_DEV",
+      "area": "packages",
+      "name": "arm-rpi4-linux-kernel-devel",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "arm-rpi4-linux-kernel-devel-0:6.12.80-0.armv7l",
+      "filename": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:59+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "published_bytes": 115585324,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020",
+      "acquire": true,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 63656,
+      "old_metadata_checksum": "bd074cebe72d5c92981933fa9c696d3cc388e4a4cb42eeddfcf1261c9c4df763",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "local_sha256": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "DOWNLOADED_NEW_SNAPSHOT",
+      "header_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm-header.out",
+      "rpm_header": {
+        "name": "arm-rpi4-linux-kernel-devel",
+        "epoch": "(none)",
+        "version": "6.12.80",
+        "release": "0",
+        "arch": "armv7l",
+        "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+        "sourcepackage": "(none)"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm-members.out",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15240,
+      "job_wrote_raw": "[ 4131s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "IN_TREE_MODULES",
+      "area": "packages",
+      "name": "arm-rpi4-linux-kernel-modules",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "arm-rpi4-linux-kernel-modules-0:6.12.80-0.armv7l",
+      "filename": "arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:33:01+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "published_bytes": 728352,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "457d3d60c8a0b186f2439770b719250d930cbdc905e5123cb8a14825d5946a43",
+      "acquire": true,
+      "target_release_modules_count": 52,
+      "target_release_modules": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko"
+      ],
+      "kdbus_path_hits": [],
+      "filelists_count": 113,
+      "old_metadata_checksum": "4906a4e698b7944132fdb74b753875297f9752ec02915e36d13955f3dfa436e0",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "local_sha256": "457d3d60c8a0b186f2439770b719250d930cbdc905e5123cb8a14825d5946a43",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "DOWNLOADED_NEW_SNAPSHOT",
+      "header_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm-header.out",
+      "rpm_header": {
+        "name": "arm-rpi4-linux-kernel-modules",
+        "epoch": "(none)",
+        "version": "6.12.80",
+        "release": "0",
+        "arch": "armv7l",
+        "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+        "sourcepackage": "(none)"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm-members.out",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15238,
+      "job_wrote_raw": "[ 4112s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OTHER_FILELIST_MATCH",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "aarch64",
+      "nevra": "linux-tizen-modules-rpi4-0:11.0.0-0.aarch64",
+      "filename": "linux-tizen-modules-rpi4-11.0.0-0.aarch64.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:35+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/aarch64/linux-tizen-modules-rpi4-11.0.0-0.aarch64.rpm",
+      "published_bytes": 89740,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "3b1f3432aba9bbfab6e52722fbe6c7fecade8bd9f955ea04bf04ae495e27d832",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [
+        "/lib/modules/6.12.80-arm64-rpi4-v8/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 0,
+      "old_metadata_checksum": "cc5d4b7ec314c82524225f713831d07a4a8f423e1fa8f9dfbe367886ca6b4cbe",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "OUTSIDE_TARGET_JOB",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OUT_OF_TREE_MODULES",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-rpi4-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:58+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "published_bytes": 91980,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de",
+      "acquire": true,
+      "target_release_modules_count": 7,
+      "target_release_modules": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko"
+      ],
+      "kdbus_path_hits": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 11,
+      "old_metadata_checksum": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": "evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "local_sha256": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "DOWNLOADED_NEW_SNAPSHOT",
+      "header_evidence": "evidence/repository/rpm-linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm-header.out",
+      "rpm_header": {
+        "name": "linux-tizen-modules-rpi4",
+        "epoch": "(none)",
+        "version": "11.0.0",
+        "release": "0",
+        "arch": "armv7l",
+        "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+        "sourcepackage": "(none)"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm-members.out",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "job_wrote_line": 746,
+      "job_wrote_raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026.",
+      "job_finished_raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OTHER_FILELIST_MATCH",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4-aarch64",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-rpi4-aarch64-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-rpi4-aarch64-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:39+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/linux-tizen-modules-rpi4-aarch64-11.0.0-0.armv7l.rpm",
+      "published_bytes": 90976,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "8d5b440060c4091675b900531910c1cb31e7e4593d166a9af5b8d04e12b83d69",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [
+        "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-v8/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 0,
+      "old_metadata_checksum": "22f08ecf0b8b20d5729b196954fba329f791bc051cb0b5a863fbdbc63a5c4958",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "TARGET_JOB_NO_MATCHING_WROTE_RECORD",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OTHER_FILELIST_MATCH",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4-rt",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "aarch64",
+      "nevra": "linux-tizen-modules-rpi4-rt-0:11.0.0-0.aarch64",
+      "filename": "linux-tizen-modules-rpi4-rt-11.0.0-0.aarch64.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:38+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/aarch64/linux-tizen-modules-rpi4-rt-11.0.0-0.aarch64.rpm",
+      "published_bytes": 89896,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "843d471b59deda54c8de01e21d18b2e455ac9f86dcb57bb1057c916e07e0b2b2",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [
+        "/lib/modules/6.12.80-arm64-rpi4-rt-v8/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 0,
+      "old_metadata_checksum": "c8c0dbab5ffd2e3378cfc881d6305c57d9bf9227abfa35d5642c1f70fcc853ad",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "OUTSIDE_TARGET_JOB",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OTHER_FILELIST_MATCH",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4-rt",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-rpi4-rt-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:33:01+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm",
+      "published_bytes": 91972,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "6dd230ac986bed50e79d9891e27182d18fc81359b751f9f90834c8d52c8f6974",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [
+        "/lib/modules/6.12.80-arm-rpi4-rt-v7l/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 0,
+      "old_metadata_checksum": "c08037fe42374706053be0d226cc2b49de2249781e86cb340b908d548219e246",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "job_wrote_line": 747,
+      "job_wrote_raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026.",
+      "job_finished_raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "OTHER_FILELIST_MATCH",
+      "area": "packages",
+      "name": "linux-tizen-modules-rpi4-rt-aarch64",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-rpi4-rt-aarch64-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-rpi4-rt-aarch64-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:39+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/linux-tizen-modules-rpi4-rt-aarch64-11.0.0-0.armv7l.rpm",
+      "published_bytes": 91096,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "e14911b4b4f828105f2fcace5b5a736ce4249310741041825ac2a002698d768f",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [
+        "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-rt-v8/extra/kdbus/kdbus.ko"
+      ],
+      "filelists_count": 0,
+      "old_metadata_checksum": "6eef272eb6d827e13215aaeaa7b74ee8c3164cb9e54ae621e483c5308a884b33",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "TARGET_JOB_NO_MATCHING_WROTE_RECORD",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "MODULE_BUILD_INPUT",
+      "area": "packages",
+      "name": "linux-tizen-modules-source",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-source-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:55+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "published_bytes": 123468,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "c604ac673e8a4a200171514725766b4fa92f5c73c3413017be31436cea01992a",
+      "acquire": true,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 55,
+      "old_metadata_checksum": "b8fdab693b2a21fb263ae9e24c5eb14e20097e12ee4a71681ff8edb8aa93f6b9",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": "evidence/repository/rpms/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "local_sha256": "c604ac673e8a4a200171514725766b4fa92f5c73c3413017be31436cea01992a",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "DOWNLOADED_NEW_SNAPSHOT",
+      "header_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.armv7l.rpm-header.out",
+      "rpm_header": {
+        "name": "linux-tizen-modules-source",
+        "epoch": "(none)",
+        "version": "11.0.0",
+        "release": "0",
+        "arch": "armv7l",
+        "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+        "sourcepackage": "(none)"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.armv7l.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.armv7l.rpm-members.out",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "build_log_sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "job_wrote_line": 767,
+      "job_wrote_raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026.",
+      "job_finished_raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "KERNEL_DEBUGINFO",
+      "area": "debug",
+      "name": "arm-rpi4-linux-kernel-devel-debuginfo",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "arm-rpi4-linux-kernel-devel-debuginfo-0:6.12.80-0.armv7l",
+      "filename": "arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:56+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "published_bytes": 75868128,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "9ef353c10a4e27ebc3ea9ffc6d8643927f138cc2ee5dac7a0ee501d43d59938d",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 115,
+      "metadata_filelist_path": "evidence/repository/filelists/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm.txt",
+      "old_metadata_checksum": "e44f25e30cde819eb2dc346bd3a707e3ee7161bb5ae0541b213c48b7dcee49ae",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15246,
+      "job_wrote_raw": "[ 4172s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "MODULE_DEBUGSOURCE",
+      "area": "debug",
+      "name": "linux-tizen-modules-debugsource",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-debugsource-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:56+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm",
+      "published_bytes": 6744,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "eac48fa30acd6f8f56d82416c42daebeadec7c73cf2a30a05dac8f9e61d6b332",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 0,
+      "old_metadata_checksum": "eac48fa30acd6f8f56d82416c42daebeadec7c73cf2a30a05dac8f9e61d6b332",
+      "identical_to_old_metadata_checksum": true,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "job_wrote_line": 745,
+      "job_wrote_raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026.",
+      "job_finished_raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "MODULE_IMPLEMENTATION_DEBUGSOURCE",
+      "area": "debug",
+      "name": "linux-tizen-modules-source-debugsource",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-source-debugsource-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:58+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm",
+      "published_bytes": 73932,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "a43fe08cc64c5d869219a491b7eaa95db120da0bee1745d8e035e7126a5dbb2c",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 40,
+      "metadata_filelist_path": "evidence/repository/filelists/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm.txt",
+      "old_metadata_checksum": "ca6f6784e98f6715dc27807559fc074b9cc13e7c21459c6ddd43a6d8a593c411",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "build_log_sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "job_wrote_line": 768,
+      "job_wrote_raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026.",
+      "job_finished_raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "USERSPACE_TEST_DEBUGINFO",
+      "area": "debug",
+      "name": "linux-tizen-modules-tests-debuginfo",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "linux-tizen-modules-tests-debuginfo-0:11.0.0-0.armv7l",
+      "filename": "linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "source_revision": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:33:00+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm",
+      "published_bytes": 329632,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "1aa1af307ae3a3072bf98b49685ba3d1beac08e8670c21f31ead1540562bd589",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 9,
+      "metadata_filelist_path": "evidence/repository/filelists/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm.txt",
+      "old_metadata_checksum": "77c7f83fb114d8549fe243f77d403ab19612ecb750e28b00a960ceb04d4ad59f",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "build_log_sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "job_wrote_line": 771,
+      "job_wrote_raw": "[  273s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026.",
+      "job_finished_raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "KERNEL_DEBUGSOURCE",
+      "area": "debug",
+      "name": "rpi4-linux-kernel-debugsource",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "armv7l",
+      "nevra": "rpi4-linux-kernel-debugsource-0:6.12.80-0.armv7l",
+      "filename": "rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:32:57+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+      "published_bytes": 18608232,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "31db9d203a2931b810d47ff4042a870a982e589772a3f32323bd74024a5e458b",
+      "acquire": false,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 6014,
+      "metadata_filelist_path": "evidence/repository/filelists/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm.txt",
+      "old_metadata_checksum": "81e11fbcd7571ec566d0aeb734d9a707f3f230bd37906d47942a9f722362064e",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": null,
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "rpm_verification": "NOT_RUN",
+      "build_log_association": "PINNED_JOB_WROTE_FILENAME_AND_PRIMARY_VCS",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15235,
+      "job_wrote_raw": "[ 4094s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "MODULE_WRAPPER_SRPM",
+      "area": "source",
+      "name": "linux-tizen-modules",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "src",
+      "nevra": "linux-tizen-modules-0:11.0.0-0.src",
+      "filename": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "source_rpm": null,
+      "source_revision": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:39+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/source/linux-tizen-modules-11.0.0-0.src.rpm",
+      "published_bytes": 19542,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "9c7726daa8d14e0dfa59703d3c2e6019e077723a50b367ad4184c350ed233cdc",
+      "acquire": true,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 3,
+      "old_metadata_checksum": "9c7726daa8d14e0dfa59703d3c2e6019e077723a50b367ad4184c350ed233cdc",
+      "identical_to_old_metadata_checksum": true,
+      "artifact_path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/repository/rpms/linux-tizen-modules-11.0.0-0.src.rpm",
+      "local_sha256": "9c7726daa8d14e0dfa59703d3c2e6019e077723a50b367ad4184c350ed233cdc",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "REUSED_OLD_BYTES_FROM_NEW_METADATA",
+      "header_evidence": "evidence/repository/rpm-linux-tizen-modules-11.0.0-0.src.rpm-header.out",
+      "rpm_header": {
+        "name": "linux-tizen-modules",
+        "epoch": "(none)",
+        "version": "11.0.0",
+        "release": "0",
+        "arch": "aarch64",
+        "source_rpm": "(none)",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375",
+        "sourcepackage": "1"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-linux-tizen-modules-11.0.0-0.src.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-linux-tizen-modules-11.0.0-0.src.rpm-members.out",
+      "build_log_association": "ARMV7L_JOB_WROTE_SAME_SRPM_FILENAME_AND_PRIMARY_VCS_NO_JOB_DIGEST",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "job_wrote_line": 744,
+      "job_wrote_raw": "[  132s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-11.0.0-0.src.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026.",
+      "job_finished_raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "MODULE_IMPLEMENTATION_SRPM",
+      "area": "source",
+      "name": "linux-tizen-modules-source",
+      "epoch": "0",
+      "version": "11.0.0",
+      "release": "0",
+      "arch": "src",
+      "nevra": "linux-tizen-modules-source-0:11.0.0-0.src",
+      "filename": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "source_rpm": null,
+      "source_revision": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:39+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/source/linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "published_bytes": 176585,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "16149cc7e6ee1f790f82cc0697694c8ec89cd960149fd705494cc01d2a59dc88",
+      "acquire": true,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 3,
+      "old_metadata_checksum": "79e45d2aaecd6c7f6dcbe4d4d0a1904628d7e204771e04d10df867bd0f166c91",
+      "identical_to_old_metadata_checksum": false,
+      "artifact_path": "evidence/repository/rpms/linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "local_sha256": "16149cc7e6ee1f790f82cc0697694c8ec89cd960149fd705494cc01d2a59dc88",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "DOWNLOADED_NEW_SNAPSHOT",
+      "header_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.src.rpm-header.out",
+      "rpm_header": {
+        "name": "linux-tizen-modules-source",
+        "epoch": "(none)",
+        "version": "11.0.0",
+        "release": "0",
+        "arch": "aarch64",
+        "source_rpm": "(none)",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-tizen-modules-source#1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+        "sourcepackage": "1"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.src.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-linux-tizen-modules-source-11.0.0-0.src.rpm-members.out",
+      "build_log_association": "ARMV7L_JOB_WROTE_SAME_SRPM_FILENAME_AND_PRIMARY_VCS_NO_JOB_DIGEST",
+      "build_log_path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "build_log_sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "job_wrote_line": 766,
+      "job_wrote_raw": "[  272s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4",
+      "job_started_raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026.",
+      "job_finished_raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026.",
+      "vcs_matches_manifest": true
+    },
+    {
+      "role": "KERNEL_SRPM",
+      "area": "source",
+      "name": "rpi4-linux-kernel",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "arch": "src",
+      "nevra": "rpi4-linux-kernel-0:6.12.80-0.src",
+      "filename": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "source_rpm": null,
+      "source_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+      "build_time_epoch_metadata": 0,
+      "build_time_utc_metadata": null,
+      "metadata_file_time_utc": "2026-11-25T17:52:40+00:00",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/source/rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "published_bytes": 156385913,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+      "acquire": true,
+      "target_release_modules_count": 0,
+      "target_release_modules": [],
+      "kdbus_path_hits": [],
+      "filelists_count": 12,
+      "old_metadata_checksum": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+      "identical_to_old_metadata_checksum": true,
+      "artifact_path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/repository/rpms/rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "local_sha256": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+      "repository_checksum_verification": "PASS",
+      "rpm_verification": "PASS",
+      "acquisition": "REUSED_OLD_BYTES_FROM_NEW_METADATA",
+      "header_evidence": "evidence/repository/rpm-rpi4-linux-kernel-6.12.80-0.src.rpm-header.out",
+      "rpm_header": {
+        "name": "rpi4-linux-kernel",
+        "epoch": "(none)",
+        "version": "6.12.80",
+        "release": "0",
+        "arch": "aarch64",
+        "source_rpm": "(none)",
+        "buildtime": "0",
+        "buildhost": "(none)",
+        "vcs": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+        "sourcepackage": "1"
+      },
+      "rpm_header_verified": true,
+      "verification_evidence": "evidence/repository/rpm-rpi4-linux-kernel-6.12.80-0.src.rpm-verify.out",
+      "member_evidence": "evidence/repository/rpm-rpi4-linux-kernel-6.12.80-0.src.rpm-members.out",
+      "build_log_association": "ARMV7L_JOB_WROTE_SAME_SRPM_FILENAME_AND_PRIMARY_VCS_NO_JOB_DIGEST",
+      "build_log_path": "evidence/build/linux-rpi-armv7l.out",
+      "build_log_sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "job_wrote_line": 15234,
+      "job_wrote_raw": "[ 4077s] Wrote: /home/abuild/rpmbuild/SRPMS/rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "build_root": "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24",
+      "job_started_raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026.",
+      "job_finished_raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026.",
+      "vcs_matches_manifest": true
+    }
+  ],
+  "preflight_status": "PASS",
+  "acquisition_issues": [],
+  "requested_runtime_release": "6.12.80-arm-rpi4-v7l",
+  "target_wrapper_changed_rpm_sha256": true,
+  "total_new_modules_filelists": 59,
+  "published_matching_module_debug_hits": [],
+  "build_records": {
+    "platform/kernel/linux-rpi": {
+      "path": "evidence/build/linux-rpi-armv7l.out",
+      "sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "records": [
+        {
+          "line": 2,
+          "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24"
+        },
+        {
+          "line": 6,
+          "raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026."
+        },
+        {
+          "line": 86,
+          "raw": "[   14s] [51/130] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+        },
+        {
+          "line": 105,
+          "raw": "[   14s] [70/130] keeping make-4.4.1-1.14"
+        },
+        {
+          "line": 123,
+          "raw": "[   14s] [88/130] keeping binutils-2.43-1.16"
+        },
+        {
+          "line": 154,
+          "raw": "[   14s] [119/130] keeping llvm-22.1.8-4.1"
+        },
+        {
+          "line": 156,
+          "raw": "[   14s] [121/130] keeping clang-22.1.8-4.1"
+        },
+        {
+          "line": 13975,
+          "raw": "[ 2981s] + QA_SKIP_BUILD_ROOT=DO_NOT_WANT"
+        },
+        {
+          "line": 15234,
+          "raw": "[ 4077s] Wrote: /home/abuild/rpmbuild/SRPMS/rpi4-linux-kernel-6.12.80-0.src.rpm"
+        },
+        {
+          "line": 15235,
+          "raw": "[ 4094s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15236,
+          "raw": "[ 4102s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15237,
+          "raw": "[ 4111s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15238,
+          "raw": "[ 4112s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15239,
+          "raw": "[ 4113s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-modules-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15240,
+          "raw": "[ 4131s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15241,
+          "raw": "[ 4151s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15242,
+          "raw": "[ 4152s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15243,
+          "raw": "[ 4156s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-headers-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15246,
+          "raw": "[ 4172s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15247,
+          "raw": "[ 4187s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15260,
+          "raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026."
+        }
+      ]
+    },
+    "platform/kernel/linux-tizen-modules": {
+      "path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "records": [
+        {
+          "line": 2,
+          "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0"
+        },
+        {
+          "line": 6,
+          "raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026."
+        },
+        {
+          "line": 298,
+          "raw": "[   19s] [51/119] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+        },
+        {
+          "line": 314,
+          "raw": "[   19s] [67/119] keeping make-4.4.1-1.14"
+        },
+        {
+          "line": 331,
+          "raw": "[   19s] [84/119] keeping binutils-2.43-1.16"
+        },
+        {
+          "line": 360,
+          "raw": "[   19s] [113/119] keeping llvm-22.1.8-4.1"
+        },
+        {
+          "line": 362,
+          "raw": "[   19s] [115/119] keeping clang-22.1.8-4.1"
+        },
+        {
+          "line": 744,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-11.0.0-0.src.rpm"
+        },
+        {
+          "line": 745,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 746,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 747,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 760,
+          "raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026."
+        }
+      ]
+    },
+    "platform/kernel/linux-tizen-modules-source": {
+      "path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "records": [
+        {
+          "line": 2,
+          "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4"
+        },
+        {
+          "line": 6,
+          "raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026."
+        },
+        {
+          "line": 766,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-source-11.0.0-0.src.rpm"
+        },
+        {
+          "line": 767,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 768,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 769,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-headers-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 770,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 771,
+          "raw": "[  273s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 782,
+          "raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026."
+        }
+      ]
+    }
+  },
+  "sdk_identity": {
+    "old": {
+      "kernel_release": "6.12.80-arm-rpi4-v7l",
+      "clang_version": "22.1.8",
+      "lld_version": "22.1.8",
+      "config": {
+        "path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+        "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+        "bytes": 194991
+      },
+      "config_keys": {
+        "CC_VERSION_TEXT": "\"clang version 22.1.8\"",
+        "CC_IS_CLANG": "y",
+        "CLANG_VERSION": "220108",
+        "LD_IS_LLD": "y",
+        "LLD_VERSION": "220108",
+        "LOCALVERSION": "\"-v7l\"",
+        "ARM": "y",
+        "ARM64": null,
+        "PREEMPT_RT": "n",
+        "MODVERSIONS": "y",
+        "LTO_NONE": "y",
+        "LTO_CLANG": null,
+        "CFI_CLANG": "n",
+        "DEBUG_INFO_BTF_MODULES": "y",
+        "MODULE_SIG": "n"
+      },
+      "utsrelease_header": {
+        "path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/utsrelease.h",
+        "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e",
+        "bytes": 43
+      },
+      "compile_header": {
+        "path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h",
+        "sha256": "8be8545243726ed358d872faab32c763edfe25248868e80cf5b99b735b529d07",
+        "bytes": 166
+      },
+      "compiler_line": {
+        "line": 4,
+        "raw": "#define LINUX_COMPILER\t\t\"clang version 22.1.8, LLD 22.1.8\""
+      },
+      "compile_host_line": {
+        "line": 3,
+        "raw": "#define LINUX_COMPILE_HOST\t\"qb-build-host-01\""
+      }
+    },
+    "new": {
+      "kernel_release": "6.12.80-arm-rpi4-v7l",
+      "clang_version": "22.1.8",
+      "lld_version": "22.1.8",
+      "config": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+        "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+        "bytes": 194991
+      },
+      "config_keys": {
+        "CC_VERSION_TEXT": "\"clang version 22.1.8\"",
+        "CC_IS_CLANG": "y",
+        "CLANG_VERSION": "220108",
+        "LD_IS_LLD": "y",
+        "LLD_VERSION": "220108",
+        "LOCALVERSION": "\"-v7l\"",
+        "ARM": "y",
+        "ARM64": null,
+        "PREEMPT_RT": "n",
+        "MODVERSIONS": "y",
+        "LTO_NONE": "y",
+        "LTO_CLANG": null,
+        "CFI_CLANG": "n",
+        "DEBUG_INFO_BTF_MODULES": "y",
+        "MODULE_SIG": "n"
+      },
+      "utsrelease_header": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/utsrelease.h",
+        "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e",
+        "bytes": 43
+      },
+      "compile_header": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h",
+        "sha256": "24fbfa879ff5af0dae13c1532f71bc640689115ea43420c46d7ec573e51d7f93",
+        "bytes": 167
+      },
+      "compiler_line": {
+        "line": 4,
+        "raw": "#define LINUX_COMPILER\t\t\"clang version 22.1.8, LLD 22.1.8\""
+      },
+      "compile_host_line": {
+        "line": 3,
+        "raw": "#define LINUX_COMPILE_HOST\t\"qb-build-host-02\""
+      }
+    },
+    "new_kernel_release_file": {
+      "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/kernel.release",
+      "sha256": "cf160b6b94cdb51fa241c893e453280c20357f6768d99ac8ec59ae9c52d3c740",
+      "bytes": 21
+    },
+    "new_module_symvers": {
+      "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/Module.symvers",
+      "sha256": "fd1bf28f859933424c88f0e65c224bf4992c18e78cd0c5d0e59b1f72e8beb28c",
+      "bytes": 822183
+    }
+  },
+  "kernel_release": "6.12.80-arm-rpi4-v7l",
+  "clang_version": {
+    "old": "22.1.8",
+    "new": "22.1.8"
+  },
+  "lld_version": {
+    "old": "22.1.8",
+    "new": "22.1.8"
+  },
+  "config_comparison": {
+    "byte_identical": true,
+    "unified_diff": [],
+    "scope": "Packaged ARMv7l non-RT development SDK"
+  },
+  "toolchain_job_package_comparison": {
+    "clang": {
+      "old": {
+        "version_release": "22.1.8-1.6",
+        "line": 469,
+        "raw": "[   51s] [115/119] keeping clang-22.1.8-1.6"
+      },
+      "new": {
+        "version_release": "22.1.8-4.1",
+        "line": 362,
+        "raw": "[   19s] [115/119] keeping clang-22.1.8-4.1"
+      },
+      "changed": true
+    },
+    "llvm": {
+      "old": {
+        "version_release": "22.1.8-1.6",
+        "line": 467,
+        "raw": "[   51s] [113/119] keeping llvm-22.1.8-1.6"
+      },
+      "new": {
+        "version_release": "22.1.8-4.1",
+        "line": 360,
+        "raw": "[   19s] [113/119] keeping llvm-22.1.8-4.1"
+      },
+      "changed": true
+    },
+    "clang-accel-x86_64-armv7l": {
+      "old": {
+        "version_release": "0.4-1.1",
+        "line": 402,
+        "raw": "[   51s] [48/119] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+      },
+      "new": {
+        "version_release": "0.4-2.3",
+        "line": 298,
+        "raw": "[   19s] [51/119] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+      },
+      "changed": true
+    },
+    "qemu-accel-x86_64-armv7l": {
+      "old": {
+        "version_release": "0.4-1.1",
+        "line": 446,
+        "raw": "[   51s] [92/119] keeping qemu-accel-x86_64-armv7l-0.4-1.1"
+      },
+      "new": {
+        "version_release": "0.4-2.3",
+        "line": 341,
+        "raw": "[   19s] [94/119] keeping qemu-accel-x86_64-armv7l-0.4-2.3"
+      },
+      "changed": true
+    },
+    "binutils": {
+      "old": {
+        "version_release": "2.43-1.8",
+        "line": 437,
+        "raw": "[   51s] [83/119] keeping binutils-2.43-1.8"
+      },
+      "new": {
+        "version_release": "2.43-1.16",
+        "line": 331,
+        "raw": "[   19s] [84/119] keeping binutils-2.43-1.16"
+      },
+      "changed": true
+    },
+    "make": {
+      "old": {
+        "version_release": "4.4.1-1.6",
+        "line": 417,
+        "raw": "[   51s] [63/119] keeping make-4.4.1-1.6"
+      },
+      "new": {
+        "version_release": "4.4.1-1.14",
+        "line": 314,
+        "raw": "[   19s] [67/119] keeping make-4.4.1-1.14"
+      },
+      "changed": true
+    },
+    "gcc": {
+      "old": {
+        "version_release": "14.2.0-1.7",
+        "line": 443,
+        "raw": "[   51s] [89/119] keeping gcc-14.2.0-1.7"
+      },
+      "new": {
+        "version_release": "14.2.0-1.14",
+        "line": 338,
+        "raw": "[   19s] [91/119] keeping gcc-14.2.0-1.14"
+      },
+      "changed": true
+    },
+    "glibc": {
+      "old": {
+        "version_release": "2.40-1.8",
+        "line": 361,
+        "raw": "[   51s] [7/119] keeping glibc-2.40-1.8"
+      },
+      "new": {
+        "version_release": "2.40-2.5",
+        "line": 254,
+        "raw": "[   19s] [7/119] keeping glibc-2.40-2.5"
+      },
+      "changed": true
+    },
+    "rpm": {
+      "old": {
+        "version_release": "4.14.1.1-1.8",
+        "line": 454,
+        "raw": "[   51s] [100/119] keeping rpm-4.14.1.1-1.8"
+      },
+      "new": {
+        "version_release": "4.14.1.1-1.9",
+        "line": 348,
+        "raw": "[   19s] [101/119] keeping rpm-4.14.1.1-1.9"
+      },
+      "changed": true
+    },
+    "rpm-build": {
+      "old": {
+        "version_release": "4.14.1.1-1.8",
+        "line": 473,
+        "raw": "[   51s] [119/119] keeping rpm-build-4.14.1.1-1.8"
+      },
+      "new": {
+        "version_release": "4.14.1.1-1.9",
+        "line": 366,
+        "raw": "[   19s] [119/119] keeping rpm-build-4.14.1.1-1.9"
+      },
+      "changed": true
+    }
+  },
+  "visible_build_parameter_comparison": {
+    "equal_in_selected_shell_trace": true,
+    "old": [
+      {
+        "line": 516,
+        "raw": "[   77s] + CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'",
+        "shell_text": "+ CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'"
+      },
+      {
+        "line": 518,
+        "raw": "[   77s] + CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'",
+        "shell_text": "+ CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'"
+      },
+      {
+        "line": 520,
+        "raw": "[   77s] + LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'",
+        "shell_text": "+ LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'"
+      },
+      {
+        "line": 531,
+        "raw": "[   77s] + export AR=llvm-ar RANLIB=llvm-ranlib",
+        "shell_text": "+ export AR=llvm-ar RANLIB=llvm-ranlib"
+      },
+      {
+        "line": 534,
+        "raw": "[   77s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++",
+        "shell_text": "+ export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++"
+      },
+      {
+        "line": 537,
+        "raw": "[   77s] + export 'MAKEFLAGS+= -k'",
+        "shell_text": "+ export 'MAKEFLAGS+= -k'"
+      },
+      {
+        "line": 555,
+        "raw": "[   77s] + export BUILD_kdbus=m",
+        "shell_text": "+ export BUILD_kdbus=m"
+      },
+      {
+        "line": 563,
+        "raw": "[   77s] + export THREAD_GROUP_CPUTIME_SUPPORT=1",
+        "shell_text": "+ export THREAD_GROUP_CPUTIME_SUPPORT=1"
+      },
+      {
+        "line": 565,
+        "raw": "[   77s] + export LLVM=1",
+        "shell_text": "+ export LLVM=1"
+      },
+      {
+        "line": 567,
+        "raw": "[   77s] + find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'",
+        "shell_text": "+ find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'"
+      },
+      {
+        "line": 568,
+        "raw": "[   77s] + make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4",
+        "shell_text": "+ make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4"
+      },
+      {
+        "line": 574,
+        "raw": "[   78s] + make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4",
+        "shell_text": "+ make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4"
+      },
+      {
+        "line": 576,
+        "raw": "[   78s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules",
+        "shell_text": "make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules"
+      }
+    ],
+    "new": [
+      {
+        "line": 409,
+        "raw": "[   59s] + CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'",
+        "shell_text": "+ CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'"
+      },
+      {
+        "line": 411,
+        "raw": "[   59s] + CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'",
+        "shell_text": "+ CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'"
+      },
+      {
+        "line": 413,
+        "raw": "[   59s] + LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'",
+        "shell_text": "+ LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'"
+      },
+      {
+        "line": 424,
+        "raw": "[   59s] + export AR=llvm-ar RANLIB=llvm-ranlib",
+        "shell_text": "+ export AR=llvm-ar RANLIB=llvm-ranlib"
+      },
+      {
+        "line": 427,
+        "raw": "[   59s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++",
+        "shell_text": "+ export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++"
+      },
+      {
+        "line": 430,
+        "raw": "[   59s] + export 'MAKEFLAGS+= -k'",
+        "shell_text": "+ export 'MAKEFLAGS+= -k'"
+      },
+      {
+        "line": 448,
+        "raw": "[   59s] + export BUILD_kdbus=m",
+        "shell_text": "+ export BUILD_kdbus=m"
+      },
+      {
+        "line": 456,
+        "raw": "[   59s] + export THREAD_GROUP_CPUTIME_SUPPORT=1",
+        "shell_text": "+ export THREAD_GROUP_CPUTIME_SUPPORT=1"
+      },
+      {
+        "line": 458,
+        "raw": "[   59s] + export LLVM=1",
+        "shell_text": "+ export LLVM=1"
+      },
+      {
+        "line": 460,
+        "raw": "[   59s] + find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'",
+        "shell_text": "+ find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'"
+      },
+      {
+        "line": 461,
+        "raw": "[   59s] + make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4",
+        "shell_text": "+ make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4"
+      },
+      {
+        "line": 467,
+        "raw": "[   59s] + make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4",
+        "shell_text": "+ make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4"
+      },
+      {
+        "line": 469,
+        "raw": "[   59s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules",
+        "shell_text": "make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules"
+      }
+    ]
+  },
+  "manifest_revision_changes": {
+    "platform/kernel/linux-tizen-modules-source": {
+      "old": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+      "new": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8"
+    }
+  },
+  "new_manifest_matches_phase10_fix": true,
+  "successful_job_details": {
+    "platform/kernel/linux-rpi": {
+      "path": "evidence/build/linux-rpi-armv7l.out",
+      "sha256": "c9b43caf9e7418d891ca2cc6620930cd3759089e50a60c3fff674939391da789",
+      "bytes": 937753,
+      "root": {
+        "line": 2,
+        "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24"
+      },
+      "started": {
+        "line": 6,
+        "raw": "[    1s] qb-build-host-02 started \"build linux-rpi.spec\" at Wed Nov 25 13:34:46 UTC 2026."
+      },
+      "finished": {
+        "line": 15260,
+        "raw": "[ 4194s] qb-build-host-02 finished \"build linux-rpi.spec\" at Wed Nov 25 14:44:39 UTC 2026."
+      },
+      "packages_in_log": {
+        "glibc": {
+          "version_release": "2.40-2.5",
+          "line": 39,
+          "raw": "[   13s] [4/130] keeping glibc-2.40-2.5"
+        },
+        "clang-accel-x86_64-armv7l": {
+          "version_release": "0.4-2.3",
+          "line": 86,
+          "raw": "[   14s] [51/130] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+        },
+        "make": {
+          "version_release": "4.4.1-1.14",
+          "line": 105,
+          "raw": "[   14s] [70/130] keeping make-4.4.1-1.14"
+        },
+        "binutils": {
+          "version_release": "2.43-1.16",
+          "line": 123,
+          "raw": "[   14s] [88/130] keeping binutils-2.43-1.16"
+        },
+        "gcc": {
+          "version_release": "14.2.0-1.14",
+          "line": 131,
+          "raw": "[   14s] [96/130] keeping gcc-14.2.0-1.14"
+        },
+        "qemu-accel-x86_64-armv7l": {
+          "version_release": "0.4-2.3",
+          "line": 133,
+          "raw": "[   14s] [98/130] keeping qemu-accel-x86_64-armv7l-0.4-2.3"
+        },
+        "rpm": {
+          "version_release": "4.14.1.1-1.9",
+          "line": 139,
+          "raw": "[   14s] [104/130] keeping rpm-4.14.1.1-1.9"
+        },
+        "llvm": {
+          "version_release": "22.1.8-4.1",
+          "line": 154,
+          "raw": "[   14s] [119/130] keeping llvm-22.1.8-4.1"
+        },
+        "clang": {
+          "version_release": "22.1.8-4.1",
+          "line": 156,
+          "raw": "[   14s] [121/130] keeping clang-22.1.8-4.1"
+        },
+        "rpm-build": {
+          "version_release": "4.14.1.1-1.9",
+          "line": 161,
+          "raw": "[   15s] [126/130] keeping rpm-build-4.14.1.1-1.9"
+        }
+      },
+      "wrote": [
+        {
+          "line": 15234,
+          "raw": "[ 4077s] Wrote: /home/abuild/rpmbuild/SRPMS/rpi4-linux-kernel-6.12.80-0.src.rpm"
+        },
+        {
+          "line": 15235,
+          "raw": "[ 4094s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15236,
+          "raw": "[ 4102s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15237,
+          "raw": "[ 4111s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15238,
+          "raw": "[ 4112s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15239,
+          "raw": "[ 4113s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-modules-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15240,
+          "raw": "[ 4131s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15241,
+          "raw": "[ 4151s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15242,
+          "raw": "[ 4152s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15243,
+          "raw": "[ 4156s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-headers-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15244,
+          "raw": "[ 4157s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-kernel-perf-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15245,
+          "raw": "[ 4158s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-kernel-bpftool-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15246,
+          "raw": "[ 4172s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15247,
+          "raw": "[ 4187s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15248,
+          "raw": "[ 4187s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-kernel-perf-debuginfo-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "line": 15249,
+          "raw": "[ 4187s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-kernel-bpftool-debuginfo-6.12.80-0.armv7l.rpm"
+        }
+      ]
+    },
+    "platform/kernel/linux-tizen-modules": {
+      "path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "bytes": 53532,
+      "root": {
+        "line": 2,
+        "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0"
+      },
+      "started": {
+        "line": 6,
+        "raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026."
+      },
+      "finished": {
+        "line": 760,
+        "raw": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026."
+      },
+      "packages_in_log": {
+        "glibc": {
+          "version_release": "2.40-2.5",
+          "line": 254,
+          "raw": "[   19s] [7/119] keeping glibc-2.40-2.5"
+        },
+        "clang-accel-x86_64-armv7l": {
+          "version_release": "0.4-2.3",
+          "line": 298,
+          "raw": "[   19s] [51/119] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+        },
+        "make": {
+          "version_release": "4.4.1-1.14",
+          "line": 314,
+          "raw": "[   19s] [67/119] keeping make-4.4.1-1.14"
+        },
+        "binutils": {
+          "version_release": "2.43-1.16",
+          "line": 331,
+          "raw": "[   19s] [84/119] keeping binutils-2.43-1.16"
+        },
+        "gcc": {
+          "version_release": "14.2.0-1.14",
+          "line": 338,
+          "raw": "[   19s] [91/119] keeping gcc-14.2.0-1.14"
+        },
+        "qemu-accel-x86_64-armv7l": {
+          "version_release": "0.4-2.3",
+          "line": 341,
+          "raw": "[   19s] [94/119] keeping qemu-accel-x86_64-armv7l-0.4-2.3"
+        },
+        "rpm": {
+          "version_release": "4.14.1.1-1.9",
+          "line": 348,
+          "raw": "[   19s] [101/119] keeping rpm-4.14.1.1-1.9"
+        },
+        "llvm": {
+          "version_release": "22.1.8-4.1",
+          "line": 360,
+          "raw": "[   19s] [113/119] keeping llvm-22.1.8-4.1"
+        },
+        "clang": {
+          "version_release": "22.1.8-4.1",
+          "line": 362,
+          "raw": "[   19s] [115/119] keeping clang-22.1.8-4.1"
+        },
+        "rpm-build": {
+          "version_release": "4.14.1.1-1.9",
+          "line": 366,
+          "raw": "[   19s] [119/119] keeping rpm-build-4.14.1.1-1.9"
+        }
+      },
+      "wrote": [
+        {
+          "line": 744,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-11.0.0-0.src.rpm"
+        },
+        {
+          "line": 745,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 746,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 747,
+          "raw": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm"
+        }
+      ]
+    },
+    "platform/kernel/linux-tizen-modules-source": {
+      "path": "evidence/build/linux-tizen-modules-source-armv7l.out",
+      "sha256": "beeb69a4012b022045b1eee0f3b29b0f75459910049cf117c7d7d87d9dc8ae5c",
+      "bytes": 88017,
+      "root": {
+        "line": 2,
+        "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4"
+      },
+      "started": {
+        "line": 6,
+        "raw": "[    0s] qb-build-host-02 started \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:08:26 UTC 2026."
+      },
+      "finished": {
+        "line": 782,
+        "raw": "[  275s] qb-build-host-02 finished \"build linux-tizen-modules-source.spec\" at Wed Nov 25 13:13:01 UTC 2026."
+      },
+      "packages_in_log": {},
+      "wrote": [
+        {
+          "line": 766,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-source-11.0.0-0.src.rpm"
+        },
+        {
+          "line": 767,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 768,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 769,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-headers-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 770,
+          "raw": "[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 771,
+          "raw": "[  273s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm"
+        }
+      ]
+    }
+  },
+  "target_wrapper_rebuilt": true,
+  "target_wrapper_rebuild_evidence": {
+    "old_sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+    "old_local_rpm": {
+      "path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+      "bytes": 92412
+    },
+    "new_sha256": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de",
+    "old_wrote": {
+      "line": 853,
+      "raw": "[  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+    },
+    "old_job": {
+      "path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+      "bytes": 56294,
+      "root": {
+        "line": 2,
+        "raw": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0"
+      },
+      "started": {
+        "line": 6,
+        "raw": "[    0s] qb-build-host-01 started \"build linux-tizen-modules.spec\" at Fri Nov 20 10:42:48 UTC 2026."
+      },
+      "finished": {
+        "line": 867,
+        "raw": "[  139s] qb-build-host-01 finished \"build linux-tizen-modules.spec\" at Fri Nov 20 10:45:07 UTC 2026."
+      },
+      "packages_in_log": {
+        "glibc": {
+          "version_release": "2.40-1.8",
+          "line": 361,
+          "raw": "[   51s] [7/119] keeping glibc-2.40-1.8"
+        },
+        "clang-accel-x86_64-armv7l": {
+          "version_release": "0.4-1.1",
+          "line": 402,
+          "raw": "[   51s] [48/119] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+        },
+        "make": {
+          "version_release": "4.4.1-1.6",
+          "line": 417,
+          "raw": "[   51s] [63/119] keeping make-4.4.1-1.6"
+        },
+        "binutils": {
+          "version_release": "2.43-1.8",
+          "line": 437,
+          "raw": "[   51s] [83/119] keeping binutils-2.43-1.8"
+        },
+        "gcc": {
+          "version_release": "14.2.0-1.7",
+          "line": 443,
+          "raw": "[   51s] [89/119] keeping gcc-14.2.0-1.7"
+        },
+        "qemu-accel-x86_64-armv7l": {
+          "version_release": "0.4-1.1",
+          "line": 446,
+          "raw": "[   51s] [92/119] keeping qemu-accel-x86_64-armv7l-0.4-1.1"
+        },
+        "rpm": {
+          "version_release": "4.14.1.1-1.8",
+          "line": 454,
+          "raw": "[   51s] [100/119] keeping rpm-4.14.1.1-1.8"
+        },
+        "llvm": {
+          "version_release": "22.1.8-1.6",
+          "line": 467,
+          "raw": "[   51s] [113/119] keeping llvm-22.1.8-1.6"
+        },
+        "clang": {
+          "version_release": "22.1.8-1.6",
+          "line": 469,
+          "raw": "[   51s] [115/119] keeping clang-22.1.8-1.6"
+        },
+        "rpm-build": {
+          "version_release": "4.14.1.1-1.8",
+          "line": 473,
+          "raw": "[   51s] [119/119] keeping rpm-build-4.14.1.1-1.8"
+        }
+      },
+      "wrote": [
+        {
+          "line": 851,
+          "raw": "[  138s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-11.0.0-0.src.rpm"
+        },
+        {
+          "line": 852,
+          "raw": "[  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 853,
+          "raw": "[  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+        },
+        {
+          "line": 854,
+          "raw": "[  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm"
+        }
+      ]
+    },
+    "new_wrote_line": 746
+  },
+  "toolchain_rpm_rows": [
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "binutils",
+      "epoch": "0",
+      "version": "2.43",
+      "release": "1.16",
+      "arch": "armv7l",
+      "nevra": "binutils-0:2.43-1.16.armv7l",
+      "filename": "binutils-2.43-1.16.armv7l.rpm",
+      "source_rpm": "binutils-2.43-1.16.src.rpm",
+      "source_revision": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/binutils-2.43-1.16.armv7l.rpm",
+      "published_bytes": 1677953,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "0693d667c55e011dab9fbb0dd643c153b25978f2f0d94b3d4dffa55b4c645d77",
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "artifact_path": null,
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 331,
+      "build_dependency_raw": "[   19s] [84/119] keeping binutils-2.43-1.16"
+    },
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "clang",
+      "epoch": "0",
+      "version": "22.1.8",
+      "release": "4.1",
+      "arch": "armv7l",
+      "nevra": "clang-0:22.1.8-4.1.armv7l",
+      "filename": "clang-22.1.8-4.1.armv7l.rpm",
+      "source_rpm": "llvm-22.1.8-4.1.src.rpm",
+      "source_revision": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/clang-22.1.8-4.1.armv7l.rpm",
+      "published_bytes": 20902553,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "41330ec71ad44e8d6b1ebaa4540b1ac195334e97464015d07f916b1110d2277c",
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "artifact_path": null,
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 362,
+      "build_dependency_raw": "[   19s] [115/119] keeping clang-22.1.8-4.1"
+    },
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "clang-accel-x86_64-armv7l",
+      "epoch": "0",
+      "version": "0.4",
+      "release": "2.3",
+      "arch": "armv7l",
+      "nevra": "clang-accel-x86_64-armv7l-0:0.4-2.3.armv7l",
+      "filename": "clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "source_rpm": "qemu-accel-0.4-2.3.src.rpm",
+      "source_revision": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "published_bytes": 54808241,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+      "local_sha256": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+      "repository_checksum_verification": "PASS",
+      "artifact_path": "evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 298,
+      "build_dependency_raw": "[   19s] [51/119] keeping clang-accel-x86_64-armv7l-0.4-2.3"
+    },
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "llvm",
+      "epoch": "0",
+      "version": "22.1.8",
+      "release": "4.1",
+      "arch": "armv7l",
+      "nevra": "llvm-0:22.1.8-4.1.armv7l",
+      "filename": "llvm-22.1.8-4.1.armv7l.rpm",
+      "source_rpm": "llvm-22.1.8-4.1.src.rpm",
+      "source_revision": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/llvm-22.1.8-4.1.armv7l.rpm",
+      "published_bytes": 6329233,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+      "local_sha256": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+      "repository_checksum_verification": "PASS",
+      "artifact_path": "evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm",
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 360,
+      "build_dependency_raw": "[   19s] [113/119] keeping llvm-22.1.8-4.1"
+    },
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "make",
+      "epoch": "0",
+      "version": "4.4.1",
+      "release": "1.14",
+      "arch": "armv7l",
+      "nevra": "make-0:4.4.1-1.14.armv7l",
+      "filename": "make-4.4.1-1.14.armv7l.rpm",
+      "source_rpm": "make-4.4.1-1.14.src.rpm",
+      "source_revision": "platform/upstream/make#f648b7e3cfcc77669112076cfe5c8f9b76ade526",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/make-4.4.1-1.14.armv7l.rpm",
+      "published_bytes": 294737,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "1244d734963c3e54aeb05580adc0db2a52498552e797dbb098cdb89827d9b1e1",
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "artifact_path": null,
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 314,
+      "build_dependency_raw": "[   19s] [67/119] keeping make-4.4.1-1.14"
+    },
+    {
+      "role": "BUILD_DEP_TOOLCHAIN",
+      "area": "base/packages",
+      "name": "qemu-accel-x86_64-armv7l",
+      "epoch": "0",
+      "version": "0.4",
+      "release": "2.3",
+      "arch": "armv7l",
+      "nevra": "qemu-accel-x86_64-armv7l-0:0.4-2.3.armv7l",
+      "filename": "qemu-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "source_rpm": "qemu-accel-0.4-2.3.src.rpm",
+      "source_revision": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467",
+      "download_url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/qemu-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "published_bytes": 73868533,
+      "checksum_algorithm": "sha256",
+      "published_checksum": "4dccbd0e6b7ac36ac5f3726c6fbf7639a00c2ae888cdb7433769a7ea0d4cacf0",
+      "local_sha256": null,
+      "repository_checksum_verification": "METADATA_ONLY",
+      "artifact_path": null,
+      "build_log_association": "PINNED_JOB_KEEPING_EXACT_VERSION_RELEASE",
+      "build_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "build_log_sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+      "build_dependency_line": 341,
+      "build_dependency_raw": "[   19s] [94/119] keeping qemu-accel-x86_64-armv7l-0.4-2.3"
+    }
+  ],
+  "confounders": [
+    "Base snapshot ID differs.",
+    "Installed compiler, linker, accelerator, binutils and make RPM revisions differ.",
+    "Builder hostname, scratch build root and timestamps differ.",
+    "Quiet build logs do not capture all effective per-object options or the selected historical executable."
+  ],
+  "evidence_gaps": [
+    "arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm and arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm recorded in published metadata without payload acquisition.",
+    "No exact target kdbus.ko.debug or intermediate kdbus.o/.kdbus.o.cmd in published filelists.",
+    "No detached repomd.xml.asc at the three published repository metadata paths.",
+    "Target RPM header Build Time is zero. Successful job times are separately reported."
+  ],
+  "phase10_submission": {
+    "path": "/local-user/lss/kernel_lld_check/phase10_kdbus_sandbox/KDBUS_LD_FIX_SUBMISSION_SUMMARY.json",
+    "sha256": "e80c6d9b43100ea9535f8b21c9a9a6c2c8dc9b1ccad0173bf223de1f11699f72",
+    "bytes": 7571,
+    "sandbox_ref": "refs/heads/sandbox/liushanshan/lld",
+    "commit": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+    "change_id": "Ic0b9efb5c514bb6e18dbc270aa269211ec514375"
+  }
+}

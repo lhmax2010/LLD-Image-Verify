@@ -1,0 +1,26 @@
+{
+  "argv": [
+    [
+      "rpm2cpio",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm"
+    ],
+    [
+      "cpio",
+      "-idu",
+      "--quiet",
+      "--no-absolute-filenames",
+      "-D",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/llvm",
+      "./usr/bin/ld.lld",
+      "./usr/bin/lld"
+    ]
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:50.159386+00:00",
+  "elapsed_seconds": 0.291,
+  "pipeline_exit_statuses": [
+    0,
+    0
+  ],
+  "exit_status": 0
+}

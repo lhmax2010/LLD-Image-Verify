@@ -1,0 +1,73 @@
+{
+  "status": "PENDING_NEW_IMAGE_DEPLOYMENT",
+  "serial": "private-address-02:26101",
+  "image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l",
+  "requested_snapshot": "tizen-unified-toolchain_20261125.130358",
+  "observed_old_snapshot": true,
+  "new_snapshot_verified": false,
+  "uname": "Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Fri Nov 20 09:22:45 UTC 2026 armv7l Toybox",
+  "release": "6.12.80-arm-rpi4-v7l",
+  "arch": "armv7l",
+  "model": "Raspberry Pi 4 Model B Rev 1.5",
+  "proc_version": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+  "boot_banner": "[    0.000000] Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+  "kernel": {
+    "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+    "source_path": "/sys/kernel/notes",
+    "size": 84,
+    "build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "raw_hex": "0600000001000000000100004c696e7578000000000000000600000004000000010100004c696e757800000000000000040000001400000003000000474e550099ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "notes": [
+      {
+        "offset": 0,
+        "owner": "Linux",
+        "type": 256,
+        "description": "00"
+      },
+      {
+        "offset": 24,
+        "owner": "Linux",
+        "type": 257,
+        "description": "00000000"
+      },
+      {
+        "offset": 48,
+        "owner": "GNU",
+        "type": 3,
+        "description": "99ba05b664f7ece7686ab5f087bf54680bb172e6"
+      }
+    ]
+  },
+  "installed_kdbus": [
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576"
+    }
+  ],
+  "loaded_kdbus": [
+    "kdbus 98304 98 - Live 0x00000000 (O)"
+  ],
+  "loaded_kdbus_notes": {
+    "sha256": "a8c8629d77531ef0cf18f0a0641fc9bea97980b263ec1d9786655f24f60569b1",
+    "source_path": "/sys/module/kdbus/notes/.note.gnu.build-id",
+    "size": 36,
+    "build_id": "b85657c98fa68ebf43a90520861cd8f461c0abad",
+    "raw_hex": "040000001400000003000000474e5500b85657c98fa68ebf43a90520861cd8f461c0abad",
+    "notes": [
+      {
+        "offset": 0,
+        "owner": "GNU",
+        "type": 3,
+        "description": "b85657c98fa68ebf43a90520861cd8f461c0abad"
+      }
+    ]
+  },
+  "device_capture": "evidence/runtime/identity-device.out",
+  "command": "evidence/runtime/identity-device.cmd.json",
+  "identity_probes_only": true,
+  "mutation_performed": false,
+  "diagnostics": [
+    "dmesg: write error",
+    "/bin/sh: line 6: ifconfig: command not found"
+  ]
+}

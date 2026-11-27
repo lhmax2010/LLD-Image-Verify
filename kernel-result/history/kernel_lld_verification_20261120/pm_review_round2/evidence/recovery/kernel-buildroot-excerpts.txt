@@ -1,0 +1,56 @@
+Full original file round1/evidence/build/linux-rpi-armv7l.out
+SHA256 b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673
+
+00001	[    0s] on X86_64, no limit mem size
+00002	[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27
+00003	[    0s] Using BUILD_ARCH=armv7l:armv7el:armv6l:armv5tejl:armv5tel:armv5l:armv4tl:armv4l:armv3l:noarch
+00004	[    0s] 
+00005	[    0s] 
+00006	[    0s] qb-build-host-01 started "build linux-rpi.spec" at Fri Nov 20 08:59:14 UTC 2026.
+00007	[    0s] 
+00008	[    0s] 
+00009	[    0s] processing recipe /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/rpi4-linux-kernel-6.12.80-0/linux-rpi.spec ...
+00010	[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/ --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/ /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/rpi4-linux-kernel-6.12.80-0/linux-rpi.spec build ...
+00011	[    0s] initializing /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27/.srcfiles.cache ...
+00012	[    1s] /usr/lib/build/createdirdeps --oldfile /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27/.srcfiles.cache /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS
+00013	[    1s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/
+00014	[    3s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/
+00015	[    3s] expanding package dependencies...
+00016	[    4s] Warning: spec file parser line 195: can't expand %(...)
+00017	[    4s] Warning: spec file parser line 264: can't expand %(...)
+00018	[    4s] copying qemu
+00019	[    4s] 
+00020	[    4s] registering binfmt handlers for cross build
+00084	[   11s] [48/130] keeping clang-accel-x86_64-armv7l-0.4-1.1
+00088	[   11s] [52/130] keeping qemu-linux-user-x86_64-cross-9.2.3.1-3.1
+00091	[   11s] [55/130] keeping gcc-c++-14.2.0-1.7
+00092	[   11s] [56/130] keeping binutils-libs-2.43-1.8
+00112	[   11s] [76/130] keeping libllvm-22.1.8-1.6
+00123	[   11s] [87/130] keeping binutils-2.43-1.8
+00130	[   11s] [94/130] keeping gcc-14.2.0-1.7
+00155	[   11s] [119/130] keeping llvm-22.1.8-1.6
+00157	[   11s] [121/130] keeping clang-22.1.8-1.6
+00159	[   11s] [123/130] keeping llvm-devel-22.1.8-1.6
+00162	[   11s] [126/130] keeping rpm-build-4.14.1.1-1.8
+00163	[   11s] [127/130] cumulate binutils-devel-2.43-1.8
+01675	[   65s] + export 'MAKEFLAGS+= -k'
+01677	[   65s] + export LLVM=1
+01788	[   70s]   HDRINST usr/include/linux/binfmts.h
+04779	[  588s]   CC      fs/binfmt_script.o
+04781	[  589s]   CC      fs/binfmt_elf.o
+06770	[ 1153s]   CC [M]  fs/binfmt_misc.o
+07968	[ 1522s]   CC [M]  fs/binfmt_misc.mod.o
+08038	[ 1525s]   LD [M]  fs/binfmt_misc.ko
+08040	[ 1525s]   BTF [M] fs/binfmt_misc.ko
+08269	[ 1551s]   HDRINST usr/include/linux/binfmts.h
+10567	[ 1815s]   CC      fs/binfmt_script.o
+10571	[ 1816s]   CC      fs/binfmt_elf.o
+12588	[ 2348s]   CC [M]  fs/binfmt_misc.o
+13789	[ 2604s]   CC [M]  fs/binfmt_misc.mod.o
+13859	[ 2607s]   LD [M]  fs/binfmt_misc.ko
+13861	[ 2607s]   BTF [M] fs/binfmt_misc.ko
+13994	[ 2623s] + export LLVM=1
+14130	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+14131	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+14299	[ 3543s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-rt-v7l/kernel/fs/binfmt_misc.ko
+14300	[ 3543s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-rt-v7l/kernel/fs/binfmt_misc.ko

@@ -1,0 +1,47 @@
+{
+  "first_round_scope": "published target kernel payload to running main kernel",
+  "relations": [
+    {
+      "scope": "Repository RPM ↔ Released zImage",
+      "status": "EXACT_MATCH",
+      "comparison": "zImage 文件 SHA256",
+      "value": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+      "evidence": "round1/evidence/repository/image-profile-verification.json"
+    },
+    {
+      "scope": "Released Kernel Notes ↔ Runtime Kernel Notes",
+      "status": "EXACT_MATCH",
+      "comparison": "84 字节 GNU/Linux notes",
+      "value": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+      "evidence": "BUILD_ID_COMPARISON.json"
+    },
+    {
+      "scope": "Released Kernel ↔ Running Kernel Identity",
+      "status": "STRONG_MATCH",
+      "comparison": "GNU Build ID、完整 notes、banner、发布快照和架构相符。运行内核的完整内存映像未采集。",
+      "value": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+      "evidence": "BUILD_ID_COMPARISON.json"
+    },
+    {
+      "scope": "Repository Modules ↔ Device Modules",
+      "status": "EXACT_MATCH",
+      "comparison": "同 release 的 59 个文件逐路径逐 SHA256 比较",
+      "value": "59/59",
+      "evidence": "08_01_evidence_integrity_review.json"
+    },
+    {
+      "scope": "Released zImage ↔ Device Boot File",
+      "status": "UNVERIFIABLE",
+      "comparison": "设备会话未暴露启动卷 zImage，设备文件 SHA256 无记录。",
+      "value": null,
+      "evidence": "round1/evidence/runtime/partition-metadata.out"
+    },
+    {
+      "scope": "Repository RPM ↔ Active RPM Database",
+      "status": "UNVERIFIABLE",
+      "comparison": "设备活动数据库查询无目标条目。NEVRA、install time 和 owner 无法实测。",
+      "value": null,
+      "evidence": "round1/evidence/runtime/pinned-rpm-device-queries.out"
+    }
+  ]
+}

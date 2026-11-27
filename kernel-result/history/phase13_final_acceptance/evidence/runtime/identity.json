@@ -1,0 +1,89 @@
+{
+  "device_identity": "MISMATCH_IMAGE_AND_PLATFORM",
+  "runtime_regression": "PENDING_NEW_IMAGE_DEPLOYMENT",
+  "observed": {
+    "uname": "Linux localhost 6.12.80-arm64-rpi4-v8 #1 SMP PREEMPT Wed Nov 18 09:57:28 UTC 2026 aarch64 GNU/Linux",
+    "image_build_id": "tizen-unified-toolchain_20261118.083201_tizen-headed-aarch64",
+    "release": "6.12.80-arm64-rpi4-v8",
+    "arch": "aarch64",
+    "model": "Raspberry Pi 5 Model B Rev 1.1",
+    "proc_version": "Linux version 6.12.80-arm64-rpi4-v8 (abuild@qb-build-host-03) (clang version 22.1.8, LLD 22.1.8) #1 SMP PREEMPT Wed Nov 18 09:57:28 UTC 2026",
+    "boot_banner": "[    0.000000] Linux version 6.12.80-arm64-rpi4-v8 (abuild@qb-build-host-03) (clang version 22.1.8, LLD 22.1.8) #1 SMP PREEMPT Wed Nov 18 09:57:28 UTC 2026",
+    "kernel_gnu_note": {
+      "sha256": "947ee84274275ad95253b1d0e4b6b4e949e9579e94a873bf78dc30676e0c05a3",
+      "source_path": "/sys/kernel/notes",
+      "size": 84,
+      "build_id": "5515a1af6c753eea904eb053e361100dc94aa518",
+      "raw_hex": "0600000001000000000100004c696e7578000000000000000600000004000000010100004c696e757800000000000000040000001400000003000000474e55005515a1af6c753eea904eb053e361100dc94aa518",
+      "notes": [
+        {
+          "offset": 0,
+          "owner": "Linux",
+          "type": 256,
+          "description": "00"
+        },
+        {
+          "offset": 24,
+          "owner": "Linux",
+          "type": 257,
+          "description": "00000000"
+        },
+        {
+          "offset": 48,
+          "owner": "GNU",
+          "type": 3,
+          "description": "5515a1af6c753eea904eb053e361100dc94aa518"
+        }
+      ]
+    },
+    "kdbus_installed": [
+      {
+        "sha256": "88858c0534df8ef339eae94dbc8b60c83b423b1e6b83a6a18791907c3eb6b647",
+        "path": "/usr/lib/modules/6.12.80-arm64-rpi4-v8/extra/kdbus/kdbus.ko"
+      }
+    ],
+    "kdbus_loaded_line": [
+      "kdbus 106496 98 - Live 0xffff80007a2de000 (O)"
+    ],
+    "kdbus_loaded_gnu_note": {
+      "sha256": "ddfa2d35c1a63e3af977cfecc5b5a9f25e5a6efffea50108719c5c07f6c320b6",
+      "source_path": "/sys/module/kdbus/notes/.note.gnu.build-id",
+      "size": 36,
+      "build_id": "c722ae31605b60b9e2258fea78a800e47c75486c",
+      "raw_hex": "040000001400000003000000474e5500c722ae31605b60b9e2258fea78a800e47c75486c",
+      "notes": [
+        {
+          "offset": 0,
+          "owner": "GNU",
+          "type": 3,
+          "description": "c722ae31605b60b9e2258fea78a800e47c75486c"
+        }
+      ]
+    }
+  },
+  "target": {
+    "qb": "tizen-unified-toolchain_20261125.130358",
+    "release": "6.12.80-arm-rpi4-v7l",
+    "platform": "Raspberry Pi 4 ARMv7l non-RT",
+    "kdbus_released_sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860",
+    "kdbus_released_build_ids": [
+      "9527dadadaaf6aae09ce7fb483d2878b857375f6"
+    ]
+  },
+  "checks": {
+    "image_build_id_match": false,
+    "platform_release_match": false,
+    "kdbus_sha256_match": false
+  },
+  "d1_kernel_boot": "NOT_RUN_TARGET_IDENTITY_MISMATCH",
+  "d2_module_inventory": "NOT_RUN_TARGET_IDENTITY_MISMATCH",
+  "d3_module_runtime": "NOT_RUN_TARGET_IDENTITY_MISMATCH",
+  "d4_kernel_errors": "NOT_RUN_TARGET_IDENTITY_MISMATCH",
+  "d5_functional_regression": "NOT_RUN_TARGET_IDENTITY_MISMATCH",
+  "serial": "private-address-02:26101",
+  "identity_read_only": true,
+  "device_mutation_performed": false,
+  "archive_stdout": "evidence/runtime/device-identity.out",
+  "archive_stderr": "evidence/runtime/device-identity.err",
+  "archive_command": "evidence/runtime/device-identity.cmd.json"
+}

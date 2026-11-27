@@ -1,0 +1,2063 @@
+[
+  {
+    "section": ".ARM.extab",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 1668,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 1668,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1608,
+        "symbol_index": 525,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1608,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1536,
+        "symbol_index": 522,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1536,
+            "input_sha256": "68133fdb75581c74d3c7832bef7290d20b757d2af3008d766591c6a420f581cc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1464,
+        "symbol_index": 519,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1464,
+            "input_sha256": "1e20588a49a3448bd3ff942201c035c1bc6459d19ed14c5bb8560bfea86cfb0b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1308,
+        "symbol_index": 515,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1308,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1260,
+        "symbol_index": 510,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1260,
+            "input_sha256": "96de74524a3c7aff8e1f91518068cb2a2f203cd6266881390b15e5d751ee0953",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1152,
+        "symbol_index": 507,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1152,
+            "input_sha256": "b1a8efc3f7c7b48056a599e06eb677fb63db66aeaa5ea1e5004760fa17d6b745",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1104,
+        "symbol_index": 505,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1104,
+            "input_sha256": "01ed5e73f3c29cc2758f7f276fe279c21971ff66dac6975fbcae6be29d366fe9",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 972,
+        "symbol_index": 501,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 972,
+            "input_sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 876,
+        "symbol_index": 496,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 876,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 756,
+        "symbol_index": 493,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 756,
+            "input_sha256": "fbcd8427483f279a65714c7c550ac7c6246791da44688067c753359799089409",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 696,
+        "symbol_index": 488,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 696,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 648,
+        "symbol_index": 481,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 648,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 600,
+        "symbol_index": 473,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 600,
+            "input_sha256": "d3a56b42d0e440cafa0c9ad08ac24e4a664608bd70f67e5d343c1a7157ac7bf6",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 528,
+        "symbol_index": 469,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 528,
+            "input_sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 384,
+        "symbol_index": 463,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 384,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 288,
+        "symbol_index": 459,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 288,
+            "input_sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 60,
+        "symbol_index": 453,
+        "section_index": 29,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 60,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 449,
+        "section_index": 29,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".ARM.extab",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".ARM.extab.init.text",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 12,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 12,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 475,
+        "section_index": 23,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": ".ARM.extab.init.text",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".data",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 52,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 52,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 40,
+        "symbol_index": 502,
+        "section_index": 2,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+            "input_section": ".data",
+            "input_offset": 0,
+            "mapped_output_section_offset": 36,
+            "input_sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 4,
+        "symbol_index": 464,
+        "section_index": 2,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": ".data",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".data..once",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 3,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 3,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 2,
+        "symbol_index": 528,
+        "section_index": 37,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": ".data..once",
+            "input_offset": 0,
+            "mapped_output_section_offset": 2,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1,
+        "symbol_index": 517,
+        "section_index": 37,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": ".data..once",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 491,
+        "section_index": 37,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": ".data..once",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".exit.data",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 4,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 4,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 477,
+        "section_index": 34,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": ".exit.data",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".init.data",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 4,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 4,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 476,
+        "section_index": 32,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": ".init.data",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".modinfo",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 221,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 221,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 478,
+        "section_index": 26,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": ".modinfo",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 1256,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 1256,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1096,
+        "symbol_index": 485,
+        "section_index": 14,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1096,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 960,
+        "symbol_index": 470,
+        "section_index": 14,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+            "input_section": ".rodata",
+            "input_offset": 0,
+            "mapped_output_section_offset": 960,
+            "input_sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 320,
+        "symbol_index": 466,
+        "section_index": 14,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": ".rodata",
+            "input_offset": 0,
+            "mapped_output_section_offset": 320,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 455,
+        "section_index": 14,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata.cst16",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 32,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 32,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 16,
+        "symbol_index": 499,
+        "section_index": 19,
+        "category": "same_offset_duplicate",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 16,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 48,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 64,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 16,
+        "symbol_index": 486,
+        "section_index": 19,
+        "category": "same_offset_duplicate",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 16,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 48,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 64,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 16,
+        "symbol_index": 457,
+        "section_index": 19,
+        "category": "same_offset_duplicate",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 16,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 48,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 64,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 16,
+        "symbol_index": 451,
+        "section_index": 19,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 16,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 48,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 64,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 467,
+        "section_index": 19,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": ".rodata.cst16",
+            "input_offset": 0,
+            "mapped_output_section_offset": 32,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata.cst32",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 128,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 128,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 64,
+        "symbol_index": 498,
+        "section_index": 22,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.cst32",
+            "input_offset": 0,
+            "mapped_output_section_offset": 96,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 32,
+        "symbol_index": 461,
+        "section_index": 22,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+            "input_section": ".rodata.cst32",
+            "input_offset": 0,
+            "mapped_output_section_offset": 64,
+            "input_sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 456,
+        "section_index": 22,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.cst32",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata.cst8",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 8,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 8,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 527,
+        "section_index": 28,
+        "category": "same_offset_duplicate",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": ".rodata.cst8",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": ".rodata.cst8",
+            "input_offset": 0,
+            "mapped_output_section_offset": 8,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 490,
+        "section_index": 28,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": ".rodata.cst8",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          },
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": ".rodata.cst8",
+            "input_offset": 0,
+            "mapped_output_section_offset": 8,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_MULTIPLE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata.str",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 151,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 151,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 76,
+        "symbol_index": 513,
+        "section_index": 27,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": ".rodata.str",
+            "input_offset": 0,
+            "mapped_output_section_offset": 152,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 482,
+        "section_index": 27,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.str",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": ".rodata.str1.1",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 1559,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 1559,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1483,
+        "symbol_index": 523,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1549,
+            "input_sha256": "68133fdb75581c74d3c7832bef7290d20b757d2af3008d766591c6a420f581cc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1366,
+        "symbol_index": 471,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 442,
+            "input_sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1293,
+        "symbol_index": 465,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 356,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1281,
+        "symbol_index": 503,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1030,
+            "input_sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1268,
+        "symbol_index": 450,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1262,
+        "symbol_index": 479,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 456,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1258,
+        "symbol_index": 526,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1625,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1172,
+        "symbol_index": 494,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 839,
+            "input_sha256": "fbcd8427483f279a65714c7c550ac7c6246791da44688067c753359799089409",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 1122,
+        "symbol_index": 508,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1130,
+            "input_sha256": "b1a8efc3f7c7b48056a599e06eb677fb63db66aeaa5ea1e5004760fa17d6b745",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 969,
+        "symbol_index": 520,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1473,
+            "input_sha256": "1e20588a49a3448bd3ff942201c035c1bc6459d19ed14c5bb8560bfea86cfb0b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 527,
+        "symbol_index": 484,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 525,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 515,
+        "symbol_index": 460,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 268,
+            "input_sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 434,
+        "symbol_index": 454,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 116,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 285,
+        "symbol_index": 516,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1244,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 220,
+        "symbol_index": 497,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 943,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 142,
+        "symbol_index": 489,
+        "section_index": 18,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 663,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 99,
+        "symbol_index": 511,
+        "section_index": 18,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+            "input_section": ".rodata.str1.1",
+            "input_offset": 0,
+            "mapped_output_section_offset": 1224,
+            "input_sha256": "96de74524a3c7aff8e1f91518068cb2a2f203cd6266881390b15e5d751ee0953",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "MERGE_ENTRY_CONTENT"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": "__bug_table",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 36,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 36,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 24,
+        "symbol_index": 514,
+        "section_index": 1,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": "__bug_table",
+            "input_offset": 0,
+            "mapped_output_section_offset": 24,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 483,
+        "section_index": 1,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": "__bug_table",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  },
+  {
+    "section": "__mcount_loc",
+    "effective_spans_equal": true,
+    "left": [
+      {
+        "start": 0,
+        "end": 760,
+        "kind": "d"
+      }
+    ],
+    "right": [
+      {
+        "start": 0,
+        "end": 760,
+        "kind": "d"
+      }
+    ],
+    "removed": [
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 740,
+        "symbol_index": 529,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 740,
+            "input_sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 708,
+        "symbol_index": 524,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 708,
+            "input_sha256": "68133fdb75581c74d3c7832bef7290d20b757d2af3008d766591c6a420f581cc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 676,
+        "symbol_index": 521,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 676,
+            "input_sha256": "1e20588a49a3448bd3ff942201c035c1bc6459d19ed14c5bb8560bfea86cfb0b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 616,
+        "symbol_index": 518,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 616,
+            "input_sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 588,
+        "symbol_index": 512,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 588,
+            "input_sha256": "96de74524a3c7aff8e1f91518068cb2a2f203cd6266881390b15e5d751ee0953",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 552,
+        "symbol_index": 509,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 552,
+            "input_sha256": "b1a8efc3f7c7b48056a599e06eb677fb63db66aeaa5ea1e5004760fa17d6b745",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 528,
+        "symbol_index": 506,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 528,
+            "input_sha256": "01ed5e73f3c29cc2758f7f276fe279c21971ff66dac6975fbcae6be29d366fe9",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 476,
+        "symbol_index": 504,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 476,
+            "input_sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 428,
+        "symbol_index": 500,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 428,
+            "input_sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 364,
+        "symbol_index": 495,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 364,
+            "input_sha256": "fbcd8427483f279a65714c7c550ac7c6246791da44688067c753359799089409",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 332,
+        "symbol_index": 492,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 332,
+            "input_sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 300,
+        "symbol_index": 487,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 300,
+            "input_sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 296,
+        "symbol_index": 480,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 296,
+            "input_sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 280,
+        "symbol_index": 474,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 280,
+            "input_sha256": "d3a56b42d0e440cafa0c9ad08ac24e4a664608bd70f67e5d343c1a7157ac7bf6",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 244,
+        "symbol_index": 472,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 244,
+            "input_sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 184,
+        "symbol_index": 468,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 184,
+            "input_sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 148,
+        "symbol_index": 462,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 148,
+            "input_sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 36,
+        "symbol_index": 458,
+        "section_index": 20,
+        "category": "same_class_run",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 36,
+            "input_sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      },
+      {
+        "name": "$d",
+        "kind": "d",
+        "offset": 0,
+        "symbol_index": 452,
+        "section_index": 20,
+        "category": "data_only_optional_start",
+        "input_origin_candidates": [
+          {
+            "object": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+            "input_section": "__mcount_loc",
+            "input_offset": 0,
+            "mapped_output_section_offset": 0,
+            "input_sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+            "source_type": "BFD_SYNTHESIZED_AT_DATA_CONTRIBUTION",
+            "projection": "SAME_SECTION_PAYLOAD"
+          }
+        ],
+        "origin_status": "LINK_MAP_UNIQUE"
+      }
+    ],
+    "added": []
+  }
+]

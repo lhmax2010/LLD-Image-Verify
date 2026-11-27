@@ -1,0 +1,366 @@
+{
+  "metadata": [
+    {
+      "path": "evidence/repository/packages-primary.out",
+      "compressed_sha256": "1f9343848db1db3e728c9bd79a57f68fc781de06062490ff26d16554efb54046",
+      "open_sha256": "831c6ad8ce38b38c6503062fc2319b76c55494c6bb981cf60ed237941a007897"
+    },
+    {
+      "path": "evidence/repository/packages-filelists.out",
+      "compressed_sha256": "0de85a0220ce197751ba10ee0b8a6320516e777f12b37c9ccba4e061c24963db",
+      "open_sha256": "13f004d1994100208c37b8c3572b826249f9425a8446dcbd170886d73a55484e"
+    }
+  ],
+  "target_package": {
+    "name": "linux-tizen-modules-rpi4",
+    "arch": "armv7l",
+    "version": "11.0.0",
+    "release": "0",
+    "href": "armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+    "sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+    "bytes": 92412,
+    "files": [],
+    "rpm_file": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+    "source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+    "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+  },
+  "manifest_path": "evidence/repository/manifest.out",
+  "manifest_binding": [
+    {
+      "line": 488,
+      "raw": "  <project name=\"platform/kernel/linux-tizen-modules-source\" path=\"platform/kernel/linux-tizen-modules-source\" revision=\"25797e8af7ed95a5783bbe84c11959560aaf7e92\"/>"
+    },
+    {
+      "line": 487,
+      "raw": "  <project name=\"platform/kernel/linux-tizen-modules\" path=\"platform/kernel/linux-tizen-modules\" revision=\"458baad02d812098938663971d1b8560a4813375\"/>"
+    }
+  ],
+  "provider_package_line": {
+    "line": 772,
+    "raw": "[  375s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm"
+  },
+  "provider_log_sha256": "d42fb34b2737ca53eeed26b2a49b37e9e76af8bfa19c5f00e88d8837c8c9597b",
+  "round1_full_log_path": "evidence/build/linux-tizen-modules-armv7l.out",
+  "full_log_sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+  "final_rpm_line": {
+    "line": 853,
+    "raw": "[  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+  },
+  "source_copy": {
+    "line": 509,
+    "raw": "[   77s] + cp -a /usr/src/linux-tizen-modules-source ./kernel"
+  },
+  "llvm": {
+    "line": 565,
+    "raw": "[   77s] + export LLVM=1"
+  },
+  "parent_make_ld_assignment": {
+    "line": 2,
+    "raw": "LD = ${CROSS_COMPILE}ld"
+  },
+  "rows": [
+    {
+      "name": "dm_bow",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+      "source_inputs": [
+        "dm-bow.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 578,
+          "raw": "[   81s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 621,
+        "raw": "[   97s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko"
+      },
+      "build_log_install": {
+        "line": 647,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+      "device_sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "extcon_usb_fixed",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+      "source_inputs": [
+        "extcon-usb-fixed.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 579,
+          "raw": "[   82s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 624,
+        "raw": "[   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko"
+      },
+      "build_log_install": {
+        "line": 649,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+      "device_sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "inform_reboot",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+      "source_inputs": [
+        "inform-reboot.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 580,
+          "raw": "[   83s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 627,
+        "raw": "[   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko"
+      },
+      "build_log_install": {
+        "line": 651,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+      "device_sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "kdbus",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "source_inputs": [
+        "kdbus/bus.c",
+        "kdbus/connection.c",
+        "kdbus/endpoint.c",
+        "kdbus/fs.c",
+        "kdbus/handle.c",
+        "kdbus/item.c",
+        "kdbus/main.c",
+        "kdbus/match.c",
+        "kdbus/message.c",
+        "kdbus/metadata.c",
+        "kdbus/names.c",
+        "kdbus/node.c",
+        "kdbus/notify.c",
+        "kdbus/domain.c",
+        "kdbus/policy.c",
+        "kdbus/pool.c",
+        "kdbus/reply.c",
+        "kdbus/queue.c",
+        "kdbus/util.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 583,
+          "raw": "[   85s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o"
+        },
+        {
+          "line": 584,
+          "raw": "[   85s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o"
+        },
+        {
+          "line": 585,
+          "raw": "[   86s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o"
+        },
+        {
+          "line": 586,
+          "raw": "[   86s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o"
+        },
+        {
+          "line": 587,
+          "raw": "[   87s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o"
+        },
+        {
+          "line": 588,
+          "raw": "[   88s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o"
+        },
+        {
+          "line": 589,
+          "raw": "[   88s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o"
+        },
+        {
+          "line": 590,
+          "raw": "[   89s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o"
+        },
+        {
+          "line": 591,
+          "raw": "[   89s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o"
+        },
+        {
+          "line": 592,
+          "raw": "[   90s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o"
+        },
+        {
+          "line": 603,
+          "raw": "[   90s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o"
+        },
+        {
+          "line": 604,
+          "raw": "[   91s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o"
+        },
+        {
+          "line": 605,
+          "raw": "[   92s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o"
+        },
+        {
+          "line": 606,
+          "raw": "[   92s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o"
+        },
+        {
+          "line": 607,
+          "raw": "[   93s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o"
+        },
+        {
+          "line": 608,
+          "raw": "[   93s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o"
+        },
+        {
+          "line": 609,
+          "raw": "[   94s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o"
+        },
+        {
+          "line": 610,
+          "raw": "[   94s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o"
+        },
+        {
+          "line": 611,
+          "raw": "[   95s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 636,
+        "raw": "[  103s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko"
+      },
+      "build_log_install": {
+        "line": 657,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+      },
+      "build_log_intermediate_link": {
+        "line": 612,
+        "raw": "[   95s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o"
+      },
+      "payload_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+      "device_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "logger",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+      "source_inputs": [
+        "logger.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 581,
+          "raw": "[   83s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 630,
+        "raw": "[  101s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko"
+      },
+      "build_log_install": {
+        "line": 653,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+      "device_sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "proc_tsm",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+      "source_inputs": [
+        "proc-tsm.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 582,
+          "raw": "[   84s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 633,
+        "raw": "[  102s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko"
+      },
+      "build_log_install": {
+        "line": 655,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+      "device_sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    },
+    {
+      "name": "zlogger",
+      "module_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+      "device_path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+      "source_inputs": [
+        "zlogger/zlogger.c"
+      ],
+      "build_log_cc": [
+        {
+          "line": 613,
+          "raw": "[   95s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.o"
+        }
+      ],
+      "build_log_final_link": {
+        "line": 639,
+        "raw": "[  105s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko"
+      },
+      "build_log_install": {
+        "line": 659,
+        "raw": "[  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko"
+      },
+      "build_log_intermediate_link": null,
+      "payload_sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+      "device_sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+      "binary_rpm": "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "binary_source_rpm": "linux-tizen-modules-11.0.0-0.src.rpm",
+      "provider_rpm": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "provider_source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "round1_classification": "LLD_INDICATED"
+    }
+  ]
+}

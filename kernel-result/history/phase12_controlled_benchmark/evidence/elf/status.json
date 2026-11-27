@@ -1,0 +1,1811 @@
+{
+  "status": "MEASURED",
+  "static_abi_regression": "NONE_OBSERVED_CONTROLLED_LLVM_FROZEN_REPLAY_AND_GCC",
+  "historical_case": {
+    "id": "historical-qb",
+    "scope": "historical",
+    "kind": "stripped",
+    "old_bytes": 162584,
+    "new_bytes": 161292,
+    "delta_bytes": -1292,
+    "sha256": {
+      "left": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+      "right": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860"
+    },
+    "symbols": {
+      "left": {
+        "total": 876,
+        "null": 1,
+        "by_binding": {
+          "LOCAL": 565,
+          "GLOBAL": 311
+        }
+      },
+      "right": {
+        "total": 795,
+        "null": 1,
+        "by_binding": {
+          "LOCAL": 484,
+          "GLOBAL": 311
+        }
+      }
+    },
+    "size_delta_by_layout": {
+      "elf_header_bytes": 0,
+      "section_table_bytes": 0,
+      "section_payload_bytes": -1292,
+      "unassigned_bytes": 0
+    },
+    "mapping_counts": {
+      "left": {
+        "d": 183,
+        "a": 122
+      },
+      "right": {
+        "a": 122,
+        "d": 102
+      }
+    },
+    "mapping_removed": {
+      "d": 81
+    },
+    "mapping_added": {},
+    "mapping_removed_categories": {
+      "same_class_run": 62,
+      "data_only_optional_start": 15,
+      "same_offset_duplicate": 4
+    },
+    "mapping_removed_sections": {
+      ".ARM.extab": 18,
+      ".ARM.extab.init.text": 1,
+      ".data": 2,
+      ".data..once": 3,
+      ".exit.data": 1,
+      ".init.data": 1,
+      ".modinfo": 1,
+      ".rodata": 4,
+      ".rodata.cst16": 5,
+      ".rodata.cst32": 3,
+      ".rodata.cst8": 2,
+      ".rodata.str": 2,
+      ".rodata.str1.1": 17,
+      "__bug_table": 2,
+      "__mcount_loc": 19
+    },
+    "mapping_sections_with_span_differences": [],
+    "mapping_executable_span_differences": [],
+    "mapping_removed_non_boundary": 81,
+    "mapping_origin_status": {
+      "UNAVAILABLE_HISTORICAL_INPUTS": 81
+    },
+    "mapping_all_origin_candidates_bfd_synthesized": false,
+    "mapping_unique_input_objects": {},
+    "mapping_relocations": {
+      "left": 0,
+      "right": 0
+    },
+    "identical_gcc_plt_placeholder": false,
+    "relocations": {
+      "totals": {
+        "left": 2972,
+        "right": 2972
+      },
+      "differences": {},
+      "merge_target_content_normalization": {
+        "eligible_relocations": [
+          247,
+          247
+        ],
+        "equivalent_sites": 247,
+        "difference_occurrences_explained_by_target_content": {},
+        "unexplained_difference_occurrences": {}
+      }
+    },
+    "alloc_layout_change_except_file_position": {},
+    "equivalent_merge_sections": [],
+    "relocation_site_only_sections": [],
+    "allocated_content_changed": [
+      ".note.gnu.build-id",
+      "__versions"
+    ],
+    "executables_changed": [],
+    "abi_checks_need_review": [],
+    "sdk_crc_validation": {
+      "left": {
+        "status": "PASS",
+        "count": 154,
+        "matched": 154,
+        "mismatch": {}
+      },
+      "right": {
+        "status": "PASS",
+        "count": 154,
+        "matched": 154,
+        "mismatch": {}
+      }
+    },
+    "disassembly": {
+      "gnu": {
+        "status": "PASS",
+        "instruction_records": [
+          16789,
+          16789
+        ],
+        "normalized_equal_within_tool": true,
+        "normalized_location_match": true,
+        "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+      },
+      "llvm": {
+        "status": "PASS",
+        "instruction_records": [
+          16789,
+          16789
+        ],
+        "normalized_equal_within_tool": true,
+        "normalized_location_match": true,
+        "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+      },
+      "cross_tool_left": {
+        "same_instruction_offsets": true,
+        "shared_instruction_offsets": 16789,
+        "encoded_value_conflicts_at_shared_offsets": 0,
+        "only_gnu_offsets": 0,
+        "only_llvm_offsets": 0,
+        "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+      },
+      "cross_tool_right": {
+        "same_instruction_offsets": true,
+        "shared_instruction_offsets": 16789,
+        "encoded_value_conflicts_at_shared_offsets": 0,
+        "only_gnu_offsets": 0,
+        "only_llvm_offsets": 0,
+        "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+      }
+    },
+    "section_size_changes": {
+      ".ARM.attributes": 4,
+      ".symtab": -1296
+    }
+  },
+  "experiments": [
+    {
+      "id": "controlled-intermediate",
+      "scope": "controlled",
+      "kind": "intermediate",
+      "old_bytes": 2505192,
+      "new_bytes": 1998564,
+      "delta_bytes": -506628,
+      "sha256": {
+        "left": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+        "right": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+      },
+      "symbols": {
+        "left": {
+          "total": 911,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 602,
+            "GLOBAL": 309
+          }
+        },
+        "right": {
+          "total": 809,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 500,
+            "GLOBAL": 309
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -506651,
+        "unassigned_bytes": 23
+      },
+      "mapping_counts": {
+        "left": {
+          "a": 122,
+          "d": 203
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 101
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 83,
+        "data_only_optional_start": 18
+      },
+      "mapping_removed_sections": {
+        ".ARM.exidx": 18,
+        ".ARM.exidx.exit.text": 1,
+        ".ARM.exidx.init.text": 1,
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [
+        ".rodata.cst16",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1"
+      ],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 101,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 101
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 6,
+        "queue.o": 4,
+        "reply.o": 4,
+        "pool.o": 7,
+        "policy.o": 4,
+        "domain.o": 4,
+        "notify.o": 3,
+        "node.o": 5,
+        "names.o": 6,
+        "metadata.o": 4,
+        "message.o": 6,
+        "match.o": 8,
+        "item.o": 3,
+        "handle.o": 5,
+        "fs.o": 7,
+        "endpoint.o": 5,
+        "connection.o": 7,
+        "bus.o": 5,
+        "main.o": 8
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 73663,
+          "right": 73663
+        },
+        "differences": {
+          "regular_site_bytes_changed": 3,
+          "debug_site_bytes_changed": 65036,
+          "regular_identity_deltas": 446
+        },
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            65284,
+            65284
+          ],
+          "equivalent_sites": 65284,
+          "difference_occurrences_explained_by_target_content": {
+            "regular_site_bytes_changed": 3,
+            "debug_site_bytes_changed": 65036,
+            "regular_identity_deltas": 446
+          },
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {
+        ".rodata.cst16": {
+          "size": [
+            80,
+            32
+          ]
+        },
+        ".rodata.cst8": {
+          "size": [
+            16,
+            8
+          ]
+        },
+        ".rodata.str": {
+          "size": [
+            227,
+            151
+          ]
+        },
+        ".rodata.str1.1": {
+          "size": [
+            1657,
+            1559
+          ]
+        }
+      },
+      "equivalent_merge_sections": [
+        ".rodata.cst16",
+        ".rodata.cst32",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1"
+      ],
+      "relocation_site_only_sections": [
+        ".data",
+        "__bug_table"
+      ],
+      "allocated_content_changed": [
+        ".data",
+        ".rodata.cst16",
+        ".rodata.cst32",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1",
+        "__bug_table"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        },
+        "right": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".comment": -396,
+        ".debug_str": -506147,
+        ".rodata.cst16": -48,
+        ".rodata.cst8": -8,
+        ".rodata.str": -76,
+        ".rodata.str1.1": -98,
+        ".shstrtab": 218,
+        ".strtab": 1532,
+        ".symtab": -1632
+      }
+    },
+    {
+      "id": "controlled-unstripped",
+      "scope": "controlled",
+      "kind": "unstripped",
+      "old_bytes": 2071276,
+      "new_bytes": 2069984,
+      "delta_bytes": -1292,
+      "sha256": {
+        "left": "10728b2e80dc5a2e971ef4b3d3901a1d8a103331513ba8cbf8bd952856552da4",
+        "right": "197aba9481e1e66a9d903e62a3ba9f9e0409fe1eda1db106f55cf0cda8cd9267"
+      },
+      "symbols": {
+        "left": {
+          "total": 904,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 593,
+            "GLOBAL": 311
+          }
+        },
+        "right": {
+          "total": 823,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 512,
+            "GLOBAL": 311
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -1292,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 183,
+          "a": 122
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 81
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 62,
+        "data_only_optional_start": 15,
+        "same_offset_duplicate": 4
+      },
+      "mapping_removed_sections": {
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 81,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 75,
+        "LINK_MAP_MULTIPLE": 6
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 4,
+        "queue.o": 3,
+        "reply.o": 3,
+        "pool.o": 6,
+        "policy.o": 3,
+        "domain.o": 3,
+        "notify.o": 2,
+        "node.o": 4,
+        "names.o": 4,
+        "metadata.o": 3,
+        "message.o": 4,
+        "match.o": 6,
+        "item.o": 2,
+        "handle.o": 4,
+        "fs.o": 6,
+        "endpoint.o": 4,
+        "connection.o": 5,
+        "bus.o": 3,
+        "main.o": 6
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 75099,
+          "right": 75099
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            66706,
+            66706
+          ],
+          "equivalent_sites": 66706,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [
+        ".note.gnu.build-id",
+        "__versions"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".symtab": -1296
+      }
+    },
+    {
+      "id": "controlled-stripped",
+      "scope": "controlled",
+      "kind": "stripped",
+      "old_bytes": 162584,
+      "new_bytes": 161292,
+      "delta_bytes": -1292,
+      "sha256": {
+        "left": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+        "right": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860"
+      },
+      "symbols": {
+        "left": {
+          "total": 876,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 565,
+            "GLOBAL": 311
+          }
+        },
+        "right": {
+          "total": 795,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 484,
+            "GLOBAL": 311
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -1292,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 183,
+          "a": 122
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 81
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 62,
+        "data_only_optional_start": 15,
+        "same_offset_duplicate": 4
+      },
+      "mapping_removed_sections": {
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 81,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 75,
+        "LINK_MAP_MULTIPLE": 6
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 4,
+        "queue.o": 3,
+        "reply.o": 3,
+        "pool.o": 6,
+        "policy.o": 3,
+        "domain.o": 3,
+        "notify.o": 2,
+        "node.o": 4,
+        "names.o": 4,
+        "metadata.o": 3,
+        "message.o": 4,
+        "match.o": 6,
+        "item.o": 2,
+        "handle.o": 4,
+        "fs.o": 6,
+        "endpoint.o": 4,
+        "connection.o": 5,
+        "bus.o": 3,
+        "main.o": 6
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 2972,
+          "right": 2972
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            247,
+            247
+          ],
+          "equivalent_sites": 247,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [
+        ".note.gnu.build-id",
+        "__versions"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".symtab": -1296
+      }
+    },
+    {
+      "id": "frozen-intermediate",
+      "scope": "frozen",
+      "kind": "intermediate",
+      "old_bytes": 2505192,
+      "new_bytes": 1998564,
+      "delta_bytes": -506628,
+      "sha256": {
+        "left": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+        "right": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+      },
+      "symbols": {
+        "left": {
+          "total": 911,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 602,
+            "GLOBAL": 309
+          }
+        },
+        "right": {
+          "total": 809,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 500,
+            "GLOBAL": 309
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -506651,
+        "unassigned_bytes": 23
+      },
+      "mapping_counts": {
+        "left": {
+          "a": 122,
+          "d": 203
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 101
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 83,
+        "data_only_optional_start": 18
+      },
+      "mapping_removed_sections": {
+        ".ARM.exidx": 18,
+        ".ARM.exidx.exit.text": 1,
+        ".ARM.exidx.init.text": 1,
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [
+        ".rodata.cst16",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1"
+      ],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 101,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 101
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 6,
+        "queue.o": 4,
+        "reply.o": 4,
+        "pool.o": 7,
+        "policy.o": 4,
+        "domain.o": 4,
+        "notify.o": 3,
+        "node.o": 5,
+        "names.o": 6,
+        "metadata.o": 4,
+        "message.o": 6,
+        "match.o": 8,
+        "item.o": 3,
+        "handle.o": 5,
+        "fs.o": 7,
+        "endpoint.o": 5,
+        "connection.o": 7,
+        "bus.o": 5,
+        "main.o": 8
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 73663,
+          "right": 73663
+        },
+        "differences": {
+          "regular_site_bytes_changed": 3,
+          "debug_site_bytes_changed": 65036,
+          "regular_identity_deltas": 446
+        },
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            65284,
+            65284
+          ],
+          "equivalent_sites": 65284,
+          "difference_occurrences_explained_by_target_content": {
+            "regular_site_bytes_changed": 3,
+            "debug_site_bytes_changed": 65036,
+            "regular_identity_deltas": 446
+          },
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {
+        ".rodata.cst16": {
+          "size": [
+            80,
+            32
+          ]
+        },
+        ".rodata.cst8": {
+          "size": [
+            16,
+            8
+          ]
+        },
+        ".rodata.str": {
+          "size": [
+            227,
+            151
+          ]
+        },
+        ".rodata.str1.1": {
+          "size": [
+            1657,
+            1559
+          ]
+        }
+      },
+      "equivalent_merge_sections": [
+        ".rodata.cst16",
+        ".rodata.cst32",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1"
+      ],
+      "relocation_site_only_sections": [
+        ".data",
+        "__bug_table"
+      ],
+      "allocated_content_changed": [
+        ".data",
+        ".rodata.cst16",
+        ".rodata.cst32",
+        ".rodata.cst8",
+        ".rodata.str",
+        ".rodata.str1.1",
+        "__bug_table"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        },
+        "right": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".comment": -396,
+        ".debug_str": -506147,
+        ".rodata.cst16": -48,
+        ".rodata.cst8": -8,
+        ".rodata.str": -76,
+        ".rodata.str1.1": -98,
+        ".shstrtab": 218,
+        ".strtab": 1532,
+        ".symtab": -1632
+      }
+    },
+    {
+      "id": "frozen-unstripped",
+      "scope": "frozen",
+      "kind": "unstripped",
+      "old_bytes": 2071276,
+      "new_bytes": 2069984,
+      "delta_bytes": -1292,
+      "sha256": {
+        "left": "10728b2e80dc5a2e971ef4b3d3901a1d8a103331513ba8cbf8bd952856552da4",
+        "right": "5fed8ca0dca30b1a275dabc262eba8a52422fbd78587af31ff45dcccb2e760d3"
+      },
+      "symbols": {
+        "left": {
+          "total": 904,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 593,
+            "GLOBAL": 311
+          }
+        },
+        "right": {
+          "total": 823,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 512,
+            "GLOBAL": 311
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -1292,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 183,
+          "a": 122
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 81
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 62,
+        "data_only_optional_start": 15,
+        "same_offset_duplicate": 4
+      },
+      "mapping_removed_sections": {
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 81,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 75,
+        "LINK_MAP_MULTIPLE": 6
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 4,
+        "queue.o": 3,
+        "reply.o": 3,
+        "pool.o": 6,
+        "policy.o": 3,
+        "domain.o": 3,
+        "notify.o": 2,
+        "node.o": 4,
+        "names.o": 4,
+        "metadata.o": 3,
+        "message.o": 4,
+        "match.o": 6,
+        "item.o": 2,
+        "handle.o": 4,
+        "fs.o": 6,
+        "endpoint.o": 4,
+        "connection.o": 5,
+        "bus.o": 3,
+        "main.o": 6
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 75099,
+          "right": 75099
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            66706,
+            66706
+          ],
+          "equivalent_sites": 66706,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [
+        ".note.gnu.build-id"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".symtab": -1296
+      }
+    },
+    {
+      "id": "frozen-stripped",
+      "scope": "frozen",
+      "kind": "stripped",
+      "old_bytes": 162584,
+      "new_bytes": 161292,
+      "delta_bytes": -1292,
+      "sha256": {
+        "left": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+        "right": "a6f48e1aafbb382655455ca409a11eab1af69ce368156a88dca6cfd613e052ed"
+      },
+      "symbols": {
+        "left": {
+          "total": 876,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 565,
+            "GLOBAL": 311
+          }
+        },
+        "right": {
+          "total": 795,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 484,
+            "GLOBAL": 311
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": -1292,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 183,
+          "a": 122
+        },
+        "right": {
+          "a": 122,
+          "d": 102
+        }
+      },
+      "mapping_removed": {
+        "d": 81
+      },
+      "mapping_added": {},
+      "mapping_removed_categories": {
+        "same_class_run": 62,
+        "data_only_optional_start": 15,
+        "same_offset_duplicate": 4
+      },
+      "mapping_removed_sections": {
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 81,
+      "mapping_origin_status": {
+        "LINK_MAP_UNIQUE": 75,
+        "LINK_MAP_MULTIPLE": 6
+      },
+      "mapping_all_origin_candidates_bfd_synthesized": true,
+      "mapping_unique_input_objects": {
+        "util.o": 4,
+        "queue.o": 3,
+        "reply.o": 3,
+        "pool.o": 6,
+        "policy.o": 3,
+        "domain.o": 3,
+        "notify.o": 2,
+        "node.o": 4,
+        "names.o": 4,
+        "metadata.o": 3,
+        "message.o": 4,
+        "match.o": 6,
+        "item.o": 2,
+        "handle.o": 4,
+        "fs.o": 6,
+        "endpoint.o": 4,
+        "connection.o": 5,
+        "bus.o": 3,
+        "main.o": 6
+      },
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 2972,
+          "right": 2972
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            247,
+            247
+          ],
+          "equivalent_sites": 247,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [
+        ".note.gnu.build-id"
+      ],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 154,
+          "matched": 154,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16789,
+            16789
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16789,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {
+        ".ARM.attributes": 4,
+        ".symtab": -1296
+      }
+    },
+    {
+      "id": "gcc-intermediate",
+      "scope": "gcc",
+      "kind": "intermediate",
+      "old_bytes": 2935264,
+      "new_bytes": 2935264,
+      "delta_bytes": 0,
+      "sha256": {
+        "left": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf",
+        "right": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf"
+      },
+      "symbols": {
+        "left": {
+          "total": 812,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 504,
+            "GLOBAL": 308
+          }
+        },
+        "right": {
+          "total": 812,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 504,
+            "GLOBAL": 308
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": 0,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "a": 114,
+          "d": 191
+        },
+        "right": {
+          "a": 114,
+          "d": 191
+        }
+      },
+      "mapping_removed": {},
+      "mapping_added": {},
+      "mapping_removed_categories": {},
+      "mapping_removed_sections": {},
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 0,
+      "mapping_origin_status": {},
+      "mapping_all_origin_candidates_bfd_synthesized": false,
+      "mapping_unique_input_objects": {},
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": false,
+      "relocations": {
+        "totals": {
+          "left": 76660,
+          "right": 76660
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            60980,
+            60980
+          ],
+          "equivalent_sites": 60980,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        },
+        "right": {
+          "status": "NOT_CHECKED",
+          "count": 0
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16450,
+            16450
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16450,
+            16450
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": true,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 0,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {}
+    },
+    {
+      "id": "gcc-unstripped",
+      "scope": "gcc",
+      "kind": "unstripped",
+      "old_bytes": 3029212,
+      "new_bytes": 3029212,
+      "delta_bytes": 0,
+      "sha256": {
+        "left": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff",
+        "right": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff"
+      },
+      "symbols": {
+        "left": {
+          "total": 834,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 524,
+            "GLOBAL": 310
+          }
+        },
+        "right": {
+          "total": 834,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 524,
+            "GLOBAL": 310
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": 0,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 196,
+          "a": 114
+        },
+        "right": {
+          "d": 196,
+          "a": 114
+        }
+      },
+      "mapping_removed": {},
+      "mapping_added": {},
+      "mapping_removed_categories": {},
+      "mapping_removed_sections": {},
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 0,
+      "mapping_origin_status": {},
+      "mapping_all_origin_candidates_bfd_synthesized": false,
+      "mapping_unique_input_objects": {},
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": true,
+      "relocations": {
+        "totals": {
+          "left": 78072,
+          "right": 78072
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            62376,
+            62376
+          ],
+          "equivalent_sites": 62376,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 153,
+          "matched": 153,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 153,
+          "matched": 153,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16450,
+            16450
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16451,
+            16451
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": false,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 1,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": false,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 1,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {}
+    },
+    {
+      "id": "gcc-stripped",
+      "scope": "gcc",
+      "kind": "stripped",
+      "old_bytes": 150032,
+      "new_bytes": 150032,
+      "delta_bytes": 0,
+      "sha256": {
+        "left": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042",
+        "right": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042"
+      },
+      "symbols": {
+        "left": {
+          "total": 764,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 454,
+            "GLOBAL": 310
+          }
+        },
+        "right": {
+          "total": 764,
+          "null": 1,
+          "by_binding": {
+            "LOCAL": 454,
+            "GLOBAL": 310
+          }
+        }
+      },
+      "size_delta_by_layout": {
+        "elf_header_bytes": 0,
+        "section_table_bytes": 0,
+        "section_payload_bytes": 0,
+        "unassigned_bytes": 0
+      },
+      "mapping_counts": {
+        "left": {
+          "d": 177,
+          "a": 114
+        },
+        "right": {
+          "d": 177,
+          "a": 114
+        }
+      },
+      "mapping_removed": {},
+      "mapping_added": {},
+      "mapping_removed_categories": {},
+      "mapping_removed_sections": {},
+      "mapping_sections_with_span_differences": [],
+      "mapping_executable_span_differences": [],
+      "mapping_removed_non_boundary": 0,
+      "mapping_origin_status": {},
+      "mapping_all_origin_candidates_bfd_synthesized": false,
+      "mapping_unique_input_objects": {},
+      "mapping_relocations": {
+        "left": 0,
+        "right": 0
+      },
+      "identical_gcc_plt_placeholder": true,
+      "relocations": {
+        "totals": {
+          "left": 2352,
+          "right": 2352
+        },
+        "differences": {},
+        "merge_target_content_normalization": {
+          "eligible_relocations": [
+            215,
+            215
+          ],
+          "equivalent_sites": 215,
+          "difference_occurrences_explained_by_target_content": {},
+          "unexplained_difference_occurrences": {}
+        }
+      },
+      "alloc_layout_change_except_file_position": {},
+      "equivalent_merge_sections": [],
+      "relocation_site_only_sections": [],
+      "allocated_content_changed": [],
+      "executables_changed": [],
+      "abi_checks_need_review": [],
+      "sdk_crc_validation": {
+        "left": {
+          "status": "PASS",
+          "count": 153,
+          "matched": 153,
+          "mismatch": {}
+        },
+        "right": {
+          "status": "PASS",
+          "count": 153,
+          "matched": 153,
+          "mismatch": {}
+        }
+      },
+      "disassembly": {
+        "gnu": {
+          "status": "PASS",
+          "instruction_records": [
+            16450,
+            16450
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "llvm": {
+          "status": "PASS",
+          "instruction_records": [
+            16451,
+            16451
+          ],
+          "normalized_equal_within_tool": true,
+          "normalized_location_match": true,
+          "normalization": "section, instruction offset, displayed instruction bytes, mnemonic"
+        },
+        "cross_tool_left": {
+          "same_instruction_offsets": false,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 1,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        },
+        "cross_tool_right": {
+          "same_instruction_offsets": false,
+          "shared_instruction_offsets": 16450,
+          "encoded_value_conflicts_at_shared_offsets": 0,
+          "only_gnu_offsets": 0,
+          "only_llvm_offsets": 1,
+          "comparison_scope": "Rendered opcode words and instruction locations. Mnemonic and operand aliases are tool-specific."
+        }
+      },
+      "section_size_changes": {}
+    }
+  ],
+  "historical_phase11_execution": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE"
+}

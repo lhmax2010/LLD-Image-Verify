@@ -1,0 +1,31 @@
+{
+  "new_rpm_downloads": [
+    {
+      "role": "historical accelerator",
+      "workspace_relative_path": "artifacts/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+      "sha256": "d93bd3069d25ed9c6c71d5483833c7106a9ab0c5b3960fe873510241b15e15bc",
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+      "size": 151112237,
+      "bundled": false
+    },
+    {
+      "role": "historical binutils",
+      "workspace_relative_path": "artifacts/binutils-2.43-1.8.armv7l.rpm",
+      "sha256": "f79e7dde345edae70096631ff71d9e935e2501a1fc11fa1937852f8cad772a5a",
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/binutils-2.43-1.8.armv7l.rpm",
+      "size": 1677305,
+      "bundled": false
+    },
+    {
+      "role": "tree-external source provider",
+      "workspace_relative_path": "evidence/external/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "sha256": "b8fdab693b2a21fb263ae9e24c5eb14e20097e12ee4a71681ff8edb8aa93f6b9",
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/packages/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "size": 123472,
+      "bundled": true
+    }
+  ],
+  "original_native_rpm": "round1/evidence/build/historical-base/llvm-22.1.8-1.6.armv7l.rpm",
+  "native_rpm_sha256": "1cfda9694d06cb45ae468f843bc35ec7165b317ce2282802226b324123f422c0",
+  "source_provider_buildlog": "evidence/external/source-provider-buildlog.out"
+}

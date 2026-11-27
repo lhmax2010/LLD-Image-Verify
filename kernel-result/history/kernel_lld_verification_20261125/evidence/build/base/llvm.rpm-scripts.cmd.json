@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "rpm",
+    "-qp",
+    "--scripts",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:50.139264+00:00",
+  "elapsed_seconds": 0.011,
+  "exit_status": 0
+}

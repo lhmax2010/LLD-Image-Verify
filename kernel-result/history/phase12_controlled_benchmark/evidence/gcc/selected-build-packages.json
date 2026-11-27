@@ -1,0 +1,344 @@
+[
+  {
+    "name": "arm-rpi4-linux-kernel-btf-devel",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "6.12.80",
+      "rel": "0",
+      "vcs": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755"
+    },
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Dev/tizen-unified-dev_20261120.082616/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm",
+    "filename": "arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "d9d54640e7ae081d4a6d9e27065ec76a88ded43ab8fd22dc0e774710f0bd0286"
+    ],
+    "size": 614660,
+    "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm"
+  },
+  {
+    "name": "dwarves",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "1.29",
+      "rel": "1",
+      "vcs": "platform/upstream/dwarves#61117bce33831603affe7b567ffe9d2a58f25a21"
+    },
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Dev/tizen-unified-dev_20261120.082616/repos/standard/packages/armv7l/dwarves-1.29-1.armv7l.rpm",
+    "filename": "dwarves-1.29-1.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "f1ee94548cc4ef8d4dc49616fea3c756bf1d82e8b435b88907f2383c8d970cae"
+    ],
+    "size": 110072,
+    "source_rpm": "dwarves-1.29-1.src.rpm"
+  },
+  {
+    "name": "libdwarves1",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "1.29",
+      "rel": "1",
+      "vcs": "platform/upstream/dwarves#61117bce33831603affe7b567ffe9d2a58f25a21"
+    },
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Dev/tizen-unified-dev_20261120.082616/repos/standard/packages/armv7l/libdwarves1-1.29-1.armv7l.rpm",
+    "filename": "libdwarves1-1.29-1.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "0ed16510be51c09ace7f368372479dc3a9c876d334846b282500f2df7ff7de54"
+    ],
+    "size": 76080,
+    "source_rpm": "dwarves-1.29-1.src.rpm"
+  },
+  {
+    "name": "linux-tizen-modules-source",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "11.0.0",
+      "rel": "0",
+      "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+    },
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Dev/tizen-unified-dev_20261120.082616/repos/standard/packages/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+    "filename": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "1c82282653ea8f8022036f7c80855d8a5b088cba10ecc1032b786650dfe59b41"
+    ],
+    "size": 123472,
+    "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm"
+  },
+  {
+    "name": "binutils",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "2.43",
+      "rel": "1.6",
+      "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/binutils-2.43-1.6.armv7l.rpm",
+    "filename": "binutils-2.43-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "f1188c39238e000c0af97c00f3800b5884b8dc280f8481650c07cef0af86be9e"
+    ],
+    "size": 2061897,
+    "source_rpm": "binutils-2.43-1.6.src.rpm"
+  },
+  {
+    "name": "binutils-libs",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "2.43",
+      "rel": "1.6",
+      "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/binutils-libs-2.43-1.6.armv7l.rpm",
+    "filename": "binutils-libs-2.43-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "f417655fd59ca161e3c09bd9e7f8fba20368867ef93d3ac6487e44094df3093b"
+    ],
+    "size": 895477,
+    "source_rpm": "binutils-2.43-1.6.src.rpm"
+  },
+  {
+    "name": "cpp",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "14.2.0",
+      "rel": "1.6",
+      "vcs": "platform/upstream/gcc#49c5060508ce8a6ed6beca375233688a6bdd9140"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/cpp-14.2.0-1.6.armv7l.rpm",
+    "filename": "cpp-14.2.0-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "11442dbc0e1d243143c3a5d7bfc9f41cd5b3bf3a11b8c363a48440efa4ff4c0c"
+    ],
+    "size": 9267197,
+    "source_rpm": "gcc-14.2.0-1.6.src.rpm"
+  },
+  {
+    "name": "elfutils",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "0.189",
+      "rel": "1.6",
+      "vcs": "platform/upstream/elfutils#0c7a6942cca404d1a35a3f94f3fe00de589fa5c2"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/elfutils-0.189-1.6.armv7l.rpm",
+    "filename": "elfutils-0.189-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "69c8a53b9174f5fe4a971d6ba670c54cb34f3114c8d1e4f1e6cf616ef8814108"
+    ],
+    "size": 364069,
+    "source_rpm": "elfutils-0.189-1.6.src.rpm"
+  },
+  {
+    "name": "gcc",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "14.2.0",
+      "rel": "1.6",
+      "vcs": "platform/upstream/gcc#49c5060508ce8a6ed6beca375233688a6bdd9140"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/gcc-14.2.0-1.6.armv7l.rpm",
+    "filename": "gcc-14.2.0-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "958345ebc82fd48de06c1b5c993447bb73b2eaff45a0e44e98e1f6dc0d8c80d5"
+    ],
+    "size": 17995769,
+    "source_rpm": "gcc-14.2.0-1.6.src.rpm"
+  },
+  {
+    "name": "glibc",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "2.40",
+      "rel": "1.6",
+      "vcs": "platform/upstream/glibc#afd89351c34de67c0a2addf82cb634ecb854c864"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/glibc-2.40-1.6.armv7l.rpm",
+    "filename": "glibc-2.40-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "6277465b5aa201c37463734373f21bf1f49eebf971f62f0d5e12399a8e6d5888"
+    ],
+    "size": 1333381,
+    "source_rpm": "glibc-2.40-1.6.src.rpm"
+  },
+  {
+    "name": "libbpf",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "2",
+      "ver": "1.6.2",
+      "rel": "1.1",
+      "vcs": "platform/upstream/libbpf#5298db5450d72850fbf7c63d4245a126cb483356"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libbpf-1.6.2-1.1.armv7l.rpm",
+    "filename": "libbpf-1.6.2-1.1.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "8ee111668427326d758638ff31b568925a8794052a96449db5155e18f0732e39"
+    ],
+    "size": 160433,
+    "source_rpm": "libbpf-1.6.2-1.1.src.rpm"
+  },
+  {
+    "name": "libdw",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "0.189",
+      "rel": "1.6",
+      "vcs": "platform/upstream/elfutils#0c7a6942cca404d1a35a3f94f3fe00de589fa5c2"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libdw-0.189-1.6.armv7l.rpm",
+    "filename": "libdw-0.189-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "2df94fa53f35c41952b9ed5121da1c1b080e9b2cfc082402f36683d03ab42942"
+    ],
+    "size": 209201,
+    "source_rpm": "elfutils-0.189-1.6.src.rpm"
+  },
+  {
+    "name": "libelf",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "0.189",
+      "rel": "1.6",
+      "vcs": "platform/upstream/elfutils#0c7a6942cca404d1a35a3f94f3fe00de589fa5c2"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libelf-0.189-1.6.armv7l.rpm",
+    "filename": "libelf-0.189-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "1aac10e1967d1d763b3b2c07c897e4de5f89d1132445e07dd3ea7ee100e9609d"
+    ],
+    "size": 56497,
+    "source_rpm": "elfutils-0.189-1.6.src.rpm"
+  },
+  {
+    "name": "libgcc",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "14.2.0",
+      "rel": "1.6",
+      "vcs": "platform/upstream/gcc#49c5060508ce8a6ed6beca375233688a6bdd9140"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libgcc-14.2.0-1.6.armv7l.rpm",
+    "filename": "libgcc-14.2.0-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "995a4c8a315d520a267d301a4d9d607b95386b46dc73f03335678088e355896c"
+    ],
+    "size": 346233,
+    "source_rpm": "gcc-14.2.0-1.6.src.rpm"
+  },
+  {
+    "name": "libgmp",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "4.2.1",
+      "rel": "1.5",
+      "vcs": "product/upstream/gmp#542079c749279f7a83cd066fbdadcd81bab19516"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libgmp-4.2.1-1.5.armv7l.rpm",
+    "filename": "libgmp-4.2.1-1.5.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "5e30b152b44ed908d40f9148a412b9bb8bacb9f7ba7e8d3e72cfef30de6a659c"
+    ],
+    "size": 113457,
+    "source_rpm": "gmp-4.2.1-1.5.src.rpm"
+  },
+  {
+    "name": "libpopt",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "1.16",
+      "rel": "1.5",
+      "vcs": "platform/upstream/popt#57a4b6aad5f2107aa86aaf2062d553e2b6edc5f0"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libpopt-1.16-1.5.armv7l.rpm",
+    "filename": "libpopt-1.16-1.5.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "2e517d7bab64a5e5ba866cca4a445e5e7b8671a10ad559f4b7711c5c094bbea4"
+    ],
+    "size": 27761,
+    "source_rpm": "popt-1.16-1.5.src.rpm"
+  },
+  {
+    "name": "libzstd1",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "1.5.7",
+      "rel": "1.4",
+      "vcs": "platform/upstream/zstd#bc7aa2a273237291f2f18d7122e5c8b1ac221548"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/libzstd1-1.5.7-1.4.armv7l.rpm",
+    "filename": "libzstd1-1.5.7-1.4.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "367531b997827082ca885eaf9eba087aab8cd1509d1268183a845de135c0fac3"
+    ],
+    "size": 322457,
+    "source_rpm": "zstd-1.5.7-1.4.src.rpm"
+  },
+  {
+    "name": "make",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "4.4.1",
+      "rel": "1.6",
+      "vcs": "platform/upstream/make#f648b7e3cfcc77669112076cfe5c8f9b76ade526"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/make-4.4.1-1.6.armv7l.rpm",
+    "filename": "make-4.4.1-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "e397c3fe72b378855491f0d2cceb7d252494296128603f7d19a947fff75a5f7e"
+    ],
+    "size": 307869,
+    "source_rpm": "make-4.4.1-1.6.src.rpm"
+  },
+  {
+    "name": "zlib",
+    "arch": "armv7l",
+    "version": {
+      "epoch": "0",
+      "ver": "1.3.1",
+      "rel": "1.6",
+      "vcs": "platform/upstream/zlib#219215ee07b73248974208b8c4c3f79a7af20ac6"
+    },
+    "url": "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Dev/tizen-base-dev_20261119.042444/repos/standard/packages/armv7l/zlib-1.3.1-1.6.armv7l.rpm",
+    "filename": "zlib-1.3.1-1.6.armv7l.rpm",
+    "checksum": [
+      "sha256",
+      "56f759615eec8216968d3d34e66e7f44c738f4dbecd6fd378d6495f867525e2d"
+    ],
+    "size": 45145,
+    "source_rpm": "zlib-1.3.1-1.6.src.rpm"
+  }
+]

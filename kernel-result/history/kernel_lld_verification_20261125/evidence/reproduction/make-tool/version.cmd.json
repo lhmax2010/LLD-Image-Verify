@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "timeout",
+    "5",
+    "evidence/reproduction/make-tool/bin/make",
+    "--version"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:27:23.610489+00:00",
+  "elapsed_seconds": 0.002,
+  "exit_status": 0
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "full_log_path": "round1/evidence/build/linux-rpi-armv7l.out",
+    "full_log_sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/linux-rpi.buildlog.txt",
+    "source_project": "platform/kernel/linux-rpi",
+    "manifest_revision": "42aeefac58edeb081aff440f0b60be71cbe49755",
+    "original_receipt": "round1/evidence/build/linux-rpi-armv7l.cmd.json",
+    "line_count": 15276,
+    "local_review_copy": "round1/evidence/build/linux-rpi-armv7l.out",
+    "archive_path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/linux-rpi-armv7l.out"
+  },
+  {
+    "full_log_path": "round1/evidence/build/linux-tizen-modules-armv7l.out",
+    "full_log_sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/linux-tizen-modules.buildlog.txt",
+    "source_project": "platform/kernel/linux-tizen-modules",
+    "manifest_revision": "458baad02d812098938663971d1b8560a4813375",
+    "original_receipt": "round1/evidence/build/linux-tizen-modules-armv7l.cmd.json",
+    "line_count": 868,
+    "local_review_copy": "round1/evidence/build/linux-tizen-modules-armv7l.out",
+    "archive_path": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/linux-tizen-modules-armv7l.out"
+  },
+  {
+    "local_review_copy": "evidence/external/source-provider-buildlog.out",
+    "full_log_sha256": "d42fb34b2737ca53eeed26b2a49b37e9e76af8bfa19c5f00e88d8837c8c9597b",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildlogs/standard/armv7l/succeeded/linux-tizen-modules-source.buildlog.txt",
+    "line_count": 788,
+    "original_receipt": "evidence/external/source-provider-buildlog.cmd.json",
+    "manifest_revision": "25797e8af7ed95a5783bbe84c11959560aaf7e92"
+  }
+]

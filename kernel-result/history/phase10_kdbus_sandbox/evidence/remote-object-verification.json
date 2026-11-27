@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "method": "fresh authenticated Git fetch into an empty bare repository",
+  "remote_url": "https://review.tizen.org/gerrit/platform/kernel/linux-tizen-modules-source",
+  "ref": "refs/heads/sandbox/liushanshan/lld",
+  "remote_head": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "remote_head_contains_commit": true,
+  "remote_head_exact_commit": true,
+  "expected_commit": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "parent": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "diff_equals_local": true,
+  "changed_file": "kernel/Makefile",
+  "added_lines": 0,
+  "deleted_lines": 1,
+  "makefile_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6",
+  "commit_message_equals_local": true
+}

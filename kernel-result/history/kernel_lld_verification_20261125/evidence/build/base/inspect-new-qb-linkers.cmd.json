@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "python3",
+    "scripts/qb_build_support.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:29:25.208175+00:00",
+  "elapsed_seconds": 3.13,
+  "exit_status": 1
+}

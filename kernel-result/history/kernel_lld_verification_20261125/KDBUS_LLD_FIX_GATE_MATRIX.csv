@@ -1,0 +1,8 @@
+gate,scope,engineering_status,strict_or_remaining_status,reason,evidence,open_requirement
+A,Patch included,PASS,PASS,Exact Phase 10 commit and prepared RPM source,11B_SOURCE_PROVENANCE.json,
+B,Intermediate kdbus.o linker,PASS,PENDING_E4,"E3 LLVM LLD 22.1.8, original override gone",11C_INTERMEDIATE_LINK_COMMANDS.json;11D_LINKER_VARIABLE_TRACE.json,"Recover historically linked executable, argv and successful execution for strict acceptance"
+C,Final kdbus.ko linker,PASS,PASS,"E3 LLVM LLD 22.1.8, separate modfinal proof",11D_LINKER_VARIABLE_TRACE.json,
+D,Build and binary regression,PASS,PASS,"Published 59/59 parse, seven detailed ABI checks",11F_MODULE_ABI_SUMMARY.json;11G_MODULE_INVENTORY_DIFF.csv,
+E,GCC/BFD compatibility,PASS_SIMULATION,PENDING_REAL_BUILD,Tool-selection model passed,11E_MAKE_VARIABLE_TRACE.json,Validate targeted real GCC/BFD product build
+F,Runtime regression,PENDING_NEW_IMAGE_DEPLOYMENT,PENDING_NEW_IMAGE_DEPLOYMENT,Authorized device still runs old QB,11H_RUNTIME_IDENTITY.json,Verify identity and run read-only checks after authorized new image deployment
+G,Evidence integrity,PASS,PASS,"SHA256, separate snapshots, raw receipts and scripts",SHA256SUMS;SHA256SUMS_REUSED_INPUTS;KDBUS_LLD_FIX_EVIDENCE_INDEX.md,

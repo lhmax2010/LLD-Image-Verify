@@ -1,0 +1,502 @@
+[
+  {
+    "case": "historical_shape_control",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/historical_shape_control/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/historical_shape_control/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "armv7l_cross_prefix",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/armv7l_cross_prefix/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/armv7l_cross_prefix/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "aarch64_cross_prefix",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/aarch64_cross_prefix/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/aarch64_cross_prefix/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "aarch64-tizen-linux-gnu-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "ld_lld_command_line",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_lld_command_line/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_lld_command_line/kernel",
+      "LD=ld.lld",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "ld_lld_environment",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_lld_environment/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_lld_environment/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "LD": "ld.lld"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "ld_bfd_environment",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_bfd_environment/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_bfd_environment/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "LD": "ld.bfd"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "ld_bfd_environment_e",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_bfd_environment_e/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/ld_bfd_environment_e/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-ek",
+      "LLVM": "1",
+      "LD": "ld.bfd"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "clang_bfd_command_line",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/clang_bfd_command_line/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/clang_bfd_command_line/kernel",
+      "LD=armv7l-tizen-linux-gnueabi-ld.bfd",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "llvm_zero",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/llvm_zero/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/llvm_zero/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "0"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "llvm_suffix",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/llvm_suffix/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/llvm_suffix/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "-22"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "gcc_armv7l_original",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/gcc_armv7l_original/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/gcc_armv7l_original/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "gcc_aarch64_original",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/gcc_aarch64_original/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/gcc_aarch64_original/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "CROSS_COMPILE": "aarch64-tizen-linux-gnu-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858"
+  },
+  {
+    "case": "remove_ld_armv7l",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_armv7l/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_armv7l/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6"
+  },
+  {
+    "case": "remove_ld_aarch64",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_aarch64/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_aarch64/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "aarch64-tizen-linux-gnu-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6"
+  },
+  {
+    "case": "remove_ld_gcc_armv7l",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_gcc_armv7l/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_gcc_armv7l/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6"
+  },
+  {
+    "case": "remove_ld_gcc_aarch64",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_gcc_aarch64/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_gcc_aarch64/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "CROSS_COMPILE": "aarch64-tizen-linux-gnu-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6"
+  },
+  {
+    "case": "remove_ld_clang_bfd",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_clang_bfd/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/remove_ld_clang_bfd/kernel",
+      "LD=armv7l-tizen-linux-gnueabi-ld.bfd",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6"
+  },
+  {
+    "case": "simple_replacement",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/simple_replacement/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/simple_replacement/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "bfcba848aab8e7a7bdb7df1f1bdc40432645e6b01f850beab8ae3ff51a43be43"
+  },
+  {
+    "case": "conditional_replacement",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/conditional_replacement/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/conditional_replacement/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "3058dae80b91c5a9f4113da6ad8f71df3094cd6e295ca908d632358fc1e6d413"
+  },
+  {
+    "case": "explicit_export_replacement",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/explicit_export_replacement/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/explicit_export_replacement/kernel",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "218422396ad0c7178925b5c78f4427977e66bcbd161a056f199098bf81b13d1d"
+  },
+  {
+    "case": "override_with_cli",
+    "argv": [
+      "/usr/bin/make",
+      "--no-print-directory",
+      "-C",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/override_with_cli/external",
+      "KERNELDIR=/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/.kdbus-scope-r8pp8w5c/override_with_cli/kernel",
+      "LD=ld.lld",
+      "all"
+    ],
+    "environment": {
+      "PATH": "/usr/bin:/bin:/usr/bin",
+      "LC_ALL": "C",
+      "PYTHONIOENCODING": "utf-8",
+      "REPRO_DIR": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3/reproducer",
+      "REPRO_PYTHON": "/usr/bin/python3",
+      "BUILD_kdbus": "m",
+      "MAKEFLAGS": "-k",
+      "LLVM": "1",
+      "CROSS_COMPILE": "armv7l-tizen-linux-gnueabi-"
+    },
+    "exit_status": 0,
+    "wrapper_input_sha256": "dd6b86d725165f56d32dc4e340cb7ee81bc914eff55f0e5c2cff8e19259294ce"
+  }
+]

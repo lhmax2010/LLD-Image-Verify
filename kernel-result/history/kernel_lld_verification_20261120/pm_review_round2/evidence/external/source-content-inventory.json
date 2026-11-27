@@ -1,0 +1,743 @@
+{
+  "provider_package": {
+    "name": "linux-tizen-modules-source",
+    "arch": "armv7l",
+    "version": "11.0.0",
+    "release": "0",
+    "href": "armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+    "sha256": "b8fdab693b2a21fb263ae9e24c5eb14e20097e12ee4a71681ff8edb8aa93f6b9",
+    "bytes": 123472,
+    "files": [],
+    "rpm_file": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+    "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+    "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+  },
+  "source0_archive": "linux-tizen-modules-11.0.0.tar.xz",
+  "source0_sha256": "8ffa1a07f49dec1607a35f13e889a9d43050a493b3ab4ea7e37e57c1666e7031",
+  "source0_members": [
+    {
+      "path": "linux-tizen-modules-11.0.0/COPYING",
+      "file_type": "regular",
+      "size": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "090920202020474e552047454e455241"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modprobe-amlogic.conf",
+      "file_type": "regular",
+      "size": 39,
+      "sha256": "2f2e0993bd11d75f08e5d8d73813a710af49e15246670c8a87135ac7e6713e9c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6f7074696f6e732070726f632d74736d"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modprobe-rpi4.conf",
+      "file_type": "regular",
+      "size": 39,
+      "sha256": "2f2e0993bd11d75f08e5d8d73813a710af49e15246670c8a87135ac7e6713e9c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6f7074696f6e732070726f632d74736d"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modprobe-tw3.conf",
+      "file_type": "regular",
+      "size": 39,
+      "sha256": "2f2e0993bd11d75f08e5d8d73813a710af49e15246670c8a87135ac7e6713e9c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6f7074696f6e732070726f632d74736d"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-amlogic.conf",
+      "file_type": "regular",
+      "size": 24,
+      "sha256": "cc5cf55729a58b5cbfb0c61af0146017b8513770ff8877a61f359c11c666fd51",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "657874636f6e2d7573622d6669786564"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-bpif3.conf",
+      "file_type": "regular",
+      "size": 45,
+      "sha256": "f9db9699151526880d95a9af95c2d9b3319d9453d2f48dc4590214d09bef1405",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "646d2d626f770a657874636f6e2d7573"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-lpi4a.conf",
+      "file_type": "regular",
+      "size": 28,
+      "sha256": "7991c5cda77d596ff1dc98efc7dadc9e6b3442bba39d6eb9532f99f83b155f00",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "646d2d626f770a696e666f726d2d7265"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-orinnano.conf",
+      "file_type": "regular",
+      "size": 24,
+      "sha256": "79e787182951e634a4d9ea319143bfe657b67c13550e265b54e5c708cb6a08eb",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6c6f676765720a657874636f6e2d7573"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-rpi4.conf",
+      "file_type": "regular",
+      "size": 51,
+      "sha256": "faeccd87b2d8fbbf8022134ddd7ea8dc167f6cc19092c600c43503099d40ef72",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "646d2d626f770a657874636f6e2d7573"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-rubikpi3.conf",
+      "file_type": "regular",
+      "size": 24,
+      "sha256": "79e787182951e634a4d9ea319143bfe657b67c13550e265b54e5c708cb6a08eb",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6c6f676765720a657874636f6e2d7573"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-tm1.conf",
+      "file_type": "regular",
+      "size": 7,
+      "sha256": "e1aef671f29c63c748142b89d3657ad8a28f3ceffdd545c08dc2f4479aa4ac7b",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6c6f676765720a"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-tw3.conf",
+      "file_type": "regular",
+      "size": 7,
+      "sha256": "e1aef671f29c63c748142b89d3657ad8a28f3ceffdd545c08dc2f4479aa4ac7b",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6c6f676765720a"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/conf/tizen-modules-visionfive2.conf",
+      "file_type": "regular",
+      "size": 45,
+      "sha256": "f9db9699151526880d95a9af95c2d9b3319d9453d2f48dc4590214d09bef1405",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "646d2d626f770a657874636f6e2d7573"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/packaging/baselibs.conf",
+      "file_type": "regular",
+      "size": 1055,
+      "sha256": "a266f2e51ac5fd580b3ca409409c1c3d9b2e0e36bb9702ff50d2778bc5c6a81a",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "61726368206161726368363420746172"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/packaging/linux-tizen-modules.manifest",
+      "file_type": "regular",
+      "size": 68,
+      "sha256": "d3491f6dbbffe7e65a264e6feeae83b33f7b508be9541fffe8b3a37d9234bbdd",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "3c6d616e69666573743e0a093c726571"
+    },
+    {
+      "path": "linux-tizen-modules-11.0.0/packaging/linux-tizen-modules.spec",
+      "file_type": "regular",
+      "size": 16707,
+      "sha256": "d3ab346bce648380007bd5637803a8fc70c42d54c48226c35ee4ecca714ccb6a",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "25646566696e65204b4d4f445f504154"
+    }
+  ],
+  "source_rpm_members": [
+    "linux-tizen-modules-11.0.0.tar.xz",
+    "linux-tizen-modules.manifest",
+    "linux-tizen-modules.spec"
+  ],
+  "provider_members": [
+    {
+      "path": "usr/share/licenses/linux-tizen-modules-source",
+      "file_type": "other",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": ""
+    },
+    {
+      "path": "usr/share/licenses/linux-tizen-modules-source/COPYING",
+      "file_type": "regular",
+      "size": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "090920202020474e552047454e455241"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/COPYING",
+      "file_type": "regular",
+      "size": 17992,
+      "sha256": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "090920202020474e552047454e455241"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/Makefile",
+      "file_type": "regular",
+      "size": 1762,
+      "sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "505744203a3d2024287368656c6c2070"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/dm-bow.c",
+      "file_type": "regular",
+      "size": 31193,
+      "sha256": "ce8babefacf56c660d1dfb74f8d99e047123118484cd41e87c04283b77e2a71c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/dm-core.h",
+      "file_type": "regular",
+      "size": 520,
+      "sha256": "a5a681e7e09b8ebb0a466d0cced14a16025ec22591fb87efffbddc7d31a8bb32",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a20535044582d4c6963656e73652d"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/dm.h",
+      "file_type": "regular",
+      "size": 417,
+      "sha256": "6e7d025865949d5bb708a6e050492dc3328ef4eda9579106857897ee9d791649",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20496e7465726e616c2068"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/extcon-usb-fixed.c",
+      "file_type": "regular",
+      "size": 1543,
+      "sha256": "9bc125949cd66674f56dd416c280aa7663925599b05556a9939815cd2af644b7",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2f20535044582d4c6963656e73652d"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/include/uapi/linux/kdbus.h",
+      "file_type": "regular",
+      "size": 32675,
+      "sha256": "7774b1f57127a36b1f537117eab4ca5061eb4b7ac290003f2acf77091722e9db",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a206b646275732069732066"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/include/uapi/linux/logger.h",
+      "file_type": "regular",
+      "size": 3320,
+      "sha256": "2480478ee0ecfbb7235577e0e8bcdd8d40c0170a6bbaa1a91b530034b2d2ddad",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a20696e636c7564652f6c696e7578"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/include/uapi/linux/zlogger.h",
+      "file_type": "regular",
+      "size": 1813,
+      "sha256": "e8da9fd9af1ae0a47f3c2e61ed924164e617f7914928afe16ec0a899e3c3d6a2",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20696e636c7564652f7561"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/inform-reboot.c",
+      "file_type": "regular",
+      "size": 1842,
+      "sha256": "52d6eca54bfdc451e59549faef9ce493090e084a4a23d24a0e93130dd847169a",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a2054697a656e207265626f"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/Makefile",
+      "file_type": "regular",
+      "size": 245,
+      "sha256": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6b646275732d79203a3d205c0a096275"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/bus.c",
+      "file_type": "regular",
+      "size": 13642,
+      "sha256": "034da0726d289e7e2b90f5530bd211c0d12412a2d0550cc2c87a719f70c81f36",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/bus.h",
+      "file_type": "regular",
+      "size": 3165,
+      "sha256": "8d31b8b840f3c2d2e3c05a612f09007b7a21380f451dd27dfea769aa684af106",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/connection.c",
+      "file_type": "regular",
+      "size": 60545,
+      "sha256": "de91142fd908954ce771e36290fd25e5ddb3ee031df8aea2172c1d34cbb23721",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/connection.h",
+      "file_type": "regular",
+      "size": 8250,
+      "sha256": "e103457a853375c9e45f7207ea9b10095edb645eb3499046665464108fdf1c94",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/domain.c",
+      "file_type": "regular",
+      "size": 7175,
+      "sha256": "d74165ee457bfe0f0b57eb1705bf10cb3f996c133704171909fa85e76c492a79",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/domain.h",
+      "file_type": "regular",
+      "size": 2437,
+      "sha256": "63dfa61eef20c369b32fa038ef14209ea5e6bfbf8d244e16c96773e117492ea0",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/endpoint.c",
+      "file_type": "regular",
+      "size": 7615,
+      "sha256": "b69198de38aa26641a7f90b4a54ef81b50f74847757facc270ebd1e3fad1f21d",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/endpoint.h",
+      "file_type": "regular",
+      "size": 2175,
+      "sha256": "083a6ec4215283f44195779532644a057957aa2f0dc513935dc9c164d07f66e9",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/fs.c",
+      "file_type": "regular",
+      "size": 13391,
+      "sha256": "812b5196d7ac927c29103f7ccfa0781675a8fcff0d12b0fac21f9432b1e7331f",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/fs.h",
+      "file_type": "regular",
+      "size": 826,
+      "sha256": "4658b87bba6d8d9913e7cbbdf4a8aee115319ffe31fda627db6035ee8818ad7a",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/handle.c",
+      "file_type": "regular",
+      "size": 17990,
+      "sha256": "0ec395a8986b21f0bf0a16cdf71fd1c7e0fe3c0f6a0d9614e18541316caeb23c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/handle.h",
+      "file_type": "regular",
+      "size": 3909,
+      "sha256": "b538a130361cc798403a87af3224af2b30e918fc24d368a9532fa89735e90640",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/item.c",
+      "file_type": "regular",
+      "size": 7090,
+      "sha256": "9756d272ddae7d251805ee782799b7f99339d749e1483eba085ad1826c3caec3",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/item.h",
+      "file_type": "regular",
+      "size": 2187,
+      "sha256": "29c09ee09fe9357de79b072a522a7b6754c20c921b7ca59cae3d47eba2a8b384",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/limits.h",
+      "file_type": "regular",
+      "size": 1878,
+      "sha256": "22308795a4775e9322ac896e8db31fddd3befe87f424961c22fc5d11828cd6fd",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/main.c",
+      "file_type": "regular",
+      "size": 4140,
+      "sha256": "5f5466191fabf213192713c6232ab323dafab5d78e6cab5b1b50b8d472dd6ec3",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/match.c",
+      "file_type": "regular",
+      "size": 14967,
+      "sha256": "53f32eb006c856b5b148b16876ada5b1e890e507c4136e42c2b2bfe2cbe878ec",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/match.h",
+      "file_type": "regular",
+      "size": 1363,
+      "sha256": "2e7ddaa0bff599dbeb0de0487c6c0cc7ecd4e1ac4b2e2d7a26f6ab77d55c9399",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/message.c",
+      "file_type": "regular",
+      "size": 27498,
+      "sha256": "62d9e4323555d1e8c210c16ec8d211d506bec388f2c841ad92d99261d2c69d14",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/message.h",
+      "file_type": "regular",
+      "size": 4325,
+      "sha256": "72480ef2420657c005f692f260714e4bbfc814f676bb06f7f8cce83718fef342",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/metadata.c",
+      "file_type": "regular",
+      "size": 40358,
+      "sha256": "ba5d6ff889d08e4a5ff763c4dd386935964a0508222908d59dac0660abee4b40",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/metadata.h",
+      "file_type": "regular",
+      "size": 2682,
+      "sha256": "ba3710ed2e63aa9d1994abf65bad0e03487cb8d0c540b736989b1892ce503500",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/names.c",
+      "file_type": "regular",
+      "size": 20670,
+      "sha256": "c9f7318d92f442a8b2705371f87890955c843ce89c385a38406b50593d148cad",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/names.h",
+      "file_type": "regular",
+      "size": 3280,
+      "sha256": "30c4ef4712cd05d45380aea70c4bfd4e2152d86716640536c2a89417b5141709",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/node.c",
+      "file_type": "regular",
+      "size": 32392,
+      "sha256": "964ca51ed2c8c6b46bd63409296c843cc6cebdbb854cb1bd7f404cf6d8f2b848",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/node.h",
+      "file_type": "regular",
+      "size": 2420,
+      "sha256": "9943c5974baf683fbaf2fb9ed4cdba108c5f850598bb5221dd8d145d8b982ee1",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/notify.c",
+      "file_type": "regular",
+      "size": 5872,
+      "sha256": "60df6aaf2bb8a00195f157356915732a94f20ef49d3084515db2d27876f94553",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/notify.h",
+      "file_type": "regular",
+      "size": 1169,
+      "sha256": "552902a258f112a46b44bf22c3743ce6fecee985759ebf4d9d6e88361a6cdb6b",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/policy.c",
+      "file_type": "regular",
+      "size": 12083,
+      "sha256": "bbec511a503ce3b502551dd75dda0b505337395724f60489468c54ce2eaffc82",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/policy.h",
+      "file_type": "regular",
+      "size": 1616,
+      "sha256": "d8fa23c8fdb57987081ab7bfc1cfc46f3e72058fb7a26ed7e4d9237cb4521e3e",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/pool.c",
+      "file_type": "regular",
+      "size": 19467,
+      "sha256": "3334f8c324ac27e247a189aebc1c309340c6a27d0eee282f55d34ea0ced135a8",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/pool.h",
+      "file_type": "regular",
+      "size": 1995,
+      "sha256": "09dcc67149a0da1a40e0f586becc53c701828ca934521260d5dc7f968cdf1e57",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/queue.c",
+      "file_type": "regular",
+      "size": 9848,
+      "sha256": "6ff5f0319a3751bdd9f6cb28ef2cc0afb481d163060d5effc5e3bef1fe3c3409",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/queue.h",
+      "file_type": "regular",
+      "size": 2840,
+      "sha256": "11931ec3a350846fb6dd4c3d99cbb0f29c0c43abd464bef9326c081a0ad19a09",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/reply.c",
+      "file_type": "regular",
+      "size": 6176,
+      "sha256": "aa0d78319f2bcd0fd84f1df5a44df57fbecf5a7ace6fe9abba7bd6b02bae1f6f",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "23696e636c756465203c6c696e75782f"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/reply.h",
+      "file_type": "regular",
+      "size": 2622,
+      "sha256": "26284e600211c965bbb1644d40029e6508b2d2b701361dc2cec2096c630228b8",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/util.c",
+      "file_type": "regular",
+      "size": 4497,
+      "sha256": "5afe16c663957bd06e9e5c1d61de26faefa4f91f80e4b7799a1f4c4d05f9953c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/kdbus/util.h",
+      "file_type": "regular",
+      "size": 2132,
+      "sha256": "0ee32d70d1a4a8625cdfa7b240a32fc8af575b79330e8cba8d317409d5b5fd6d",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20436f7079726967687420"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/logger.c",
+      "file_type": "regular",
+      "size": 34933,
+      "sha256": "6ca98a18c96d3b47a402ac0fa3787a050879561c5718f203fe6374ea17dc676c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20647269766572732f6d69"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/proc-tsm.c",
+      "file_type": "regular",
+      "size": 7401,
+      "sha256": "4b16e0d55a5dbbfe5a248792bc87fa7be1f306cf96bfd278ea2ff85e65bb3535",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a20546869732066696c6520"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/zlogger/Makefile",
+      "file_type": "regular",
+      "size": 122,
+      "sha256": "65b3f7ce8e0b1ee088813588f96c41610719d547670ea9c8116f712631f9b183",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "6363666c6167732d79202b3d202d7374"
+    },
+    {
+      "path": "usr/src/linux-tizen-modules-source/zlogger/zlogger.c",
+      "file_type": "regular",
+      "size": 29297,
+      "sha256": "0c523eee797d45ccd641492e16a7caf162a29fa109806319a343b5ddcfdeb87c",
+      "object_suffix": false,
+      "object_magic": false,
+      "nested_archive_magic": false,
+      "magic16": "2f2a0a202a206b65726e656c2f7a6c6f"
+    }
+  ],
+  "makefiles": [
+    "Makefile",
+    "kdbus/Makefile",
+    "zlogger/Makefile"
+  ],
+  "prebuilt_findings": [],
+  "source_scope": "entire contents of exact copied source-provider payload and wrapper Source0"
+}

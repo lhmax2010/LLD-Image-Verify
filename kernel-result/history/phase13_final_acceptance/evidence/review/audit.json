@@ -1,0 +1,580 @@
+{
+  "status": "PASS",
+  "prepared_member_count_each": 53,
+  "only_changed_prepared_source": "kernel/Makefile",
+  "frozen_ordered_intermediate_objects": 19,
+  "frozen_common_final_objects": 2,
+  "frozen_sdk_resources": 2,
+  "linker_execs": [
+    {
+      "group": "A",
+      "stage": "intermediate",
+      "successful_exec": {
+        "executable": "/emul/usr/bin/ld",
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/A-intermediate.strace",
+          "sha256": "84c645cdfbb4c40d8dd9225ade6dd6205030843df17d9fa52fd182506bf29b20",
+          "size": 18642
+        },
+        "pid": 624057,
+        "executable_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece",
+        "version": "GNU BFD 2.43",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "artifact": {
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+        "size": 2505192
+      }
+    },
+    {
+      "group": "A",
+      "stage": "final",
+      "successful_exec": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-r",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "--build-id=sha1",
+          "-T",
+          "scripts/module.lds",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/A-final.strace",
+          "sha256": "2817842bc29a9774605124378e07770bf3f271599b7aebbe36718d1ce172c818",
+          "size": 18731
+        },
+        "pid": 624242,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "artifact": {
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "sha256": "10728b2e80dc5a2e971ef4b3d3901a1d8a103331513ba8cbf8bd952856552da4",
+        "size": 2071276
+      }
+    },
+    {
+      "group": "B",
+      "stage": "intermediate",
+      "successful_exec": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/B-intermediate.strace",
+          "sha256": "6e01797d47db841c0a12151fae76682e5b3a2bac5954497965708be420c76696",
+          "size": 18671
+        },
+        "pid": 625147,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "artifact": {
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+        "size": 1998564
+      }
+    },
+    {
+      "group": "B",
+      "stage": "final",
+      "successful_exec": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-r",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "--build-id=sha1",
+          "-T",
+          "scripts/module.lds",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/B-final.strace",
+          "sha256": "2817842bc29a9774605124378e07770bf3f271599b7aebbe36718d1ce172c818",
+          "size": 18731
+        },
+        "pid": 625618,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "artifact": {
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "sha256": "197aba9481e1e66a9d903e62a3ba9f9e0409fe1eda1db106f55cf0cda8cd9267",
+        "size": 2069984
+      }
+    }
+  ],
+  "benchmark": {
+    "samples": 160,
+    "summary_rows_recomputed": 28,
+    "pair_blocks": 80,
+    "seed": 20261126,
+    "bootstrap_resamples_per_effect": 4000,
+    "profiles": [
+      {
+        "profile": "default_threads",
+        "linker": "bfd",
+        "affinity": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "observed_worker_creations": 0,
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/phase/evidence/benchmark/bfd-default_threads.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "tool_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece"
+      },
+      {
+        "profile": "default_threads",
+        "linker": "lld",
+        "affinity": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "observed_worker_creations": 5,
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/phase/evidence/benchmark/lld-default_threads.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "tool_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "linker": "bfd",
+        "affinity": [
+          4
+        ],
+        "observed_worker_creations": 0,
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/phase/evidence/benchmark/bfd-one_cpu_one_thread.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "tool_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "linker": "lld",
+        "affinity": [
+          4
+        ],
+        "observed_worker_creations": 0,
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/phase/evidence/benchmark/lld-one_cpu_one_thread.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+          "--threads=1"
+        ],
+        "tool_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3"
+      }
+    ],
+    "summary_headline": [
+      {
+        "profile": "default_threads",
+        "metric": "wall_ms",
+        "linker": "bfd",
+        "samples": 40,
+        "mean": 5.714938775,
+        "median": 5.647265,
+        "stddev": 0.6519220354619844,
+        "p95": 6.500094,
+        "min": 4.93788,
+        "max": 9.118317,
+        "improvement_pct": -110.32541416066006,
+        "ci95_lower": -116.0218884355608,
+        "ci95_upper": -101.35154560473832,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "default_threads",
+        "metric": "wall_ms",
+        "linker": "lld",
+        "samples": 40,
+        "mean": 11.78044045,
+        "median": 11.8776335,
+        "stddev": 0.8046248235485345,
+        "p95": 12.957921,
+        "min": 10.354668,
+        "max": 13.607529,
+        "improvement_pct": -110.32541416066006,
+        "ci95_lower": -116.0218884355608,
+        "ci95_upper": -101.35154560473832,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "default_threads",
+        "metric": "peak_rss_kib",
+        "linker": "bfd",
+        "samples": 40,
+        "mean": 7718,
+        "median": 7700.0,
+        "stddev": 65.07431649019962,
+        "p95": 7836,
+        "min": 7584,
+        "max": 7840,
+        "improvement_pct": -592.8311688311688,
+        "ci95_lower": -594.5066388961208,
+        "ci95_upper": -589.2995606099768,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "default_threads",
+        "metric": "peak_rss_kib",
+        "linker": "lld",
+        "samples": 40,
+        "mean": 53375.1,
+        "median": 53348.0,
+        "stddev": 166.49259627798654,
+        "p95": 53688,
+        "min": 53036,
+        "max": 53792,
+        "improvement_pct": -592.8311688311688,
+        "ci95_lower": -594.5066388961208,
+        "ci95_upper": -589.2995606099768,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "metric": "wall_ms",
+        "linker": "bfd",
+        "samples": 40,
+        "mean": 5.065999975,
+        "median": 5.10783,
+        "stddev": 0.24483317138227395,
+        "p95": 5.437168,
+        "min": 4.60004,
+        "max": 5.732689,
+        "improvement_pct": -102.86374057084906,
+        "ci95_lower": -110.23849638224537,
+        "ci95_upper": -99.90901402350174,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "metric": "wall_ms",
+        "linker": "lld",
+        "samples": 40,
+        "mean": 10.450482275,
+        "median": 10.361934999999999,
+        "stddev": 0.7193644112469109,
+        "p95": 10.856031,
+        "min": 9.437958,
+        "max": 14.407921,
+        "improvement_pct": -102.86374057084906,
+        "ci95_lower": -110.23849638224537,
+        "ci95_upper": -99.90901402350174,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "metric": "peak_rss_kib",
+        "linker": "bfd",
+        "samples": 40,
+        "mean": 7754.4,
+        "median": 7756.0,
+        "stddev": 66.59360098618855,
+        "p95": 7840,
+        "min": 7616,
+        "max": 7856,
+        "improvement_pct": -590.1753481175864,
+        "ci95_lower": -593.6512049753823,
+        "ci95_upper": -587.0636550308009,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      },
+      {
+        "profile": "one_cpu_one_thread",
+        "metric": "peak_rss_kib",
+        "linker": "lld",
+        "samples": 40,
+        "mean": 53523.2,
+        "median": 53530.0,
+        "stddev": 126.66353572378786,
+        "p95": 53684,
+        "min": 53264,
+        "max": 53740,
+        "improvement_pct": -590.1753481175864,
+        "ci95_lower": -593.6512049753823,
+        "ci95_upper": -587.0636550308009,
+        "classification": "REGRESSION",
+        "method": "BFD-relative ratio of medians; paired percentile bootstrap, 4000 resamples"
+      }
+    ]
+  },
+  "mapping": {
+    "input_objects": 19,
+    "counts": {
+      "A/intermediate_object": {
+        "a": 122,
+        "d": 203
+      },
+      "A/unstripped_module": {
+        "d": 183,
+        "a": 122
+      },
+      "A/strip_debug_module": {
+        "d": 183,
+        "a": 122
+      },
+      "B/intermediate_object": {
+        "a": 122,
+        "d": 102
+      },
+      "B/unstripped_module": {
+        "a": 122,
+        "d": 102
+      },
+      "B/strip_debug_module": {
+        "a": 122,
+        "d": 102
+      },
+      "bfd/intermediate": {
+        "a": 122,
+        "d": 203
+      },
+      "bfd/unstripped": {
+        "d": 183,
+        "a": 122
+      },
+      "bfd/stripped": {
+        "d": 183,
+        "a": 122
+      },
+      "lld/intermediate": {
+        "a": 122,
+        "d": 102
+      },
+      "lld/unstripped": {
+        "a": 122,
+        "d": 102
+      },
+      "lld/stripped": {
+        "a": 122,
+        "d": 102
+      }
+    },
+    "origin_counts": {
+      "intermediate": {
+        "LINK_MAP_UNIQUE": 101
+      },
+      "stripped": {
+        "LINK_MAP_UNIQUE": 75,
+        "LINK_MAP_MULTIPLE": 6
+      }
+    },
+    "executable_mapping_spans_equal": true,
+    "final_effective_spans_equal": true
+  },
+  "gcc": {
+    "status": "PASS_REAL_GCC_BFD_BUILD",
+    "gcc_real_build": "PASS",
+    "gcc_compatibility": "PASS",
+    "gcc_simulation": "PASS_PHASE11",
+    "qb": "tizen-unified-dev_20261120.082616",
+    "kernel_release": "6.12.80-arm-rpi4-v7l",
+    "architecture": "ARMv7l non-RT",
+    "same_kernel_commit_as_llvm_qb": "42aeefac58edeb081aff440f0b60be71cbe49755",
+    "gcc_wrapper_commit": "46316fa8f9dd0d0d51726ad5fbe299daa2d16af6",
+    "kernel_config_sha256": "04bc96c3d6a5d1e919136044cfd5028ab74e61c39b89893c82c3b694124b6ef3",
+    "module_symvers_sha256": "03ba234e249cbe3a988d3a5cd8c2568df387711c88c7baa5fb456946688793e3",
+    "module_symvers_symbols": 14129,
+    "module_linker_script_sha256": "8dfae136cfd0bf2c3943ef45997fca1ff424df24b3ab5f5329fa4fc1f5c59713",
+    "compiler": "Tizen GCC 14.2.0-1.6.armv7l",
+    "linker_package": "binutils-2.43-1.6.armv7l.rpm",
+    "runs": {
+      "qb_native": {
+        "groups": [
+          "C",
+          "D"
+        ],
+        "compared": {
+          "ordered_input_sha256": true,
+          "installed_modules": true,
+          "gc_unstripped_sha256": true,
+          "gc_intermediate_sha256": true,
+          "gc_installed_sha256": true,
+          "normalized_disassembly_sha256": true
+        },
+        "both_linkers": "GNU BFD 2.43",
+        "module_count": 7,
+        "module_import_crcs_each": 345,
+        "kdbus_import_crcs_each": 153,
+        "kdbus_installed_bytes": 150032,
+        "kdbus_unstripped_sha256": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff",
+        "kdbus_intermediate_sha256": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf",
+        "kdbus_installed_sha256": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042",
+        "kdbus_relocations": {
+          "R_ARM_CALL": 1384,
+          "R_ARM_JUMP24": 58,
+          "R_ARM_MOVW_ABS_NC": 181,
+          "R_ARM_MOVT_ABS": 181,
+          "R_ARM_ABS32": 241,
+          "R_ARM_REL32": 83,
+          "R_ARM_PREL31": 202,
+          "R_ARM_NONE": 22
+        },
+        "kdbus_modules_build_ids": [
+          "21938929024bcc09898121d69a08c5b19259bd79"
+        ],
+        "linker_execution_receipts": [
+          "evidence/gcc/builds/C/linker-execution.json",
+          "evidence/gcc/builds/D/linker-execution.json"
+        ]
+      },
+      "explicit_packaged_binutils_prefix": {
+        "groups": [
+          "C-prefix",
+          "D-prefix"
+        ],
+        "compared": {
+          "ordered_input_sha256": true,
+          "installed_modules": true,
+          "gc_unstripped_sha256": true,
+          "gc_intermediate_sha256": true,
+          "gc_installed_sha256": true,
+          "normalized_disassembly_sha256": true
+        },
+        "both_linkers": "GNU BFD 2.43",
+        "module_count": 7,
+        "module_import_crcs_each": 345,
+        "kdbus_import_crcs_each": 153,
+        "kdbus_installed_bytes": 150032,
+        "kdbus_unstripped_sha256": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff",
+        "kdbus_intermediate_sha256": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf",
+        "kdbus_installed_sha256": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042",
+        "kdbus_relocations": {
+          "R_ARM_CALL": 1384,
+          "R_ARM_JUMP24": 58,
+          "R_ARM_MOVW_ABS_NC": 181,
+          "R_ARM_MOVT_ABS": 181,
+          "R_ARM_ABS32": 241,
+          "R_ARM_REL32": 83,
+          "R_ARM_PREL31": 202,
+          "R_ARM_NONE": 22
+        },
+        "kdbus_modules_build_ids": [
+          "21938929024bcc09898121d69a08c5b19259bd79"
+        ],
+        "linker_execution_receipts": [
+          "evidence/gcc/builds/C-prefix/linker-execution.json",
+          "evidence/gcc/builds/D-prefix/linker-execution.json"
+        ]
+      },
+      "exact_publication_acceleration": {
+        "groups": [
+          "C-accel",
+          "D-accel"
+        ],
+        "compared": {
+          "ordered_input_sha256": true,
+          "installed_modules": true,
+          "gc_unstripped_sha256": true,
+          "gc_intermediate_sha256": true,
+          "gc_installed_sha256": true,
+          "normalized_disassembly_sha256": true
+        },
+        "both_linkers": "GNU BFD 2.43",
+        "module_count": 7,
+        "module_import_crcs_each": 345,
+        "kdbus_import_crcs_each": 153,
+        "kdbus_installed_bytes": 150032,
+        "kdbus_unstripped_sha256": "782e61d70ff0e190d85c10eb7cd9060d684c0971a04e6068a2655ea9c4412336",
+        "kdbus_intermediate_sha256": "9a4380a52bda54d84514f63cbf9ae23f97b4ce90c4ee3e7133a6aa28ecc7b763",
+        "kdbus_installed_sha256": "fb8ea9b8e48c602850d24ce85fd1062f2db05a5aeee6c817c70eb75f0b5c1fc1",
+        "kdbus_relocations": {
+          "R_ARM_CALL": 1384,
+          "R_ARM_JUMP24": 58,
+          "R_ARM_MOVW_ABS_NC": 181,
+          "R_ARM_MOVT_ABS": 181,
+          "R_ARM_ABS32": 241,
+          "R_ARM_REL32": 83,
+          "R_ARM_PREL31": 202,
+          "R_ARM_NONE": 22
+        },
+        "kdbus_modules_build_ids": [
+          "64e3d4603cc3e6d5571496fe72bcd5798ab6ed44"
+        ],
+        "linker_execution_receipts": [
+          "evidence/gcc/builds/C-accel/linker-execution.json",
+          "evidence/gcc/builds/D-accel/linker-execution.json"
+        ]
+      }
+    },
+    "scope": "C/D targeted external-module build and Kbuild modules_install, not RPM packaging or runtime"
+  },
+  "historical_qb_ratings": "UNCHANGED"
+}

@@ -1,0 +1,77 @@
+{
+  "base": [
+    {
+      "name": "binutils",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "2.43",
+        "rel": "1.16",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+      },
+      "sha256": "0693d667c55e011dab9fbb0dd643c153b25978f2f0d94b3d4dffa55b4c645d77",
+      "href": "armv7l/binutils-2.43-1.16.armv7l.rpm"
+    },
+    {
+      "name": "clang",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "22.1.8",
+        "rel": "4.1",
+        "vcs": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a"
+      },
+      "sha256": "41330ec71ad44e8d6b1ebaa4540b1ac195334e97464015d07f916b1110d2277c",
+      "href": "armv7l/clang-22.1.8-4.1.armv7l.rpm"
+    },
+    {
+      "name": "clang-accel-x86_64-armv7l",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "0.4",
+        "rel": "2.3",
+        "vcs": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467"
+      },
+      "sha256": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+      "href": "armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm"
+    },
+    {
+      "name": "llvm",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "22.1.8",
+        "rel": "4.1",
+        "vcs": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a"
+      },
+      "sha256": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+      "href": "armv7l/llvm-22.1.8-4.1.armv7l.rpm"
+    },
+    {
+      "name": "make",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "4.4.1",
+        "rel": "1.14",
+        "vcs": "platform/upstream/make#f648b7e3cfcc77669112076cfe5c8f9b76ade526"
+      },
+      "sha256": "1244d734963c3e54aeb05580adc0db2a52498552e797dbb098cdb89827d9b1e1",
+      "href": "armv7l/make-4.4.1-1.14.armv7l.rpm"
+    },
+    {
+      "name": "qemu-accel-x86_64-armv7l",
+      "arch": "armv7l",
+      "version": {
+        "epoch": "0",
+        "ver": "0.4",
+        "rel": "2.3",
+        "vcs": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467"
+      },
+      "sha256": "4dccbd0e6b7ac36ac5f3726c6fbf7639a00c2ae888cdb7433769a7ea0d4cacf0",
+      "href": "armv7l/qemu-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm"
+    }
+  ],
+  "unified": []
+}

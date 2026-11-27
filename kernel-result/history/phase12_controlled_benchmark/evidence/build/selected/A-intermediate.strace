@@ -1,0 +1,3 @@
+execve("/usr/bin/ld", ["ld", "-EL", "-z", "noexecstack", "-r", "-o", "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o", "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"], /* environment omitted */) = 0
+execve("/emul//usr/bin/ld", ["ld", "-EL", "-z", "noexecstack", "-r", "-o", "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o", "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"], /* environment omitted */) = 0
+exit_group(0)                           = ?

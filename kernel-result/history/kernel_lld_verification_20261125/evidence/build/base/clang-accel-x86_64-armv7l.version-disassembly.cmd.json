@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "objdump",
+    "-d",
+    "--start-address=0x1ae790",
+    "--stop-address=0x1ae7bb",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/clang-accel-x86_64-armv7l/emul/usr/bin/ld.lld"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:53.228899+00:00",
+  "elapsed_seconds": 0.008,
+  "exit_status": 0
+}

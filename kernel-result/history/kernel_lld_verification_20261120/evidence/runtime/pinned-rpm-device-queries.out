@@ -1,0 +1,29 @@
+[PACKAGE=arm-rpi4-linux-kernel]
+package arm-rpi4-linux-kernel is not installed
+[RPM_EXIT=1]
+[PACKAGE=arm-rpi4-linux-kernel-modules]
+package arm-rpi4-linux-kernel-modules is not installed
+[RPM_EXIT=1]
+[PACKAGE=linux-tizen-modules-rpi4]
+package linux-tizen-modules-rpi4 is not installed
+[RPM_EXIT=1]
+[PACKAGE=arm-rpi4-linux-kernel-devel]
+package arm-rpi4-linux-kernel-devel is not installed
+[RPM_EXIT=1]
+[PATH=/boot/zImage]
+[UNREADABLE_OR_MISSING]
+error: file /boot/zImage: No such file or directory
+[RPM_EXIT=1]
+[PATH=/boot/bcm2711-rpi-4-b.dtb]
+[UNREADABLE_OR_MISSING]
+error: file /boot/bcm2711-rpi-4-b.dtb: No such file or directory
+[RPM_EXIT=1]
+[PATH=/boot/config-6.12.80-arm-rpi4-v7l]
+[UNREADABLE_OR_MISSING]
+error: file /boot/config-6.12.80-arm-rpi4-v7l: No such file or directory
+[RPM_EXIT=1]
+[PATH=/lib/modules/6.12.80-arm-rpi4-v7l/modules.builtin]
+3cebba95c1c6f0c767d2ecacad5004302aabda58c6739dd27a9393f27fe1e994  /lib/modules/6.12.80-arm-rpi4-v7l/modules.builtin
+[HASH_EXIT=0]
+file /lib/modules/6.12.80-arm-rpi4-v7l/modules.builtin is not owned by any package
+[RPM_EXIT=1]

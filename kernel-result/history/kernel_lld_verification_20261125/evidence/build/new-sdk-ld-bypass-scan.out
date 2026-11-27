@@ -1,0 +1,2 @@
+480:LD		= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)
+489:LD		= $(CROSS_COMPILE)ld

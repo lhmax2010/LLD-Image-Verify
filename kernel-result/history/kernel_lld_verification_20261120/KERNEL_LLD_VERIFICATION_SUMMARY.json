@@ -1,0 +1,286 @@
+{
+  "overall_status": "CONDITIONAL_PASS",
+  "acceptance_close_ready": false,
+  "device": {
+    "ip": "private-address-02",
+    "serial": "private-address-02:26101",
+    "authorized_sdb": true,
+    "ip_evidence_path": "evidence/runtime/ip-fallback.out",
+    "model": "Raspberry Pi 4 Model B Rev 1.5",
+    "model_evidence_path": "evidence/runtime/boot-dtb.out",
+    "image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l"
+  },
+  "kernel": {
+    "is_running": true,
+    "uname": "Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Fri Nov 20 09:22:45 UTC 2026 armv7l Toybox",
+    "release": "6.12.80-arm-rpi4-v7l",
+    "architecture": "armv7l",
+    "proc_version": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+    "boot_banner": "[    0.000000] Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+    "compiler": "Clang",
+    "clang_version": "22.1.8",
+    "linker": "LLD",
+    "lld_version": "22.1.8",
+    "build_timestamp": "Fri Nov 20 09:22:45 UTC 2026",
+    "build_user_and_host": "abuild@qb-build-host-01",
+    "toolchain_evidence": "recorded build metadata",
+    "final_link_verified": false,
+    "notes": {
+      "gnu_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+      "size_bytes": 84,
+      "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+      "notes": [
+        {
+          "offset": 0,
+          "type": 256,
+          "owner": "Linux",
+          "description_hex": "00"
+        },
+        {
+          "offset": 24,
+          "type": 257,
+          "owner": "Linux",
+          "description_hex": "00000000"
+        },
+        {
+          "offset": 48,
+          "type": 3,
+          "owner": "GNU",
+          "description_hex": "99ba05b664f7ece7686ab5f087bf54680bb172e6"
+        }
+      ],
+      "evidence_path": "evidence/runtime/notes.out",
+      "bytes_path": "evidence/runtime/kernel-notes.bin"
+    },
+    "banner_evidence_path": "evidence/runtime/banner.out",
+    "final_link_status": "CONDITIONAL_PASS",
+    "independent_final_link_evidence": false
+  },
+  "gates": {
+    "A": {
+      "status": "PASS",
+      "scope": "目标设备及运行时工具链",
+      "actual": "private-address-02:26101，Clang 22.1.8 / LLD 22.1.8，运行记录独立采集。",
+      "evidence": "01_runtime_kernel.md"
+    },
+    "B": {
+      "status": "CONDITIONAL_PASS",
+      "scope": "Kernel 最终链接",
+      "actual": "主内核和解压器有 LLD 证据，历史最终 argv 和实际 executable 缺失。",
+      "evidence": "04_build_command_analysis.md"
+    },
+    "C": {
+      "status": "PASS",
+      "scope": "Repository ↔ Runtime 身份",
+      "actual": "EXACT_MATCH，适用于发布启动产物与运行主内核 notes。设备 RPM DB 和启动文件哈希不可得。",
+      "evidence": "06_repository_runtime_mapping.md"
+    },
+    "D": {
+      "status": "CONDITIONAL_PASS",
+      "scope": "Kernel Module 覆盖",
+      "actual": "两组完整扫描。仓库 59/59、设备 59/59 有 LLD 证据，最终链接均为 0 个确认。",
+      "evidence": "05_kernel_module_analysis.md"
+    },
+    "E": {
+      "status": "PASS",
+      "scope": "证据完整性",
+      "actual": "JSON、CSV、SHA256、覆盖率复算和证据路径通过脚本自检。",
+      "evidence": "evidence/preflight/self-check.out"
+    }
+  },
+  "identity": {
+    "status": "EXACT_MATCH",
+    "scope": "published target kernel payload to running main kernel",
+    "snapshot": "tizen-unified-toolchain_20261120.082536",
+    "runtime_image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l",
+    "kernel_release": "6.12.80-arm-rpi4-v7l",
+    "architecture": "armv7l",
+    "runtime_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "runtime_notes": {
+      "evidence": "evidence/runtime/kernel-notes.bin",
+      "size": 84,
+      "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+      "raw_offset": 28707264,
+      "exact_bytes_in_raw": true
+    },
+    "repository_kernel_rpm": {
+      "name": "arm-rpi4-linux-kernel",
+      "epoch": "0",
+      "version": "6.12.80",
+      "release": "0",
+      "architecture": "armv7l",
+      "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "sha256": "3a5c433d89858a89c1a83a54806bde67e6f0bfa001850188e3b33807185c3a68",
+      "rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+    },
+    "published_image_archive": {
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+      "path": "evidence/repository/images/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+      "sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+      "published_sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+      "checksum_result": "PASS",
+      "members_evidence": "evidence/repository/boot-archive-members.out"
+    },
+    "repository_zimage_sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+    "repo_published_zimage_match": true,
+    "repo_raw_kernel_payload": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-raw-gzip-8249.bin",
+    "repo_raw_kernel_payload_sha256": "1bcb98939e19276f8a4de3ab82425f119856005d388680fdb2847d42bdda1171",
+    "repository_devel_debug_status": "STRONG_MATCH",
+    "devel_debug_build_id": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+    "live_boot_file_sha256": null,
+    "live_installed_kernel_rpm_status": "UNVERIFIABLE",
+    "device_module_sha256_matches": 59,
+    "live_module_build_id_matches": 11,
+    "evidence": [
+      "evidence/kernel_binary/byte-comparison.json",
+      "evidence/repository/image-profile-verification.json",
+      "01_runtime_kernel.json",
+      "02_repository_identity.json",
+      "evidence/runtime/pinned-rpm-device-queries.out",
+      "evidence/runtime/partition-metadata.out"
+    ]
+  },
+  "modules": {
+    "repository": {
+      "inventory_available": true,
+      "total_module_files": 59,
+      "successfully_parsed": 59,
+      "counts": {
+        "LLD_CONFIRMED": 0,
+        "LLD_INDICATED": 59,
+        "BFD_CONFIRMED": 0,
+        "BFD_INDICATED": 0,
+        "OTHER_LINKER": 0,
+        "CONFLICTING_EVIDENCE": 0,
+        "UNKNOWN": 0,
+        "PARSE_FAILED": 0
+      },
+      "confirmed_lld_coverage": 0.0,
+      "lld_evidence_coverage": 1.0,
+      "elf_parsing_coverage": 1.0,
+      "duplicate_paths": [],
+      "distinct_paths": 59,
+      "elf_linker_marker_files": 0,
+      "per_output_quiet_build_files": 59,
+      "vermagic_match": 59,
+      "expected_arm_rel": 59,
+      "duplicate_names": [],
+      "duplicate_raw_sha256": []
+    },
+    "device": {
+      "inventory_available": true,
+      "total_module_files": 59,
+      "successfully_parsed": 59,
+      "counts": {
+        "LLD_CONFIRMED": 0,
+        "LLD_INDICATED": 59,
+        "BFD_CONFIRMED": 0,
+        "BFD_INDICATED": 0,
+        "OTHER_LINKER": 0,
+        "CONFLICTING_EVIDENCE": 0,
+        "UNKNOWN": 0,
+        "PARSE_FAILED": 0
+      },
+      "confirmed_lld_coverage": 0.0,
+      "lld_evidence_coverage": 1.0,
+      "elf_parsing_coverage": 1.0,
+      "duplicate_paths": [],
+      "distinct_paths": 59,
+      "elf_linker_marker_files": 0,
+      "per_output_quiet_build_files": 59,
+      "vermagic_match": 59,
+      "expected_arm_rel": 59,
+      "duplicate_names": [],
+      "duplicate_raw_sha256": []
+    },
+    "repository_excluded": [],
+    "device_excluded": [],
+    "runtime_loaded": 11,
+    "live_module_build_id_counts": {
+      "MATCH": 11
+    },
+    "device_repo_mapping_counts": {
+      "EXACT_PATH_AND_SHA256": 59
+    },
+    "repository_from_filelists_expected": 59,
+    "repository_expected_inventory_met": true,
+    "release": "6.12.80-arm-rpi4-v7l",
+    "denominator_rule": "All regular target-release .ko payload paths, including compressed files; distinct paths and package instances retained; file symlinks and debug sidecars listed separately."
+  },
+  "bfd": {
+    "confirmed_kernel": 0,
+    "indicated_kernel": 0,
+    "repository_module_count": 0,
+    "installed_module_count": 0,
+    "scope": "observed target artifacts and matching logs"
+  },
+  "findings_by_severity": {
+    "BLOCKER": 0,
+    "MAJOR": 2,
+    "MINOR": 2,
+    "INFO": 1
+  },
+  "findings": [
+    {
+      "id": "F-01",
+      "severity": "MAJOR",
+      "description": "历史主内核、vmlinux.o 和 ARM 解压器完整链接命令缺失。",
+      "affected_artifact": "vmlinux、vmlinux.o、arch/arm/boot/compressed/vmlinux",
+      "raw_evidence": "精确快照日志 L7962、L8141 及打包排除 .cmd 的 L14237。",
+      "root_cause": "已确认日志采用 quiet Kbuild，开发包打包排除 .cmd。",
+      "impact": "独立的最终链接器验收仍有缺口。",
+      "recommended_action": "向该次构建的维护者请求已有的原始 .vmlinux*.cmd、解压器 .cmd 或 verbose 日志。",
+      "evidence": "evidence/build/linux-rpi-armv7l.out"
+    },
+    {
+      "id": "F-02",
+      "severity": "MAJOR",
+      "description": "59 个独立模块均具备逐目标 LLD 迹象，历史最终链接命令均缺失。",
+      "affected_artifact": "52 个内核树内模块和 7 个树外模块",
+      "raw_evidence": "每个输出的 LD [M]、INSTALL、RPM 写出、LLVM=1 和构建成功原始记录。",
+      "root_cause": "已确认所有交付模块 ELF 均无可识别链接器标记。quiet 日志省略 argv。",
+      "impact": "Confirmed LLD Coverage 为 0%，无匹配的原始 argv 可用于排除构建工具覆盖或解析异常。",
+      "recommended_action": "向归档维护者请求这两次构建已有的 59 条最终 .ko 命令及链接器路径。",
+      "evidence": "evidence/build/module-final-commands.json"
+    },
+    {
+      "id": "F-03",
+      "severity": "MINOR",
+      "description": "设备的活动 RPM 数据库缺少目标包，启动卷在会话中不可读。",
+      "affected_artifact": "设备 Kernel RPM NEVRA、安装时间、文件所有权及启动卷 zImage",
+      "raw_evidence": "目标 RPM 查询无记录，/boot 为空，设备模块为独立只读挂载。",
+      "root_cause": "独立分区结构已确认。具体镜像部署操作未观察。",
+      "impact": "无法实测活动 RPM NEVRA、install time 或设备启动文件 SHA256，运行内核的 notes 仍与发布产物精确匹配。",
+      "recommended_action": "如验收要求明确包含设备启动卷哈希和 RPM 记录，请索取现有部署清单或只读证据。",
+      "evidence": "evidence/runtime/pinned-rpm-device-queries.out"
+    },
+    {
+      "id": "F-04",
+      "severity": "MINOR",
+      "description": "RPM 与 repo 元数据可做摘要校验，发布签名无法核验。",
+      "affected_artifact": "目标二进制及源码 RPM、repomd.xml",
+      "raw_evidence": "rpm -Kv 校验摘要通过。探测的签名、密钥端点返回 404。",
+      "root_cause": "本次验证未取得可用发布签名和可信密钥。",
+      "impact": "完整性有校验链支持，发布签名层的来源认证未建立。",
+      "recommended_action": "如 PM 要求签名级来源证明，请索取对应快照的可信签名和发布密钥。",
+      "evidence": "02_repository_inventory.md"
+    },
+    {
+      "id": "F-05",
+      "severity": "INFO",
+      "description": "开发和调试 ELF 的 GNU Build ID 经过发布后处理。",
+      "affected_artifact": "devel vmlinux、vmlinux.debug 与 zImage 的 raw Image",
+      "raw_evidence": "发布后 ID bac659039ce25486da3473a6da562dc0e7fd1eea。逐字节比较证明唯一变化是 .notes 内的 20 字节。",
+      "root_cause": "构建日志确证运行 find-debuginfo.sh --build-id-seed，字节结果与 Build ID 重算一致。",
+      "impact": "应在启动 raw Image 端应用设备 Build ID 比对。",
+      "recommended_action": "PM 可复核记录中的唯一差异窗口及两组 debuglink CRC。",
+      "evidence": "evidence/kernel_binary/byte-comparison.json"
+    }
+  ],
+  "report": "KERNEL_LLD_VERIFICATION_REPORT.md",
+  "evidence_root": "evidence",
+  "reproduction": "VERIFICATION_METHOD.md",
+  "manifest": "SHA256SUMS",
+  "commands": "COMMANDS.jsonl"
+}

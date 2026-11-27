@@ -1,0 +1,175 @@
+PASS: 1937 SHA256 entries, 497 command receipts, 8 root JSON files.
+PASS: 10 selected RPMs from 93 candidates. Module denominators: 59 repository, 59 installed, 11 loaded.
+PASS: 99ba05b664f7ece7686ab5f087bf54680bb172e6 exact runtime note match. Gate B/D preserve the historical final-link gap.
+{
+  "kernel_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+  "archive": {
+    "path": "evidence/runtime/installed-modules.tar.gz",
+    "size_bytes": 1167360,
+    "sha256": "958377d8584b37e08e68fae6cccf616ed7e29580593ae0d405004e4cce5f95e6",
+    "members_checked": 59,
+    "transport_sha256_check": "PASS"
+  },
+  "installed": 59,
+  "loaded": 11,
+  "active_device_rpm_database_records": 1229
+}
+PASS PASS NO_SIGNATURE_REPORTED TARGET_KERNEL_IMAGE evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED TARGET_MODULE_PAYLOAD evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED TARGET_MODULE_PAYLOAD evidence/repository/rpms/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED SOURCE_RPM evidence/repository/rpms/linux-tizen-modules-11.0.0-0.src.rpm
+PASS PASS NO_SIGNATURE_REPORTED SOURCE_RPM evidence/repository/rpms/rpi4-linux-kernel-6.12.80-0.src.rpm
+PASS PASS NO_SIGNATURE_REPORTED KERNEL_DEBUGINFO evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED KERNEL_DEVELOPMENT evidence/repository/rpms/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED KERNEL_DEVELOPMENT evidence/repository/rpms/arm-rpi4-linux-kernel-headers-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED KERNEL_DEVELOPMENT evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm
+PASS PASS NO_SIGNATURE_REPORTED KERNEL_DEBUGSOURCE evidence/repository/rpms/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm
+EXACT_SHA256 59 59
+18 selected .config and auto.conf values cross-checked
+Quiet final-module link observations: 59
+Observed matching installs: 59
+{
+  "repository": {
+    "inventory_available": true,
+    "total_module_files": 59,
+    "successfully_parsed": 59,
+    "counts": {
+      "LLD_CONFIRMED": 0,
+      "LLD_INDICATED": 59,
+      "BFD_CONFIRMED": 0,
+      "BFD_INDICATED": 0,
+      "OTHER_LINKER": 0,
+      "CONFLICTING_EVIDENCE": 0,
+      "UNKNOWN": 0,
+      "PARSE_FAILED": 0
+    },
+    "confirmed_lld_coverage": 0.0,
+    "lld_evidence_coverage": 1.0,
+    "elf_parsing_coverage": 1.0,
+    "duplicate_paths": [],
+    "distinct_paths": 59,
+    "elf_linker_marker_files": 0,
+    "per_output_quiet_build_files": 59,
+    "vermagic_match": 59,
+    "expected_arm_rel": 59,
+    "duplicate_names": [],
+    "duplicate_raw_sha256": []
+  },
+  "device": {
+    "inventory_available": true,
+    "total_module_files": 59,
+    "successfully_parsed": 59,
+    "counts": {
+      "LLD_CONFIRMED": 0,
+      "LLD_INDICATED": 59,
+      "BFD_CONFIRMED": 0,
+      "BFD_INDICATED": 0,
+      "OTHER_LINKER": 0,
+      "CONFLICTING_EVIDENCE": 0,
+      "UNKNOWN": 0,
+      "PARSE_FAILED": 0
+    },
+    "confirmed_lld_coverage": 0.0,
+    "lld_evidence_coverage": 1.0,
+    "elf_parsing_coverage": 1.0,
+    "duplicate_paths": [],
+    "distinct_paths": 59,
+    "elf_linker_marker_files": 0,
+    "per_output_quiet_build_files": 59,
+    "vermagic_match": 59,
+    "expected_arm_rel": 59,
+    "duplicate_names": [],
+    "duplicate_raw_sha256": []
+  }
+}
+{
+  "main_kernel": {
+    "sections": 32,
+    "equal": 31,
+    "nonzero_gaps": 0,
+    "differences": [
+      {
+        "name": ".notes",
+        "kind": 7,
+        "flags": 2,
+        "va": 3249965504,
+        "pa": 3249965504,
+        "offset": 25659840,
+        "size": 84,
+        "raw_offset": 28707264,
+        "match": false,
+        "different_bytes": 20,
+        "first_difference_offsets": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ],
+        "difference_window": {
+          "section_offset": 64,
+          "raw_hex": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+          "elf_hex": "bac659039ce25486da3473a6da562dc0e7fd1eea"
+        }
+      }
+    ]
+  },
+  "zimage_wrapper": {
+    "sections": 6,
+    "equal": 6,
+    "nonzero_gaps": 0,
+    "differences": []
+  },
+  "debug_links": [
+    {
+      "elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "debug": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "debug_sha256": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f",
+      "filename": "vmlinux.debug",
+      "stored_crc32": "c7324c98",
+      "actual_crc32": "c7324c98",
+      "filename_matches": true,
+      "crc32_matches": true,
+      "build_ids_match": true,
+      "status": "MATCH"
+    },
+    {
+      "elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "debug": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "debug_sha256": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7",
+      "filename": "vmlinux.debug",
+      "stored_crc32": "6b4eab11",
+      "actual_crc32": "6b4eab11",
+      "filename_matches": true,
+      "crc32_matches": true,
+      "build_ids_match": null,
+      "status": "MATCH"
+    }
+  ],
+  "runtime_notes": {
+    "evidence": "evidence/runtime/kernel-notes.bin",
+    "size": 84,
+    "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+    "raw_offset": 28707264,
+    "exact_bytes_in_raw": true
+  }
+}
+Configuration and build commands summarized for Phase 4.
+PASS: 1961 SHA256 entries, 505 command receipts, 8 root JSON files.
+PASS: 10 selected RPMs from 93 candidates. Module denominators: 59 repository, 59 installed, 11 loaded.
+PASS: 99ba05b664f7ece7686ab5f087bf54680bb172e6 exact runtime note match. Gate B/D preserve the historical final-link gap.

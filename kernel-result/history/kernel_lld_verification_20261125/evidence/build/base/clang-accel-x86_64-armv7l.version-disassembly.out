@@ -1,0 +1,18 @@
+
+/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/clang-accel-x86_64-armv7l/emul/usr/bin/ld.lld:     file format elf64-x86-64
+
+
+Disassembly of section .text:
+
+00000000001ae790 <_ZN3lld13getLLDVersionB5cxx11Ev@@Base>:
+  1ae790:	48 89 f8             	mov    %rdi,%rax
+  1ae793:	48 8d 4f 10          	lea    0x10(%rdi),%rcx
+  1ae797:	48 89 0f             	mov    %rcx,(%rdi)
+  1ae79a:	48 b9 4c 4c 44 20 32 	movabs $0x312e323220444c4c,%rcx
+  1ae7a1:	32 2e 31 
+  1ae7a4:	48 89 4f 10          	mov    %rcx,0x10(%rdi)
+  1ae7a8:	66 c7 47 18 2e 38    	movw   $0x382e,0x18(%rdi)
+  1ae7ae:	48 c7 47 08 0a 00 00 	movq   $0xa,0x8(%rdi)
+  1ae7b5:	00 
+  1ae7b6:	c6 47 1a 00          	movb   $0x0,0x1a(%rdi)
+  1ae7ba:	c3                   	ret

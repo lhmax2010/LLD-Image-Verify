@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "bash",
+    "-c",
+    "cd ../phase12_controlled_benchmark && python3 -B scripts/finalize_phase12.py verify && sha256sum -c PHASE12_EVIDENCE_BUNDLE.tar.gz.sha256"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T08:59:51.806965+00:00",
+  "elapsed_seconds": 19.541,
+  "exit_status": 0
+}

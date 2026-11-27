@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "stat",
+    "--",
+    "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+    "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.24"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:29:25.242545+00:00",
+  "elapsed_seconds": 0.003,
+  "exit_status": 1
+}

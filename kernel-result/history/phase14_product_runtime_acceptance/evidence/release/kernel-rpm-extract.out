@@ -1,0 +1,4 @@
+/local-user/lss/kernel_lld_check/phase14_product_runtime_acceptance/evidence/release/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm: OK
+arm-rpi4-linux-kernel-6.12.80-0.armv7l rpi4-linux-kernel-6.12.80-0.src.rpm platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755
+/boot/zImage 14895592 1795616668 c7bb5ba8a5d7731e9715b4df59daee7308b4931afe3aa365ba62e1a34237ced4 0100644 root root 0 0 0 X
+c7bb5ba8a5d7731e9715b4df59daee7308b4931afe3aa365ba62e1a34237ced4  /local-user/lss/kernel_lld_check/phase14_product_runtime_acceptance/evidence/release/boot/zImage

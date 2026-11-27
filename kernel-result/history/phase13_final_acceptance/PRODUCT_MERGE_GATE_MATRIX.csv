@@ -1,0 +1,11 @@
+gate,status,scope,evidence,remaining
+Phase 12 integrity and direct links,PASS,Local E4 only,evidence/review/audit.json,
+Intermediate and final size attribution,PASS,-506628 and -1292 bytes,INTERMEDIATE_SIZE_ATTRIBUTION.csv,
+ARM mapping symbol semantics,PASS,81 final redundant data markers avoided,evidence/review/mapping-stripped-review.json,
+Default build linker time and RSS,ACCEPTED_TRADE_OFF,+110.33% wall; +592.83% peak RSS,LINKER_THREAD_PERFORMANCE_REPORT.md,Retest at scale before changing global defaults
+GCC/BFD and reviewed static ABI,PASS,Three tested RPi4 ARMv7l non-RT lanes,../phase12_controlled_benchmark/GCC_COMPATIBILITY_REPORT.md,
+New QB identity,PENDING_NEW_IMAGE_DEPLOYMENT,Current device is Pi 5 AArch64 older QB,RUNTIME_REGRESSION_REPORT.md,Correct deployment and confirm approved device identity
+New QB boot and module / error regression,PENDING_NEW_IMAGE_DEPLOYMENT,D1–D4 pending,RUNTIME_REGRESSION_REPORT.md,"Check boot, all 59 modules, existing state and errors after identity gate"
+Functional regression,NOT_RUN,D5 pending,RUNTIME_REGRESSION_REPORT.md,Obtain approved test path and actual results
+Runtime memory benefit,NOT_MEASURED,No device allocation measurement,../phase12_controlled_benchmark/RUNTIME_MEMORY_FEASIBILITY.md,
+Product merge readiness,PENDING,Engineering closure approved; runtime open,PHASE13_FINAL_ACCEPTANCE_REPORT.md,PM review of outstanding runtime gates

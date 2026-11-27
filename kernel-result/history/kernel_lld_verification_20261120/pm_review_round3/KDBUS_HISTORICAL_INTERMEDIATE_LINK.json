@@ -1,0 +1,599 @@
+{
+  "issue_id": "LLD-KERNEL-001",
+  "classification": "BFD_PATH_POSSIBLE",
+  "historical_direct_execution": false,
+  "scope": {
+    "snapshot": "tizen-unified-toolchain_20261120.082536",
+    "target": "standard/armv7l non-RT RPi4",
+    "intermediate": "kdbus/kdbus.o",
+    "build_log_line": 612,
+    "final_module_log_line": 636
+  },
+  "published_build_log": {
+    "round1": {
+      "archive_path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+      "size": 56294
+    },
+    "round2": {
+      "archive_path": "evidence/external/external-buildlog-full.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+      "size": 56294,
+      "evidence": "evidence/history/published-buildlog.out"
+    },
+    "lines": 868,
+    "quiet_events": [
+      {
+        "line": 612,
+        "target": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "raw": "[   95s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "variant": "non-RT"
+      },
+      {
+        "line": 636,
+        "target": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "raw": "[  103s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "variant": "non-RT"
+      },
+      {
+        "line": 709,
+        "target": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "raw": "[  123s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "variant": "RT"
+      },
+      {
+        "line": 733,
+        "target": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "raw": "[  129s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "variant": "RT"
+      }
+    ],
+    "expanded_intermediate_argv_matches": [],
+    "command_or_trace_matches": [],
+    "excerpts": "evidence/history/kdbus-buildlog-excerpts.txt"
+  },
+  "pinned_package_metadata": {
+    "target_rpm": {
+      "archive_path": "evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+      "size": 92412
+    },
+    "source_rpm": {
+      "archive_path": "evidence/repository/rpms/linux-tizen-modules-11.0.0-0.src.rpm",
+      "sha256": "9c7726daa8d14e0dfa59703d3c2e6019e077723a50b367ad4184c350ed233cdc",
+      "size": 19542
+    },
+    "source_provider": {
+      "archive_path": "evidence/external/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "sha256": "b8fdab693b2a21fb263ae9e24c5eb14e20097e12ee4a71681ff8edb8aa93f6b9",
+      "size": 123472
+    },
+    "indices": {
+      "packages-primary": {
+        "archive_path": "evidence/repository/packages-primary.out",
+        "sha256": "1f9343848db1db3e728c9bd79a57f68fc781de06062490ff26d16554efb54046",
+        "size": 1563909,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules-headers",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-headers-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-rpi4",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-aarch64",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-rpi4-aarch64-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-rt",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-rt-aarch64",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-rpi4-rt-aarch64-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-source",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-tests",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "armv7l/linux-tizen-modules-tests-11.0.0-0.armv7l.rpm"
+          }
+        ]
+      },
+      "packages-filelists": {
+        "archive_path": "evidence/repository/packages-filelists.out",
+        "sha256": "0de85a0220ce197751ba10ee0b8a6320516e777f12b37c9ccba4e061c24963db",
+        "size": 5700315,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules-headers",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 5,
+            "kdbus_files": [
+              "/usr/include/linux/kdbus.h"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-rpi4",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 11,
+            "kdbus_files": [
+              "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-aarch64",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 22,
+            "kdbus_files": [
+              "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-v8/extra/kdbus",
+              "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-v8/extra/kdbus/kdbus.ko"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-rt",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 11,
+            "kdbus_files": [
+              "/lib/modules/6.12.80-arm-rpi4-rt-v7l/extra/kdbus/kdbus.ko"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-rpi4-rt-aarch64",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 22,
+            "kdbus_files": [
+              "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-rt-v8/extra/kdbus",
+              "/.linux-tizen-modules/lib/modules/6.12.80-arm64-rpi4-rt-v8/extra/kdbus/kdbus.ko"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-source",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 55,
+            "kdbus_files": [
+              "/usr/src/linux-tizen-modules-source/include/uapi/linux/kdbus.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/Makefile",
+              "/usr/src/linux-tizen-modules-source/kdbus/bus.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/bus.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/connection.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/connection.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/domain.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/domain.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/endpoint.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/endpoint.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/fs.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/fs.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/handle.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/handle.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/item.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/item.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/limits.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/main.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/match.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/match.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/message.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/message.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/metadata.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/metadata.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/names.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/names.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/node.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/node.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/notify.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/notify.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/policy.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/policy.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/pool.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/pool.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/queue.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/queue.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/reply.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/reply.h",
+              "/usr/src/linux-tizen-modules-source/kdbus/util.c",
+              "/usr/src/linux-tizen-modules-source/kdbus/util.h"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-tests",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 6,
+            "kdbus_files": [
+              "/usr/libexec/linux-tizen-modules-source/tests/kdbus-test"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          }
+        ]
+      },
+      "debug-primary": {
+        "archive_path": "evidence/repository/debug-primary.out",
+        "sha256": "230e5badbc7e1263a1d9798a777a05b39ff3bc3f812fdacb00c6f12211f3ba01",
+        "size": 754983,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules-debugsource",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-source-debugsource",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-tests-debuginfo",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm"
+          }
+        ]
+      },
+      "debug-filelists": {
+        "archive_path": "evidence/repository/debug-filelists.out",
+        "sha256": "b03e020f93523539d8577b9a9fe0a1184cccd4d0c566188f8e8dc8cddf38df2c",
+        "size": 3179196,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules-debugsource",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-source-debugsource",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 40,
+            "kdbus_files": [
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/include/uapi/linux/kdbus.h",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-api.h",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-enum.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-test.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-test.h",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-util.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/kdbus-util.h",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-activator.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-benchmark.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-bus.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-chat.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-connection.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-daemon.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-endpoint.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-fd.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-free.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-match.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-message.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-metadata-ns.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-monitor.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-names.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-policy-ns.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-policy-priv.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-policy.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-sync.c",
+              "/usr/src/debug/linux-tizen-modules-source-11.0.0-0.arm/tests/kdbus/test-timeout.c"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-tests-debuginfo",
+            "arch": "armv7l",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 9,
+            "kdbus_files": [
+              "/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/kdbus-test.debug"
+            ],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          }
+        ]
+      },
+      "source-primary": {
+        "archive_path": "evidence/repository/source-primary.out",
+        "sha256": "4e07133c9ecc7d87b793feb08a290c633cd22fac6f309f8a76882f4187ee95d3",
+        "size": 254180,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules",
+            "arch": "src",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "linux-tizen-modules-11.0.0-0.src.rpm"
+          },
+          {
+            "name": "linux-tizen-modules-source",
+            "arch": "src",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0",
+              "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+            },
+            "files_total": 0,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": "linux-tizen-modules-source-11.0.0-0.src.rpm"
+          }
+        ]
+      },
+      "source-filelists": {
+        "archive_path": "evidence/repository/source-filelists.out",
+        "sha256": "076fd5bae6ca10d13e3e3642e3b48c956e324d9f99bceeb78aabee7c9560b8f6",
+        "size": 103311,
+        "candidates": [
+          {
+            "name": "linux-tizen-modules",
+            "arch": "src",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 3,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          },
+          {
+            "name": "linux-tizen-modules-source",
+            "arch": "src",
+            "version": {
+              "epoch": "0",
+              "ver": "11.0.0",
+              "rel": "0"
+            },
+            "files_total": 3,
+            "kdbus_files": [],
+            "intermediate_or_debug_candidates": [],
+            "location": null
+          }
+        ]
+      }
+    },
+    "indexed_candidates": [],
+    "selected_payload_candidates": [],
+    "sealed_paths_candidates": []
+  },
+  "unavailable": [
+    "exact-build non-RT .kdbus.o.cmd",
+    "exact-build standalone kdbus.o (including compressed or debug copy)",
+    "verbose or execution log for the non-RT L612 command",
+    "historical process executable path, argv and environment",
+    "kernel-module kdbus.ko debug companion in archived package metadata"
+  ],
+  "final_module_observation": {
+    "archive_path": "evidence/kernel_binary/payload/linux-tizen-modules-rpi4-11.0.0-0.armv7l/files/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+    "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+    "size": 162584,
+    "device_archive": {
+      "archive_path": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+      "size": 162584
+    },
+    "matched_rpm_payload_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+    "build_id": "b85657c98fa68ebf43a90520861cd8f461c0abad",
+    "comment": [
+      "clang version 22.1.8"
+    ],
+    "debug_sections": [],
+    "evidence": "evidence/history/final-ko-readelf.out"
+  },
+  "reasoning": {
+    "bfd_candidate": {
+      "archive_path": "evidence/external/historical-binutils-resolution.json",
+      "sha256": "3e5abf75aef32d11806c407b75fed571363e72bb93849def11e2afef22a3cd6f",
+      "size": 4066,
+      "evidence": "evidence/history/binutils-resolution.json"
+    },
+    "lld_candidates": {
+      "archive_path": "08_06_historical_linker_resolution.json",
+      "sha256": "a30ca47b7b88398dbe82721f5db419f4bfe9ba4bdf1fc46b4869d78e86f2a7b0",
+      "size": 7132,
+      "evidence": "evidence/history/lld-resolution.json"
+    },
+    "source_assignment": {
+      "archive_path": "evidence/external/source/Makefile",
+      "sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858",
+      "size": 1762,
+      "evidence": "evidence/history/external-top-makefile.txt"
+    },
+    "kbuild_object_rule": {
+      "archive_path": "evidence/kernel/source/scripts/Makefile.build",
+      "sha256": "381c1ae0523a5d6ba483e0db0f8dcb785ff89b6be07893fbfc173afeb4e202ae",
+      "size": 17871,
+      "evidence": "evidence/history/kbuild-object-rule.txt"
+    },
+    "historical_binutils_log_line": 437,
+    "logical_linker_name_if_prefix_empty": "ld",
+    "bfd_candidate_file_sha256": "d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9",
+    "remaining_uncertainty": "No execution record establishes effective CROSS_COMPILE, exact LD, PATH, or actual executable at L612. An effective LD override to ld.lld could produce LLD, with precedence depending on its origin and make options. This remains a hypothetical alternative, not a confirmed path of this historical build."
+  },
+  "previous_builder_recovery": {
+    "archive_path": "08_02_historical_evidence_recovery.json",
+    "sha256": "2204dfca4dcd15e1ad7610a938364990e832bcf06b328af4e25a47afafd80747",
+    "size": 7462,
+    "evidence": "evidence/history/round2-recovery.json"
+  },
+  "rescan_policy": {
+    "prior_failed_url_or_local_search_repeated": false,
+    "new_network_or_rpm_download": false,
+    "historical_build_or_device_contact": false,
+    "closed_scopes_reused": [
+      "known local build roots unavailable",
+      "private worker archive unavailable",
+      "profiling report contains aggregate metadata",
+      "published buildinfo/buildroots/artifacts directory probes returned 404"
+    ]
+  }
+}

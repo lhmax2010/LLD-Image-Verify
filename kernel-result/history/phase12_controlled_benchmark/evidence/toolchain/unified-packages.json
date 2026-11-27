@@ -1,0 +1,60 @@
+[
+  {
+    "requested": [
+      "dwarves",
+      "armv7l"
+    ],
+    "path": "work/rpms/dwarves-1.29-1.armv7l.rpm",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/dwarves-1.29-1.armv7l.rpm",
+    "version": {
+      "epoch": "0",
+      "ver": "1.29",
+      "rel": "1",
+      "vcs": "platform/upstream/dwarves#61117bce33831603affe7b567ffe9d2a58f25a21"
+    },
+    "expected_sha256": "deebe9aa3fa0b65022e65c6b59cd3a5a59d03a0e7c15b7f085899c2d85f1e54f",
+    "actual_sha256": "deebe9aa3fa0b65022e65c6b59cd3a5a59d03a0e7c15b7f085899c2d85f1e54f",
+    "fetch_argv": [
+      "curl",
+      "-fLsS",
+      "--retry",
+      "2",
+      "--max-time",
+      "180",
+      "-o",
+      "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/work/rpms/dwarves-1.29-1.armv7l.rpm",
+      "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/dwarves-1.29-1.armv7l.rpm"
+    ],
+    "fetch_exit": 0,
+    "status": "PASS"
+  },
+  {
+    "requested": [
+      "libdwarves1",
+      "armv7l"
+    ],
+    "path": "work/rpms/libdwarves1-1.29-1.armv7l.rpm",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/libdwarves1-1.29-1.armv7l.rpm",
+    "version": {
+      "epoch": "0",
+      "ver": "1.29",
+      "rel": "1",
+      "vcs": "platform/upstream/dwarves#61117bce33831603affe7b567ffe9d2a58f25a21"
+    },
+    "expected_sha256": "34ccee857945bb9147c2a1d462c962170714df8c62b932ea4a37d5223337a2d0",
+    "actual_sha256": "34ccee857945bb9147c2a1d462c962170714df8c62b932ea4a37d5223337a2d0",
+    "fetch_argv": [
+      "curl",
+      "-fLsS",
+      "--retry",
+      "2",
+      "--max-time",
+      "180",
+      "-o",
+      "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/work/rpms/libdwarves1-1.29-1.armv7l.rpm",
+      "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/libdwarves1-1.29-1.armv7l.rpm"
+    ],
+    "fetch_exit": 0,
+    "status": "PASS"
+  }
+]

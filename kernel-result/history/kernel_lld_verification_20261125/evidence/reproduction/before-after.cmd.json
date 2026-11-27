@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/reproduce_qb_make.py",
+    "--old-makefile",
+    "evidence/source/old/Makefile",
+    "--old-kdbus",
+    "evidence/source/old/kdbus/Makefile",
+    "--new-makefile",
+    "evidence/source/new/Makefile",
+    "--new-kdbus",
+    "evidence/source/new/kdbus/Makefile",
+    "--new-kbuild",
+    "evidence/reproduction/new-kbuild/boot/kernel/devel/kernel-devel-arm-rpi4",
+    "--make",
+    "evidence/reproduction/make-tool/bin/make"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:29:32.766692+00:00",
+  "elapsed_seconds": 2.102,
+  "exit_status": 0
+}

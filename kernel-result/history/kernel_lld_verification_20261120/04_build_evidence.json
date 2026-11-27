@@ -1,0 +1,544 @@
+{
+  "snapshot": "tizen-unified-toolchain_20261120.082536",
+  "target": "ARMv7l RPi4 non-RT, 6.12.80-arm-rpi4-v7l",
+  "source_revision": "42aeefac58edeb081aff440f0b60be71cbe49755",
+  "status": "CONDITIONAL_PASS",
+  "config_status": "PASS",
+  "configured_compiler": {
+    "name": "Clang",
+    "version": "22.1.8"
+  },
+  "configured_linker": {
+    "name": "LLD",
+    "version": "22.1.8",
+    "kbuild_default_command_name": "ld.lld"
+  },
+  "configuration": {
+    "actual_config": {
+      "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+      "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+      "keys": {
+        "CONFIG_CC_VERSION_TEXT": {
+          "state": "set",
+          "value": "\"clang version 22.1.8\"",
+          "line": 5,
+          "raw": "CONFIG_CC_VERSION_TEXT=\"clang version 22.1.8\""
+        },
+        "CONFIG_CC_IS_CLANG": {
+          "state": "set",
+          "value": "y",
+          "line": 7,
+          "raw": "CONFIG_CC_IS_CLANG=y"
+        },
+        "CONFIG_CLANG_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 8,
+          "raw": "CONFIG_CLANG_VERSION=220108"
+        },
+        "CONFIG_CC_IS_GCC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_GCC_VERSION": {
+          "state": "set",
+          "value": "0",
+          "line": 6,
+          "raw": "CONFIG_GCC_VERSION=0"
+        },
+        "CONFIG_LD_IS_LLD": {
+          "state": "set",
+          "value": "y",
+          "line": 12,
+          "raw": "CONFIG_LD_IS_LLD=y"
+        },
+        "CONFIG_LLD_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 13,
+          "raw": "CONFIG_LLD_VERSION=220108"
+        },
+        "CONFIG_LD_IS_BFD": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LD_VERSION": {
+          "state": "set",
+          "value": "0",
+          "line": 11,
+          "raw": "CONFIG_LD_VERSION=0"
+        },
+        "CONFIG_AS_IS_LLVM": {
+          "state": "set",
+          "value": "y",
+          "line": 9,
+          "raw": "CONFIG_AS_IS_LLVM=y"
+        },
+        "CONFIG_AS_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 10,
+          "raw": "CONFIG_AS_VERSION=220108"
+        },
+        "CONFIG_LTO": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_NONE": {
+          "state": "set",
+          "value": "y",
+          "line": 650,
+          "raw": "CONFIG_LTO_NONE=y"
+        },
+        "CONFIG_LTO_CLANG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_THIN": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_FULL": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_IKCONFIG": {
+          "state": "explicitly_unset",
+          "value": null,
+          "line": 154,
+          "raw": "# CONFIG_IKCONFIG is not set"
+        },
+        "CONFIG_IKCONFIG_PROC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        }
+      }
+    },
+    "generated_auto_conf": {
+      "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+      "sha256": "cc7bbe7e4d68f46bdd1d67e5f033cccfdb1744101c53dac95e035effaeff748e",
+      "keys": {
+        "CONFIG_CC_VERSION_TEXT": {
+          "state": "set",
+          "value": "clang version 22.1.8",
+          "line": 1823,
+          "raw": "CONFIG_CC_VERSION_TEXT=clang version 22.1.8"
+        },
+        "CONFIG_CC_IS_CLANG": {
+          "state": "set",
+          "value": "y",
+          "line": 153,
+          "raw": "CONFIG_CC_IS_CLANG=y"
+        },
+        "CONFIG_CLANG_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 1601,
+          "raw": "CONFIG_CLANG_VERSION=220108"
+        },
+        "CONFIG_CC_IS_GCC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_GCC_VERSION": {
+          "state": "set",
+          "value": "0",
+          "line": 1455,
+          "raw": "CONFIG_GCC_VERSION=0"
+        },
+        "CONFIG_LD_IS_LLD": {
+          "state": "set",
+          "value": "y",
+          "line": 994,
+          "raw": "CONFIG_LD_IS_LLD=y"
+        },
+        "CONFIG_LLD_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 465,
+          "raw": "CONFIG_LLD_VERSION=220108"
+        },
+        "CONFIG_LD_IS_BFD": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LD_VERSION": {
+          "state": "set",
+          "value": "0",
+          "line": 1495,
+          "raw": "CONFIG_LD_VERSION=0"
+        },
+        "CONFIG_AS_IS_LLVM": {
+          "state": "set",
+          "value": "y",
+          "line": 890,
+          "raw": "CONFIG_AS_IS_LLVM=y"
+        },
+        "CONFIG_AS_VERSION": {
+          "state": "set",
+          "value": "220108",
+          "line": 1124,
+          "raw": "CONFIG_AS_VERSION=220108"
+        },
+        "CONFIG_LTO": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_NONE": {
+          "state": "set",
+          "value": "y",
+          "line": 1249,
+          "raw": "CONFIG_LTO_NONE=y"
+        },
+        "CONFIG_LTO_CLANG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_THIN": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_FULL": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_IKCONFIG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_IKCONFIG_PROC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        }
+      }
+    },
+    "cross_check": {
+      "CONFIG_CC_VERSION_TEXT": true,
+      "CONFIG_CC_IS_CLANG": true,
+      "CONFIG_CLANG_VERSION": true,
+      "CONFIG_CC_IS_GCC": true,
+      "CONFIG_GCC_VERSION": true,
+      "CONFIG_LD_IS_LLD": true,
+      "CONFIG_LLD_VERSION": true,
+      "CONFIG_LD_IS_BFD": true,
+      "CONFIG_LD_VERSION": true,
+      "CONFIG_AS_IS_LLVM": true,
+      "CONFIG_AS_VERSION": true,
+      "CONFIG_LTO": true,
+      "CONFIG_LTO_NONE": true,
+      "CONFIG_LTO_CLANG": true,
+      "CONFIG_LTO_CLANG_THIN": true,
+      "CONFIG_LTO_CLANG_FULL": true,
+      "CONFIG_IKCONFIG": true,
+      "CONFIG_IKCONFIG_PROC": true
+    },
+    "source_baseline_defconfig": {
+      "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/configs/tizen_bcm2711_defconfig",
+      "sha256": "1eb93b834a9167bf9596da3456308afd4788e8dbc4976b5a0dfd28da0cb476a1",
+      "keys": {
+        "CONFIG_CC_VERSION_TEXT": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_CC_IS_CLANG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_CLANG_VERSION": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_CC_IS_GCC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_GCC_VERSION": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LD_IS_LLD": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LLD_VERSION": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LD_IS_BFD": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LD_VERSION": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_AS_IS_LLVM": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_AS_VERSION": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_NONE": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_THIN": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_LTO_CLANG_FULL": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_IKCONFIG": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        },
+        "CONFIG_IKCONFIG_PROC": {
+          "state": "absent",
+          "value": null,
+          "line": null,
+          "raw": null
+        }
+      }
+    },
+    "generated_headers": [
+      {
+        "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h",
+        "sha256": "8be8545243726ed358d872faab32c763edfe25248868e80cf5b99b735b529d07",
+        "raw": "#define UTS_MACHINE\t\t\"arm\"\n#define LINUX_COMPILE_BY\t\"abuild\"\n#define LINUX_COMPILE_HOST\t\"qb-build-host-01\"\n#define LINUX_COMPILER\t\t\"clang version 22.1.8, LLD 22.1.8\"\n"
+      },
+      {
+        "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/utsrelease.h",
+        "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e",
+        "raw": "#define UTS_RELEASE \"6.12.80-arm-rpi4-v7l\"\n"
+      },
+      {
+        "evidence": "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/utsversion.h",
+        "sha256": "84dbc636615226881511e12f0dd235b2c126e595530bb4f8b4ae6b4cc8b607e1",
+        "raw": "#define UTS_VERSION \"#1 SMP Fri Nov 20 09:22:45 UTC 2026\"\n"
+      }
+    ]
+  },
+  "config_source_availability": {
+    "runtime_proc_config": {
+      "status": "absent",
+      "evidence": "evidence/runtime/files.out"
+    },
+    "runtime_boot": {
+      "status": "absent",
+      "evidence": "evidence/runtime/files.out"
+    },
+    "image_modules_debug_rpm": {
+      "status": "no_generated_config_member",
+      "evidence": "evidence/build/rpm-config-member-index.out"
+    },
+    "devel_rpm": {
+      "status": "observed_generated_config",
+      "evidence": "evidence/build/devel-build-filelist.out"
+    },
+    "source_rpm": {
+      "status": "build_intent_only",
+      "evidence": "evidence/build/source/linux-rpi.spec"
+    },
+    "embedded": {
+      "status": "no_config_found",
+      "exit_status": 1,
+      "raw_stderr": "extract-ikconfig: Cannot find kernel config.",
+      "evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-extract-ikconfig.err",
+      "command_record": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-extract-ikconfig.cmd.json"
+    },
+    "matching_gbs_local": {
+      "status": "not_found",
+      "evidence": "evidence/build/builder-root-local.err"
+    }
+  },
+  "input_files": [
+    {
+      "path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "sha256": "bd074cebe72d5c92981933fa9c696d3cc388e4a4cb42eeddfcf1261c9c4df763",
+      "bytes": 116200896
+    },
+    {
+      "path": "evidence/repository/rpms/rpi4-linux-kernel-6.12.80-0.src.rpm",
+      "sha256": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+      "bytes": 156385913
+    },
+    {
+      "path": "evidence/repository/rpms/linux-tizen-modules-11.0.0-0.src.rpm",
+      "sha256": "9c7726daa8d14e0dfa59703d3c2e6019e077723a50b367ad4184c350ed233cdc",
+      "bytes": 19542
+    },
+    {
+      "path": "evidence/build/linux-rpi-armv7l.out",
+      "sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673",
+      "bytes": 939599
+    },
+    {
+      "path": "evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+      "bytes": 56294
+    },
+    {
+      "path": "evidence/runtime/banner.out",
+      "sha256": "ed483648f9ce9b4a2282a02a770664b43378a1e854db69831fdef122064f8f48",
+      "bytes": 1035
+    }
+  ],
+  "build_log_index": "evidence/build/kernel-build-log-events.json",
+  "normal_target_link_steps": {
+    "quiet_partial_link": {
+      "evidence": "evidence/build/linux-rpi-armv7l.out",
+      "line": 7941,
+      "raw": "[ 1398s]   LD      vmlinux.o"
+    },
+    "quiet_final_link": {
+      "evidence": "evidence/build/linux-rpi-armv7l.out",
+      "line": 7962,
+      "raw": "[ 1518s]   LD      vmlinux"
+    },
+    "quiet_arm_decompressor_link": {
+      "evidence": "evidence/build/linux-rpi-armv7l.out",
+      "line": 8141,
+      "raw": "[ 1532s]   LD      arch/arm/boot/compressed/vmlinux"
+    }
+  },
+  "module_link_steps": {
+    "evidence": "evidence/build/module-final-commands.json",
+    "unique_package_and_payload_path_observations": 59,
+    "observations_by_rpm": {
+      "arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm": 52,
+      "linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm": 7
+    },
+    "exact_argv_count": 0
+  },
+  "source_intent": {
+    "main_spec": "evidence/build/source/linux-rpi.spec",
+    "external_spec": "evidence/build/external-source/linux-tizen-modules.spec",
+    "patched_build_rules": [
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/Makefile",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.vmlinux",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/link-vmlinux.sh",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.modfinal",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.vmlinux_o",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.lib",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Kconfig.include",
+      "evidence/build/devel/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/Makefile"
+    ]
+  },
+  "historical_builder_dependencies": {
+    "base_snapshot": "tizen-base-toolchain_20261119.042539",
+    "checked_packages": "evidence/build/historical-base-package-checks.out",
+    "llvm_rpm_ld_lld": {
+      "declared_path": "/usr/bin/ld.lld",
+      "symlink_target": "lld",
+      "evidence": "evidence/build/historical-base-llvm-payload.out"
+    },
+    "accelerator_package_ld_lld": {
+      "declared_path": "/emul/usr/bin/ld.lld",
+      "evidence": "evidence/build/historical-base-accelerator.out",
+      "basis": "Repository primary metadata"
+    }
+  },
+  "debug_package_stage": {
+    "evidence": "evidence/build/debuginfo-id-staging.out",
+    "original_build_find_debuginfo_recipe": "evidence/build/historical-base/rpm-build/usr/lib/rpm/find-debuginfo.sh",
+    "debugedit_option_identification": "evidence/build/historical-base-debugedit-text.out",
+    "effect": "The historical find-debuginfo implementation passes -i and the seed to debugedit to recalculate the Build ID note."
+  },
+  "local_search": {
+    "bounded_search_command": "evidence/build/bounded-local-paths.cmd.json",
+    "bounded_search_output": "evidence/build/bounded-local-paths.out",
+    "gbs_build_folders": "evidence/build/selected-gbs-build-dirs.out",
+    "explicit_rejection": {
+      "evidence": "evidence/build/rejected-local-gbs-candidate.out",
+      "kernel_release": "6.12.80-arm-rpi4-v7l",
+      "banner_builder": "local-review-host",
+      "build_timestamp_utc": "2026-08-26T09:44:20Z",
+      "gnu_build_id": "38a689c0c4913f5e22c3c2366d25de2526016478",
+      "reason": "Builder, timestamp and GNU Build ID differ from the target November build."
+    }
+  },
+  "same_build_actual_vmlinux_final_link_command": null,
+  "same_build_actual_linker_absolute_path": null,
+  "same_build_kbuild_cmd_files": [],
+  "evidence_gaps": [
+    "The published logs record quiet LD target operations and do not reveal executed linker argv.",
+    "RPM packaging excluded *.cmd files and the remote historical build directory is unavailable locally.",
+    "No retained original build environment path resolution proves the ld.lld executable absolute path."
+  ]
+}

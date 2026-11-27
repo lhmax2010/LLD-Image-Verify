@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "bash",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/verify.sh",
+    "replay",
+    "/local-user/lss/kernel_lld_check/.pm-review-round2.x9FKTf/offline-replay"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check",
+  "started_utc": "2026-11-25T09:39:04.694632+00:00",
+  "elapsed_seconds": 126.565,
+  "exit_status": 0
+}

@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "curl",
+    "-fSL",
+    "--max-time",
+    "30",
+    "-D",
+    "evidence/build/base/filelists.headers",
+    "-o",
+    "evidence/build/base/filelists.xml.gz",
+    "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/repodata/b1a00cbd36a57333e98b7aa099bdf9d1cd67c3f9730533f08523dfcf16fa0624-filelists.xml.gz"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:32:11.347184+00:00",
+  "elapsed_seconds": 2.13,
+  "exit_status": 0
+}

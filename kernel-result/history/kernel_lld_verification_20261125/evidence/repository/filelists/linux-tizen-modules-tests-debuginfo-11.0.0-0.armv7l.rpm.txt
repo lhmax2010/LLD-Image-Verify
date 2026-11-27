@@ -1,0 +1,9 @@
+/usr/lib/debug
+/usr/lib/debug/usr
+/usr/lib/debug/usr/libexec
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/kdbus-test.debug
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/logger-test.debug
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap.debug
+/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/zlog_stdout.debug

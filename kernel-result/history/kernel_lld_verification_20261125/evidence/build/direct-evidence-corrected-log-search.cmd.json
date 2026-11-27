@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "rg",
+    "-n",
+    "\\.kdbus\\.o\\.cmd|\\.kdbus\\.ko\\.cmd|execve(at)?\\(|(^|[[:space:];])(PATH=|export PATH|LD=|CROSS_COMPILE=|LLVM_IAS=|V=1)|[[:space:]]([^[:space:]]*/)?(ld\\.lld|ld\\.bfd|ld)[[:space:]].*-r",
+    "evidence/build/linux-tizen-modules-armv7l.out"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:29:25.210944+00:00",
+  "elapsed_seconds": 0.008,
+  "exit_status": 1
+}

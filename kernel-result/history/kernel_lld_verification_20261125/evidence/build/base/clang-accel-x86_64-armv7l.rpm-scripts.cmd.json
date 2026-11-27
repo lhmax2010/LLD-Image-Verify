@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "rpm",
+    "-qp",
+    "--scripts",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:50.632796+00:00",
+  "elapsed_seconds": 0.011,
+  "exit_status": 0
+}

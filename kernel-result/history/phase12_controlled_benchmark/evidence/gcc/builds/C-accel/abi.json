@@ -1,0 +1,5273 @@
+{
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko": {
+    "sha256": "47dc5dccb0b5162d14bdf106543b360a3576904cbebf613bcc6af34daba9d0af",
+    "bytes": 29704,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 40
+    },
+    "build_ids": [
+      "742421e3eb9b1718c318eba288c1e909a359e92b"
+    ],
+    "modinfo": {
+      "license": [
+        "GPL"
+      ],
+      "srcversion": [
+        "4032DDBA159B1A65579E8C5"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "dm_bow"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 54,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__init_swait_queue_head",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_cache_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mutex_init",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__num_online_cpus",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "_printk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "alloc_workqueue",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "bio_associate_blkg",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "bio_chain",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "bio_endio",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "bio_split",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "crc32_le",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "destroy_workqueue",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_client_create",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_client_destroy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_mark_buffer_dirty",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_new",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_release",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_bufio_write_dirty_buffers",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_disk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_get_device",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_kobject_release",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_read_arg_group",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_register_target",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_shift_arg",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_table_get_md",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_table_get_mode",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dm_unregister_target",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fs_bio_set",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".init.text",
+        "DEFAULT",
+        56
+      ],
+      [
+        "kfree",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmalloc_caches",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kobj_sysfs_ops",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kobject_init_and_add",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kobject_put",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memcpy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_unlock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "queue_work_on",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_erase",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_first",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_insert_color",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_last",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_next",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_prev",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "scnprintf",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "sscanf",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "submit_bio",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "wait_for_completion",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "warn_slowpath_fmt",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 177,
+      "R_ARM_MOVW_ABS_NC": 77,
+      "R_ARM_MOVT_ABS": 77,
+      "R_ARM_JUMP24": 6,
+      "R_ARM_ABS32": 60,
+      "R_ARM_PREL31": 22,
+      "R_ARM_NONE": 2,
+      "R_ARM_REL32": 1
+    },
+    "mapping_symbols": {
+      "$d": 18,
+      "$a": 6
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "998a73348c3c609d6ce6ef9778553024da37f7c8cf92223c9a4ea6a5d01326d8"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 9012,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "283a745828095ace8478d708a6af235e72d69856e2b3684a4c671a82a65f122f"
+      },
+      {
+        "name": ".init.text",
+        "size": 56,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "93252c7079672ff07e103fade1459d66be1b4be2becd93358e56ba98f02e0223"
+      },
+      {
+        "name": ".data",
+        "size": 204,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": "f6b80f364c9f7fd51a516513018d366855a9a699fb7cbb56483cab497e3fe6c9"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "dc223b6f2eaa222c81330d7448c77167497da635921faf966e3229df55595a43"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 168,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "26aa407a225e521a050433a8aeee1b75c08e7bd3d0b0d8197e8d5e4764fa466c"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 1544,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "2a054259a9bb55017da8db960e6ad38c863fa2cdb3584289a2b48c06812bf59d"
+      },
+      {
+        "name": ".ARM.extab.init.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.init.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "436fbfeadb2a400bce2e5ecf6f3ec929a6de7f55d17ee4544a96369294311cc7"
+      },
+      {
+        "name": ".rodata",
+        "size": 72,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "6142c21bbfebab2c808ab7e111f6f7e9256e873281e5f1124f9bc2e5d18ecac6"
+      },
+      {
+        "name": ".alt.smp.init",
+        "size": 8,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "a0e050c69ab231f62115d3a3f75c1eaf23b30394682b78a3026088a9e8689b56"
+      },
+      {
+        "name": ".modinfo",
+        "size": 137,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "46798cc45047dce3691996bf5e7ded3319886f5edb3143ae89a904897bfd5ede"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 88,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "bbac936378adad3706685f1655b8655f0bf6998e54aa4133272e3152c176a79a"
+      },
+      {
+        "name": "__versions",
+        "size": 3456,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "e2223d67ba7ac1b43b6a28ee39f657fefcf1821d3577a3b1a7efc5a007a93abb"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 0,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko": {
+    "sha256": "55e716c9ada4f04f33a2096b084c174206c1818ca53fe2d3014f278dae093116",
+    "bytes": 6316,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 32
+    },
+    "build_ids": [
+      "f267b48f00cb33952b452d42e2e3d5c020cb7561"
+    ],
+    "modinfo": {
+      "license": [
+        "GPL"
+      ],
+      "description": [
+        "Fixed USB extcon driver"
+      ],
+      "author": [
+        "Marek Szyprowski <[email-redacted]>"
+      ],
+      "srcversion": [
+        "D3550FFCA82775E116F5712"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "extcon_usb_fixed"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 8,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "devm_extcon_dev_allocate",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "devm_extcon_dev_register",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "extcon_set_state_sync",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        128
+      ],
+      [
+        "platform_device_register",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "platform_device_unregister",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 7,
+      "R_ARM_MOVW_ABS_NC": 4,
+      "R_ARM_MOVT_ABS": 4,
+      "R_ARM_JUMP24": 1,
+      "R_ARM_ABS32": 10,
+      "R_ARM_PREL31": 3,
+      "R_ARM_NONE": 1
+    },
+    "mapping_symbols": {
+      "$d": 15,
+      "$a": 1
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "8afe2ec5b841d6ab3df4d3eb86d032868af07eb04e1798a2d5150bdf4500c169"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 160,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "62bfc35f95059b91810a5040b729b3731b7f25f7be997c3033d757d9ca095aa1"
+      },
+      {
+        "name": ".data",
+        "size": 520,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": "20aa497d9bd4c19e851e3df6e386700faada213db38acf7679f6365832830b3d"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "b2f91ce61fdbac1b492cec641918dbcce2b5b5bd597a36451d496602c679bd5d"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 24,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "633505f727288879d67932663f0fd74d953d8c324bdace7d684aa7cd69021821"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 17,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "0cfe82e2748076552049b01f4be24d9c7dc9a13f3643557b89fd184cb461991a"
+      },
+      {
+        "name": ".rodata",
+        "size": 8,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "7c9fa136d4413fa6173637e883b6998d32e1d675f88cddff9dcbcf331820f4b8"
+      },
+      {
+        "name": ".modinfo",
+        "size": 234,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "ea5ceb3e8a9c6199a084fffc3b745a2969f2d5f5e5030c1e141987af454fcb0c"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 12,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "a0a64de2ca645434155a8314f443223c8d184e8c0e2d3c0f414f43a8ea55acbd"
+      },
+      {
+        "name": "__versions",
+        "size": 512,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "c79003a768b195c672c87476f12b5a8c42185ca3d1c83cb29a919188c40b475e"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko": {
+    "sha256": "6ee7ee7a7dc01fdba272fa21defbb59fa30eba5b25a03ea28612c86d60dc57a3",
+    "bytes": 7064,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 36
+    },
+    "build_ids": [
+      "9891a0227ad588fa0b377fea03ad1b396cfddef5"
+    ],
+    "modinfo": {
+      "license": [
+        "GPL"
+      ],
+      "srcversion": [
+        "E834BDD9D19EFB1067B3D56"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "inform_reboot"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 14,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "_printk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "down_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "filp_open",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fput",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".init.text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kernel_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "register_reboot_notifier",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strncmp",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "sync_filesystem",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "unregister_reboot_notifier",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "up_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 15,
+      "R_ARM_MOVW_ABS_NC": 12,
+      "R_ARM_MOVT_ABS": 12,
+      "R_ARM_JUMP24": 1,
+      "R_ARM_ABS32": 8,
+      "R_ARM_PREL31": 3,
+      "R_ARM_NONE": 2
+    },
+    "mapping_symbols": {
+      "$d": 13,
+      "$a": 2
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "4c0e8da6fa3de0f0666f086f15042952d3f1106bf928e154613a6f3d4b9b757a"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 356,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "83a7d2b591829414e18255e28d590503835d59e423c296a92294aab723b5f3cd"
+      },
+      {
+        "name": ".init.text",
+        "size": 32,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "91c82f0c699712661000aafa516228a2d166dbdb54fbb97460753d2dc25ab525"
+      },
+      {
+        "name": ".data",
+        "size": 12,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "07a447078a3c4e6c4b713b31623ca8789562ded7e11fcc2b8e4d7df5cc6c577a"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "8b218e339e755e5a6be420c15ca616fbe65fe82172bd77b228690cf2f89c625b"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".ARM.extab.init.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.init.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "436fbfeadb2a400bce2e5ecf6f3ec929a6de7f55d17ee4544a96369294311cc7"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 201,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "649834a60dfe70c037c81f2d760fea6ef1476606306b1c9a25910382beebf1ba"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 16,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "e3fbc5ade12ce587cfbe042c4536f628d4f140acb364d44d91fbca3a63b65306"
+      },
+      {
+        "name": ".modinfo",
+        "size": 144,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "f82fb632982b9ce5ce7d5ad2138a4f072e6ca7007cd14885d151c68727bf9ba3"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 12,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "c169d5edd36c1c3d59d1e02ae2c7e26f993a67fe138c8a52dc317b139203199d"
+      },
+      {
+        "name": "__versions",
+        "size": 896,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "39d93b9a5fb1ae7d834780b520ff536f4e2c9dba83f7a09bf7d1c5a4b15b6235"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 0,
+        "flags": 3,
+        "alignment": 1,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko": {
+    "sha256": "fb8ea9b8e48c602850d24ce85fd1062f2db05a5aeee6c817c70eb75f0b5c1fc1",
+    "bytes": 150032,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 49
+    },
+    "build_ids": [
+      "64e3d4603cc3e6d5571496fe72bcd5798ab6ed44"
+    ],
+    "modinfo": {
+      "alias": [
+        "fs-kdbusfs"
+      ],
+      "description": [
+        "D-Bus, powerful, easy to use interprocess communication"
+      ],
+      "license": [
+        "GPL"
+      ],
+      "srcversion": [
+        "82BF5E4477A92EF05AD9A1B"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "kdbus"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 153,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__aeabi_unwind_cpp_pr1",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__cond_resched",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__get_task_comm",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__init_rwsem",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__init_waitqueue_head",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kdbus_args_parse",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1200
+      ],
+      [
+        "__kmalloc_cache_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmem_cache_create_args",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mutex_init",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__put_cred",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__put_task_struct",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__put_user_8",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__put_user_ns",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "__wake_up",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_ctype",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_printk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_raw_spin_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_from_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_to_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cancel_delayed_work",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cancel_delayed_work_sync",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".exit.text",
+        "DEFAULT",
+        44
+      ],
+      [
+        "clear_inode",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "collect_mounts",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_hash_and_lookup",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_invalidate",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_make_root",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_parent_ino",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_path",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "d_splice_alias",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "deactivate_locked_super",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "delayed_work_timer_fn",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "div64_u64_rem",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "down_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "down_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "dput",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "drop_collected_mounts",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "empty_aops",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fd_install",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fget",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fget_raw",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "file_ns_capable",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "find_vpid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "finish_wait",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "flush_dcache_page",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fput",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "free_pages",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "from_kgid_munged",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "from_kuid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "from_kuid_munged",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "fs_kobj",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "generate_random_uuid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "generic_delete_inode",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "generic_file_llseek",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "generic_permission",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "generic_read_dir",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "get_free_pages_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "get_pid_task",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "get_unused_fd_flags",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ida_alloc_range",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ida_destroy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ida_free",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "idr_alloc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "idr_destroy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "idr_find",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "idr_remove",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "idr_replace",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "iget_locked",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".init.text",
+        "DEFAULT",
+        144
+      ],
+      [
+        "init_timer_key",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_user_ns",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_wait_entry",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "inode_set_ctime_current",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "iov_iter_init",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "iov_iter_kvec",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "iterate_mounts",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kasprintf",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kdbus_args_clear",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        156
+      ],
+      [
+        "kdbus_bus_broadcast",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        252
+      ],
+      [
+        "kdbus_bus_eavesdrop",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        160
+      ],
+      [
+        "kdbus_bus_find_conn_by_id",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        140
+      ],
+      [
+        "kdbus_bus_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_bus_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_cmd_bus_creator_info",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        816
+      ],
+      [
+        "kdbus_cmd_bus_make",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1404
+      ],
+      [
+        "kdbus_cmd_byebye_unlocked",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        232
+      ],
+      [
+        "kdbus_cmd_conn_info",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1208
+      ],
+      [
+        "kdbus_cmd_ep_make",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        388
+      ],
+      [
+        "kdbus_cmd_ep_update",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        276
+      ],
+      [
+        "kdbus_cmd_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        244
+      ],
+      [
+        "kdbus_cmd_hello",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        2944
+      ],
+      [
+        "kdbus_cmd_list",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        620
+      ],
+      [
+        "kdbus_cmd_match_add",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1288
+      ],
+      [
+        "kdbus_cmd_match_remove",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        376
+      ],
+      [
+        "kdbus_cmd_name_acquire",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        328
+      ],
+      [
+        "kdbus_cmd_name_release",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        524
+      ],
+      [
+        "kdbus_cmd_recv",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        820
+      ],
+      [
+        "kdbus_cmd_send",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        2868
+      ],
+      [
+        "kdbus_cmd_update",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        764
+      ],
+      [
+        "kdbus_conn_acquire",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        88
+      ],
+      [
+        "kdbus_conn_active",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        24
+      ],
+      [
+        "kdbus_conn_disconnect",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        992
+      ],
+      [
+        "kdbus_conn_entry_insert",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        376
+      ],
+      [
+        "kdbus_conn_has_name",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        104
+      ],
+      [
+        "kdbus_conn_lost_message",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        68
+      ],
+      [
+        "kdbus_conn_move_messages",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1164
+      ],
+      [
+        "kdbus_conn_policy_own_name",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "kdbus_conn_policy_see_name_unlocked",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "kdbus_conn_policy_see_notification",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        168
+      ],
+      [
+        "kdbus_conn_policy_talk",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "kdbus_conn_quota_dec",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        224
+      ],
+      [
+        "kdbus_conn_quota_inc",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        356
+      ],
+      [
+        "kdbus_conn_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_conn_release",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_conn_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        100
+      ],
+      [
+        "kdbus_copy_from_user",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        192
+      ],
+      [
+        "kdbus_domain_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        340
+      ],
+      [
+        "kdbus_domain_populate",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        200
+      ],
+      [
+        "kdbus_domain_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_domain_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_ep_is_owner",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_ep_is_privileged",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        52
+      ],
+      [
+        "kdbus_ep_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        368
+      ],
+      [
+        "kdbus_ep_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_ep_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_fs_exit",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "kdbus_fs_flush",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        480
+      ],
+      [
+        "kdbus_fs_init",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "kdbus_gaps_install",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1120
+      ],
+      [
+        "kdbus_gaps_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_gaps_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        100
+      ],
+      [
+        "kdbus_handle_ops",
+        "GLOBAL",
+        ".rodata",
+        "DEFAULT",
+        132
+      ],
+      [
+        "kdbus_init_cache_create",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        220
+      ],
+      [
+        "kdbus_init_cache_destroy",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        72
+      ],
+      [
+        "kdbus_item_set",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        124
+      ],
+      [
+        "kdbus_item_validate",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        700
+      ],
+      [
+        "kdbus_item_validate_name",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        220
+      ],
+      [
+        "kdbus_items_validate",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        168
+      ],
+      [
+        "kdbus_kvec_pad",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        76
+      ],
+      [
+        "kdbus_kvec_set",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        40
+      ],
+      [
+        "kdbus_match_db_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_match_db_match_msg",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        828
+      ],
+      [
+        "kdbus_match_db_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        92
+      ],
+      [
+        "kdbus_match_entry_cachep",
+        "GLOBAL",
+        ".bss",
+        "DEFAULT",
+        4
+      ],
+      [
+        "kdbus_match_rule_cachep",
+        "GLOBAL",
+        ".bss",
+        "DEFAULT",
+        4
+      ],
+      [
+        "kdbus_meta_conn_collect",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        700
+      ],
+      [
+        "kdbus_meta_conn_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        92
+      ],
+      [
+        "kdbus_meta_conn_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_meta_conn_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        120
+      ],
+      [
+        "kdbus_meta_emit",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        5032
+      ],
+      [
+        "kdbus_meta_fake_collect",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        920
+      ],
+      [
+        "kdbus_meta_fake_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        68
+      ],
+      [
+        "kdbus_meta_fake_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        48
+      ],
+      [
+        "kdbus_meta_info_mask",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        188
+      ],
+      [
+        "kdbus_meta_msg_mask",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        192
+      ],
+      [
+        "kdbus_meta_proc_collect",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1284
+      ],
+      [
+        "kdbus_meta_proc_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        92
+      ],
+      [
+        "kdbus_meta_proc_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_meta_proc_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        228
+      ],
+      [
+        "kdbus_name_acquire",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1756
+      ],
+      [
+        "kdbus_name_is_valid",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        276
+      ],
+      [
+        "kdbus_name_lookup_unlocked",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        156
+      ],
+      [
+        "kdbus_name_registry_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        92
+      ],
+      [
+        "kdbus_name_registry_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        112
+      ],
+      [
+        "kdbus_name_release_all",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_node_acquire",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        104
+      ],
+      [
+        "kdbus_node_activate",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        128
+      ],
+      [
+        "kdbus_node_deactivate",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        664
+      ],
+      [
+        "kdbus_node_find_child",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        284
+      ],
+      [
+        "kdbus_node_find_closest",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        184
+      ],
+      [
+        "kdbus_node_ida",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        12
+      ],
+      [
+        "kdbus_node_init",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        108
+      ],
+      [
+        "kdbus_node_is_active",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        24
+      ],
+      [
+        "kdbus_node_is_deactivated",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_node_link",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        544
+      ],
+      [
+        "kdbus_node_next_child",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        396
+      ],
+      [
+        "kdbus_node_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        44
+      ],
+      [
+        "kdbus_node_release",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_node_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        224
+      ],
+      [
+        "kdbus_notify_flush",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        420
+      ],
+      [
+        "kdbus_notify_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        104
+      ],
+      [
+        "kdbus_notify_id_change",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        172
+      ],
+      [
+        "kdbus_notify_name_change",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        240
+      ],
+      [
+        "kdbus_notify_reply_dead",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        140
+      ],
+      [
+        "kdbus_notify_reply_timeout",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        140
+      ],
+      [
+        "kdbus_policy_db_clear",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        192
+      ],
+      [
+        "kdbus_policy_db_init",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        56
+      ],
+      [
+        "kdbus_policy_query",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_policy_query_unlocked",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        500
+      ],
+      [
+        "kdbus_policy_remove_owner",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        56
+      ],
+      [
+        "kdbus_policy_set",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1636
+      ],
+      [
+        "kdbus_pool_accounted",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        72
+      ],
+      [
+        "kdbus_pool_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        156
+      ],
+      [
+        "kdbus_pool_mmap",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        300
+      ],
+      [
+        "kdbus_pool_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        548
+      ],
+      [
+        "kdbus_pool_publish_empty",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        52
+      ],
+      [
+        "kdbus_pool_release_offset",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        152
+      ],
+      [
+        "kdbus_pool_slice_alloc",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        644
+      ],
+      [
+        "kdbus_pool_slice_copy",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        640
+      ],
+      [
+        "kdbus_pool_slice_copy_iovec",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        260
+      ],
+      [
+        "kdbus_pool_slice_copy_kvec",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        260
+      ],
+      [
+        "kdbus_pool_slice_offset",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "kdbus_pool_slice_publish",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        144
+      ],
+      [
+        "kdbus_pool_slice_release",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        168
+      ],
+      [
+        "kdbus_pool_slice_size",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "kdbus_queue_entry_enqueue",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_queue_entry_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        20
+      ],
+      [
+        "kdbus_queue_entry_install",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        128
+      ],
+      [
+        "kdbus_queue_entry_move",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        304
+      ],
+      [
+        "kdbus_queue_entry_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        200
+      ],
+      [
+        "kdbus_queue_init",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        28
+      ],
+      [
+        "kdbus_queue_peek",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        76
+      ],
+      [
+        "kdbus_reply_find",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        116
+      ],
+      [
+        "kdbus_reply_link",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        100
+      ],
+      [
+        "kdbus_reply_list_scan_work",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        404
+      ],
+      [
+        "kdbus_reply_new",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        272
+      ],
+      [
+        "kdbus_reply_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_reply_unlink",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        116
+      ],
+      [
+        "kdbus_reply_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        100
+      ],
+      [
+        "kdbus_sanitize_attach_flags",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        72
+      ],
+      [
+        "kdbus_staging_emit",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        1108
+      ],
+      [
+        "kdbus_staging_free",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        32
+      ],
+      [
+        "kdbus_staging_new_kernel",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        204
+      ],
+      [
+        "kdbus_staging_new_user",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        2400
+      ],
+      [
+        "kdbus_sync_reply_wakeup",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        80
+      ],
+      [
+        "kdbus_user_lookup",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        444
+      ],
+      [
+        "kdbus_user_ref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        96
+      ],
+      [
+        "kdbus_user_unref",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        260
+      ],
+      [
+        "kdbus_verify_uid_prefix",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        176
+      ],
+      [
+        "kernel_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kfree",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kill_anon_super",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmalloc_caches",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmap_high",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmem_cache_alloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmem_cache_destroy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmem_cache_free",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmemdup_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kobject_create_and_add",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kobject_put",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "krealloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kstrdup",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ktime_get",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ktime_get_with_offset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kunmap_high",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "lockref_get",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "make_kgid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "make_kuid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mark_page_accessed",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memchr",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memcpy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memdup_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memfd_fcntl",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memmove",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "movable_zone",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_unlock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "noop_llseek",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "nsecs_to_jiffies",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "page_address",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "path_get",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "path_put",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "pid_nr_ns",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "poll_freewait",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "poll_initwait",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "poll_schedule_timeout",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "prepare_to_wait_event",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "put_pid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "put_unused_fd",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "queue_delayed_work_on",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_erase",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_first",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_insert_color",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_next",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "rb_replace_node",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "refcount_warn_saturate",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "register_filesystem",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "schedule",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "security_current_getsecid_subj",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "security_release_secctx",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "security_secid_to_secctx",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "set_anon_super",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "set_nlink",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "sget",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "shmem_file_setup",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "simple_statfs",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "snprintf",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strcmp",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strlen",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strncmp",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strndup_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strrchr",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "system_wq",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "task_cgroup_path",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "truncate_inode_pages_final",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "unlock_new_inode",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "unregister_filesystem",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "up_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "up_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "vfs_iter_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "warn_slowpath_fmt",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "wrap_directory_iterator",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 1384,
+      "R_ARM_JUMP24": 58,
+      "R_ARM_MOVW_ABS_NC": 181,
+      "R_ARM_MOVT_ABS": 181,
+      "R_ARM_ABS32": 241,
+      "R_ARM_REL32": 83,
+      "R_ARM_PREL31": 202,
+      "R_ARM_NONE": 22
+    },
+    "mapping_symbols": {
+      "$d": 177,
+      "$a": 114
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "fe2cf02464225f29b0efe95543a5fd75239f4c56e28c8385c548fa57c48e990e"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 65668,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "c536d7d903298d9c2d9b99a46093795b2cbf1907cf888d59a2da8294eddc3ec2"
+      },
+      {
+        "name": ".init.text",
+        "size": 144,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "92156cbf5bddfd58bdcdd168dcdb0ce4499bc7d8f93fa66e2dd1ef2db665f278"
+      },
+      {
+        "name": ".exit.text",
+        "size": 44,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "677b6194373a0977729bf328ed2a11232b18f7e2740c1435c71e84a577382989"
+      },
+      {
+        "name": "__bug_table",
+        "size": 24,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": "4986567cd999ced7d82ae7e35c4a340fad59efce7c2e69c64f57d3c44043e41a"
+      },
+      {
+        "name": ".data",
+        "size": 48,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "ed0dea56647abb89ff8c66732e122b1fc75fefc0b1c1e74118bf92ce1e28e69b"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".data..once",
+        "size": 3,
+        "flags": 3,
+        "alignment": 1,
+        "sha256": "709e80c88487a2411e1ee4dfb9f22a861492d20c4765150c0c794abd70f8147c"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "ad1aa75b31e618512a28f7bb4180e121f7140fe495f0a66ed9be3a385e123356"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".rodata",
+        "size": 928,
+        "flags": 2,
+        "alignment": 64,
+        "sha256": "327a6ff63859c9ba7add23b0aa55c0ed4c94846adb78568d77a09d643d286f80"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 1136,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "b546657702b79db95652d7597b6461452b40e1efbf2616ea7eb98f315b397246"
+      },
+      {
+        "name": ".alt.smp.init",
+        "size": 664,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "67a5aa8a6b33deb676a98f27555a7fb806e08a109843d027bab8d4bfa334298f"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 792,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "376f8a8df4a3b3b074bc574f63a79fbc56179e4545ac4f7bee322737cbb2e5d3"
+      },
+      {
+        "name": ".ARM.extab.init.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.init.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "299902bd3a22d8375673fd75c43bd9f491261c5cf43d5a60d96465bfec627e31"
+      },
+      {
+        "name": ".ARM.extab.exit.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.exit.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "436fbfeadb2a400bce2e5ecf6f3ec929a6de7f55d17ee4544a96369294311cc7"
+      },
+      {
+        "name": ".modinfo",
+        "size": 221,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "5cb0046b7a45430b4e282792e2f42f7c4121e4d4da55154c8577d092591a024f"
+      },
+      {
+        "name": ".rodata.str",
+        "size": 61,
+        "flags": 50,
+        "alignment": 1,
+        "sha256": "0c6ca7e1482f445de90fe965ee751e83de7555942d603a503987ef006fbb9d92"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "1d43a5535e9145f0fa4c29e65341893fa82ac3fc1a636ebb83de3b69a2b691b6"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 1576,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "a4cab9121565a920e0e8b6a47501a653c60c33d1f2ef1690045e27bd348f98e6"
+      },
+      {
+        "name": "__versions",
+        "size": 9792,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "cfd20a41b9a327dedbae11fbaa6183d1c1b8bbc2cc73d7e7600ca9af04ff9e88"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 12,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko": {
+    "sha256": "3ffad4ad555d3769084b6d41e89a176a4e356c41f533ded6b6aa4b19cbd7b3e0",
+    "bytes": 22716,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 51
+    },
+    "build_ids": [
+      "266df838fb93dfade6db54a4ec753773c2eff537"
+    ],
+    "modinfo": {
+      "description": [
+        "Android Logger"
+      ],
+      "author": [
+        "Robert Love, <[email-redacted]>"
+      ],
+      "license": [
+        "GPL"
+      ],
+      "parm": [
+        "system_buffer_size:Size of the /dev/system buffer",
+        "radio_buffer_size:Size of the /dev/radio buffer",
+        "events_buffer_size:Size of the /dev/events buffer",
+        "main_buffer_size:Size of the /dev/main buffer"
+      ],
+      "parmtype": [
+        "system_buffer_size:int",
+        "radio_buffer_size:int",
+        "events_buffer_size:int",
+        "main_buffer_size:int"
+      ],
+      "srcversion": [
+        "399ECEA94E242CAEC4C1FFE"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "logger"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 40,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__init_waitqueue_head",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_cache_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mutex_init",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "__wake_up",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_copy_from_iter",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_printk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_raw_spin_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_from_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_to_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "autoremove_wake_function",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "capable",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".exit.text",
+        "DEFAULT",
+        112
+      ],
+      [
+        "file_path",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "filp_close",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "filp_open",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "finish_wait",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "in_egroup_p",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".init.text",
+        "DEFAULT",
+        176
+      ],
+      [
+        "kfree",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmalloc_caches",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kstrdup",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ktime_get_real_ts64",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memcpy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memmove",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "misc_deregister",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "misc_register",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_unlock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "nonseekable_open",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "param_ops_int",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "prepare_to_wait",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "schedule",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strlen",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "vfree",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "vmalloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "warn_slowpath_fmt",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 122,
+      "R_ARM_MOVW_ABS_NC": 28,
+      "R_ARM_MOVT_ABS": 27,
+      "R_ARM_ABS32": 45,
+      "R_ARM_PREL31": 13,
+      "R_ARM_NONE": 3,
+      "R_ARM_REL32": 2
+    },
+    "mapping_symbols": {
+      "$d": 23,
+      "$a": 7
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "fbbceb114f9f4997f74ce4d85ff1832ab2b73128b37ac0959a8518621f0a04ce"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 5808,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "1d8fc2bb3fc06806b58452496a25e1eecd14703f5c22667987385430d3f9f08c"
+      },
+      {
+        "name": ".exit.text",
+        "size": 112,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "a8bab4fd00dba4e7e7df9b5d353d2c2f102f4ecb429a18bbaeefc90e037e942d"
+      },
+      {
+        "name": ".init.text",
+        "size": 524,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "57abf5d052ffc6cbdb536f4d13a8e1574b7102421fd0be2c8b0ec2091bcd93e0"
+      },
+      {
+        "name": "__bug_table",
+        "size": 12,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": "e0159788ffaa441552b4422ff0225fe779c35473d2b020b0c5b7c84595c7a7b4"
+      },
+      {
+        "name": ".data",
+        "size": 28,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "a760333ce74d750457ccda83fb6d0cd6f382966b3db0d4eb790e3648e02ba1d9"
+      },
+      {
+        "name": ".data..once",
+        "size": 1,
+        "flags": 3,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "bb1de65a206fe967db390b7b1c34b424bffc1cc9a9e6378f86984d72cc32edc3"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 80,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "6777de9a69b8a77e8d586239c1cb27b6792f8401f9a1e4f6fe6113ebd9c4ef6a"
+      },
+      {
+        "name": ".ARM.extab.exit.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.exit.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "57dc1c09440095cf678f7e3a3eb8cc534adfb1714e691576547dfe3ab403ca91"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 192,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "e4f38db0698e29d7c12dbaa1c437770f6bd85a9fd2ede87ec7f9bdbfc966695b"
+      },
+      {
+        "name": ".ARM.extab.init.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.init.text",
+        "size": 16,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "c7fa83134c859f44dfdeee46e5b7b63835d1b382ad2a8532c8c627803894cec6"
+      },
+      {
+        "name": ".rodata",
+        "size": 217,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "4a341e08e59d665cfdb60c74287f74cc1a60127c2b32c444ba2f6c53581e7bc0"
+      },
+      {
+        "name": ".alt.smp.init",
+        "size": 16,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "4331407886e7a0e7e2e7943025446cfa5402481cb44a59805af8b04b1342e6df"
+      },
+      {
+        "name": ".rodata.str",
+        "size": 26,
+        "flags": 50,
+        "alignment": 1,
+        "sha256": "a7a3d32b414c643a699f30d43801a1ab074b1efb2ff7f00dbef4e37c5895bdba"
+      },
+      {
+        "name": ".modinfo",
+        "size": 542,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "43fd8a687645639aa3a57f348603aea9540c620c6e906548e74b1421fceb9115"
+      },
+      {
+        "name": "__param",
+        "size": 80,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "8f5410cc275282ec13f6ac5b95886ec3eb56c1ca6402820addfec9d2a27e8f0a"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "8a4ccea0d9d6bfbfecfc7ed7a9c35c6268486c28218e9df58d7778671fed1fca"
+      },
+      {
+        "name": "__versions",
+        "size": 2560,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "baa12bd5014eb283fc0a44d32aaa0ed2c47357dc1919e57c7f0c25ae3ab135e9"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 0,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko": {
+    "sha256": "1dbfb123e1e150106eb1cb6157fc0c7281772c0c9a22b0bae987debc44c87441",
+    "bytes": 10216,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 46
+    },
+    "build_ids": [
+      "871d91d753b4ba73b509ace8f89507d387ae8ce4"
+    ],
+    "modinfo": {
+      "license": [
+        "GPL"
+      ],
+      "parmtype": [
+        "blacklist:array of charp"
+      ],
+      "srcversion": [
+        "4AAA2EAB4A1F60715A4F1E3"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "proc_tsm"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 24,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "_raw_spin_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".exit.text",
+        "DEFAULT",
+        16
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".init.text",
+        "DEFAULT",
+        56
+      ],
+      [
+        "init_task",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ktime_get_with_offset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "param_array_ops",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "param_ops_charp",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "proc_create",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "remove_proc_entry",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "security_cred_getsecid",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "security_secid_to_secctx",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "seq_lseek",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "seq_printf",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "seq_put_decimal_ll",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "seq_put_decimal_ull",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "seq_read",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "si_meminfo",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "single_open_size",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "single_release",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strcmp",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "thread_group_cputime_adjusted",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 24,
+      "R_ARM_MOVW_ABS_NC": 12,
+      "R_ARM_MOVT_ABS": 12,
+      "R_ARM_JUMP24": 2,
+      "R_ARM_ABS32": 18,
+      "R_ARM_PREL31": 4,
+      "R_ARM_NONE": 3,
+      "R_ARM_REL32": 3
+    },
+    "mapping_symbols": {
+      "$d": 20,
+      "$a": 7
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "01f66c105c906ffc499452bae6ac0a50be98447f0af8d7bf56429545bac8126a"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 1304,
+        "flags": 6,
+        "alignment": 8,
+        "sha256": "1bb75409183098c5c72436f8b7219b141af0ea291c4c8c739e627e8a0d276a7d"
+      },
+      {
+        "name": ".init.text",
+        "size": 56,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "c90bf7d92904ac5ed988c6a3e2ba8bb3885e0d2906750f496ddc882d0fa80d02"
+      },
+      {
+        "name": ".exit.text",
+        "size": 16,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "6c7ebcf74deb8564017b9972f66d8b4af7589e4f649afa54255d4b4d48dad916"
+      },
+      {
+        "name": ".data",
+        "size": 0,
+        "flags": 3,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "4f0306b3a6b93c2d09a5d7dc5580756eaa7b93e352abdbf8a95b23aebf47ff78"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 14,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "7021ec07d1f17dc26576f4d6af286b19b304d0446f8b2b33761410a7912ee02d"
+      },
+      {
+        "name": ".ARM.extab.init.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.init.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "436fbfeadb2a400bce2e5ecf6f3ec929a6de7f55d17ee4544a96369294311cc7"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 16,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "c1a0c5efbe098684afa34bdc5621a1dfd2a87b36a5b813c005274b2f126709e7"
+      },
+      {
+        "name": ".ARM.extab.exit.text",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.exit.text",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "c47ae87ea8e63ba396f5abba4b49fadff53d8963dc21c8aff2e11aa78ef6a68b"
+      },
+      {
+        "name": ".alt.smp.init",
+        "size": 24,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "3ecbf8da129d9af4cb9ea3c4ec86fcf624c3ff503798a76e002e75f7a32cb05a"
+      },
+      {
+        "name": ".rodata",
+        "size": 76,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "e411e58a449b0e45d6806facd5d6b118c6e550a4b8c0ba04966c8071b1847375"
+      },
+      {
+        "name": ".modinfo",
+        "size": 173,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "5974ba6a2fe986303fa97a5282f25656c9bb12db8fc75ed471652a094a3466a4"
+      },
+      {
+        "name": "__param",
+        "size": 20,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "bd60c31ea3b77ddd35dcbf96929896824b8f9c8308da7583a759b48752068c39"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 12,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "5a49169672ac8050fec59857e8f69c4c296d463f438ec91856f4b296dff2aae1"
+      },
+      {
+        "name": "__versions",
+        "size": 1536,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "58ea2f5ff961f1ea246b1141b79c58fa38d1d918d0acad80104180a8a139072e"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 44,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": null
+      }
+    ]
+  },
+  "lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko": {
+    "sha256": "5a0487603ba4911d66c296521d5a06a089dfb2eed7f464fb9c4b134bd4df5931",
+    "bytes": 29324,
+    "header": {
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "endianness": "little",
+      "type": "ET_REL",
+      "elf_flags": "0x5000000",
+      "elf_flags_value": 83886080,
+      "arm_eabi_version": 5,
+      "arm_float_abi": "unspecified",
+      "osabi": 0,
+      "abi_version": 0,
+      "section_count": 44
+    },
+    "build_ids": [
+      "62c88091785560bb9c0bca34814d67e18a9a7a54"
+    ],
+    "modinfo": {
+      "description": [
+        "Tizen zero copy logger"
+      ],
+      "author": [
+        "Marek Szyprowski <[email-redacted]",
+        "Mateusz Majewski <[email-redacted]",
+        "Arkadiusz Nowak <[email-redacted]>",
+        "jh1009.sung <[email-redacted]>"
+      ],
+      "license": [
+        "GPL"
+      ],
+      "parmtype": [
+        "zlog_enable:int"
+      ],
+      "srcversion": [
+        "783016C30C9089792BF67AC"
+      ],
+      "depends": [
+        ""
+      ],
+      "name": [
+        "zlogger"
+      ],
+      "vermagic": [
+        "6.12.80-arm-rpi4-v7l SMP mod_unload modversions ARMv7 p2v8 "
+      ]
+    },
+    "signature": {
+      "present": false,
+      "status": "ABSENT"
+    },
+    "import_crc_count": 52,
+    "exports": [],
+    "symbol_interface": [
+      [
+        "__aeabi_unwind_cpp_pr0",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__aeabi_unwind_cpp_pr1",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__bitmap_or",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__gnu_mcount_nc",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_cache_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_large_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__kmalloc_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mmap_lock_do_trace_acquire_returned",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mmap_lock_do_trace_released",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mmap_lock_do_trace_start_locking",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__mutex_init",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__pv_phys_pfn_offset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stack_chk_fail",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__start_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__stop_alloc_tags",
+        "GLOBAL",
+        ".data",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__this_module",
+        "GLOBAL",
+        ".gnu.linkonce.this_module",
+        "DEFAULT",
+        768
+      ],
+      [
+        "__tracepoint_mmap_lock_acquire_returned",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__tracepoint_mmap_lock_released",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "__tracepoint_mmap_lock_start_locking",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_clear_bit",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_printk",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "_set_bit",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_from_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "arm_copy_to_user",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "cleanup_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        184
+      ],
+      [
+        "down_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "down_write_killable",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "free_pages",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "get_free_pages_noprof",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "init_module",
+        "GLOBAL",
+        ".text",
+        "DEFAULT",
+        716
+      ],
+      [
+        "kfree",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kmalloc_caches",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kthread_create_on_node",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kthread_should_stop",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "kthread_stop",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "ktime_get",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mem_map",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memcpy",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "memset",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "misc_deregister",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "misc_register",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mmput",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_is_locked",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_lock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "mutex_unlock",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "nonseekable_open",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "param_ops_int",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "remap_pfn_range",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "schedule_timeout_interruptible",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "strnlen",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "trace_clock_local",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "up_write",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "vmf_insert_pfn",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "wake_up_process",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "warn_slowpath_fmt",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ],
+      [
+        "zap_vma_ptes",
+        "GLOBAL",
+        "UND",
+        "DEFAULT",
+        0
+      ]
+    ],
+    "relocations": {
+      "R_ARM_CALL": 197,
+      "R_ARM_MOVW_ABS_NC": 65,
+      "R_ARM_MOVT_ABS": 65,
+      "R_ARM_ABS32": 112,
+      "R_ARM_JUMP24": 2,
+      "R_ARM_PREL31": 22,
+      "R_ARM_NONE": 3,
+      "R_ARM_REL32": 2
+    },
+    "mapping_symbols": {
+      "$d": 35,
+      "$a": 18
+    },
+    "alloc_sections": [
+      {
+        "name": ".note.gnu.build-id",
+        "size": 36,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "a4f206627b363ce7194f59e7ca5a3ac6499df17af858aa7b33a48761c4ecc181"
+      },
+      {
+        "name": ".note.Linux",
+        "size": 48,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "9eaee5ea5e5544e6132fa275cdb07ebdb072cbef6755b11ec50c8ed71b0800ba"
+      },
+      {
+        "name": ".text",
+        "size": 7732,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "5e483c4c4bc2527be6292b393bb56ec07070c154c38ad5fa6dd3ff041a62fdd6"
+      },
+      {
+        "name": ".text.unlikely",
+        "size": 32,
+        "flags": 6,
+        "alignment": 4,
+        "sha256": "ea95e402cd75c9db0dd2719d140bc703daee05c3de363d54fab607460032c47a"
+      },
+      {
+        "name": "__jump_table",
+        "size": 144,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": "82581aba374d3ad604e64430e8217d575838c0d28b8896f7e6b910b9ea00e9f9"
+      },
+      {
+        "name": ".data",
+        "size": 12,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "c3e42245ffdff31c980d63b232de1414ca2461a08c6efccca2af96737ef4d068"
+      },
+      {
+        "name": ".exit.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".init.data",
+        "size": 4,
+        "flags": 3,
+        "alignment": 4,
+        "sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+      },
+      {
+        "name": ".gnu.linkonce.this_module",
+        "size": 768,
+        "flags": 3,
+        "alignment": 64,
+        "sha256": "b055448f214671901883d2c8c71a8b2944d416fabce3e3c2efa763770a5430df"
+      },
+      {
+        "name": ".plt",
+        "size": 1,
+        "flags": 6,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".rodata.str1.4",
+        "size": 1081,
+        "flags": 50,
+        "alignment": 4,
+        "sha256": "6a71cb2c40665a85918c41c8eac86c07d9e996384ce053003f9f57c98fac3980"
+      },
+      {
+        "name": ".ARM.extab.text.unlikely",
+        "size": 0,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": ".ARM.exidx.text.unlikely",
+        "size": 8,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "436fbfeadb2a400bce2e5ecf6f3ec929a6de7f55d17ee4544a96369294311cc7"
+      },
+      {
+        "name": ".ARM.extab",
+        "size": 12,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "2bc65f34858ddbf45437391b6c83c534896f91320aaf713c93ac4fd498a5fc4a"
+      },
+      {
+        "name": ".ARM.exidx",
+        "size": 160,
+        "flags": 130,
+        "alignment": 4,
+        "sha256": "2f4fe723e698c21b7c90702f185d5aba62f863f81b82cbe1c666a17ece5d1e38"
+      },
+      {
+        "name": ".alt.smp.init",
+        "size": 16,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "e4501c9105e93c679d124e95d1b9acc3e0a1a2cd12ea4ff8e036f60ebf9c5e60"
+      },
+      {
+        "name": ".rodata",
+        "size": 368,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "73ea3e82b4e704826ed2cb8da456495741156a6ef3701e216055558746ea3f26"
+      },
+      {
+        "name": ".modinfo",
+        "size": 388,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "27e1994cdf6c7b0c6728c04ea34edd61c7082feec05e6df8a6290b130cc23591"
+      },
+      {
+        "name": "__param",
+        "size": 20,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "6212db20a91e233b603f10819b4ef0c9ebe14906a0a3fe2b824691302c1ac258"
+      },
+      {
+        "name": "__mcount_loc",
+        "size": 84,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "6801fb1908d8c62eb174321625b74164d64ee1045566ebef605202b1939d3eb9"
+      },
+      {
+        "name": "__versions",
+        "size": 3328,
+        "flags": 2,
+        "alignment": 4,
+        "sha256": "b9ae7dbcf40131538b5159e0134c28d03a31422758c0b6dd86f6282157eedc6a"
+      },
+      {
+        "name": ".init.plt",
+        "size": 1,
+        "flags": 2,
+        "alignment": 1,
+        "sha256": "6e340b9cffb37a989ca544e6bb780a2c78901d3fb33738768511a30617afa01d"
+      },
+      {
+        "name": ".bss",
+        "size": 1220,
+        "flags": 3,
+        "alignment": 8,
+        "sha256": null
+      }
+    ]
+  }
+}

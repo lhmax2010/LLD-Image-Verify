@@ -1,0 +1,100 @@
+{
+  "build_context": {
+    "A": {
+      "intermediate_ld_targets": {
+        "114": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o"
+      },
+      "log": "evidence/build/A-build.out",
+      "log_sha256": "81afd0b8e7408d5ccb9622471d54288af4a85f06c58eae690104171eb83e4a98",
+      "receipt_sha256": "f485b56ac491a2014a429f8552d0ec3eb7ae23f3109dee2b817b7aea09cbfe0d"
+    },
+    "B": {
+      "intermediate_ld_targets": {
+        "114": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o"
+      },
+      "log": "evidence/build/B-build.out",
+      "log_sha256": "ead068ec86119232bdced126bf5a848ab5485eae60e7fae1e96fa340d4a3d648",
+      "receipt_sha256": "260b997e31d46ec0e0cee6a749d1ec54547b3b373d6c8f951b4b09d37ac90873"
+    }
+  },
+  "modules": {
+    "dm-bow.ko": {
+      "bytes_A_B": [
+        31868,
+        31868
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+        "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d"
+      ]
+    },
+    "extcon-usb-fixed.ko": {
+      "bytes_A_B": [
+        6156,
+        6156
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+        "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb"
+      ]
+    },
+    "inform-reboot.ko": {
+      "bytes_A_B": [
+        7052,
+        7052
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+        "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f"
+      ]
+    },
+    "kdbus/kdbus.ko": {
+      "bytes_A_B": [
+        162584,
+        161292
+      ],
+      "identical": false,
+      "sha256_A_B": [
+        "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+        "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860"
+      ]
+    },
+    "logger.ko": {
+      "bytes_A_B": [
+        23664,
+        23664
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+        "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520"
+      ]
+    },
+    "proc-tsm.ko": {
+      "bytes_A_B": [
+        10680,
+        10680
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+        "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531"
+      ]
+    },
+    "zlogger/zlogger.ko": {
+      "bytes_A_B": [
+        31628,
+        31628
+      ],
+      "identical": true,
+      "sha256_A_B": [
+        "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+        "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98"
+      ]
+    }
+  },
+  "scope": "Phase 12 same build A/B seven-module sample after modules_install with strip"
+}

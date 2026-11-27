@@ -1,0 +1,5 @@
+/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/evidence/build/historical-base/llvm-22.1.8-1.6.armv7l.rpm:
+    Header SHA256 digest: OK
+    Header SHA1 digest: OK
+    Payload SHA256 digest: OK
+    MD5 digest: OK

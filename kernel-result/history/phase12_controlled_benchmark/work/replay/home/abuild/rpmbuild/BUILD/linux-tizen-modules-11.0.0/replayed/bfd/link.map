@@ -1,0 +1,952 @@
+
+There are no discarded input sections
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+LOAD /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.init
+ *(.rel.init)
+
+.rela.init
+ *(.rela.init)
+
+.rel.text
+ *(.rel.text)
+
+.rela.text
+ *(.rela.text)
+
+.rel.fini
+ *(.rel.fini)
+
+.rela.fini
+ *(.rela.fini)
+
+.rel.rodata
+ *(.rel.rodata)
+
+.rela.rodata
+ *(.rela.rodata)
+
+.rel.data.rel.ro
+ *(.rel.data.rel.ro)
+
+.rela.data.rel.ro
+ *(.rela.data.rel.ro)
+
+.rel.data
+ *(.rel.data)
+
+.rela.data
+ *(.rela.data)
+
+.rel.tdata
+ *(.rel.tdata)
+
+.rela.tdata
+ *(.rela.tdata)
+
+.rel.tbss
+ *(.rel.tbss)
+
+.rela.tbss
+ *(.rela.tbss)
+
+.rel.ctors
+ *(.rel.ctors)
+
+.rela.ctors
+ *(.rela.ctors)
+
+.rel.dtors
+ *(.rel.dtors)
+
+.rela.dtors
+ *(.rela.dtors)
+
+.rel.got
+ *(.rel.got)
+
+.rela.got
+ *(.rela.got)
+
+.rel.bss
+ *(.rel.bss)
+
+.rela.bss
+ *(.rela.bss)
+
+.rel.iplt
+ *(.rel.iplt)
+
+.rela.iplt
+ *(.rela.iplt)
+
+.rel.plt
+ *(.rel.plt)
+
+.rela.plt
+ *(.rela.plt)
+
+.init
+ *(SORT_NONE(.init))
+
+.plt
+ *(.plt)
+
+.iplt
+ *(.iplt)
+
+.text           0x00000000    0x10764
+ *(.text .stub)
+ .text          0x00000000      0xcbc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+                0x00000000                kdbus_bus_ref
+                0x0000002c                kdbus_bus_unref
+                0x00000058                kdbus_bus_find_conn_by_id
+                0x000000e0                kdbus_bus_broadcast
+                0x00000238                kdbus_bus_eavesdrop
+                0x000002c4                kdbus_cmd_bus_make
+                0x0000084c                kdbus_cmd_bus_creator_info
+ .text          0x00000cbc     0x3688 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+                0x00000cbc                kdbus_conn_ref
+                0x00000d2c                kdbus_conn_unref
+                0x00000f28                kdbus_conn_active
+                0x00000f4c                kdbus_conn_acquire
+                0x00000fb0                kdbus_conn_release
+                0x00001014                kdbus_conn_disconnect
+                0x00001400                kdbus_conn_has_name
+                0x00001460                kdbus_conn_quota_inc
+                0x000015b4                kdbus_conn_quota_dec
+                0x00001690                kdbus_conn_lost_message
+                0x000016e8                kdbus_conn_entry_insert
+                0x00001860                kdbus_conn_move_messages
+                0x00001b64                kdbus_conn_policy_own_name
+                0x00001b7c                kdbus_conn_policy_talk
+                0x00001b94                kdbus_conn_policy_see_name_unlocked
+                0x00001bac                kdbus_conn_policy_see_notification
+                0x00001c48                kdbus_cmd_hello
+                0x000028a4                kdbus_cmd_byebye_unlocked
+                0x00002994                kdbus_cmd_conn_info
+                0x00002e20                kdbus_cmd_update
+                0x00003010                kdbus_cmd_send
+                0x00003d14                kdbus_cmd_recv
+                0x00004048                kdbus_cmd_free
+ .text          0x00004344      0x5c8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+                0x00004344                kdbus_ep_new
+                0x00004584                kdbus_ep_ref
+                0x000045b0                kdbus_ep_unref
+                0x000045dc                kdbus_ep_is_privileged
+                0x00004620                kdbus_ep_is_owner
+                0x00004680                kdbus_cmd_ep_make
+                0x00004800                kdbus_cmd_ep_update
+ .text          0x0000490c      0x9b0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+                0x0000490c                kdbus_fs_init
+                0x0000492c                kdbus_fs_exit
+                0x0000494c                kdbus_fs_flush
+ .text          0x000052bc      0xdf8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+                0x000052bc                __kdbus_args_parse
+                0x0000584c                kdbus_args_clear
+ .text          0x000060b4      0x4bc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+                0x000060b4                kdbus_item_validate_name
+                0x000061c4                kdbus_item_validate
+                0x00006444                kdbus_items_validate
+                0x000064d8                kdbus_item_set
+ .text          0x00006570        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .text          0x00006570      0xe5c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+                0x00006570                kdbus_init_cache_create
+                0x00006650                kdbus_init_cache_destroy
+                0x000066a4                kdbus_match_db_free
+                0x00006768                kdbus_match_db_new
+                0x000067d0                kdbus_match_db_match_msg
+                0x00006ae0                kdbus_cmd_match_add
+                0x000071e4                kdbus_cmd_match_remove
+ .text          0x000073cc     0x1684 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+                0x000073cc                kdbus_gaps_ref
+                0x0000743c                kdbus_gaps_unref
+                0x0000752c                kdbus_gaps_install
+                0x00007988                kdbus_staging_new_kernel
+                0x00007bcc                kdbus_staging_new_user
+                0x00008548                kdbus_staging_free
+                0x0000858c                kdbus_staging_emit
+ .text          0x00008a50     0x248c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+                0x00008a50                kdbus_meta_proc_new
+                0x00008ab8                kdbus_meta_proc_ref
+                0x00008b28                kdbus_meta_proc_unref
+                0x00008c18                kdbus_meta_proc_collect
+                0x00009130                kdbus_meta_fake_new
+                0x00009164                kdbus_meta_fake_free
+                0x000091b0                kdbus_meta_fake_collect
+                0x000095b0                kdbus_meta_conn_new
+                0x00009618                kdbus_meta_conn_ref
+                0x00009688                kdbus_meta_conn_unref
+                0x00009710                kdbus_meta_conn_collect
+                0x000099c4                kdbus_meta_emit
+                0x0000abc8                kdbus_meta_info_mask
+                0x0000ae20                kdbus_meta_msg_mask
+ .text          0x0000aedc     0x16f4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+                0x0000aedc                kdbus_name_registry_new
+                0x0000af50                kdbus_name_registry_free
+                0x0000afc0                kdbus_name_lookup_unlocked
+                0x0000b060                kdbus_name_acquire
+                0x0000b7dc                kdbus_name_release_all
+                0x0000ba88                kdbus_name_is_valid
+                0x0000bb84                kdbus_cmd_name_acquire
+                0x0000bd54                kdbus_cmd_name_release
+                0x0000bf1c                kdbus_cmd_list
+ .text          0x0000c5d0      0xda8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+                0x0000c5d0                kdbus_node_init
+                0x0000c644                kdbus_node_link
+                0x0000c8cc                kdbus_node_acquire
+                0x0000c940                kdbus_node_ref
+                0x0000c97c                kdbus_node_release
+                0x0000c9e0                kdbus_node_unref
+                0x0000cb94                kdbus_node_is_active
+                0x0000cbb8                kdbus_node_is_deactivated
+                0x0000cbec                kdbus_node_activate
+                0x0000cc70                kdbus_node_deactivate
+                0x0000cf3c                kdbus_node_find_child
+                0x0000d09c                kdbus_node_find_closest
+                0x0000d188                kdbus_node_next_child
+ .text          0x0000d378      0x534 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+                0x0000d378                kdbus_notify_reply_timeout
+                0x0000d428                kdbus_notify_reply_dead
+                0x0000d4d8                kdbus_notify_name_change
+                0x0000d5ec                kdbus_notify_id_change
+                0x0000d6b8                kdbus_notify_flush
+                0x0000d858                kdbus_notify_free
+ .text          0x0000d8ac      0x690 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+                0x0000d8ac                kdbus_domain_new
+                0x0000da88                kdbus_domain_ref
+                0x0000dab4                kdbus_domain_unref
+                0x0000dae0                kdbus_domain_populate
+                0x0000dbb8                kdbus_user_lookup
+                0x0000dd98                kdbus_user_ref
+                0x0000de08                kdbus_user_unref
+ .text          0x0000df3c      0xa88 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+                0x0000df3c                kdbus_policy_db_clear
+                0x0000e02c                kdbus_policy_db_init
+                0x0000e06c                kdbus_policy_query_unlocked
+                0x0000e220                kdbus_policy_query
+                0x0000e274                kdbus_policy_remove_owner
+                0x0000e398                kdbus_policy_set
+ .text          0x0000e9c4      0xee8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+                0x0000e9c4                kdbus_pool_slice_alloc
+                0x0000ec30                kdbus_pool_slice_release
+                0x0000ee64                kdbus_pool_release_offset
+                0x0000eefc                kdbus_pool_publish_empty
+                0x0000ef3c                kdbus_pool_slice_publish
+                0x0000efc8                kdbus_pool_slice_offset
+                0x0000efe4                kdbus_pool_slice_size
+                0x0000f000                kdbus_pool_new
+                0x0000f228                kdbus_pool_free
+                0x0000f2bc                kdbus_pool_accounted
+                0x0000f308                kdbus_pool_slice_copy_iovec
+                0x0000f40c                kdbus_pool_slice_copy_kvec
+                0x0000f510                kdbus_pool_slice_copy
+                0x0000f77c                kdbus_pool_mmap
+ .text          0x0000f8ac      0x5c8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+                0x0000f8ac                kdbus_reply_new
+                0x0000f9c4                kdbus_reply_ref
+                0x0000fa34                kdbus_reply_unref
+                0x0000fadc                kdbus_reply_link
+                0x0000fb88                kdbus_reply_unlink
+                0x0000fbd4                kdbus_sync_reply_wakeup
+                0x0000fc3c                kdbus_reply_find
+                0x0000fca0                kdbus_reply_list_scan_work
+ .text          0x0000fe74      0x664 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+                0x0000fe74                kdbus_queue_init
+                0x0000fe9c                kdbus_queue_peek
+                0x0000fef4                kdbus_queue_entry_new
+                0x0000ffcc                kdbus_queue_entry_free
+                0x000100ec                kdbus_queue_entry_install
+                0x00010170                kdbus_queue_entry_enqueue
+                0x00010300                kdbus_queue_entry_move
+ .text          0x000104d8      0x28c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+                0x000104d8                kdbus_copy_from_user
+                0x000105d8                kdbus_verify_uid_prefix
+                0x00010694                kdbus_sanitize_attach_flags
+                0x000106dc                kdbus_kvec_set
+                0x00010714                kdbus_kvec_pad
+ *(.gnu.warning)
+
+.init.text      0x00000000       0xa0
+ .init.text     0x00000000       0xa0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+                0x00000000                init_module
+
+.exit.text      0x00000000       0x30
+ .exit.text     0x00000000       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+                0x00000000                cleanup_module
+
+.fini
+ *(SORT_NONE(.fini))
+
+.rodata         0x00000000      0x4e8
+ *(.rodata)
+ .rodata        0x00000000      0x120 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ *fill*         0x00000120       0x20 
+ .rodata        0x00000140      0x280 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .rodata        0x000003c0       0x84 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+                0x000003c0                kdbus_handle_ops
+ *fill*         0x00000444        0x4 
+ .rodata        0x00000448       0xa0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+
+.alt.smp.init   0x00000000      0x2c8
+ .alt.smp.init  0x00000000       0x28 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .alt.smp.init  0x00000028       0xb8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .alt.smp.init  0x000000e0       0x28 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .alt.smp.init  0x00000108       0x80 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .alt.smp.init  0x00000188       0xa0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .alt.smp.init  0x00000228       0x28 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .alt.smp.init  0x00000250       0x28 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .alt.smp.init  0x00000278       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .alt.smp.init  0x00000298       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+
+.rodata.str1.1  0x00000000      0x679
+ .rodata.str1.1
+                0x00000000       0x74 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .rodata.str1.1
+                0x00000074       0x98 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .rodata.str1.1
+                0x0000010c       0x58 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .rodata.str1.1
+                0x00000164       0x56 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .rodata.str1.1
+                0x000001ba        0xe /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .rodata.str1.1
+                0x000001c8       0x45 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .rodata.str1.1
+                0x0000020d       0x8a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .rodata.str1.1
+                0x00000297       0xb0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .rodata.str1.1
+                0x00000347       0x68 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .rodata.str1.1
+                0x000003af       0x57 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .rodata.str1.1
+                0x00000406       0x64 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .rodata.str1.1
+                0x0000046a       0x5e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .rodata.str1.1
+                0x000004c8       0x14 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .rodata.str1.1
+                0x000004dc       0xe5 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .rodata.str1.1
+                0x000005c1       0x4c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .rodata.str1.1
+                0x0000060d       0x4c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .rodata.str1.1
+                0x00000659       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.rodata.cst16   0x00000000       0x50
+ .rodata.cst16  0x00000000       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .rodata.cst16  0x00000010       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .rodata.cst16  0x00000020       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .rodata.cst16  0x00000030       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .rodata.cst16  0x00000040       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+
+__mcount_loc    0x00000000      0x2f8
+ __mcount_loc   0x00000000       0x24 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ __mcount_loc   0x00000024       0x70 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ __mcount_loc   0x00000094       0x24 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ __mcount_loc   0x000000b8       0x3c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ __mcount_loc   0x000000f4       0x24 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ __mcount_loc   0x00000118       0x10 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ __mcount_loc   0x00000128        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ __mcount_loc   0x0000012c       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ __mcount_loc   0x0000014c       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ __mcount_loc   0x0000016c       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ __mcount_loc   0x000001ac       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ __mcount_loc   0x000001dc       0x34 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ __mcount_loc   0x00000210       0x18 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ __mcount_loc   0x00000228       0x24 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ __mcount_loc   0x0000024c       0x1c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ __mcount_loc   0x00000268       0x3c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ __mcount_loc   0x000002a4       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ __mcount_loc   0x000002c4       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ __mcount_loc   0x000002e4       0x14 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.rodata.cst32   0x00000000       0x80
+ .rodata.cst32  0x00000000       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .rodata.cst32  0x00000040       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .rodata.cst32  0x00000060       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+
+.ARM.extab.init.text
+                0x00000000        0xc
+ .ARM.extab.init.text
+                0x00000000        0xc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+.ARM.exidx.init.text
+                0x00000000        0x8
+ .ARM.exidx.init.text
+                0x00000000        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+.ARM.exidx.exit.text
+                0x00000000        0x8
+ .ARM.exidx.exit.text
+                0x00000000        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+.modinfo        0x00000000       0x61
+ .modinfo       0x00000000       0x61 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+.rodata.str     0x00000000       0xe3
+ .rodata.str    0x00000000       0x98 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .rodata.str    0x00000098       0x4b /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+
+.rodata.cst8    0x00000000       0x10
+ .rodata.cst8   0x00000000        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .rodata.cst8   0x00000008        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.rodata1
+ *(.rodata1)
+
+.ARM.extab      0x00000000      0x684
+ *(.ARM.extab)
+ .ARM.extab     0x00000000       0x3c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .ARM.extab     0x0000003c       0xe4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .ARM.extab     0x00000120       0x60 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .ARM.extab     0x00000180       0x90 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .ARM.extab     0x00000210       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .ARM.extab     0x00000258       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .ARM.extab     0x00000288       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .ARM.extab     0x000002b8       0x3c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .ARM.extab     0x000002f4       0x78 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .ARM.extab     0x0000036c       0x60 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .ARM.extab     0x000003cc       0x84 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .ARM.extab     0x00000450       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .ARM.extab     0x00000480       0x6c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .ARM.extab     0x000004ec       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .ARM.extab     0x0000051c       0x9c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .ARM.extab     0x000005b8       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .ARM.extab     0x00000600       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .ARM.extab     0x00000648       0x3c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.ARM.exidx      0x00000000      0x5f8
+ *(.ARM.exidx)
+ .ARM.exidx     0x00000000       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .ARM.exidx     0x00000048       0xf0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .ARM.exidx     0x00000138       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .ARM.exidx     0x00000180       0x78 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .ARM.exidx     0x000001f8       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .ARM.exidx     0x00000240       0x20 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .ARM.exidx     0x00000260       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .ARM.exidx     0x000002a0       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .ARM.exidx     0x000002e0       0x80 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .ARM.exidx     0x00000360       0x60 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .ARM.exidx     0x000003c0       0x68 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .ARM.exidx     0x00000428       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .ARM.exidx     0x00000458       0x48 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .ARM.exidx     0x000004a0       0x38 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .ARM.exidx     0x000004d8       0x78 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .ARM.exidx     0x00000550       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .ARM.exidx     0x00000590       0x40 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .ARM.exidx     0x000005d0       0x28 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame
+ *(.eh_frame)
+
+.sframe
+ *(.sframe)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.gnu_extab
+ *(.gnu_extab*)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.eh_frame
+ *(.eh_frame)
+
+.sframe
+ *(.sframe)
+
+.gnu_extab
+ *(.gnu_extab)
+
+.gcc_except_table
+ *(.gcc_except_table)
+
+.exception_ranges
+ *(.exception_ranges)
+
+.tdata
+ *(.tdata)
+
+.tbss
+ *(.tbss)
+
+.jcr
+ *(.jcr)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+
+.data           0x00000000       0x30
+ *(.data)
+ .data          0x00000000       0x24 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .data          0x00000024        0xc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+                0x00000024                kdbus_node_ida
+
+.init.data      0x00000000        0x4
+ .init.data     0x00000000        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+.exit.data      0x00000000        0x4
+ .exit.data     0x00000000        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+
+__bug_table     0x00000000       0x24
+ __bug_table    0x00000000       0x18 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ __bug_table    0x00000018        0xc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+
+.data..once     0x00000000        0x3
+ .data..once    0x00000000        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .data..once    0x00000001        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .data..once    0x00000002        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.data1
+ *(.data1)
+
+.bss            0x00000000       0x1d
+ *(.bss)
+ .bss           0x00000000        0x2 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .bss           0x00000002        0x2 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .bss           0x00000004        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .bss           0x00000005        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ *fill*         0x00000006        0x2 
+ .bss           0x00000008        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .bss           0x0000000c        0x9 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+                0x0000000c                kdbus_match_entry_cachep
+                0x00000010                kdbus_match_rule_cachep
+ .bss           0x00000015        0x2 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .bss           0x00000017        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .bss           0x00000018        0x2 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .bss           0x0000001a        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .bss           0x0000001b        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .bss           0x0000001c        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x00000000      0x1a2
+ *(.comment)
+ .comment       0x00000000       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .comment       0x00000016       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .comment       0x0000002c       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .comment       0x00000042       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .comment       0x00000058       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .comment       0x0000006e       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .comment       0x00000084       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .comment       0x0000009a       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .comment       0x000000b0       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .comment       0x000000c6       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .comment       0x000000dc       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .comment       0x000000f2       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .comment       0x00000108       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .comment       0x0000011e       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .comment       0x00000134       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .comment       0x0000014a       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .comment       0x00000160       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .comment       0x00000176       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .comment       0x0000018c       0x16 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.note.GNU-stack
+                0x00000000        0x0
+ .note.GNU-stack
+                0x00000000        0x0 linker stubs
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .note.GNU-stack
+                0x00000000        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.ARM.attributes
+                0x00000000       0x32
+ .ARM.attributes
+                0x00000000       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .ARM.attributes
+                0x00000036       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .ARM.attributes
+                0x0000006c       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .ARM.attributes
+                0x000000a2       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .ARM.attributes
+                0x000000d8       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .ARM.attributes
+                0x0000010e       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .ARM.attributes
+                0x00000144       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .ARM.attributes
+                0x0000017a       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .ARM.attributes
+                0x000001b0       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .ARM.attributes
+                0x000001e6       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .ARM.attributes
+                0x0000021c       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .ARM.attributes
+                0x00000252       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .ARM.attributes
+                0x00000288       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .ARM.attributes
+                0x000002be       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .ARM.attributes
+                0x000002f4       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .ARM.attributes
+                0x0000032a       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .ARM.attributes
+                0x00000360       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .ARM.attributes
+                0x00000396       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .ARM.attributes
+                0x000003cc       0x36 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.llvm_addrsig   0x00000000       0x44
+ .llvm_addrsig  0x00000000        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .llvm_addrsig  0x00000004        0x6 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .llvm_addrsig  0x0000000a        0x3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .llvm_addrsig  0x0000000d       0x18 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .llvm_addrsig  0x00000025        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .llvm_addrsig  0x0000002d        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .llvm_addrsig  0x0000002d        0x8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .llvm_addrsig  0x00000035        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .llvm_addrsig  0x00000036        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .llvm_addrsig  0x00000037        0x4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .llvm_addrsig  0x0000003b        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .llvm_addrsig  0x0000003c        0x3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .llvm_addrsig  0x0000003f        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .llvm_addrsig  0x0000003f        0x3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .llvm_addrsig  0x00000042        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .llvm_addrsig  0x00000043        0x1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .llvm_addrsig  0x00000044        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .llvm_addrsig  0x00000044        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .llvm_addrsig  0x00000044        0x0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.gnu.build.attributes
+ *(.gnu.build.attributes)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info     0x00000000    0xf23df
+ *(.debug_info)
+ .debug_info    0x00000000     0xbca3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_info    0x0000bca3    0x1a295 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_info    0x00025f38     0xa807 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_info    0x0003073f     0xacd7 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_info    0x0003b416    0x14442 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_info    0x0004f858      0x8dc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_info    0x00050134     0x8b98 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_info    0x00058ccc     0x9587 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_info    0x00062253    0x1b254 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_info    0x0007d4a7    0x14c3e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_info    0x000920e5     0xbe5b /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_info    0x0009df40     0x2aec /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_info    0x000a0a2c     0xaae9 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_info    0x000ab515     0xaa0f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_info    0x000b5f24     0x948b /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_info    0x000bf3af    0x12726 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_info    0x000d1ad5     0xb8cf /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_info    0x000dd3a4    0x137db /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_info    0x000f0b7f     0x1860 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_abbrev   0x00000000     0x64ae
+ *(.debug_abbrev)
+ .debug_abbrev  0x00000000      0x5f0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_abbrev  0x000005f0      0x6d6 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_abbrev  0x00000cc6      0x56e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_abbrev  0x00001234      0x54a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_abbrev  0x0000177e      0x64a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_abbrev  0x00001dc8      0x219 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_abbrev  0x00001fe1      0x3e5 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_abbrev  0x000023c6      0x5a4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_abbrev  0x0000296a      0x651 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_abbrev  0x00002fbb      0x670 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_abbrev  0x0000362b      0x618 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_abbrev  0x00003c43      0x3cf /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_abbrev  0x00004012      0x4b3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_abbrev  0x000044c5      0x582 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_abbrev  0x00004a47      0x5b1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_abbrev  0x00004ff8      0x636 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_abbrev  0x0000562e      0x57f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_abbrev  0x00005bad      0x5ae /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_abbrev  0x0000615b      0x353 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_line     0x00000000    0x168e7
+ *(.debug_line)
+ .debug_line    0x00000000     0x123f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_line    0x0000123f     0x3461 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_line    0x000046a0      0xcf6 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_line    0x00005396      0xf1f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_line    0x000062b5     0x173e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_line    0x000079f3      0x3c3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_line    0x00007db6      0x8af /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_line    0x00008665     0x1060 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_line    0x000096c5     0x1dda /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_line    0x0000b49f     0x26a4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_line    0x0000db43     0x194b /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_line    0x0000f48e      0xcf1 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_line    0x0001017f      0xd2d /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_line    0x00010eac      0xe98 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_line    0x00011d44      0xfd9 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_line    0x00012d1d     0x1696 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_line    0x000143b3      0xe8d /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_line    0x00015240     0x11ab /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_line    0x000163eb      0x4fc /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_frame    0x00000000     0x1d30
+ *(.debug_frame)
+ .debug_frame   0x00000000      0x168 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_frame   0x00000168      0x468 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_frame   0x000005d0      0x154 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_frame   0x00000724      0x20c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_frame   0x00000930      0x16c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_frame   0x00000a9c       0xac /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_frame   0x00000b48       0x50 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_frame   0x00000b98      0x144 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_frame   0x00000cdc      0x148 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_frame   0x00000e24      0x254 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_frame   0x00001078      0x1ec /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_frame   0x00001264      0x1ec /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_frame   0x00001450      0x100 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_frame   0x00001550      0x144 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_frame   0x00001694      0x12c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_frame   0x000017c0      0x244 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_frame   0x00001a04      0x130 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_frame   0x00001b34      0x138 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_frame   0x00001c6c       0xc4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_str      0x00000000    0x92f69
+ *(.debug_str)
+ .debug_str     0x00000000     0x7047 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_str     0x00007047     0xec91 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_str     0x00015cd8     0x6526 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_str     0x0001c1fe     0x65df /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_str     0x000227dd     0xd2b3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_str     0x0002fa90      0x7b4 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_str     0x00030244     0x56f7 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_str     0x0003593b     0x5b42 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_str     0x0003b47d    0x11d9f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_str     0x0004d21c     0xc72c /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_str     0x00059948     0x6a45 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_str     0x0006038d      0xb3e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_str     0x00060ecb     0x65c3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_str     0x0006748e     0x6290 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_str     0x0006d71e     0x5895 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_str     0x00072fb3     0xbafb /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_str     0x0007eaae     0x6bf6 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_str     0x000856a4     0xcb06 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_str     0x000921aa      0xdbf /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_loc      0x00000000    0x1441d
+ *(.debug_loc)
+ .debug_loc     0x00000000      0xd90 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_loc     0x00000d90     0x4001 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_loc     0x00004d91      0x668 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_loc     0x000053f9      0x9fd /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_loc     0x00005df6     0x1012 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_loc     0x00006e08      0x309 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ .debug_loc     0x00007111       0x61 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_loc     0x00007172     0x100a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_loc     0x0000817c     0x1e8e /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_loc     0x0000a00a     0x3207 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_loc     0x0000d211     0x17cf /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_loc     0x0000e9e0     0x140a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_loc     0x0000fdea      0x47f /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_loc     0x00010269      0xbb8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_loc     0x00010e21      0xdb3 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_loc     0x00011bd4     0x13e7 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_loc     0x00012fbb      0x9f8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_loc     0x000139b3      0x630 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_loc     0x00013fe3      0x43a /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges   0x00000000     0x2d18
+ *(.debug_ranges)
+ .debug_ranges  0x00000000      0x118 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ .debug_ranges  0x00000118      0x838 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ .debug_ranges  0x00000950       0x30 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ .debug_ranges  0x00000980      0x148 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ .debug_ranges  0x00000ac8      0x280 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ .debug_ranges  0x00000d48       0x18 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ .debug_ranges  0x00000d60      0x220 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ .debug_ranges  0x00000f80      0x3c8 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ .debug_ranges  0x00001348      0x730 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ .debug_ranges  0x00001a78      0x3f0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ .debug_ranges  0x00001e68      0x310 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ .debug_ranges  0x00002178      0x118 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ .debug_ranges  0x00002290      0x170 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ .debug_ranges  0x00002400      0x1a0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ .debug_ranges  0x000025a0      0x368 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ .debug_ranges  0x00002908      0x198 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ .debug_ranges  0x00002aa0      0x198 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ .debug_ranges  0x00002c38       0xe0 /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+
+.debug_addr
+ *(.debug_addr)
+
+.debug_line_str
+ *(.debug_line_str)
+
+.debug_loclists
+ *(.debug_loclists)
+
+.debug_macro
+ *(.debug_macro)
+
+.debug_names
+ *(.debug_names)
+
+.debug_rnglists
+ *(.debug_rnglists)
+
+.debug_str_offsets
+ *(.debug_str_offsets)
+
+.debug_sup
+ *(.debug_sup)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+.note.gnu.arm.ident
+ *(.note.gnu.arm.ident)
+OUTPUT(/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/mapped/kdbus.o elf32-littlearm)
+LOAD linker stubs

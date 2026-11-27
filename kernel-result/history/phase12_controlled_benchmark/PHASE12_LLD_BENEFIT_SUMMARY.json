@@ -1,0 +1,135 @@
+{
+  "CONTROLLED_LLVM_AB_BUILD": "PASS",
+  "ACTUAL_BFD_LINK": "CONFIRMED_A_INTERMEDIATE_GNU_BFD_2.43",
+  "ACTUAL_LLD_LINK": "CONFIRMED_B_INTERMEDIATE_AND_A_B_FINAL_LLVM_LLD_22.1.8",
+  "NEW_EXECUTION_EVIDENCE_LEVEL": "E4_PHASE12_LOCAL_CONTROLLED_BUILDS",
+  "PATCH_CAUSALITY": "MEASURED_AND_ATTRIBUTED",
+  "MAPPING_SYMBOL_OPTIMIZATION": "MEASURED_AND_ATTRIBUTED",
+  "INTERMEDIATE_SIZE_CHANGE": "MEASURED_AND_ATTRIBUTED",
+  "FINAL_MODULE_SIZE_CHANGE": "MEASURED_AND_ATTRIBUTED",
+  "LINK_TIME_IMPROVEMENT": "REGRESSION",
+  "PEAK_RSS_IMPROVEMENT": "REGRESSION",
+  "BENCHMARK_CONFIDENCE": "95_PERCENT_PAIRED_CI_BOTH_PROFILES_LOCAL_HOST",
+  "STATIC_ABI_REGRESSION": "NONE_OBSERVED_IN_CHECKED_ARTIFACTS",
+  "GCC_REAL_BUILD": "PASS",
+  "GCC_COMPATIBILITY": "PASS",
+  "RUNTIME_MEMORY_BENEFIT": "NOT_MEASURED",
+  "RUNTIME_REGRESSION": "PENDING_NEW_IMAGE_DEPLOYMENT",
+  "GENERALIZATION_POTENTIAL": "TARGETED_RESEARCH_ONLY",
+  "PRODUCT_MERGE_READINESS": "PENDING",
+  "PM_REVIEW_REQUIRED": "YES",
+  "historical_qb_direct_execution": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE",
+  "scope": "RPi4 ARMv7l non-RT external modules; host-native BFD/LLD frozen relocatable linking",
+  "historical_engineering_status": "CLOSED",
+  "fixed_commit": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "size_bytes": {
+    "intermediate": {
+      "bfd": 2505192,
+      "lld": 1998564,
+      "delta": -506628
+    },
+    "unstripped": {
+      "bfd": 2071276,
+      "lld": 2069984,
+      "delta": -1292
+    },
+    "stripped": {
+      "bfd": 162584,
+      "lld": 161292,
+      "delta": -1292
+    }
+  },
+  "mapping_symbols": {
+    "synthetic_extra_bfd_intermediate": 101,
+    "extra_bfd_final": 81,
+    "final_d_count_bfd": 183,
+    "final_d_count_lld": 102
+  },
+  "controlled_stripped_matches_historical_files": true,
+  "controlled_gcc_sdk": "tizen-unified-dev_20261120.082616",
+  "real_gcc_all_other_installed_modules_byte_identical": true,
+  "benchmark": {
+    "default_threads": {
+      "wall_ms": {
+        "classification": "REGRESSION",
+        "median": {
+          "bfd": 5.647265,
+          "lld": 11.8776335
+        },
+        "improvement_pct_bfd_relative": -110.32541416066006,
+        "ci95_improvement_pct": [
+          -116.0218884355608,
+          -101.35154560473832
+        ]
+      },
+      "peak_rss_kib": {
+        "classification": "REGRESSION",
+        "median": {
+          "bfd": 7700.0,
+          "lld": 53348.0
+        },
+        "improvement_pct_bfd_relative": -592.8311688311688,
+        "ci95_improvement_pct": [
+          -594.5066388961208,
+          -589.2995606099768
+        ]
+      }
+    },
+    "one_cpu_one_thread": {
+      "wall_ms": {
+        "classification": "REGRESSION",
+        "median": {
+          "bfd": 5.10783,
+          "lld": 10.361934999999999
+        },
+        "improvement_pct_bfd_relative": -102.86374057084906,
+        "ci95_improvement_pct": [
+          -110.23849638224537,
+          -99.90901402350174
+        ]
+      },
+      "peak_rss_kib": {
+        "classification": "REGRESSION",
+        "median": {
+          "bfd": 7756.0,
+          "lld": 53530.0
+        },
+        "improvement_pct_bfd_relative": -590.1753481175864,
+        "ci95_improvement_pct": [
+          -593.6512049753823,
+          -587.0636550308009
+        ]
+      }
+    }
+  },
+  "benchmark_valid_samples": 160,
+  "packaging": {
+    "xz_single_file_test": {
+      "classification": "MEASURED_AND_ATTRIBUTED",
+      "old_bytes": 48312,
+      "new_bytes": 48000,
+      "delta_bytes": -312
+    },
+    "historical_rpm_xz_payload": {
+      "classification": "OBSERVED_NOT_ATTRIBUTED",
+      "old_bytes": 82852,
+      "new_bytes": 82420,
+      "delta_bytes": -432
+    },
+    "controlled_binary_rpm_packaging": "NOT_MEASURED"
+  },
+  "limits": [
+    "Fixed LLVM Base RPM server returns 404 for some dependencies. Read-only recovered Tizen ARM user space and older BFD accelerator are common to both A/B.",
+    "Benchmark measures specific native linker payloads and a single small composite workload on a shared x86-64 host.",
+    "Neither runtime memory nor new QB runtime regression was measured."
+  ],
+  "references": {
+    "build": "evidence/build/controlled-builds.json",
+    "replay": "evidence/replay/link-replay.json",
+    "elf": "evidence/elf/status.json",
+    "gcc": "evidence/gcc/status.json",
+    "runtime": "evidence/runtime/status.json",
+    "raw_benchmark": "LINKER_BENCHMARK_RAW.csv",
+    "summary_benchmark": "LINKER_BENCHMARK_SUMMARY.csv"
+  }
+}

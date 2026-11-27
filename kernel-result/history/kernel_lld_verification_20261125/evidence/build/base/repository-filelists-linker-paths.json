@@ -1,0 +1,229 @@
+{
+  "base_packages": {
+    "filelists": {
+      "path": "evidence/build/base/filelists.xml.gz",
+      "sha256": "b1a00cbd36a57333e98b7aa099bdf9d1cd67c3f9730533f08523dfcf16fa0624"
+    },
+    "sdk_or_intermediate": [],
+    "linker_paths": [
+      {
+        "pkgid": "0693d667c55e011dab9fbb0dd643c153b25978f2f0d94b3d4dffa55b4c645d77",
+        "name": "binutils",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "2.43",
+          "rel": "1.16"
+        },
+        "paths": [
+          "/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/usr/bin/ld",
+          "/usr/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "8fb452a0609be04324defaf6ac228a2ddab6fac0f347a4cea43f9d65d34f33fe",
+        "name": "binutils-aarch64",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "2.43",
+          "rel": "1.2"
+        },
+        "paths": [
+          "/usr/aarch64-tizen-linux-gnu/bin/ld",
+          "/usr/aarch64-tizen-linux-gnu/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "076a1effc46a3e7acd42719a929508656ede3e3f11766fcfd78f0c9d3fbb25eb",
+        "name": "binutils-armv7hl",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "2.43",
+          "rel": "1.2"
+        },
+        "paths": [
+          "/usr/armv7hl-tizen-linux-gnueabihf/bin/ld",
+          "/usr/armv7hl-tizen-linux-gnueabihf/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "d361e342d8bc4319e1204a90296ebaf6ca8ed7de9e5fbc31c63c12ce8651d68d",
+        "name": "binutils-riscv64",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "2.43",
+          "rel": "1.2"
+        },
+        "paths": [
+          "/usr/riscv64-tizen-linux-gnu/bin/ld",
+          "/usr/riscv64-tizen-linux-gnu/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "d00b64bc7efe786dd7d414758238c6df4962d6442c14bad3ceabaa3db442e3be",
+        "name": "clang-accel-armv7l",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "0.4",
+          "rel": "2.3"
+        },
+        "paths": [
+          "/emul/usr/bin/ld.lld"
+        ]
+      },
+      {
+        "pkgid": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+        "name": "clang-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "0.4",
+          "rel": "2.3"
+        },
+        "paths": [
+          "/emul/usr/bin/ld.lld"
+        ]
+      },
+      {
+        "pkgid": "12f12bb77bf55d7621f89ac4c509cb27d4fe1e1e1e2983a61da74fe96391312b",
+        "name": "golang-src",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "1.25.3",
+          "rel": "1.1"
+        },
+        "paths": [
+          "/usr/lib/golang/src/cmd/link/internal/ld"
+        ]
+      },
+      {
+        "pkgid": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+        "name": "llvm",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "22.1.8",
+          "rel": "4.1"
+        },
+        "paths": [
+          "/usr/bin/ld.lld"
+        ]
+      },
+      {
+        "pkgid": "6f0c15cf5aa1e8a2c498e8fc237af8d4e93f5cce3eba56ceaff9b23abb456020",
+        "name": "qemu-accel-armv7l",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "0.4",
+          "rel": "2.3"
+        },
+        "paths": [
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/emul/usr/bin/ld",
+          "/emul/usr/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "4dccbd0e6b7ac36ac5f3726c6fbf7639a00c2ae888cdb7433769a7ea0d4cacf0",
+        "name": "qemu-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "0.4",
+          "rel": "2.3"
+        },
+        "paths": [
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/emul/usr/bin/ld",
+          "/emul/usr/bin/ld.bfd"
+        ]
+      }
+    ]
+  },
+  "unified_packages": {
+    "filelists": {
+      "path": "evidence/repository/packages-filelists.out",
+      "sha256": "a3026f95a7944d13d72a6c6768be82f2659139f780420b750ccef574f7b84f97"
+    },
+    "sdk_or_intermediate": [],
+    "linker_paths": [
+      {
+        "pkgid": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020",
+        "name": "arm-rpi4-linux-kernel-devel",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "6.12.80",
+          "rel": "0"
+        },
+        "paths": [
+          "/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/dummy-tools/ld"
+        ]
+      },
+      {
+        "pkgid": "c98c0059511bc4c1fb23332011a60abba0c35d45a60fc551be1ac9180f890cfb",
+        "name": "arm-rpi4-rt-linux-kernel-devel",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "6.12.80",
+          "rel": "0"
+        },
+        "paths": [
+          "/boot/kernel/devel/kernel-devel-arm-rpi4-rt/scripts/dummy-tools/ld"
+        ]
+      },
+      {
+        "pkgid": "c77862675efc1b176fa46229dc94be8e8420ed43eaa27e42f771b7c2cbed9cf9",
+        "name": "mic-bootstrap-x86-arm",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "1.0",
+          "rel": "1"
+        },
+        "paths": [
+          "/bootstrap/bin/ld",
+          "/bootstrap/bin/ld.bfd",
+          "/bootstrap/bin/ld.lld",
+          "/bootstrap/usr/bin/ld",
+          "/bootstrap/usr/bin/ld.bfd",
+          "/bootstrap/usr/bin/ld.lld",
+          "/bootstrap/usr/x86_64-tizen-linux-gnu/bin/ld",
+          "/bootstrap/usr/x86_64-tizen-linux-gnu/bin/ld.bfd"
+        ]
+      },
+      {
+        "pkgid": "20235bab53295fe5ccce05667aaef7a90849f47c4a040bf33f50f38443b03134",
+        "name": "rust",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "1.90.0",
+          "rel": "1"
+        },
+        "paths": [
+          "/usr/lib/rustlib/arm-unknown-linux-gnueabi/bin/gcc-ld/ld.lld"
+        ]
+      }
+    ]
+  },
+  "unified_debug": {
+    "filelists": {
+      "path": "evidence/repository/debug-filelists.out",
+      "sha256": "46bd11960e884628ccbccbebacb39d0ecc920de4098fab1c2d4060924fcdcf14"
+    },
+    "sdk_or_intermediate": [],
+    "linker_paths": []
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "bash",
+    "-o",
+    "pipefail",
+    "-c",
+    "strings -a \"$1\" | grep -E \"^LLD 22[.]1[.]8([[:space:]]|$)\"",
+    "--",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/clang-accel-x86_64-armv7l/emul/usr/bin/ld.lld"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:29:28.241553+00:00",
+  "elapsed_seconds": 0.047,
+  "exit_status": 1
+}

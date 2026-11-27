@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/audit_linker_overrides.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3",
+  "started_utc": "2026-11-25T11:34:43.393929+00:00",
+  "elapsed_seconds": 48.303,
+  "exit_status": 0
+}

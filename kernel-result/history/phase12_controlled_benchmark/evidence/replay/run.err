@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/scripts/llvm_replay.py", line 225, in <module>
+    main()
+  File "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/scripts/llvm_replay.py", line 219, in main
+    builds = audit()
+             ^^^^^^^
+  File "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/scripts/llvm_replay.py", line 126, in audit
+    assert [(r['guest_path'],r['sha256']) for r in a[key]] == [(r['guest_path'],r['sha256']) for r in b[key]], key
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: final_common_inputs

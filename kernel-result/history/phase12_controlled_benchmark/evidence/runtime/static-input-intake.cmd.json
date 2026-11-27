@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "phase12_controlled_benchmark/scripts/collect_runtime_static.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check",
+  "started_utc": "2026-11-27T06:24:10.640174+00:00",
+  "elapsed_seconds": 9.016,
+  "exit_status": 0
+}

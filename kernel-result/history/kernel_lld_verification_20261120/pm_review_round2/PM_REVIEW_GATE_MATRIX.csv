@@ -1,0 +1,6 @@
+gate,strict,engineering,evidence,basis
+A,PASS,PASS,round1/01_runtime_kernel.md,认可独立采集的目标设备、Clang 22.1.8 / LLD 22.1.8 banner。
+B,CONDITIONAL_PASS,PASS,KERNEL_LINKER_RULE_MATRIX.csv,主内核和 ARM 解压器最终链接均达到 E3。无实录 argv 或 .cmd。
+C,PASS,PASS,08_09_identity_review.md,发布内核到运行内核为 STRONG_MATCH，独立 notes 与模块文件为 EXACT_MATCH。保留设备卷和 RPM DB 限制。
+D,CONDITIONAL_PASS,PASS,MODULE_LINKER_EVIDENCE_MATRIX.csv,59 个最终 .ko 的发布/设备摘要、解析和证据闭环。kdbus.o 独立中间步骤有合理 BFD 候选。
+E,PASS,PASS,08_01_evidence_integrity_review.md,第一轮归档验证、离线复跑、独立日志和装载 notes 核查通过。

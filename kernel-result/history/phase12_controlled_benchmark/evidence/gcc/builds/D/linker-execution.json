@@ -1,0 +1,46 @@
+{
+  "kdbus.o": {
+    "linker": "GNU BFD 2.43",
+    "executable": "/usr/bin/ld",
+    "tool": {
+      "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+      "sha256": "2b5a0b95691f3e5c091ae919baf27832e65e23a750bfe40d29ba10f2fb3f1e74"
+    },
+    "evidence_level": "E4_DIRECT_EXECUTION_OBSERVED_FOR_LOCAL_BUILD",
+    "pid": 635736,
+    "exec_trace_line": 4645,
+    "exec_trace": "635736 execve(\"/usr/bin/ld\", [\"ld\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"-r\", \"-o\", \"/tmp/work/module/kdbus/kdbus.o\", \"@/tmp/work/module/kdbus/kdbus.mod\"], 0x2c163a60 /* 144 vars */) = 0",
+    "emulator": {
+      "path": "/usr/bin/qemu-arm",
+      "trace": "635736 execve(\"/usr/bin/qemu-arm\", [\"/usr/bin/qemu-arm\", \"-0\", \"ld\", \"/usr/bin/ld\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"-r\", \"-o\", \"/tmp/work/module/kdbus/kdbus.o\", \"@/tmp/work/module/kdbus/kdbus.mod\"], 0x7ffda2823368 /* 144 vars */) = 0",
+      "sha256": "8ee43bc800f9d708a8606310fa9cce476ce4fb02d31cfd910fd9b50cdbba470a"
+    },
+    "exit_trace_line": 4648,
+    "exit_trace": "635736 exit_group(0)                    = ?",
+    "exit_status": 0,
+    "saved_kbuild_command": "savedcmd_/tmp/work/module/kdbus/kdbus.o := ld -EL -z noexecstack --no-warn-rwx-segments   -r -o /tmp/work/module/kdbus/kdbus.o @/tmp/work/module/kdbus/kdbus.mod ",
+    "output_sha256": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf"
+  },
+  "kdbus.ko": {
+    "linker": "GNU BFD 2.43",
+    "executable": "/usr/bin/ld",
+    "tool": {
+      "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+      "sha256": "2b5a0b95691f3e5c091ae919baf27832e65e23a750bfe40d29ba10f2fb3f1e74"
+    },
+    "evidence_level": "E4_DIRECT_EXECUTION_OBSERVED_FOR_LOCAL_BUILD",
+    "pid": 636493,
+    "exec_trace_line": 5615,
+    "exec_trace": "636493 execve(\"/usr/bin/ld\", [\"ld\", \"-r\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"--build-id=sha1\", \"-T\", \"scripts/module.lds\", \"-o\", \"/tmp/work/module/kdbus/kdbus.ko\", \"/tmp/work/module/kdbus/kdbus.o\", \"/tmp/work/module/kdbus/kdbus.mod.o\", \"/tmp/work/module/.module-common.o\"], 0x183e1630 /* 143 vars */) = 0",
+    "emulator": {
+      "path": "/usr/bin/qemu-arm",
+      "trace": "636493 execve(\"/usr/bin/qemu-arm\", [\"/usr/bin/qemu-arm\", \"-0\", \"ld\", \"/usr/bin/ld\", \"-r\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"--build-id=sha1\", \"-T\", \"scripts/module.lds\", \"-o\", \"/tmp/work/module/kdbus/kdbus.ko\", \"/tmp/work/module/kdbus/kdbus.o\", \"/tmp/work/module/kdbus/kdbus.mod.o\", \"/tmp/work/module/.module-common.o\"], 0x7ffe8f4ceb90 /* 143 vars */)            = 0",
+      "sha256": "8ee43bc800f9d708a8606310fa9cce476ce4fb02d31cfd910fd9b50cdbba470a"
+    },
+    "exit_trace_line": 5638,
+    "exit_trace": "636493 exit_group(0)                    = ?",
+    "exit_status": 0,
+    "saved_kbuild_command": "savedcmd_/tmp/work/module/kdbus/kdbus.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /tmp/work/module/kdbus/kdbus.ko /tmp/work/module/kdbus/kdbus.o /tmp/work/module/kdbus/kdbus.mod.o /tmp/work/module/.module-common.o",
+    "output_sha256": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff"
+  }
+}

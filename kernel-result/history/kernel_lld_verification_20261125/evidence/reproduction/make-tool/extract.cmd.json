@@ -1,0 +1,16 @@
+{
+  "argv": [
+    "bash",
+    "-o",
+    "pipefail",
+    "-e",
+    "-c",
+    "\nmkdir -p evidence/reproduction/make-tool/bin\nrpm2cpio \"$1\" | cpio --extract --to-stdout --quiet ./usr/bin/make > evidence/reproduction/make-tool/bin/make\ntest -s evidence/reproduction/make-tool/bin/make\nchmod 755 evidence/reproduction/make-tool/bin/make\n",
+    "--",
+    "evidence/reproduction/make-tool/make-4.4.1-1.15.x86_64.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:27:23.544233+00:00",
+  "elapsed_seconds": 0.015,
+  "exit_status": 0
+}

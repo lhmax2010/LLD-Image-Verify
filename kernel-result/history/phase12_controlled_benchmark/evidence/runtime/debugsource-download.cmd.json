@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "curl",
+    "--fail",
+    "--location",
+    "--silent",
+    "--show-error",
+    "--max-time",
+    "110",
+    "--retry",
+    "1",
+    "--dump-header",
+    "phase12_controlled_benchmark/evidence/runtime/debugsource-download.headers",
+    "--output",
+    "phase12_controlled_benchmark/evidence/runtime/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+    "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/armv7l/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check",
+  "started_utc": "2026-11-27T06:20:11.389504+00:00",
+  "elapsed_seconds": 1.393,
+  "exit_status": 22
+}

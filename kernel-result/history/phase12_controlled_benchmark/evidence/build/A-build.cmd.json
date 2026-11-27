@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "bash",
+    "scripts/build_llvm.sh",
+    "A"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark",
+  "started_utc": "2026-11-27T06:25:28.766413+00:00",
+  "elapsed_seconds": 16.311,
+  "exit_status": 0
+}

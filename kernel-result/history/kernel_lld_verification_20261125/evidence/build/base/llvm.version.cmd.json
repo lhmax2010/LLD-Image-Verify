@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "bash",
+    "-o",
+    "pipefail",
+    "-c",
+    "strings -a \"$1\" | grep -E \"^LLD 22[.]1[.]8([[:space:]]|$)\"",
+    "--",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/llvm/usr/bin/lld"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:50.461181+00:00",
+  "elapsed_seconds": 0.034,
+  "exit_status": 0
+}

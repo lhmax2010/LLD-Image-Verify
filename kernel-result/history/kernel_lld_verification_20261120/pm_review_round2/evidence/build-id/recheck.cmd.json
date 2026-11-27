@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python3",
+    "scripts/review_build_id.py",
+    "--base",
+    "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/.pm-review-round2.x9FKTf/delivery",
+  "started_utc": "2026-11-25T09:44:07.287062+00:00",
+  "elapsed_seconds": 0.812,
+  "exit_status": 0
+}

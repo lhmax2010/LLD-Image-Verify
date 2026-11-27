@@ -1,0 +1,863 @@
+{
+  "binaries": [
+    {
+      "rpm": "arm-rpi4-linux-kernel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/bcm2711-rpi-4-b.dtb",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 56450,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 487340,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/files/boot/bcm2711-rpi-4-b.dtb",
+      "raw_sha256": "a0561668ec520b0605cdc8b7be6844365ce44f569f363e85f3d7332e1989d6ed",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/bcm2711-rpi-4-b.dtb-file.out",
+      "file_result": "Device Tree Blob version 17, size=56450, boot CPU=0, string block size=4930, DT structure block size=51448"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/bcm2711-rpi-400.dtb",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 56454,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 543932,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/files/boot/bcm2711-rpi-400.dtb",
+      "raw_sha256": "f86316d7fd9142a1929bd0ac6da1c131492c44b1083e992c1eb8b7c866510d1e",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/bcm2711-rpi-400.dtb-file.out",
+      "file_result": "Device Tree Blob version 17, size=56454, boot CPU=0, string block size=4906, DT structure block size=51476"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/zImage",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 14895520,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 11843844,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/files/boot/zImage",
+      "raw_sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-file.out",
+      "file_result": "Linux kernel ARM boot executable zImage (little-endian)",
+      "extract-vmlinux": {
+        "exit_status": 0,
+        "output": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-extract-vmlinux.out",
+        "output_type": "non-ELF output"
+      },
+      "extract-ikconfig": {
+        "exit_status": 1,
+        "output": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-extract-ikconfig.out"
+      },
+      "raw_payloads": [
+        {
+          "file": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-raw-gzip-8249.bin",
+          "source_offset": 33353,
+          "size": 41721980,
+          "sha256": "1bcb98939e19276f8a4de3ab82425f119856005d388680fdb2847d42bdda1171",
+          "version_strings": [
+            {
+              "offset": 23036019,
+              "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) # SMP "
+            },
+            {
+              "offset": 24180028,
+              "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026"
+            }
+          ],
+          "matching_gnu_build_id_notes": [
+            {
+              "offset": 28707312,
+              "endian": "<",
+              "build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+              "raw_note_hex": "040000001400000003000000474e550099ba05b664f7ece7686ab5f087bf54680bb172e6"
+            }
+          ],
+          "toolchain_string_samples": [
+            {
+              "offset": 23035981,
+              "string_offset": 23035940,
+              "match": "clang version 22.1.8, LLD 22.1.8) %s",
+              "text": "%s version %s (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) %s",
+              "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+            },
+            {
+              "offset": 23036081,
+              "string_offset": 23036019,
+              "match": "clang version 22.1.8, LLD 22.1.8) # SMP ",
+              "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) # SMP ",
+              "source_type": "Kernel build version string"
+            },
+            {
+              "offset": 24180090,
+              "string_offset": 24180028,
+              "match": "clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+              "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+              "source_type": "Kernel build version string"
+            }
+          ],
+          "toolchain_string_hit_counts": {
+            "clang": 3
+          }
+        }
+      ],
+      "extraction": "successfully extracted raw kernel binary",
+      "version_strings": [],
+      "matching_gnu_build_id_notes": [],
+      "toolchain_string_samples": [],
+      "toolchain_string_hit_counts": {}
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 194991,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 24676,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+      "raw_sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/.config-file.out",
+      "file_result": "Linux make config build file, ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/System.map",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 4626944,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 54241220,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/System.map",
+      "raw_sha256": "44d12ff857202d16bb6a05e76bfa4929b12e12a0c70eae718eb3712624d5ede3",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/System.map-file.out",
+      "file_result": "ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 14961736,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 74768700,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "raw_sha256": "ca89be817fd3d10720cbe1018cc7b7ab54934b596fafa89be949e46a7c7c9157",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux-file.out",
+      "file_result": "ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, stripped",
+      "readelf": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux-readelf.out",
+      "readelf_status": 0,
+      "representative_elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "elf_sha256": "ca89be817fd3d10720cbe1018cc7b7ab54934b596fafa89be949e46a7c7c9157",
+      "elf_class": "ELF32",
+      "elf_data": "2's complement, little endian",
+      "elf_type": "EXEC (Executable file)",
+      "elf_machine": "ARM",
+      "elf_flags": "0x5000200, Version5 EABI, soft-float ABI",
+      "build_ids": [],
+      "elf_build_id": "",
+      "parsed": true,
+      "comment": [],
+      "compiler": "",
+      "modinfo": [],
+      "vermagic": "",
+      "name": "",
+      "vermagic_release_match": null,
+      "extraction": "native ELF",
+      "linker_evidence": [],
+      "classification": "UNKNOWN",
+      "reason": "No recognized linker identification or artifact-bound final link command",
+      "evidence_type": "",
+      "evidence_location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux-readelf.out",
+      "raw_evidence": "",
+      "confidence": "NONE",
+      "proves_final_link": false,
+      "elf_linker_identification": false,
+      "linker_classification": "UNKNOWN",
+      "version_strings": [],
+      "matching_gnu_build_id_notes": [],
+      "toolchain_string_samples": [],
+      "toolchain_string_hit_counts": {}
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-4-b.dtb",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 56450,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 92800960,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-4-b.dtb",
+      "raw_sha256": "a0561668ec520b0605cdc8b7be6844365ce44f569f363e85f3d7332e1989d6ed",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-4-b.dtb-file.out",
+      "file_result": "Device Tree Blob version 17, size=56450, boot CPU=0, string block size=4930, DT structure block size=51448"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-400.dtb",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 56454,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 92866980,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-400.dtb",
+      "raw_sha256": "f86316d7fd9142a1929bd0ac6da1c131492c44b1083e992c1eb8b7c866510d1e",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/dts/broadcom/bcm2711-rpi-400.dtb-file.out",
+      "file_result": "Device Tree Blob version 17, size=56454, boot CPU=0, string block size=4906, DT structure block size=51476"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-nommu.lds",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 1495,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 141045604,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-nommu.lds",
+      "raw_sha256": "cdf66128909daa8d170457c2c835ea8cf2b439889fb17ccd60967a47805f917d",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-nommu.lds-file.out",
+      "file_result": "C source, ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-std.lds",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 1204,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 141047288,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-std.lds",
+      "raw_sha256": "5e8e919a4c7e9d79043ef870785e15e181d07965320324d934a957403b550888",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-std.lds-file.out",
+      "file_result": "C source, ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-sun3.lds",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 1147,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 141048680,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-sun3.lds",
+      "raw_sha256": "9c28000349bff781b8f5cf8deb030306a1197dbcc287901958a53759714bdff9",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/arch/m68k/kernel/vmlinux-sun3.lds-file.out",
+      "file_result": "C source, ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/include/config",
+      "category": "kernel_binary",
+      "file_type": "directory",
+      "payload_size": 0,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 784664700
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 45562,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 785001016,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+      "raw_sha256": "cc7bbe7e4d68f46bdd1d67e5f033cccfdb1744101c53dac95e035effaeff748e",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf-file.out",
+      "file_result": "Linux make config build file, ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 166,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 790993596,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h",
+      "raw_sha256": "8be8545243726ed358d872faab32c763edfe25248868e80cf5b99b735b529d07",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h-file.out",
+      "file_result": "ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/config",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 4899,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 884266824,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/config",
+      "raw_sha256": "a05f1a7669fd88820761bbeb1c3f321cc4c48e65624f9ae39572f58c264f1e85",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/config-file.out",
+      "file_result": "Bourne-Again shell script, ASCII text executable"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/gdb/vmlinux-gdb.py",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 1314,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 885384312,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/gdb/vmlinux-gdb.py",
+      "raw_sha256": "53c56155c523a4e98c0ffe854aa019f1a860c93615d2d5d1e1c03068d4a3a6e3",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/gdb/vmlinux-gdb.py-file.out",
+      "file_result": "Python script, ASCII text executable"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/new_choice_with_dep/config",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 65,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 886664000,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/new_choice_with_dep/config",
+      "raw_sha256": "612a7be062682a0fac215c336007573978e6e8a12839d9d48b364a4465550cd9",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/new_choice_with_dep/config-file.out",
+      "file_result": "ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/no_write_if_dep_unmet/config",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 11,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 886666076,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/no_write_if_dep_unmet/config",
+      "raw_sha256": "e7e1b2c0a9031fbc9e999438d6d65847f80ddd76244dfc5a1efac71731d40f85",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/kconfig/tests/no_write_if_dep_unmet/config-file.out",
+      "file_result": "ASCII text"
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "path": "/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 36251868,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 950209284,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "raw_sha256": "f835ec82ba34f743329fefb85a3958825195dd131dc4a2e17440d43accdac3bd",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux-file.out",
+      "file_result": "ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, BuildID[sha1]=bac659039ce25486da3473a6da562dc0e7fd1eea, stripped",
+      "readelf": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux-readelf.out",
+      "readelf_status": 0,
+      "representative_elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "elf_sha256": "f835ec82ba34f743329fefb85a3958825195dd131dc4a2e17440d43accdac3bd",
+      "elf_class": "ELF32",
+      "elf_data": "2's complement, little endian",
+      "elf_type": "EXEC (Executable file)",
+      "elf_machine": "ARM",
+      "elf_flags": "0x5000200, Version5 EABI, soft-float ABI",
+      "build_ids": [
+        "bac659039ce25486da3473a6da562dc0e7fd1eea"
+      ],
+      "elf_build_id": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+      "parsed": true,
+      "comment": [],
+      "compiler": "",
+      "modinfo": [],
+      "vermagic": "",
+      "name": "",
+      "vermagic_release_match": null,
+      "extraction": "native ELF",
+      "linker_evidence": [],
+      "classification": "UNKNOWN",
+      "reason": "No recognized linker identification or artifact-bound final link command",
+      "evidence_type": "",
+      "evidence_location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux-readelf.out",
+      "raw_evidence": "",
+      "confidence": "NONE",
+      "proves_final_link": false,
+      "elf_linker_identification": false,
+      "linker_classification": "UNKNOWN",
+      "version_strings": [
+        {
+          "offset": 19988595,
+          "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) # SMP "
+        },
+        {
+          "offset": 21132604,
+          "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026"
+        }
+      ],
+      "matching_gnu_build_id_notes": [],
+      "toolchain_string_samples": [
+        {
+          "offset": 19988557,
+          "string_offset": 19988516,
+          "match": "clang version 22.1.8, LLD 22.1.8) %s",
+          "text": "%s version %s (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) %s",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 19988657,
+          "string_offset": 19988595,
+          "match": "clang version 22.1.8, LLD 22.1.8) # SMP ",
+          "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) # SMP ",
+          "source_type": "Kernel build version string"
+        },
+        {
+          "offset": 21132666,
+          "string_offset": 21132604,
+          "match": "clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+          "text": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+          "source_type": "Kernel build version string"
+        }
+      ],
+      "toolchain_string_hit_counts": {
+        "clang": 3
+      }
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "path": "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 135368,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 3660,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "raw_sha256": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug-file.out",
+      "file_result": "ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, with debug_info, not stripped",
+      "readelf": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug-readelf.out",
+      "readelf_status": 0,
+      "representative_elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "elf_sha256": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7",
+      "elf_class": "ELF32",
+      "elf_data": "2's complement, little endian",
+      "elf_type": "EXEC (Executable file)",
+      "elf_machine": "ARM",
+      "elf_flags": "0x5000200, Version5 EABI, soft-float ABI",
+      "build_ids": [],
+      "elf_build_id": "",
+      "parsed": true,
+      "comment": [
+        {
+          "section_offset": 1,
+          "text": "clang version 22.1.8"
+        },
+        {
+          "section_offset": 22,
+          "text": "Linker: LLD 22.1.8"
+        }
+      ],
+      "compiler": "clang version 22.1.8",
+      "modinfo": [],
+      "vermagic": "",
+      "name": "",
+      "vermagic_release_match": null,
+      "extraction": "native ELF",
+      "linker_evidence": [
+        {
+          "type": "ELF .comment linker identification",
+          "linker": "LLD",
+          "location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug-readelf.out .comment+0x16",
+          "raw": "Linker: LLD 22.1.8",
+          "final_link": false,
+          "confidence": "MEDIUM"
+        }
+      ],
+      "classification": "LLD_INDICATED",
+      "reason": "Linker string in ELF .comment; it can be retained from an earlier link",
+      "evidence_type": "ELF .comment linker identification",
+      "evidence_location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug-readelf.out .comment+0x16",
+      "raw_evidence": "Linker: LLD 22.1.8",
+      "confidence": "MEDIUM",
+      "proves_final_link": false,
+      "elf_linker_identification": true,
+      "linker_classification": "LLD_INDICATED",
+      "version_strings": [],
+      "matching_gnu_build_id_notes": [],
+      "toolchain_string_samples": [
+        {
+          "offset": 587,
+          "string_offset": 587,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 8508,
+          "string_offset": 8508,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 41017,
+          "string_offset": 41017,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 41436,
+          "string_offset": 41436,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 41691,
+          "string_offset": 41691,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 73875,
+          "string_offset": 73875,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 125714,
+          "string_offset": 125714,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 125735,
+          "string_offset": 125735,
+          "match": "Linker: LLD 22.1.8",
+          "text": "Linker: LLD 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        }
+      ],
+      "toolchain_string_hit_counts": {
+        "clang": 7,
+        "linker:": 1
+      }
+    },
+    {
+      "rpm": "arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l",
+      "rpm_file": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "path": "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "category": "kernel_binary",
+      "file_type": "file",
+      "payload_size": 301017256,
+      "archive": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/rpm2cpio.out",
+      "archive_file_offset": 3316608,
+      "file": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "raw_sha256": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f",
+      "file_evidence": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug-file.out",
+      "file_result": "ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, BuildID[sha1]=bac659039ce25486da3473a6da562dc0e7fd1eea, with debug_info, not stripped",
+      "readelf": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug-readelf.out",
+      "readelf_status": 0,
+      "representative_elf": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "elf_sha256": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f",
+      "elf_class": "ELF32",
+      "elf_data": "2's complement, little endian",
+      "elf_type": "EXEC (Executable file)",
+      "elf_machine": "ARM",
+      "elf_flags": "0x5000200, Version5 EABI, soft-float ABI",
+      "build_ids": [
+        "bac659039ce25486da3473a6da562dc0e7fd1eea"
+      ],
+      "elf_build_id": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+      "parsed": true,
+      "comment": [
+        {
+          "section_offset": 1,
+          "text": "clang version 22.1.8"
+        },
+        {
+          "section_offset": 22,
+          "text": "Linker: LLD 22.1.8"
+        }
+      ],
+      "compiler": "clang version 22.1.8",
+      "modinfo": [],
+      "vermagic": "",
+      "name": "",
+      "vermagic_release_match": null,
+      "extraction": "native ELF",
+      "linker_evidence": [
+        {
+          "type": "ELF .comment linker identification",
+          "linker": "LLD",
+          "location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug-readelf.out .comment+0x16",
+          "raw": "Linker: LLD 22.1.8",
+          "final_link": false,
+          "confidence": "MEDIUM"
+        }
+      ],
+      "classification": "LLD_INDICATED",
+      "reason": "Linker string in ELF .comment; it can be retained from an earlier link",
+      "evidence_type": "ELF .comment linker identification",
+      "evidence_location": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug-readelf.out .comment+0x16",
+      "raw_evidence": "Linker: LLD 22.1.8",
+      "confidence": "MEDIUM",
+      "proves_final_link": false,
+      "elf_linker_identification": true,
+      "linker_classification": "LLD_INDICATED",
+      "version_strings": [],
+      "matching_gnu_build_id_notes": [],
+      "toolchain_string_samples": [
+        {
+          "offset": 37754,
+          "string_offset": 37754,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 679447,
+          "string_offset": 679447,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 712410,
+          "string_offset": 712410,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1172985,
+          "string_offset": 1172985,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1214629,
+          "string_offset": 1214629,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1440913,
+          "string_offset": 1440913,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1996722,
+          "string_offset": 1996722,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1997008,
+          "string_offset": 1997008,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 1997656,
+          "string_offset": 1997656,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2685499,
+          "string_offset": 2685499,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2685722,
+          "string_offset": 2685722,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2685939,
+          "string_offset": 2685939,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2760062,
+          "string_offset": 2760062,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2772958,
+          "string_offset": 2772958,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2785686,
+          "string_offset": 2785686,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2975524,
+          "string_offset": 2975524,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 2996730,
+          "string_offset": 2996730,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3042893,
+          "string_offset": 3042893,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3065695,
+          "string_offset": 3065695,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3106180,
+          "string_offset": 3106180,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3163408,
+          "string_offset": 3163408,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3163695,
+          "string_offset": 3163695,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3190721,
+          "string_offset": 3190721,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3191001,
+          "string_offset": 3191001,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 3215871,
+          "string_offset": 3215871,
+          "match": "clang version 22.1.8",
+          "text": "clang version 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        },
+        {
+          "offset": 293495915,
+          "string_offset": 293495915,
+          "match": "Linker: LLD 22.1.8",
+          "text": "Linker: LLD 22.1.8",
+          "source_type": "Unresolved byte-string source; use section-specific evidence for ELF"
+        }
+      ],
+      "toolchain_string_hit_counts": {
+        "clang": 68,
+        "linker:": 1
+      }
+    }
+  ],
+  "extraction": [
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "9754b54faeb9a91bcbfbc4e051595326b26a9e570e26c994aaf93028e3e6bf7b",
+      "archive_entry_count": 412
+    },
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-btf-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "26291ca3b3f5c8b94ee60386ecfe87212cab381007b9c09c94b1cb904eb9cece",
+      "archive_entry_count": 1
+    },
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "62775506215e29691c98fde8dd8b61f0c0acf0660c7c1a3714c6737d5c0ea5c1",
+      "archive_entry_count": 63656
+    },
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "7b62a2360c5ae2d353af415cdad3d4c29cdddc659381e355b24b551ef251f0e8",
+      "archive_entry_count": 115
+    },
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-headers-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-headers-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "8a218cb37a7d63fcdf8fc7b85556ff3724ba2707009621b55345287bc4f74b03",
+      "archive_entry_count": 1022
+    },
+    {
+      "rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l/rpm2cpio.out",
+      "sha256": "276203c16c4b6d3c98b41a84cd67dd7c8206f906921a2192efedea4b6e9219e0",
+      "archive_entry_count": 113
+    },
+    {
+      "rpm": "evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "exit_status": 0,
+      "evidence": "evidence/kernel_binary/payload/linux-tizen-modules-rpi4-11.0.0-0.armv7l/rpm2cpio.out",
+      "sha256": "094a784108ede54cb75ca9da0269cd5f379ae44da72b0ac8e0c6de37255ed3a3",
+      "archive_entry_count": 11
+    }
+  ],
+  "runtime_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6"
+}

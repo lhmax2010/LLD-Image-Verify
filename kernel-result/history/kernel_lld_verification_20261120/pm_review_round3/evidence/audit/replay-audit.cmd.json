@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-c",
+    "\nimport csv\nimport json\nfrom pathlib import Path\nimport subprocess\nimport tempfile\nroot=Path.cwd()\nwith tempfile.TemporaryDirectory(prefix=\".phase9-audit-replay-\",dir=root.parent) as folder:\n    work=Path(folder)\n    for name in (\"audit_linker_overrides.py\",\"verify_linker_audit_sources.py\"):\n        subprocess.run([\"python3\",\"-B\",str(root/\"scripts\"/name),\"--base\",str(root.parent),\n                        \"--output\",str(work)],check=True)\n    checks=[\"KERNEL_LINKER_OVERRIDE_FINDINGS.csv\",\n            \"evidence/audit/source-scope.json\",\"evidence/audit/source-object-magic.json\",\n            \"evidence/audit/patch-control-lines.json\",\"evidence/audit/findings-summary.json\",\n            \"evidence/audit/audit-source-verification.json\",\"evidence/audit/audit-build-log-excerpts.txt\"]\n    for check in checks:\n        assert (work/check).read_bytes()==(root/check).read_bytes(),check\n    report=(root/\"KERNEL_LINKER_OVERRIDE_AUDIT.md\").read_text()\n    for required in (\"153\",\"5,313\",\"POTENTIAL_BYPASS\",\"audit-build-log-excerpts.txt\"):\n        assert required in report,required\n    print(f\"PASS: {len(checks)} exact replay results. Confirmed source/target checks.\")\n"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261120/pm_review_round3",
+  "started_utc": "2026-11-25T11:40:38.383702+00:00",
+  "elapsed_seconds": 68.568,
+  "exit_status": 0
+}

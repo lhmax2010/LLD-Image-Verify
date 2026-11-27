@@ -1,0 +1,16 @@
+/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:787:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+  787 |                 out->set[1].caps[0] = CAP_FULL_SET.val;
+      |                                     ~ ~~~~~~~~~~~~~^~~
+/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:789:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+  789 |                 out->set[2].caps[0] = CAP_FULL_SET.val;
+      |                                     ~ ~~~~~~~~~~~~~^~~
+/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:791:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+  791 |                 out->set[3].caps[0] = CAP_FULL_SET.val;
+      |                                     ~ ~~~~~~~~~~~~~^~~
+3 warnings generated.
+/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.c:1072:13: warning: stack frame size (1080) exceeds limit (1024) in 'zlogger_dump_ioctl' [-Wframe-larger-than]
+ 1072 | static long zlogger_dump_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
+      |             ^
+1 warning generated.
+Warning: 'make modules_install' requires depmod. Please install it.
+This is probably in the kmod package.

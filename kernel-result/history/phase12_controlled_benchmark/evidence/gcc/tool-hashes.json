@@ -1,0 +1,325 @@
+{
+  "/usr/bin/ld.bfd": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "2b5a0b95691f3e5c091ae919baf27832e65e23a750bfe40d29ba10f2fb3f1e74"
+  },
+  "/usr/bin/ctracer": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "96cfb5faf2419df745b4f02ab4307b1a54b5230c76fa457a0971b0b437f5e110"
+  },
+  "/usr/bin/eu-objdump": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "f8900ef24910e7e851fc1224c04b471570335873feacd41901f50b627cdc49c4"
+  },
+  "/usr/bin/gcov": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "afd96349ce8ebc107148c19b2c768c7ed56295206fabf4049e20308ec9828703"
+  },
+  "/usr/bin/gprof": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "c211996b6c37400f57e2c1738e307dac057c18fad17a350271a31be785cba63f"
+  },
+  "/usr/bin/armv7l-tizen-linux-gnueabi-gcc": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "7deea169746032aacde21cdd592b430ad27ac421b0d5f64a92d6146be0c852c5"
+  },
+  "/usr/bin/eu-size": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "fd95c9d10c4aed11fa07f769bf5bc5c0b9bb05d3ed34b43327a6c07a45e6b1f2"
+  },
+  "/usr/bin/ar": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "65b1dc9356767e9cf5d0c883770c4dcaab9734c38a7b0a6ba71aaeaeb00eaf3f"
+  },
+  "/usr/bin/pglobal": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "ef3e210ee7a432fe00a178aeb086cf0023d626b8b88adaba2a13ae3f617c44bb"
+  },
+  "/usr/bin/size": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "24f3ae5689d0364d61132870851d694b8ed73b58c9f747acc0fecd5cb6b26de8"
+  },
+  "/usr/bin/btfdiff": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "2821d3da93281b9794a237f359258aa57ac89b775f2edab75a7c2f4d3127ee21"
+  },
+  "/usr/bin/gcc-nm": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "75c8104524f47464100e70d371f19ae5452bcaa4fdbb476fb6f283bef666e9ee"
+  },
+  "/usr/bin/syscse": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "0e20b4e81a7c5d2baa4ac51c8e279345df430a054107bc8180dda6b8b7aeec6b"
+  },
+  "/usr/bin/gcov-dump": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "de9c1a7dcfa1b06d1a43cc5e586ff3098adf8c11f27d2471de7d5315cb95a46c"
+  },
+  "/usr/bin/strings": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "d949ac8bbd46729bc4fafce3447dd70bf0a4dcd8be3fdc512c85aebb37290473"
+  },
+  "/usr/bin/eu-addr2line": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "1911920e85588d142799f7e5331a45e73886a785011deb739473e3acad84b91b"
+  },
+  "/usr/bin/strip": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "1f44013885c6287bcf9dbd8547505468b842afc5cb17b77c06a35d151aa3df34"
+  },
+  "/usr/bin/dwp": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "25a5b587acedc48d7e8cee7a0ac3e6a055191512cd3cd79bef94e471dc3cf40d"
+  },
+  "/usr/bin/gcov-tool": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "1ba1d70916c10ce138b81bc644ad0c61842db97d73ed2282656efabeff770775"
+  },
+  "/usr/bin/eu-elfcmp": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "59da8d8d58bcf7f5388bae7f4f21be308a073c433d3f7aae1245928ce684fec6"
+  },
+  "/usr/bin/eu-ar": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "29447e05a70e8ab10d8ef693864a68b27c83f4b015adeca31575808a4cbfcc57"
+  },
+  "/usr/bin/scncopy": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "9e844ce299bcaa7fb015d66707ca5dce77306742525a6c2edc2d6e3296eae9a5"
+  },
+  "/usr/bin/eu-elflint": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "bbd3a6b5a946ffb9f17f349472dc0ae40a2bf3ceb493dc5a2d1abe38c0f2cede"
+  },
+  "/usr/bin/eu-unstrip": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "62c998b6ec7ae528bb204a7c70a7d2989236408cdae80dd1b195e7afd11718b3"
+  },
+  "/usr/bin/make": {
+    "source_rpm": "make-4.4.1-1.6.armv7l.rpm",
+    "sha256": "0859ac7f266157df7c76db0fb7394e9e5ba5cad259dda2ea0c82d0a4e4070a0b"
+  },
+  "/usr/bin/as": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "a5898e93f555c68a8f9e9d05e75610befc0b31aefa82e83aeeb16fd15a7ae265"
+  },
+  "/usr/bin/elfedit": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "ccf8c288f3de7484addcd8a62ff96e634334ea47db32d72a081f9d2b0fd8bf90"
+  },
+  "/usr/bin/ranlib": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "876eb64158ebad4be2721e4d677e77d8d5c8d9f5f0bba779dea0722fa71d6915"
+  },
+  "/usr/bin/dtagnames": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "7ba3c1e9caacd5c81de2ba2e1243c341d0677a03c63a52f02991cfaa514bada9"
+  },
+  "/usr/bin/iconv": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "09001139bc8feb72bb5aa15395057d94368d18b91b3214f317c83b01cfdf5185"
+  },
+  "/usr/bin/objdump": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "d5919f8b912f9613cca119b71ccc9280448815008f48068eabe2fcab763d5e54"
+  },
+  "/usr/bin/eu-elfcompress": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "27b72cf5c0fd357efe5f95f530eac6332ef7039c1f8cad6a9206e8c41431a438"
+  },
+  "/usr/bin/ldd": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "f47b5047b5f48068c876e9fb07d0c7e6c41233723b009e5b99c5095cf832e4b7"
+  },
+  "/usr/bin/ld": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "2b5a0b95691f3e5c091ae919baf27832e65e23a750bfe40d29ba10f2fb3f1e74"
+  },
+  "/usr/bin/fullcircle": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "89c9b201eb786ff82396f73e30437937163f42ad3e7f3828af48da296d846070"
+  },
+  "/usr/bin/eu-findtextrel": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "580868bde232fab07b1f2015728ff1096813781629bcd7f7bb570008d9ca62b1"
+  },
+  "/usr/bin/codiff": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "4597f0c4adf8b3d7e7d25d70275a0fb6f90d0db7e5d30bfec70e9c240eb97a44"
+  },
+  "/usr/bin/armv7l-tizen-linux-gnueabi-gcc-ar": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "82b7758d408bbc8a3f090cdf3aaaa5360aaab17957499c38c1264cf835a47997"
+  },
+  "/usr/bin/armv7l-tizen-linux-gnueabi-gcc-ranlib": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "cdd564d63615804f03faacc4190edc7bafd3318948c7b98973312f08a5821376"
+  },
+  "/usr/bin/eu-ranlib": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "0505f253e659d547e94a26e2e0ba51d9fde9f1ed062663fd2e32d6dc97920229"
+  },
+  "/usr/bin/eu-readelf": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "30e3f1592272c5791f92e0a45ed10a934db1b852038352b393743717c030f295"
+  },
+  "/usr/bin/cpp": {
+    "source_rpm": "cpp-14.2.0-1.6.armv7l.rpm",
+    "sha256": "eb130f26222111e0686b3f72b9d6446cd7d16cf1227bad0bf62f27018be907e3"
+  },
+  "/usr/bin/eu-nm": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "8c2c81c48806e13fdacce8afb9a1f7dfd5630369c94ba1b076470a17a385fe32"
+  },
+  "/usr/bin/prefcnt": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "ec60b79baf0b98f34f07781d21a2204a434a30dbda1008e92ec807af86d4360f"
+  },
+  "/usr/bin/eu-stack": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "328f64cdba4cc00039def7219301d5e78b9055078a042bed21904827fa464eb9"
+  },
+  "/usr/bin/gcc-ranlib": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "cdd564d63615804f03faacc4190edc7bafd3318948c7b98973312f08a5821376"
+  },
+  "/usr/bin/c++filt": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "2457e44727bfdb62ccf16523f0b4a8fd3dade2a80d2de6bbb9e28b5e5b92a910"
+  },
+  "/usr/bin/armv7l-tizen-linux-gnueabi-gcc-14.2.0": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "7deea169746032aacde21cdd592b430ad27ac421b0d5f64a92d6146be0c852c5"
+  },
+  "/usr/bin/eu-strip": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "3c4df362534944b7c3e722dbab29b25aee472c7bf95d65e4b4e6ecf217f570b5"
+  },
+  "/usr/bin/gcc-ar": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "82b7758d408bbc8a3f090cdf3aaaa5360aaab17957499c38c1264cf835a47997"
+  },
+  "/usr/bin/eu-elfclassify": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "625949e98ee24b41096018f3010cce6139686da2c3b039d24475ab849485a3d0"
+  },
+  "/usr/bin/localedef": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "ed448d7c6c1b1758976eaacf02872860d4aaed3ec30cffd737752e039f11c466"
+  },
+  "/usr/bin/locale": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "23bd013bd2cd1d7760fa3de09a6b9fdf9fd65fcd398652104f4bd227b2326501"
+  },
+  "/usr/bin/pahole": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "74047bac4664b01b27623e9f600349ded7af451c00bd2d79d69ec0ef33a82278"
+  },
+  "/usr/bin/eu-make-debug-archive": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "08d7b52f5c2cfa21cc1c3913a8cb8e545dad26df7c762b2f81cf4d8fdcb3fbac"
+  },
+  "/usr/bin/lto-dump": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "ae73b0552400a286f1b274316d67bc294669261d91b0d756630eda1b6ba01ea0"
+  },
+  "/usr/bin/gencat": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "6be19824c7003f6425695060883ee2fa98daa5be0c8fee6798a497757f2d134a"
+  },
+  "/usr/bin/nm": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "8121562be1824f31197bf5c58eb8402353e30ea454812dbd723de08e06e73659"
+  },
+  "/usr/bin/pdwtags": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "ff75752745994969b82c1363008560d8657b776ea5f885a0bb1551dfe19e83b3"
+  },
+  "/usr/bin/objcopy": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "e6d2aa8acff36003dd9dbafd22f177e3af65895a6be3dfc31daf17d6b29bf5ac"
+  },
+  "/usr/bin/gcc": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "7deea169746032aacde21cdd592b430ad27ac421b0d5f64a92d6146be0c852c5"
+  },
+  "/usr/bin/getent": {
+    "source_rpm": "glibc-2.40-1.6.armv7l.rpm",
+    "sha256": "138b0d028202a65ca2b16012c9e25f82ca89462b215e9980425fd149d1e9d479"
+  },
+  "/usr/bin/eu-strings": {
+    "source_rpm": "elfutils-0.189-1.6.armv7l.rpm",
+    "sha256": "ed2db7a861f97396193b5a50f0a759bf4e1e771ec341366cd0a053dcf982bd7a"
+  },
+  "/usr/bin/readelf": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "03704d777985a6c96048bbb92329d24f45b43912f2e5b84d1c35bc0dca73a9cf"
+  },
+  "/usr/bin/armv7l-tizen-linux-gnueabi-gcc-nm": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "75c8104524f47464100e70d371f19ae5452bcaa4fdbb476fb6f283bef666e9ee"
+  },
+  "/usr/bin/addr2line": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "a02b17d164544a622c9e1e8b5e73d28fb7e9dd5cad9ef7a84ba967a66c1cb588"
+  },
+  "/usr/bin/pfunct": {
+    "source_rpm": "dwarves-1.29-1.armv7l.rpm",
+    "sha256": "8e675af1c9a9f8643ee3f29cb7ae6b50ca084f40ad3e8f7cde7d2060e30f6100"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "8df62eed749bfe7d504fb69b56efe9798e094381bcad0b678a25dfe2e7e3f382",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/ar": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "65b1dc9356767e9cf5d0c883770c4dcaab9734c38a7b0a6ba71aaeaeb00eaf3f",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/ar"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/strip": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "1f44013885c6287bcf9dbd8547505468b842afc5cb17b77c06a35d151aa3df34",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/strip"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/as": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "a5898e93f555c68a8f9e9d05e75610befc0b31aefa82e83aeeb16fd15a7ae265",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/as"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/ranlib": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "876eb64158ebad4be2721e4d677e77d8d5c8d9f5f0bba779dea0722fa71d6915",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/ranlib"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/objdump": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "d5919f8b912f9613cca119b71ccc9280448815008f48068eabe2fcab763d5e54",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/objdump"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/ld": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "2b5a0b95691f3e5c091ae919baf27832e65e23a750bfe40d29ba10f2fb3f1e74",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/ld"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/nm": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "8121562be1824f31197bf5c58eb8402353e30ea454812dbd723de08e06e73659",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/nm"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/objcopy": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "e6d2aa8acff36003dd9dbafd22f177e3af65895a6be3dfc31daf17d6b29bf5ac",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/objcopy"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/gcc": {
+    "source_rpm": "gcc-14.2.0-1.6.armv7l.rpm",
+    "sha256": "7deea169746032aacde21cdd592b430ad27ac421b0d5f64a92d6146be0c852c5",
+    "resolved_path": "/usr/bin/armv7l-tizen-linux-gnueabi-gcc"
+  },
+  "/usr/armv7l-tizen-linux-gnueabi/bin/readelf": {
+    "source_rpm": "binutils-2.43-1.6.armv7l.rpm",
+    "sha256": "03704d777985a6c96048bbb92329d24f45b43912f2e5b84d1c35bc0dca73a9cf",
+    "resolved_path": "/usr/armv7l-tizen-linux-gnueabi/bin/readelf"
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "original_affinity": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "profiles": {
+    "default_threads": [
+      [
+        4,
+        5,
+        6,
+        7
+      ],
+      false
+    ],
+    "one_cpu_one_thread": [
+      [
+        4
+      ],
+      true
+    ]
+  },
+  "seed": 20261126,
+  "valid_pairs_per_profile": 40,
+  "warmups": [
+    {
+      "profile": "default_threads",
+      "linker": "bfd",
+      "warmup": 1,
+      "exit_status": 0,
+      "wall_ms": 11.826218,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "bfd",
+      "warmup": 2,
+      "exit_status": 0,
+      "wall_ms": 8.188394,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "bfd",
+      "warmup": 3,
+      "exit_status": 0,
+      "wall_ms": 5.70106,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "bfd",
+      "warmup": 4,
+      "exit_status": 0,
+      "wall_ms": 6.368278,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "bfd",
+      "warmup": 5,
+      "exit_status": 0,
+      "wall_ms": 5.734362,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "lld",
+      "warmup": 1,
+      "exit_status": 0,
+      "wall_ms": 13.761068,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "lld",
+      "warmup": 2,
+      "exit_status": 0,
+      "wall_ms": 11.480308,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "lld",
+      "warmup": 3,
+      "exit_status": 0,
+      "wall_ms": 10.458318,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "lld",
+      "warmup": 4,
+      "exit_status": 0,
+      "wall_ms": 11.345209,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "default_threads",
+      "linker": "lld",
+      "warmup": 5,
+      "exit_status": 0,
+      "wall_ms": 11.065421,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "bfd",
+      "warmup": 1,
+      "exit_status": 0,
+      "wall_ms": 5.578704,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "bfd",
+      "warmup": 2,
+      "exit_status": 0,
+      "wall_ms": 4.691311,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "bfd",
+      "warmup": 3,
+      "exit_status": 0,
+      "wall_ms": 5.160328,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "bfd",
+      "warmup": 4,
+      "exit_status": 0,
+      "wall_ms": 4.88689,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "bfd",
+      "warmup": 5,
+      "exit_status": 0,
+      "wall_ms": 4.828748,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "lld",
+      "warmup": 1,
+      "exit_status": 0,
+      "wall_ms": 10.983453,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "lld",
+      "warmup": 2,
+      "exit_status": 0,
+      "wall_ms": 9.548763,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "lld",
+      "warmup": 3,
+      "exit_status": 0,
+      "wall_ms": 10.363695,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "lld",
+      "warmup": 4,
+      "exit_status": 0,
+      "wall_ms": 9.84637,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "profile": "one_cpu_one_thread",
+      "linker": "lld",
+      "warmup": 5,
+      "exit_status": 0,
+      "wall_ms": 9.657778,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    }
+  ],
+  "revision": "low-RSS native fork/wait4 timer",
+  "clock": "clock_gettime(CLOCK_MONOTONIC) in native timer",
+  "scope": "One actual linker child per measurement. Tracing, hashing, warmups and ELF analysis outside timed region.",
+  "confidence_method": "95% paired bootstrap ratio of medians. Local shared host; intervals omit between-host and between-day variation."
+}

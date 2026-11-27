@@ -1,0 +1,78 @@
+[
+  {
+    "path": "/tmp/work/module/kdbus/bus.o",
+    "sha256": "6d9416ddb4345199b073b26abc9d772ca4bcae00e0303aeb57a376bd106e3d1c"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/connection.o",
+    "sha256": "3da844773d4744774335ab842ea06f08dfaa574060c34e5f18cd6760d0562f0b"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/endpoint.o",
+    "sha256": "a2d2df741eb4c9b88bdb9af65733106d3786d682ff2722cbe6cff34838de537a"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/fs.o",
+    "sha256": "5f1321bde4e7d5fdeb40c8029db8f83bcd9b9162f8b1e21d6c33a46d1becc178"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/handle.o",
+    "sha256": "7ca66c74cb326bd0d7ee6c904ece85925a21cf2a8cad85a5161d021ad68064fc"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/item.o",
+    "sha256": "b4636eda12db9ad5df993bddb0d0d1736ab37e09de667938c1aac80979f3111c"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/main.o",
+    "sha256": "fddf98a7eb9c3f02188f7806df0ad7343dcbded3dbe5705b60b0363efe8abb96"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/match.o",
+    "sha256": "e30918b7b90a63884da25240fd802bada9327db5b2265bc5eb0b04b83bc8d554"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/message.o",
+    "sha256": "bfb028b2b1337fc83afcc423f0b5554e96b6da61b17c7d37c9319ed4445c6220"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/metadata.o",
+    "sha256": "8a753d0cf45608d01a4c1064ea38f710f39cf71da8384b9a8ee5f3fa3c0b0bc0"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/names.o",
+    "sha256": "4ef0be29095cb845d3834203d63a192783d369f78c2396e60b83edb64c4cc41e"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/node.o",
+    "sha256": "e2613e472d6a846df29df965975d9ccc24a5ea6cc615068984051beee439715e"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/notify.o",
+    "sha256": "b073b9453aef027b647a1eecf2838b88c633016988a594ce99a0e0b20276af44"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/domain.o",
+    "sha256": "ccacafa40c9522455fda71b7b22a4ccd424c1aa8386976edf3ab80f2bc5aef77"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/policy.o",
+    "sha256": "86f5c45d7fd9aa51d4840d361f41cd955b138712c049e66f7a6729969fb9fb4b"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/pool.o",
+    "sha256": "c2d28cee6a9426d3d74eeeedf53341bc22b2ecb5cad59f1c404b5de917c445e7"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/reply.o",
+    "sha256": "b72cb589c9406188546c6c273d118d18daae8dc83f5309dc6c972c6c36196b74"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/queue.o",
+    "sha256": "858c2069b82412b468914dfd4d4a05ffca1ec32027aa7d9084e4ca43585390dd"
+  },
+  {
+    "path": "/tmp/work/module/kdbus/util.o",
+    "sha256": "041a888b755a49f4f509baa39c498c5c9c1a1dc74d525fd8a301f891607fd15e"
+  }
+]

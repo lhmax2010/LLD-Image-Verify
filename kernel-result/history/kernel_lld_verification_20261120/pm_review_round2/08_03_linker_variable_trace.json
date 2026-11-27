@@ -1,0 +1,4025 @@
+{
+  "release": "6.12.80-arm-rpi4-v7l",
+  "vcs_revision": "42aeefac58edeb081aff440f0b60be71cbe49755",
+  "target": "arm-rpi4 non-RT",
+  "package_source_binding": "evidence/kernel/kernel-source-binding.json",
+  "historical_log": {
+    "file": "evidence/build/linux-rpi-armv7l.out",
+    "sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673"
+  },
+  "variable_trace": {
+    "LLVM": {
+      "evaluation": "export LLVM=1 observed at log 1677–1678. Nonempty triggers LLVM branch. LLVM=0 is also nonempty in this tree and would not select GNU tools here.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/spec/linux-rpi.spec",
+          "start_line": 190,
+          "end_line": 198,
+          "code": [
+            {
+              "line": 190,
+              "raw": "%build"
+            },
+            {
+              "line": 191,
+              "raw": "%{?asan:/usr/bin/gcc-unforce-options}"
+            },
+            {
+              "line": 192,
+              "raw": "%{?ubsan:/usr/bin/gcc-unforce-options}"
+            },
+            {
+              "line": 193,
+              "raw": ""
+            },
+            {
+              "line": 194,
+              "raw": "%{?_toolchain:"
+            },
+            {
+              "line": 195,
+              "raw": "%if %{toolchain_is clang}"
+            },
+            {
+              "line": 196,
+              "raw": "export LLVM=1"
+            },
+            {
+              "line": 197,
+              "raw": "%endif"
+            },
+            {
+              "line": 198,
+              "raw": "}"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 423,
+          "end_line": 434,
+          "code": [
+            {
+              "line": 423,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 424,
+              "raw": "ifneq ($(filter %/,$(LLVM)),)"
+            },
+            {
+              "line": 425,
+              "raw": "LLVM_PREFIX := $(LLVM)"
+            },
+            {
+              "line": 426,
+              "raw": "else ifneq ($(filter -%,$(LLVM)),)"
+            },
+            {
+              "line": 427,
+              "raw": "LLVM_SUFFIX := $(LLVM)"
+            },
+            {
+              "line": 428,
+              "raw": "endif"
+            },
+            {
+              "line": 429,
+              "raw": ""
+            },
+            {
+              "line": 430,
+              "raw": "HOSTCC\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 431,
+              "raw": "HOSTCXX\t= $(LLVM_PREFIX)clang++$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 432,
+              "raw": "else"
+            },
+            {
+              "line": 433,
+              "raw": "HOSTCC\t= gcc"
+            },
+            {
+              "line": 434,
+              "raw": "HOSTCXX\t= g++"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 476,
+          "end_line": 496,
+          "code": [
+            {
+              "line": 476,
+              "raw": "# Make variables (CC, etc...)"
+            },
+            {
+              "line": 477,
+              "raw": "CPP\t\t= $(CC) -E"
+            },
+            {
+              "line": 478,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 479,
+              "raw": "CC\t\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 480,
+              "raw": "LD\t\t= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 481,
+              "raw": "AR\t\t= $(LLVM_PREFIX)llvm-ar$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 482,
+              "raw": "NM\t\t= $(LLVM_PREFIX)llvm-nm$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 483,
+              "raw": "OBJCOPY\t\t= $(LLVM_PREFIX)llvm-objcopy$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 484,
+              "raw": "OBJDUMP\t\t= $(LLVM_PREFIX)llvm-objdump$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 485,
+              "raw": "READELF\t\t= $(LLVM_PREFIX)llvm-readelf$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 486,
+              "raw": "STRIP\t\t= $(LLVM_PREFIX)llvm-strip$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 487,
+              "raw": "else"
+            },
+            {
+              "line": 488,
+              "raw": "CC\t\t= $(CROSS_COMPILE)gcc"
+            },
+            {
+              "line": 489,
+              "raw": "LD\t\t= $(CROSS_COMPILE)ld"
+            },
+            {
+              "line": 490,
+              "raw": "AR\t\t= $(CROSS_COMPILE)ar"
+            },
+            {
+              "line": 491,
+              "raw": "NM\t\t= $(CROSS_COMPILE)nm"
+            },
+            {
+              "line": 492,
+              "raw": "OBJCOPY\t\t= $(CROSS_COMPILE)objcopy"
+            },
+            {
+              "line": 493,
+              "raw": "OBJDUMP\t\t= $(CROSS_COMPILE)objdump"
+            },
+            {
+              "line": 494,
+              "raw": "READELF\t\t= $(CROSS_COMPILE)readelf"
+            },
+            {
+              "line": 495,
+              "raw": "STRIP\t\t= $(CROSS_COMPILE)strip"
+            },
+            {
+              "line": 496,
+              "raw": "endif"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1677,
+          "raw": "[   65s] + export LLVM=1"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1678,
+          "raw": "[   65s] + LLVM=1"
+        }
+      ]
+    },
+    "LD": {
+      "evaluation": "Predicted make value is ld.lld with default empty prefix/suffix. Kconfig checked $LD --version, distinguishing BFD and LLD. Generated LLD_VERSION=220108. No same-build absolute executable path recovered.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 423,
+          "end_line": 428,
+          "code": [
+            {
+              "line": 423,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 424,
+              "raw": "ifneq ($(filter %/,$(LLVM)),)"
+            },
+            {
+              "line": 425,
+              "raw": "LLVM_PREFIX := $(LLVM)"
+            },
+            {
+              "line": 426,
+              "raw": "else ifneq ($(filter -%,$(LLVM)),)"
+            },
+            {
+              "line": 427,
+              "raw": "LLVM_SUFFIX := $(LLVM)"
+            },
+            {
+              "line": 428,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 476,
+          "end_line": 496,
+          "code": [
+            {
+              "line": 476,
+              "raw": "# Make variables (CC, etc...)"
+            },
+            {
+              "line": 477,
+              "raw": "CPP\t\t= $(CC) -E"
+            },
+            {
+              "line": 478,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 479,
+              "raw": "CC\t\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 480,
+              "raw": "LD\t\t= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 481,
+              "raw": "AR\t\t= $(LLVM_PREFIX)llvm-ar$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 482,
+              "raw": "NM\t\t= $(LLVM_PREFIX)llvm-nm$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 483,
+              "raw": "OBJCOPY\t\t= $(LLVM_PREFIX)llvm-objcopy$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 484,
+              "raw": "OBJDUMP\t\t= $(LLVM_PREFIX)llvm-objdump$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 485,
+              "raw": "READELF\t\t= $(LLVM_PREFIX)llvm-readelf$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 486,
+              "raw": "STRIP\t\t= $(LLVM_PREFIX)llvm-strip$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 487,
+              "raw": "else"
+            },
+            {
+              "line": 488,
+              "raw": "CC\t\t= $(CROSS_COMPILE)gcc"
+            },
+            {
+              "line": 489,
+              "raw": "LD\t\t= $(CROSS_COMPILE)ld"
+            },
+            {
+              "line": 490,
+              "raw": "AR\t\t= $(CROSS_COMPILE)ar"
+            },
+            {
+              "line": 491,
+              "raw": "NM\t\t= $(CROSS_COMPILE)nm"
+            },
+            {
+              "line": 492,
+              "raw": "OBJCOPY\t\t= $(CROSS_COMPILE)objcopy"
+            },
+            {
+              "line": 493,
+              "raw": "OBJDUMP\t\t= $(CROSS_COMPILE)objdump"
+            },
+            {
+              "line": 494,
+              "raw": "READELF\t\t= $(CROSS_COMPILE)readelf"
+            },
+            {
+              "line": 495,
+              "raw": "STRIP\t\t= $(CROSS_COMPILE)strip"
+            },
+            {
+              "line": 496,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 591,
+          "end_line": 604,
+          "code": [
+            {
+              "line": 591,
+              "raw": "export CLIPPY_CONF_DIR := $(srctree)"
+            },
+            {
+              "line": 592,
+              "raw": ""
+            },
+            {
+              "line": 593,
+              "raw": "export ARCH SRCARCH CONFIG_SHELL BASH HOSTCC KBUILD_HOSTCFLAGS CROSS_COMPILE LD CC HOSTPKG_CONFIG"
+            },
+            {
+              "line": 594,
+              "raw": "export RUSTC RUSTDOC RUSTFMT RUSTC_OR_CLIPPY_QUIET RUSTC_OR_CLIPPY BINDGEN"
+            },
+            {
+              "line": 595,
+              "raw": "export HOSTRUSTC KBUILD_HOSTRUSTFLAGS"
+            },
+            {
+              "line": 596,
+              "raw": "export CPP AR NM STRIP OBJCOPY OBJDUMP READELF PAHOLE RESOLVE_BTFIDS LEX YACC AWK INSTALLKERNEL"
+            },
+            {
+              "line": 597,
+              "raw": "export PERL PYTHON3 CHECK CHECKFLAGS MAKE UTS_MACHINE HOSTCXX"
+            },
+            {
+              "line": 598,
+              "raw": "export KGZIP KBZIP2 KLZOP LZMA LZ4 XZ ZSTD"
+            },
+            {
+              "line": 599,
+              "raw": "export KBUILD_HOSTCXXFLAGS KBUILD_HOSTLDFLAGS KBUILD_HOSTLDLIBS LDFLAGS_MODULE"
+            },
+            {
+              "line": 600,
+              "raw": "export KBUILD_USERCFLAGS KBUILD_USERLDFLAGS"
+            },
+            {
+              "line": 601,
+              "raw": ""
+            },
+            {
+              "line": 602,
+              "raw": "export KBUILD_CPPFLAGS NOSTDINC_FLAGS LINUXINCLUDE OBJCOPYFLAGS KBUILD_LDFLAGS"
+            },
+            {
+              "line": 603,
+              "raw": "export KBUILD_CFLAGS CFLAGS_KERNEL CFLAGS_MODULE"
+            },
+            {
+              "line": 604,
+              "raw": "export KBUILD_RUSTFLAGS RUSTFLAGS_KERNEL RUSTFLAGS_MODULE"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Kconfig.include",
+          "start_line": 39,
+          "end_line": 59,
+          "code": [
+            {
+              "line": 39,
+              "raw": "# check if $(CC) and $(LD) exist"
+            },
+            {
+              "line": 40,
+              "raw": "$(error-if,$(failure,command -v $(CC)),C compiler '$(CC)' not found)"
+            },
+            {
+              "line": 41,
+              "raw": "$(error-if,$(failure,command -v $(LD)),linker '$(LD)' not found)"
+            },
+            {
+              "line": 42,
+              "raw": ""
+            },
+            {
+              "line": 43,
+              "raw": "# Get the C compiler name, version, and error out if it is not supported."
+            },
+            {
+              "line": 44,
+              "raw": "cc-info := $(shell,$(srctree)/scripts/cc-version.sh $(CC))"
+            },
+            {
+              "line": 45,
+              "raw": "$(error-if,$(success,test -z \"$(cc-info)\"),Sorry$(comma) this C compiler is not supported.)"
+            },
+            {
+              "line": 46,
+              "raw": "cc-name := $(shell,set -- $(cc-info) && echo $1)"
+            },
+            {
+              "line": 47,
+              "raw": "cc-version := $(shell,set -- $(cc-info) && echo $2)"
+            },
+            {
+              "line": 48,
+              "raw": ""
+            },
+            {
+              "line": 49,
+              "raw": "# Get the assembler name, version, and error out if it is not supported."
+            },
+            {
+              "line": 50,
+              "raw": "as-info := $(shell,$(srctree)/scripts/as-version.sh $(CC) $(CLANG_FLAGS))"
+            },
+            {
+              "line": 51,
+              "raw": "$(error-if,$(success,test -z \"$(as-info)\"),Sorry$(comma) this assembler is not supported.)"
+            },
+            {
+              "line": 52,
+              "raw": "as-name := $(shell,set -- $(as-info) && echo $1)"
+            },
+            {
+              "line": 53,
+              "raw": "as-version := $(shell,set -- $(as-info) && echo $2)"
+            },
+            {
+              "line": 54,
+              "raw": ""
+            },
+            {
+              "line": 55,
+              "raw": "# Get the linker name, version, and error out if it is not supported."
+            },
+            {
+              "line": 56,
+              "raw": "ld-info := $(shell,$(srctree)/scripts/ld-version.sh $(LD))"
+            },
+            {
+              "line": 57,
+              "raw": "$(error-if,$(success,test -z \"$(ld-info)\"),Sorry$(comma) this linker is not supported.)"
+            },
+            {
+              "line": 58,
+              "raw": "ld-name := $(shell,set -- $(ld-info) && echo $1)"
+            },
+            {
+              "line": 59,
+              "raw": "ld-version := $(shell,set -- $(ld-info) && echo $2)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/ld-version.sh",
+          "start_line": 22,
+          "end_line": 57,
+          "code": [
+            {
+              "line": 22,
+              "raw": "orig_args=\"$@\""
+            },
+            {
+              "line": 23,
+              "raw": ""
+            },
+            {
+              "line": 24,
+              "raw": "# Get the first line of the --version output."
+            },
+            {
+              "line": 25,
+              "raw": "IFS='"
+            },
+            {
+              "line": 26,
+              "raw": "'"
+            },
+            {
+              "line": 27,
+              "raw": "set -- $(LC_ALL=C \"$@\" --version)"
+            },
+            {
+              "line": 28,
+              "raw": ""
+            },
+            {
+              "line": 29,
+              "raw": "# Split the line on spaces."
+            },
+            {
+              "line": 30,
+              "raw": "IFS=' '"
+            },
+            {
+              "line": 31,
+              "raw": "set -- $1"
+            },
+            {
+              "line": 32,
+              "raw": ""
+            },
+            {
+              "line": 33,
+              "raw": "min_tool_version=$(dirname $0)/min-tool-version.sh"
+            },
+            {
+              "line": 34,
+              "raw": ""
+            },
+            {
+              "line": 35,
+              "raw": "if [ \"$1\" = GNU -a \"$2\" = ld ]; then"
+            },
+            {
+              "line": 36,
+              "raw": "\tshift $(($# - 1))"
+            },
+            {
+              "line": 37,
+              "raw": "\tversion=$1"
+            },
+            {
+              "line": 38,
+              "raw": "\tmin_version=$($min_tool_version binutils)"
+            },
+            {
+              "line": 39,
+              "raw": "\tname=BFD"
+            },
+            {
+              "line": 40,
+              "raw": "\tdisp_name=\"GNU ld\""
+            },
+            {
+              "line": 41,
+              "raw": "elif [ \"$1\" = GNU -a \"$2\" = gold ]; then"
+            },
+            {
+              "line": 42,
+              "raw": "\techo \"gold linker is not supported as it is not capable of linking the kernel proper.\" >&2"
+            },
+            {
+              "line": 43,
+              "raw": "\texit 1"
+            },
+            {
+              "line": 44,
+              "raw": "else"
+            },
+            {
+              "line": 45,
+              "raw": "\twhile [ $# -gt 1 -a \"$1\" != \"LLD\" ]; do"
+            },
+            {
+              "line": 46,
+              "raw": "\t\tshift"
+            },
+            {
+              "line": 47,
+              "raw": "\tdone"
+            },
+            {
+              "line": 48,
+              "raw": ""
+            },
+            {
+              "line": 49,
+              "raw": "\tif [ \"$1\" = LLD ]; then"
+            },
+            {
+              "line": 50,
+              "raw": "\t\tversion=$2"
+            },
+            {
+              "line": 51,
+              "raw": "\t\tmin_version=$($min_tool_version llvm)"
+            },
+            {
+              "line": 52,
+              "raw": "\t\tname=LLD"
+            },
+            {
+              "line": 53,
+              "raw": "\t\tdisp_name=LLD"
+            },
+            {
+              "line": 54,
+              "raw": "\telse"
+            },
+            {
+              "line": 55,
+              "raw": "\t\techo \"$orig_args: unknown linker\" >&2"
+            },
+            {
+              "line": 56,
+              "raw": "\t\texit 1"
+            },
+            {
+              "line": 57,
+              "raw": "\tfi"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/init/Kconfig",
+          "start_line": 47,
+          "end_line": 61,
+          "code": [
+            {
+              "line": 47,
+              "raw": "config LD_IS_BFD"
+            },
+            {
+              "line": 48,
+              "raw": "\tdef_bool $(success,test \"$(ld-name)\" = BFD)"
+            },
+            {
+              "line": 49,
+              "raw": ""
+            },
+            {
+              "line": 50,
+              "raw": "config LD_VERSION"
+            },
+            {
+              "line": 51,
+              "raw": "\tint"
+            },
+            {
+              "line": 52,
+              "raw": "\tdefault $(ld-version) if LD_IS_BFD"
+            },
+            {
+              "line": 53,
+              "raw": "\tdefault 0"
+            },
+            {
+              "line": 54,
+              "raw": ""
+            },
+            {
+              "line": 55,
+              "raw": "config LD_IS_LLD"
+            },
+            {
+              "line": 56,
+              "raw": "\tdef_bool $(success,test \"$(ld-name)\" = LLD)"
+            },
+            {
+              "line": 57,
+              "raw": ""
+            },
+            {
+              "line": 58,
+              "raw": "config LLD_VERSION"
+            },
+            {
+              "line": 59,
+              "raw": "\tint"
+            },
+            {
+              "line": 60,
+              "raw": "\tdefault $(ld-version) if LD_IS_LLD"
+            },
+            {
+              "line": 61,
+              "raw": "\tdefault 0"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/.config",
+          "start_line": 5,
+          "end_line": 13,
+          "code": [
+            {
+              "line": 5,
+              "raw": "CONFIG_CC_VERSION_TEXT=\"clang version 22.1.8\""
+            },
+            {
+              "line": 6,
+              "raw": "CONFIG_GCC_VERSION=0"
+            },
+            {
+              "line": 7,
+              "raw": "CONFIG_CC_IS_CLANG=y"
+            },
+            {
+              "line": 8,
+              "raw": "CONFIG_CLANG_VERSION=220108"
+            },
+            {
+              "line": 9,
+              "raw": "CONFIG_AS_IS_LLVM=y"
+            },
+            {
+              "line": 10,
+              "raw": "CONFIG_AS_VERSION=220108"
+            },
+            {
+              "line": 11,
+              "raw": "CONFIG_LD_VERSION=0"
+            },
+            {
+              "line": 12,
+              "raw": "CONFIG_LD_IS_LLD=y"
+            },
+            {
+              "line": 13,
+              "raw": "CONFIG_LLD_VERSION=220108"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1677,
+          "raw": "[   65s] + export LLVM=1"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 2687,
+          "raw": "[   96s] + make O=build/arm-rpi4 olddefconfig -j8"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        }
+      ]
+    },
+    "CC": {
+      "evaluation": "RPM preamble exported target clang names. Ordinary GNU make precedence selects Makefile CC=clang in this LLVM branch unless -e/override. Effective compiler family/version independently observed. Kernel direct linker recipes do not use CC as LD.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 476,
+          "end_line": 496,
+          "code": [
+            {
+              "line": 476,
+              "raw": "# Make variables (CC, etc...)"
+            },
+            {
+              "line": 477,
+              "raw": "CPP\t\t= $(CC) -E"
+            },
+            {
+              "line": 478,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 479,
+              "raw": "CC\t\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 480,
+              "raw": "LD\t\t= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 481,
+              "raw": "AR\t\t= $(LLVM_PREFIX)llvm-ar$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 482,
+              "raw": "NM\t\t= $(LLVM_PREFIX)llvm-nm$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 483,
+              "raw": "OBJCOPY\t\t= $(LLVM_PREFIX)llvm-objcopy$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 484,
+              "raw": "OBJDUMP\t\t= $(LLVM_PREFIX)llvm-objdump$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 485,
+              "raw": "READELF\t\t= $(LLVM_PREFIX)llvm-readelf$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 486,
+              "raw": "STRIP\t\t= $(LLVM_PREFIX)llvm-strip$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 487,
+              "raw": "else"
+            },
+            {
+              "line": 488,
+              "raw": "CC\t\t= $(CROSS_COMPILE)gcc"
+            },
+            {
+              "line": 489,
+              "raw": "LD\t\t= $(CROSS_COMPILE)ld"
+            },
+            {
+              "line": 490,
+              "raw": "AR\t\t= $(CROSS_COMPILE)ar"
+            },
+            {
+              "line": 491,
+              "raw": "NM\t\t= $(CROSS_COMPILE)nm"
+            },
+            {
+              "line": 492,
+              "raw": "OBJCOPY\t\t= $(CROSS_COMPILE)objcopy"
+            },
+            {
+              "line": 493,
+              "raw": "OBJDUMP\t\t= $(CROSS_COMPILE)objdump"
+            },
+            {
+              "line": 494,
+              "raw": "READELF\t\t= $(CROSS_COMPILE)readelf"
+            },
+            {
+              "line": 495,
+              "raw": "STRIP\t\t= $(CROSS_COMPILE)strip"
+            },
+            {
+              "line": 496,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 661,
+          "end_line": 664,
+          "code": [
+            {
+              "line": 661,
+              "raw": ""
+            },
+            {
+              "line": 662,
+              "raw": "ifneq ($(findstring clang,$(CC_VERSION_TEXT)),)"
+            },
+            {
+              "line": 663,
+              "raw": "include $(srctree)/scripts/Makefile.clang"
+            },
+            {
+              "line": 664,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/link-vmlinux.sh",
+          "start_line": 77,
+          "end_line": 89,
+          "code": [
+            {
+              "line": 77,
+              "raw": "\tif [ \"${SRCARCH}\" = \"um\" ]; then"
+            },
+            {
+              "line": 78,
+              "raw": "\t\twl=-Wl,"
+            },
+            {
+              "line": 79,
+              "raw": "\t\tld=\"${CC}\""
+            },
+            {
+              "line": 80,
+              "raw": "\t\tldflags=\"${CFLAGS_vmlinux}\""
+            },
+            {
+              "line": 81,
+              "raw": "\t\tldlibs=\"-lutil -lrt -lpthread\""
+            },
+            {
+              "line": 82,
+              "raw": "\telse"
+            },
+            {
+              "line": 83,
+              "raw": "\t\twl="
+            },
+            {
+              "line": 84,
+              "raw": "\t\tld=\"${LD}\""
+            },
+            {
+              "line": 85,
+              "raw": "\t\tldflags=\"${KBUILD_LDFLAGS} ${LDFLAGS_vmlinux}\""
+            },
+            {
+              "line": 86,
+              "raw": "\t\tldlibs="
+            },
+            {
+              "line": 87,
+              "raw": "\tfi"
+            },
+            {
+              "line": 88,
+              "raw": ""
+            },
+            {
+              "line": 89,
+              "raw": "\tldflags=\"${ldflags} ${wl}--script=${objtree}/${KBUILD_LDS}\""
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/.config",
+          "start_line": 5,
+          "end_line": 13,
+          "code": [
+            {
+              "line": 5,
+              "raw": "CONFIG_CC_VERSION_TEXT=\"clang version 22.1.8\""
+            },
+            {
+              "line": 6,
+              "raw": "CONFIG_GCC_VERSION=0"
+            },
+            {
+              "line": 7,
+              "raw": "CONFIG_CC_IS_CLANG=y"
+            },
+            {
+              "line": 8,
+              "raw": "CONFIG_CLANG_VERSION=220108"
+            },
+            {
+              "line": 9,
+              "raw": "CONFIG_AS_IS_LLVM=y"
+            },
+            {
+              "line": 10,
+              "raw": "CONFIG_AS_VERSION=220108"
+            },
+            {
+              "line": 11,
+              "raw": "CONFIG_LD_VERSION=0"
+            },
+            {
+              "line": 12,
+              "raw": "CONFIG_LD_IS_LLD=y"
+            },
+            {
+              "line": 13,
+              "raw": "CONFIG_LLD_VERSION=220108"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1672,
+          "raw": "[   65s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1673,
+          "raw": "[   65s] + CC=armv7l-tizen-linux-gnueabi-clang"
+        }
+      ]
+    },
+    "CROSS_COMPILE": {
+      "evaluation": "No literal historical value recovered for this invocation. The non-LLVM branch uses it to form ld. The observed LLVM branch does not. Clang target triple and integrated assembler flow are separate.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 476,
+          "end_line": 496,
+          "code": [
+            {
+              "line": 476,
+              "raw": "# Make variables (CC, etc...)"
+            },
+            {
+              "line": 477,
+              "raw": "CPP\t\t= $(CC) -E"
+            },
+            {
+              "line": 478,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 479,
+              "raw": "CC\t\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 480,
+              "raw": "LD\t\t= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 481,
+              "raw": "AR\t\t= $(LLVM_PREFIX)llvm-ar$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 482,
+              "raw": "NM\t\t= $(LLVM_PREFIX)llvm-nm$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 483,
+              "raw": "OBJCOPY\t\t= $(LLVM_PREFIX)llvm-objcopy$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 484,
+              "raw": "OBJDUMP\t\t= $(LLVM_PREFIX)llvm-objdump$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 485,
+              "raw": "READELF\t\t= $(LLVM_PREFIX)llvm-readelf$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 486,
+              "raw": "STRIP\t\t= $(LLVM_PREFIX)llvm-strip$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 487,
+              "raw": "else"
+            },
+            {
+              "line": 488,
+              "raw": "CC\t\t= $(CROSS_COMPILE)gcc"
+            },
+            {
+              "line": 489,
+              "raw": "LD\t\t= $(CROSS_COMPILE)ld"
+            },
+            {
+              "line": 490,
+              "raw": "AR\t\t= $(CROSS_COMPILE)ar"
+            },
+            {
+              "line": 491,
+              "raw": "NM\t\t= $(CROSS_COMPILE)nm"
+            },
+            {
+              "line": 492,
+              "raw": "OBJCOPY\t\t= $(CROSS_COMPILE)objcopy"
+            },
+            {
+              "line": 493,
+              "raw": "OBJDUMP\t\t= $(CROSS_COMPILE)objdump"
+            },
+            {
+              "line": 494,
+              "raw": "READELF\t\t= $(CROSS_COMPILE)readelf"
+            },
+            {
+              "line": 495,
+              "raw": "STRIP\t\t= $(CROSS_COMPILE)strip"
+            },
+            {
+              "line": 496,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.clang",
+          "start_line": 1,
+          "end_line": 4,
+          "code": [
+            {
+              "line": 1,
+              "raw": "# Individual arch/{arch}/Makefiles should use -EL/-EB to set intended"
+            },
+            {
+              "line": 2,
+              "raw": "# endianness and -m32/-m64 to set word size based on Kconfigs instead of"
+            },
+            {
+              "line": 3,
+              "raw": "# relying on the target triple."
+            },
+            {
+              "line": 4,
+              "raw": "CLANG_TARGET_FLAGS_arm\t\t:= arm-linux-gnueabi"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.clang",
+          "start_line": 15,
+          "end_line": 29,
+          "code": [
+            {
+              "line": 15,
+              "raw": "CLANG_TARGET_FLAGS\t\t:= $(CLANG_TARGET_FLAGS_$(SRCARCH))"
+            },
+            {
+              "line": 16,
+              "raw": ""
+            },
+            {
+              "line": 17,
+              "raw": "ifeq ($(CLANG_TARGET_FLAGS),)"
+            },
+            {
+              "line": 18,
+              "raw": "$(error add '--target=' option to scripts/Makefile.clang)"
+            },
+            {
+              "line": 19,
+              "raw": "else"
+            },
+            {
+              "line": 20,
+              "raw": "CLANG_FLAGS\t+= --target=$(CLANG_TARGET_FLAGS)"
+            },
+            {
+              "line": 21,
+              "raw": "endif"
+            },
+            {
+              "line": 22,
+              "raw": ""
+            },
+            {
+              "line": 23,
+              "raw": "ifeq ($(LLVM_IAS),0)"
+            },
+            {
+              "line": 24,
+              "raw": "CLANG_FLAGS\t+= -fno-integrated-as"
+            },
+            {
+              "line": 25,
+              "raw": "GCC_TOOLCHAIN_DIR := $(dir $(shell which $(CROSS_COMPILE)elfedit))"
+            },
+            {
+              "line": 26,
+              "raw": "CLANG_FLAGS\t+= --prefix=$(GCC_TOOLCHAIN_DIR)$(notdir $(CROSS_COMPILE))"
+            },
+            {
+              "line": 27,
+              "raw": "else"
+            },
+            {
+              "line": 28,
+              "raw": "CLANG_FLAGS\t+= -fintegrated-as"
+            },
+            {
+              "line": 29,
+              "raw": "endif"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        }
+      ]
+    },
+    "LLVM_IAS": {
+      "evaluation": "Banner/config show integrated assembler from the matching config. Exact historical environment value unobserved. Source uses LLVM_IAS=0 only for clang assembler selection.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.clang",
+          "start_line": 20,
+          "end_line": 29,
+          "code": [
+            {
+              "line": 20,
+              "raw": "CLANG_FLAGS\t+= --target=$(CLANG_TARGET_FLAGS)"
+            },
+            {
+              "line": 21,
+              "raw": "endif"
+            },
+            {
+              "line": 22,
+              "raw": ""
+            },
+            {
+              "line": 23,
+              "raw": "ifeq ($(LLVM_IAS),0)"
+            },
+            {
+              "line": 24,
+              "raw": "CLANG_FLAGS\t+= -fno-integrated-as"
+            },
+            {
+              "line": 25,
+              "raw": "GCC_TOOLCHAIN_DIR := $(dir $(shell which $(CROSS_COMPILE)elfedit))"
+            },
+            {
+              "line": 26,
+              "raw": "CLANG_FLAGS\t+= --prefix=$(GCC_TOOLCHAIN_DIR)$(notdir $(CROSS_COMPILE))"
+            },
+            {
+              "line": 27,
+              "raw": "else"
+            },
+            {
+              "line": 28,
+              "raw": "CLANG_FLAGS\t+= -fintegrated-as"
+            },
+            {
+              "line": 29,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/.config",
+          "start_line": 9,
+          "end_line": 10,
+          "code": [
+            {
+              "line": 9,
+              "raw": "CONFIG_AS_IS_LLVM=y"
+            },
+            {
+              "line": 10,
+              "raw": "CONFIG_AS_VERSION=220108"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 2687,
+          "raw": "[   96s] + make O=build/arm-rpi4 olddefconfig -j8"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        }
+      ]
+    },
+    "PATH": {
+      "evaluation": "Exact historical PATH unresolved. Both retained package ld.lld ELF candidates implement LLD 22.1.8. Present binutils names ld and ld.bfd do not resolve ld.lld. A path insertion or replacement not evidenced by this build would be needed.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 423,
+          "end_line": 428,
+          "code": [
+            {
+              "line": 423,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 424,
+              "raw": "ifneq ($(filter %/,$(LLVM)),)"
+            },
+            {
+              "line": 425,
+              "raw": "LLVM_PREFIX := $(LLVM)"
+            },
+            {
+              "line": 426,
+              "raw": "else ifneq ($(filter -%,$(LLVM)),)"
+            },
+            {
+              "line": 427,
+              "raw": "LLVM_SUFFIX := $(LLVM)"
+            },
+            {
+              "line": 428,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 476,
+          "end_line": 489,
+          "code": [
+            {
+              "line": 476,
+              "raw": "# Make variables (CC, etc...)"
+            },
+            {
+              "line": 477,
+              "raw": "CPP\t\t= $(CC) -E"
+            },
+            {
+              "line": 478,
+              "raw": "ifneq ($(LLVM),)"
+            },
+            {
+              "line": 479,
+              "raw": "CC\t\t= $(LLVM_PREFIX)clang$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 480,
+              "raw": "LD\t\t= $(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 481,
+              "raw": "AR\t\t= $(LLVM_PREFIX)llvm-ar$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 482,
+              "raw": "NM\t\t= $(LLVM_PREFIX)llvm-nm$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 483,
+              "raw": "OBJCOPY\t\t= $(LLVM_PREFIX)llvm-objcopy$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 484,
+              "raw": "OBJDUMP\t\t= $(LLVM_PREFIX)llvm-objdump$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 485,
+              "raw": "READELF\t\t= $(LLVM_PREFIX)llvm-readelf$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 486,
+              "raw": "STRIP\t\t= $(LLVM_PREFIX)llvm-strip$(LLVM_SUFFIX)"
+            },
+            {
+              "line": 487,
+              "raw": "else"
+            },
+            {
+              "line": 488,
+              "raw": "CC\t\t= $(CROSS_COMPILE)gcc"
+            },
+            {
+              "line": 489,
+              "raw": "LD\t\t= $(CROSS_COMPILE)ld"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Kconfig.include",
+          "start_line": 39,
+          "end_line": 59,
+          "code": [
+            {
+              "line": 39,
+              "raw": "# check if $(CC) and $(LD) exist"
+            },
+            {
+              "line": 40,
+              "raw": "$(error-if,$(failure,command -v $(CC)),C compiler '$(CC)' not found)"
+            },
+            {
+              "line": 41,
+              "raw": "$(error-if,$(failure,command -v $(LD)),linker '$(LD)' not found)"
+            },
+            {
+              "line": 42,
+              "raw": ""
+            },
+            {
+              "line": 43,
+              "raw": "# Get the C compiler name, version, and error out if it is not supported."
+            },
+            {
+              "line": 44,
+              "raw": "cc-info := $(shell,$(srctree)/scripts/cc-version.sh $(CC))"
+            },
+            {
+              "line": 45,
+              "raw": "$(error-if,$(success,test -z \"$(cc-info)\"),Sorry$(comma) this C compiler is not supported.)"
+            },
+            {
+              "line": 46,
+              "raw": "cc-name := $(shell,set -- $(cc-info) && echo $1)"
+            },
+            {
+              "line": 47,
+              "raw": "cc-version := $(shell,set -- $(cc-info) && echo $2)"
+            },
+            {
+              "line": 48,
+              "raw": ""
+            },
+            {
+              "line": 49,
+              "raw": "# Get the assembler name, version, and error out if it is not supported."
+            },
+            {
+              "line": 50,
+              "raw": "as-info := $(shell,$(srctree)/scripts/as-version.sh $(CC) $(CLANG_FLAGS))"
+            },
+            {
+              "line": 51,
+              "raw": "$(error-if,$(success,test -z \"$(as-info)\"),Sorry$(comma) this assembler is not supported.)"
+            },
+            {
+              "line": 52,
+              "raw": "as-name := $(shell,set -- $(as-info) && echo $1)"
+            },
+            {
+              "line": 53,
+              "raw": "as-version := $(shell,set -- $(as-info) && echo $2)"
+            },
+            {
+              "line": 54,
+              "raw": ""
+            },
+            {
+              "line": 55,
+              "raw": "# Get the linker name, version, and error out if it is not supported."
+            },
+            {
+              "line": 56,
+              "raw": "ld-info := $(shell,$(srctree)/scripts/ld-version.sh $(LD))"
+            },
+            {
+              "line": 57,
+              "raw": "$(error-if,$(success,test -z \"$(ld-info)\"),Sorry$(comma) this linker is not supported.)"
+            },
+            {
+              "line": 58,
+              "raw": "ld-name := $(shell,set -- $(ld-info) && echo $1)"
+            },
+            {
+              "line": 59,
+              "raw": "ld-version := $(shell,set -- $(ld-info) && echo $2)"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 84,
+          "raw": "[   11s] [48/130] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 123,
+          "raw": "[   11s] [87/130] keeping binutils-2.43-1.8"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 155,
+          "raw": "[   11s] [119/130] keeping llvm-22.1.8-1.6"
+        }
+      ]
+    },
+    "MAKEFLAGS": {
+      "evaluation": "RPM preamble records addition of -k, not the complete preexisting value. Top make adds -rR. Observed default target argv has O and -j8 only. A different target-specific override, -e with an inherited LD plus target-scoped change, injected MAKEFLAGS/MAKEFILES, or a post-config replacement would need additional unsupported assumptions.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 41,
+          "end_line": 58,
+          "code": [
+            {
+              "line": 41,
+              "raw": "this-makefile := $(lastword $(MAKEFILE_LIST))"
+            },
+            {
+              "line": 42,
+              "raw": "abs_srctree := $(realpath $(dir $(this-makefile)))"
+            },
+            {
+              "line": 43,
+              "raw": "abs_objtree := $(CURDIR)"
+            },
+            {
+              "line": 44,
+              "raw": ""
+            },
+            {
+              "line": 45,
+              "raw": "ifneq ($(sub_make_done),1)"
+            },
+            {
+              "line": 46,
+              "raw": ""
+            },
+            {
+              "line": 47,
+              "raw": "# Do not use make's built-in rules and variables"
+            },
+            {
+              "line": 48,
+              "raw": "# (this increases performance and avoids hard-to-debug behaviour)"
+            },
+            {
+              "line": 49,
+              "raw": "MAKEFLAGS += -rR"
+            },
+            {
+              "line": 50,
+              "raw": ""
+            },
+            {
+              "line": 51,
+              "raw": "# Avoid funny character set dependencies"
+            },
+            {
+              "line": 52,
+              "raw": "unexport LC_ALL"
+            },
+            {
+              "line": 53,
+              "raw": "LC_COLLATE=C"
+            },
+            {
+              "line": 54,
+              "raw": "LC_NUMERIC=C"
+            },
+            {
+              "line": 55,
+              "raw": "export LC_COLLATE LC_NUMERIC"
+            },
+            {
+              "line": 56,
+              "raw": ""
+            },
+            {
+              "line": 57,
+              "raw": "# Avoid interference with shell env settings"
+            },
+            {
+              "line": 58,
+              "raw": "unexport GREP_OPTIONS"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 76,
+          "end_line": 101,
+          "code": [
+            {
+              "line": 76,
+              "raw": "# If KBUILD_VERBOSE contains 1, the whole command is echoed."
+            },
+            {
+              "line": 77,
+              "raw": "# If KBUILD_VERBOSE contains 2, the reason for rebuilding is printed."
+            },
+            {
+              "line": 78,
+              "raw": "#"
+            },
+            {
+              "line": 79,
+              "raw": "# To put more focus on warnings, be less verbose as default"
+            },
+            {
+              "line": 80,
+              "raw": "# Use 'make V=1' to see the full commands"
+            },
+            {
+              "line": 81,
+              "raw": ""
+            },
+            {
+              "line": 82,
+              "raw": "ifeq (\"$(origin V)\", \"command line\")"
+            },
+            {
+              "line": 83,
+              "raw": "  KBUILD_VERBOSE = $(V)"
+            },
+            {
+              "line": 84,
+              "raw": "endif"
+            },
+            {
+              "line": 85,
+              "raw": ""
+            },
+            {
+              "line": 86,
+              "raw": "quiet = quiet_"
+            },
+            {
+              "line": 87,
+              "raw": "Q = @"
+            },
+            {
+              "line": 88,
+              "raw": ""
+            },
+            {
+              "line": 89,
+              "raw": "ifneq ($(findstring 1, $(KBUILD_VERBOSE)),)"
+            },
+            {
+              "line": 90,
+              "raw": "  quiet ="
+            },
+            {
+              "line": 91,
+              "raw": "  Q ="
+            },
+            {
+              "line": 92,
+              "raw": "endif"
+            },
+            {
+              "line": 93,
+              "raw": ""
+            },
+            {
+              "line": 94,
+              "raw": "# If the user is running make -s (silent mode), suppress echoing of"
+            },
+            {
+              "line": 95,
+              "raw": "# commands"
+            },
+            {
+              "line": 96,
+              "raw": "ifneq ($(findstring s,$(firstword -$(MAKEFLAGS))),)"
+            },
+            {
+              "line": 97,
+              "raw": "quiet=silent_"
+            },
+            {
+              "line": 98,
+              "raw": "override KBUILD_VERBOSE :="
+            },
+            {
+              "line": 99,
+              "raw": "endif"
+            },
+            {
+              "line": 100,
+              "raw": ""
+            },
+            {
+              "line": 101,
+              "raw": "export quiet Q KBUILD_VERBOSE"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 179,
+          "end_line": 196,
+          "code": [
+            {
+              "line": 179,
+              "raw": "# Do we want to change the working directory?"
+            },
+            {
+              "line": 180,
+              "raw": "ifeq (\"$(origin O)\", \"command line\")"
+            },
+            {
+              "line": 181,
+              "raw": "  KBUILD_OUTPUT := $(O)"
+            },
+            {
+              "line": 182,
+              "raw": "endif"
+            },
+            {
+              "line": 183,
+              "raw": ""
+            },
+            {
+              "line": 184,
+              "raw": "ifneq ($(KBUILD_OUTPUT),)"
+            },
+            {
+              "line": 185,
+              "raw": "# $(realpath ...) gets empty if the path does not exist. Run 'mkdir -p' first."
+            },
+            {
+              "line": 186,
+              "raw": "$(shell mkdir -p \"$(KBUILD_OUTPUT)\")"
+            },
+            {
+              "line": 187,
+              "raw": "# $(realpath ...) resolves symlinks"
+            },
+            {
+              "line": 188,
+              "raw": "abs_objtree := $(realpath $(KBUILD_OUTPUT))"
+            },
+            {
+              "line": 189,
+              "raw": "$(if $(abs_objtree),,$(error failed to create output directory \"$(KBUILD_OUTPUT)\"))"
+            },
+            {
+              "line": 190,
+              "raw": "endif # ifneq ($(KBUILD_OUTPUT),)"
+            },
+            {
+              "line": 191,
+              "raw": ""
+            },
+            {
+              "line": 192,
+              "raw": "ifneq ($(words $(subst :, ,$(abs_srctree))), 1)"
+            },
+            {
+              "line": 193,
+              "raw": "$(error source directory cannot contain spaces or colons)"
+            },
+            {
+              "line": 194,
+              "raw": "endif"
+            },
+            {
+              "line": 195,
+              "raw": ""
+            },
+            {
+              "line": 196,
+              "raw": "export sub_make_done := 1"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 208,
+          "end_line": 225,
+          "code": [
+            {
+              "line": 208,
+              "raw": "ifeq ($(filter --no-print-directory, $(MAKEFLAGS)),)"
+            },
+            {
+              "line": 209,
+              "raw": "# If --no-print-directory is unset, recurse once again to set it."
+            },
+            {
+              "line": 210,
+              "raw": "# You may end up recursing into __sub-make twice. This is needed due to the"
+            },
+            {
+              "line": 211,
+              "raw": "# behavior change in GNU Make 4.4.1."
+            },
+            {
+              "line": 212,
+              "raw": "need-sub-make := 1"
+            },
+            {
+              "line": 213,
+              "raw": "endif"
+            },
+            {
+              "line": 214,
+              "raw": ""
+            },
+            {
+              "line": 215,
+              "raw": "ifeq ($(need-sub-make),1)"
+            },
+            {
+              "line": 216,
+              "raw": ""
+            },
+            {
+              "line": 217,
+              "raw": "PHONY += $(MAKECMDGOALS) __sub-make"
+            },
+            {
+              "line": 218,
+              "raw": ""
+            },
+            {
+              "line": 219,
+              "raw": "$(filter-out $(this-makefile), $(MAKECMDGOALS)) __all: __sub-make"
+            },
+            {
+              "line": 220,
+              "raw": "\t@:"
+            },
+            {
+              "line": 221,
+              "raw": ""
+            },
+            {
+              "line": 222,
+              "raw": "# Invoke a second make in the output directory, passing relevant variables"
+            },
+            {
+              "line": 223,
+              "raw": "__sub-make:"
+            },
+            {
+              "line": 224,
+              "raw": "\t$(Q)$(MAKE) $(no-print-directory) -C $(abs_objtree) \\"
+            },
+            {
+              "line": 225,
+              "raw": "\t-f $(abs_srctree)/Makefile $(MAKECMDGOALS)"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1675,
+          "raw": "[   65s] + export 'MAKEFLAGS+= -k'"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 1676,
+          "raw": "[   65s] + MAKEFLAGS+=' -k'"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        }
+      ]
+    },
+    "recursive_make": {
+      "evaluation": "O places child make in build/arm-rpi4 via -C and explicit source Makefile. Top exports LD. Child -f vmlinux_o/vmlinux/modfinal uses exported LD. ARM uses scripts/Makefile.build separately. The observed command line contains no LD/CC/LLVM override, and child recipes do not set one.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 179,
+          "end_line": 196,
+          "code": [
+            {
+              "line": 179,
+              "raw": "# Do we want to change the working directory?"
+            },
+            {
+              "line": 180,
+              "raw": "ifeq (\"$(origin O)\", \"command line\")"
+            },
+            {
+              "line": 181,
+              "raw": "  KBUILD_OUTPUT := $(O)"
+            },
+            {
+              "line": 182,
+              "raw": "endif"
+            },
+            {
+              "line": 183,
+              "raw": ""
+            },
+            {
+              "line": 184,
+              "raw": "ifneq ($(KBUILD_OUTPUT),)"
+            },
+            {
+              "line": 185,
+              "raw": "# $(realpath ...) gets empty if the path does not exist. Run 'mkdir -p' first."
+            },
+            {
+              "line": 186,
+              "raw": "$(shell mkdir -p \"$(KBUILD_OUTPUT)\")"
+            },
+            {
+              "line": 187,
+              "raw": "# $(realpath ...) resolves symlinks"
+            },
+            {
+              "line": 188,
+              "raw": "abs_objtree := $(realpath $(KBUILD_OUTPUT))"
+            },
+            {
+              "line": 189,
+              "raw": "$(if $(abs_objtree),,$(error failed to create output directory \"$(KBUILD_OUTPUT)\"))"
+            },
+            {
+              "line": 190,
+              "raw": "endif # ifneq ($(KBUILD_OUTPUT),)"
+            },
+            {
+              "line": 191,
+              "raw": ""
+            },
+            {
+              "line": 192,
+              "raw": "ifneq ($(words $(subst :, ,$(abs_srctree))), 1)"
+            },
+            {
+              "line": 193,
+              "raw": "$(error source directory cannot contain spaces or colons)"
+            },
+            {
+              "line": 194,
+              "raw": "endif"
+            },
+            {
+              "line": 195,
+              "raw": ""
+            },
+            {
+              "line": 196,
+              "raw": "export sub_make_done := 1"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 208,
+          "end_line": 225,
+          "code": [
+            {
+              "line": 208,
+              "raw": "ifeq ($(filter --no-print-directory, $(MAKEFLAGS)),)"
+            },
+            {
+              "line": 209,
+              "raw": "# If --no-print-directory is unset, recurse once again to set it."
+            },
+            {
+              "line": 210,
+              "raw": "# You may end up recursing into __sub-make twice. This is needed due to the"
+            },
+            {
+              "line": 211,
+              "raw": "# behavior change in GNU Make 4.4.1."
+            },
+            {
+              "line": 212,
+              "raw": "need-sub-make := 1"
+            },
+            {
+              "line": 213,
+              "raw": "endif"
+            },
+            {
+              "line": 214,
+              "raw": ""
+            },
+            {
+              "line": 215,
+              "raw": "ifeq ($(need-sub-make),1)"
+            },
+            {
+              "line": 216,
+              "raw": ""
+            },
+            {
+              "line": 217,
+              "raw": "PHONY += $(MAKECMDGOALS) __sub-make"
+            },
+            {
+              "line": 218,
+              "raw": ""
+            },
+            {
+              "line": 219,
+              "raw": "$(filter-out $(this-makefile), $(MAKECMDGOALS)) __all: __sub-make"
+            },
+            {
+              "line": 220,
+              "raw": "\t@:"
+            },
+            {
+              "line": 221,
+              "raw": ""
+            },
+            {
+              "line": 222,
+              "raw": "# Invoke a second make in the output directory, passing relevant variables"
+            },
+            {
+              "line": 223,
+              "raw": "__sub-make:"
+            },
+            {
+              "line": 224,
+              "raw": "\t$(Q)$(MAKE) $(no-print-directory) -C $(abs_objtree) \\"
+            },
+            {
+              "line": 225,
+              "raw": "\t-f $(abs_srctree)/Makefile $(MAKECMDGOALS)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 591,
+          "end_line": 604,
+          "code": [
+            {
+              "line": 591,
+              "raw": "export CLIPPY_CONF_DIR := $(srctree)"
+            },
+            {
+              "line": 592,
+              "raw": ""
+            },
+            {
+              "line": 593,
+              "raw": "export ARCH SRCARCH CONFIG_SHELL BASH HOSTCC KBUILD_HOSTCFLAGS CROSS_COMPILE LD CC HOSTPKG_CONFIG"
+            },
+            {
+              "line": 594,
+              "raw": "export RUSTC RUSTDOC RUSTFMT RUSTC_OR_CLIPPY_QUIET RUSTC_OR_CLIPPY BINDGEN"
+            },
+            {
+              "line": 595,
+              "raw": "export HOSTRUSTC KBUILD_HOSTRUSTFLAGS"
+            },
+            {
+              "line": 596,
+              "raw": "export CPP AR NM STRIP OBJCOPY OBJDUMP READELF PAHOLE RESOLVE_BTFIDS LEX YACC AWK INSTALLKERNEL"
+            },
+            {
+              "line": 597,
+              "raw": "export PERL PYTHON3 CHECK CHECKFLAGS MAKE UTS_MACHINE HOSTCXX"
+            },
+            {
+              "line": 598,
+              "raw": "export KGZIP KBZIP2 KLZOP LZMA LZ4 XZ ZSTD"
+            },
+            {
+              "line": 599,
+              "raw": "export KBUILD_HOSTCXXFLAGS KBUILD_HOSTLDFLAGS KBUILD_HOSTLDLIBS LDFLAGS_MODULE"
+            },
+            {
+              "line": 600,
+              "raw": "export KBUILD_USERCFLAGS KBUILD_USERLDFLAGS"
+            },
+            {
+              "line": 601,
+              "raw": ""
+            },
+            {
+              "line": 602,
+              "raw": "export KBUILD_CPPFLAGS NOSTDINC_FLAGS LINUXINCLUDE OBJCOPYFLAGS KBUILD_LDFLAGS"
+            },
+            {
+              "line": 603,
+              "raw": "export KBUILD_CFLAGS CFLAGS_KERNEL CFLAGS_MODULE"
+            },
+            {
+              "line": 604,
+              "raw": "export KBUILD_RUSTFLAGS RUSTFLAGS_KERNEL RUSTFLAGS_MODULE"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 1156,
+          "end_line": 1181,
+          "code": [
+            {
+              "line": 1156,
+              "raw": "targets += vmlinux.a"
+            },
+            {
+              "line": 1157,
+              "raw": "vmlinux.a: $(KBUILD_VMLINUX_OBJS) scripts/head-object-list.txt FORCE"
+            },
+            {
+              "line": 1158,
+              "raw": "\t$(call if_changed,ar_vmlinux.a)"
+            },
+            {
+              "line": 1159,
+              "raw": ""
+            },
+            {
+              "line": 1160,
+              "raw": "PHONY += vmlinux_o"
+            },
+            {
+              "line": 1161,
+              "raw": "vmlinux_o: vmlinux.a $(KBUILD_VMLINUX_LIBS)"
+            },
+            {
+              "line": 1162,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.vmlinux_o"
+            },
+            {
+              "line": 1163,
+              "raw": ""
+            },
+            {
+              "line": 1164,
+              "raw": "vmlinux.o modules.builtin.modinfo modules.builtin: vmlinux_o"
+            },
+            {
+              "line": 1165,
+              "raw": "\t@:"
+            },
+            {
+              "line": 1166,
+              "raw": ""
+            },
+            {
+              "line": 1167,
+              "raw": "PHONY += vmlinux"
+            },
+            {
+              "line": 1168,
+              "raw": "# LDFLAGS_vmlinux in the top Makefile defines linker flags for the top vmlinux,"
+            },
+            {
+              "line": 1169,
+              "raw": "# not for decompressors. LDFLAGS_vmlinux in arch/*/boot/compressed/Makefile is"
+            },
+            {
+              "line": 1170,
+              "raw": "# unrelated; the decompressors just happen to have the same base name,"
+            },
+            {
+              "line": 1171,
+              "raw": "# arch/*/boot/compressed/vmlinux."
+            },
+            {
+              "line": 1172,
+              "raw": "# Export LDFLAGS_vmlinux only to scripts/Makefile.vmlinux."
+            },
+            {
+              "line": 1173,
+              "raw": "#"
+            },
+            {
+              "line": 1174,
+              "raw": "# _LDFLAGS_vmlinux is a workaround for the 'private export' bug:"
+            },
+            {
+              "line": 1175,
+              "raw": "#   https://savannah.gnu.org/bugs/?61463"
+            },
+            {
+              "line": 1176,
+              "raw": "# For Make > 4.4, the following simple code will work:"
+            },
+            {
+              "line": 1177,
+              "raw": "#  vmlinux: private export LDFLAGS_vmlinux := $(LDFLAGS_vmlinux)"
+            },
+            {
+              "line": 1178,
+              "raw": "vmlinux: private _LDFLAGS_vmlinux := $(LDFLAGS_vmlinux)"
+            },
+            {
+              "line": 1179,
+              "raw": "vmlinux: export LDFLAGS_vmlinux = $(_LDFLAGS_vmlinux)"
+            },
+            {
+              "line": 1180,
+              "raw": "vmlinux: vmlinux.o $(KBUILD_LDS) modpost"
+            },
+            {
+              "line": 1181,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.vmlinux"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 1881,
+          "end_line": 1889,
+          "code": [
+            {
+              "line": 1881,
+              "raw": "$(MODORDER): $(build-dir)"
+            },
+            {
+              "line": 1882,
+              "raw": "\t@:"
+            },
+            {
+              "line": 1883,
+              "raw": ""
+            },
+            {
+              "line": 1884,
+              "raw": "# KBUILD_MODPOST_NOFINAL can be set to skip the final link of modules."
+            },
+            {
+              "line": 1885,
+              "raw": "# This is solely useful to speed up test compiles."
+            },
+            {
+              "line": 1886,
+              "raw": "modules: modpost"
+            },
+            {
+              "line": 1887,
+              "raw": "ifneq ($(KBUILD_MODPOST_NOFINAL),1)"
+            },
+            {
+              "line": 1888,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modfinal"
+            },
+            {
+              "line": 1889,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Kbuild.include",
+          "start_line": 109,
+          "end_line": 119,
+          "code": [
+            {
+              "line": 109,
+              "raw": "###"
+            },
+            {
+              "line": 110,
+              "raw": "# Shorthand for $(Q)$(MAKE) -f scripts/Makefile.build obj="
+            },
+            {
+              "line": 111,
+              "raw": "# Usage:"
+            },
+            {
+              "line": 112,
+              "raw": "# $(Q)$(MAKE) $(build)=dir"
+            },
+            {
+              "line": 113,
+              "raw": "build := -f $(srctree)/scripts/Makefile.build obj"
+            },
+            {
+              "line": 114,
+              "raw": ""
+            },
+            {
+              "line": 115,
+              "raw": "###"
+            },
+            {
+              "line": 116,
+              "raw": "# Shorthand for $(Q)$(MAKE) -f scripts/Makefile.clean obj="
+            },
+            {
+              "line": 117,
+              "raw": "# Usage:"
+            },
+            {
+              "line": 118,
+              "raw": "# $(Q)$(MAKE) $(clean)=dir"
+            },
+            {
+              "line": 119,
+              "raw": "clean := -f $(srctree)/scripts/Makefile.clean obj"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.build",
+          "start_line": 36,
+          "end_line": 43,
+          "code": [
+            {
+              "line": 36,
+              "raw": "# Read auto.conf if it exists, otherwise ignore"
+            },
+            {
+              "line": 37,
+              "raw": "-include include/config/auto.conf"
+            },
+            {
+              "line": 38,
+              "raw": ""
+            },
+            {
+              "line": 39,
+              "raw": "include $(srctree)/scripts/Kbuild.include"
+            },
+            {
+              "line": 40,
+              "raw": "include $(srctree)/scripts/Makefile.compiler"
+            },
+            {
+              "line": 41,
+              "raw": "include $(kbuild-file)"
+            },
+            {
+              "line": 42,
+              "raw": "include $(srctree)/scripts/Makefile.lib"
+            },
+            {
+              "line": 43,
+              "raw": ""
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3372,
+          "raw": "[  361s] make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8150,
+          "raw": "[ 1537s] + make O=build/arm-rpi4 modules -j8"
+        }
+      ]
+    },
+    "architecture": {
+      "evaluation": "ARM make changes flags and zImage routing only. No ARM Makefile.postlink exists in exact devel payload. link-vmlinux.sh ARM route uses LD directly. The CC-based special branch is UML, outside this ARMv7 path.",
+      "source": [
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 13,
+          "end_line": 17,
+          "code": [
+            {
+              "line": 13,
+              "raw": "LDFLAGS_vmlinux\t:= --no-undefined -X --pic-veneer -z norelro"
+            },
+            {
+              "line": 14,
+              "raw": "ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)"
+            },
+            {
+              "line": 15,
+              "raw": "LDFLAGS_vmlinux\t+= --be8"
+            },
+            {
+              "line": 16,
+              "raw": "KBUILD_LDFLAGS_MODULE\t+= --be8"
+            },
+            {
+              "line": 17,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 44,
+          "end_line": 52,
+          "code": [
+            {
+              "line": 44,
+              "raw": "ifeq ($(CONFIG_CPU_BIG_ENDIAN),y)"
+            },
+            {
+              "line": 45,
+              "raw": "KBUILD_CPPFLAGS\t+= -mbig-endian"
+            },
+            {
+              "line": 46,
+              "raw": "CHECKFLAGS\t+= -D__ARMEB__"
+            },
+            {
+              "line": 47,
+              "raw": "KBUILD_LDFLAGS\t+= -EB"
+            },
+            {
+              "line": 48,
+              "raw": "else"
+            },
+            {
+              "line": 49,
+              "raw": "KBUILD_CPPFLAGS\t+= -mlittle-endian"
+            },
+            {
+              "line": 50,
+              "raw": "CHECKFLAGS\t+= -D__ARMEL__"
+            },
+            {
+              "line": 51,
+              "raw": "KBUILD_LDFLAGS\t+= -EL"
+            },
+            {
+              "line": 52,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 252,
+          "end_line": 258,
+          "code": [
+            {
+              "line": 252,
+              "raw": "# Default target when executing plain make"
+            },
+            {
+              "line": 253,
+              "raw": "boot := arch/arm/boot"
+            },
+            {
+              "line": 254,
+              "raw": "ifeq ($(CONFIG_XIP_KERNEL),y)"
+            },
+            {
+              "line": 255,
+              "raw": "KBUILD_IMAGE := $(boot)/xipImage"
+            },
+            {
+              "line": 256,
+              "raw": "else"
+            },
+            {
+              "line": 257,
+              "raw": "KBUILD_IMAGE := $(boot)/zImage"
+            },
+            {
+              "line": 258,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 295,
+          "end_line": 302,
+          "code": [
+            {
+              "line": 295,
+              "raw": "PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)"
+            },
+            {
+              "line": 296,
+              "raw": ""
+            },
+            {
+              "line": 297,
+              "raw": "bootpImage uImage: zImage"
+            },
+            {
+              "line": 298,
+              "raw": "zImage: Image"
+            },
+            {
+              "line": 299,
+              "raw": ""
+            },
+            {
+              "line": 300,
+              "raw": "$(BOOT_TARGETS): vmlinux"
+            },
+            {
+              "line": 301,
+              "raw": "\t$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@"
+            },
+            {
+              "line": 302,
+              "raw": "\t@$(kecho) '  Kernel: $(boot)/$@ is ready'"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/link-vmlinux.sh",
+          "start_line": 77,
+          "end_line": 103,
+          "code": [
+            {
+              "line": 77,
+              "raw": "\tif [ \"${SRCARCH}\" = \"um\" ]; then"
+            },
+            {
+              "line": 78,
+              "raw": "\t\twl=-Wl,"
+            },
+            {
+              "line": 79,
+              "raw": "\t\tld=\"${CC}\""
+            },
+            {
+              "line": 80,
+              "raw": "\t\tldflags=\"${CFLAGS_vmlinux}\""
+            },
+            {
+              "line": 81,
+              "raw": "\t\tldlibs=\"-lutil -lrt -lpthread\""
+            },
+            {
+              "line": 82,
+              "raw": "\telse"
+            },
+            {
+              "line": 83,
+              "raw": "\t\twl="
+            },
+            {
+              "line": 84,
+              "raw": "\t\tld=\"${LD}\""
+            },
+            {
+              "line": 85,
+              "raw": "\t\tldflags=\"${KBUILD_LDFLAGS} ${LDFLAGS_vmlinux}\""
+            },
+            {
+              "line": 86,
+              "raw": "\t\tldlibs="
+            },
+            {
+              "line": 87,
+              "raw": "\tfi"
+            },
+            {
+              "line": 88,
+              "raw": ""
+            },
+            {
+              "line": 89,
+              "raw": "\tldflags=\"${ldflags} ${wl}--script=${objtree}/${KBUILD_LDS}\""
+            },
+            {
+              "line": 90,
+              "raw": ""
+            },
+            {
+              "line": 91,
+              "raw": "\t# The kallsyms linking does not need debug symbols included."
+            },
+            {
+              "line": 92,
+              "raw": "\tif [ -n \"${strip_debug}\" ] ; then"
+            },
+            {
+              "line": 93,
+              "raw": "\t\tldflags=\"${ldflags} ${wl}--strip-debug\""
+            },
+            {
+              "line": 94,
+              "raw": "\tfi"
+            },
+            {
+              "line": 95,
+              "raw": ""
+            },
+            {
+              "line": 96,
+              "raw": "\tif is_enabled CONFIG_VMLINUX_MAP; then"
+            },
+            {
+              "line": 97,
+              "raw": "\t\tldflags=\"${ldflags} ${wl}-Map=${output}.map\""
+            },
+            {
+              "line": 98,
+              "raw": "\tfi"
+            },
+            {
+              "line": 99,
+              "raw": ""
+            },
+            {
+              "line": 100,
+              "raw": "\t${ld} ${ldflags} -o ${output}\t\t\t\t\t\\"
+            },
+            {
+              "line": 101,
+              "raw": "\t\t${wl}--whole-archive ${objs} ${wl}--no-whole-archive\t\\"
+            },
+            {
+              "line": 102,
+              "raw": "\t\t${wl}--start-group ${libs} ${wl}--end-group\t\t\\"
+            },
+            {
+              "line": 103,
+              "raw": "\t\t${kallsymso} ${btf_vmlinux_bin_o} ${ldlibs}"
+            }
+          ]
+        }
+      ],
+      "historical_log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8141,
+          "raw": "[ 1532s]   LD      arch/arm/boot/compressed/vmlinux"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8143,
+          "raw": "[ 1533s]   OBJCOPY arch/arm/boot/zImage"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8145,
+          "raw": "[ 1533s]   Kernel: arch/arm/boot/zImage is ready"
+        }
+      ]
+    }
+  },
+  "target_rules": {
+    "vmlinux.o": {
+      "sources": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 1156,
+          "end_line": 1165,
+          "code": [
+            {
+              "line": 1156,
+              "raw": "targets += vmlinux.a"
+            },
+            {
+              "line": 1157,
+              "raw": "vmlinux.a: $(KBUILD_VMLINUX_OBJS) scripts/head-object-list.txt FORCE"
+            },
+            {
+              "line": 1158,
+              "raw": "\t$(call if_changed,ar_vmlinux.a)"
+            },
+            {
+              "line": 1159,
+              "raw": ""
+            },
+            {
+              "line": 1160,
+              "raw": "PHONY += vmlinux_o"
+            },
+            {
+              "line": 1161,
+              "raw": "vmlinux_o: vmlinux.a $(KBUILD_VMLINUX_LIBS)"
+            },
+            {
+              "line": 1162,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.vmlinux_o"
+            },
+            {
+              "line": 1163,
+              "raw": ""
+            },
+            {
+              "line": 1164,
+              "raw": "vmlinux.o modules.builtin.modinfo modules.builtin: vmlinux_o"
+            },
+            {
+              "line": 1165,
+              "raw": "\t@:"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.vmlinux_o",
+          "start_line": 48,
+          "end_line": 67,
+          "code": [
+            {
+              "line": 48,
+              "raw": "vmlinux-o-ld-args-$(CONFIG_BUILTIN_MODULE_RANGES)\t+= -Map=$@.map"
+            },
+            {
+              "line": 49,
+              "raw": ""
+            },
+            {
+              "line": 50,
+              "raw": "quiet_cmd_ld_vmlinux.o = LD      $@"
+            },
+            {
+              "line": 51,
+              "raw": "      cmd_ld_vmlinux.o = \\"
+            },
+            {
+              "line": 52,
+              "raw": "\t$(LD) ${KBUILD_LDFLAGS} -r -o $@ \\"
+            },
+            {
+              "line": 53,
+              "raw": "\t$(vmlinux-o-ld-args-y) \\"
+            },
+            {
+              "line": 54,
+              "raw": "\t$(addprefix -T , $(initcalls-lds)) \\"
+            },
+            {
+              "line": 55,
+              "raw": "\t--whole-archive vmlinux.a --no-whole-archive \\"
+            },
+            {
+              "line": 56,
+              "raw": "\t--start-group $(KBUILD_VMLINUX_LIBS) --end-group \\"
+            },
+            {
+              "line": 57,
+              "raw": "\t$(cmd_objtool)"
+            },
+            {
+              "line": 58,
+              "raw": ""
+            },
+            {
+              "line": 59,
+              "raw": "define rule_ld_vmlinux.o"
+            },
+            {
+              "line": 60,
+              "raw": "\t$(call cmd_and_savecmd,ld_vmlinux.o)"
+            },
+            {
+              "line": 61,
+              "raw": "\t$(call cmd,gen_objtooldep)"
+            },
+            {
+              "line": 62,
+              "raw": "endef"
+            },
+            {
+              "line": 63,
+              "raw": ""
+            },
+            {
+              "line": 64,
+              "raw": "vmlinux.o: $(initcalls-lds) vmlinux.a $(KBUILD_VMLINUX_LIBS) FORCE"
+            },
+            {
+              "line": 65,
+              "raw": "\t$(call if_changed_rule,ld_vmlinux.o)"
+            },
+            {
+              "line": 66,
+              "raw": ""
+            },
+            {
+              "line": 67,
+              "raw": "targets += vmlinux.o"
+            }
+          ]
+        }
+      ],
+      "log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7940,
+          "raw": "[ 1397s]   AR      vmlinux.a"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7941,
+          "raw": "[ 1398s]   LD      vmlinux.o"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7942,
+          "raw": "[ 1399s]   OBJCOPY modules.builtin.modinfo"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7945,
+          "raw": "[ 1401s]   MODPOST Module.symvers"
+        }
+      ],
+      "verdict": {
+        "target": "vmlinux.o",
+        "artifact_type": "relocatable kernel object",
+        "source_file_and_lines": "evidence/kernel/source/Makefile:1156-1165 | evidence/kernel/source/scripts/Makefile.vmlinux_o:48-67",
+        "original_code": "quiet_cmd_ld_vmlinux.o = LD      $@ |       cmd_ld_vmlinux.o = \\ | \t$(LD) ${KBUILD_LDFLAGS} -r -o $@ \\",
+        "effective_make_variable": "LLVM=1 observed. LD=ld.lld inferred. $(LD) … -r -o vmlinux.o …",
+        "expected_linker": "LLD 22.1.8",
+        "linker_override": "NONE_IN_SCOPED_RULES",
+        "build_log_evidence": "evidence/build/linux-rpi-armv7l.out:7940 [ 1397s]   AR      vmlinux.a | evidence/build/linux-rpi-armv7l.out:7941 [ 1398s]   LD      vmlinux.o | evidence/build/linux-rpi-armv7l.out:7942 [ 1399s]   OBJCOPY modules.builtin.modinfo | evidence/build/linux-rpi-armv7l.out:7945 [ 1401s]   MODPOST Module.symvers",
+        "artifact_binding": "ELF intermediate, package stripping excludes *.o; binds via vmlinux build sequence",
+        "evidence_strength": "E3",
+        "evidence_level": "E3",
+        "final_verdict": "ENGINEERING_VERIFIED",
+        "reason": "Published SPEC and historical LLVM=1/target argv select ld.lld. Generated Kconfig probes LLD 22.1.8. The matched ARM recipe inherits LD and runs for this exact target. Neither verified retained RPM provider of ld.lld dispatches to GNU BFD. Quiet target and release packaging evidence link the rule and artifact.",
+        "remaining_uncertainty": "No historical process argv, resolved executable path or target .cmd. Standalone historical vmlinux.o bytes not retained."
+      }
+    },
+    "vmlinux": {
+      "sources": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 1178,
+          "end_line": 1181,
+          "code": [
+            {
+              "line": 1178,
+              "raw": "vmlinux: private _LDFLAGS_vmlinux := $(LDFLAGS_vmlinux)"
+            },
+            {
+              "line": 1179,
+              "raw": "vmlinux: export LDFLAGS_vmlinux = $(_LDFLAGS_vmlinux)"
+            },
+            {
+              "line": 1180,
+              "raw": "vmlinux: vmlinux.o $(KBUILD_LDS) modpost"
+            },
+            {
+              "line": 1181,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.vmlinux"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.vmlinux",
+          "start_line": 25,
+          "end_line": 34,
+          "code": [
+            {
+              "line": 25,
+              "raw": "ARCH_POSTLINK := $(wildcard $(srctree)/arch/$(SRCARCH)/Makefile.postlink)"
+            },
+            {
+              "line": 26,
+              "raw": ""
+            },
+            {
+              "line": 27,
+              "raw": "# Final link of vmlinux with optional arch pass after final link"
+            },
+            {
+              "line": 28,
+              "raw": "cmd_link_vmlinux =\t\t\t\t\t\t\t\\"
+            },
+            {
+              "line": 29,
+              "raw": "\t$< \"$(LD)\" \"$(KBUILD_LDFLAGS)\" \"$(LDFLAGS_vmlinux)\";\t\t\\"
+            },
+            {
+              "line": 30,
+              "raw": "\t$(if $(ARCH_POSTLINK), $(MAKE) -f $(ARCH_POSTLINK) $@, true)"
+            },
+            {
+              "line": 31,
+              "raw": ""
+            },
+            {
+              "line": 32,
+              "raw": "targets += vmlinux"
+            },
+            {
+              "line": 33,
+              "raw": "vmlinux: scripts/link-vmlinux.sh vmlinux.o $(KBUILD_LDS) FORCE"
+            },
+            {
+              "line": 34,
+              "raw": "\t+$(call if_changed_dep,link_vmlinux)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/link-vmlinux.sh",
+          "start_line": 28,
+          "end_line": 36,
+          "code": [
+            {
+              "line": 28,
+              "raw": "# Error out on error"
+            },
+            {
+              "line": 29,
+              "raw": "set -e"
+            },
+            {
+              "line": 30,
+              "raw": ""
+            },
+            {
+              "line": 31,
+              "raw": "LD=\"$1\""
+            },
+            {
+              "line": 32,
+              "raw": "KBUILD_LDFLAGS=\"$2\""
+            },
+            {
+              "line": 33,
+              "raw": "LDFLAGS_vmlinux=\"$3\""
+            },
+            {
+              "line": 34,
+              "raw": ""
+            },
+            {
+              "line": 35,
+              "raw": "is_enabled() {"
+            },
+            {
+              "line": 36,
+              "raw": "\tgrep -q \"^$1=y\" include/config/auto.conf"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/link-vmlinux.sh",
+          "start_line": 57,
+          "end_line": 103,
+          "code": [
+            {
+              "line": 57,
+              "raw": "\tinfo LD ${output}"
+            },
+            {
+              "line": 58,
+              "raw": ""
+            },
+            {
+              "line": 59,
+              "raw": "\t# skip output file argument"
+            },
+            {
+              "line": 60,
+              "raw": "\tshift"
+            },
+            {
+              "line": 61,
+              "raw": ""
+            },
+            {
+              "line": 62,
+              "raw": "\tif is_enabled CONFIG_LTO_CLANG || is_enabled CONFIG_X86_KERNEL_IBT; then"
+            },
+            {
+              "line": 63,
+              "raw": "\t\t# Use vmlinux.o instead of performing the slow LTO link again."
+            },
+            {
+              "line": 64,
+              "raw": "\t\tobjs=vmlinux.o"
+            },
+            {
+              "line": 65,
+              "raw": "\t\tlibs="
+            },
+            {
+              "line": 66,
+              "raw": "\telse"
+            },
+            {
+              "line": 67,
+              "raw": "\t\tobjs=vmlinux.a"
+            },
+            {
+              "line": 68,
+              "raw": "\t\tlibs=\"${KBUILD_VMLINUX_LIBS}\""
+            },
+            {
+              "line": 69,
+              "raw": "\tfi"
+            },
+            {
+              "line": 70,
+              "raw": ""
+            },
+            {
+              "line": 71,
+              "raw": "\tif is_enabled CONFIG_MODULES; then"
+            },
+            {
+              "line": 72,
+              "raw": "\t\tobjs=\"${objs} .vmlinux.export.o\""
+            },
+            {
+              "line": 73,
+              "raw": "\tfi"
+            },
+            {
+              "line": 74,
+              "raw": ""
+            },
+            {
+              "line": 75,
+              "raw": "\tobjs=\"${objs} init/version-timestamp.o\""
+            },
+            {
+              "line": 76,
+              "raw": ""
+            },
+            {
+              "line": 77,
+              "raw": "\tif [ \"${SRCARCH}\" = \"um\" ]; then"
+            },
+            {
+              "line": 78,
+              "raw": "\t\twl=-Wl,"
+            },
+            {
+              "line": 79,
+              "raw": "\t\tld=\"${CC}\""
+            },
+            {
+              "line": 80,
+              "raw": "\t\tldflags=\"${CFLAGS_vmlinux}\""
+            },
+            {
+              "line": 81,
+              "raw": "\t\tldlibs=\"-lutil -lrt -lpthread\""
+            },
+            {
+              "line": 82,
+              "raw": "\telse"
+            },
+            {
+              "line": 83,
+              "raw": "\t\twl="
+            },
+            {
+              "line": 84,
+              "raw": "\t\tld=\"${LD}\""
+            },
+            {
+              "line": 85,
+              "raw": "\t\tldflags=\"${KBUILD_LDFLAGS} ${LDFLAGS_vmlinux}\""
+            },
+            {
+              "line": 86,
+              "raw": "\t\tldlibs="
+            },
+            {
+              "line": 87,
+              "raw": "\tfi"
+            },
+            {
+              "line": 88,
+              "raw": ""
+            },
+            {
+              "line": 89,
+              "raw": "\tldflags=\"${ldflags} ${wl}--script=${objtree}/${KBUILD_LDS}\""
+            },
+            {
+              "line": 90,
+              "raw": ""
+            },
+            {
+              "line": 91,
+              "raw": "\t# The kallsyms linking does not need debug symbols included."
+            },
+            {
+              "line": 92,
+              "raw": "\tif [ -n \"${strip_debug}\" ] ; then"
+            },
+            {
+              "line": 93,
+              "raw": "\t\tldflags=\"${ldflags} ${wl}--strip-debug\""
+            },
+            {
+              "line": 94,
+              "raw": "\tfi"
+            },
+            {
+              "line": 95,
+              "raw": ""
+            },
+            {
+              "line": 96,
+              "raw": "\tif is_enabled CONFIG_VMLINUX_MAP; then"
+            },
+            {
+              "line": 97,
+              "raw": "\t\tldflags=\"${ldflags} ${wl}-Map=${output}.map\""
+            },
+            {
+              "line": 98,
+              "raw": "\tfi"
+            },
+            {
+              "line": 99,
+              "raw": ""
+            },
+            {
+              "line": 100,
+              "raw": "\t${ld} ${ldflags} -o ${output}\t\t\t\t\t\\"
+            },
+            {
+              "line": 101,
+              "raw": "\t\t${wl}--whole-archive ${objs} ${wl}--no-whole-archive\t\\"
+            },
+            {
+              "line": 102,
+              "raw": "\t\t${wl}--start-group ${libs} ${wl}--end-group\t\t\\"
+            },
+            {
+              "line": 103,
+              "raw": "\t\t${kallsymso} ${btf_vmlinux_bin_o} ${ldlibs}"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/link-vmlinux.sh",
+          "start_line": 270,
+          "end_line": 280,
+          "code": [
+            {
+              "line": 270,
+              "raw": "strip_debug="
+            },
+            {
+              "line": 271,
+              "raw": ""
+            },
+            {
+              "line": 272,
+              "raw": "vmlinux_link vmlinux"
+            },
+            {
+              "line": 273,
+              "raw": ""
+            },
+            {
+              "line": 274,
+              "raw": "# fill in BTF IDs"
+            },
+            {
+              "line": 275,
+              "raw": "if is_enabled CONFIG_DEBUG_INFO_BTF; then"
+            },
+            {
+              "line": 276,
+              "raw": "\tinfo BTFIDS vmlinux"
+            },
+            {
+              "line": 277,
+              "raw": "\t${RESOLVE_BTFIDS} vmlinux"
+            },
+            {
+              "line": 278,
+              "raw": "fi"
+            },
+            {
+              "line": 279,
+              "raw": ""
+            },
+            {
+              "line": 280,
+              "raw": "mksysmap vmlinux System.map"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/boot/Makefile",
+          "start_line": 53,
+          "end_line": 60,
+          "code": [
+            {
+              "line": 53,
+              "raw": "$(obj)/Image: vmlinux FORCE"
+            },
+            {
+              "line": 54,
+              "raw": "\t$(call if_changed,objcopy)"
+            },
+            {
+              "line": 55,
+              "raw": ""
+            },
+            {
+              "line": 56,
+              "raw": "$(obj)/compressed/vmlinux: $(obj)/Image FORCE"
+            },
+            {
+              "line": 57,
+              "raw": "\t$(Q)$(MAKE) $(build)=$(obj)/compressed $@"
+            },
+            {
+              "line": 58,
+              "raw": ""
+            },
+            {
+              "line": 59,
+              "raw": "$(obj)/zImage:\t$(obj)/compressed/vmlinux FORCE"
+            },
+            {
+              "line": 60,
+              "raw": "\t$(call if_changed,objcopy)"
+            }
+          ]
+        }
+      ],
+      "log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7941,
+          "raw": "[ 1398s]   LD      vmlinux.o"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7945,
+          "raw": "[ 1401s]   MODPOST Module.symvers"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7947,
+          "raw": "[ 1411s]   UPD     include/generated/utsversion.h"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7951,
+          "raw": "[ 1412s]   LD      .tmp_vmlinux1"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7958,
+          "raw": "[ 1508s]   LD      .tmp_vmlinux2"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7962,
+          "raw": "[ 1518s]   LD      vmlinux"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7966,
+          "raw": "[ 1520s]   NM      System.map"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7967,
+          "raw": "[ 1521s]   SORTTAB vmlinux"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8145,
+          "raw": "[ 1533s]   Kernel: arch/arm/boot/zImage is ready"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 14011,
+          "raw": "[ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15251,
+          "raw": "[ 6104s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15255,
+          "raw": "[ 6137s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        }
+      ],
+      "verdict": {
+        "target": "vmlinux",
+        "artifact_type": "kernel final ELF",
+        "source_file_and_lines": "evidence/kernel/source/Makefile:1178-1181 | evidence/kernel/source/scripts/Makefile.vmlinux:25-34 | evidence/kernel/source/scripts/link-vmlinux.sh:28-36 | evidence/kernel/source/scripts/link-vmlinux.sh:57-103 | evidence/kernel/source/scripts/link-vmlinux.sh:270-280 | evidence/kernel/source/arch/arm/boot/Makefile:53-60",
+        "original_code": "cmd_link_vmlinux =\t\t\t\t\t\t\t\\ | \t$< \"$(LD)\" \"$(KBUILD_LDFLAGS)\" \"$(LDFLAGS_vmlinux)\";\t\t\\ | \t\tld=\"${LD}\" | vmlinux_link vmlinux",
+        "effective_make_variable": "LLVM=1 observed. LD=ld.lld inferred. scripts/link-vmlinux.sh \"$(LD)\" … ; ARM executes the passed LD … -o vmlinux",
+        "expected_linker": "LLD 22.1.8",
+        "linker_override": "NONE_IN_SCOPED_RULES",
+        "build_log_evidence": "evidence/build/linux-rpi-armv7l.out:7941 [ 1398s]   LD      vmlinux.o | evidence/build/linux-rpi-armv7l.out:7945 [ 1401s]   MODPOST Module.symvers | evidence/build/linux-rpi-armv7l.out:7947 [ 1411s]   UPD     include/generated/utsversion.h | evidence/build/linux-rpi-armv7l.out:7951 [ 1412s]   LD      .tmp_vmlinux1 | evidence/build/linux-rpi-armv7l.out:7958 [ 1508s]   LD      .tmp_vmlinux2 | evidence/build/linux-rpi-armv7l.out:7962 [ 1518s]   LD      vmlinux | evidence/build/linux-rpi-armv7l.out:7966 [ 1520s]   NM      System.map | evidence/build/linux-rpi-armv7l.out:7967 [ 1521s]   SORTTAB vmlinux | evidence/build/linux-rpi-armv7l.out:8145 [ 1533s]   Kernel: arch/arm/boot/zImage is ready | evidence/build/linux-rpi-armv7l.out:14011 [ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage | evidence/build/linux-rpi-armv7l.out:15251 [ 6104s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm | evidence/build/linux-rpi-armv7l.out:15255 [ 6137s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+        "artifact_binding": "vmlinux to arm/boot/Image. Runtime notes and packaged zImage/+devel debuglink checked independently in Task 7",
+        "evidence_strength": "E3",
+        "evidence_level": "E3",
+        "final_verdict": "ENGINEERING_VERIFIED",
+        "reason": "Published SPEC and historical LLVM=1/target argv select ld.lld. Generated Kconfig probes LLD 22.1.8. The matched ARM recipe inherits LD and runs for this exact target. Neither verified retained RPM provider of ld.lld dispatches to GNU BFD. Quiet target and release packaging evidence link the rule and artifact.",
+        "remaining_uncertainty": "No historical process argv, resolved executable path or target .cmd."
+      }
+    },
+    "arch/arm/boot/compressed/vmlinux": {
+      "sources": [
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 252,
+          "end_line": 258,
+          "code": [
+            {
+              "line": 252,
+              "raw": "# Default target when executing plain make"
+            },
+            {
+              "line": 253,
+              "raw": "boot := arch/arm/boot"
+            },
+            {
+              "line": 254,
+              "raw": "ifeq ($(CONFIG_XIP_KERNEL),y)"
+            },
+            {
+              "line": 255,
+              "raw": "KBUILD_IMAGE := $(boot)/xipImage"
+            },
+            {
+              "line": 256,
+              "raw": "else"
+            },
+            {
+              "line": 257,
+              "raw": "KBUILD_IMAGE := $(boot)/zImage"
+            },
+            {
+              "line": 258,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/Makefile",
+          "start_line": 295,
+          "end_line": 302,
+          "code": [
+            {
+              "line": 295,
+              "raw": "PHONY += bzImage $(BOOT_TARGETS) $(INSTALL_TARGETS)"
+            },
+            {
+              "line": 296,
+              "raw": ""
+            },
+            {
+              "line": 297,
+              "raw": "bootpImage uImage: zImage"
+            },
+            {
+              "line": 298,
+              "raw": "zImage: Image"
+            },
+            {
+              "line": 299,
+              "raw": ""
+            },
+            {
+              "line": 300,
+              "raw": "$(BOOT_TARGETS): vmlinux"
+            },
+            {
+              "line": 301,
+              "raw": "\t$(Q)$(MAKE) $(build)=$(boot) $(boot)/$@"
+            },
+            {
+              "line": 302,
+              "raw": "\t@$(kecho) '  Kernel: $(boot)/$@ is ready'"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/boot/Makefile",
+          "start_line": 53,
+          "end_line": 60,
+          "code": [
+            {
+              "line": 53,
+              "raw": "$(obj)/Image: vmlinux FORCE"
+            },
+            {
+              "line": 54,
+              "raw": "\t$(call if_changed,objcopy)"
+            },
+            {
+              "line": 55,
+              "raw": ""
+            },
+            {
+              "line": 56,
+              "raw": "$(obj)/compressed/vmlinux: $(obj)/Image FORCE"
+            },
+            {
+              "line": 57,
+              "raw": "\t$(Q)$(MAKE) $(build)=$(obj)/compressed $@"
+            },
+            {
+              "line": 58,
+              "raw": ""
+            },
+            {
+              "line": 59,
+              "raw": "$(obj)/zImage:\t$(obj)/compressed/vmlinux FORCE"
+            },
+            {
+              "line": 60,
+              "raw": "\t$(call if_changed,objcopy)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/boot/compressed/Makefile",
+          "start_line": 103,
+          "end_line": 124,
+          "code": [
+            {
+              "line": 103,
+              "raw": "# Supply kernel BSS size to the decompressor via a linker symbol."
+            },
+            {
+              "line": 104,
+              "raw": "KBSS_SZ = $(shell echo $$(($$($(NM) vmlinux | \\"
+            },
+            {
+              "line": 105,
+              "raw": "\t\tsed -n -e 's/^\\([^ ]*\\) [ABD] __bss_start$$/-0x\\1/p' \\"
+            },
+            {
+              "line": 106,
+              "raw": "\t\t       -e 's/^\\([^ ]*\\) [ABD] __bss_stop$$/+0x\\1/p') )) )"
+            },
+            {
+              "line": 107,
+              "raw": "LDFLAGS_vmlinux = --defsym _kernel_bss_size=$(KBSS_SZ)"
+            },
+            {
+              "line": 108,
+              "raw": "# Supply ZRELADDR to the decompressor via a linker symbol."
+            },
+            {
+              "line": 109,
+              "raw": "ifneq ($(CONFIG_AUTO_ZRELADDR),y)"
+            },
+            {
+              "line": 110,
+              "raw": "LDFLAGS_vmlinux += --defsym zreladdr=$(ZRELADDR)"
+            },
+            {
+              "line": 111,
+              "raw": "endif"
+            },
+            {
+              "line": 112,
+              "raw": "ifeq ($(CONFIG_CPU_ENDIAN_BE8),y)"
+            },
+            {
+              "line": 113,
+              "raw": "LDFLAGS_vmlinux += --be8"
+            },
+            {
+              "line": 114,
+              "raw": "endif"
+            },
+            {
+              "line": 115,
+              "raw": "# Report unresolved symbol references"
+            },
+            {
+              "line": 116,
+              "raw": "LDFLAGS_vmlinux += --no-undefined"
+            },
+            {
+              "line": 117,
+              "raw": "# Delete all temporary local symbols"
+            },
+            {
+              "line": 118,
+              "raw": "LDFLAGS_vmlinux += -X"
+            },
+            {
+              "line": 119,
+              "raw": "# Report orphan sections"
+            },
+            {
+              "line": 120,
+              "raw": "ifdef CONFIG_LD_ORPHAN_WARN"
+            },
+            {
+              "line": 121,
+              "raw": "LDFLAGS_vmlinux += --orphan-handling=$(CONFIG_LD_ORPHAN_WARN_LEVEL)"
+            },
+            {
+              "line": 122,
+              "raw": "endif"
+            },
+            {
+              "line": 123,
+              "raw": "# Next argument is a linker script"
+            },
+            {
+              "line": 124,
+              "raw": "LDFLAGS_vmlinux += -T"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/arch/arm/boot/compressed/Makefile",
+          "start_line": 146,
+          "end_line": 158,
+          "code": [
+            {
+              "line": 146,
+              "raw": "efi-obj-$(CONFIG_EFI_STUB) := $(objtree)/drivers/firmware/efi/libstub/lib.a"
+            },
+            {
+              "line": 147,
+              "raw": ""
+            },
+            {
+              "line": 148,
+              "raw": "$(obj)/vmlinux: $(obj)/vmlinux.lds $(obj)/$(HEAD) $(obj)/piggy.o \\"
+            },
+            {
+              "line": 149,
+              "raw": "\t\t$(addprefix $(obj)/, $(OBJS)) \\"
+            },
+            {
+              "line": 150,
+              "raw": "\t\t$(efi-obj-y) FORCE"
+            },
+            {
+              "line": 151,
+              "raw": "\t@$(check_for_multiple_zreladdr)"
+            },
+            {
+              "line": 152,
+              "raw": "\t$(call if_changed,ld)"
+            },
+            {
+              "line": 153,
+              "raw": "\t@$(check_for_bad_syms)"
+            },
+            {
+              "line": 154,
+              "raw": ""
+            },
+            {
+              "line": 155,
+              "raw": "$(obj)/piggy_data: $(obj)/../Image FORCE"
+            },
+            {
+              "line": 156,
+              "raw": "\t$(call if_changed,$(compress-y))"
+            },
+            {
+              "line": 157,
+              "raw": ""
+            },
+            {
+              "line": 158,
+              "raw": "$(obj)/piggy.o: $(obj)/piggy_data"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.lib",
+          "start_line": 330,
+          "end_line": 335,
+          "code": [
+            {
+              "line": 330,
+              "raw": "# Linking"
+            },
+            {
+              "line": 331,
+              "raw": "# ---------------------------------------------------------------------------"
+            },
+            {
+              "line": 332,
+              "raw": ""
+            },
+            {
+              "line": 333,
+              "raw": "quiet_cmd_ld = LD      $@"
+            },
+            {
+              "line": 334,
+              "raw": "      cmd_ld = $(LD) $(ld_flags) $(real-prereqs) -o $@"
+            },
+            {
+              "line": 335,
+              "raw": ""
+            }
+          ]
+        }
+      ],
+      "log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8141,
+          "raw": "[ 1532s]   LD      arch/arm/boot/compressed/vmlinux"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8143,
+          "raw": "[ 1533s]   OBJCOPY arch/arm/boot/zImage"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8145,
+          "raw": "[ 1533s]   Kernel: arch/arm/boot/zImage is ready"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 14011,
+          "raw": "[ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15251,
+          "raw": "[ 6104s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15255,
+          "raw": "[ 6137s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+        }
+      ],
+      "verdict": {
+        "target": "arch/arm/boot/compressed/vmlinux",
+        "artifact_type": "ARM decompressor final ELF",
+        "source_file_and_lines": "evidence/kernel/source/arch/arm/Makefile:252-258 | evidence/kernel/source/arch/arm/Makefile:295-302 | evidence/kernel/source/arch/arm/boot/Makefile:53-60 | evidence/kernel/source/arch/arm/boot/compressed/Makefile:103-124 | evidence/kernel/source/arch/arm/boot/compressed/Makefile:146-158 | evidence/kernel/source/scripts/Makefile.lib:330-335",
+        "original_code": "\t$(call if_changed,ld) |       cmd_ld = $(LD) $(ld_flags) $(real-prereqs) -o $@",
+        "effective_make_variable": "LLVM=1 observed. LD=ld.lld inferred. $(LD) $(ld_flags) $(real-prereqs) -o $@",
+        "expected_linker": "LLD 22.1.8",
+        "linker_override": "NONE_IN_SCOPED_RULES",
+        "build_log_evidence": "evidence/build/linux-rpi-armv7l.out:8141 [ 1532s]   LD      arch/arm/boot/compressed/vmlinux | evidence/build/linux-rpi-armv7l.out:8143 [ 1533s]   OBJCOPY arch/arm/boot/zImage | evidence/build/linux-rpi-armv7l.out:8145 [ 1533s]   Kernel: arch/arm/boot/zImage is ready | evidence/build/linux-rpi-armv7l.out:14011 [ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage | evidence/build/linux-rpi-armv7l.out:15251 [ 6104s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm | evidence/build/linux-rpi-armv7l.out:15255 [ 6137s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+        "artifact_binding": "compressed/vmlinux to arm/boot/zImage via OBJCOPY, then install and non-RT kernel RPM",
+        "evidence_strength": "E3",
+        "evidence_level": "E3",
+        "final_verdict": "ENGINEERING_VERIFIED",
+        "reason": "Published SPEC and historical LLVM=1/target argv select ld.lld. Generated Kconfig probes LLD 22.1.8. The matched ARM recipe inherits LD and runs for this exact target. Neither verified retained RPM provider of ld.lld dispatches to GNU BFD. Quiet target and release packaging evidence link the rule and artifact.",
+        "remaining_uncertainty": "No historical process argv, resolved executable path or target .cmd."
+      }
+    },
+    "52 in-tree .ko": {
+      "sources": [
+        {
+          "file": "evidence/kernel/source/Makefile",
+          "start_line": 1881,
+          "end_line": 1889,
+          "code": [
+            {
+              "line": 1881,
+              "raw": "$(MODORDER): $(build-dir)"
+            },
+            {
+              "line": 1882,
+              "raw": "\t@:"
+            },
+            {
+              "line": 1883,
+              "raw": ""
+            },
+            {
+              "line": 1884,
+              "raw": "# KBUILD_MODPOST_NOFINAL can be set to skip the final link of modules."
+            },
+            {
+              "line": 1885,
+              "raw": "# This is solely useful to speed up test compiles."
+            },
+            {
+              "line": 1886,
+              "raw": "modules: modpost"
+            },
+            {
+              "line": 1887,
+              "raw": "ifneq ($(KBUILD_MODPOST_NOFINAL),1)"
+            },
+            {
+              "line": 1888,
+              "raw": "\t$(Q)$(MAKE) -f $(srctree)/scripts/Makefile.modfinal"
+            },
+            {
+              "line": 1889,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.modfinal",
+          "start_line": 15,
+          "end_line": 18,
+          "code": [
+            {
+              "line": 15,
+              "raw": "# find all modules listed in modules.order"
+            },
+            {
+              "line": 16,
+              "raw": "modules := $(call read-file, $(MODORDER))"
+            },
+            {
+              "line": 17,
+              "raw": ""
+            },
+            {
+              "line": 18,
+              "raw": "__modfinal: $(modules:%.o=%.ko)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.modfinal",
+          "start_line": 36,
+          "end_line": 40,
+          "code": [
+            {
+              "line": 36,
+              "raw": "quiet_cmd_ld_ko_o = LD [M]  $@"
+            },
+            {
+              "line": 37,
+              "raw": "      cmd_ld_ko_o =\t\t\t\t\t\t\t\\"
+            },
+            {
+              "line": 38,
+              "raw": "\t$(LD) -r $(KBUILD_LDFLAGS)\t\t\t\t\t\\"
+            },
+            {
+              "line": 39,
+              "raw": "\t\t$(KBUILD_LDFLAGS_MODULE) $(LDFLAGS_MODULE)\t\t\\"
+            },
+            {
+              "line": 40,
+              "raw": "\t\t-T scripts/module.lds -o $@ $(filter %.o, $^)"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.modfinal",
+          "start_line": 59,
+          "end_line": 64,
+          "code": [
+            {
+              "line": 59,
+              "raw": "# Re-generate module BTFs if either module's .ko or vmlinux changed"
+            },
+            {
+              "line": 60,
+              "raw": "%.ko: %.o %.mod.o $(extmod_prefix).module-common.o scripts/module.lds $(and $(CONFIG_DEBUG_INFO_BTF_MODULES),$(KBUILD_BUILTIN),vmlinux) FORCE"
+            },
+            {
+              "line": 61,
+              "raw": "\t+$(call if_changed_except,ld_ko_o,vmlinux)"
+            },
+            {
+              "line": 62,
+              "raw": "ifdef CONFIG_DEBUG_INFO_BTF_MODULES"
+            },
+            {
+              "line": 63,
+              "raw": "\t+$(if $(newer-prereqs),$(call cmd,btf_ko))"
+            },
+            {
+              "line": 64,
+              "raw": "endif"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.modinst",
+          "start_line": 43,
+          "end_line": 72,
+          "code": [
+            {
+              "line": 43,
+              "raw": "modules := $(call read-file, $(MODORDER))"
+            },
+            {
+              "line": 44,
+              "raw": ""
+            },
+            {
+              "line": 45,
+              "raw": "ifeq ($(KBUILD_EXTMOD),)"
+            },
+            {
+              "line": 46,
+              "raw": "dst := $(MODLIB)/kernel"
+            },
+            {
+              "line": 47,
+              "raw": "else"
+            },
+            {
+              "line": 48,
+              "raw": "INSTALL_MOD_DIR ?= updates"
+            },
+            {
+              "line": 49,
+              "raw": "dst := $(MODLIB)/$(INSTALL_MOD_DIR)"
+            },
+            {
+              "line": 50,
+              "raw": "endif"
+            },
+            {
+              "line": 51,
+              "raw": ""
+            },
+            {
+              "line": 52,
+              "raw": "$(foreach x, % :, $(if $(findstring $x, $(dst)), \\"
+            },
+            {
+              "line": 53,
+              "raw": "\t$(error module installation path cannot contain '$x')))"
+            },
+            {
+              "line": 54,
+              "raw": ""
+            },
+            {
+              "line": 55,
+              "raw": "suffix-y\t\t\t\t:="
+            },
+            {
+              "line": 56,
+              "raw": "ifdef CONFIG_MODULE_COMPRESS_ALL"
+            },
+            {
+              "line": 57,
+              "raw": "suffix-$(CONFIG_MODULE_COMPRESS_GZIP)\t:= .gz"
+            },
+            {
+              "line": 58,
+              "raw": "suffix-$(CONFIG_MODULE_COMPRESS_XZ)\t:= .xz"
+            },
+            {
+              "line": 59,
+              "raw": "suffix-$(CONFIG_MODULE_COMPRESS_ZSTD)\t:= .zst"
+            },
+            {
+              "line": 60,
+              "raw": "endif"
+            },
+            {
+              "line": 61,
+              "raw": ""
+            },
+            {
+              "line": 62,
+              "raw": "modules := $(patsubst $(extmod_prefix)%.o, $(dst)/%.ko$(suffix-y), $(modules))"
+            },
+            {
+              "line": 63,
+              "raw": "install-$(CONFIG_MODULES) += $(modules)"
+            },
+            {
+              "line": 64,
+              "raw": ""
+            },
+            {
+              "line": 65,
+              "raw": "__modinst: $(install-y)"
+            },
+            {
+              "line": 66,
+              "raw": "\t@:"
+            },
+            {
+              "line": 67,
+              "raw": ""
+            },
+            {
+              "line": 68,
+              "raw": "#"
+            },
+            {
+              "line": 69,
+              "raw": "# Installation"
+            },
+            {
+              "line": 70,
+              "raw": "#"
+            },
+            {
+              "line": 71,
+              "raw": "quiet_cmd_install = INSTALL $@"
+            },
+            {
+              "line": 72,
+              "raw": "      cmd_install = cp $< $@"
+            }
+          ]
+        },
+        {
+          "file": "evidence/kernel/source/scripts/Makefile.modinst",
+          "start_line": 76,
+          "end_line": 89,
+          "code": [
+            {
+              "line": 76,
+              "raw": "# INSTALL_MOD_STRIP, if defined, will cause modules to be stripped after they"
+            },
+            {
+              "line": 77,
+              "raw": "# are installed. If INSTALL_MOD_STRIP is '1', then the default option"
+            },
+            {
+              "line": 78,
+              "raw": "# --strip-debug will be used. Otherwise, INSTALL_MOD_STRIP value will be used"
+            },
+            {
+              "line": 79,
+              "raw": "# as the options to the strip command."
+            },
+            {
+              "line": 80,
+              "raw": "ifdef INSTALL_MOD_STRIP"
+            },
+            {
+              "line": 81,
+              "raw": ""
+            },
+            {
+              "line": 82,
+              "raw": "ifeq ($(INSTALL_MOD_STRIP),1)"
+            },
+            {
+              "line": 83,
+              "raw": "strip-option := --strip-debug"
+            },
+            {
+              "line": 84,
+              "raw": "else"
+            },
+            {
+              "line": 85,
+              "raw": "strip-option := $(INSTALL_MOD_STRIP)"
+            },
+            {
+              "line": 86,
+              "raw": "endif"
+            },
+            {
+              "line": 87,
+              "raw": ""
+            },
+            {
+              "line": 88,
+              "raw": "quiet_cmd_strip = STRIP   $@"
+            },
+            {
+              "line": 89,
+              "raw": "      cmd_strip = $(STRIP) $(strip-option) $@"
+            }
+          ]
+        }
+      ],
+      "log_events": [
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 3371,
+          "raw": "[  360s] + make O=build/arm-rpi4 -j8"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7945,
+          "raw": "[ 1401s]   MODPOST Module.symvers"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 7969,
+          "raw": "[ 1522s]   CC [M]  .module-common.o"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8038,
+          "raw": "[ 1525s]   LD [M]  fs/binfmt_misc.ko"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 8142,
+          "raw": "[ 1533s]   LD [M]  net/netfilter/xt_LED.ko"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 14124,
+          "raw": "[ 2718s] + make O=build/arm-rpi4 INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm modules_install"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 14130,
+          "raw": "[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 14232,
+          "raw": "[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15253,
+          "raw": "[ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm"
+        },
+        {
+          "file": "evidence/build/linux-rpi-armv7l.out",
+          "line": 15275,
+          "raw": "[ 6210s] qb-build-host-01 finished \"build linux-rpi.spec\" at Fri Nov 20 10:42:44 UTC 2026."
+        }
+      ],
+      "verdict": {
+        "target": "52 in-tree .ko",
+        "artifact_type": "module final relocatables",
+        "source_file_and_lines": "evidence/kernel/source/Makefile:1881-1889 | evidence/kernel/source/scripts/Makefile.modfinal:15-18 | evidence/kernel/source/scripts/Makefile.modfinal:36-40 | evidence/kernel/source/scripts/Makefile.modfinal:59-64 | evidence/kernel/source/scripts/Makefile.modinst:43-72 | evidence/kernel/source/scripts/Makefile.modinst:76-89",
+        "original_code": "quiet_cmd_ld_ko_o = LD [M]  $@ |       cmd_ld_ko_o =\t\t\t\t\t\t\t\\ | \t$(LD) -r $(KBUILD_LDFLAGS)\t\t\t\t\t\\ | \t+$(call if_changed_except,ld_ko_o,vmlinux)",
+        "effective_make_variable": "LLVM=1 observed. LD=ld.lld inferred. $(LD) -r … -T scripts/module.lds -o $@ …",
+        "expected_linker": "LLD 22.1.8",
+        "linker_override": "NONE_IN_SCOPED_RULES",
+        "build_log_evidence": "evidence/build/linux-rpi-armv7l.out:3371 [  360s] + make O=build/arm-rpi4 -j8 | evidence/build/linux-rpi-armv7l.out:7945 [ 1401s]   MODPOST Module.symvers | evidence/build/linux-rpi-armv7l.out:7969 [ 1522s]   CC [M]  .module-common.o | evidence/build/linux-rpi-armv7l.out:8038 [ 1525s]   LD [M]  fs/binfmt_misc.ko | evidence/build/linux-rpi-armv7l.out:8142 [ 1533s]   LD [M]  net/netfilter/xt_LED.ko | evidence/build/linux-rpi-armv7l.out:14124 [ 2718s] + make O=build/arm-rpi4 INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm modules_install | evidence/build/linux-rpi-armv7l.out:14130 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko | evidence/build/linux-rpi-armv7l.out:14232 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko | evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm | evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished \"build linux-rpi.spec\" at Fri Nov 20 10:42:44 UTC 2026.",
+        "artifact_binding": "52/52 target paths -> INSTALL/STRIP -> modules RPM -> identical installed SHA256",
+        "evidence_strength": "E3",
+        "evidence_level": "E3",
+        "final_verdict": "ENGINEERING_VERIFIED",
+        "reason": "Published SPEC and historical LLVM=1/target argv select ld.lld. Generated Kconfig probes LLD 22.1.8. The matched ARM recipe inherits LD and runs for this exact target. Neither verified retained RPM provider of ld.lld dispatches to GNU BFD. Quiet target and release packaging evidence link the rule and artifact.",
+        "remaining_uncertainty": "No historical process argv, resolved executable path or target .cmd."
+      }
+    }
+  },
+  "historical_path_evidence": "08_06_historical_linker_resolution.md",
+  "static_alternative_assessment": "NO_REASONABLE_BFD_ROUTE_IN_MATCHED_BUILD_SCOPE",
+  "remaining_uncertainty": "No historical process argv, resolved executable path or target .cmd.",
+  "original_classification_preserved": true
+}

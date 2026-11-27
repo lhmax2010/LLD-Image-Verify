@@ -1,0 +1,56 @@
+{
+  "ENGINEERING_ACCEPTANCE": "PASS",
+  "ENGINEERING_SCOPE": "KERNEL_AND_MODULE_FINAL_LINK",
+  "STRICT_ACCEPTANCE": "CONDITIONAL_PASS",
+  "FULL_INTERMEDIATE_LINK_COVERAGE": "NOT_VERIFIED",
+  "HISTORICAL_E4_EVIDENCE": "UNAVAILABLE",
+  "KDBUS_INTERMEDIATE_LINK": "OPEN",
+  "pm_decision": "APPROVED_AND_CLOSED",
+  "snapshot": "tizen-unified-toolchain_20261120.082536",
+  "target": "6.12.80-arm-rpi4-v7l, standard/armv7l, Raspberry Pi 4 non-RT",
+  "accepted_primary_target_levels": {
+    "vmlinux.o": "E3",
+    "vmlinux": "E3",
+    "ARM Decompressor": "E3"
+  },
+  "individually_approved_intermediate": "vmlinux.o (E3)",
+  "module_coverage": {
+    "repository": {
+      "total": 59,
+      "original_lld_confirmed": 0,
+      "original_lld_indicated": 59,
+      "e3_engineering_verified": 59,
+      "e4_direct_execution_verified": 0,
+      "e3_plus_e4_engineering_acceptance": 1.0
+    },
+    "device": {
+      "total": 59,
+      "original_lld_confirmed": 0,
+      "original_lld_indicated": 59,
+      "e3_engineering_verified": 59,
+      "e4_direct_execution_verified": 0,
+      "e3_plus_e4_engineering_acceptance": 1.0
+    },
+    "in-tree": {
+      "total": 52,
+      "original_lld_confirmed": 0,
+      "original_lld_indicated": 52,
+      "e3_engineering_verified": 52,
+      "e4_direct_execution_verified": 0,
+      "e3_plus_e4_engineering_acceptance": 1.0
+    },
+    "out-of-tree": {
+      "total": 7,
+      "original_lld_confirmed": 0,
+      "original_lld_indicated": 7,
+      "e3_engineering_verified": 7,
+      "e4_direct_execution_verified": 0,
+      "e3_plus_e4_engineering_acceptance": 1.0
+    }
+  },
+  "open_issue": "LLD-KERNEL-001",
+  "phase9_pm_instruction": "evidence/pm-decision-original.txt",
+  "pm_instruction_sha256": "b0df90775efc64c08f9fba7f5369f5e874772a4460bb1375f8460507ba453fc1",
+  "prior_summary": "evidence/round2-summary.json",
+  "prior_summary_sha256": "b6156750d72639c3c1bdee87b2d662e734ef3ff27bacce00ea6718977b909266"
+}

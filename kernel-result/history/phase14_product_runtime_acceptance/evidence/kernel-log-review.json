@@ -1,0 +1,33 @@
+{
+  "dmesg_lines": 548,
+  "patterns": {
+    "unknown_symbol": "unknown symbol|unresolved symbol|undefined symbol",
+    "invalid_module_format": "invalid module format|exec format error|invalid (elf|module header)",
+    "version_magic": "version magic|vermagic.*(?:mismatch|invalid)|disagrees about version",
+    "module_relocation": "(?:module|kdbus|\\.ko\\b).*relocat|relocat.*(?:failed|error|unsupported|overflow)|unknown relocation",
+    "module_load_failure": "(?:module|kdbus|\\.ko\\b).*(?:failed to load|load failed|cannot load|loading error)|(?:failed|unable) to (?:load|insert).*module",
+    "oops_panic_trace": "\\boops\\b|kernel panic|call trace:|internal error:|kernel BUG at|unable to handle kernel|\\bKASAN:",
+    "kdbus_error": "\\bkdbus(?:fs)?\\b.*(?:fail(?:ed|ure)?|error|invalid|unable|warning|timeout|denied)|(?:fail(?:ed|ure)?|error|invalid|unable|warning|timeout|denied).*\\bkdbus(?:fs)?\\b"
+  },
+  "hits": {
+    "unknown_symbol": [],
+    "invalid_module_format": [],
+    "version_magic": [],
+    "module_relocation": [],
+    "module_load_failure": [],
+    "oops_panic_trace": [],
+    "kdbus_error": []
+  },
+  "kdbus_initialization": [
+    "[    2.469537] kdbus: initialized"
+  ],
+  "journal_exit_status": 1,
+  "journal_diagnostics": [
+    "Hint: You are currently not seeing messages from other users and the system.",
+    "      Users in groups 'adm', 'systemd-journal', 'wheel' can see all messages.",
+    "      Pass -q to turn off this notice.",
+    "No journal files were opened due to insufficient permissions."
+  ],
+  "old_full_boot_and_kernel_log_comparable": false,
+  "other_warning_line_count": 9
+}

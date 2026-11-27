@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "curl",
+    "-fLsS",
+    "--max-time",
+    "100",
+    "-D",
+    "evidence/build/base/llvm-22.1.8-4.1.armv7l.rpm.headers",
+    "--output",
+    "evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm",
+    "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/llvm-22.1.8-4.1.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:25:34.670044+00:00",
+  "elapsed_seconds": 2.833,
+  "exit_status": 0
+}

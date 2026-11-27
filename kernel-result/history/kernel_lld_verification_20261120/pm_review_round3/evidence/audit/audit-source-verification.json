@@ -1,0 +1,689 @@
+{
+  "verdict": "PASS",
+  "exact_devel_rpm": {
+    "path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+    "sha256": "bd074cebe72d5c92981933fa9c696d3cc388e4a4cb42eeddfcf1261c9c4df763",
+    "query_argv": [
+      "rpm",
+      "-qp",
+      "--qf",
+      "%{FILEDIGESTALGO}\n[%{FILENAMES}\t%{FILEDIGESTS}\n]",
+      "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+    ],
+    "query_exit_status": 0
+  },
+  "sources": [
+    {
+      "file": "evidence/audit/sources/kernel/.config",
+      "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/Kbuild",
+      "sha256": "339b9ec44fce768d901a27e9e697f8bb5c924508cfd2c578c9fe03c50c3c32cd",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/Makefile",
+      "sha256": "4a4a597bd36c11b465a5041b600fc179df55eb52c9d30d3524646be42849f906",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/arch/arm/Kbuild",
+      "sha256": "fea8024fc39c4926dda5a052e40858ec8817ee5f694fc73316544972612c50d9",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/arch/arm/Makefile",
+      "sha256": "0774bce3f349c4fe6f4a594bc43f7f80c239c883fc58ec44f199abb3029a4c24",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/arch/arm/boot/Makefile",
+      "sha256": "4b73d37c8dd5b300380121e11f74ad40086aecda55f8e987d3025989ea241afd",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/arch/arm/boot/compressed/Makefile",
+      "sha256": "8695b90f22fead3819383081774de888ab781b6006ec0048cc1e44e00d7d0205",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/crypto/Makefile",
+      "sha256": "74e092e89f0121e57ad569c48342cae7f5b1ff3151888740b9edac33b2058971",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/Makefile",
+      "sha256": "05ad8e0e0448b9247f5f15ba02b6ec138e3185cfeb7e5630d1ab63e9116e219d",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/block/Makefile",
+      "sha256": "13ddc1779c4064557133d78562f2e67b19ba7e98dbcdd6bf0c7bfa0354a6c1e5",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/bluetooth/Makefile",
+      "sha256": "3029941aefe5ca9b5f588c27a785910490c8b2c0bd825f2ca145d48278468218",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/char/Makefile",
+      "sha256": "d9082533c9bb5c47a945e7e9e497b94134534e149fd1f6cb178b2418f300a414",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/char/broadcom/Makefile",
+      "sha256": "c98214b5a7e625f347b061f44b4125bb1b3512d09ee107d1cd5a3b3b419bff3f",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/hid/Makefile",
+      "sha256": "34e62f3bf21e073e302a8555c9f830c75edff83a90d056683810e912b3b9182f",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/i2c/Makefile",
+      "sha256": "eef8c14393be4328af4b742e42ce7212d69f1bd2bae214e19b35c1e637c768f2",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/i2c/busses/Makefile",
+      "sha256": "490332deb4cc13ac38fd1568d847e9fdd286fed5438b7554c2578422acb88aeb",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/input/Makefile",
+      "sha256": "1b920b7f5234e0444c3e1cf53eefbc4064404fff388dbf63cb226757a98a562f",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/leds/Makefile",
+      "sha256": "92a1210125cc0d59fcd0402ce93bc408876119b2170340e85622bb82b2c5b292",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/leds/trigger/Makefile",
+      "sha256": "3a0ad678171018d32352d431fb32a10fe630256623effd8b5f751e21d212637e",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/media/Makefile",
+      "sha256": "88a13a9cdb0a7b382ddaa09ca707e9e674c7fe7f60d3d8d549eebae79b49bd67",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/media/usb/Makefile",
+      "sha256": "59bb1f8754b479f336ed98b94bfefccc39e65d4eee91ca5c8300f399891da4c6",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/media/usb/gspca/Makefile",
+      "sha256": "9e535a80df34b18ab16f0da3526ac0e1571b145e3c1079cb0ac1426dfe1b0b1d",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/mfd/Makefile",
+      "sha256": "21534098e2f997e164fb33f24478a23dd7e5cc796eca56a9d0acc1126a24acc5",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/misc/Makefile",
+      "sha256": "06490db27d31fb14114ba8b354fd0e7ada9f19b687628825d0cf817c74926186",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/Makefile",
+      "sha256": "8e1d4f533a71ef1fd3212b3349c9a75b75ed1ddc90c1c9c3c2410629c649d41c",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/Makefile",
+      "sha256": "6f09fd5f787240afd14ab379068087feb0277381feee6d1efc5335e037ea5f72",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/Makefile",
+      "sha256": "f1b6dbb83407dbf753ea3db804e1fe7baea985f0b8675cb48a70fbdbac89f8c2",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/Makefile",
+      "sha256": "8a5ff43aee9f1d230a30a54634f294b6678932a1b3581ba97241dc2062a7f2f2",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/Makefile",
+      "sha256": "fba4e66e491186c5fdd295d81602a83abc5f8b827a104f9910fe6aa9214f815f",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/Makefile",
+      "sha256": "6c39522eb3de877fcd9970e5931f89118f75d0894d2dc049ca7be602725e52d2",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/Makefile",
+      "sha256": "4778fece953ca85f9d9e46a5f8edc1fa23139e09afcb043929ac1778dde4e6ca",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/Makefile",
+      "sha256": "c5d3e784b7629c9af24ee00bb133047baa6439e47893252e6514b64c38713e37",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/Makefile",
+      "sha256": "de13f08a2ba4deb7305d8ce587fa6fbca3d90a216fa831b3c532297b26eefe79",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/mediatek/Makefile",
+      "sha256": "7947470d6cf0724dcf1da9b45e3fbc4a78470f5b85a4de21ff1872ac66d1be26",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/mediatek/mt76/Makefile",
+      "sha256": "108be9e133e3ccff8a9af1e45a2c425cf274fcc89a04985db24e052f8f91859e",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/net/wireless/mediatek/mt76/mt7921/Makefile",
+      "sha256": "4b324d2b3e469b58e80d4179b36866bece5d244168a9097a769ebcb7651d8d3a",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/spi/Makefile",
+      "sha256": "874b486441ef370ae821df8af2c4f3a883484ea8067435e822e807fbec61ed26",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/usb/Makefile",
+      "sha256": "8dfda1fe997148cb793a2d9b42ab46bc9fbe47e99d103e4eae7595af2f45f254",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/usb/class/Makefile",
+      "sha256": "2d6c1118eb0c719334d93890e6d2538fddca93fbe938da85ab1c50028bacb9ef",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/usb/gadget/Makefile",
+      "sha256": "107d435a30207fb1a20820b438c7c6753c3422e1b3e979f8d557afded11af9ae",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/usb/gadget/udc/Makefile",
+      "sha256": "616b8bf12a47a0083e7eeb208edf8c9f6d3fbcbe91a766d539faf834cdbf9c49",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/usb/serial/Makefile",
+      "sha256": "03324e7cef1fbd31f1e02aac9aba1fc5f26417e8fd5d251593d106977003dbad",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/drivers/watchdog/Makefile",
+      "sha256": "b9b1c86d0ae6585d247318c2948d04ff8ba9e729ec43514fee70b6849e431aa6",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/fs/Makefile",
+      "sha256": "2db1160e9bf2e34f2a75d9494626ca54371a31e3b07141362d42459f036c1864",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/fs/ecryptfs/Makefile",
+      "sha256": "59a62a65b4b6e36dc4d0c38d53937a8548a0dbf30226a51a78b633d5532596b1",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/include/config/auto.conf",
+      "sha256": "cc7bbe7e4d68f46bdd1d67e5f033cccfdb1744101c53dac95e035effaeff748e",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/include/generated/compile.h",
+      "sha256": "8be8545243726ed358d872faab32c763edfe25248868e80cf5b99b735b529d07",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/include/generated/utsrelease.h",
+      "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/include/generated/utsversion.h",
+      "sha256": "84dbc636615226881511e12f0dd235b2c126e595530bb4f8b4ae6b4cc8b607e1",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/init/Kconfig",
+      "sha256": "14f13926c4afa5e6d50cc3641380aa9f8382fd3d5281462633cbf4e4a002165c",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/lib/Makefile",
+      "sha256": "2fd9a0f6430356359d85d615526e6e78d5b6bc4a2cc86ff1d80f1e95f579c227",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/net/Makefile",
+      "sha256": "cb57e659d6c8edeef620004a66197a7eff760498e8f168ff8b876f978311072e",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/net/netfilter/Makefile",
+      "sha256": "d59d7a2dba1b13ab4418fadeb33487c987c148301807ab1e15a2d91ee05d08fa",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Kbuild.include",
+      "sha256": "09b5edc648b9aaac1f4b1f25d5ca7ad11195dfc0384fe0ece68196bbc8cd1ccc",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Kconfig.include",
+      "sha256": "cb7062b70e560679428d23a0c7f2bbdd7c6872433b81e9bbedfbe67934531d8c",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.build",
+      "sha256": "381c1ae0523a5d6ba483e0db0f8dcb785ff89b6be07893fbfc173afeb4e202ae",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.clang",
+      "sha256": "af4750f7fe84258d737e3fb37ab6e7cd676930c75e029e5848f2cc462787da53",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.compiler",
+      "sha256": "a8b092d8ca2f3bfdf5316333102088792fb9c528737dd8cd8a2c18faadd2606b",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.lib",
+      "sha256": "0cf4cacf6dda85155a5f58c14109ffb059b3c00f185701bd9a890bcb6d778a54",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.modfinal",
+      "sha256": "1d4894846f2efa55efe0978ac609676842072930770293ae9f8496db9b99ed06",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.modinst",
+      "sha256": "4c4607a2c10b2e843682337c0a4d32c7d31f122361d9e19c5ce1e12997683940",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.modpost",
+      "sha256": "c4863ea111f798f9adf5a0ea17db63a398a9ba819ebf4475bbd59209a9d7229a",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.vmlinux",
+      "sha256": "f6fbe02ee6250320c1b48ac8894906af1b3c8591be21857ade612c8474264d36",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/Makefile.vmlinux_o",
+      "sha256": "c871766e2a82a1666be5bd15ea47211715ac60ef71279bf2783f104bc71e9aa6",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/cc-version.sh",
+      "sha256": "2e7a69d846a36a3aa79db0e3d4910a38d1d1d4627bd69f7498b446b52069ca73",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/ld-version.sh",
+      "sha256": "2760ed371a6465b365a0a251a879c14d5de21451d6fe99c6090be69845c23c8a",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/scripts/link-vmlinux.sh",
+      "sha256": "e29827b981ddd6a3b10487775c68a9a919d24e6ce1cc5846e6351b1c8f6193cc",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/sound/Makefile",
+      "sha256": "59cc8a50bfaea505ee7a7f96661d5860284ed28d862657a3acc82c83a2fcccea",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/sound/soc/Makefile",
+      "sha256": "7e45f379351fc15a1a17b5e4ad4507f858b8810b4d156b6d15dd4051abf2a515",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/sound/soc/codecs/Makefile",
+      "sha256": "7137edd39f375373372fc811275b9bbbf15c36f73cdfe0b3386da1a40b530852",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/spec/linux-rpi.manifest",
+      "sha256": "fb0fb6cb1bb1797b22de7824aacb4e577b0dfd7da460dfe4875d1bd61e3f688d",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/kernel/spec/linux-rpi.spec",
+      "sha256": "bc39a41bdf0def353a4d5ba2ffcb6eb6eb3200b4c665db2638bd26c0a7925812",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/external/Makefile",
+      "sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/external/kdbus/Makefile",
+      "sha256": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/external/zlogger/Makefile",
+      "sha256": "65b3f7ce8e0b1ee088813588f96c41610719d547670ea9c8116f712631f9b183",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/external/linux-tizen-modules.spec",
+      "sha256": "85e70362ba5a492aff9065e65c7644da18d952201d67b04ee4ed98d7ab0b7a33",
+      "verified_by": "Round 2 BUNDLE_SHA256SUMS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/scripts/Makefile.host",
+      "sha256": "129133d5fc245f72cc8260b9e81af93342ef7677b412242076f44ccbb9112d75",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/scripts/dummy-tools/ld",
+      "sha256": "0ce50ae7c6a895e812f1ce246ccb88d3eef034ff87cc0908618de2b555ad3aee",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/bpf/bpftool/Makefile",
+      "sha256": "ad7dd80c722f35b6c4534ca18497224e2344d84f14721142c9c238d2695f52d2",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/bpf/resolve_btfids/Makefile",
+      "sha256": "f426c9bf0fdc961e00be9e4403569e1c739d83c56e42fe13f6af56c5f3d566e4",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/build/Makefile.build",
+      "sha256": "e84cc1bb0c8413d065e0ca05ac2080f01e4410364be0284e1706553c23503790",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/lib/subcmd/Makefile",
+      "sha256": "8140d112594045382a834e7147c5a633cc751d332e2b136c686cdf83bb2317f2",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/perf/Makefile",
+      "sha256": "a21ad685d8321bfa184ba9ec70195efdd35f83e95c9f3b6f7e9cbe7b56773ba3",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/perf/Makefile.perf",
+      "sha256": "3e385caa2ae9a7ba45cb8338c9fff348039b7064aa1b06cbd4f288a4fb298ff9",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    },
+    {
+      "file": "evidence/audit/sources/host-and-tools/tools/scripts/Makefile.include",
+      "sha256": "892ca56b64f6510127f7a3e432b81511bd2335a6020abd88355599b3bd3e5c6c",
+      "verified_by": "exact SDK RPM FILEDIGESTS"
+    }
+  ],
+  "patches": [
+    {
+      "file": "0002-drm-vc4-v3d-Fix-wrong-lock-protecting-filelist-in-ge.patch",
+      "sha256": "274af1b6ee35b185e90816e535df0d24edf171fe6aa42000550d646e20356083",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0003-perf-build-Add-make-check-headers-target.patch",
+      "sha256": "d6c2d011615ddb451fcd177e9ef2e3607ef5c6206cb5655178ba58fec4d916e2",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0004-ARM-ARM64-configs-tizen_bcm2711-Enable-F2FS-compress.patch",
+      "sha256": "aebe3a09efa30a5717ed257cbb0c2bcb3a6edf243b5c1f2252a5bea7cc40f529",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0005-script-build-support-non-sudo-image-creation-and-mou.patch",
+      "sha256": "f31edc1dbed443cc7b861ad887a5c4b8f6e57e7fa57ac5f9f845c39698ecb6ef",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0006-USB-serial-cp210x-Add-cp210x-stlink-driver-for-Smart.patch",
+      "sha256": "dcda344d7790e134aaa1064af172b70caec310f553beb9098f5ecd570bca1e07",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0007-USB-serial-cp210x-Fix-driver-name-collision-for-cp21.patch",
+      "sha256": "f3b852f060cdaee3a1fc3b48ee348ec7a7b8b39d123cec6cb490e959a6413d81",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0008-configs-packaging-modularize-defconfig-with-RT-and-L.patch",
+      "sha256": "f282f36186525706f6c53f13bc1e60a65588602a8f57bcbde84255901ac6cb9f",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "0009-drivers-media-pci-hailo-Port-Hailo-accelerator-drive.patch.gz",
+      "sha256": "8234af0684584ee369406a7272f5650c30411e7e3cbcfb0f354eeb5b4630d787",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    },
+    {
+      "file": "00d7934-to-8cdc667.diff.gz",
+      "sha256": "259405cdfc3d7d730ada299801cf074433c6755a3fd1c56b522d897771ac5ea0",
+      "potentially_prebuilt_scoped": [],
+      "binary_diff_marker_count": 0
+    }
+  ],
+  "external_sources": {
+    "provider": {
+      "name": "linux-tizen-modules-source",
+      "arch": "armv7l",
+      "version": "11.0.0",
+      "release": "0",
+      "href": "armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "sha256": "b8fdab693b2a21fb263ae9e24c5eb14e20097e12ee4a71681ff8edb8aa93f6b9",
+      "bytes": 123472,
+      "files": [],
+      "rpm_file": "linux-tizen-modules-source-11.0.0-0.armv7l.rpm",
+      "source_rpm": "linux-tizen-modules-source-11.0.0-0.src.rpm",
+      "vcs": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92"
+    },
+    "source0_sha256": "8ffa1a07f49dec1607a35f13e889a9d43050a493b3ab4ea7e37e57c1666e7031",
+    "prebuilt": []
+  },
+  "binutils": {
+    "package": {
+      "name": "binutils",
+      "arch": "armv7l",
+      "version": "2.43",
+      "release": "1.8",
+      "href": "armv7l/binutils-2.43-1.8.armv7l.rpm",
+      "sha256": "f79e7dde345edae70096631ff71d9e935e2501a1fc11fa1937852f8cad772a5a",
+      "bytes": 1677305,
+      "files": [
+        "/usr/armv7l-tizen-linux-gnueabi/bin/ar",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/as",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/nm",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/objcopy",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/objdump",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/ranlib",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/readelf",
+        "/usr/armv7l-tizen-linux-gnueabi/bin/strip",
+        "/usr/bin/addr2line",
+        "/usr/bin/ar",
+        "/usr/bin/as",
+        "/usr/bin/c++filt",
+        "/usr/bin/dwp",
+        "/usr/bin/elfedit",
+        "/usr/bin/gprof",
+        "/usr/bin/ld",
+        "/usr/bin/ld.bfd",
+        "/usr/bin/nm",
+        "/usr/bin/objcopy",
+        "/usr/bin/objdump",
+        "/usr/bin/ranlib",
+        "/usr/bin/readelf",
+        "/usr/bin/size",
+        "/usr/bin/strings",
+        "/usr/bin/strip"
+      ],
+      "rpm_file": "binutils-2.43-1.8.armv7l.rpm",
+      "source_rpm": "binutils-2.43-1.8.src.rpm",
+      "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11"
+    },
+    "ld_resolution": "Hardlink to the same GNU BFD ARM ELF as /usr/bin/ld.bfd",
+    "historical_base_primary": "evidence/build/historical-base-primary.out",
+    "historical_log_evidence": {
+      "line": 437,
+      "raw": "[   51s] [83/119] keeping binutils-2.43-1.8"
+    },
+    "executable_paths": {
+      "/usr/bin/ld": {
+        "path": "/usr/bin/ld",
+        "file_type": "regular",
+        "size": 4521628,
+        "sha256": "d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9",
+        "object_suffix": false,
+        "object_magic": true,
+        "nested_archive_magic": false,
+        "magic16": "7f454c46010101000000000000000000",
+        "rpm_inode": "952",
+        "rpm_device": "1",
+        "rpm_file_sha256": "d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9",
+        "rpm_filesize": 4521628,
+        "cpio_hardlink": {
+          "nlink": 2,
+          "device_major": 0,
+          "device_minor": 0,
+          "inode": 952,
+          "archive_entry_bytes": 0,
+          "data_carrier": "/usr/bin/ld.bfd"
+        },
+        "elf_class": "ELF32",
+        "elf_machine": "ARM",
+        "version_strings": [
+          "GNU ld ",
+          "GNU Binutils) 2.43",
+          "GNU ld %s",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld"
+        ]
+      },
+      "/usr/bin/ld.bfd": {
+        "path": "/usr/bin/ld.bfd",
+        "file_type": "regular",
+        "size": 4521628,
+        "sha256": "d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9",
+        "object_suffix": false,
+        "object_magic": true,
+        "nested_archive_magic": false,
+        "magic16": "7f454c46010101000000000000000000",
+        "rpm_inode": "952",
+        "rpm_device": "1",
+        "rpm_file_sha256": "d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9",
+        "rpm_filesize": 4521628,
+        "cpio_hardlink": {
+          "nlink": 2,
+          "device_major": 0,
+          "device_minor": 0,
+          "inode": 952,
+          "archive_entry_bytes": 4521628,
+          "data_carrier": "/usr/bin/ld.bfd"
+        },
+        "elf_class": "ELF32",
+        "elf_machine": "ARM",
+        "version_strings": [
+          "GNU ld ",
+          "GNU Binutils) 2.43",
+          "GNU ld %s",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld",
+          "GNU ld"
+        ]
+      }
+    }
+  },
+  "logs": [
+    {
+      "path": "evidence/build/linux-rpi-armv7l.out",
+      "sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673",
+      "selected_lines": [
+        1677,
+        2701,
+        2708,
+        3371,
+        3388,
+        3455,
+        7941,
+        7962,
+        8141
+      ]
+    },
+    {
+      "path": "pm_review_round2/evidence/external/external-buildlog-full.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+      "selected_lines": [
+        437,
+        565,
+        574,
+        575,
+        576,
+        612,
+        636,
+        657
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+commit 1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8
+Author:     liushanshan <[email-redacted]>
+AuthorDate: Wed Nov 25 04:40:40 2026 -0800
+Commit:     liushanshan <[email-redacted]>
+CommitDate: Wed Nov 25 04:40:40 2026 -0800
+
+    kbuild: Remove redundant LD override in external modules
+    
+    The external module Makefile explicitly assigns LD to
+    $(CROSS_COMPILE)ld, which can override the linker selected
+    and exported by the top-level Kbuild system.
+    
+    When building with LLVM=1, this assignment may cause GNU
+    BFD to be used for intermediate relocatable linking
+    instead of the configured LLVM LLD linker.
+    
+    Remove the redundant LD assignment and allow external
+    modules to inherit the linker selected by Kbuild.
+    
+    This preserves the caller's toolchain selection and
+    improves build consistency across GCC and LLVM
+    configurations.
+    
+    Change-Id: Ic0b9efb5c514bb6e18dbc270aa269211ec514375
+    Signed-off-by: liushanshan <[email-redacted]>
+
+ kernel/Makefile | 1 -
+ 1 file changed, 1 deletion(-)

@@ -1,0 +1,13 @@
+gate,status,scope,evidence,remaining
+Phase 13 engineering acceptance,PASS,PM-approved engineering scope,PM_PHASE13_FINAL_DECISION.md,
+Target QB runtime admission,PASS,RPi4 ARMv7l non-RT at private-address-03:26101; live kernel notes and banner match published boot RPM,evidence/runtime-result.json,
+Kernel boot,PASS,"running, boot targets active, zero failed units",evidence/device-boot.out,
+Published module file identity,PASS_59_OF_59,52 in-tree and 7 out-of-tree files match published RPM members,evidence/module-runtime-to-rpm.csv,
+Installed and live kdbus,PASS_LIVE_STATE,"Installed SHA and live Build ID match, state live, kdbusfs mounted",PHASE14_RUNTIME_REGRESSION_REPORT.md,
+Critical runtime error review,PASS_OBSERVED_DMESG_SCOPE,No matching errors in 548 readable dmesg lines,evidence/kernel-log-review.json,Functional test-period log review pending; kernel journal ACL limited
+kdbus functional regression,NOT_RUN_NO_APPROVED_CASE_AVAILABLE,No approved runnable case in the current session,PHASE14_RUNTIME_REGRESSION_REPORT.md,"Run an approved functional test and archive behavior, exit status and log"
+GCC/BFD target compatibility,PASS_RPI4_ARMV7L_NON_RT,Three tested real lanes on matching GCC SDK,../phase12_controlled_benchmark/GCC_COMPATIBILITY_REPORT.md,Kernel Owner to confirm product scope
+Build performance trade-off,PM_ACCEPTED_FOR_KDBUS,"Default wall +110.33%, process peak RSS +592.83%",FINAL_LLD_BENEFIT_SUMMARY.md,
+Kernel Owner trade-off acceptance,PENDING_OWNER_REVIEW,Review request prepared,KERNEL_OWNER_INTEGRATION_REQUEST.md,Record explicit owner acceptance
+Runtime memory benefit,NOT_MEASURED,Module footprint observation does not measure device memory benefit,FINAL_LLD_BENEFIT_SUMMARY.md,
+Product merge readiness,PENDING,Read-only runtime checks passed; functional regression and owner review open,PHASE14_RUNTIME_REGRESSION_REPORT.md,PM product review after open gates pass

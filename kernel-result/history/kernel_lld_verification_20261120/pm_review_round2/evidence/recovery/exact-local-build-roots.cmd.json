@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "stat",
+    "--",
+    "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27",
+    "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+    "/home/abuild/rpmbuild"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/.pm-review-round2.x9FKTf/delivery",
+  "started_utc": "2026-11-25T09:46:09.400413+00:00",
+  "elapsed_seconds": 0.003,
+  "exit_status": 1
+}

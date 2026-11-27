@@ -1,0 +1,9 @@
+{
+  "nevra": "make-4.4.1-1.15.x86_64",
+  "source_revision": "platform/upstream/make#f648b7e3cfcc77669112076cfe5c8f9b76ade526",
+  "algorithm": "sha256",
+  "checksum": "d498ca8d0da52df71fe377f6c0438043e66576b23a7761686c3f7686bc54ef4c",
+  "href": "x86_64/make-4.4.1-1.15.x86_64.rpm",
+  "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/x86_64/make-4.4.1-1.15.x86_64.rpm",
+  "provenance": "companion architecture for model only; actual ARMv7l build log uses 4.4.1-1.14.armv7l"
+}

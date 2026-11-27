@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "lscpu",
+    "-e=CPU,CORE,MAXMHZ,ONLINE"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T09:01:23.957785+00:00",
+  "elapsed_seconds": 0.004,
+  "exit_status": 0
+}

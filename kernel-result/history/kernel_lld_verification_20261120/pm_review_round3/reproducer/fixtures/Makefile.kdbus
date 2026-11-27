@@ -1,0 +1,8 @@
+# A new descendant process models Kbuild's descent into the kdbus directory.
+include $(REPRO_DIR)/fixtures/trace.mk
+.DEFAULT_GOAL := composite
+include $(M)/kdbus/Makefile
+$(call trace_ld,intermediate)
+.PHONY: composite
+composite:
+	@"$(REPRO_PYTHON)" "$(REPRO_DIR)/mock_linker.py" intermediate "$(LD)" -r -o kdbus/kdbus.o @kdbus/kdbus.mod

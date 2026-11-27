@@ -1,0 +1,185 @@
+{
+  "status": "FAMILY_AND_VERSION_VERIFIED_PATH_UNRESOLVED",
+  "family": "LLD",
+  "linker_version": "22.1.8",
+  "selected_linker_candidates": [
+    {
+      "path": "/usr/bin/ld.lld",
+      "symlink_target": "lld",
+      "regular_path": "/usr/bin/lld",
+      "target_file_sha256": "6148726c811fc3b3a41791bc0ee27c68106a686b5f2041879423f42bdcb9212d",
+      "companion_lld_path": "/usr/bin/lld",
+      "companion_lld_sha256": "6148726c811fc3b3a41791bc0ee27c68106a686b5f2041879423f42bdcb9212d",
+      "binary_bytes": 2980632,
+      "same_target_inode_as_companion": true,
+      "rpm_file_inodes": [
+        "10",
+        "13"
+      ],
+      "file_output": "/local-user/lss/kernel_lld_check/.pm-review-round2.x9FKTf/recovery-cache/native/usr/bin/ld.lld: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, stripped",
+      "elf_class": "ELF32",
+      "machine": "ARM",
+      "interpreter": "/lib/ld-linux.so.3",
+      "lib_dependencies": [
+        "libz.so.1",
+        "libLLVM.so.22.1",
+        "libstdc++.so.6",
+        "libm.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux.so.3"
+      ],
+      "embedded_version_identification": [
+        "LLD 22.1.8"
+      ],
+      "is_wrapper": false,
+      "rpm": {
+        "primary": "Base",
+        "name": "llvm",
+        "arch": "armv7l",
+        "version": "22.1.8",
+        "release": "1.6",
+        "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+        "paths": [
+          "/usr/bin/ld.lld",
+          "/usr/bin/lld"
+        ],
+        "location": "armv7l/llvm-22.1.8-1.6.armv7l.rpm",
+        "sha256": "1cfda9694d06cb45ae468f843bc35ec7165b317ce2282802226b324123f422c0",
+        "size": 6523445,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 155,
+              "raw": "[   11s] [119/130] keeping llvm-22.1.8-1.6"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 467,
+              "raw": "[   51s] [113/119] keeping llvm-22.1.8-1.6"
+            }
+          ]
+        },
+        "source_rpm": "llvm-22.1.8-1.6.src.rpm",
+        "actual_sha256": "1cfda9694d06cb45ae468f843bc35ec7165b317ce2282802226b324123f422c0",
+        "snapshot_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/llvm-22.1.8-1.6.armv7l.rpm"
+      },
+      "receipts_dir": "evidence/recovery",
+      "receipt_prefix": "native"
+    },
+    {
+      "path": "/emul/usr/bin/ld.lld",
+      "symlink_target": null,
+      "regular_path": "/emul/usr/bin/ld.lld",
+      "target_file_sha256": "9ecd1893b14dd19d8ffb8b582e48c1a4f1019b45019e1851e227c55b9ba57405",
+      "companion_lld_path": "/emul/usr/bin/lld",
+      "companion_lld_sha256": "9ecd1893b14dd19d8ffb8b582e48c1a4f1019b45019e1851e227c55b9ba57405",
+      "binary_bytes": 84409520,
+      "same_target_inode_as_companion": false,
+      "rpm_file_inodes": [
+        "32",
+        "34"
+      ],
+      "file_output": "/local-user/lss/kernel_lld_check/.pm-review-round2.x9FKTf/recovery-cache/accelerated/emul/usr/bin/ld.lld: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped",
+      "elf_class": "ELF64",
+      "machine": "Advanced Micro Devices X86-64",
+      "interpreter": "/emul/usr/lib64/ld-linux-x86-64.so.2",
+      "lib_dependencies": [
+        "libxml2.so.16",
+        "librt.so.1",
+        "libdl.so.2",
+        "libm.so.6",
+        "libz.so.1",
+        "libstdc++.so.6",
+        "libgcc_s.so.1",
+        "libc.so.6",
+        "ld-linux-x86-64.so.2"
+      ],
+      "embedded_version_identification": [
+        "LLD 22.1.8"
+      ],
+      "is_wrapper": false,
+      "rpm": {
+        "primary": "Base",
+        "name": "clang-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": "0.4",
+        "release": "1.1",
+        "vcs": "platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126",
+        "paths": [
+          "/emul/usr/bin/ld.lld",
+          "/emul/usr/bin/lld"
+        ],
+        "location": "armv7l/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+        "sha256": "d93bd3069d25ed9c6c71d5483833c7106a9ab0c5b3960fe873510241b15e15bc",
+        "size": 151112237,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 84,
+              "raw": "[   11s] [48/130] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 402,
+              "raw": "[   51s] [48/119] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ]
+        },
+        "source_rpm": "qemu-accel-0.4-1.1.src.rpm",
+        "actual_sha256": "d93bd3069d25ed9c6c71d5483833c7106a9ab0c5b3960fe873510241b15e15bc",
+        "snapshot_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm"
+      },
+      "receipts_dir": "evidence/recovery",
+      "receipt_prefix": "accelerated"
+    }
+  ],
+  "historical_path": null,
+  "historical_execve_path": null,
+  "observed_qemu_binfmt": true,
+  "binutils": {
+    "primary": "Base",
+    "name": "binutils",
+    "arch": "armv7l",
+    "version": "2.43",
+    "release": "1.8",
+    "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+    "paths": [
+      "/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+      "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+      "/usr/bin/ld",
+      "/usr/bin/ld.bfd"
+    ],
+    "location": "armv7l/binutils-2.43-1.8.armv7l.rpm",
+    "sha256": "f79e7dde345edae70096631ff71d9e935e2501a1fc11fa1937852f8cad772a5a",
+    "size": 1677305,
+    "observed_jobs": {
+      "evidence/build/linux-rpi-armv7l.out": [
+        {
+          "line": 123,
+          "raw": "[   11s] [87/130] keeping binutils-2.43-1.8"
+        }
+      ],
+      "evidence/build/linux-tizen-modules-armv7l.out": [
+        {
+          "line": 437,
+          "raw": "[   51s] [83/119] keeping binutils-2.43-1.8"
+        }
+      ]
+    }
+  },
+  "candidate_namespace": "Base/Unified primary metadata and positive package retention in the two archived ARMv7l jobs",
+  "historical_execution_evidence": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE",
+  "proven_behavior": "Both named package payloads are LLVM LLD 22.1.8 executable artifacts. No documented branch between them selects GNU BFD.",
+  "limitation": "The shell PATH, QEMU runtime dispatch, process argv and executable actually chosen by the historical link have not been recovered.",
+  "source_assets": [
+    "evidence/build/historical-base-index.out",
+    "evidence/build/historical-base-primary.out",
+    "evidence/repository/packages-repomd.out",
+    "evidence/repository/packages-primary.out",
+    "evidence/build/linux-rpi-armv7l.out",
+    "evidence/build/linux-tizen-modules-armv7l.out"
+  ]
+}

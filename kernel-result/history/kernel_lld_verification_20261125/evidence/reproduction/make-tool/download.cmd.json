@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "timeout",
+    "25",
+    "curl",
+    "-fLsS",
+    "--max-time",
+    "20",
+    "-o",
+    "evidence/reproduction/make-tool/make-4.4.1-1.15.x86_64.rpm",
+    "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/x86_64/make-4.4.1-1.15.x86_64.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:27:21.524833+00:00",
+  "elapsed_seconds": 1.913,
+  "exit_status": 0
+}

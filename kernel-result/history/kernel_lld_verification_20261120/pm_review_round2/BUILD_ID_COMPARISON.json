@@ -1,0 +1,1005 @@
+{
+  "status": "PASS",
+  "old_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+  "postprocessed_build_id": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+  "archived_rpm_members": {
+    "/boot/zImage": {
+      "file": "round1/evidence/kernel_binary/payload/arm-rpi4-linux-kernel-6.12.80-0.armv7l/files/boot/zImage",
+      "member": "/boot/zImage",
+      "rpm": "round1/evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601"
+    },
+    "/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux": {
+      "file": "round1/evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "member": "/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux",
+      "rpm": "round1/evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "sha256": "f835ec82ba34f743329fefb85a3958825195dd131dc4a2e17440d43accdac3bd"
+    },
+    "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug": {
+      "file": "round1/evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "member": "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug",
+      "rpm": "round1/evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "sha256": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f"
+    },
+    "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux": {
+      "file": "round1/evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/files/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "member": "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "rpm": "round1/evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "sha256": "ca89be817fd3d10720cbe1018cc7b7ab54934b596fafa89be949e46a7c7c9157"
+    },
+    "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug": {
+      "file": "round1/evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l/files/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "member": "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug",
+      "rpm": "round1/evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "sha256": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7"
+    }
+  },
+  "rpm_query_receipts": [
+    {
+      "argv": [
+        "rpm",
+        "-qp",
+        "--qf",
+        "%{FILEDIGESTALGO}\n[%{FILENAMES}\t%{FILEDIGESTS}\n]",
+        "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+      ],
+      "exit_status": 0,
+      "selected_file_digests": {
+        "/boot/zImage": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601"
+      }
+    },
+    {
+      "argv": [
+        "rpm",
+        "-qp",
+        "--qf",
+        "%{FILEDIGESTALGO}\n[%{FILENAMES}\t%{FILEDIGESTS}\n]",
+        "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm"
+      ],
+      "exit_status": 0,
+      "selected_file_digests": {
+        "/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux": "f835ec82ba34f743329fefb85a3958825195dd131dc4a2e17440d43accdac3bd",
+        "/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux": "ca89be817fd3d10720cbe1018cc7b7ab54934b596fafa89be949e46a7c7c9157"
+      }
+    },
+    {
+      "argv": [
+        "rpm",
+        "-qp",
+        "--qf",
+        "%{FILEDIGESTALGO}\n[%{FILENAMES}\t%{FILEDIGESTS}\n]",
+        "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm"
+      ],
+      "exit_status": 0,
+      "selected_file_digests": {
+        "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux.debug": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f",
+        "/usr/lib/debug/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux.debug": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7"
+      }
+    }
+  ],
+  "comparison_scope": "Non-empty file-backed SHF_ALLOC sections mapped through PT_LOAD. Header, non-ALLOC sections, NOBITS and debug data are outside this equality.",
+  "zimage_gzip": {
+    "member_offset": 33353,
+    "compressed_member_size": 14862120,
+    "raw_sha256": "1bcb98939e19276f8a4de3ab82425f119856005d388680fdb2847d42bdda1171",
+    "raw_size": 41721980
+  },
+  "main_kernel": {
+    "lma_base": 3221258240,
+    "sections": [
+      {
+        "index": 1,
+        "name": ".head.text",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 3221258240,
+        "file_offset": 32768,
+        "size": 704,
+        "load_segments": [
+          [
+            2,
+            3221258240
+          ]
+        ],
+        "raw_offset": 0,
+        "lma": 3221258240,
+        "equals": true
+      },
+      {
+        "index": 2,
+        "name": ".text",
+        "section_type": 1,
+        "flags": 7,
+        "vma": 3223322624,
+        "file_offset": 65536,
+        "size": 19862504,
+        "load_segments": [
+          [
+            3,
+            3223322624
+          ]
+        ],
+        "raw_offset": 2064384,
+        "lma": 3223322624,
+        "equals": true
+      },
+      {
+        "index": 3,
+        "name": ".rodata",
+        "section_type": 1,
+        "flags": 51,
+        "vma": 3244294144,
+        "file_offset": 19988480,
+        "size": 5144813,
+        "load_segments": [
+          [
+            4,
+            3244294144
+          ]
+        ],
+        "raw_offset": 23035904,
+        "lma": 3244294144,
+        "equals": true
+      },
+      {
+        "index": 5,
+        "name": ".pci_fixup",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249438960,
+        "file_offset": 25133296,
+        "size": 11024,
+        "load_segments": [
+          [
+            5,
+            3249438960
+          ]
+        ],
+        "raw_offset": 28180720,
+        "lma": 3249438960,
+        "equals": true
+      },
+      {
+        "index": 7,
+        "name": "__ksymtab",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249449984,
+        "file_offset": 25144320,
+        "size": 78564,
+        "load_segments": [
+          [
+            6,
+            3249449984
+          ]
+        ],
+        "raw_offset": 28191744,
+        "lma": 3249449984,
+        "equals": true
+      },
+      {
+        "index": 8,
+        "name": "__ksymtab_gpl",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249528548,
+        "file_offset": 25222884,
+        "size": 85992,
+        "load_segments": [
+          [
+            7,
+            3249528548
+          ]
+        ],
+        "raw_offset": 28270308,
+        "lma": 3249528548,
+        "equals": true
+      },
+      {
+        "index": 9,
+        "name": "__kcrctab",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249614540,
+        "file_offset": 25308876,
+        "size": 26188,
+        "load_segments": [
+          [
+            8,
+            3249614540
+          ]
+        ],
+        "raw_offset": 28356300,
+        "lma": 3249614540,
+        "equals": true
+      },
+      {
+        "index": 10,
+        "name": "__kcrctab_gpl",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249640728,
+        "file_offset": 25335064,
+        "size": 28664,
+        "load_segments": [
+          [
+            9,
+            3249640728
+          ]
+        ],
+        "raw_offset": 28382488,
+        "lma": 3249640728,
+        "equals": true
+      },
+      {
+        "index": 11,
+        "name": "__ksymtab_strings",
+        "section_type": 1,
+        "flags": 50,
+        "vma": 3249669392,
+        "file_offset": 25363728,
+        "size": 287458,
+        "load_segments": [
+          [
+            10,
+            3249669392
+          ]
+        ],
+        "raw_offset": 28411152,
+        "lma": 3249669392,
+        "equals": true
+      },
+      {
+        "index": 13,
+        "name": "__param",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249956852,
+        "file_offset": 25651188,
+        "size": 7860,
+        "load_segments": [
+          [
+            11,
+            3249956852
+          ]
+        ],
+        "raw_offset": 28698612,
+        "lma": 3249956852,
+        "equals": true
+      },
+      {
+        "index": 14,
+        "name": "__modver",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 3249964712,
+        "file_offset": 25659048,
+        "size": 792,
+        "load_segments": [
+          [
+            12,
+            3249964712
+          ]
+        ],
+        "raw_offset": 28706472,
+        "lma": 3249964712,
+        "equals": true
+      },
+      {
+        "index": 15,
+        "name": ".notes",
+        "section_type": 7,
+        "flags": 2,
+        "vma": 3249965504,
+        "file_offset": 25659840,
+        "size": 84,
+        "load_segments": [
+          [
+            13,
+            3249965504
+          ]
+        ],
+        "raw_offset": 28707264,
+        "lma": 3249965504,
+        "equals": false,
+        "difference_count": 20,
+        "section_offsets": [
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ],
+        "raw_hex": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+        "elf_hex": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+        "difference_raw_file_offset": 28707328,
+        "difference_elf_file_offset": 25659904
+      },
+      {
+        "index": 16,
+        "name": ".BTF",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3249965588,
+        "file_offset": 25659924,
+        "size": 6475431,
+        "load_segments": [
+          [
+            14,
+            3249965588
+          ]
+        ],
+        "raw_offset": 28707348,
+        "lma": 3249965588,
+        "equals": true
+      },
+      {
+        "index": 17,
+        "name": ".BTF_ids",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3256441020,
+        "file_offset": 32135356,
+        "size": 1876,
+        "load_segments": [
+          [
+            15,
+            3256441020
+          ]
+        ],
+        "raw_offset": 35182780,
+        "lma": 3256441020,
+        "equals": true
+      },
+      {
+        "index": 18,
+        "name": "__ex_table",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3256446976,
+        "file_offset": 32141312,
+        "size": 1736,
+        "load_segments": [
+          [
+            16,
+            3256446976
+          ]
+        ],
+        "raw_offset": 35188736,
+        "lma": 3256446976,
+        "equals": true
+      },
+      {
+        "index": 19,
+        "name": ".ARM.unwind_idx",
+        "section_type": 1879048193,
+        "flags": 130,
+        "vma": 3256448712,
+        "file_offset": 32143048,
+        "size": 515568,
+        "load_segments": [
+          [
+            16,
+            3256448712
+          ]
+        ],
+        "raw_offset": 35190472,
+        "lma": 3256448712,
+        "equals": true
+      },
+      {
+        "index": 20,
+        "name": ".ARM.unwind_tab",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3256964280,
+        "file_offset": 32658616,
+        "size": 522312,
+        "load_segments": [
+          [
+            16,
+            3256964280
+          ]
+        ],
+        "raw_offset": 35706040,
+        "lma": 3256964280,
+        "equals": true
+      },
+      {
+        "index": 21,
+        "name": ".vectors",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 4294901760,
+        "file_offset": 33226752,
+        "size": 32,
+        "load_segments": [
+          [
+            17,
+            3258974208
+          ]
+        ],
+        "raw_offset": 37715968,
+        "lma": 3258974208,
+        "equals": true
+      },
+      {
+        "index": 22,
+        "name": ".vectors.bhb.loop8",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 4294901760,
+        "file_offset": 33292288,
+        "size": 32,
+        "load_segments": [
+          [
+            18,
+            3258974240
+          ]
+        ],
+        "raw_offset": 37716000,
+        "lma": 3258974240,
+        "equals": true
+      },
+      {
+        "index": 23,
+        "name": ".vectors.bhb.bpiall",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 4294901760,
+        "file_offset": 33357824,
+        "size": 32,
+        "load_segments": [
+          [
+            19,
+            3258974272
+          ]
+        ],
+        "raw_offset": 37716032,
+        "lma": 3258974272,
+        "equals": true
+      },
+      {
+        "index": 24,
+        "name": ".stubs",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 4294905856,
+        "file_offset": 33361920,
+        "size": 848,
+        "load_segments": [
+          [
+            20,
+            3258974304
+          ]
+        ],
+        "raw_offset": 37716064,
+        "lma": 3258974304,
+        "equals": true
+      },
+      {
+        "index": 25,
+        "name": ".init.text",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 3258975168,
+        "file_offset": 33424320,
+        "size": 345192,
+        "load_segments": [
+          [
+            21,
+            3258975168
+          ]
+        ],
+        "raw_offset": 37716928,
+        "lma": 3258975168,
+        "equals": true
+      },
+      {
+        "index": 26,
+        "name": ".exit.text",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 3259320360,
+        "file_offset": 33769512,
+        "size": 20368,
+        "load_segments": [
+          [
+            21,
+            3259320360
+          ]
+        ],
+        "raw_offset": 38062120,
+        "lma": 3259320360,
+        "equals": true
+      },
+      {
+        "index": 27,
+        "name": ".init.proc.info",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3259340728,
+        "file_offset": 33789880,
+        "size": 572,
+        "load_segments": [
+          [
+            22,
+            3259340728
+          ]
+        ],
+        "raw_offset": 38082488,
+        "lma": 3259340728,
+        "equals": true
+      },
+      {
+        "index": 28,
+        "name": ".init.arch.info",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3259341304,
+        "file_offset": 33790456,
+        "size": 448,
+        "load_segments": [
+          [
+            22,
+            3259341304
+          ]
+        ],
+        "raw_offset": 38083064,
+        "lma": 3259341304,
+        "equals": true
+      },
+      {
+        "index": 29,
+        "name": ".init.tagtable",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3259341752,
+        "file_offset": 33790904,
+        "size": 16,
+        "load_segments": [
+          [
+            22,
+            3259341752
+          ]
+        ],
+        "raw_offset": 38083512,
+        "lma": 3259341752,
+        "equals": true
+      },
+      {
+        "index": 30,
+        "name": ".init.smpalt",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3259341768,
+        "file_offset": 33790920,
+        "size": 138936,
+        "load_segments": [
+          [
+            22,
+            3259341768
+          ]
+        ],
+        "raw_offset": 38083528,
+        "lma": 3259341768,
+        "equals": true
+      },
+      {
+        "index": 31,
+        "name": ".init.pv_table",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 3259480704,
+        "file_offset": 33929856,
+        "size": 1376,
+        "load_segments": [
+          [
+            22,
+            3259480704
+          ]
+        ],
+        "raw_offset": 38222464,
+        "lma": 3259480704,
+        "equals": true
+      },
+      {
+        "index": 32,
+        "name": ".init.data",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 3259482112,
+        "file_offset": 33931264,
+        "size": 347100,
+        "load_segments": [
+          [
+            23,
+            3259482112
+          ]
+        ],
+        "raw_offset": 38223872,
+        "lma": 3259482112,
+        "equals": true
+      },
+      {
+        "index": 33,
+        "name": ".data..percpu",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 3259830272,
+        "file_offset": 34279424,
+        "size": 46092,
+        "load_segments": [
+          [
+            24,
+            3259830272
+          ]
+        ],
+        "raw_offset": 38572032,
+        "lma": 3259830272,
+        "equals": true
+      },
+      {
+        "index": 34,
+        "name": ".data",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 3261071360,
+        "file_offset": 34340864,
+        "size": 1870640,
+        "load_segments": [
+          [
+            25,
+            3261071360
+          ]
+        ],
+        "raw_offset": 39813120,
+        "lma": 3261071360,
+        "equals": true
+      },
+      {
+        "index": 35,
+        "name": "__bug_table",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 3262942000,
+        "file_offset": 36211504,
+        "size": 38220,
+        "load_segments": [
+          [
+            26,
+            3262942000
+          ]
+        ],
+        "raw_offset": 41683760,
+        "lma": 3262942000,
+        "equals": true
+      }
+    ],
+    "section_total": 32,
+    "equal_sections": 31,
+    "covered_bytes": 35861474,
+    "unrepresented_zero_ranges": [
+      [
+        704,
+        2064384
+      ],
+      [
+        21926888,
+        23035904
+      ],
+      [
+        28180717,
+        28180720
+      ],
+      [
+        28698610,
+        28698612
+      ],
+      [
+        35182779,
+        35182780
+      ],
+      [
+        35184656,
+        35188736
+      ],
+      [
+        36228352,
+        37715968
+      ],
+      [
+        37716912,
+        37716928
+      ],
+      [
+        38083060,
+        38083064
+      ],
+      [
+        38223840,
+        38223872
+      ],
+      [
+        38570972,
+        38572032
+      ],
+      [
+        38618124,
+        39813120
+      ]
+    ],
+    "raw_size": 41721980
+  },
+  "arm_decompressor": {
+    "lma_base": 0,
+    "sections": [
+      {
+        "index": 1,
+        "name": ".text",
+        "section_type": 1,
+        "flags": 6,
+        "vma": 0,
+        "file_offset": 65536,
+        "size": 30112,
+        "load_segments": [
+          [
+            0,
+            0
+          ]
+        ],
+        "raw_offset": 0,
+        "lma": 0,
+        "equals": true
+      },
+      {
+        "index": 2,
+        "name": ".table",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 30112,
+        "file_offset": 95648,
+        "size": 28,
+        "load_segments": [
+          [
+            1,
+            30112
+          ]
+        ],
+        "raw_offset": 30112,
+        "lma": 30112,
+        "equals": true
+      },
+      {
+        "index": 3,
+        "name": ".rodata",
+        "section_type": 1,
+        "flags": 50,
+        "vma": 30140,
+        "file_offset": 95676,
+        "size": 3213,
+        "load_segments": [
+          [
+            1,
+            30140
+          ]
+        ],
+        "raw_offset": 30140,
+        "lma": 30140,
+        "equals": true
+      },
+      {
+        "index": 4,
+        "name": ".piggydata",
+        "section_type": 1,
+        "flags": 2,
+        "vma": 33353,
+        "file_offset": 98889,
+        "size": 14862120,
+        "load_segments": [
+          [
+            1,
+            33353
+          ]
+        ],
+        "raw_offset": 33353,
+        "lma": 33353,
+        "equals": true
+      },
+      {
+        "index": 5,
+        "name": ".got",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 14895476,
+        "file_offset": 14961012,
+        "size": 36,
+        "load_segments": [
+          [
+            2,
+            14895476
+          ]
+        ],
+        "raw_offset": 14895476,
+        "lma": 14895476,
+        "equals": true
+      },
+      {
+        "index": 6,
+        "name": ".pad",
+        "section_type": 1,
+        "flags": 3,
+        "vma": 14895512,
+        "file_offset": 14961048,
+        "size": 8,
+        "load_segments": [
+          [
+            3,
+            14895512
+          ]
+        ],
+        "raw_offset": 14895512,
+        "lma": 14895512,
+        "equals": true
+      }
+    ],
+    "section_total": 6,
+    "equal_sections": 6,
+    "covered_bytes": 14895517,
+    "unrepresented_zero_ranges": [
+      [
+        14895473,
+        14895476
+      ]
+    ],
+    "raw_size": 14895520
+  },
+  "exact_difference": {
+    "index": 15,
+    "name": ".notes",
+    "section_type": 7,
+    "flags": 2,
+    "vma": 3249965504,
+    "file_offset": 25659840,
+    "size": 84,
+    "load_segments": [
+      [
+        13,
+        3249965504
+      ]
+    ],
+    "raw_offset": 28707264,
+    "lma": 3249965504,
+    "equals": false,
+    "difference_count": 20,
+    "section_offsets": [
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83
+    ],
+    "raw_hex": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "elf_hex": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+    "difference_raw_file_offset": 28707328,
+    "difference_elf_file_offset": 25659904
+  },
+  "runtime": {
+    "note_size": 84,
+    "note_sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+    "full_note_offset": 28707264,
+    "raw_hex": "0600000001000000000100004c696e7578000000000000000600000004000000010100004c696e757800000000000000040000001400000003000000474e550099ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "parsed_notes": [
+      {
+        "offset": 0,
+        "owner": "Linux",
+        "typ": 256,
+        "description": "00"
+      },
+      {
+        "offset": 24,
+        "owner": "Linux",
+        "typ": 257,
+        "description": "00000000"
+      },
+      {
+        "offset": 48,
+        "owner": "GNU",
+        "typ": 3,
+        "description": "99ba05b664f7ece7686ab5f087bf54680bb172e6"
+      }
+    ],
+    "exact_equal": true,
+    "source": "round1/evidence/runtime/notes.out"
+  },
+  "debuglinks": {
+    "main": {
+      "filename": "vmlinux.debug",
+      "stored_crc32": "c7324c98",
+      "actual_crc32": "c7324c98",
+      "debug_sha256": "f865290a4ebbc42b8ff6bd527b4bd3f6b47e96033db0138223c38429c8ba238f",
+      "stripped_comment_present": false,
+      "debug_comment_file_offset": 293495893,
+      "debug_comment_alloc": false,
+      "debug_comment": [
+        "clang version 22.1.8",
+        "Linker: LLD 22.1.8"
+      ]
+    },
+    "decompressor": {
+      "filename": "vmlinux.debug",
+      "stored_crc32": "6b4eab11",
+      "actual_crc32": "6b4eab11",
+      "debug_sha256": "40ebccfadf618c6855c71286207f7d9892c352ae779afc6a37706f53e02075a7",
+      "stripped_comment_present": false,
+      "debug_comment_file_offset": 125713,
+      "debug_comment_alloc": false,
+      "debug_comment": [
+        "clang version 22.1.8",
+        "Linker: LLD 22.1.8"
+      ]
+    }
+  },
+  "packaging": {
+    "log": "round1/evidence/build/linux-rpi-armv7l.out",
+    "log_sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673",
+    "lines": {
+      "14011": "[ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage",
+      "14459": "[ 4457s] + /usr/lib/rpm/find-debuginfo.sh -j8 --build-id-seed 6.12.80-0 --unique-debug-src-base rpi4-linux-kernel-6.12.80-0.arm -S debugsourcefiles.list /home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80",
+      "14579": "[ 4572s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/boot/compressed/vmlinux",
+      "14853": "[ 4576s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux"
+    },
+    "macro_package": "round1/evidence/build/historical-base/rpm-4.14.1.1-1.8.armv7l.rpm",
+    "macro_path": "evidence/build-id/historical-rpm-macros.out",
+    "macro_sha256": "15b9aa4fdb0ea95bd71e4a264ba191054e4df160b1c5f0e9f4feea0e9f8f3461",
+    "macro_rule_lines": [
+      182,
+      189,
+      556
+    ],
+    "version_release_seed": "6.12.80-0",
+    "find_debuginfo_sha256": "bca9df3cb1e55423ff066f07df6121f5af9e211fe596b602dc4ec5829a501ec3",
+    "find_debuginfo": "evidence/build-id/historical-find-debuginfo.sh.txt",
+    "reseed_lines": [
+      445,
+      447
+    ],
+    "stripping_lines": [
+      248,
+      281,
+      495,
+      503
+    ]
+  },
+  "section_implication": "debugedit recomputes notes and edits DWARF paths; stripping may remove or separate .comment. Retained sidecar .comment is hashed and debuglink matched."
+}

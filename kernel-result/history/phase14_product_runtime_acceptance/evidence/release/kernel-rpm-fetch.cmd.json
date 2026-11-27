@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "curl",
+    "-fLsS",
+    "--retry",
+    "1",
+    "--max-time",
+    "70",
+    "-D",
+    "evidence/release/kernel-rpm.headers",
+    "-o",
+    "evidence/release/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+    "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase14_product_runtime_acceptance",
+  "started_utc": "2026-11-27T09:46:09.065672+00:00",
+  "elapsed_seconds": 4.807,
+  "exit_status": 0
+}

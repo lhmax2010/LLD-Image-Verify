@@ -1,0 +1,353 @@
+{
+  "Base": {
+    "packed_sha256": "e315be17d10e5403940fad6e0ec3a4de44e34cd9c62cd27f8612df54a3e18096",
+    "expanded_sha256": "33d87b9e8f36c0b8320c3694e07d5b168eb90f9a2e776462f54a7606a643576a",
+    "records": [
+      {
+        "primary": "Base",
+        "name": "binutils",
+        "arch": "armv7l",
+        "version": "2.43",
+        "release": "1.8",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+        "paths": [
+          "/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/usr/bin/ld",
+          "/usr/bin/ld.bfd"
+        ],
+        "location": "armv7l/binutils-2.43-1.8.armv7l.rpm",
+        "sha256": "f79e7dde345edae70096631ff71d9e935e2501a1fc11fa1937852f8cad772a5a",
+        "size": 1677305,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 123,
+              "raw": "[   11s] [87/130] keeping binutils-2.43-1.8"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 437,
+              "raw": "[   51s] [83/119] keeping binutils-2.43-1.8"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "binutils-aarch64",
+        "arch": "armv7l",
+        "version": "2.43",
+        "release": "1.1",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+        "paths": [
+          "/usr/aarch64-tizen-linux-gnu/bin/ld",
+          "/usr/aarch64-tizen-linux-gnu/bin/ld.bfd"
+        ],
+        "location": "armv7l/binutils-aarch64-2.43-1.1.armv7l.rpm",
+        "sha256": "76add5fb8ceb12069f0690d9cc1aebbed326270e13946e823f00f4e384c1b23e",
+        "size": 1227601,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Base",
+        "name": "binutils-armv7hl",
+        "arch": "armv7l",
+        "version": "2.43",
+        "release": "1.1",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+        "paths": [
+          "/usr/armv7hl-tizen-linux-gnueabihf/bin/ld",
+          "/usr/armv7hl-tizen-linux-gnueabihf/bin/ld.bfd"
+        ],
+        "location": "armv7l/binutils-armv7hl-2.43-1.1.armv7l.rpm",
+        "sha256": "3ef106051780cc84df66c25635bdad31d6ecfb79589634f926975bf81e67f7ae",
+        "size": 1228901,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Base",
+        "name": "binutils-devel",
+        "arch": "armv7l",
+        "version": "2.43",
+        "release": "1.8",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+        "paths": [],
+        "location": "armv7l/binutils-devel-2.43-1.8.armv7l.rpm",
+        "sha256": "9c36ed93d9f65798986ea1be9444b4e2592c82b857f477a78febad4a899f9084",
+        "size": 3865973,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 163,
+              "raw": "[   11s] [127/130] cumulate binutils-devel-2.43-1.8"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "binutils-riscv64",
+        "arch": "armv7l",
+        "version": "2.43",
+        "release": "1.1",
+        "vcs": "platform/upstream/binutils#518d2e0089ccf79dd8de973276207d3aa638df11",
+        "paths": [
+          "/usr/riscv64-tizen-linux-gnu/bin/ld",
+          "/usr/riscv64-tizen-linux-gnu/bin/ld.bfd"
+        ],
+        "location": "armv7l/binutils-riscv64-2.43-1.1.armv7l.rpm",
+        "sha256": "7b4afd07db5ea481fed56ab7e2131a0cbfcdf4479696525bb77886f3e8497d46",
+        "size": 661913,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Base",
+        "name": "clang",
+        "arch": "armv7l",
+        "version": "22.1.8",
+        "release": "1.6",
+        "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+        "paths": [],
+        "location": "armv7l/clang-22.1.8-1.6.armv7l.rpm",
+        "sha256": "8494ff20405897d4e84a7594e3448c243fabecddf269e4f23ffb35e04cd3b9ac",
+        "size": 21194405,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 157,
+              "raw": "[   11s] [121/130] keeping clang-22.1.8-1.6"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 469,
+              "raw": "[   51s] [115/119] keeping clang-22.1.8-1.6"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "clang-accel-armv7l",
+        "arch": "armv7l",
+        "version": "0.4",
+        "release": "1.1",
+        "vcs": "platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126",
+        "paths": [
+          "/emul/usr/bin/ld.lld",
+          "/emul/usr/bin/lld"
+        ],
+        "location": "armv7l/clang-accel-armv7l-0.4-1.1.armv7l.rpm",
+        "sha256": "46ceb60a7d20008c796fca2f60fc131b3cc14a7c14d004b4ddfd280573b57964",
+        "size": 151105169,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Base",
+        "name": "clang-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": "0.4",
+        "release": "1.1",
+        "vcs": "platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126",
+        "paths": [
+          "/emul/usr/bin/ld.lld",
+          "/emul/usr/bin/lld"
+        ],
+        "location": "armv7l/clang-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+        "sha256": "d93bd3069d25ed9c6c71d5483833c7106a9ab0c5b3960fe873510241b15e15bc",
+        "size": 151112237,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 84,
+              "raw": "[   11s] [48/130] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 402,
+              "raw": "[   51s] [48/119] keeping clang-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "libllvm",
+        "arch": "armv7l",
+        "version": "22.1.8",
+        "release": "1.6",
+        "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+        "paths": [],
+        "location": "armv7l/libllvm-22.1.8-1.6.armv7l.rpm",
+        "sha256": "a483ed8689ebf77d06a729777f9e6c57f00d4392563c41783f5aa9f3ba3e8c24",
+        "size": 12772561,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 112,
+              "raw": "[   11s] [76/130] keeping libllvm-22.1.8-1.6"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 426,
+              "raw": "[   51s] [72/119] keeping libllvm-22.1.8-1.6"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "llvm",
+        "arch": "armv7l",
+        "version": "22.1.8",
+        "release": "1.6",
+        "vcs": "platform/upstream/llvm#f346dd75e87de324dc2abe61454ca1c49969d12d",
+        "paths": [
+          "/usr/bin/ld.lld",
+          "/usr/bin/lld"
+        ],
+        "location": "armv7l/llvm-22.1.8-1.6.armv7l.rpm",
+        "sha256": "1cfda9694d06cb45ae468f843bc35ec7165b317ce2282802226b324123f422c0",
+        "size": 6523445,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 155,
+              "raw": "[   11s] [119/130] keeping llvm-22.1.8-1.6"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 467,
+              "raw": "[   51s] [113/119] keeping llvm-22.1.8-1.6"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "qemu-accel-armv7l",
+        "arch": "armv7l",
+        "version": "0.4",
+        "release": "1.1",
+        "vcs": "platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126",
+        "paths": [
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/emul/usr/bin/ld",
+          "/emul/usr/bin/ld.bfd"
+        ],
+        "location": "armv7l/qemu-accel-armv7l-0.4-1.1.armv7l.rpm",
+        "sha256": "55c2dbba85b78541ceead0048b546419c188b4194932599cae8da1fdecb99a63",
+        "size": 75454257,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Base",
+        "name": "qemu-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": "0.4",
+        "release": "1.1",
+        "vcs": "platform/upstream/qemu-accel#419d8296b4073bbabab7123bec1abe4146087126",
+        "paths": [
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld",
+          "/emul/usr/armv7l-tizen-linux-gnueabi/bin/ld.bfd",
+          "/emul/usr/bin/ld",
+          "/emul/usr/bin/ld.bfd"
+        ],
+        "location": "armv7l/qemu-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+        "sha256": "d5837bfc51c532dc33ad8091e782704931a893f7387770e2875ef431daa6fc9b",
+        "size": 75453321,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 133,
+              "raw": "[   11s] [97/130] keeping qemu-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 446,
+              "raw": "[   51s] [92/119] keeping qemu-accel-x86_64-armv7l-0.4-1.1"
+            }
+          ]
+        }
+      },
+      {
+        "primary": "Base",
+        "name": "qemu-linux-user-x86_64-cross",
+        "arch": "armv7l",
+        "version": "9.2.3.1",
+        "release": "3.1",
+        "vcs": "platform/upstream/qemu#1b431ba0f3c634c2b5e0105311a3401be61a2f8d",
+        "paths": [],
+        "location": "armv7l/qemu-linux-user-x86_64-cross-9.2.3.1-3.1.armv7l.rpm",
+        "sha256": "82b1ff565cd0e4ee3ec171a05d6940a997c6b8fce7b2d1fd6f9a69d024ecbcdb",
+        "size": 17666269,
+        "observed_jobs": {
+          "evidence/build/linux-rpi-armv7l.out": [
+            {
+              "line": 88,
+              "raw": "[   11s] [52/130] keeping qemu-linux-user-x86_64-cross-9.2.3.1-3.1"
+            }
+          ],
+          "evidence/build/linux-tizen-modules-armv7l.out": [
+            {
+              "line": 405,
+              "raw": "[   51s] [51/119] keeping qemu-linux-user-x86_64-cross-9.2.3.1-3.1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Unified": {
+    "packed_sha256": "1f9343848db1db3e728c9bd79a57f68fc781de06062490ff26d16554efb54046",
+    "expanded_sha256": "831c6ad8ce38b38c6503062fc2319b76c55494c6bb981cf60ed237941a007897",
+    "records": [
+      {
+        "primary": "Unified",
+        "name": "mic-bootstrap-x86-arm",
+        "arch": "armv7l",
+        "version": "1.0",
+        "release": "1",
+        "vcs": "tools/mic-bootstrap#51f241d86ecc960aaa2d4440d7da82aa45d5dbe5",
+        "paths": [
+          "/bootstrap/bin/ld",
+          "/bootstrap/bin/ld.bfd",
+          "/bootstrap/bin/ld.lld",
+          "/bootstrap/bin/lld",
+          "/bootstrap/usr/bin/ld",
+          "/bootstrap/usr/bin/ld.bfd",
+          "/bootstrap/usr/bin/ld.lld",
+          "/bootstrap/usr/bin/lld",
+          "/bootstrap/usr/x86_64-tizen-linux-gnu/bin/ld",
+          "/bootstrap/usr/x86_64-tizen-linux-gnu/bin/ld.bfd"
+        ],
+        "location": "armv7l/mic-bootstrap-x86-arm-1.0-1.armv7l.rpm",
+        "sha256": "17e82dd862240bcfbc5c62212d82d5be42c1f220968a3f2cac3f86a1b7d7e68e",
+        "size": 439243916,
+        "observed_jobs": {}
+      },
+      {
+        "primary": "Unified",
+        "name": "rust",
+        "arch": "armv7l",
+        "version": "1.90.0",
+        "release": "1",
+        "vcs": "platform/upstream/rust#e7bd4d4b8811423852b61736cfafd74cc2abfd14",
+        "paths": [
+          "/usr/lib/rustlib/arm-unknown-linux-gnueabi/bin/gcc-ld/ld.lld"
+        ],
+        "location": "armv7l/rust-1.90.0-1.armv7l.rpm",
+        "sha256": "48d1196b020c989443aefa06a2371ec4411c39eaaddd3fc3a13147de359b0893",
+        "size": 46495212,
+        "observed_jobs": {}
+      }
+    ]
+  }
+}

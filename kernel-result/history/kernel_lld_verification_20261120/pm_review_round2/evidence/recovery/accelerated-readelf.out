@@ -1,0 +1,95 @@
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x1883940
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          83537352 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         13
+  Size of section headers:           64 (bytes)
+  Number of section headers:         32
+  Section header string table index: 28
+
+Program Headers:
+  Type           Offset   VirtAddr           PhysAddr           FileSiz  MemSiz   Flg Align
+  PHDR           0x000040 0x0000000000000040 0x0000000000000040 0x0002d8 0x0002d8 R   0x8
+  LOAD           0x000000 0x0000000000000000 0x0000000000000000 0x1882928 0x1882928 R   0x1000
+  GNU_STACK      0x000000 0x0000000000000000 0x0000000000000000 0x000000 0x000000 RW  0
+  GNU_EH_FRAME   0x14232b8 0x00000000014232b8 0x00000000014232b8 0x09669c 0x09669c R   0x4
+  LOAD           0x1882940 0x0000000001883940 0x0000000001883940 0x35e9470 0x35e9470 R E 0x1000
+  LOAD           0x4e6bdb0 0x0000000004e6ddb0 0x0000000004e6ddb0 0x13c190 0x13c250 RW  0x1000
+  TLS            0x4e6bdb0 0x0000000004e6ddb0 0x0000000004e6ddb0 0x000004 0x0004a0 R   0x8
+  GNU_RELRO      0x4e6bdb0 0x0000000004e6ddb0 0x0000000004e6ddb0 0x13c190 0x13c250 R   0x1
+  DYNAMIC        0x4fa77a8 0x0000000004fa97a8 0x0000000004fa97a8 0x000230 0x000230 RW  0x8
+  LOAD           0x4fa7f40 0x0000000004faaf40 0x0000000004faaf40 0x002d40 0x08bad0 RW  0x1000
+  LOAD           0x4fac000 0x0000000005037000 0x0000000005037000 0x0d3cb0 0x0d3cb0 RW  0x1000
+  INTERP         0x507fc68 0x000000000510ac68 0x000000000510ac68 0x000025 0x000025 R   0x1
+      [Requesting program interpreter: /emul/usr/lib64/ld-linux-x86-64.so.2]
+  NOTE           0x507fc90 0x000000000510ac90 0x000000000510ac90 0x000020 0x000020 R   0x4
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     
+   01     .gnu.version .gnu.version_r .gnu.hash .dynstr .rela.dyn .rela.plt .rodata .gcc_except_table .eh_frame_hdr .eh_frame 
+   02     
+   03     .eh_frame_hdr 
+   04     .text .init .fini .plt 
+   05     .tdata .fini_array .init_array .data.rel.ro .dynamic .got .relro_padding 
+   06     .tdata .tbss 
+   07     .tdata .fini_array .init_array .data.rel.ro .dynamic .got .relro_padding 
+   08     .dynamic 
+   09     .data .tm_clone_table .got.plt .bss 
+   10     .dynsym .interp .note.ABI-tag 
+   11     .interp 
+   12     .note.ABI-tag 
+
+Dynamic section at offset 0x4fa77a8 contains 35 entries:
+  Tag        Type                         Name/Value
+ 0x000000000000001d (RUNPATH)            Library runpath: [$ORIGIN/../lib64]
+ 0x0000000000000001 (NEEDED)             Shared library: [libxml2.so.16]
+ 0x0000000000000001 (NEEDED)             Shared library: [librt.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libdl.so.2]
+ 0x0000000000000001 (NEEDED)             Shared library: [libm.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libz.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libstdc++.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [libgcc_s.so.1]
+ 0x0000000000000001 (NEEDED)             Shared library: [libc.so.6]
+ 0x0000000000000001 (NEEDED)             Shared library: [ld-linux-x86-64.so.2]
+ 0x000000006ffffffb (FLAGS_1)            Flags: PIE
+ 0x0000000000000015 (DEBUG)              0x0
+ 0x0000000000000007 (RELA)               0x37c168
+ 0x0000000000000008 (RELASZ)             2406504 (bytes)
+ 0x0000000000000009 (RELAENT)            24 (bytes)
+ 0x000000006ffffff9 (RELACOUNT)          93392
+ 0x0000000000000017 (JMPREL)             0x5c79d0
+ 0x0000000000000002 (PLTRELSZ)           7872 (bytes)
+ 0x0000000000000003 (PLTGOT)             0x4fad228
+ 0x0000000000000014 (PLTREL)             RELA
+ 0x0000000000000006 (SYMTAB)             0x5037000
+ 0x000000000000000b (SYMENT)             24 (bytes)
+ 0x0000000000000005 (STRTAB)             0x12174c
+ 0x000000000000000a (STRSZ)              2468377 (bytes)
+ 0x000000006ffffef5 (GNU_HASH)           0xe5d08
+ 0x0000000000000019 (INIT_ARRAY)         0x4e6ddc0
+ 0x000000000000001b (INIT_ARRAYSZ)       3800 (bytes)
+ 0x000000000000001a (FINI_ARRAY)         0x4e6ddb8
+ 0x000000000000001c (FINI_ARRAYSZ)       8 (bytes)
+ 0x000000000000000c (INIT)               0x4e6b8f0
+ 0x000000000000000d (FINI)               0x4e6b908
+ 0x000000006ffffff0 (VERSYM)             0xd3f88
+ 0x000000006ffffffe (VERNEED)            0xe59e8
+ 0x000000006fffffff (VERNEEDNUM)         6
+ 0x0000000000000000 (NULL)               0x0
+
+Displaying notes found in: .note.ABI-tag
+  Owner                Data size 	Description
+  GNU                  0x00000010	NT_GNU_ABI_TAG (ABI version tag)	    OS: Linux, ABI: 3.2.0

@@ -1,0 +1,39 @@
+{
+  "source_control_files": 85,
+  "source_and_patch_hits": 153,
+  "classification_counts": {
+    "CONFIRMED_BYPASS": 0,
+    "EXPECTED_HOST_TOOL": 26,
+    "FALSE_POSITIVE": 70,
+    "POTENTIAL_BYPASS": 1,
+    "SAFE_INHERITANCE": 56
+  },
+  "pattern_counts": {
+    "EXPLICIT_LD_BFD": 0,
+    "BARE_LD": 12,
+    "CROSS_COMPILE_LD": 4,
+    "LD_ASSIGNMENT": 19,
+    "LD_RELOCATABLE": 6,
+    "DRIVER_LINKER_SELECTION": 1,
+    "HARD_CODED_LINKER_PATH": 0,
+    "PREBUILT_OBJECT": 1,
+    "RECURSIVE_TOOLCHAIN": 111,
+    "INHERITED_LINK_RULE": 18
+  },
+  "prebuilt_kernel_confirmed": 0,
+  "prebuilt_external_confirmed": 0,
+  "original_target_release": "6.12.80-arm-rpi4-v7l",
+  "potential_bypass_rows": [
+    {
+      "source_file": "evidence/audit/sources/external/Makefile",
+      "line_start": 2,
+      "line_end": 2,
+      "patterns": "BARE_LD|CROSS_COMPILE_LD|LD_ASSIGNMENT",
+      "raw": "LD = ${CROSS_COMPILE}ld",
+      "classification": "POTENTIAL_BYPASS",
+      "target": "kdbus/kdbus.o",
+      "reason": "Exact provider Makefile is included by scripts/Makefile.build L41. Its recursive LD assignment replaces the inherited environment value and descends via L485 to the composite-object rule at L433. External log L612 records that target. Archived ld/ld.bfd gives a GNU BFD path without an exec receipt. The separate modfinal sibling used at L636 does not import the assignment.",
+      "origin": "pm_review_round2/evidence/external/source/Makefile"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "kdbus.o": {
+    "linker": "GNU BFD 2.43",
+    "executable": "/emul//usr/bin/ld",
+    "tool": {
+      "source_rpm": "qemu-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+      "sha256": "1bcdd64ed3e5465da8431e46787dd1d04d584f0e243203643c921db427ad406f",
+      "resolved_path": "/emul/usr/bin/ld"
+    },
+    "evidence_level": "E4_DIRECT_EXECUTION_OBSERVED_FOR_LOCAL_BUILD",
+    "pid": 636944,
+    "exec_trace_line": 4179,
+    "exec_trace": "636944 execve(\"/emul//usr/bin/ld\", [\"ld\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"-r\", \"-o\", \"/tmp/work/module/kdbus/kdbus.o\", \"@/tmp/work/module/kdbus/kdbus.mod\"], 0x7ffd615ef9b8 /* 144 vars */) = 0",
+    "emulator": null,
+    "exit_trace_line": 4180,
+    "exit_trace": "636944 exit_group(0)                    = ?",
+    "exit_status": 0,
+    "saved_kbuild_command": "savedcmd_/tmp/work/module/kdbus/kdbus.o := ld -EL -z noexecstack --no-warn-rwx-segments   -r -o /tmp/work/module/kdbus/kdbus.o @/tmp/work/module/kdbus/kdbus.mod ",
+    "output_sha256": "9a4380a52bda54d84514f63cbf9ae23f97b4ce90c4ee3e7133a6aa28ecc7b763"
+  },
+  "kdbus.ko": {
+    "linker": "GNU BFD 2.43",
+    "executable": "/emul//usr/bin/ld",
+    "tool": {
+      "source_rpm": "qemu-accel-x86_64-armv7l-0.4-1.1.armv7l.rpm",
+      "sha256": "1bcdd64ed3e5465da8431e46787dd1d04d584f0e243203643c921db427ad406f",
+      "resolved_path": "/emul/usr/bin/ld"
+    },
+    "evidence_level": "E4_DIRECT_EXECUTION_OBSERVED_FOR_LOCAL_BUILD",
+    "pid": 637285,
+    "exec_trace_line": 5146,
+    "exec_trace": "637285 execve(\"/emul//usr/bin/ld\", [\"ld\", \"-r\", \"-EL\", \"-z\", \"noexecstack\", \"--no-warn-rwx-segments\", \"--build-id=sha1\", \"-T\", \"scripts/module.lds\", \"-o\", \"/tmp/work/module/kdbus/kdbus.ko\", \"/tmp/work/module/kdbus/kdbus.o\", \"/tmp/work/module/kdbus/kdbus.mod.o\", \"/tmp/work/module/.module-common.o\"], 0x7ffc65ec4b60 /* 143 vars */) = 0",
+    "emulator": null,
+    "exit_trace_line": 5147,
+    "exit_trace": "637285 exit_group(0)                    = ?",
+    "exit_status": 0,
+    "saved_kbuild_command": "savedcmd_/tmp/work/module/kdbus/kdbus.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /tmp/work/module/kdbus/kdbus.ko /tmp/work/module/kdbus/kdbus.o /tmp/work/module/kdbus/kdbus.mod.o /tmp/work/module/.module-common.o",
+    "output_sha256": "782e61d70ff0e190d85c10eb7cd9060d684c0971a04e6068a2655ea9c4412336"
+  }
+}

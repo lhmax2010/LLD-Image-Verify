@@ -1,0 +1,182 @@
+{
+  "status": "PASS",
+  "commands": {
+    "bfd": {
+      "plain": {
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exec_path": "/emul/usr/bin/ld",
+        "output": {
+          "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.o",
+          "sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+          "size": 2505192
+        }
+      },
+      "map": {
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/mapped/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+          "-Map=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/link.map"
+        ],
+        "exec_path": "/emul/usr/bin/ld",
+        "output": {
+          "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/mapped/kdbus.o",
+          "sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+          "size": 2505192
+        }
+      },
+      "final_argv": [
+        "ld.lld",
+        "-r",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "--build-id=sha1",
+        "-T",
+        "scripts/module.lds",
+        "-o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.ko",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+      ],
+      "final_postprocessing_script": {
+        "path": "evidence/replay/bfd-final.sh",
+        "sha256": "823be8adf6962e51d32e0fab38953c7d2eda0be32bd98c38fc028f80fcd81d0a",
+        "size": 1301
+      }
+    },
+    "lld": {
+      "plain": {
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exec_path": "/emul/usr/bin/lld",
+        "output": {
+          "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.o",
+          "sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+          "size": 1998564
+        }
+      },
+      "map": {
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/mapped/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+          "-Map=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/link.map"
+        ],
+        "exec_path": "/emul/usr/bin/lld",
+        "output": {
+          "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/mapped/kdbus.o",
+          "sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+          "size": 1998564
+        }
+      },
+      "final_argv": [
+        "ld.lld",
+        "-r",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "--build-id=sha1",
+        "-T",
+        "scripts/module.lds",
+        "-o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.ko",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+        "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+      ],
+      "final_postprocessing_script": {
+        "path": "evidence/replay/lld-final.sh",
+        "sha256": "d672210ad2e22482d7c7bb317040cf59f850b7e134c70382a2a53fc1cd579002",
+        "size": 1301
+      }
+    }
+  },
+  "products": {
+    "bfd": {
+      "intermediate": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.o",
+        "sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+        "size": 2505192
+      },
+      "map": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/link.map",
+        "sha256": "ee8c521fd39b409850a177ddbaa3b6a05c3ac9f114e51ed64cbb8f7a198118dd",
+        "size": 57075
+      },
+      "unstripped": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/kdbus.ko",
+        "sha256": "10728b2e80dc5a2e971ef4b3d3901a1d8a103331513ba8cbf8bd952856552da4",
+        "size": 2071276
+      },
+      "stripped": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/bfd/stripped/kdbus.ko",
+        "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+        "size": 162584
+      }
+    },
+    "lld": {
+      "intermediate": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.o",
+        "sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+        "size": 1998564
+      },
+      "map": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/link.map",
+        "sha256": "45ac6cf64edd24820fad94db5d98e72dac70597f9373a399555b10a1c0793a0e",
+        "size": 86515
+      },
+      "unstripped": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/kdbus.ko",
+        "sha256": "5fed8ca0dca30b1a275dabc262eba8a52422fbd78587af31ff45dcccb2e760d3",
+        "size": 2069984
+      },
+      "stripped": {
+        "path": "work/replay/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/replayed/lld/stripped/kdbus.ko",
+        "sha256": "a6f48e1aafbb382655455ca409a11eab1af69ce368156a88dca6cfd613e052ed",
+        "size": 161292
+      }
+    }
+  },
+  "same_input_object_hash_and_order": true,
+  "common_final_metadata_objects_from": "A for both replay links",
+  "intermediate_extra_options": "Only separate output pathname. Diagnostic map output is byte-compared and excluded from timings.",
+  "replay_matches_controlled_final": {
+    "bfd": {
+      "unstripped": true,
+      "stripped": true
+    },
+    "lld": {
+      "unstripped": false,
+      "stripped": false
+    }
+  }
+}

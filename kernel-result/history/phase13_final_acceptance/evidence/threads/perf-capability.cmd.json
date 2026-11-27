@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "perf",
+    "stat",
+    "-e",
+    "task-clock,cycles",
+    "--",
+    "/usr/bin/true"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T09:01:23.990341+00:00",
+  "elapsed_seconds": 0.023,
+  "exit_status": 1
+}

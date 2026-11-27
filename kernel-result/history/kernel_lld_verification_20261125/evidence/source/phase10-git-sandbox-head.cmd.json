@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "timeout",
+    "18s",
+    "git",
+    "-C",
+    "../phase10_kdbus_sandbox/checkout",
+    "ls-remote",
+    "--exit-code",
+    "origin",
+    "refs/heads/sandbox/liushanshan/lld"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:33:08.337590+00:00",
+  "elapsed_seconds": 2.26,
+  "exit_status": 128
+}

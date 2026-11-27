@@ -1,0 +1,3 @@
+Kernel variable routes: 4 E3. In-tree signatures: {'E3': 52}.
+52/52 raw build paths, final .ko, BTF, install, strip, and RPM-to-device SHA256 validated.
+Observed bounded source overrides: 0. Historical argv unavailable.

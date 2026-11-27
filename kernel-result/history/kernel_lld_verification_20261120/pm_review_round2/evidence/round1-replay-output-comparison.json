@@ -1,0 +1,22 @@
+{
+  "05_kernel_module_coverage.json": {
+    "original_sha256": "95cb972039aad8f0fdcc624771661c94d7ae10a61315606e92185233bea0ae2b",
+    "replay_sha256": "95cb972039aad8f0fdcc624771661c94d7ae10a61315606e92185233bea0ae2b",
+    "comparison": "EXACT_MATCH"
+  },
+  "05_loaded_module_mapping.csv": {
+    "original_sha256": "3239df7499ccf6dbf0cb8bcf5ef1e28b5b7d436987277a3148bb86e0ca39ca5b",
+    "replay_sha256": "3239df7499ccf6dbf0cb8bcf5ef1e28b5b7d436987277a3148bb86e0ca39ca5b",
+    "comparison": "EXACT_MATCH"
+  },
+  "06_identity_verification.json": {
+    "original_sha256": "2709e1891751046a31bbcfca8d3df57fa41993278e1537a89f8bd026db726161",
+    "replay_sha256": "2709e1891751046a31bbcfca8d3df57fa41993278e1537a89f8bd026db726161",
+    "comparison": "EXACT_MATCH"
+  },
+  "KERNEL_LLD_VERIFICATION_SUMMARY.json": {
+    "original_sha256": "16262d019fca144bf1ae29bd57f3efe5c1e414c7de75a2e1dbbe7a45ecb33d65",
+    "replay_sha256": "16262d019fca144bf1ae29bd57f3efe5c1e414c7de75a2e1dbbe7a45ecb33d65",
+    "comparison": "EXACT_MATCH"
+  }
+}

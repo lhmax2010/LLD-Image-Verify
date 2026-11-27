@@ -1,0 +1,3 @@
+/boot/kernel/devel/kernel-devel-arm-rpi4/.config
+/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf
+/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h

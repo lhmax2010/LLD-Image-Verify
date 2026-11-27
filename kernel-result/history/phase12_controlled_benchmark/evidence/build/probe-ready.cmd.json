@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "bash",
+    "scripts/tizen_run.sh",
+    "probe",
+    "/bin/bash",
+    "-ec",
+    "uname -m; clang --version; ld.lld --version; ld --version; pahole --version; make --version | head -1; /emul/usr/bin/ld.lld --version; /emul/usr/bin/ld --version; command -v depmod || true; /boot/kernel/devel/kernel-devel-arm-rpi4/tools/bpf/resolve_btfids/resolve_btfids -h || test \"$?\" -eq 129"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark",
+  "started_utc": "2026-11-27T06:25:28.467531+00:00",
+  "elapsed_seconds": 0.269,
+  "exit_status": 0
+}

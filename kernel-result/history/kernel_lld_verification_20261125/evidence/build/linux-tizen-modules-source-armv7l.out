@@ -1,0 +1,783 @@
+[    0s] on X86_64, no limit mem size
+[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4
+[    0s] Using BUILD_ARCH=armv7l:armv7el:armv6l:armv5tejl:armv5tel:armv5l:armv4tl:armv4l:armv3l:noarch
+[    0s] 
+[    0s] 
+[    0s] qb-build-host-02 started "build linux-tizen-modules-source.spec" at Wed Nov 25 13:08:26 UTC 2026.
+[    0s] 
+[    0s] 
+[    0s] processing recipe /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/linux-tizen-modules-source-11.0.0-0/linux-tizen-modules-source.spec ...
+[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/ --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/debug/ --clean /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/linux-tizen-modules-source-11.0.0-0/linux-tizen-modules-source.spec build ...
+[    0s] initializing /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4/.srcfiles.cache ...
+[    0s] /usr/lib/build/createdirdeps --oldfile /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4/.srcfiles.cache /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS
+[    0s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/
+[    1s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/debug/
+[    1s] expanding package dependencies...
+[    1s] copying qemu
+[    2s]  /usr/bin/qemu-arm-binfmt /usr/bin/qemu-arm-static /usr/bin/qemu-arm64-binfmt /usr/bin/qemu-arm64-static /usr/bin/qemu-riscv32-binfmt /usr/bin/qemu-riscv32-static /usr/bin/qemu-riscv64-binfmt /usr/bin/qemu-riscv64-static /usr/sbin/qemu-binfmt-conf.sh
+[    2s] 
+[    2s] registering binfmt handlers for cross build
+[    2s] calculating packages to download...
+[    2s] [1/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/app-rootstrap-checker-1.0.0-1.1.armv7l.rpm ... 
+[    3s] ln: failed to create hard link '/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache/e8b01a2214b0f37a33b662ad9876d626/app-rootstrap-checker-1.0.0-1.1.armv7l.rpm': File exists
+[    3s] [2/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/autoconf-2.71-1.16.noarch.rpm ... 
+[    3s] [3/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/automake-1.16.5-1.16.noarch.rpm ... 
+[    3s] [4/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/bash-3.2.57-1.15.armv7l.rpm ... 
+[    3s] [5/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/binutils-2.43-1.16.armv7l.rpm ... 
+[    3s] [6/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/binutils-libs-2.43-1.16.armv7l.rpm ... 
+[    3s] [7/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/build-20120927-1.1.noarch.rpm ... 
+[    4s] [8/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/build-compare-2023.06.18-1.5.noarch.rpm ... 
+[    4s] [9/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/build-mkbaselibs-20120927-1.1.noarch.rpm ... 
+[    4s] [10/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/bzip2-1.0.8-1.15.armv7l.rpm ... 
+[    4s] [11/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/clang-22.1.8-4.1.armv7l.rpm ... 
+[    5s] [12/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm ... 
+[   13s] [13/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/coreutils-6.9-14.3.armv7l.rpm ... 
+[   13s] [14/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/cpio-2.8-1.2.armv7l.rpm ... 
+[   13s] [15/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/cpp-14.2.0-1.14.armv7l.rpm ... 
+[   14s] [16/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/dash-0.5.13.4-1.2.armv7l.rpm ... 
+[   14s] [17/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/diffutils-3.10-1.2.armv7l.rpm ... 
+[   14s] [18/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/elfutils-0.189-1.14.armv7l.rpm ... 
+[   14s] [19/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/file-5.46-1.14.armv7l.rpm ... 
+[   14s] [20/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/filesystem-3.1-1.1.armv7l.rpm ... 
+[   14s] [21/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/findutils-4.3.8-1.14.armv7l.rpm ... 
+[   15s] [22/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/gawk-3.1.5-1.2.armv7l.rpm ... 
+[   15s] [23/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/gcc-14.2.0-1.14.armv7l.rpm ... 
+[   15s] [24/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/gcc-c++-14.2.0-1.14.armv7l.rpm ... 
+[   15s] [25/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/gdbm-1.8.3-1.16.armv7l.rpm ... 
+[   15s] [26/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/glibc-2.40-2.5.armv7l.rpm ... 
+[   16s] [27/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/glibc-devel-2.40-2.5.armv7l.rpm ... 
+[   16s] [28/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/glibc-locale-2.40-2.5.armv7l.rpm ... 
+[   16s] [29/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/grep-2.5.2-1.15.armv7l.rpm ... 
+[   16s] [30/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/gzip-1.3.12-1.14.armv7l.rpm ... 
+[   16s] [31/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/hal-rootstrap-checker-1.0.0-4.1.armv7l.rpm ... 
+[   16s] [32/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/hostname-3.23-1.2.armv7l.rpm ... 
+[   16s] [33/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/less-685-1.2.armv7l.rpm ... 
+[   17s] [34/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libacl-2.3.2-1.16.armv7l.rpm ... 
+[   17s] [35/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libarchive-3.8.1-2.5.armv7l.rpm ... 
+[   17s] [36/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libarchive-tools-3.8.1-2.5.armv7l.rpm ... 
+[   17s] [37/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libasm-0.189-1.14.armv7l.rpm ... 
+[   17s] [38/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libatomic-14.2.0-1.14.armv7l.rpm ... 
+[   17s] [39/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libattr-2.5.1-1.16.armv7l.rpm ... 
+[   17s] [40/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libblkid-2.41.2-1.8.armv7l.rpm ... 
+[   18s] [41/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libbz2-1.0.8-1.15.armv7l.rpm ... 
+[   18s] [42/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libcap-2.73-1.14.armv7l.rpm ... 
+[   18s] [43/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libcap-devel-2.73-1.14.armv7l.rpm ... 
+[   18s] [44/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libcc1-14.2.0-1.14.armv7l.rpm ... 
+[   18s] [45/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libdw-0.189-1.14.armv7l.rpm ... 
+[   18s] [46/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libelf-0.189-1.14.armv7l.rpm ... 
+[   18s] [47/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libfdisk-2.41.2-1.8.armv7l.rpm ... 
+[   19s] [48/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libfreebl3-3.109-1.5.armv7l.rpm ... 
+[   19s] [49/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libgcc-14.2.0-1.14.armv7l.rpm ... 
+[   19s] [50/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libgfortran-14.2.0-1.14.armv7l.rpm ... 
+[   19s] [51/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libgomp-14.2.0-1.14.armv7l.rpm ... 
+[   19s] [52/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libitm-14.2.0-1.14.armv7l.rpm ... 
+[   19s] [53/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/liblastlog2-2.41.2-1.8.armv7l.rpm ... 
+[   20s] [54/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libllvm-22.1.8-4.1.armv7l.rpm ... 
+[   20s] [55/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libltdl-2.5.4-1.14.armv7l.rpm ... 
+[   20s] [56/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/liblua-5.1.5-1.12.armv7l.rpm ... 
+[   20s] [57/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/liblzma-5.8.1-1.13.armv7l.rpm ... 
+[   20s] [58/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libmagic-5.46-1.14.armv7l.rpm ... 
+[   20s] [59/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libmagic-data-5.46-1.14.armv7l.rpm ... 
+[   20s] [60/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libmount-2.41.2-1.8.armv7l.rpm ... 
+[   21s] [61/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libncurses-6.6-1.10.armv7l.rpm ... 
+[   21s] [62/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libncurses6-6.6-1.10.armv7l.rpm ... 
+[   21s] [63/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libopenssl3-3.5.5-1.14.armv7l.rpm ... 
+[   21s] [64/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libpcre-8.45-1.14.armv7l.rpm ... 
+[   21s] [65/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libpopt-1.16-1.13.armv7l.rpm ... 
+[   21s] [66/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libreadline-5.2-1.14.armv7l.rpm ... 
+[   21s] [67/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libsmack-1.3.1-1.12.armv7l.rpm ... 
+[   22s] [68/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libsmartcols-2.41.2-1.8.armv7l.rpm ... 
+[   22s] [69/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libsoftokn3-3.109-1.5.armv7l.rpm ... 
+[   22s] [70/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libsqlite-3.51.0-1.14.armv7l.rpm ... 
+[   22s] [71/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libstdc++-14.2.0-1.14.armv7l.rpm ... 
+[   22s] [72/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libstdc++-devel-14.2.0-1.14.armv7l.rpm ... 
+[   22s] [73/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libtool-2.5.4-1.14.armv7l.rpm ... 
+[   23s] [74/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libuuid-2.41.2-1.8.armv7l.rpm ... 
+[   23s] [75/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libxcrypt-4.4.36-1.16.armv7l.rpm ... 
+[   23s] [76/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libxcrypt-devel-4.4.36-1.16.armv7l.rpm ... 
+[   23s] [77/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libxml2-2.15.1-1.12.armv7l.rpm ... 
+[   23s] [78/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/libzstd1-1.5.7-1.13.armv7l.rpm ... 
+[   23s] [79/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/linux-glibc-devel-6.6-1.16.armv7l.rpm ... 
+[   24s] [80/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/lldb-22.1.8-4.1.armv7l.rpm ... 
+[   24s] [81/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/llvm-22.1.8-4.1.armv7l.rpm ... 
+[   24s] [82/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/llvm-devel-22.1.8-4.1.armv7l.rpm ... 
+[   24s] [83/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/m4-1.4.20-1.2.armv7l.rpm ... 
+[   24s] [84/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/make-4.4.1-1.14.armv7l.rpm ... 
+[   25s] [85/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/net-tools-2.0_20121208git-1.12.armv7l.rpm ... 
+[   25s] [86/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/nspr-4.36-2.3.armv7l.rpm ... 
+[   25s] [87/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/nss-3.109-1.5.armv7l.rpm ... 
+[   25s] [88/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/nss-certs-3.109-1.5.armv7l.rpm ... 
+[   25s] [89/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/pam-1.1.6-1.10.armv7l.rpm ... 
+[   25s] [90/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/patch-2.8-1.13.armv7l.rpm ... 
+[   25s] [91/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/perl-5.42.0-1.14.armv7l.rpm ... 
+[   28s] [92/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/pkg-config-0.29.2-1.13.armv7l.rpm ... 
+[   28s] [93/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/qemu-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm ... 
+[   37s] [94/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/qemu-linux-user-x86_64-cross-9.2.3.1-3.5.armv7l.rpm ... 
+[   38s] [95/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/rpm-4.14.1.1-1.9.armv7l.rpm ... 
+[   38s] [96/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/rpm-build-4.14.1.1-1.9.armv7l.rpm ... 
+[   38s] [97/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/sed-4.1c-1.13.armv7l.rpm ... 
+[   38s] [98/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/noarch/setup-0.9-2.7.noarch.rpm ... 
+[   38s] [99/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/smack-1.3.1-1.12.armv7l.rpm ... 
+[   38s] [100/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/tar-1.17-2.2.armv7l.rpm ... 
+[   39s] [101/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/terminfo-base-full-6.6-1.10.armv7l.rpm ... 
+[   39s] [102/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/toybox-0.6.0-1.3.armv7l.rpm ... 
+[   39s] [103/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/tzdata-2025b-1.2.armv7l.rpm ... 
+[   39s] [104/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/update-alternatives-1.22.21-1.2.armv7l.rpm ... 
+[   39s] [105/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/util-linux-2.41.2-1.8.armv7l.rpm ... 
+[   39s] [106/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/util-linux-su-2.41.2-1.8.armv7l.rpm ... 
+[   40s] [107/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/which-2.17-1.2.armv7l.rpm ... 
+[   40s] [108/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/xz-5.8.1-1.13.armv7l.rpm ... 
+[   40s] [109/109] downloading http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/zlib-1.3.1-1.16.armv7l.rpm ... 
+[   40s] 
+[   40s] cycle: nss -> libsoftokn3
+[   40s]   breaking dependency nss -> libsoftokn3
+[   40s] [1/46] preinstalling filesystem...
+[   41s] [2/46] preinstalling libmagic-data...
+[   41s] [3/46] preinstalling libncurses...
+[   41s] [4/46] preinstalling glibc...
+[   41s] [5/46] preinstalling libgcc...
+[   41s] [6/46] preinstalling bash...
+[   41s] [7/46] preinstalling diffutils...
+[   41s] [8/46] preinstalling grep...
+[   41s] [9/46] preinstalling libarchive-tools...
+[   41s] [10/46] preinstalling libattr...
+[   41s] [11/46] preinstalling libblkid...
+[   41s] [12/46] preinstalling libbz2...
+[   41s] [13/46] preinstalling libcap...
+[   41s] [14/46] preinstalling libfreebl3...
+[   42s] [15/46] preinstalling liblua...
+[   42s] [16/46] preinstalling liblzma...
+[   42s] [17/46] preinstalling libopenssl3...
+[   42s] [18/46] preinstalling libpopt...
+[   42s] [19/46] preinstalling libreadline...
+[   42s] [20/46] preinstalling libsmack...
+[   42s] [21/46] preinstalling libsqlite...
+[   42s] [22/46] preinstalling libuuid...
+[   42s] [23/46] preinstalling libxcrypt...
+[   42s] [24/46] preinstalling libxml2...
+[   42s] [25/46] preinstalling libzstd1...
+[   42s] [26/46] preinstalling nspr...
+[   42s] [27/46] preinstalling sed...
+[   42s] [28/46] preinstalling toybox...
+[   42s] [29/46] preinstalling zlib...
+[   42s] [30/46] preinstalling clang-accel-x86_64-armv7l...
+[   50s] [31/46] preinstalling qemu-accel-x86_64-armv7l...
+[   79s] [32/46] preinstalling qemu-linux-user-x86_64-cross...
+[   96s] [33/46] preinstalling coreutils...
+[   96s] [34/46] preinstalling dash...
+[   96s] [35/46] preinstalling libacl...
+[   96s] [36/46] preinstalling libelf...
+[   96s] [37/46] preinstalling libmount...
+[   96s] [38/46] preinstalling smack...
+[   96s] [39/46] preinstalling bzip2...
+[   96s] [40/46] preinstalling libmagic...
+[   96s] [41/46] preinstalling tar...
+[   96s] [42/46] preinstalling util-linux...
+[   96s] [43/46] preinstalling rpm...
+[   97s] [44/46] preinstalling util-linux-su...
+[   97s] [45/46] preinstalling nss...
+[   97s] [46/46] preinstalling libsoftokn3...
+[   97s] 
+[   98s] running qemu-linux-user-x86_64-cross postinstall script
+[   98s] running qemu-accel-x86_64-armv7l postinstall script
+[   98s] mv: cannot stat `/usr/lib/gcc/armv7l-tizen-linux-gnueabi/14.2.0/liblto_plugin.so': No such file or directory
+[   98s] running clang-accel-x86_64-armv7l postinstall script
+[   98s] initializing rpm db...
+[   99s] reordering...cycle: glibc-devel -> libxcrypt-devel
+[   99s]   breaking dependency libxcrypt-devel -> glibc-devel
+[   99s] cycle: clang -> llvm
+[   99s]   breaking dependency llvm -> clang
+[   99s] cycle: clang -> llvm -> lldb
+[   99s]   breaking dependency llvm -> lldb
+[   99s] cycle: libsoftokn3 -> nss
+[   99s]   breaking dependency nss -> libsoftokn3
+[   99s] reordering done
+[   99s] [1/109] cumulate libmagic-data-5.46-1.14
+[   99s] [2/109] cumulate setup-0.9-2.7
+[   99s] [3/109] cumulate filesystem-3.1-1.1
+[   99s] [4/109] cumulate glibc-2.40-2.5
+[   99s] [5/109] cumulate libatomic-14.2.0-1.14
+[   99s] [6/109] cumulate libgcc-14.2.0-1.14
+[   99s] [7/109] cumulate bash-3.2.57-1.15
+[   99s] [8/109] cumulate cpio-2.8-1.2
+[  100s] [9/109] cumulate diffutils-3.10-1.2
+[  100s] [10/109] cumulate findutils-4.3.8-1.14
+[  100s] [11/109] cumulate gdbm-1.8.3-1.16
+[  100s] [12/109] cumulate hostname-3.23-1.2
+[  100s] [13/109] cumulate libattr-2.5.1-1.16
+[  100s] [14/109] cumulate libblkid-2.41.2-1.8
+[  100s] [15/109] cumulate libbz2-1.0.8-1.15
+[  100s] [16/109] cumulate libcap-2.73-1.14
+[  100s] [17/109] cumulate libfreebl3-3.109-1.5
+[  100s] [18/109] cumulate libgfortran-14.2.0-1.14
+[  100s] [19/109] cumulate libgomp-14.2.0-1.14
+[  100s] [20/109] cumulate libitm-14.2.0-1.14
+[  100s] [21/109] cumulate libltdl-2.5.4-1.14
+[  100s] [22/109] cumulate liblua-5.1.5-1.12
+[  100s] [23/109] cumulate liblzma-5.8.1-1.13
+[  100s] [24/109] cumulate libopenssl3-3.5.5-1.14
+[  100s] [25/109] cumulate libpcre-8.45-1.14
+[  100s] [26/109] cumulate libpopt-1.16-1.13
+[  100s] [27/109] cumulate libsmack-1.3.1-1.12
+[  100s] [28/109] cumulate libsmartcols-2.41.2-1.8
+[  100s] [29/109] cumulate libsqlite-3.51.0-1.14
+[  100s] [30/109] cumulate libstdc++-14.2.0-1.14
+[  100s] [31/109] cumulate libuuid-2.41.2-1.8
+[  100s] [32/109] cumulate libxcrypt-4.4.36-1.16
+[  100s] [33/109] cumulate libxml2-2.15.1-1.12
+[  100s] [34/109] cumulate libzstd1-1.5.7-1.13
+[  100s] [35/109] cumulate m4-1.4.20-1.2
+[  100s] [36/109] cumulate net-tools-2.0_20121208git-1.12
+[  100s] [37/109] cumulate nspr-4.36-2.3
+[  100s] [38/109] cumulate patch-2.8-1.13
+[  100s] [39/109] cumulate pkg-config-0.29.2-1.13
+[  100s] [40/109] cumulate sed-4.1c-1.13
+[  100s] [41/109] cumulate toybox-0.6.0-1.3
+[  100s] [42/109] cumulate update-alternatives-1.22.21-1.2
+[  100s] [43/109] cumulate which-2.17-1.2
+[  100s] [44/109] cumulate zlib-1.3.1-1.16
+[  100s] [45/109] cumulate app-rootstrap-checker-1.0.0-1.1
+[  100s] [46/109] cumulate build-compare-2023.06.18-1.5
+[  100s] [47/109] cumulate clang-accel-x86_64-armv7l-0.4-2.3
+[  100s] [48/109] cumulate hal-rootstrap-checker-1.0.0-4.1
+[  100s] [49/109] cumulate libstdc++-devel-14.2.0-1.14
+[  100s] [50/109] cumulate qemu-linux-user-x86_64-cross-9.2.3.1-3.5
+[  100s] [51/109] cumulate cpp-14.2.0-1.14
+[  100s] [52/109] cumulate gcc-c++-14.2.0-1.14
+[  100s] [53/109] cumulate binutils-libs-2.43-1.16
+[  100s] [54/109] cumulate coreutils-6.9-14.3
+[  100s] [55/109] cumulate dash-0.5.13.4-1.2
+[  100s] [56/109] cumulate gawk-3.1.5-1.2
+[  100s] [57/109] cumulate grep-2.5.2-1.15
+[  100s] [58/109] cumulate libacl-2.3.2-1.16
+[  100s] [59/109] cumulate libcc1-14.2.0-1.14
+[  100s] [60/109] cumulate libelf-0.189-1.14
+[  100s] [61/109] cumulate liblastlog2-2.41.2-1.8
+[  101s] [62/109] cumulate libmount-2.41.2-1.8
+[  101s] [63/109] cumulate make-4.4.1-1.14
+[  101s] [64/109] cumulate nss-certs-3.109-1.5
+[  101s] [65/109] cumulate smack-1.3.1-1.12
+[  101s] [66/109] cumulate bzip2-1.0.8-1.15
+[  101s] [67/109] cumulate libfdisk-2.41.2-1.8
+[  101s] [68/109] cumulate libmagic-5.46-1.14
+[  101s] [69/109] cumulate xz-5.8.1-1.13
+[  101s] [70/109] cumulate libllvm-22.1.8-4.1
+[  101s] [71/109] cumulate perl-5.42.0-1.14
+[  101s] [72/109] cumulate build-mkbaselibs-20120927-1.1
+[  101s] [73/109] cumulate linux-glibc-devel-6.6-1.16
+[  101s] [74/109] cumulate terminfo-base-full-6.6-1.10
+[  101s] [75/109] cumulate autoconf-2.71-1.16
+[  101s] [76/109] cumulate glibc-locale-2.40-2.5
+[  101s] [77/109] cumulate tar-1.17-2.2
+[  101s] [78/109] cumulate binutils-2.43-1.16
+[  101s] [79/109] cumulate file-5.46-1.14
+[  101s] [80/109] cumulate gzip-1.3.12-1.14
+[  101s] [81/109] cumulate pam-1.1.6-1.10
+[  101s] [82/109] cumulate tzdata-2025b-1.2
+[  101s] [83/109] cumulate libdw-0.189-1.14
+[  101s] [84/109] cumulate gcc-14.2.0-1.14
+[  101s] [85/109] cumulate libarchive-3.8.1-2.5
+[  101s] [86/109] cumulate qemu-accel-x86_64-armv7l-0.4-2.3
+[  101s] [87/109] cumulate automake-1.16.5-1.16
+[  101s] [88/109] cumulate libarchive-tools-3.8.1-2.5
+[  101s] [89/109] cumulate libasm-0.189-1.14
+[  101s] [90/109] cumulate libncurses6-6.6-1.10
+[  101s] [91/109] cumulate rpm-4.14.1.1-1.9
+[  101s] [92/109] cumulate libncurses-6.6-1.10
+[  101s] [93/109] cumulate less-685-1.2
+[  101s] [94/109] cumulate libreadline-5.2-1.14
+[  101s] [95/109] cumulate libtool-2.5.4-1.14
+[  101s] [96/109] cumulate build-20120927-1.1
+[  101s] [97/109] cumulate elfutils-0.189-1.14
+[  101s] [98/109] cumulate util-linux-2.41.2-1.8
+[  101s] [99/109] cumulate util-linux-su-2.41.2-1.8
+[  102s] [100/109] cumulate libxcrypt-devel-4.4.36-1.16
+[  102s] [101/109] cumulate nss-3.109-1.5
+[  102s] [102/109] cumulate llvm-22.1.8-4.1
+[  102s] [103/109] cumulate glibc-devel-2.40-2.5
+[  102s] [104/109] cumulate clang-22.1.8-4.1
+[  102s] [105/109] cumulate libsoftokn3-3.109-1.5
+[  102s] [106/109] cumulate llvm-devel-22.1.8-4.1
+[  102s] [107/109] cumulate libcap-devel-2.73-1.14
+[  102s] [108/109] cumulate lldb-22.1.8-4.1
+[  102s] [109/109] cumulate rpm-build-4.14.1.1-1.9
+[  102s] now installing cumulated packages
+[  127s] Preparing...                          ########################################
+[  127s] Updating / installing...
+[  127s] setup-0.9-2.7                         ###############warning: /etc/profile created as /etc/profile.rpmnew
+[  127s] #########################
+[  127s] filesystem-3.1-1.1                    ########################################
+[  128s] libmagic-data-5.46-1.14               ########################################
+[  129s] glibc-2.40-2.5                        ########################################
+[  130s] libgcc-14.2.0-1.14                    ########################################
+[  130s] bash-3.2.57-1.15                      ########################################
+[  130s] zlib-1.3.1-1.16                       ########################################
+[  131s] libstdc++-14.2.0-1.14                 ########################################
+[  132s] coreutils-6.9-14.3                    ########################################
+[  132s] liblzma-5.8.1-1.13                    ########################################
+[  133s] libelf-0.189-1.14                     ########################################
+[  133s] libbz2-1.0.8-1.15                     ########################################
+[  133s] libdw-0.189-1.14                      ########################################
+[  134s] libxcrypt-4.4.36-1.16                 ########################################
+[  134s] libxml2-2.15.1-1.12                   ########################################
+[  137s] libllvm-22.1.8-4.1                    ########################################
+[  137s] libblkid-2.41.2-1.8                   ########################################
+[  137s] nspr-4.36-2.3                         ########################################
+[  138s] pam-1.1.6-1.10                        ########################################
+[  138s] libmagic-5.46-1.14                    ########################################
+[  138s] libcap-2.73-1.14                      ########################################
+[  139s] libfreebl3-3.109-1.5                  ########################################
+[  140s] libopenssl3-3.5.5-1.14                ########################################
+[  140s] libpopt-1.16-1.13                     ########################################
+[  141s] libsqlite-3.51.0-1.14                 ########################################
+[  141s] libuuid-2.41.2-1.8                    ########################################
+[  141s] pkg-config-0.29.2-1.13                ########################################
+[  142s] linux-glibc-devel-6.6-1.16            ########################################
+[  142s] libxcrypt-devel-4.4.36-1.16           ########################################
+[  142s] glibc-devel-2.40-2.5                  ########################################
+[  142s] terminfo-base-full-6.6-1.10           ########################################
+[  142s] libncurses6-6.6-1.10                  ########################################
+[  142s] libreadline-5.2-1.14                  ########################################
+[  150s] clang-22.1.8-4.1                      ########################################
+[  151s] lldb-22.1.8-4.1                       ########################################
+[  153s] llvm-22.1.8-4.1                       ########################################
+[  153s] libfdisk-2.41.2-1.8                   ########################################
+[  153s] liblastlog2-2.41.2-1.8                ########################################
+[  153s] nss-certs-3.109-1.5                   ########################################
+[  153s] libsoftokn3-3.109-1.5                 ########################################
+[  154s] nss-3.109-1.5                         ########################################
+[  154s] libmount-2.41.2-1.8                   ########################################
+[  154s] libasm-0.189-1.14                     ########################################
+[  155s] bzip2-1.0.8-1.15                      ########################################
+[  155s] xz-5.8.1-1.13                         ########################################
+[  155s] gzip-1.3.12-1.14                      ########################################
+[  155s] libcc1-14.2.0-1.14                    ########################################
+[  155s] binutils-libs-2.43-1.16               ########################################
+[  158s] binutils-2.43-1.16                    ########################################
+[  158s] make-4.4.1-1.14                       ########################################
+[  158s] findutils-4.3.8-1.14                  ########################################
+[  158s] gdbm-1.8.3-1.16                       ########################################
+[  166s] perl-5.42.0-1.14                      ########################################
+[  166s] build-mkbaselibs-20120927-1.1         ########################################
+[  166s] libattr-2.5.1-1.16                    ########################################
+[  166s] libacl-2.3.2-1.16                     ########################################
+[  167s] libarchive-3.8.1-2.5                  ########################################
+[  167s] libarchive-tools-3.8.1-2.5            ########################################
+[  167s] libgfortran-14.2.0-1.14               ########################################
+[  167s] libgomp-14.2.0-1.14                   ########################################
+[  168s] libitm-14.2.0-1.14                    ########################################
+[  168s] libltdl-2.5.4-1.14                    ########################################
+[  169s] liblua-5.1.5-1.12                     ########################################
+[  169s] libpcre-8.45-1.14                     ########################################
+[  169s] libsmack-1.3.1-1.12                   ########################################
+[  170s] libsmartcols-2.41.2-1.8               ########################################
+[  170s] libzstd1-1.5.7-1.13                   ########################################
+[  172s] rpm-4.14.1.1-1.9                      ########################################
+[  172s] m4-1.4.20-1.2                         ########################################
+[  172s] autoconf-2.71-1.16                    ########################################
+[  173s] automake-1.16.5-1.16                  ########################################
+[  173s] patch-2.8-1.13                        ########################################
+[  173s] sed-4.1c-1.13                         ########################################
+[  175s] util-linux-2.41.2-1.8                 ########################################
+[  175s] libatomic-14.2.0-1.14                 ########################################
+[  176s] libtool-2.5.4-1.14                    ########################################
+[  176s] build-20120927-1.1                    ########################################
+[  176s] libncurses-6.6-1.10                   ########################################
+[  176s] libcap-devel-2.73-1.14                ########################################
+[  177s] libstdc++-devel-14.2.0-1.14           ########################################
+[  177s] app-rootstrap-checker-1.0.0-1.1       ########################################
+[  177s] build-compare-2023.06.18-1.5          ########################################
+[  203s] clang-accel-x86_64-armv7l-0.4-2.3     ########################################
+[  207s] hal-rootstrap-checker-1.0.0-4.1       ########################################
+[  218s] qemu-linux-user-x86_64-cross-9.2.3.1-3########################################
+[  223s] gcc-14.2.0-1.14                       ########################################
+[  246s] qemu-accel-x86_64-armv7l-0.4-2.3      ########################################
+[  247s] util-linux-su-2.41.2-1.8              ########################################
+[  247s] rpm-build-4.14.1.1-1.9                ########################################
+[  247s] smack-1.3.1-1.12                      ########################################
+[  247s] grep-2.5.2-1.15                       ########################################
+[  247s] tar-1.17-2.2                          ########################################
+[  247s] elfutils-0.189-1.14                   ########################################
+[  250s] llvm-devel-22.1.8-4.1                 ########################################
+[  250s] less-685-1.2                          ########################################
+[  250s] file-5.46-1.14                        ########################################
+[  251s] glibc-locale-2.40-2.5                 ########################################
+[  251s] tzdata-2025b-1.2                      ########################################
+[  253s] cpp-14.2.0-1.14                       ########################################
+[  254s] gcc-c++-14.2.0-1.14                   ########################################
+[  254s] dash-0.5.13.4-1.2                     ########################################
+[  254s] gawk-3.1.5-1.2                        ########################################
+[  255s] cpio-2.8-1.2                          ########################################
+[  255s] diffutils-3.10-1.2                    ########################################
+[  255s] hostname-3.23-1.2                     ########################################
+[  255s] net-tools-2.0_20121208git-1.12        ########################################
+[  255s] toybox-0.6.0-1.3                      ########################################
+[  255s] update-alternatives-1.22.21-1.2       ########################################
+[  255s] which-2.17-1.2                        ########################################
+[  255s] removing nis flags from /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.4/etc/nsswitch.conf...
+[  255s] now finalizing build dir...
+[  256s] -----------------------------------------------------------------
+[  256s] ----- building linux-tizen-modules-source.spec (user abuild)
+[  256s] -----------------------------------------------------------------
+[  256s] -----------------------------------------------------------------
+[  256s] + exec rpmbuild --define 'jobs 8' --define '_smp_mflags -j8' --define '_costomized_smp_mflags -j20' --define '_srcdefattr (-,root,root)' --nosignature --target=armv7l-tizen-linux --define '_build_create_debug 1' -ba /home/abuild/rpmbuild/SOURCES/linux-tizen-modules-source.spec
+[  256s] Building target platforms: armv7l-tizen-linux
+[  256s] Building for target armv7l-tizen-linux
+[  256s] Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.DVKh6f
+[  256s] + umask 022
+[  256s] + cd /home/abuild/rpmbuild/BUILD
+[  256s] + cd /home/abuild/rpmbuild/BUILD
+[  256s] + rm -rf linux-tizen-modules-source-11.0.0
+[  256s] + /bin/xz -dc /home/abuild/rpmbuild/SOURCES/linux-tizen-modules-source-11.0.0.tar.xz
+[  256s] + /bin/tar -xof -
+[  256s] + STATUS=0
+[  256s] + '[' 0 -ne 0 ']'
+[  256s] + cd linux-tizen-modules-source-11.0.0
+[  256s] + /bin/chmod -Rf a+rX,u+w,g-w,o-w .
+[  256s] + cp /home/abuild/rpmbuild/SOURCES/linux-tizen-modules-source.manifest .
+[  256s] + exit 0
+[  256s] Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.FKMVmJ
+[  256s] + umask 022
+[  256s] + cd /home/abuild/rpmbuild/BUILD
+[  256s] + CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'
+[  256s] + export CFLAGS
+[  256s] + CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'
+[  256s] + export CXXFLAGS
+[  256s] + LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'
+[  256s] + export LDFLAGS
+[  256s] + cd linux-tizen-modules-source-11.0.0
+[  256s] + ref=/usr/lib/rpm
+[  256s] + mints=0
+[  256s] + case $(uname -m) in
+[  256s] ++ uname -m
+[  256s] + for s in guess sub
+[  256s] ++ find -maxdepth 8 -name config.guess
+[  256s] + for s in guess sub
+[  256s] ++ find -maxdepth 8 -name config.sub
+[  256s] + export AR=llvm-ar RANLIB=llvm-ranlib
+[  256s] + AR=llvm-ar
+[  256s] + RANLIB=llvm-ranlib
+[  256s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++
+[  256s] + CC=armv7l-tizen-linux-gnueabi-clang
+[  256s] + CXX=armv7l-tizen-linux-gnueabi-clang++
+[  256s] + export 'MAKEFLAGS+= -k'
+[  256s] + MAKEFLAGS+=' -k'
+[  256s] + make -C tests/kdbus
+[  256s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/kdbus'
+[  256s] armv7l-tizen-linux-gnueabi-clang -c kdbus-enum.c -o kdbus-enum.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  257s] armv7l-tizen-linux-gnueabi-clang -c kdbus-util.c -o kdbus-util.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  257s] kdbus-util.c:123:20: warning: field 'cmd' with variable sized type 'struct kdbus_cmd' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  257s]   123 |                 struct kdbus_cmd cmd;
+[  257s]       |                                  ^
+[  257s] kdbus-util.c:193:26: warning: field 'hello' with variable sized type 'struct kdbus_cmd_hello' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  257s]   193 |                 struct kdbus_cmd_hello hello;
+[  257s]       |                                        ^
+[  257s] kdbus-util.c:1511:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  257s]  1511 |                 struct kdbus_cmd_match cmd;
+[  257s]       |                                        ^
+[  257s] kdbus-util.c:1538:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  257s]  1538 |                 struct kdbus_cmd_match cmd;
+[  257s]       |                                        ^
+[  257s] 4 warnings generated.
+[  257s] armv7l-tizen-linux-gnueabi-clang -c kdbus-test.c -o kdbus-test.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  257s] armv7l-tizen-linux-gnueabi-clang -c test-activator.c -o test-activator.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  258s] armv7l-tizen-linux-gnueabi-clang -c test-benchmark.c -o test-benchmark.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  258s] armv7l-tizen-linux-gnueabi-clang -c test-bus.c -o test-bus.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  258s] test-bus.c:72:20: warning: field 'cmd' with variable sized type 'struct kdbus_cmd' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  258s]    72 |                 struct kdbus_cmd cmd;
+[  258s]       |                                  ^
+[  259s] 1 warning generated.
+[  259s] armv7l-tizen-linux-gnueabi-clang -c test-chat.c -o test-chat.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  259s] armv7l-tizen-linux-gnueabi-clang -c test-connection.c -o test-connection.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  259s] test-connection.c:393:25: warning: field 'cmd_info' with variable sized type 'struct kdbus_cmd_info' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  259s]   393 |                 struct kdbus_cmd_info cmd_info;
+[  259s]       |                                       ^
+[  259s] 1 warning generated.
+[  259s] armv7l-tizen-linux-gnueabi-clang -c test-daemon.c -o test-daemon.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  260s] test-daemon.c:21:6: warning: variable 'count' set but not used [-Wunused-but-set-variable]
+[  260s]    21 |         int count;
+[  260s]       |             ^
+[  260s] 1 warning generated.
+[  260s] armv7l-tizen-linux-gnueabi-clang -c test-endpoint.c -o test-endpoint.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  260s] test-endpoint.c:25:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  260s]    25 |                 struct kdbus_cmd_match cmd;
+[  260s]       |                                        ^
+[  260s] test-endpoint.c:30:5: warning: field 'item' with variable sized type 'struct (unnamed at test-endpoint.c:26:3)' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  260s]    30 |                 } item;
+[  260s]       |                   ^
+[  260s] test-endpoint.c:55:20: warning: field 'cmd' with variable sized type 'struct kdbus_cmd' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  260s]    55 |                 struct kdbus_cmd cmd;
+[  260s]       |                                  ^
+[  260s] test-endpoint.c:162:20: warning: field 'cmd' with variable sized type 'struct kdbus_cmd' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  260s]   162 |                 struct kdbus_cmd cmd;
+[  260s]       |                                  ^
+[  260s] 4 warnings generated.
+[  260s] armv7l-tizen-linux-gnueabi-clang -c test-fd.c -o test-fd.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  261s] armv7l-tizen-linux-gnueabi-clang -c test-free.c -o test-free.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  261s] armv7l-tizen-linux-gnueabi-clang -c test-match.c -o test-match.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  261s] test-match.c:20:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  261s]    20 |                 struct kdbus_cmd_match cmd;
+[  261s]       |                                        ^
+[  261s] test-match.c:124:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  261s]   124 |                 struct kdbus_cmd_match cmd;
+[  261s]       |                                        ^
+[  261s] test-match.c:129:5: warning: field 'item' with variable sized type 'struct (unnamed at test-match.c:125:3)' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  261s]   129 |                 } item;
+[  261s]       |                   ^
+[  261s] test-match.c:376:26: warning: field 'cmd' with variable sized type 'struct kdbus_cmd_match' not at the end of a struct or class is a GNU extension [-Wgnu-variable-sized-type-not-at-end]
+[  261s]   376 |                 struct kdbus_cmd_match cmd;
+[  261s]       |                                        ^
+[  262s] 4 warnings generated.
+[  262s] armv7l-tizen-linux-gnueabi-clang -c test-message.c -o test-message.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  263s] armv7l-tizen-linux-gnueabi-clang -c test-metadata-ns.c -o test-metadata-ns.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  263s] armv7l-tizen-linux-gnueabi-clang -c test-monitor.c -o test-monitor.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  263s] armv7l-tizen-linux-gnueabi-clang -c test-names.c -o test-names.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  264s] armv7l-tizen-linux-gnueabi-clang -c test-policy.c -o test-policy.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  264s] armv7l-tizen-linux-gnueabi-clang -c test-policy-ns.c -o test-policy-ns.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  264s] armv7l-tizen-linux-gnueabi-clang -c test-policy-priv.c -o test-policy-priv.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  266s] armv7l-tizen-linux-gnueabi-clang -c test-sync.c -o test-sync.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  266s] armv7l-tizen-linux-gnueabi-clang -c test-timeout.c -o test-timeout.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi/ -I../../samples/kdbus/ -std=gnu99 -Wno-error=shadow -DKBUILD_MODNAME=\"kdbus\" -D_GNU_SOURCE
+[  266s] test-timeout.c:107:7: warning: variable 'cookie_reply' is used uninitialized whenever 'if' condition is false [-Wsometimes-uninitialized]
+[  266s]   107 |                 if (fd.revents & POLLIN)
+[  266s]       |                     ^~~~~~~~~~~~~~~~~~~
+[  266s] test-timeout.c:110:31: note: uninitialized use occurs here
+[  266s]   110 |                 if (!(expected &= ~(1ULL << cookie_reply)))
+[  266s]       |                                             ^~~~~~~~~~~~
+[  266s] test-timeout.c:107:3: note: remove the 'if' if its condition is always true
+[  266s]   107 |                 if (fd.revents & POLLIN)
+[  266s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+[  266s]   108 |                         ASSERT_ZERO(timeout_msg_recv(conn_b, KDBUS_ITEM_REPLY_TIMEOUT, &cookie_reply, NULL, NULL, NULL));
+[  266s] test-timeout.c:97:24: note: initialize the variable 'cookie_reply' to silence this warning
+[  266s]    97 |                 uint64_t cookie_reply;
+[  266s]       |                                      ^
+[  266s]       |                                       = 0
+[  266s] 1 warning generated.
+[  266s] armv7l-tizen-linux-gnueabi-clang -o kdbus-test kdbus-enum.o kdbus-util.o kdbus-test.o test-activator.o test-benchmark.o test-bus.o test-chat.o test-connection.o test-daemon.o test-endpoint.o test-fd.o test-free.o test-match.o test-message.o test-metadata-ns.o test-monitor.o test-names.o test-policy.o test-policy-ns.o test-policy-priv.o test-sync.o test-timeout.o -pthread -lcap -lm
+[  266s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/kdbus'
+[  266s] + make -C tests/logger
+[  266s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/logger'
+[  266s] armv7l-tizen-linux-gnueabi-clang -c logger.c -o logger.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi -std=gnu99 -D_GNU_SOURCE -Wno-error=unused-result
+[  267s] logger.c:43:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]    43 |                 write(fd, "child thread msg #1\nchild thread msg #2", 39);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:136:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   136 |                 write(fd, "PARENT THREAD\n", 14);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:155:4: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   155 |                         write(fd, "child 1\n", 8);
+[  267s]       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:156:4: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   156 |                         write(fd, "child 2\n", 8);
+[  267s]       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:162:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   162 |                 write(fd, "PARENT\n", 7);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:184:2: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   184 |         write(fd, msg, BIG_MSG_SIZE);
+[  267s]       |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:188:4: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   188 |                         write(fd, msg, BIG_MSG_SIZE);
+[  267s]       |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:192:4: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   192 |                         write(fd, &msg[i], 1);
+[  267s]       |                         ^~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:209:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   209 |                 write(fd, "LINE #1\nLINE #2", 15);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:210:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   210 |                 write(fd, " CONTINUED\nONCE", 15);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:211:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   211 |                 write(fd, " AGAIN\n", 7);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~~~~~~~
+[  267s] logger.c:229:3: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   229 |                 writev(fd, vec, 3);
+[  267s]       |                 ^~~~~~~~~~~~~~~~~~
+[  267s] logger.c:235:4: warning: ignoring return value of function declared with 'warn_unused_result' attribute [-Wunused-result]
+[  267s]   235 |                         writev(fd, vec, 3);
+[  267s]       |                         ^~~~~~~~~~~~~~~~~~
+[  267s] 13 warnings generated.
+[  267s] armv7l-tizen-linux-gnueabi-clang -o logger-test logger.o -pthread
+[  267s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/logger'
+[  267s] + make -C tests/zlog_stdout
+[  267s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/zlog_stdout'
+[  267s] armv7l-tizen-linux-gnueabi-clang -c zlog_stdout.c -o zlog_stdout.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi -std=gnu11 -D_GNU_SOURCE -Wno-error=unused-result
+[  267s] armv7l-tizen-linux-gnueabi-clang -o zlog_stdout zlog_stdout.o -pthread
+[  267s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/zlog_stdout'
+[  267s] + make -C tests/zlog_bitmap
+[  267s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/zlog_bitmap'
+[  267s] armv7l-tizen-linux-gnueabi-clang -c zlog_bitmap.c -o zlog_bitmap.o -Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g -I../../include/uapi -std=gnu11 -D_GNU_SOURCE -Wno-error=unused-result
+[  267s] zlog_bitmap.c:64:25: warning: unused variable 'k' [-Wunused-variable]
+[  267s]    64 |         int fd, ret = 0, i, j, k, result[2][2];
+[  267s]       |                                ^
+[  267s] 1 warning generated.
+[  267s] armv7l-tizen-linux-gnueabi-clang -o zlog_bitmap zlog_bitmap.o -pthread
+[  267s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/tests/zlog_bitmap'
+[  267s] + exit 0
+[  267s] Executing(%install): /bin/sh -e /var/tmp/rpm-tmp.5NoV2P
+[  267s] + umask 022
+[  267s] + cd /home/abuild/rpmbuild/BUILD
+[  267s] + /bin/rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  267s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  267s] + cd linux-tizen-modules-source-11.0.0
+[  267s] + export AR=llvm-ar RANLIB=llvm-ranlib
+[  267s] + AR=llvm-ar
+[  267s] + RANLIB=llvm-ranlib
+[  267s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++
+[  267s] + CC=armv7l-tizen-linux-gnueabi-clang
+[  267s] + CXX=armv7l-tizen-linux-gnueabi-clang++
+[  267s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source/kdbus
+[  267s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source/zlogger
+[  267s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/include/linux
+[  267s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/libexec/linux-tizen-modules-source/tests
+[  267s] + cp -a include/ /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source
+[  267s] + cp kernel/dm-bow.c kernel/dm-core.h kernel/dm.h kernel/extcon-usb-fixed.c kernel/inform-reboot.c kernel/logger.c kernel/proc-tsm.c kernel/Makefile COPYING /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source
+[  267s] + cp kernel/kdbus/bus.c kernel/kdbus/bus.h kernel/kdbus/connection.c kernel/kdbus/connection.h kernel/kdbus/domain.c kernel/kdbus/domain.h kernel/kdbus/endpoint.c kernel/kdbus/endpoint.h kernel/kdbus/fs.c kernel/kdbus/fs.h kernel/kdbus/handle.c kernel/kdbus/handle.h kernel/kdbus/item.c kernel/kdbus/item.h kernel/kdbus/limits.h kernel/kdbus/main.c kernel/kdbus/match.c kernel/kdbus/match.h kernel/kdbus/message.c kernel/kdbus/message.h kernel/kdbus/metadata.c kernel/kdbus/metadata.h kernel/kdbus/names.c kernel/kdbus/names.h kernel/kdbus/node.c kernel/kdbus/node.h kernel/kdbus/notify.c kernel/kdbus/notify.h kernel/kdbus/policy.c kernel/kdbus/policy.h kernel/kdbus/pool.c kernel/kdbus/pool.h kernel/kdbus/queue.c kernel/kdbus/queue.h kernel/kdbus/reply.c kernel/kdbus/reply.h kernel/kdbus/util.c kernel/kdbus/util.h kernel/kdbus/Makefile /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source/kdbus
+[  267s] + cp kernel/zlogger/zlogger.c kernel/zlogger/Makefile /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/src/linux-tizen-modules-source/zlogger
+[  267s] + cp include/uapi/linux/kdbus.h /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/include/linux
+[  267s] + cp include/uapi/linux/logger.h /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/include/linux
+[  267s] + cp include/uapi/linux/zlogger.h /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/include/linux
+[  267s] + cp tests/logger/logger-test /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/libexec/linux-tizen-modules-source/tests/logger-test
+[  267s] + cp tests/kdbus/kdbus-test /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/libexec/linux-tizen-modules-source/tests/kdbus-test
+[  267s] + cp tests/zlog_stdout/zlog_stdout /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/libexec/linux-tizen-modules-source/tests/zlog_stdout
+[  267s] + cp tests/zlog_bitmap/zlog_bitmap /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm//usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap
+[  268s] + /usr/lib/rpm/find-debuginfo.sh -j8 --build-id-seed 11.0.0-0 --unique-debug-src-base linux-tizen-modules-source-11.0.0-0.arm -S debugsourcefiles.list /home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0
+[  268s] 1+0 records in
+[  268s] 1+0 records out
+[  268s] 1+0 records in
+[  268s] 1+0 records out
+[  268s] 1+0 records in
+[  268s] 1+0 records out
+[  268s] 1+0 records in
+[  268s] 1+0 records out
+[  268s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/kdbus-test
+[  268s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/logger-test
+[  268s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap
+[  268s] extracting debug info from /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_stdout
+[  268s] *** WARNING: No build ID note found in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/logger-test
+[  268s] *** WARNING: No build ID note found in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/kdbus-test
+[  269s] *** WARNING: No build ID note found in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap
+[  269s] 0+0 records in
+[  269s] 0+0 records out
+[  269s] *** WARNING: No build ID note found in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_stdout
+[  269s] 0+0 records in
+[  269s] 0+0 records out
+[  269s] 0+0 records in
+[  269s] 0+0 records out
+[  269s] 0+0 records in
+[  269s] 0+0 records out
+[  269s] 675 blocks
+[  269s] + cp /usr/lib/rpm/debug.manifest /home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/linux-tizen-modules-source-debuginfo.manifest
+[  269s] + cp /usr/lib/rpm/debug.manifest /home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/linux-tizen-modules-source-debugsource.manifest
+[  269s] + /usr/lib/rpm/check-buildroot
+[  269s] + /usr/lib/rpm//brp-compress
+[  269s] + /usr/lib/rpm/brp-strip-static-archive /bin/strip
+[  270s] + /usr/lib/rpm/brp-python-hardlink
+[  270s] + /usr/lib/rpm/tizen/find-docs.sh /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  270s] + /usr/lib/rpm/tizen/find-isufiles.sh /home/abuild/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0/isu.list
+[  270s] ~/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm ~/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0
+[  270s] ~/rpmbuild/BUILD/linux-tizen-modules-source-11.0.0
+[  270s] + /etc/hal/rootstrap/hal-rootstrap-checker.sh /home/abuild/rpmbuild/SOURCES /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm arm
+[  270s] Package: linux-tizen-modules-source, Group: System/Kernel
+[  271s] ##########################################################################################
+[  271s] # SUCCESS: hal-rootstrap-checker done                                                    #
+[  271s] ##########################################################################################
+[  271s] + /etc/app-rootstrap/app-rootstrap-checker.sh /home/abuild/rpmbuild/SOURCES /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm arm
+[  271s] Package: linux-tizen-modules-source, Group: System/Kernel
+[  271s] # NOTICE: Config app-rootstrap-checker.yaml skipped                                      #
+[  271s] # NOTICE: Config web-plugin-rootstrap-checker.yaml skipped                               #
+[  271s] ##########################################################################################
+[  271s] # SUCCESS: app-rootstrap-checker done                                                    #
+[  271s] ##########################################################################################
+[  271s] Processing files: linux-tizen-modules-source-11.0.0-0.armv7l
+[  271s] Aptk: PG1hbmlmZXN0PgoJPHJlcXVlc3Q+CgkJPGRvbWFpbiBuYW1lPSJfIiAvPgoJPC9y
+[  271s] ZXF1ZXN0Pgo8L21hbmlmZXN0Pgo=
+[  271s] 
+[  271s] Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.e9laZe
+[  271s] + umask 022
+[  271s] + cd /home/abuild/rpmbuild/BUILD
+[  271s] + cd linux-tizen-modules-source-11.0.0
+[  271s] + LICENSEDIR=/home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-source
+[  271s] + export LC_ALL=C
+[  271s] + LC_ALL=C
+[  271s] + export LICENSEDIR
+[  271s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-source
+[  271s] + cp -pr COPYING /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-source
+[  271s] + exit 0
+[  271s] Provides: linux-tizen-modules-source = 11.0.0-0 linux-tizen-modules-source(armv7l-32) = 11.0.0-0
+[  271s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  271s] Processing files: linux-tizen-modules-source-debugsource-11.0.0-0.armv7l
+[  271s] Aptk: PG1hbmlmZXN0PgogPHJlcXVlc3Q+CiAgICA8ZG9tYWluIG5hbWU9Il8iLz4KIDwv
+[  271s] cmVxdWVzdD4KPC9tYW5pZmVzdD4K
+[  271s] 
+[  271s] Provides: linux-tizen-modules-source-debugsource = 11.0.0-0 linux-tizen-modules-source-debugsource(armv7l-32) = 11.0.0-0
+[  271s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  271s] Processing files: linux-tizen-modules-headers-11.0.0-0.armv7l
+[  271s] Aptk: PG1hbmlmZXN0PgoJPHJlcXVlc3Q+CgkJPGRvbWFpbiBuYW1lPSJfIiAvPgoJPC9y
+[  271s] ZXF1ZXN0Pgo8L21hbmlmZXN0Pgo=
+[  271s] 
+[  271s] Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.wxhCD4
+[  271s] + umask 022
+[  271s] + cd /home/abuild/rpmbuild/BUILD
+[  271s] + cd linux-tizen-modules-source-11.0.0
+[  271s] + LICENSEDIR=/home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-headers
+[  271s] + export LC_ALL=C
+[  271s] + LC_ALL=C
+[  271s] + export LICENSEDIR
+[  271s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-headers
+[  271s] + cp -pr COPYING /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-headers
+[  271s] + exit 0
+[  271s] Provides: linux-tizen-modules-headers = 11.0.0-0 linux-tizen-modules-headers(armv7l-32) = 11.0.0-0
+[  271s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  271s] Processing files: linux-tizen-modules-tests-11.0.0-0.armv7l
+[  271s] Aptk: PG1hbmlmZXN0PgoJPHJlcXVlc3Q+CgkJPGRvbWFpbiBuYW1lPSJfIiAvPgoJPC9y
+[  271s] ZXF1ZXN0Pgo8L21hbmlmZXN0Pgo=
+[  271s] 
+[  271s] Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.5aEMyx
+[  271s] + umask 022
+[  271s] + cd /home/abuild/rpmbuild/BUILD
+[  271s] + cd linux-tizen-modules-source-11.0.0
+[  271s] + LICENSEDIR=/home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-tests
+[  271s] + export LC_ALL=C
+[  271s] + LC_ALL=C
+[  271s] + export LICENSEDIR
+[  271s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-tests
+[  271s] + cp -pr COPYING /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-tests
+[  271s] + exit 0
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/logger-test
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/kdbus-test
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_stdout
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap
+[  271s] Provides: linux-kernel-kdbus-tests linux-kernel-logger-tests linux-tizen-modules-tests = 11.0.0-0 linux-tizen-modules-tests(armv7l-32) = 11.0.0-0
+[  271s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  271s] Requires: ld-linux.so.3 ld-linux.so.3(GLIBC_2.4) libc.so.6 libc.so.6(GLIBC_2.16) libc.so.6(GLIBC_2.17) libc.so.6(GLIBC_2.28) libc.so.6(GLIBC_2.33) libc.so.6(GLIBC_2.34) libc.so.6(GLIBC_2.38) libc.so.6(GLIBC_2.4) libc.so.6(GLIBC_2.7) libc.so.6(GLIBC_2.8) libcap.so.2 libgcc_s.so.1 libgcc_s.so.1(GCC_3.5) libm.so.6 libpthread.so.0 rtld(GNU_HASH)
+[  271s] Processing files: linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l
+[  271s] Aptk: PG1hbmlmZXN0PgogPHJlcXVlc3Q+CiAgICA8ZG9tYWluIG5hbWU9Il8iLz4KIDwv
+[  271s] cmVxdWVzdD4KPC9tYW5pZmVzdD4K
+[  271s] 
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/kdbus-test.debug
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/logger-test.debug
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/zlog_bitmap.debug
+[  271s] warning: Missing build-id in /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm/usr/lib/debug/usr/libexec/linux-tizen-modules-source/tests/zlog_stdout.debug
+[  271s] Provides: linux-tizen-modules-tests-debuginfo = 11.0.0-0 linux-tizen-modules-tests-debuginfo(armv7l-32) = 11.0.0-0
+[  271s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+[  271s] Recommends: linux-tizen-modules-source-debugsource(armv7l-32) = 11.0.0-0
+[  271s] Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  272s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-source-11.0.0-0.src.rpm
+[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-11.0.0-0.armv7l.rpm
+[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-source-debugsource-11.0.0-0.armv7l.rpm
+[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-headers-11.0.0-0.armv7l.rpm
+[  272s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-11.0.0-0.armv7l.rpm
+[  273s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-tests-debuginfo-11.0.0-0.armv7l.rpm
+[  273s] Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.zbI2gO
+[  273s] + umask 022
+[  273s] + cd /home/abuild/rpmbuild/BUILD
+[  273s] + /bin/rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  273s] + cd linux-tizen-modules-source-11.0.0
+[  273s] + /bin/rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-source-11.0.0-0.arm
+[  273s] + exit 0
+[  273s] ... checking for files with abuild user/group
+[  273s] ... creating baselibs
+[  275s] 
+[  275s] qb-build-host-02 finished "build linux-tizen-modules-source.spec" at Wed Nov 25 13:13:01 UTC 2026.
+[  275s] 

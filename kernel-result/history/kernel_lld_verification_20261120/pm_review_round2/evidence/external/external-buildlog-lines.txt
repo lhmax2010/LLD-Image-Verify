@@ -1,0 +1,358 @@
+   1 [    0s] on X86_64, no limit mem size
+   2 [    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0
+   3 [    0s] Using BUILD_ARCH=armv7l:armv7el:armv6l:armv5tejl:armv5tel:armv5l:armv4tl:armv4l:armv3l:noarch
+   4 [    0s] 
+   5 [    0s] 
+   6 [    0s] qb-build-host-01 started "build linux-tizen-modules.spec" at Fri Nov 20 10:42:48 UTC 2026.
+   7 [    0s] 
+   8 [    0s] 
+   9 [    0s] processing recipe /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/linux-tizen-modules-11.0.0-0/linux-tizen-modules.spec ...
+  10 [    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/ --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/ /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/linux-tizen-modules-11.0.0-0/linux-tizen-modules.spec build ...
+  11 [    1s] initializing /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/.srcfiles.cache ...
+  12 [    1s] /usr/lib/build/createdirdeps --oldfile /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/.srcfiles.cache /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS
+  13 [    1s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/packages/
+  14 [    2s] /usr/lib/build/createrepomddeps --cachedir=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261119.042539/repos/standard/debug/
+  15 [    2s] expanding package dependencies...
+  16 [    3s] Warning: spec file parser line 258: can't expand %(...)
+  17 [    3s] copying qemu
+  18 [    3s] 
+  19 [    3s] registering binfmt handlers for cross build
+  20 [    3s] calculating packages to download...
+ 358 [   51s] [4/119] cumulate linux-tizen-modules-source-11.0.0-0
+ 397 [   51s] [43/119] keeping sed-4.1c-1.7
+ 398 [   51s] [44/119] keeping update-alternatives-1.22.21-1.1
+ 399 [   51s] [45/119] keeping zlib-1.3.1-1.8
+ 400 [   51s] [46/119] keeping app-rootstrap-checker-1.0.0-1.1
+ 401 [   51s] [47/119] keeping build-compare-2023.06.18-1.1
+ 402 [   51s] [48/119] keeping clang-accel-x86_64-armv7l-0.4-1.1
+ 403 [   51s] [49/119] keeping hal-rootstrap-checker-1.0.0-4.1
+ 404 [   51s] [50/119] keeping libstdc++-devel-14.2.0-1.7
+ 405 [   51s] [51/119] keeping qemu-linux-user-x86_64-cross-9.2.3.1-3.1
+ 406 [   51s] [52/119] keeping cpp-14.2.0-1.7
+ 407 [   51s] [53/119] keeping gcc-c++-14.2.0-1.7
+ 408 [   51s] [54/119] keeping binutils-libs-2.43-1.8
+ 409 [   51s] [55/119] keeping dash-0.5.13.4-1.1
+ 410 [   51s] [56/119] keeping gawk-3.1.5-1.1
+ 411 [   51s] [57/119] keeping grep-2.5.2-1.5
+ 412 [   51s] [58/119] keeping libacl-2.3.2-1.6
+ 413 [   51s] [59/119] keeping libcc1-14.2.0-1.7
+ 414 [   51s] [60/119] keeping libelf-0.189-1.8
+ 415 [   51s] [61/119] keeping liblastlog2-2.41.2-1.6
+ 416 [   51s] [62/119] keeping libmount-2.41.2-1.6
+ 417 [   51s] [63/119] keeping make-4.4.1-1.6
+ 418 [   51s] [64/119] keeping nss-certs-3.109-1.1
+ 419 [   51s] [65/119] keeping smack-1.3.1-1.6
+ 420 [   51s] [66/119] keeping bzip2-1.0.8-1.6
+ 421 [   51s] [67/119] keeping libfdisk-2.41.2-1.6
+ 422 [   51s] [68/119] keeping libmagic-5.46-1.6
+ 423 [   51s] [69/119] keeping toybox-0.8.14-5.1
+ 424 [   51s] [70/119] keeping xz-5.8.1-1.7
+ 425 [   51s] [71/119] cumulate kmod-34.2-1.1
+ 426 [   51s] [72/119] keeping libllvm-22.1.8-1.6
+ 427 [   51s] [73/119] keeping perl-5.42.0-1.8
+ 428 [   51s] [74/119] keeping build-mkbaselibs-20120927-1.1
+ 429 [   51s] [75/119] cumulate kmod-compat-34.2-1.1
+ 430 [   51s] [76/119] keeping terminfo-base-full-6.6-1.8
+ 431 [   51s] [77/119] keeping autoconf-2.71-1.8
+ 432 [   51s] [78/119] keeping coreutils-6.9-16.1
+ 433 [   51s] [79/119] keeping findutils-4.3.8-11.6
+ 434 [   51s] [80/119] keeping glibc-locale-2.40-1.8
+ 435 [   51s] [81/119] keeping tar-1.17-1.1
+ 436 [   51s] [82/119] keeping which-2.17-11.1
+ 437 [   51s] [83/119] keeping binutils-2.43-1.8
+ 438 [   51s] [84/119] keeping file-5.46-1.6
+ 439 [   51s] [85/119] keeping gzip-1.3.12-1.6
+ 440 [   51s] [86/119] cumulate libbpf-2:1.6.2-1.1
+ 441 [   51s] [87/119] keeping pam-1.7.2-1.5
+ 442 [   51s] [88/119] keeping libdw-0.189-1.8
+ 443 [   51s] [89/119] keeping gcc-14.2.0-1.7
+ 444 [   51s] [90/119] keeping libarchive-3.8.1-1.8
+ 445 [   51s] [91/119] keeping linux-glibc-devel-6.6-1.8
+ 446 [   51s] [92/119] keeping qemu-accel-x86_64-armv7l-0.4-1.1
+ 447 [   51s] [93/119] keeping automake-1.16.5-1.8
+ 448 [   51s] [94/119] keeping libarchive-tools-3.8.1-1.8
+ 449 [   51s] [95/119] keeping libasm-0.189-1.8
+ 450 [   51s] [96/119] keeping libncurses6-6.6-1.8
+ 451 [   51s] [97/119] keeping tzdata-2026d-1.1
+ 452 [   51s] [98/119] cumulate libdwarves1-1.29-1
+ 453 [   51s] [99/119] cumulate arm-rpi4-rt-linux-kernel-devel-6.12.80-0
+ 454 [   51s] [100/119] keeping rpm-4.14.1.1-1.8
+ 455 [   51s] [101/119] cumulate arm-rpi4-linux-kernel-devel-6.12.80-0
+ 456 [   51s] [102/119] keeping libncurses-6.6-1.8
+ 457 [   51s] [103/119] keeping less-685-1.1
+ 458 [   51s] [104/119] keeping libreadline-5.2-1.7
+ 459 [   51s] [105/119] keeping libtool-2.5.4-1.8
+ 460 [   51s] [106/119] keeping build-20120927-1.1
+ 461 [   51s] [107/119] cumulate dwarves-1.29-1
+ 462 [   51s] [108/119] keeping elfutils-0.189-1.8
+ 463 [   51s] [109/119] keeping util-linux-2.41.2-1.6
+ 464 [   51s] [110/119] keeping util-linux-su-2.41.2-1.6
+ 465 [   51s] [111/119] keeping libxcrypt-devel-4.4.36-1.8
+ 466 [   51s] [112/119] keeping nss-3.109-1.1
+ 467 [   51s] [113/119] keeping llvm-22.1.8-1.6
+ 468 [   51s] [114/119] keeping glibc-devel-2.40-1.8
+ 469 [   51s] [115/119] keeping clang-22.1.8-1.6
+ 470 [   51s] [116/119] keeping libsoftokn3-3.109-1.1
+ 471 [   51s] [117/119] keeping llvm-devel-22.1.8-1.6
+ 472 [   51s] [118/119] keeping lldb-22.1.8-1.6
+ 473 [   51s] [119/119] keeping rpm-build-4.14.1.1-1.8
+ 474 [   51s] now installing cumulated packages
+ 475 [   53s] Preparing...                          ########################################
+ 476 [   53s] Updating / installing...
+ 477 [   53s] linux-tizen-modules-source-11.0.0-0   ########################################
+ 478 [   53s] arm-rpi4-rt-linux-kernel-modules-6.12.########################################
+ 479 [   53s] arm-rpi4-linux-kernel-modules-6.12.80-########################################
+ 480 [   53s] libbpf-2:1.6.2-1.1                    ########################################
+ 481 [   53s] libdwarves1-1.29-1                    ########################################
+ 482 [   53s] kmod-34.2-1.1                         ########################################
+ 483 [   53s] kmod-compat-34.2-1.1                  ########################################
+ 484 [   53s] dwarves-1.29-1                        ########################################
+ 485 [   64s] arm-rpi4-linux-kernel-devel-6.12.80-0 ########################################
+ 486 [   75s] arm-rpi4-rt-linux-kernel-devel-6.12.80########################################
+ 487 [   76s] removing nis flags from /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/etc/nsswitch.conf...
+ 491 [   76s] ----- building linux-tizen-modules.spec (user abuild)
+ 492 [   76s] -----------------------------------------------------------------
+ 493 [   76s] -----------------------------------------------------------------
+ 494 [   76s] + exec rpmbuild --define 'jobs 8' --define '_smp_mflags -j8' --define '_costomized_smp_mflags -j20' --define '_srcdefattr (-,root,root)' --nosignature --target=armv7l-tizen-linux --define '_build_create_debug 1' -ba /home/abuild/rpmbuild/SOURCES/linux-tizen-modules.spec
+ 495 [   77s] Building target platforms: armv7l-tizen-linux
+ 496 [   77s] Building for target armv7l-tizen-linux
+ 497 [   77s] Executing(%prep): /bin/sh -e /var/tmp/rpm-tmp.FlXi1J
+ 498 [   77s] + umask 022
+ 499 [   77s] + cd /home/abuild/rpmbuild/BUILD
+ 500 [   77s] + cd /home/abuild/rpmbuild/BUILD
+ 501 [   77s] + rm -rf linux-tizen-modules-11.0.0
+ 502 [   77s] + /bin/xz -dc /home/abuild/rpmbuild/SOURCES/linux-tizen-modules-11.0.0.tar.xz
+ 503 [   77s] + /bin/tar -xof -
+ 504 [   77s] + STATUS=0
+ 505 [   77s] + '[' 0 -ne 0 ']'
+ 506 [   77s] + cd linux-tizen-modules-11.0.0
+ 507 [   77s] + /bin/chmod -Rf a+rX,u+w,g-w,o-w .
+ 508 [   77s] + cp /home/abuild/rpmbuild/SOURCES/linux-tizen-modules.manifest ./linux-tizen-modules.manifest
+ 509 [   77s] + cp -a /usr/src/linux-tizen-modules-source ./kernel
+ 510 [   77s] + mkdir -p .//lib/modules
+ 511 [   77s] + find /lib/modules -type f -not -name '*.ko' -exec cp --parents '{}' . ';'
+ 512 [   77s] + exit 0
+ 513 [   77s] Executing(%build): /bin/sh -e /var/tmp/rpm-tmp.Tsnw0f
+ 514 [   77s] + umask 022
+ 515 [   77s] + cd /home/abuild/rpmbuild/BUILD
+ 516 [   77s] + CFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'
+ 517 [   77s] + export CFLAGS
+ 518 [   77s] + CXXFLAGS='-Os -ffunction-sections -fdata-sections -fstack-protector -Wno-unused-command-line-argument -Wno-error=unused-but-set-variable -Wno-error=unused-command-line-argument  -g2 -gdwarf-4 -pipe -Wall -Wp,-D_FORTIFY_SOURCE=2 -fexceptions -Wformat -Wformat-security -fmessage-length=0 -frecord-gcc-switches -march=armv7-a -mtune=cortex-a8 -mlittle-endian -mfpu=neon -mfloat-abi=softfp -mthumb -Wp,-D__SOFTFP__ -D_FILE_OFFSET_BITS=64 -g'
+ 519 [   77s] + export CXXFLAGS
+ 520 [   77s] + LDFLAGS='-Wl,-z,relro,--as-needed,-O1,--hash-style=gnu,-z,max-page-size=4096 -Wl,--gc-sections'
+ 521 [   77s] + export LDFLAGS
+ 522 [   77s] + cd linux-tizen-modules-11.0.0
+ 523 [   77s] + ref=/usr/lib/rpm
+ 524 [   77s] + mints=0
+ 525 [   77s] + case $(uname -m) in
+ 526 [   77s] ++ uname -m
+ 527 [   77s] + for s in guess sub
+ 528 [   77s] ++ find -maxdepth 8 -name config.guess
+ 529 [   77s] + for s in guess sub
+ 530 [   77s] ++ find -maxdepth 8 -name config.sub
+ 531 [   77s] + export AR=llvm-ar RANLIB=llvm-ranlib
+ 532 [   77s] + AR=llvm-ar
+ 533 [   77s] + RANLIB=llvm-ranlib
+ 534 [   77s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++
+ 535 [   77s] + CC=armv7l-tizen-linux-gnueabi-clang
+ 536 [   77s] + CXX=armv7l-tizen-linux-gnueabi-clang++
+ 537 [   77s] + export 'MAKEFLAGS+= -k'
+ 538 [   77s] + MAKEFLAGS+=' -k'
+ 539 [   77s] + export LOGGER_MAIN_BUFFER_SIZE=256
+ 540 [   77s] + LOGGER_MAIN_BUFFER_SIZE=256
+ 541 [   77s] + export LOGGER_EVENTS_BUFFER_SIZE=256
+ 542 [   77s] + LOGGER_EVENTS_BUFFER_SIZE=256
+ 543 [   77s] + export LOGGER_RADIO_BUFFER_SIZE=256
+ 544 [   77s] + LOGGER_RADIO_BUFFER_SIZE=256
+ 545 [   77s] + export LOGGER_SYSTEM_BUFFER_SIZE=256
+ 546 [   77s] + LOGGER_SYSTEM_BUFFER_SIZE=256
+ 547 [   77s] + export TIZEN_INFORM_PATH=/mnt/inform/reboot-param.bin
+ 548 [   77s] + TIZEN_INFORM_PATH=/mnt/inform/reboot-param.bin
+ 549 [   77s] + export BUILD_dm_bow=m
+ 550 [   77s] + BUILD_dm_bow=m
+ 551 [   77s] + export BUILD_extcon_usb_fixed=m
+ 552 [   77s] + BUILD_extcon_usb_fixed=m
+ 553 [   77s] + export BUILD_inform_reboot=m
+ 554 [   77s] + BUILD_inform_reboot=m
+ 555 [   77s] + export BUILD_kdbus=m
+ 556 [   77s] + BUILD_kdbus=m
+ 557 [   77s] + export BUILD_logger=m
+ 558 [   77s] + BUILD_logger=m
+ 559 [   77s] + export BUILD_proc_tsm=m
+ 560 [   77s] + BUILD_proc_tsm=m
+ 561 [   77s] + export BUILD_zlogger=m
+ 562 [   77s] + BUILD_zlogger=m
+ 563 [   77s] + export THREAD_GROUP_CPUTIME_SUPPORT=1
+ 564 [   77s] + THREAD_GROUP_CPUTIME_SUPPORT=1
+ 565 [   77s] + export LLVM=1
+ 566 [   77s] + LLVM=1
+ 567 [   77s] + find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'
+ 568 [   77s] + make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4
+ 569 [   77s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 570 [   77s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel clean
+ 571 [   77s] make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 572 [   78s] make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 573 [   78s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 574 [   78s] + make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4
+ 575 [   78s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 576 [   78s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules
+ 577 [   78s] make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 578 [   81s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.o
+ 579 [   82s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.o
+ 580 [   83s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.o
+ 581 [   83s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.o
+ 582 [   84s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.o
+ 583 [   85s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+ 584 [   85s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+ 585 [   86s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+ 586 [   86s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+ 587 [   87s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+ 588 [   88s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+ 589 [   88s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+ 590 [   89s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+ 591 [   89s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+ 592 [   90s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+ 593 [   90s] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:787:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+ 594 [   90s]   787 |                 out->set[1].caps[0] = CAP_FULL_SET.val;
+ 595 [   90s]       |                                     ~ ~~~~~~~~~~~~~^~~
+ 596 [   90s] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:789:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+ 597 [   90s]   789 |                 out->set[2].caps[0] = CAP_FULL_SET.val;
+ 598 [   90s]       |                                     ~ ~~~~~~~~~~~~~^~~
+ 599 [   90s] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.c:791:38: warning: implicit conversion from 'u64' (aka 'unsigned long long') to 'u32' (aka 'unsigned int') changes value from 2199023255551 to 4294967295 [-Wconstant-conversion]
+ 600 [   90s]   791 |                 out->set[3].caps[0] = CAP_FULL_SET.val;
+ 601 [   90s]       |                                     ~ ~~~~~~~~~~~~~^~~
+ 602 [   90s] 3 warnings generated.
+ 603 [   90s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+ 604 [   91s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+ 605 [   92s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+ 606 [   92s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+ 607 [   93s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+ 608 [   93s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+ 609 [   94s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+ 610 [   94s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+ 611 [   95s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+ 612 [   95s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o
+ 613 [   95s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.o
+ 614 [   96s] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.c:1072:13: warning: stack frame size (1080) exceeds limit (1024) in 'zlogger_dump_ioctl' [-Wframe-larger-than]
+ 615 [   96s]  1072 | static long zlogger_dump_ioctl(struct file *filp, unsigned int cmd, unsigned long arg)
+ 616 [   96s]       |             ^
+ 617 [   96s] 1 warning generated.
+ 618 [   96s]   MODPOST /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/Module.symvers
+ 619 [   97s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.mod.o
+ 620 [   97s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o
+ 621 [   97s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko
+ 622 [   97s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko
+ 623 [   98s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.mod.o
+ 624 [   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko
+ 625 [   99s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko
+ 626 [   99s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.mod.o
+ 627 [   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko
+ 628 [   99s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko
+ 629 [  100s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.mod.o
+ 630 [  101s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko
+ 631 [  101s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko
+ 632 [  101s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.mod.o
+ 633 [  102s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko
+ 634 [  102s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko
+ 635 [  103s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o
+ 636 [  103s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko
+ 637 [  103s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko
+ 638 [  104s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.mod.o
+ 639 [  105s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko
+ 640 [  105s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko
+ 641 [  105s] make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 642 [  105s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 643 [  105s] + make -C kernel modules_install KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4 INSTALL_MOD_STRIP=1 INSTALL_MOD_DIR=extra
+ 644 [  105s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 645 [  105s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/../ modules_install
+ 646 [  105s] make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 647 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+ 648 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+ 649 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+ 650 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+ 651 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+ 652 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+ 653 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+ 654 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+ 655 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+ 656 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+ 657 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+ 658 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+ 659 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+ 660 [  106s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+ 661 [  106s]   DEPMOD  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l
+ 662 [  106s] make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+ 663 [  106s] make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 664 [  106s] + make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4-rt
+ 665 [  106s] make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+ 765 [  133s] + cd /home/abuild/rpmbuild/BUILD
+ 766 [  133s] + /bin/rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm
+ 767 [  134s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm
+ 768 [  134s] + cd linux-tizen-modules-11.0.0
+ 769 [  134s] + export AR=llvm-ar RANLIB=llvm-ranlib
+ 770 [  134s] + AR=llvm-ar
+ 771 [  134s] + RANLIB=llvm-ranlib
+ 772 [  134s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++
+ 773 [  134s] + CC=armv7l-tizen-linux-gnueabi-clang
+ 774 [  134s] + CXX=armv7l-tizen-linux-gnueabi-clang++
+ 775 [  134s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules
+ 776 [  134s] + cd lib/modules
+ 777 [  134s] + find -name '*.ko' -exec cp -a --parents '{}' /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules/ ';'
+ 778 [  134s] + cd -
+ 779 [  134s] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0
+ 780 [  134s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules/modprobe.d
+ 781 [  134s] + install -m 644 conf/tizen-modprobe-rpi4.conf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules/modprobe.d
+ 782 [  134s] + mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules/modules-load.d
+ 783 [  134s] + install -m 644 conf/tizen-modules-rpi4.conf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm//lib/modules/modules-load.d
+ 784 [  134s] + /usr/lib/rpm/find-debuginfo.sh -j8 --build-id-seed 11.0.0-0 --unique-debug-src-base linux-tizen-modules-11.0.0-0.arm -S debugsourcefiles.list /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0
+ 785 [  135s] + cp /usr/lib/rpm/debug.manifest /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/linux-tizen-modules-debuginfo.manifest
+ 786 [  135s] + cp /usr/lib/rpm/debug.manifest /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/linux-tizen-modules-debugsource.manifest
+ 787 [  135s] + /usr/lib/rpm/check-buildroot
+ 788 [  135s] + /usr/lib/rpm//brp-compress
+ 789 [  135s] + /usr/lib/rpm/brp-strip-static-archive /bin/strip
+ 790 [  136s] + /usr/lib/rpm/brp-python-hardlink
+ 807 [  137s] Processing files: linux-tizen-modules-debugsource-11.0.0-0.armv7l
+ 808 [  137s] warning: Empty %files file /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/debugsourcefiles.list
+ 809 [  137s] Aptk: PG1hbmlmZXN0PgogPHJlcXVlc3Q+CiAgICA8ZG9tYWluIG5hbWU9Il8iLz4KIDwv
+ 810 [  137s] cmVxdWVzdD4KPC9tYW5pZmVzdD4K
+ 811 [  137s] 
+ 812 [  137s] Processing files: linux-tizen-modules-rpi4-11.0.0-0.armv7l
+ 813 [  137s] Aptk: PG1hbmlmZXN0PgoJPHJlcXVlc3Q+CgkJPGRvbWFpbiBuYW1lPSJfIiAvPgoJPC9y
+ 814 [  137s] ZXF1ZXN0Pgo8L21hbmlmZXN0Pgo=
+ 815 [  137s] 
+ 816 [  137s] Executing(%license): /bin/sh -e /var/tmp/rpm-tmp.Mk6VIE
+ 817 [  137s] + umask 022
+ 818 [  137s] + cd /home/abuild/rpmbuild/BUILD
+ 819 [  137s] + cd linux-tizen-modules-11.0.0
+ 820 [  137s] + LICENSEDIR=/home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-rpi4
+ 821 [  137s] + export LC_ALL=C
+ 822 [  137s] + LC_ALL=C
+ 823 [  137s] + export LICENSEDIR
+ 824 [  137s] + /bin/mkdir -p /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-rpi4
+ 825 [  137s] + cp -pr COPYING /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm/usr/share/licenses/linux-tizen-modules-rpi4
+ 826 [  138s] + exit 0
+ 827 [  138s] Provides: linux-tizen-modules-rpi4 = 11.0.0-0 linux-tizen-modules-rpi4(armv7l-32) = 11.0.0-0 stability-monitor-kernel-module
+ 828 [  138s] Requires(interp): /bin/sh
+ 829 [  138s] Requires(rpmlib): rpmlib(CompressedFileNames) <= 3.0.4-1 rpmlib(FileDigests) <= 4.6.0-1 rpmlib(PayloadFilesHavePrefix) <= 4.0-1
+ 830 [  138s] Requires(post): /bin/sh /bin/sh /usr/bin/find kmod-compat
+ 831 [  138s] Processing files: linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l
+ 832 [  138s] Aptk: PG1hbmlmZXN0PgoJPHJlcXVlc3Q+CgkJPGRvbWFpbiBuYW1lPSJfIiAvPgoJPC9y
+ 833 [  138s] ZXF1ZXN0Pgo8L21hbmlmZXN0Pgo=
+ 850 [  138s] Checking for unpackaged file(s): /usr/lib/rpm/check-files /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm
+ 851 [  138s] Wrote: /home/abuild/rpmbuild/SRPMS/linux-tizen-modules-11.0.0-0.src.rpm
+ 852 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-debugsource-11.0.0-0.armv7l.rpm
+ 853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+ 854 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-rt-11.0.0-0.armv7l.rpm
+ 855 [  138s] Executing(%clean): /bin/sh -e /var/tmp/rpm-tmp.SetwQy
+ 856 [  138s] + umask 022
+ 857 [  138s] + cd /home/abuild/rpmbuild/BUILD
+ 858 [  138s] + /bin/rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm
+ 859 [  138s] + cd linux-tizen-modules-11.0.0
+ 860 [  138s] + rm -rf /home/abuild/rpmbuild/BUILDROOT/linux-tizen-modules-11.0.0-0.arm
+ 861 [  138s] + rm -rf /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/lib
+ 862 [  138s] + exit 0
+ 863 [  138s] ... checking for files with abuild user/group
+ 864 [  138s] ... creating baselibs
+ 865 [  139s] no targets for arch armv7l, nothing to do
+ 866 [  139s] 
+ 867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.

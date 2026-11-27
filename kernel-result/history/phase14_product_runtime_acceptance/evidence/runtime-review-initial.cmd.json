@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/review_runtime.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase14_product_runtime_acceptance",
+  "started_utc": "2026-11-27T09:47:56.519894+00:00",
+  "elapsed_seconds": 0.408,
+  "exit_status": 1
+}

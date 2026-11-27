@@ -1,0 +1,790 @@
+{
+  "boot": {
+    "profile": "tizen-boot-armv7l-rpi",
+    "index": "evidence/repository/boot-image-profile.out",
+    "checksum_evidence": "evidence/repository/boot-SHA256SUMS.out",
+    "published_inputs": {
+      "manifest": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/manifest.json",
+        "path": "evidence/repository/boot-manifest.out",
+        "sha256": "045daa954acb56a09d8c735ff32138f865bd52d0bb2af403d4b7a053c5b64c5f",
+        "published_sha256": "045daa954acb56a09d8c735ff32138f865bd52d0bb2af403d4b7a053c5b64c5f",
+        "checksum_result": "PASS"
+      },
+      "packages": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.packages",
+        "path": "evidence/repository/boot-packages.out",
+        "sha256": "332a9cf4f5b9d614bb74ef293873d8b3b577a0f56e92e263059c6cf1fb9eb9e9",
+        "published_sha256": "332a9cf4f5b9d614bb74ef293873d8b3b577a0f56e92e263059c6cf1fb9eb9e9",
+        "checksum_result": "PASS"
+      },
+      "ks": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.ks",
+        "path": "evidence/repository/boot-ks.out",
+        "sha256": "cc084d33c2bceb223f4e20b7719effe412b7db46fdee87022c415266cc26fd7e",
+        "published_sha256": "cc084d33c2bceb223f4e20b7719effe412b7db46fdee87022c415266cc26fd7e",
+        "checksum_result": "PASS"
+      },
+      "log": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.log",
+        "path": "evidence/repository/boot-log.out",
+        "sha256": "c2704f3cbf60562178b810510262e4904bfd9f65562531e9431b447837aed60b",
+        "published_sha256": null,
+        "checksum_result": "NOT_PUBLISHED"
+      }
+    },
+    "partitions": {
+      "/boot": "boot",
+      "/hal": "hal",
+      "/lib/modules": "modules"
+    },
+    "target_package_lines": [
+      {
+        "line": 7,
+        "text": "arm-rpi4-linux-kernel-modules.armv7l 6.12.80-0 platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755"
+      },
+      {
+        "line": 8,
+        "text": "arm-rpi4-linux-kernel.armv7l 6.12.80-0 platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755"
+      },
+      {
+        "line": 139,
+        "text": "linux-tizen-modules-rpi4.armv7l 11.0.0-0 platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+      }
+    ],
+    "boot_archive_verification": {
+      "archive": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+        "path": "evidence/repository/images/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+        "sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+        "published_sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+        "checksum_result": "PASS",
+        "members_evidence": "evidence/repository/boot-archive-members.out"
+      },
+      "partition_images": {
+        "boot.img": {
+          "path": "evidence/repository/images/boot.img",
+          "sha256": "fe5c1ab0e2c21a769c884e8a0fa9a1325f48cd2970b1fcb4cb67d14d12c44021"
+        },
+        "modules.img": {
+          "path": "evidence/repository/images/modules.img",
+          "sha256": "e797eda86ab033c86d4aca7c2eccbf72e4e7662b332bca85f50f7dec82516d08"
+        }
+      },
+      "kernel": {
+        "rpm_name": "arm-rpi4-linux-kernel",
+        "rpm_file": "/boot/zImage",
+        "rpm_file_sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+        "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel.out",
+        "image_file": "::/zImage",
+        "extracted_path": "evidence/repository/images/published-zImage",
+        "image_file_sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+        "local_tool_source": {
+          "path": "evidence/repository/images/mtools_4.0.43-1build1_amd64.deb",
+          "sha256": "deb50411c17b001c2400dd8a0146f39d12070a2fe5e92d734b1c6d0e73119262"
+        },
+        "tool_exit_status": 0,
+        "comparison": "EXACT_SHA256"
+      },
+      "modules": {
+        "total": 59,
+        "exact_sha256": 59,
+        "files": [
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+            "image_file_sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+            "image_extracted_evidence": "evidence/repository/image-module-001.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+            "image_file_sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+            "image_extracted_evidence": "evidence/repository/image-module-002.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+            "image_file_sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+            "image_extracted_evidence": "evidence/repository/image-module-003.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+            "image_file_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+            "image_extracted_evidence": "evidence/repository/image-module-004.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+            "image_file_sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+            "image_extracted_evidence": "evidence/repository/image-module-005.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+            "image_file_sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+            "image_extracted_evidence": "evidence/repository/image-module-006.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "linux-tizen-modules-rpi4",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-linux-tizen-modules-rpi4.out",
+            "rpm_sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+            "image_path": "/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+            "image_file_sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+            "image_extracted_evidence": "evidence/repository/image-module-007.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "5a5e93ac293eb21277cee224bde6dfa4605e2ae0041912aeb178aa9caaf117be",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+            "image_file_sha256": "5a5e93ac293eb21277cee224bde6dfa4605e2ae0041912aeb178aa9caaf117be",
+            "image_extracted_evidence": "evidence/repository/image-module-008.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "baa53d39561863194e8fdfbbfd77a180dcbccd56bbf0a2cd9d6af349a16963a2",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+            "image_file_sha256": "baa53d39561863194e8fdfbbfd77a180dcbccd56bbf0a2cd9d6af349a16963a2",
+            "image_extracted_evidence": "evidence/repository/image-module-009.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "e820d3a7a8ff6af786eb1847facfef4cf1ef823bddcb78cedc6061569705bf51",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+            "image_file_sha256": "e820d3a7a8ff6af786eb1847facfef4cf1ef823bddcb78cedc6061569705bf51",
+            "image_extracted_evidence": "evidence/repository/image-module-010.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "4584112391daf868c145e45b5c5183afc00fbd1e910981e0ce7754124f2548bf",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+            "image_file_sha256": "4584112391daf868c145e45b5c5183afc00fbd1e910981e0ce7754124f2548bf",
+            "image_extracted_evidence": "evidence/repository/image-module-011.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "96f414fd1d71eb07b6fbdc9fc51e251698db0b9259f80815264f5ded350021c2",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+            "image_file_sha256": "96f414fd1d71eb07b6fbdc9fc51e251698db0b9259f80815264f5ded350021c2",
+            "image_extracted_evidence": "evidence/repository/image-module-012.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "ae7c83b2c0c55a9597e2314d062b14622eb810eebbfb91f4856762444ffaef8e",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+            "image_file_sha256": "ae7c83b2c0c55a9597e2314d062b14622eb810eebbfb91f4856762444ffaef8e",
+            "image_extracted_evidence": "evidence/repository/image-module-013.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "98072f063d5288b6e6e932f6c143a4ad0fb5ad69d30415013eb8f74b5619794c",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+            "image_file_sha256": "98072f063d5288b6e6e932f6c143a4ad0fb5ad69d30415013eb8f74b5619794c",
+            "image_extracted_evidence": "evidence/repository/image-module-014.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "701c396bec44f7d92f2709cee6a43039a2928a9dd84136debdab13f63a96ed29",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+            "image_file_sha256": "701c396bec44f7d92f2709cee6a43039a2928a9dd84136debdab13f63a96ed29",
+            "image_extracted_evidence": "evidence/repository/image-module-015.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "1d9e3158adbd179a788398259d24ea1da1e5120b0bacab8235d673148920cbd5",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+            "image_file_sha256": "1d9e3158adbd179a788398259d24ea1da1e5120b0bacab8235d673148920cbd5",
+            "image_extracted_evidence": "evidence/repository/image-module-016.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "42fb792f7b6f45d65ecdd8de5db071f3d9c3b5773e1c454a5e5ba5e938f0c875",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+            "image_file_sha256": "42fb792f7b6f45d65ecdd8de5db071f3d9c3b5773e1c454a5e5ba5e938f0c875",
+            "image_extracted_evidence": "evidence/repository/image-module-017.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "62bee49719977cc656116112ea8ab94d6ffc25b4048f5ac3292bd02032e0804b",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+            "image_file_sha256": "62bee49719977cc656116112ea8ab94d6ffc25b4048f5ac3292bd02032e0804b",
+            "image_extracted_evidence": "evidence/repository/image-module-018.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "afe2c6e3587f9967090f04973f731f022ce318b36c175c567e8240a04d34eccb",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+            "image_file_sha256": "afe2c6e3587f9967090f04973f731f022ce318b36c175c567e8240a04d34eccb",
+            "image_extracted_evidence": "evidence/repository/image-module-019.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "1f4293cfba6b81f661a276b12a53158e97a49832a25203852b52beaf228a3ce4",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+            "image_file_sha256": "1f4293cfba6b81f661a276b12a53158e97a49832a25203852b52beaf228a3ce4",
+            "image_extracted_evidence": "evidence/repository/image-module-020.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "40c082b3cb354d7f0c4b51a3eacdf43c8bd74d89e8e9f4f31c0240f28b8e2afd",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+            "image_file_sha256": "40c082b3cb354d7f0c4b51a3eacdf43c8bd74d89e8e9f4f31c0240f28b8e2afd",
+            "image_extracted_evidence": "evidence/repository/image-module-021.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "23f0398db5bdcf71bada6f252245b90768f7b9ea89b078b25dde7c9cc9bbcb36",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+            "image_file_sha256": "23f0398db5bdcf71bada6f252245b90768f7b9ea89b078b25dde7c9cc9bbcb36",
+            "image_extracted_evidence": "evidence/repository/image-module-022.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "bb27742773dd0f028918d488c4a28a961b47554271f0960a82bf6aa963191c9f",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+            "image_file_sha256": "bb27742773dd0f028918d488c4a28a961b47554271f0960a82bf6aa963191c9f",
+            "image_extracted_evidence": "evidence/repository/image-module-023.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "bc6673c7bef8802ec6d05df3d93cb46ed2b6c2e4a1a230b6c25bd3270d7bef6f",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+            "image_file_sha256": "bc6673c7bef8802ec6d05df3d93cb46ed2b6c2e4a1a230b6c25bd3270d7bef6f",
+            "image_extracted_evidence": "evidence/repository/image-module-024.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "b16857d0d1bd0d871d971868f05e86bea771b0387287a36b2d5affcebd1199fa",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+            "image_file_sha256": "b16857d0d1bd0d871d971868f05e86bea771b0387287a36b2d5affcebd1199fa",
+            "image_extracted_evidence": "evidence/repository/image-module-025.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "0be1273aa4fed72db838cb2bbd30c0571211c2d32e28798a7f4175f8c052c2e3",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+            "image_file_sha256": "0be1273aa4fed72db838cb2bbd30c0571211c2d32e28798a7f4175f8c052c2e3",
+            "image_extracted_evidence": "evidence/repository/image-module-026.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "058ef98a700e5154c47f18c7e1327e4af4c0e28a11cf89a11ee7b26845c3dece",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+            "image_file_sha256": "058ef98a700e5154c47f18c7e1327e4af4c0e28a11cf89a11ee7b26845c3dece",
+            "image_extracted_evidence": "evidence/repository/image-module-027.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "4b5c916ebcec6416e21493e6b99764f5a1982e73c97a9adcb3d247e276c3d174",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+            "image_file_sha256": "4b5c916ebcec6416e21493e6b99764f5a1982e73c97a9adcb3d247e276c3d174",
+            "image_extracted_evidence": "evidence/repository/image-module-028.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "22fcc5d39addb605441887d9349615bda6571cc52c8bac8e8b3f730bc3558b10",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+            "image_file_sha256": "22fcc5d39addb605441887d9349615bda6571cc52c8bac8e8b3f730bc3558b10",
+            "image_extracted_evidence": "evidence/repository/image-module-029.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "8cc3fa0d0d1cdaf8014fd207e9dec91a1ad46ade1d1dcf6e6b3adaef76b9c665",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+            "image_file_sha256": "8cc3fa0d0d1cdaf8014fd207e9dec91a1ad46ade1d1dcf6e6b3adaef76b9c665",
+            "image_extracted_evidence": "evidence/repository/image-module-030.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "5ee4c7bfface2b560471497951e63e85e54ae5570421d9b37654818a09a20eef",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+            "image_file_sha256": "5ee4c7bfface2b560471497951e63e85e54ae5570421d9b37654818a09a20eef",
+            "image_extracted_evidence": "evidence/repository/image-module-031.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "44f00fa39166571a9fbc377df6acf8047ec0d3c082e17dab7f7ca573f222ec34",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+            "image_file_sha256": "44f00fa39166571a9fbc377df6acf8047ec0d3c082e17dab7f7ca573f222ec34",
+            "image_extracted_evidence": "evidence/repository/image-module-032.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "ec4fa02e8abd77db533ad55e0d06448905f763a39f564b378eae25eca944b366",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+            "image_file_sha256": "ec4fa02e8abd77db533ad55e0d06448905f763a39f564b378eae25eca944b366",
+            "image_extracted_evidence": "evidence/repository/image-module-033.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "798f9e503c3e53a846306c4f0c2e6aadd4d13a9413ad63f0ee1861b29ceb7b56",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+            "image_file_sha256": "798f9e503c3e53a846306c4f0c2e6aadd4d13a9413ad63f0ee1861b29ceb7b56",
+            "image_extracted_evidence": "evidence/repository/image-module-034.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "f2d72b9a33bb343c59a7bac12b7ef27bb1302fb8e674f22be055321a750fb6b8",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+            "image_file_sha256": "f2d72b9a33bb343c59a7bac12b7ef27bb1302fb8e674f22be055321a750fb6b8",
+            "image_extracted_evidence": "evidence/repository/image-module-035.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "332d2ab2dab979beb9ca55f2dc4b283ed7a226301c65ab1d62055cece4b23896",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+            "image_file_sha256": "332d2ab2dab979beb9ca55f2dc4b283ed7a226301c65ab1d62055cece4b23896",
+            "image_extracted_evidence": "evidence/repository/image-module-036.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "1cf49f3b86dd2749784521fc91ea318584e5b71ef09697666684bc4e15f7f101",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+            "image_file_sha256": "1cf49f3b86dd2749784521fc91ea318584e5b71ef09697666684bc4e15f7f101",
+            "image_extracted_evidence": "evidence/repository/image-module-037.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "f4bb316e9f3996999c72bc4c1665d0e04c61356d24f84eadb4320e4c9693dbab",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+            "image_file_sha256": "f4bb316e9f3996999c72bc4c1665d0e04c61356d24f84eadb4320e4c9693dbab",
+            "image_extracted_evidence": "evidence/repository/image-module-038.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "a3551d41e7e2e67f04b37c547491e0234f5575db9c75c93aaf0a3b21da335df4",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+            "image_file_sha256": "a3551d41e7e2e67f04b37c547491e0234f5575db9c75c93aaf0a3b21da335df4",
+            "image_extracted_evidence": "evidence/repository/image-module-039.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "d15e272aeded450c62162231e127920e3d5bb58ed7672bdc451c06f0914a2347",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+            "image_file_sha256": "d15e272aeded450c62162231e127920e3d5bb58ed7672bdc451c06f0914a2347",
+            "image_extracted_evidence": "evidence/repository/image-module-040.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "558453c610321bd437918c396a41cafbd4b26aae05348b7852d0a3ec7ed1e0b9",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+            "image_file_sha256": "558453c610321bd437918c396a41cafbd4b26aae05348b7852d0a3ec7ed1e0b9",
+            "image_extracted_evidence": "evidence/repository/image-module-041.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "80ac14e6427d98e6b06f9c2817e1df5a1d7b3e784987580e3ba78aecda0111e7",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+            "image_file_sha256": "80ac14e6427d98e6b06f9c2817e1df5a1d7b3e784987580e3ba78aecda0111e7",
+            "image_extracted_evidence": "evidence/repository/image-module-042.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "d7cafdcb06a4877d6c86c4f544a4f07181c695865beffbd748b8c2cde22d1cd9",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+            "image_file_sha256": "d7cafdcb06a4877d6c86c4f544a4f07181c695865beffbd748b8c2cde22d1cd9",
+            "image_extracted_evidence": "evidence/repository/image-module-043.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "76c1c5d866410d846328ddf2ef587075393ec02533de29a1bef41c23848d4a88",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+            "image_file_sha256": "76c1c5d866410d846328ddf2ef587075393ec02533de29a1bef41c23848d4a88",
+            "image_extracted_evidence": "evidence/repository/image-module-044.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "2e553cf2262b37a560594580b5fc049a0e974da18883d235752cb8f797827ca5",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+            "image_file_sha256": "2e553cf2262b37a560594580b5fc049a0e974da18883d235752cb8f797827ca5",
+            "image_extracted_evidence": "evidence/repository/image-module-045.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "6ac7f824421755bd4dd54c5c27618393ac385ab59a9c157b60a18b8a9ee98846",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+            "image_file_sha256": "6ac7f824421755bd4dd54c5c27618393ac385ab59a9c157b60a18b8a9ee98846",
+            "image_extracted_evidence": "evidence/repository/image-module-046.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "3e0b22e36f6f46dcc65a0fc89489ae47eb57a932ab8fb05724e7c88b71b0f6a0",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+            "image_file_sha256": "3e0b22e36f6f46dcc65a0fc89489ae47eb57a932ab8fb05724e7c88b71b0f6a0",
+            "image_extracted_evidence": "evidence/repository/image-module-047.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "b407d003ff2969aee65fdb56ce667a5454414959d387c81eb3ea42e8fc9c3614",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+            "image_file_sha256": "b407d003ff2969aee65fdb56ce667a5454414959d387c81eb3ea42e8fc9c3614",
+            "image_extracted_evidence": "evidence/repository/image-module-048.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "dd8c2460134aca89f0b319ab07787f84865a0d0f7ab9d87d3385185b5d5bd900",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+            "image_file_sha256": "dd8c2460134aca89f0b319ab07787f84865a0d0f7ab9d87d3385185b5d5bd900",
+            "image_extracted_evidence": "evidence/repository/image-module-049.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "674105edc2c4adc6d4dc8676d94602e305dc07f997baa9a8d4f6bcce17b12897",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+            "image_file_sha256": "674105edc2c4adc6d4dc8676d94602e305dc07f997baa9a8d4f6bcce17b12897",
+            "image_extracted_evidence": "evidence/repository/image-module-050.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "98c0ca29ea1d69a9e9fdd667cdf1cf014134fc68a17c95b03e0104f8145c6eac",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+            "image_file_sha256": "98c0ca29ea1d69a9e9fdd667cdf1cf014134fc68a17c95b03e0104f8145c6eac",
+            "image_extracted_evidence": "evidence/repository/image-module-051.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "cb86dd09b54d71868c510a96131f94f74c75d2de3069b0863b670ae1f3923bd2",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+            "image_file_sha256": "cb86dd09b54d71868c510a96131f94f74c75d2de3069b0863b670ae1f3923bd2",
+            "image_extracted_evidence": "evidence/repository/image-module-052.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "8eae4b7ff52cbb8f23ff94626a62456937664cb66611a482dd8bf7a9770366f6",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+            "image_file_sha256": "8eae4b7ff52cbb8f23ff94626a62456937664cb66611a482dd8bf7a9770366f6",
+            "image_extracted_evidence": "evidence/repository/image-module-053.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "82d786741c95a522d4e7c30aad4d2dd2db0308a8f5a8910f48ae2dc51f38017f",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+            "image_file_sha256": "82d786741c95a522d4e7c30aad4d2dd2db0308a8f5a8910f48ae2dc51f38017f",
+            "image_extracted_evidence": "evidence/repository/image-module-054.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "dfc5b9ea22d35e9094dbbd8bc74ead4af35da71634c9c0f12c470d2f303688d1",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+            "image_file_sha256": "dfc5b9ea22d35e9094dbbd8bc74ead4af35da71634c9c0f12c470d2f303688d1",
+            "image_extracted_evidence": "evidence/repository/image-module-055.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "69ad3bf64eabacf02d811f11a4435dbc8f8dd126ea4bfc2c11510ffa09f774fc",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+            "image_file_sha256": "69ad3bf64eabacf02d811f11a4435dbc8f8dd126ea4bfc2c11510ffa09f774fc",
+            "image_extracted_evidence": "evidence/repository/image-module-056.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "a5eceb5ab037e6b25152101f91a3a65be8ddd94e3260f005a48440a9dafcf015",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+            "image_file_sha256": "a5eceb5ab037e6b25152101f91a3a65be8ddd94e3260f005a48440a9dafcf015",
+            "image_extracted_evidence": "evidence/repository/image-module-057.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "10704e51e1f0fcc62eb2cd9209f286d173923218691869ae56de74e379e03cbf",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+            "image_file_sha256": "10704e51e1f0fcc62eb2cd9209f286d173923218691869ae56de74e379e03cbf",
+            "image_extracted_evidence": "evidence/repository/image-module-058.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          },
+          {
+            "rpm_name": "arm-rpi4-linux-kernel-modules",
+            "rpm_path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko",
+            "rpm_digest_evidence": "evidence/repository/image-rpm-payload-arm-rpi4-linux-kernel-modules.out",
+            "rpm_sha256": "c9d9aa4bb04500bf048b3449021db97e3bb2023ee95566971cca595a182f857f",
+            "image_path": "/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko",
+            "image_file_sha256": "c9d9aa4bb04500bf048b3449021db97e3bb2023ee95566971cca595a182f857f",
+            "image_extracted_evidence": "evidence/repository/image-module-059.out",
+            "exit_status": 0,
+            "comparison": "EXACT_SHA256"
+          }
+        ]
+      }
+    }
+  },
+  "headed": {
+    "profile": "tizen-headed-armv7l",
+    "index": "evidence/repository/headed-image-profile.out",
+    "checksum_evidence": "evidence/repository/headed-SHA256SUMS.out",
+    "published_inputs": {
+      "manifest": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-headed-armv7l/manifest.json",
+        "path": "evidence/repository/headed-manifest.out",
+        "sha256": "4d02a0276a9e62399ddc99bb1e6659396bf02818411787fb94bef9c14ad93470",
+        "published_sha256": "4d02a0276a9e62399ddc99bb1e6659396bf02818411787fb94bef9c14ad93470",
+        "checksum_result": "PASS"
+      },
+      "packages": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-headed-armv7l/tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l.packages",
+        "path": "evidence/repository/headed-packages.out",
+        "sha256": "ed61c514074124f261140700e1376a3db9cbfe6fa2afe5309e6679994fd1e67b",
+        "published_sha256": "ed61c514074124f261140700e1376a3db9cbfe6fa2afe5309e6679994fd1e67b",
+        "checksum_result": "PASS"
+      },
+      "ks": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-headed-armv7l/tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l.ks",
+        "path": "evidence/repository/headed-ks.out",
+        "sha256": "d6cd049639930a2ca3fcbebad56f753ed10dfbaea72bfac8cb63416f4ef814d2",
+        "published_sha256": "d6cd049639930a2ca3fcbebad56f753ed10dfbaea72bfac8cb63416f4ef814d2",
+        "checksum_result": "PASS"
+      },
+      "log": {
+        "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-headed-armv7l/tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l.log",
+        "path": "evidence/repository/headed-log.out",
+        "sha256": "3f55fa8d517ae56ff4770dec5cfd619d4509d3b743ad5287464828d52e18afd2",
+        "published_sha256": null,
+        "checksum_result": "NOT_PUBLISHED"
+      }
+    },
+    "partitions": {
+      "/": "rootfs",
+      "/mnt/initrd": "ramdisk",
+      "/mnt/initrd-recovery": "ramdisk-recovery",
+      "/opt": "system-data",
+      "/opt/usr": "user"
+    },
+    "target_package_lines": []
+  },
+  "limitation": "The published profile and filesystem image are host evidence. This comparison does not read the device boot volume or prove on-device RPM database ownership."
+}

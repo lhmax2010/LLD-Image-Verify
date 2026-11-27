@@ -1,0 +1,9 @@
+# Top object-build make includes the exact external Makefile copied to scratch.
+include $(REPRO_DIR)/fixtures/trace.mk
+.DEFAULT_GOAL := object_descend
+$(call trace_ld,build_before_include)
+include $(M)/Makefile
+$(call trace_ld,build_after_include)
+.PHONY: object_descend
+object_descend:
+	+$(MAKE) -f $(REPRO_DIR)/fixtures/Makefile.kdbus M="$(M)" composite

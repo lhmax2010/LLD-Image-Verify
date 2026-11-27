@@ -1,0 +1,517 @@
+{
+  "cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "host_allowed_cpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "seed": 20261127,
+  "blocks": 48,
+  "warmup": [
+    {
+      "mode": "bfd",
+      "n": 1,
+      "wall_ms": 8.716159,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "bfd",
+      "n": 2,
+      "wall_ms": 5.37749,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "bfd",
+      "n": 3,
+      "wall_ms": 5.537582,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "bfd",
+      "n": 4,
+      "wall_ms": 8.020635,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "bfd",
+      "n": 5,
+      "wall_ms": 5.620235,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "bfd",
+      "n": 6,
+      "wall_ms": 5.535693,
+      "output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a"
+    },
+    {
+      "mode": "lld-default",
+      "n": 1,
+      "wall_ms": 14.185642,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-default",
+      "n": 2,
+      "wall_ms": 9.948283,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-default",
+      "n": 3,
+      "wall_ms": 15.458767,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-default",
+      "n": 4,
+      "wall_ms": 12.130793,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-default",
+      "n": 5,
+      "wall_ms": 10.959709,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-default",
+      "n": 6,
+      "wall_ms": 10.668589,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 1,
+      "wall_ms": 12.59138,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 2,
+      "wall_ms": 13.519606,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 3,
+      "wall_ms": 10.681775,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 4,
+      "wall_ms": 11.666151,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 5,
+      "wall_ms": 11.395691,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-1",
+      "n": 6,
+      "wall_ms": 12.808043,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 1,
+      "wall_ms": 11.524309,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 2,
+      "wall_ms": 13.022939,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 3,
+      "wall_ms": 12.609575,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 4,
+      "wall_ms": 14.487935,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 5,
+      "wall_ms": 14.501758,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-2",
+      "n": 6,
+      "wall_ms": 12.548781,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 1,
+      "wall_ms": 14.157211,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 2,
+      "wall_ms": 13.622063,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 3,
+      "wall_ms": 11.16778,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 4,
+      "wall_ms": 13.536377,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 5,
+      "wall_ms": 10.236556,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-4",
+      "n": 6,
+      "wall_ms": 12.309475,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 1,
+      "wall_ms": 11.532929,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 2,
+      "wall_ms": 11.221706,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 3,
+      "wall_ms": 9.920206,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 4,
+      "wall_ms": 11.055091,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 5,
+      "wall_ms": 10.961646,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    },
+    {
+      "mode": "lld-8",
+      "n": 6,
+      "wall_ms": 12.225985,
+      "output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+    }
+  ],
+  "mode_details": {
+    "bfd": {
+      "argv": [
+        "ld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+      ],
+      "executable": "/emul/usr/bin/ld",
+      "executable_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece",
+      "requested_threads": null,
+      "observed_worker_creations": 0,
+      "expected_output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+      "output_bytes": 2505192,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/bfd.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld",
+        "/emul/usr/bin/ld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+      ]
+    },
+    "lld-default": {
+      "argv": [
+        "ld.lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+      ],
+      "executable": "/emul/usr/bin/lld",
+      "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "requested_threads": null,
+      "observed_worker_creations": 8,
+      "expected_output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+      "output_bytes": 1998564,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/lld-default.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld.lld",
+        "/emul/usr/bin/lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+      ]
+    },
+    "lld-1": {
+      "argv": [
+        "ld.lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=1"
+      ],
+      "executable": "/emul/usr/bin/lld",
+      "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "requested_threads": 1,
+      "observed_worker_creations": 0,
+      "expected_output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+      "output_bytes": 1998564,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/lld-1.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld.lld",
+        "/emul/usr/bin/lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=1"
+      ]
+    },
+    "lld-2": {
+      "argv": [
+        "ld.lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=2"
+      ],
+      "executable": "/emul/usr/bin/lld",
+      "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "requested_threads": 2,
+      "observed_worker_creations": 2,
+      "expected_output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+      "output_bytes": 1998564,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/lld-2.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld.lld",
+        "/emul/usr/bin/lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=2"
+      ]
+    },
+    "lld-4": {
+      "argv": [
+        "ld.lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=4"
+      ],
+      "executable": "/emul/usr/bin/lld",
+      "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "requested_threads": 4,
+      "observed_worker_creations": 4,
+      "expected_output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+      "output_bytes": 1998564,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/lld-4.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld.lld",
+        "/emul/usr/bin/lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=4"
+      ]
+    },
+    "lld-8": {
+      "argv": [
+        "ld.lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=8"
+      ],
+      "executable": "/emul/usr/bin/lld",
+      "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "requested_threads": 8,
+      "observed_worker_creations": 8,
+      "expected_output_sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+      "output_bytes": 1998564,
+      "diagnostic_trace_argv": [
+        "/usr/bin/strace",
+        "-f",
+        "-qq",
+        "-e",
+        "trace=clone,clone3",
+        "-o",
+        "/phase/evidence/threads/lld-8.thread-creation.strace",
+        "/usr/bin/bash",
+        "-c",
+        "exec -a \"$1\" \"$2\" \"${@:3}\"",
+        "bash",
+        "ld.lld",
+        "/emul/usr/bin/lld",
+        "-EL",
+        "-z",
+        "noexecstack",
+        "-r",
+        "-o",
+        "/phase/evidence/threads/timed-output.o",
+        "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "--threads=8"
+      ]
+    }
+  },
+  "diagnostic_trace_files": {
+    "bfd": "bfd.thread-creation.strace",
+    "lld-default": "lld-default.thread-creation.strace",
+    "lld-1": "lld-1.thread-creation.strace",
+    "lld-2": "lld-2.thread-creation.strace",
+    "lld-4": "lld-4.thread-creation.strace",
+    "lld-8": "lld-8.thread-creation.strace"
+  },
+  "timer_sha256": "38e0a10c4772a1027dbccab283f14027f344c5d778710f8bca4eb9a423b6f393",
+  "block_design": "Each of six modes is run once per block. Each mode occupies each order position equally.",
+  "confidence_method": "Pointwise 95% percentile bootstrap of block-paired ratios of medians, 4000 resamples.",
+  "axis": "Percent improvement = (comparator - candidate) / comparator. Negative means regression.",
+  "scope": "New equal-affinity test. Tracing, frequency reads, file stat and SHA256 occur outside native timer."
+}

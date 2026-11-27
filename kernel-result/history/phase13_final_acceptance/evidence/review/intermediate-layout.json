@@ -1,0 +1,175 @@
+{
+  "status": "PASS_EXACT_FILE_DELTA",
+  "sha256": {
+    "bfd": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+    "lld": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99"
+  },
+  "total_bytes": {
+    "bfd": 2505192,
+    "lld": 1998564,
+    "delta": -506628
+  },
+  "file_delta_by_category": {
+    "ELF_HEADER": 0,
+    "SECTION": -622,
+    "NOBITS": 0,
+    "OTHER_DEBUG_SECTION": 0,
+    "DEBUG_MERGEABLE_STRINGS": -506147,
+    "RELOCATION_TABLE": 0,
+    "DEBUG_RELOCATION_TABLE": 0,
+    "SYMBOL_AND_NAME_TABLES": 118,
+    "SECTION_HEADERS": 0,
+    "ALIGNMENT_PADDING": 24,
+    "OTHER_LAYOUT_BYTES": -1
+  },
+  "debug_str": {
+    "bfd_bytes": 601961,
+    "lld_bytes": 95814,
+    "delta_bytes": -506147,
+    "bfd_flags": "MERGE|STRINGS",
+    "lld_flags": "MERGE|STRINGS",
+    "bfd_entry_size": 1,
+    "lld_entry_size": 1,
+    "bfd_nonempty_physical_entries": 50290,
+    "lld_nonempty_physical_entries": 7179,
+    "bfd_distinct_physical_entries": 7179,
+    "lld_distinct_physical_entries": 7179,
+    "bfd_strings_present_as_lld_suffix_only": 0,
+    "all_bfd_nonempty_strings_remain_representable": true,
+    "raw_bfd_duplicate_bytes": 506147
+  },
+  "relocation_table_file_delta_bytes": 0,
+  "other_debug_section_file_delta_bytes": 0,
+  "removed_intermediate_symbols": {
+    "local_mapping_symbols": 101,
+    "local_section_symbols": {
+      ".note.GNU-stack": 1
+    }
+  },
+  "physical_gaps": {
+    "bfd": [
+      {
+        "start": 67688,
+        "end": 67712,
+        "bytes": 24,
+        "before": ".rodata",
+        "alignment": 64,
+        "minimum_alignment_padding": 24,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 71337,
+        "end": 71344,
+        "bytes": 7,
+        "before": ".rodata.cst16",
+        "alignment": 8,
+        "minimum_alignment_padding": 7,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 75971,
+        "end": 75972,
+        "bytes": 1,
+        "before": ".comment",
+        "alignment": 1,
+        "minimum_alignment_padding": 0,
+        "all_zero": true,
+        "classification": "OTHER_LAYOUT_BYTES"
+      },
+      {
+        "start": 1890846,
+        "end": 1890848,
+        "bytes": 2,
+        "before": ".symtab",
+        "alignment": 4,
+        "minimum_alignment_padding": 2,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 1913123,
+        "end": 1913124,
+        "bytes": 1,
+        "before": ".rel.text",
+        "alignment": 4,
+        "minimum_alignment_padding": 1,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 2502951,
+        "end": 2502952,
+        "bytes": 1,
+        "before": "Section header table",
+        "alignment": 4,
+        "minimum_alignment_padding": 1,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      }
+    ],
+    "lld": [
+      {
+        "start": 72947,
+        "end": 72952,
+        "bytes": 5,
+        "before": ".rodata.cst16",
+        "alignment": 8,
+        "minimum_alignment_padding": 5,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 73744,
+        "end": 73792,
+        "bytes": 48,
+        "before": ".rodata",
+        "alignment": 64,
+        "minimum_alignment_padding": 48,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 75763,
+        "end": 75764,
+        "bytes": 1,
+        "before": ".rel.text",
+        "alignment": 4,
+        "minimum_alignment_padding": 1,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 1198478,
+        "end": 1198480,
+        "bytes": 2,
+        "before": ".rel.debug_info",
+        "alignment": 4,
+        "minimum_alignment_padding": 2,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 1868170,
+        "end": 1868172,
+        "bytes": 2,
+        "before": ".debug_frame",
+        "alignment": 4,
+        "minimum_alignment_padding": 2,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      },
+      {
+        "start": 1971123,
+        "end": 1971124,
+        "bytes": 1,
+        "before": ".rel.debug_line",
+        "alignment": 4,
+        "minimum_alignment_padding": 1,
+        "all_zero": true,
+        "classification": "ALIGNMENT_PADDING"
+      }
+    ]
+  }
+}

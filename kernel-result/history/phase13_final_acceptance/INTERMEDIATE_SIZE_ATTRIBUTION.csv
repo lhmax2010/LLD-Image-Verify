@@ -1,0 +1,61 @@
+category,section_or_region,bfd_logical_bytes,lld_logical_bytes,logical_delta_bytes,bfd_file_bytes,lld_file_bytes,file_delta_bytes,bfd_offset,lld_offset,bfd_alignment,lld_alignment,note
+ELF_HEADER,ELF header,52,52,0,52,52,0,0,0,,,"ARM ELF32 ET_REL, EABI5 flags differ in soft-float tagging"
+SECTION,.ARM.attributes,50,54,4,50,54,4,76390,1868116,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.ARM.exidx,1528,1528,0,1528,1528,0,74348,67480,4,4,Equal bytes
+SECTION,.ARM.exidx.exit.text,8,8,0,8,8,0,72332,75452,4,4,Equal bytes
+SECTION,.ARM.exidx.init.text,8,8,0,8,8,0,72324,75384,4,4,Equal bytes
+SECTION,.ARM.extab,1668,1668,0,1668,1668,0,72680,69008,4,4,Equal bytes
+SECTION,.ARM.extab.init.text,12,12,0,12,12,0,72312,75392,4,4,Equal bytes
+SECTION,.alt.smp.init,712,712,0,712,712,0,68968,70676,4,4,Equal bytes
+NOBITS,.bss,29,29,0,0,0,0,75972,72984,4,4,SHT_NOBITS occupies no file bytes
+SECTION,.comment,418,22,-396,418,22,-396,75972,1868094,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.data,48,48,0,48,48,0,75876,75176,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.data..once,3,3,0,3,3,0,75968,75760,1,1,Equal bytes
+OTHER_DEBUG_SECTION,.debug_abbrev,25774,25774,0,25774,25774,0,1068731,180481,1,1,Equal bytes
+OTHER_DEBUG_SECTION,.debug_frame,7472,7472,0,7472,7472,0,1186896,1868172,4,4,Equal bytes
+OTHER_DEBUG_SECTION,.debug_info,992223,992223,0,992223,992223,0,76508,206255,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+OTHER_DEBUG_SECTION,.debug_line,92391,92391,0,92391,92391,0,1094505,1878732,1,1,Equal bytes
+OTHER_DEBUG_SECTION,.debug_loc,82973,82973,0,82973,82973,0,1796329,97508,1,1,Equal bytes
+OTHER_DEBUG_SECTION,.debug_ranges,11544,11544,0,11544,11544,0,1879302,1760736,1,1,Equal bytes
+DEBUG_MERGEABLE_STRINGS,.debug_str,601961,95814,-506147,601961,95814,-506147,1194368,1772280,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.exit.data,4,4,0,4,4,0,75928,75464,4,4,Equal bytes
+SECTION,.exit.text,48,48,0,48,48,0,67640,75404,4,4,Equal bytes
+SECTION,.init.data,4,4,0,4,4,0,75924,75460,4,4,Equal bytes
+SECTION,.init.text,160,160,0,160,160,0,67480,75224,4,4,Equal bytes
+SECTION,.llvm_addrsig,68,68,0,68,68,0,76440,1971284,1,1,Equal bytes
+SECTION,.modinfo,97,97,0,97,97,0,72340,75468,1,1,Equal bytes
+SECTION,.note.GNU-stack,0,0,0,0,0,0,76390,1973408,1,1,Equal bytes
+RELOCATION_TABLE,.rel.ARM.exidx,4168,4168,0,4168,4168,0,1932620,92628,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.ARM.exidx.exit.text,16,16,0,16,16,0,1932604,1973288,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.ARM.exidx.init.text,24,24,0,24,24,0,1932580,1973200,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.alt.smp.init,712,712,0,712,712,0,1930348,96796,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.data,32,32,0,32,32,0,1936788,1972872,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+DEBUG_RELOCATION_TABLE,.rel.debug_frame,3088,3088,0,3088,3088,0,2499300,1875644,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+DEBUG_RELOCATION_TABLE,.rel.debug_info,562256,562256,0,562256,562256,0,1936884,1198480,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+DEBUG_RELOCATION_TABLE,.rel.debug_line,160,160,0,160,160,0,2499140,1971124,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+DEBUG_RELOCATION_TABLE,.rel.debug_loc,8,8,0,8,8,0,2502388,1973320,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+DEBUG_RELOCATION_TABLE,.rel.debug_ranges,32,32,0,32,32,0,2502396,1973328,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.exit.data,8,8,0,8,8,0,1936828,1973312,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.exit.text,64,64,0,64,64,0,1930132,1973224,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.init.data,8,8,0,8,8,0,1936820,1973304,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.init.text,144,144,0,144,144,0,1929988,1973056,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.rodata,152,152,0,152,152,0,1930196,1972904,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+RELOCATION_TABLE,.rel.text,16864,16864,0,16864,16864,0,1913124,75764,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rel__bug_table,48,48,0,48,48,0,1936836,1973360,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rel__mcount_loc,1520,1520,0,1520,1520,0,1931060,1971352,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rodata,1256,1256,0,1256,1256,0,67712,73792,64,64,Equal bytes
+SECTION,.rodata.cst16,80,32,-48,80,32,-48,71344,72952,8,8,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rodata.cst32,128,128,0,128,128,0,72184,75048,8,8,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rodata.cst8,16,8,-8,16,8,-8,72664,75752,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rodata.str,227,151,-76,227,151,-76,72437,75565,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.rodata.str1.1,1657,1559,-98,1657,1559,-98,69680,71388,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SYMBOL_AND_NAME_TABLES,.shstrtab,523,741,218,523,741,218,2502428,1986368,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SYMBOL_AND_NAME_TABLES,.strtab,7683,9215,1532,7683,9215,1532,1905440,1987109,1,1,"Payload or encoding differs, see Phase 12 semantic comparison"
+SYMBOL_AND_NAME_TABLES,.symtab,14592,12960,-1632,14592,12960,-1632,1890848,1973408,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,.text,67428,67428,0,67428,67428,0,52,52,4,4,Equal bytes
+SECTION,__bug_table,36,36,0,36,36,0,75932,75716,4,4,"Payload or encoding differs, see Phase 12 semantic comparison"
+SECTION,__mcount_loc,760,760,0,760,760,0,71424,72984,4,4,Equal bytes
+SECTION_HEADERS,ELF section header table,2240,2240,0,2240,2240,0,,,,,"40 Bytes per ARM ELF32 section header, including null section header"
+ALIGNMENT_PADDING,alignment padding,35,59,24,35,59,24,,,,,Physical gaps tracked individually in evidence/review/intermediate-layout.json
+OTHER_LAYOUT_BYTES,other layout bytes,1,0,-1,1,0,-1,,,,,Physical gaps tracked individually in evidence/review/intermediate-layout.json
+TOTAL,Entire file,2505192,1998564,-506628,2505192,1998564,-506628,,,,,Sum of file bytes excluding this row

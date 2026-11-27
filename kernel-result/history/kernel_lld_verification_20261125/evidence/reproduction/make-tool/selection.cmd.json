@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/locate_qb_make.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:26:54.651584+00:00",
+  "elapsed_seconds": 0.109,
+  "exit_status": 1
+}

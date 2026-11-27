@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/size_attribution.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T09:07:02.725543+00:00",
+  "elapsed_seconds": 0.303,
+  "exit_status": 0
+}

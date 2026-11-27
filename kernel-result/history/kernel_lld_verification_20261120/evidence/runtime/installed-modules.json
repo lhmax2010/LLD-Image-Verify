@@ -1,0 +1,1790 @@
+{
+  "kernel_release": "6.12.80-arm-rpi4-v7l",
+  "device_serial": "private-address-02:26101",
+  "physical_root": "/usr/lib/modules/6.12.80-arm-rpi4-v7l",
+  "alias_root": "/lib/modules/6.12.80-arm-rpi4-v7l",
+  "total_unique_paths": 59,
+  "file_type_counts": {
+    "regular": 59
+  },
+  "rpm_owned_files": 0,
+  "archive": {
+    "path": "evidence/runtime/installed-modules.tar.gz",
+    "size_bytes": 1167360,
+    "sha256": "958377d8584b37e08e68fae6cccf616ed7e29580593ae0d405004e4cce5f95e6",
+    "members_checked": 59,
+    "transport_sha256_check": "PASS"
+  },
+  "files": [
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko"
+      ],
+      "type": "regular",
+      "sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d",
+      "size_bytes": 31868,
+      "device_id": 45830,
+      "inode": 130,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko"
+      ],
+      "type": "regular",
+      "sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb",
+      "size_bytes": 6156,
+      "device_id": 45830,
+      "inode": 131,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko"
+      ],
+      "type": "regular",
+      "sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f",
+      "size_bytes": 7052,
+      "device_id": 45830,
+      "inode": 132,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+      ],
+      "type": "regular",
+      "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+      "size_bytes": 162584,
+      "device_id": 45830,
+      "inode": 133,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko"
+      ],
+      "type": "regular",
+      "sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520",
+      "size_bytes": 23664,
+      "device_id": 45830,
+      "inode": 134,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko"
+      ],
+      "type": "regular",
+      "sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531",
+      "size_bytes": 10680,
+      "device_id": 45830,
+      "inode": 135,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko"
+      ],
+      "type": "regular",
+      "sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98",
+      "size_bytes": 31628,
+      "device_id": 45830,
+      "inode": 136,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko"
+      ],
+      "type": "regular",
+      "sha256": "5a5e93ac293eb21277cee224bde6dfa4605e2ae0041912aeb178aa9caaf117be",
+      "size_bytes": 10480,
+      "device_id": 45830,
+      "inode": 16,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko"
+      ],
+      "type": "regular",
+      "sha256": "baa53d39561863194e8fdfbbfd77a180dcbccd56bbf0a2cd9d6af349a16963a2",
+      "size_bytes": 76580,
+      "device_id": 45830,
+      "inode": 19,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko"
+      ],
+      "type": "regular",
+      "sha256": "e820d3a7a8ff6af786eb1847facfef4cf1ef823bddcb78cedc6061569705bf51",
+      "size_bytes": 10768,
+      "device_id": 45830,
+      "inode": 21,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko"
+      ],
+      "type": "regular",
+      "sha256": "4584112391daf868c145e45b5c5183afc00fbd1e910981e0ce7754124f2548bf",
+      "size_bytes": 20816,
+      "device_id": 45830,
+      "inode": 22,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko"
+      ],
+      "type": "regular",
+      "sha256": "96f414fd1d71eb07b6fbdc9fc51e251698db0b9259f80815264f5ded350021c2",
+      "size_bytes": 69412,
+      "device_id": 45830,
+      "inode": 23,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko"
+      ],
+      "type": "regular",
+      "sha256": "ae7c83b2c0c55a9597e2314d062b14622eb810eebbfb91f4856762444ffaef8e",
+      "size_bytes": 33748,
+      "device_id": 45830,
+      "inode": 24,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko"
+      ],
+      "type": "regular",
+      "sha256": "98072f063d5288b6e6e932f6c143a4ad0fb5ad69d30415013eb8f74b5619794c",
+      "size_bytes": 77020,
+      "device_id": 45830,
+      "inode": 25,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko"
+      ],
+      "type": "regular",
+      "sha256": "701c396bec44f7d92f2709cee6a43039a2928a9dd84136debdab13f63a96ed29",
+      "size_bytes": 55672,
+      "device_id": 45830,
+      "inode": 26,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko"
+      ],
+      "type": "regular",
+      "sha256": "1d9e3158adbd179a788398259d24ea1da1e5120b0bacab8235d673148920cbd5",
+      "size_bytes": 16828,
+      "device_id": 45830,
+      "inode": 29,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko"
+      ],
+      "type": "regular",
+      "sha256": "42fb792f7b6f45d65ecdd8de5db071f3d9c3b5773e1c454a5e5ba5e938f0c875",
+      "size_bytes": 15940,
+      "device_id": 45830,
+      "inode": 31,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko"
+      ],
+      "type": "regular",
+      "sha256": "62bee49719977cc656116112ea8ab94d6ffc25b4048f5ac3292bd02032e0804b",
+      "size_bytes": 15596,
+      "device_id": 45830,
+      "inode": 34,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko"
+      ],
+      "type": "regular",
+      "sha256": "afe2c6e3587f9967090f04973f731f022ce318b36c175c567e8240a04d34eccb",
+      "size_bytes": 12880,
+      "device_id": 45830,
+      "inode": 35,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko"
+      ],
+      "type": "regular",
+      "sha256": "1f4293cfba6b81f661a276b12a53158e97a49832a25203852b52beaf228a3ce4",
+      "size_bytes": 26904,
+      "device_id": 45830,
+      "inode": 37,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko"
+      ],
+      "type": "regular",
+      "sha256": "40c082b3cb354d7f0c4b51a3eacdf43c8bd74d89e8e9f4f31c0240f28b8e2afd",
+      "size_bytes": 6580,
+      "device_id": 45830,
+      "inode": 40,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko"
+      ],
+      "type": "regular",
+      "sha256": "23f0398db5bdcf71bada6f252245b90768f7b9ea89b078b25dde7c9cc9bbcb36",
+      "size_bytes": 9872,
+      "device_id": 45830,
+      "inode": 41,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko"
+      ],
+      "type": "regular",
+      "sha256": "bb27742773dd0f028918d488c4a28a961b47554271f0960a82bf6aa963191c9f",
+      "size_bytes": 42136,
+      "device_id": 45830,
+      "inode": 45,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko"
+      ],
+      "type": "regular",
+      "sha256": "bc6673c7bef8802ec6d05df3d93cb46ed2b6c2e4a1a230b6c25bd3270d7bef6f",
+      "size_bytes": 77204,
+      "device_id": 45830,
+      "inode": 46,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko"
+      ],
+      "type": "regular",
+      "sha256": "b16857d0d1bd0d871d971868f05e86bea771b0387287a36b2d5affcebd1199fa",
+      "size_bytes": 11380,
+      "device_id": 45830,
+      "inode": 48,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko"
+      ],
+      "type": "regular",
+      "sha256": "0be1273aa4fed72db838cb2bbd30c0571211c2d32e28798a7f4175f8c052c2e3",
+      "size_bytes": 25360,
+      "device_id": 45830,
+      "inode": 50,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko"
+      ],
+      "type": "regular",
+      "sha256": "058ef98a700e5154c47f18c7e1327e4af4c0e28a11cf89a11ee7b26845c3dece",
+      "size_bytes": 17772,
+      "device_id": 45830,
+      "inode": 57,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko"
+      ],
+      "type": "regular",
+      "sha256": "4b5c916ebcec6416e21493e6b99764f5a1982e73c97a9adcb3d247e276c3d174",
+      "size_bytes": 543984,
+      "device_id": 45830,
+      "inode": 58,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko"
+      ],
+      "type": "regular",
+      "sha256": "22fcc5d39addb605441887d9349615bda6571cc52c8bac8e8b3f730bc3558b10",
+      "size_bytes": 18352,
+      "device_id": 45830,
+      "inode": 60,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko"
+      ],
+      "type": "regular",
+      "sha256": "8cc3fa0d0d1cdaf8014fd207e9dec91a1ad46ade1d1dcf6e6b3adaef76b9c665",
+      "size_bytes": 17120,
+      "device_id": 45830,
+      "inode": 62,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko"
+      ],
+      "type": "regular",
+      "sha256": "5ee4c7bfface2b560471497951e63e85e54ae5570421d9b37654818a09a20eef",
+      "size_bytes": 19788,
+      "device_id": 45830,
+      "inode": 64,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko"
+      ],
+      "type": "regular",
+      "sha256": "44f00fa39166571a9fbc377df6acf8047ec0d3c082e17dab7f7ca573f222ec34",
+      "size_bytes": 140048,
+      "device_id": 45830,
+      "inode": 67,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko"
+      ],
+      "type": "regular",
+      "sha256": "ec4fa02e8abd77db533ad55e0d06448905f763a39f564b378eae25eca944b366",
+      "size_bytes": 55556,
+      "device_id": 45830,
+      "inode": 68,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko"
+      ],
+      "type": "regular",
+      "sha256": "798f9e503c3e53a846306c4f0c2e6aadd4d13a9413ad63f0ee1861b29ceb7b56",
+      "size_bytes": 164096,
+      "device_id": 45830,
+      "inode": 69,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko"
+      ],
+      "type": "regular",
+      "sha256": "f2d72b9a33bb343c59a7bac12b7ef27bb1302fb8e674f22be055321a750fb6b8",
+      "size_bytes": 183324,
+      "device_id": 45830,
+      "inode": 71,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko"
+      ],
+      "type": "regular",
+      "sha256": "332d2ab2dab979beb9ca55f2dc4b283ed7a226301c65ab1d62055cece4b23896",
+      "size_bytes": 32372,
+      "device_id": 45830,
+      "inode": 72,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko"
+      ],
+      "type": "regular",
+      "sha256": "1cf49f3b86dd2749784521fc91ea318584e5b71ef09697666684bc4e15f7f101",
+      "size_bytes": 80936,
+      "device_id": 45830,
+      "inode": 73,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko"
+      ],
+      "type": "regular",
+      "sha256": "f4bb316e9f3996999c72bc4c1665d0e04c61356d24f84eadb4320e4c9693dbab",
+      "size_bytes": 28444,
+      "device_id": 45830,
+      "inode": 74,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko"
+      ],
+      "type": "regular",
+      "sha256": "a3551d41e7e2e67f04b37c547491e0234f5575db9c75c93aaf0a3b21da335df4",
+      "size_bytes": 13828,
+      "device_id": 45830,
+      "inode": 76,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko"
+      ],
+      "type": "regular",
+      "sha256": "d15e272aeded450c62162231e127920e3d5bb58ed7672bdc451c06f0914a2347",
+      "size_bytes": 55232,
+      "device_id": 45830,
+      "inode": 79,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko"
+      ],
+      "type": "regular",
+      "sha256": "558453c610321bd437918c396a41cafbd4b26aae05348b7852d0a3ec7ed1e0b9",
+      "size_bytes": 42780,
+      "device_id": 45830,
+      "inode": 82,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko"
+      ],
+      "type": "regular",
+      "sha256": "80ac14e6427d98e6b06f9c2817e1df5a1d7b3e784987580e3ba78aecda0111e7",
+      "size_bytes": 21400,
+      "device_id": 45830,
+      "inode": 84,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko"
+      ],
+      "type": "regular",
+      "sha256": "d7cafdcb06a4877d6c86c4f544a4f07181c695865beffbd748b8c2cde22d1cd9",
+      "size_bytes": 51116,
+      "device_id": 45830,
+      "inode": 85,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko"
+      ],
+      "type": "regular",
+      "sha256": "76c1c5d866410d846328ddf2ef587075393ec02533de29a1bef41c23848d4a88",
+      "size_bytes": 129632,
+      "device_id": 45830,
+      "inode": 86,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko"
+      ],
+      "type": "regular",
+      "sha256": "2e553cf2262b37a560594580b5fc049a0e974da18883d235752cb8f797827ca5",
+      "size_bytes": 181868,
+      "device_id": 45830,
+      "inode": 87,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko"
+      ],
+      "type": "regular",
+      "sha256": "6ac7f824421755bd4dd54c5c27618393ac385ab59a9c157b60a18b8a9ee98846",
+      "size_bytes": 30696,
+      "device_id": 45830,
+      "inode": 88,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko"
+      ],
+      "type": "regular",
+      "sha256": "3e0b22e36f6f46dcc65a0fc89489ae47eb57a932ab8fb05724e7c88b71b0f6a0",
+      "size_bytes": 20640,
+      "device_id": 45830,
+      "inode": 89,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko"
+      ],
+      "type": "regular",
+      "sha256": "b407d003ff2969aee65fdb56ce667a5454414959d387c81eb3ea42e8fc9c3614",
+      "size_bytes": 10296,
+      "device_id": 45830,
+      "inode": 91,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko"
+      ],
+      "type": "regular",
+      "sha256": "dd8c2460134aca89f0b319ab07787f84865a0d0f7ab9d87d3385185b5d5bd900",
+      "size_bytes": 22420,
+      "device_id": 45830,
+      "inode": 93,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko"
+      ],
+      "type": "regular",
+      "sha256": "674105edc2c4adc6d4dc8676d94602e305dc07f997baa9a8d4f6bcce17b12897",
+      "size_bytes": 145900,
+      "device_id": 45830,
+      "inode": 95,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko"
+      ],
+      "type": "regular",
+      "sha256": "98c0ca29ea1d69a9e9fdd667cdf1cf014134fc68a17c95b03e0104f8145c6eac",
+      "size_bytes": 4304,
+      "device_id": 45830,
+      "inode": 97,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko"
+      ],
+      "type": "regular",
+      "sha256": "cb86dd09b54d71868c510a96131f94f74c75d2de3069b0863b670ae1f3923bd2",
+      "size_bytes": 9612,
+      "device_id": 45830,
+      "inode": 100,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko"
+      ],
+      "type": "regular",
+      "sha256": "8eae4b7ff52cbb8f23ff94626a62456937664cb66611a482dd8bf7a9770366f6",
+      "size_bytes": 9348,
+      "device_id": 45830,
+      "inode": 104,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko"
+      ],
+      "type": "regular",
+      "sha256": "82d786741c95a522d4e7c30aad4d2dd2db0308a8f5a8910f48ae2dc51f38017f",
+      "size_bytes": 28936,
+      "device_id": 45830,
+      "inode": 105,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko"
+      ],
+      "type": "regular",
+      "sha256": "dfc5b9ea22d35e9094dbbd8bc74ead4af35da71634c9c0f12c470d2f303688d1",
+      "size_bytes": 9876,
+      "device_id": 45830,
+      "inode": 106,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko"
+      ],
+      "type": "regular",
+      "sha256": "69ad3bf64eabacf02d811f11a4435dbc8f8dd126ea4bfc2c11510ffa09f774fc",
+      "size_bytes": 41568,
+      "device_id": 45830,
+      "inode": 107,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko"
+      ],
+      "type": "regular",
+      "sha256": "a5eceb5ab037e6b25152101f91a3a65be8ddd94e3260f005a48440a9dafcf015",
+      "size_bytes": 40196,
+      "device_id": 45830,
+      "inode": 108,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko"
+      ],
+      "type": "regular",
+      "sha256": "10704e51e1f0fcc62eb2cd9209f286d173923218691869ae56de74e379e03cbf",
+      "size_bytes": 16036,
+      "device_id": 45830,
+      "inode": 109,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko"
+    },
+    {
+      "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko",
+      "alias_paths": [
+        "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko"
+      ],
+      "type": "regular",
+      "sha256": "c9d9aa4bb04500bf048b3449021db97e3bb2023ee95566971cca595a182f857f",
+      "size_bytes": 19160,
+      "device_id": 45830,
+      "inode": 110,
+      "symlink_target": null,
+      "rpm_owners": [],
+      "rpm_owner_attempts": [
+        {
+          "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko",
+          "exit_status": 1,
+          "output": [
+            "file /usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko is not owned by any package"
+          ]
+        },
+        {
+          "path": "/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko",
+          "exit_status": 1,
+          "output": [
+            "file /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko is not owned by any package"
+          ]
+        }
+      ],
+      "local_file": "evidence/runtime/installed-files/usr/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+step,target_or_operation,source_rule,selection_or_effect,observed_wrapper_log_lines
+01-source,source/prep,"provider SPEC:2,32–50; wrapper SPEC:156–159",./kernel copied from the verified source-provider RPM,"370,402"
+02-spec,LLVM mode,wrapper SPEC:245–268,export LLVM=1 and BUILD_kdbus=m; no LD argument,"448,458–469"
+03-top,linker selection/export,"SDK Makefile:425–437,477–496,593",LD=ld.lld via LLVM branch; exported for sub-makes,458–469
+04-external,external routing,"SDK Makefile:133–134,1815,1953–1955; Kbuild.include:65,113; Makefile.build:39–42","M selects verified external directory, includes Makefile without LD override","467,469"
+05-composite,non-RT kdbus.o,"external kdbus/Makefile:1–22; SDK Makefile.lib:56–62,257; Makefile.build:432–444",cmd_ld_multi_m = $(LD) $(ld_flags) -r -o $@ @$< $(cmd_objtool),505
+06-modpost,module postprocess,"SDK Makefile:1880–1889,1904–1907",modules depends on modpost before modfinal,511
+07-final,non-RT kdbus.ko,"SDK Makefile:1886–1889; Makefile.modfinal:36–40,60–64",separate submake uses exported LD for -r -T scripts/module.lds,528–530
+08-release,module packaging,wrapper SPEC:268 and %files; checksum-verified release RPM,install+strip and released kdbus.ko member digest,"550–551,746,760"

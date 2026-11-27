@@ -1,0 +1,40 @@
+[UNAME]
+Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Fri Nov 20 09:22:45 UTC 2026 armv7l Toybox
+6.12.80-arm-rpi4-v7l
+armv7l
+[PROC_VERSION]
+Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026
+[BOOT_BANNER]
+[    0.000000] Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026
+dmesg: write error
+[OS_RELEASE]
+NAME=Tizen
+VERSION="11.0.0 (Tizen11.0/Unified)"
+ID=tizen
+VERSION_ID=11.0.0
+PRETTY_NAME="Tizen 11.0.0 (Tizen11.0/Unified)"
+ANSI_COLOR="0;36"
+CPE_NAME="cpe:/o:tizen:tizen:11.0.0"
+BUILD_ID=tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l
+[DEVICE_MODEL]
+Raspberry Pi 4 Model B Rev 1.5
+[LOCAL_ADDRESS]
+/bin/sh: line 6: ifconfig: command not found
+[KERNEL_NOTES]
+a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7  /sys/kernel/notes
+ 06 00 00 00 01 00 00 00 00 01 00 00 4c 69 6e 75
+ 78 00 00 00 00 00 00 00 06 00 00 00 04 00 00 00
+ 01 01 00 00 4c 69 6e 75 78 00 00 00 00 00 00 00
+ 04 00 00 00 14 00 00 00 03 00 00 00 47 4e 55 00
+ 99 ba 05 b6 64 f7 ec e7 68 6a b5 f0 87 bf 54 68
+ 0b b1 72 e6
+[KDBUS_FILES]
+1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576  /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+[KDBUS_LOADED]
+kdbus 98304 98 - Live 0x00000000 (O)
+[KDBUS_NOTE]
+a8c8629d77531ef0cf18f0a0641fc9bea97980b263ec1d9786655f24f60569b1  /sys/module/kdbus/notes/.note.gnu.build-id
+ 04 00 00 00 14 00 00 00 03 00 00 00 47 4e 55 00
+ b8 56 57 c9 8f a6 8e bf 43 a9 05 20 86 1c d8 f4
+ 61 c0 ab ad
+[END]

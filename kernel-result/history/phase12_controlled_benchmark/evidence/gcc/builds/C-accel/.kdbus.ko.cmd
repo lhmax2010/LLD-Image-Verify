@@ -1,0 +1,1 @@
+savedcmd_/tmp/work/module/kdbus/kdbus.ko := ld -r -EL -z noexecstack --no-warn-rwx-segments --build-id=sha1  -T scripts/module.lds -o /tmp/work/module/kdbus/kdbus.ko /tmp/work/module/kdbus/kdbus.o /tmp/work/module/kdbus/kdbus.mod.o /tmp/work/module/.module-common.o

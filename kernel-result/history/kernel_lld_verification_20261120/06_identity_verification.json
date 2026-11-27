@@ -1,0 +1,53 @@
+{
+  "status": "EXACT_MATCH",
+  "scope": "published target kernel payload to running main kernel",
+  "snapshot": "tizen-unified-toolchain_20261120.082536",
+  "runtime_image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l",
+  "kernel_release": "6.12.80-arm-rpi4-v7l",
+  "architecture": "armv7l",
+  "runtime_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+  "runtime_notes": {
+    "evidence": "evidence/runtime/kernel-notes.bin",
+    "size": 84,
+    "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+    "raw_offset": 28707264,
+    "exact_bytes_in_raw": true
+  },
+  "repository_kernel_rpm": {
+    "name": "arm-rpi4-linux-kernel",
+    "epoch": "0",
+    "version": "6.12.80",
+    "release": "0",
+    "architecture": "armv7l",
+    "source_rpm": "rpi4-linux-kernel-6.12.80-0.src.rpm",
+    "download_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+    "sha256": "3a5c433d89858a89c1a83a54806bde67e6f0bfa001850188e3b33807185c3a68",
+    "rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm"
+  },
+  "published_image_archive": {
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/images/standard/tizen-boot-armv7l-rpi/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+    "path": "evidence/repository/images/tizen-unified-toolchain_20261120.082536_tizen-boot-armv7l-rpi.tar.gz",
+    "sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+    "published_sha256": "de7a259811fab9d3608fa16432ce569306304a9d17fe476d77259fcd5deff5d8",
+    "checksum_result": "PASS",
+    "members_evidence": "evidence/repository/boot-archive-members.out"
+  },
+  "repository_zimage_sha256": "2b26465ef90455092cb6671bc2a6a967edfe8f5e7233894b70eaee0564b68601",
+  "repo_published_zimage_match": true,
+  "repo_raw_kernel_payload": "evidence/kernel_binary/analysis/arm-rpi4-linux-kernel-6.12.80-0.armv7l/boot/zImage-raw-gzip-8249.bin",
+  "repo_raw_kernel_payload_sha256": "1bcb98939e19276f8a4de3ab82425f119856005d388680fdb2847d42bdda1171",
+  "repository_devel_debug_status": "STRONG_MATCH",
+  "devel_debug_build_id": "bac659039ce25486da3473a6da562dc0e7fd1eea",
+  "live_boot_file_sha256": null,
+  "live_installed_kernel_rpm_status": "UNVERIFIABLE",
+  "device_module_sha256_matches": 59,
+  "live_module_build_id_matches": 11,
+  "evidence": [
+    "evidence/kernel_binary/byte-comparison.json",
+    "evidence/repository/image-profile-verification.json",
+    "01_runtime_kernel.json",
+    "02_repository_identity.json",
+    "evidence/runtime/pinned-rpm-device-queries.out",
+    "evidence/runtime/partition-metadata.out"
+  ]
+}

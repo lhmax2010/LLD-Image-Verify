@@ -1,0 +1,40 @@
+{
+  "A": {
+    "xz_version": "xz (XZ Utils) 5.4.5",
+    "strip_trace": "evidence/build/selected/A-strip.strace",
+    "unstripped_bytes": 2071276,
+    "stripped_bytes": 162584,
+    "bytes_removed_by_strip": 1908692,
+    "single_file_xz": {
+      "argv": [
+        "xz",
+        "--threads=1",
+        "-6",
+        "-c",
+        "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+      ],
+      "path": "evidence/packaging/A-module.xz",
+      "sha256": "ae4cb292b257fbcd1dfe15a05b623c046beb6f5405383e3a3bb429f1938b7d57",
+      "size": 48312
+    }
+  },
+  "B": {
+    "xz_version": "xz (XZ Utils) 5.4.5",
+    "strip_trace": "evidence/build/selected/B-strip.strace",
+    "unstripped_bytes": 2069984,
+    "stripped_bytes": 161292,
+    "bytes_removed_by_strip": 1908692,
+    "single_file_xz": {
+      "argv": [
+        "xz",
+        "--threads=1",
+        "-6",
+        "-c",
+        "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+      ],
+      "path": "evidence/packaging/B-module.xz",
+      "sha256": "29ae13caa46d18f5292b72af9a27a5f25dd392c4f6afa747c692a52a2c1d6f44",
+      "size": 48000
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "recorded_on": "2026-11-26",
+  "authority": "PM",
+  "phase": 11,
+  "issue": "LLD-KERNEL-001",
+  "phase11_engineering_acceptance": "PASS",
+  "lld_kernel_001_engineering_status": "CLOSED",
+  "strict_acceptance": "CONDITIONAL_PASS",
+  "product_merge_readiness": "PENDING",
+  "qb": {
+    "previous": "tizen-unified-toolchain_20261120.082536",
+    "verified": "tizen-unified-toolchain_20261125.130358",
+    "platform": "Raspberry Pi 4 ARMv7l non-RT",
+    "kernel_release": "6.12.80-arm-rpi4-v7l",
+    "patch_inclusion": "PATCH_INCLUDED",
+    "repository": "platform/kernel/linux-tizen-modules-source",
+    "sandbox_ref": "refs/heads/sandbox/liushanshan/lld",
+    "fix_commit": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8"
+  },
+  "linker_verification": {
+    "intermediate": {
+      "target": "kdbus.o",
+      "linker": "LLVM LLD",
+      "version": "22.1.8",
+      "evidence_level": "E3"
+    },
+    "final": {
+      "target": "kdbus.ko",
+      "linker": "LLVM LLD",
+      "version": "22.1.8",
+      "evidence_level": "E3"
+    },
+    "original_ld_override": "REMOVED",
+    "gnu_bfd_bypass": "NO_REASONABLE_BFD_PATH_IDENTIFIED",
+    "gnu_bfd_bypass_scope": "Observed configuration of the verified QB",
+    "historical_e4_status": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE"
+  },
+  "static_abi_compatibility": "PASS",
+  "quantitative_results": {
+    "new_kernel_module_elf_parsed": 59,
+    "new_kernel_module_elf_total": 59,
+    "new_in_tree_modules": 52,
+    "new_out_of_tree_modules": 7,
+    "makefile_comparisons_passed": 46,
+    "kdbus_relocations_checked": 2972,
+    "out_of_tree_import_crcs_matching_each_qb_sdk": 356,
+    "other_out_of_tree_modules_byte_identical": 6,
+    "kdbus_file_size": {
+      "old_bytes": 162584,
+      "new_bytes": 161292,
+      "delta_bytes": -1292,
+      "decrease_percent": 0.79
+    },
+    "kdbus_section_sizes": {
+      ".symtab": {"old_bytes": 14032, "new_bytes": 12736, "delta_bytes": -1296, "decrease_percent": 9.24},
+      ".text": {"old_bytes": 67428, "new_bytes": 67428, "delta_bytes": 0},
+      ".rodata": {"old_bytes": 1256, "new_bytes": 1256, "delta_bytes": 0},
+      ".data": {"old_bytes": 52, "new_bytes": 52, "delta_bytes": 0},
+      ".bss": {"old_bytes": 29, "new_bytes": 29, "delta_bytes": 0}
+    },
+    "percent_basis": "Rounded to two decimal places relative to the old QB bytes",
+    "size_attribution": "Observed old/new release delta. The patch's isolated contribution was not measured.",
+    "runtime_memory_benefit_measured": false,
+    "runtime_performance_benefit_measured": false
+  },
+  "gcc_bfd_simulation": "PASS",
+  "remaining_work": [
+    {"task": "NEW_QB_RUNTIME_REGRESSION", "status": "PENDING_NEW_IMAGE_DEPLOYMENT"},
+    {"task": "REAL_GCC_BFD_BUILD_REGRESSION", "status": "PENDING"},
+    {"task": "E4_EVIDENCE_COLLECTION_ON_FUTURE_NORMAL_BUILD", "status": "PENDING_FUTURE_NORMAL_BUILD"}
+  ],
+  "current_execution_authorization": {
+    "decision_archival": true,
+    "automatic_flash": false,
+    "automatic_build": false,
+    "product_branch_merge": false
+  },
+  "references": {
+    "original_verification_report": "../kernel_lld_verification_20261125/KDBUS_LLD_FIX_QB_VERIFICATION_REPORT.md",
+    "original_verification_summary": "../kernel_lld_verification_20261125/KDBUS_LLD_FIX_QB_VERIFICATION_SUMMARY.json",
+    "original_evidence_index": "../kernel_lld_verification_20261125/KDBUS_LLD_FIX_EVIDENCE_INDEX.md",
+    "original_evidence_bundle_checksum": "../kernel_lld_verification_20261125/KDBUS_LLD_FIX_EVIDENCE_BUNDLE.tar.gz.sha256",
+    "kernel_owner_justification": "KERNEL_OWNER_CHANGE_JUSTIFICATION.md",
+    "product_merge_remaining_test_plan": "PRODUCT_MERGE_REMAINING_TEST_PLAN.md"
+  }
+}

@@ -1,0 +1,188 @@
+[
+  {
+    "patch": "0003-perf-build-Add-make-check-headers-target.patch",
+    "line": 33,
+    "target": "tools/perf/Makefile",
+    "raw": "check-headers:"
+  },
+  {
+    "patch": "0003-perf-build-Add-make-check-headers-target.patch",
+    "line": 34,
+    "target": "tools/perf/Makefile",
+    "raw": "\t@./check-headers.sh"
+  },
+  {
+    "patch": "0003-perf-build-Add-make-check-headers-target.patch",
+    "line": 35,
+    "target": "tools/perf/Makefile",
+    "raw": ""
+  },
+  {
+    "patch": "0003-perf-build-Add-make-check-headers-target.patch",
+    "line": 44,
+    "target": "tools/perf/Makefile",
+    "raw": ".PHONY: tags TAGS FORCE Makefile build-test build-test-tarball check-headers"
+  },
+  {
+    "patch": "0006-USB-serial-cp210x-Add-cp210x-stlink-driver-for-Smart.patch",
+    "line": 33,
+    "target": "drivers/usb/serial/Makefile",
+    "raw": "obj-$(CONFIG_USB_SERIAL_CP210X)\t\t\t+= cp210x-stlink.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 72701,
+    "target": "drivers/char/Makefile",
+    "raw": "obj-$(CONFIG_BRCM_CHAR_DRIVERS) += broadcom/"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 72702,
+    "target": "drivers/char/Makefile",
+    "raw": "obj-$(CONFIG_RASPBERRYPI_GPIOMEM) += raspberrypi-gpiomem.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 72748,
+    "target": "drivers/char/broadcom/Makefile",
+    "raw": "obj-$(CONFIG_BCM2708_VCMEM)\t+= vc_mem.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 72749,
+    "target": "drivers/char/broadcom/Makefile",
+    "raw": "obj-$(CONFIG_BCM_VCIO)\t\t+= vcio.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 72750,
+    "target": "drivers/char/broadcom/Makefile",
+    "raw": "obj-$(CONFIG_BCM2835_SMI_DEV)\t+= bcm2835_smi_dev.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 113511,
+    "target": "drivers/i2c/busses/Makefile",
+    "raw": "obj-$(CONFIG_I2C_BCM2708)\t+= i2c-bcm2708.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 113512,
+    "target": "drivers/i2c/busses/Makefile",
+    "raw": ""
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 117730,
+    "target": "drivers/leds/trigger/Makefile",
+    "raw": "obj-$(CONFIG_LEDS_TRIGGER_INPUT)\t+= ledtrig-input.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 117736,
+    "target": "drivers/leds/trigger/Makefile",
+    "raw": "obj-$(CONFIG_LEDS_TRIGGER_ACTPWR)\t+= ledtrig-actpwr.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 158115,
+    "target": "drivers/mfd/Makefile",
+    "raw": ""
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 158116,
+    "target": "drivers/mfd/Makefile",
+    "raw": "obj-$(CONFIG_MFD_RP1)\t\t+= rp1.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 158630,
+    "target": "drivers/misc/Makefile",
+    "raw": "obj-$(CONFIG_BCM2835_SMI)\t+= bcm2835_smi.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 158638,
+    "target": "drivers/misc/Makefile",
+    "raw": "obj-$(CONFIG_RP1_PIO)\t\t+= rp1-pio.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 158639,
+    "target": "drivers/misc/Makefile",
+    "raw": "obj-$(CONFIG_WS2812_PIO_RP1)\t+= ws2812-pio-rp1.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 178229,
+    "target": "drivers/spi/Makefile",
+    "raw": "obj-$(CONFIG_SPI_RP2040_GPIO_BRIDGE)\t+= spi-rp2040-gpio-bridge.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 192938,
+    "target": "drivers/usb/Makefile",
+    "raw": "obj-$(CONFIG_USB_DWCOTG)\t+= host/"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 471481,
+    "target": "sound/soc/Makefile",
+    "raw": "obj-$(CONFIG_SND_SOC)\t+= raspberrypi/"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485866,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": ""
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485867,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "snd-soc-i-sabre-codec-objs := i-sabre-codec.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485868,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "snd-soc-ma120x0p-objs := ma120x0p.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485869,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "snd-soc-pcm1794a-objs := pcm1794a.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485870,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "snd-soc-tas5713-objs := tas5713.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485871,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "obj-$(CONFIG_SND_SOC_I_SABRE_CODEC)    += snd-soc-i-sabre-codec.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485872,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "obj-$(CONFIG_SND_SOC_MA120X0P)   += snd-soc-ma120x0p.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485873,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "obj-$(CONFIG_SND_SOC_PCM1794A) += snd-soc-pcm1794a.o"
+  },
+  {
+    "patch": "00d7934-to-8cdc667.diff.gz",
+    "line": 485874,
+    "target": "sound/soc/codecs/Makefile",
+    "raw": "obj-$(CONFIG_SND_SOC_TAS5713)  += snd-soc-tas5713.o"
+  }
+]

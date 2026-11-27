@@ -1,0 +1,6 @@
+# A separate sibling invoked directly by the simulated Kbuild top level.
+include $(REPRO_DIR)/fixtures/trace.mk
+$(call trace_ld,final)
+.PHONY: module_final
+module_final:
+	@"$(REPRO_PYTHON)" "$(REPRO_DIR)/mock_linker.py" final "$(LD)" -r -T scripts/module.lds -o kdbus/kdbus.ko kdbus/kdbus.o kdbus/kdbus.mod.o .module-common.o

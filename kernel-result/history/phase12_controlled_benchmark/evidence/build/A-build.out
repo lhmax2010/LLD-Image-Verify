@@ -1,0 +1,160 @@
+AR=llvm-ar
+BUILD_dm_bow=m
+BUILD_extcon_usb_fixed=m
+BUILD_inform_reboot=m
+BUILD_kdbus=m
+BUILD_logger=m
+BUILD_proc_tsm=m
+BUILD_zlogger=m
+CC=armv7l-tizen-linux-gnueabi-clang
+CXX=armv7l-tizen-linux-gnueabi-clang++
+HOME=/home/abuild
+LC_ALL=C
+LLVM=1
+LOGGER_EVENTS_BUFFER_SIZE=256
+LOGGER_MAIN_BUFFER_SIZE=256
+LOGGER_RADIO_BUFFER_SIZE=256
+LOGGER_SYSTEM_BUFFER_SIZE=256
+MAKEFLAGS=-j1 -k
+PATH=/mnt/entry:/usr/sbin:/usr/bin:/sbin:/bin
+PWD=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0
+RANLIB=llvm-ranlib
+SHLVL=1
+THREAD_GROUP_CPUTIME_SUPPORT=1
+TIZEN_INFORM_PATH=/mnt/inform/reboot-param.bin
+TMPDIR=/tmp
+TZ=UTC
+V=1
+_=/usr/bin/env
+32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670  kernel/COPYING
+4b34db0f76ca1626152b32f7036a718bc15aa179fa7355e57f56fc44a0fe6573  kernel/Makefile
+ce8babefacf56c660d1dfb74f8d99e047123118484cd41e87c04283b77e2a71c  kernel/dm-bow.c
+a5a681e7e09b8ebb0a466d0cced14a16025ec22591fb87efffbddc7d31a8bb32  kernel/dm-core.h
+6e7d025865949d5bb708a6e050492dc3328ef4eda9579106857897ee9d791649  kernel/dm.h
+9bc125949cd66674f56dd416c280aa7663925599b05556a9939815cd2af644b7  kernel/extcon-usb-fixed.c
+7774b1f57127a36b1f537117eab4ca5061eb4b7ac290003f2acf77091722e9db  kernel/include/uapi/linux/kdbus.h
+2480478ee0ecfbb7235577e0e8bcdd8d40c0170a6bbaa1a91b530034b2d2ddad  kernel/include/uapi/linux/logger.h
+e8da9fd9af1ae0a47f3c2e61ed924164e617f7914928afe16ec0a899e3c3d6a2  kernel/include/uapi/linux/zlogger.h
+52d6eca54bfdc451e59549faef9ce493090e084a4a23d24a0e93130dd847169a  kernel/inform-reboot.c
+b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50  kernel/kdbus/Makefile
+034da0726d289e7e2b90f5530bd211c0d12412a2d0550cc2c87a719f70c81f36  kernel/kdbus/bus.c
+8d31b8b840f3c2d2e3c05a612f09007b7a21380f451dd27dfea769aa684af106  kernel/kdbus/bus.h
+de91142fd908954ce771e36290fd25e5ddb3ee031df8aea2172c1d34cbb23721  kernel/kdbus/connection.c
+e103457a853375c9e45f7207ea9b10095edb645eb3499046665464108fdf1c94  kernel/kdbus/connection.h
+d74165ee457bfe0f0b57eb1705bf10cb3f996c133704171909fa85e76c492a79  kernel/kdbus/domain.c
+63dfa61eef20c369b32fa038ef14209ea5e6bfbf8d244e16c96773e117492ea0  kernel/kdbus/domain.h
+b69198de38aa26641a7f90b4a54ef81b50f74847757facc270ebd1e3fad1f21d  kernel/kdbus/endpoint.c
+083a6ec4215283f44195779532644a057957aa2f0dc513935dc9c164d07f66e9  kernel/kdbus/endpoint.h
+812b5196d7ac927c29103f7ccfa0781675a8fcff0d12b0fac21f9432b1e7331f  kernel/kdbus/fs.c
+4658b87bba6d8d9913e7cbbdf4a8aee115319ffe31fda627db6035ee8818ad7a  kernel/kdbus/fs.h
+0ec395a8986b21f0bf0a16cdf71fd1c7e0fe3c0f6a0d9614e18541316caeb23c  kernel/kdbus/handle.c
+b538a130361cc798403a87af3224af2b30e918fc24d368a9532fa89735e90640  kernel/kdbus/handle.h
+9756d272ddae7d251805ee782799b7f99339d749e1483eba085ad1826c3caec3  kernel/kdbus/item.c
+29c09ee09fe9357de79b072a522a7b6754c20c921b7ca59cae3d47eba2a8b384  kernel/kdbus/item.h
+22308795a4775e9322ac896e8db31fddd3befe87f424961c22fc5d11828cd6fd  kernel/kdbus/limits.h
+5f5466191fabf213192713c6232ab323dafab5d78e6cab5b1b50b8d472dd6ec3  kernel/kdbus/main.c
+53f32eb006c856b5b148b16876ada5b1e890e507c4136e42c2b2bfe2cbe878ec  kernel/kdbus/match.c
+2e7ddaa0bff599dbeb0de0487c6c0cc7ecd4e1ac4b2e2d7a26f6ab77d55c9399  kernel/kdbus/match.h
+62d9e4323555d1e8c210c16ec8d211d506bec388f2c841ad92d99261d2c69d14  kernel/kdbus/message.c
+72480ef2420657c005f692f260714e4bbfc814f676bb06f7f8cce83718fef342  kernel/kdbus/message.h
+ba5d6ff889d08e4a5ff763c4dd386935964a0508222908d59dac0660abee4b40  kernel/kdbus/metadata.c
+ba3710ed2e63aa9d1994abf65bad0e03487cb8d0c540b736989b1892ce503500  kernel/kdbus/metadata.h
+c9f7318d92f442a8b2705371f87890955c843ce89c385a38406b50593d148cad  kernel/kdbus/names.c
+30c4ef4712cd05d45380aea70c4bfd4e2152d86716640536c2a89417b5141709  kernel/kdbus/names.h
+964ca51ed2c8c6b46bd63409296c843cc6cebdbb854cb1bd7f404cf6d8f2b848  kernel/kdbus/node.c
+9943c5974baf683fbaf2fb9ed4cdba108c5f850598bb5221dd8d145d8b982ee1  kernel/kdbus/node.h
+60df6aaf2bb8a00195f157356915732a94f20ef49d3084515db2d27876f94553  kernel/kdbus/notify.c
+552902a258f112a46b44bf22c3743ce6fecee985759ebf4d9d6e88361a6cdb6b  kernel/kdbus/notify.h
+bbec511a503ce3b502551dd75dda0b505337395724f60489468c54ce2eaffc82  kernel/kdbus/policy.c
+d8fa23c8fdb57987081ab7bfc1cfc46f3e72058fb7a26ed7e4d9237cb4521e3e  kernel/kdbus/policy.h
+3334f8c324ac27e247a189aebc1c309340c6a27d0eee282f55d34ea0ced135a8  kernel/kdbus/pool.c
+09dcc67149a0da1a40e0f586becc53c701828ca934521260d5dc7f968cdf1e57  kernel/kdbus/pool.h
+6ff5f0319a3751bdd9f6cb28ef2cc0afb481d163060d5effc5e3bef1fe3c3409  kernel/kdbus/queue.c
+11931ec3a350846fb6dd4c3d99cbb0f29c0c43abd464bef9326c081a0ad19a09  kernel/kdbus/queue.h
+aa0d78319f2bcd0fd84f1df5a44df57fbecf5a7ace6fe9abba7bd6b02bae1f6f  kernel/kdbus/reply.c
+26284e600211c965bbb1644d40029e6508b2d2b701361dc2cec2096c630228b8  kernel/kdbus/reply.h
+5afe16c663957bd06e9e5c1d61de26faefa4f91f80e4b7799a1f4c4d05f9953c  kernel/kdbus/util.c
+0ee32d70d1a4a8625cdfa7b240a32fc8af575b79330e8cba8d317409d5b5fd6d  kernel/kdbus/util.h
+6ca98a18c96d3b47a402ac0fa3787a050879561c5718f203fe6374ea17dc676c  kernel/logger.c
+4b16e0d55a5dbbfe5a248792bc87fa7be1f306cf96bfd278ea2ff85e65bb3535  kernel/proc-tsm.c
+258a2f49c0de445866adcfb6e2dd253149a8ca497d441c7dbea711e6717711ea  kernel/zlogger/Makefile
+0c523eee797d45ccd641492e16a7caf162a29fa109806319a343b5ddcfdeb87c  kernel/zlogger/zlogger.c
+make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel clean
+make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules
+make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.o
+  MODPOST /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/Module.symvers
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.mod.o
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko
+  CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.mod.o
+  LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko
+  BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko
+make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+make: Entering directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'
+make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/../ modules_install
+make[1]: Entering directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+  INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+  STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+  DEPMOD  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l
+make[1]: Leaving directory '/boot/kernel/devel/kernel-devel-arm-rpi4'
+make: Leaving directory '/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel'

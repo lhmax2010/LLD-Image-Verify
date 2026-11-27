@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/review_phase12.py"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T09:03:55.680415+00:00",
+  "elapsed_seconds": 0.624,
+  "exit_status": 1
+}

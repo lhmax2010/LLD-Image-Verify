@@ -1,0 +1,3 @@
+postinstall scriptlet (using /bin/sh):
+/sbin/ldconfig
+#CLANG_POSTIN#

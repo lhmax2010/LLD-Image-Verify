@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "curl",
+    "-fLsS",
+    "--max-time",
+    "100",
+    "-D",
+    "evidence/build/base/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm.headers",
+    "--output",
+    "evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+    "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:25:34.672400+00:00",
+  "elapsed_seconds": 8.277,
+  "exit_status": 0
+}

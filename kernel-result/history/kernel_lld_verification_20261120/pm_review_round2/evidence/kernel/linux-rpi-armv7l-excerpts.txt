@@ -1,0 +1,362 @@
+Original archive member: evidence/build/linux-rpi-armv7l.out
+SHA256: b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673
+   84	[   11s] [48/130] keeping clang-accel-x86_64-armv7l-0.4-1.1
+  123	[   11s] [87/130] keeping binutils-2.43-1.8
+  155	[   11s] [119/130] keeping llvm-22.1.8-1.6
+ 1672	[   65s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++
+ 1673	[   65s] + CC=armv7l-tizen-linux-gnueabi-clang
+ 1675	[   65s] + export 'MAKEFLAGS+= -k'
+ 1676	[   65s] + MAKEFLAGS+=' -k'
+ 1677	[   65s] + export LLVM=1
+ 1678	[   65s] + LLVM=1
+ 1679	[   65s] + for target in arm-rpi4 arm-rpi4-rt
+ 1680	[   65s] + echo -arm-rpi4
+ 2682	[   96s] + ./scripts/kconfig/merge_config.sh -m -O build/arm-rpi4 arch/arm/configs/tizen_bcm2711_defconfig
+ 2687	[   96s] + make O=build/arm-rpi4 olddefconfig -j8
+ 2699	[  100s]   HOSTCC  scripts/kconfig/lexer.lex.o
+ 3371	[  360s] + make O=build/arm-rpi4 -j8
+ 3372	[  361s] make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+ 4685	[  563s]   CC [M]  crypto/md5.o
+ 4693	[  565s]   CC [M]  drivers/leds/trigger/ledtrig-transient.o
+ 4697	[  566s]   CC [M]  drivers/leds/trigger/ledtrig-camera.o
+ 5482	[  726s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8.o
+ 5483	[  726s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8-i2c.o
+ 5484	[  726s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x.o
+ 5485	[  726s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x-i2c.o
+ 5486	[  726s]   LD [M]  sound/soc/codecs/snd-soc-sgtl5000.o
+ 5487	[  726s]   LD [M]  sound/soc/codecs/snd-soc-wm8741.o
+ 5488	[  726s]   LD [M]  sound/soc/codecs/snd-soc-tpa6130a2.o
+ 5651	[  767s]   CC [M]  lib/crc7.o
+ 5729	[  790s]   CC [M]  drivers/char/broadcom/bcm2835_smi_dev.o
+ 6240	[  992s]   CC [M]  drivers/block/nbd.o
+ 6260	[  998s]   CC [M]  drivers/misc/bcm2835_smi.o
+ 6311	[ 1024s]   CC [M]  drivers/mfd/wl1273-core.o
+ 6364	[ 1043s]   CC [M]  net/netfilter/xt_LED.o
+ 6770	[ 1153s]   CC [M]  fs/binfmt_misc.o
+ 6821	[ 1163s]   CC [M]  drivers/spi/spi-bcm2835aux.o
+ 6882	[ 1176s]   LD [M]  fs/ecryptfs/ecryptfs.o
+ 7000	[ 1208s]   CC [M]  drivers/input/joydev.o
+ 7086	[ 1230s]   CC [M]  drivers/usb/class/cdc-acm.o
+ 7116	[ 1233s]   CC [M]  drivers/i2c/busses/i2c-bcm2708.o
+ 7142	[ 1237s]   CC [M]  drivers/i2c/i2c-stub.o
+ 7234	[ 1251s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.o
+ 7248	[ 1253s]   CC [M]  drivers/usb/serial/cp210x.o
+ 7253	[ 1254s]   CC [M]  drivers/usb/serial/cp210x-stlink.o
+ 7261	[ 1255s]   CC [M]  drivers/usb/serial/ftdi_sio.o
+ 7264	[ 1256s]   CC [M]  drivers/usb/serial/option.o
+ 7269	[ 1257s]   CC [M]  drivers/usb/serial/pl2303.o
+ 7272	[ 1258s]   CC [M]  drivers/watchdog/gpio_wdt.o
+ 7274	[ 1258s]   CC [M]  drivers/usb/serial/usb_wwan.o
+ 7365	[ 1274s]   CC [M]  drivers/bluetooth/bcm203x.o
+ 7377	[ 1275s]   CC [M]  drivers/bluetooth/btusb.o
+ 7387	[ 1278s]   CC [M]  drivers/bluetooth/btintel.o
+ 7407	[ 1283s]   CC [M]  drivers/bluetooth/btbcm.o
+ 7408	[ 1283s]   CC [M]  drivers/usb/gadget/udc/dummy_hcd.o
+ 7425	[ 1288s]   CC [M]  drivers/bluetooth/btrtl.o
+ 7434	[ 1289s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.o
+ 7442	[ 1292s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.o
+ 7445	[ 1292s]   LD [M]  drivers/bluetooth/hci_uart.o
+ 7454	[ 1293s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.o
+ 7456	[ 1293s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.o
+ 7677	[ 1328s]   LD [M]  drivers/media/usb/gspca/gspca_main.o
+ 7678	[ 1328s]   LD [M]  drivers/media/usb/gspca/gspca_zc3xx.o
+ 7847	[ 1373s]   CC [M]  drivers/hid/hid-led.o
+ 7905	[ 1386s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76.o
+ 7906	[ 1386s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-usb.o
+ 7907	[ 1386s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-connac-lib.o
+ 7915	[ 1387s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-lib.o
+ 7929	[ 1389s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-usb.o
+ 7934	[ 1390s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.o
+ 7935	[ 1391s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.o
+ 7939	[ 1396s]   AR      built-in.a
+ 7940	[ 1397s]   AR      vmlinux.a
+ 7941	[ 1398s]   LD      vmlinux.o
+ 7942	[ 1399s]   OBJCOPY modules.builtin.modinfo
+ 7945	[ 1401s]   MODPOST Module.symvers
+ 7947	[ 1411s]   UPD     include/generated/utsversion.h
+ 7951	[ 1412s]   LD      .tmp_vmlinux1
+ 7958	[ 1508s]   LD      .tmp_vmlinux2
+ 7962	[ 1518s]   LD      vmlinux
+ 7966	[ 1520s]   NM      System.map
+ 7967	[ 1521s]   SORTTAB vmlinux
+ 7968	[ 1522s]   CC [M]  fs/binfmt_misc.mod.o
+ 7969	[ 1522s]   CC [M]  .module-common.o
+ 7970	[ 1522s]   CC [M]  fs/ecryptfs/ecryptfs.mod.o
+ 7971	[ 1522s]   CC [M]  crypto/md5.mod.o
+ 7972	[ 1522s]   CC [M]  lib/crc7.mod.o
+ 7973	[ 1522s]   CC [M]  drivers/leds/trigger/ledtrig-transient.mod.o
+ 7974	[ 1522s]   CC [M]  drivers/leds/trigger/ledtrig-camera.mod.o
+ 7977	[ 1522s]   CC [M]  drivers/char/broadcom/bcm2835_smi_dev.mod.o
+ 7978	[ 1522s]   CC [M]  drivers/block/nbd.mod.o
+ 7979	[ 1522s]   CC [M]  drivers/misc/bcm2835_smi.mod.o
+ 7980	[ 1522s]   CC [M]  drivers/mfd/wl1273-core.mod.o
+ 7981	[ 1522s]   CC [M]  drivers/spi/spi-bcm2835aux.mod.o
+ 7982	[ 1522s]   CC [M]  drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.mod.o
+ 7983	[ 1522s]   CC [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.mod.o
+ 7987	[ 1522s]   CC [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.mod.o
+ 7990	[ 1523s]   CC [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.mod.o
+ 7991	[ 1523s]   CC [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.mod.o
+ 7993	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt76.mod.o
+ 7995	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt76-usb.mod.o
+ 7996	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt76-connac-lib.mod.o
+ 7999	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt792x-lib.mod.o
+ 8002	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt792x-usb.mod.o
+ 8007	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.mod.o
+ 8008	[ 1523s]   CC [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.mod.o
+ 8009	[ 1523s]   CC [M]  drivers/usb/class/cdc-acm.mod.o
+ 8010	[ 1524s]   CC [M]  drivers/usb/serial/cp210x.mod.o
+ 8011	[ 1524s]   CC [M]  drivers/usb/serial/cp210x-stlink.mod.o
+ 8012	[ 1524s]   CC [M]  drivers/usb/serial/ftdi_sio.mod.o
+ 8013	[ 1524s]   CC [M]  drivers/usb/serial/option.mod.o
+ 8014	[ 1524s]   CC [M]  drivers/usb/serial/pl2303.mod.o
+ 8015	[ 1524s]   CC [M]  drivers/usb/serial/usb_wwan.mod.o
+ 8016	[ 1524s]   CC [M]  drivers/usb/gadget/udc/dummy_hcd.mod.o
+ 8017	[ 1524s]   CC [M]  drivers/input/joydev.mod.o
+ 8018	[ 1524s]   CC [M]  drivers/i2c/busses/i2c-bcm2708.mod.o
+ 8019	[ 1524s]   CC [M]  drivers/i2c/i2c-stub.mod.o
+ 8020	[ 1524s]   CC [M]  drivers/media/usb/gspca/gspca_main.mod.o
+ 8021	[ 1524s]   CC [M]  drivers/media/usb/gspca/gspca_zc3xx.mod.o
+ 8022	[ 1524s]   CC [M]  drivers/watchdog/gpio_wdt.mod.o
+ 8023	[ 1524s]   CC [M]  drivers/bluetooth/hci_uart.mod.o
+ 8024	[ 1524s]   CC [M]  drivers/bluetooth/bcm203x.mod.o
+ 8025	[ 1525s]   CC [M]  drivers/bluetooth/btusb.mod.o
+ 8026	[ 1525s]   CC [M]  drivers/bluetooth/btintel.mod.o
+ 8027	[ 1525s]   CC [M]  drivers/bluetooth/btbcm.mod.o
+ 8028	[ 1525s]   CC [M]  drivers/bluetooth/btrtl.mod.o
+ 8029	[ 1525s]   CC [M]  drivers/hid/hid-led.mod.o
+ 8030	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-cs42xx8.mod.o
+ 8031	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-cs42xx8-i2c.mod.o
+ 8032	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-pcm512x.mod.o
+ 8033	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-pcm512x-i2c.mod.o
+ 8034	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-sgtl5000.mod.o
+ 8035	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-wm8741.mod.o
+ 8036	[ 1525s]   CC [M]  sound/soc/codecs/snd-soc-tpa6130a2.mod.o
+ 8037	[ 1525s]   CC [M]  net/netfilter/xt_LED.mod.o
+ 8038	[ 1525s]   LD [M]  fs/binfmt_misc.ko
+ 8039	[ 1525s]   LD [M]  fs/ecryptfs/ecryptfs.ko
+ 8040	[ 1525s]   BTF [M] fs/binfmt_misc.ko
+ 8041	[ 1526s]   BTF [M] fs/ecryptfs/ecryptfs.ko
+ 8042	[ 1526s]   LD [M]  crypto/md5.ko
+ 8043	[ 1526s]   BTF [M] crypto/md5.ko
+ 8044	[ 1526s]   LD [M]  lib/crc7.ko
+ 8045	[ 1526s]   LD [M]  drivers/leds/trigger/ledtrig-transient.ko
+ 8046	[ 1526s]   BTF [M] lib/crc7.ko
+ 8047	[ 1526s]   BTF [M] drivers/leds/trigger/ledtrig-transient.ko
+ 8048	[ 1526s]   LD [M]  drivers/leds/trigger/ledtrig-camera.ko
+ 8049	[ 1526s]   BTF [M] drivers/leds/trigger/ledtrig-camera.ko
+ 8050	[ 1526s]   LD [M]  drivers/char/broadcom/bcm2835_smi_dev.ko
+ 8051	[ 1526s]   BTF [M] drivers/char/broadcom/bcm2835_smi_dev.ko
+ 8052	[ 1526s]   LD [M]  drivers/block/nbd.ko
+ 8053	[ 1526s]   BTF [M] drivers/block/nbd.ko
+ 8054	[ 1526s]   LD [M]  drivers/misc/bcm2835_smi.ko
+ 8055	[ 1527s]   LD [M]  drivers/mfd/wl1273-core.ko
+ 8056	[ 1527s]   BTF [M] drivers/misc/bcm2835_smi.ko
+ 8057	[ 1527s]   LD [M]  drivers/spi/spi-bcm2835aux.ko
+ 8058	[ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+ 8059	[ 1527s]   BTF [M] drivers/mfd/wl1273-core.ko
+ 8060	[ 1527s]   BTF [M] drivers/spi/spi-bcm2835aux.ko
+ 8061	[ 1527s]   BTF [M] drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+ 8062	[ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+ 8063	[ 1527s]   BTF [M] drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+ 8064	[ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+ 8065	[ 1527s]   BTF [M] drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+ 8066	[ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+ 8067	[ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+ 8068	[ 1527s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76.ko
+ 8069	[ 1527s]   BTF [M] drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+ 8070	[ 1527s]   BTF [M] drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+ 8071	[ 1528s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt76.ko
+ 8072	[ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+ 8073	[ 1528s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+ 8074	[ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+ 8075	[ 1528s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+ 8076	[ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+ 8077	[ 1528s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+ 8078	[ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+ 8079	[ 1529s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+ 8080	[ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+ 8082	[ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+ 8083	[ 1529s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+ 8084	[ 1529s]   BTF [M] drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+ 8085	[ 1529s]   LD [M]  drivers/usb/class/cdc-acm.ko
+ 8086	[ 1529s]   BTF [M] drivers/usb/class/cdc-acm.ko
+ 8087	[ 1529s]   LD [M]  drivers/usb/serial/cp210x.ko
+ 8088	[ 1529s]   BTF [M] drivers/usb/serial/cp210x.ko
+ 8089	[ 1529s]   LD [M]  drivers/usb/serial/cp210x-stlink.ko
+ 8090	[ 1529s]   BTF [M] drivers/usb/serial/cp210x-stlink.ko
+ 8091	[ 1529s]   LD [M]  drivers/usb/serial/ftdi_sio.ko
+ 8092	[ 1529s]   BTF [M] drivers/usb/serial/ftdi_sio.ko
+ 8093	[ 1529s]   LD [M]  drivers/usb/serial/option.ko
+ 8094	[ 1530s]   BTF [M] drivers/usb/serial/option.ko
+ 8095	[ 1530s]   LD [M]  drivers/usb/serial/pl2303.ko
+ 8096	[ 1530s]   BTF [M] drivers/usb/serial/pl2303.ko
+ 8097	[ 1530s]   LD [M]  drivers/usb/serial/usb_wwan.ko
+ 8098	[ 1530s]   BTF [M] drivers/usb/serial/usb_wwan.ko
+ 8099	[ 1530s]   LD [M]  drivers/usb/gadget/udc/dummy_hcd.ko
+ 8100	[ 1530s]   LD [M]  drivers/input/joydev.ko
+ 8101	[ 1530s]   BTF [M] drivers/usb/gadget/udc/dummy_hcd.ko
+ 8102	[ 1530s]   BTF [M] drivers/input/joydev.ko
+ 8103	[ 1530s]   LD [M]  drivers/i2c/busses/i2c-bcm2708.ko
+ 8104	[ 1530s]   BTF [M] drivers/i2c/busses/i2c-bcm2708.ko
+ 8105	[ 1530s]   LD [M]  drivers/i2c/i2c-stub.ko
+ 8106	[ 1530s]   BTF [M] drivers/i2c/i2c-stub.ko
+ 8107	[ 1530s]   LD [M]  drivers/media/usb/gspca/gspca_main.ko
+ 8108	[ 1530s]   BTF [M] drivers/media/usb/gspca/gspca_main.ko
+ 8109	[ 1531s]   LD [M]  drivers/media/usb/gspca/gspca_zc3xx.ko
+ 8110	[ 1531s]   BTF [M] drivers/media/usb/gspca/gspca_zc3xx.ko
+ 8111	[ 1531s]   LD [M]  drivers/watchdog/gpio_wdt.ko
+ 8112	[ 1531s]   BTF [M] drivers/watchdog/gpio_wdt.ko
+ 8113	[ 1531s]   LD [M]  drivers/bluetooth/hci_uart.ko
+ 8114	[ 1531s]   BTF [M] drivers/bluetooth/hci_uart.ko
+ 8115	[ 1531s]   LD [M]  drivers/bluetooth/bcm203x.ko
+ 8116	[ 1531s]   BTF [M] drivers/bluetooth/bcm203x.ko
+ 8117	[ 1531s]   LD [M]  drivers/bluetooth/btusb.ko
+ 8118	[ 1531s]   BTF [M] drivers/bluetooth/btusb.ko
+ 8119	[ 1531s]   LD [M]  drivers/bluetooth/btintel.ko
+ 8120	[ 1531s]   BTF [M] drivers/bluetooth/btintel.ko
+ 8121	[ 1531s]   LD [M]  drivers/bluetooth/btbcm.ko
+ 8122	[ 1531s]   BTF [M] drivers/bluetooth/btbcm.ko
+ 8123	[ 1531s]   LD [M]  drivers/bluetooth/btrtl.ko
+ 8124	[ 1531s]   BTF [M] drivers/bluetooth/btrtl.ko
+ 8125	[ 1531s]   LD [M]  drivers/hid/hid-led.ko
+ 8126	[ 1531s]   BTF [M] drivers/hid/hid-led.ko
+ 8127	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8.ko
+ 8128	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-cs42xx8.ko
+ 8129	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+ 8130	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+ 8131	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x.ko
+ 8132	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-pcm512x.ko
+ 8133	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+ 8134	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+ 8135	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-sgtl5000.ko
+ 8136	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-sgtl5000.ko
+ 8137	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-wm8741.ko
+ 8138	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-wm8741.ko
+ 8139	[ 1532s]   LD [M]  sound/soc/codecs/snd-soc-tpa6130a2.ko
+ 8140	[ 1532s]   BTF [M] sound/soc/codecs/snd-soc-tpa6130a2.ko
+ 8141	[ 1532s]   LD      arch/arm/boot/compressed/vmlinux
+ 8142	[ 1533s]   LD [M]  net/netfilter/xt_LED.ko
+ 8143	[ 1533s]   OBJCOPY arch/arm/boot/zImage
+ 8144	[ 1533s]   BTF [M] net/netfilter/xt_LED.ko
+ 8145	[ 1533s]   Kernel: arch/arm/boot/zImage is ready
+ 8146	[ 1533s] make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+ 8150	[ 1537s] + make O=build/arm-rpi4 modules -j8
+ 8151	[ 1538s] make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+ 8156	[ 1545s] make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+ 8162	[ 1548s] + make O=build/arm-rpi4-rt headers_install -j8
+14011	[ 2626s] + install -m 644 build/arm-rpi4/arch/arm/boot/zImage /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/zImage
+14124	[ 2718s] + make O=build/arm-rpi4 INSTALL_MOD_STRIP=1 INSTALL_MOD_PATH=/home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm modules_install
+14125	[ 2718s] make[1]: Entering directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+14127	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/modules.order
+14130	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+14131	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+14132	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko
+14133	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko
+14134	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko
+14135	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko
+14136	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko
+14137	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko
+14138	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko
+14139	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko
+14140	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko
+14141	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko
+14142	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko
+14143	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko
+14144	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko
+14145	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko
+14146	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko
+14147	[ 2719s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko
+14148	[ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko
+14149	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko
+14150	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko
+14151	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko
+14152	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+14153	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+14154	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+14155	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+14156	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+14157	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+14158	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+14159	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+14160	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+14161	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+14162	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko
+14163	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko
+14164	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+14165	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+14166	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+14167	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+14168	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+14169	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+14170	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+14171	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+14172	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+14173	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+14174	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+14175	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+14176	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko
+14177	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko
+14178	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko
+14179	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko
+14180	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko
+14181	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko
+14182	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko
+14183	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko
+14184	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko
+14185	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko
+14186	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko
+14187	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko
+14188	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko
+14189	[ 2720s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko
+14190	[ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko
+14191	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko
+14192	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko
+14193	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko
+14194	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko
+14195	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko
+14196	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko
+14197	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko
+14198	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko
+14199	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko
+14200	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko
+14201	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko
+14202	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko
+14203	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko
+14204	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko
+14205	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko
+14206	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko
+14207	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko
+14208	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko
+14209	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko
+14210	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko
+14211	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko
+14212	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko
+14213	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko
+14214	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko
+14215	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko
+14216	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko
+14217	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko
+14218	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko
+14219	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko
+14220	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+14221	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+14222	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko
+14223	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko
+14224	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+14225	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+14226	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko
+14227	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko
+14228	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko
+14229	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko
+14230	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko
+14231	[ 2721s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko
+14232	[ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko
+14233	[ 2722s]   STRIP   /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko
+14235	[ 2722s] make[1]: Leaving directory '/home/abuild/rpmbuild/BUILD/rpi4-linux-kernel-6.12.80/build/arm-rpi4'
+14237	[ 2722s] + rsync -r --include '/scripts/**.c' --exclude '/debug*.list' --exclude /documentation.list --exclude '/*.manifest' --exclude /packaging/ --exclude /.gbs.conf --exclude '/.git**' --exclude .gitignore --exclude '*\.c' --exclude '.tmp_vmlinux*' --exclude '.*dtb*tmp' --exclude '.*dtb' --exclude '*.*tmp' --exclude Image --exclude zImage --exclude Image.gz --exclude '*.cmd' --exclude '*.ko' --exclude '*.o' --exclude '*.S' --exclude '*.HEX' --exclude /build/ ./ build/arm-rpi4/ /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/boot/kernel/devel/kernel-devel-arm-rpi4
+15249	[ 6083s] Wrote: /home/abuild/rpmbuild/SRPMS/rpi4-linux-kernel-6.12.80-0.src.rpm
+15251	[ 6104s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm
+15253	[ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+15255	[ 6137s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm
+15262	[ 6200s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-rt-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm
+15275	[ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.

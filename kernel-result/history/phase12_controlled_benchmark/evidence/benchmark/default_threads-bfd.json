@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "ld",
+    "-EL",
+    "-z",
+    "noexecstack",
+    "-r",
+    "-o",
+    "/phase/evidence/benchmark/bfd-default_threads.o",
+    "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+  ],
+  "exec_path": "/emul/usr/bin/ld",
+  "tool_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece",
+  "successful_thread_clones_untimed": 0,
+  "affinity": [
+    4,
+    5,
+    6,
+    7
+  ],
+  "measured_output_sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+  "linker_options_unchanged": true
+}

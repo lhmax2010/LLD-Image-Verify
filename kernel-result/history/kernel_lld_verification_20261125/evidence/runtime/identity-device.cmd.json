@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "timeout",
+    "20",
+    "sdb",
+    "-s",
+    "private-address-02:26101",
+    "shell",
+    "\nprintf \"[UNAME]\\n\"; uname -a; uname -r; uname -m\nprintf \"[PROC_VERSION]\\n\"; cat /proc/version\nprintf \"[BOOT_BANNER]\\n\"; dmesg | grep -m 1 \"Linux version\"\nprintf \"[OS_RELEASE]\\n\"; cat /etc/os-release\nprintf \"[DEVICE_MODEL]\\n\"; tr \"\\000\" \"\\n\" </sys/firmware/devicetree/base/model\nprintf \"[LOCAL_ADDRESS]\\n\"; ifconfig -a\nprintf \"[KERNEL_NOTES]\\n\"; sha256sum /sys/kernel/notes; od -An -v -tx1 /sys/kernel/notes\nprintf \"[KDBUS_FILES]\\n\"; r=$(uname -r); base=/usr/lib/modules/$r\nif [ ! -d \"$base\" ]; then base=/lib/modules/$r; fi\nif [ -d \"$base\" ]; then\n  find \"$base\" -type f \\( -name \"kdbus.ko\" -o -name \"kdbus.ko.gz\" -o -name \"kdbus.ko.xz\" -o -name \"kdbus.ko.zst\" \\) -exec sha256sum {} \\;\nfi\nprintf \"[KDBUS_LOADED]\\n\"; grep \"^kdbus \" /proc/modules\nprintf \"[KDBUS_NOTE]\\n\"; p=/sys/module/kdbus/notes/.note.gnu.build-id\nif [ -r \"$p\" ]; then sha256sum \"$p\"; od -An -v -tx1 \"$p\"; fi\nprintf \"[END]\\n\"\n"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:25:23.328832+00:00",
+  "elapsed_seconds": 0.258,
+  "exit_status": 0
+}

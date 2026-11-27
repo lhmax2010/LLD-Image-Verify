@@ -1,0 +1,13 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "-c",
+    "\nimport hashlib,json,sys\nfrom pathlib import Path\nrpm=Path(sys.argv[1])\nitem=json.loads(Path(\"evidence/reproduction/make-tool/selection.json\").read_text())\ndigest=hashlib.new(item[\"algorithm\"],rpm.read_bytes()).hexdigest()\nassert digest==item[\"checksum\"]\nprint(digest,rpm)\n",
+    "evidence/reproduction/make-tool/make-4.4.1-1.15.x86_64.rpm"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:27:23.467569+00:00",
+  "elapsed_seconds": 0.02,
+  "exit_status": 0
+}

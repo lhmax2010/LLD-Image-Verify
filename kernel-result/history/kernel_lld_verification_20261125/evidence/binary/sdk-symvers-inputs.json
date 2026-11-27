@@ -1,0 +1,14 @@
+{
+  "old": {
+    "path": "evidence/binary/old-sdk/Module.symvers.out",
+    "sha256": "fd1bf28f859933424c88f0e65c224bf4992c18e78cd0c5d0e59b1f72e8beb28c",
+    "export_names": 14130
+  },
+  "new": {
+    "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/Module.symvers",
+    "sha256": "fd1bf28f859933424c88f0e65c224bf4992c18e78cd0c5d0e59b1f72e8beb28c",
+    "export_names": 14130,
+    "provider_rpm": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+    "provider_rpm_sha256": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020"
+  }
+}

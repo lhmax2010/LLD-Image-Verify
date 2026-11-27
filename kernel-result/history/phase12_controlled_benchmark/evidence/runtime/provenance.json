@@ -1,0 +1,154 @@
+{
+  "kernel_revision": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755",
+  "kernel_sdk_config_sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+  "kernel_sdk_sha256": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020",
+  "kernel_srpm": "kernel_lld_verification_20261120/evidence/repository/rpms/rpi4-linux-kernel-6.12.80-0.src.rpm",
+  "kernel_srpm_published_sha256": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+  "new_debugsource_published_sha256": "31db9d203a2931b810d47ff4042a870a982e589772a3f32323bd74024a5e458b",
+  "new_debugsource_published_url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/debug/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+  "old_debugsource": "kernel_lld_verification_20261120/evidence/repository/rpms/rpi4-linux-kernel-debugsource-6.12.80-0.armv7l.rpm",
+  "old_debugsource_published_sha256": "81e11fbcd7571ec566d0aeb734d9a707f3f230bd37906d47942a9f722362064e",
+  "out_of_tree_rpms": {
+    "new": {
+      "bytes": 91980,
+      "decompressed_cpio_bytes": 292364,
+      "payload_compressor": "xz",
+      "payload_flags": "5T",
+      "payload_format": "cpio",
+      "rpm_size_tag_bytes": 290422,
+      "sha256": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de",
+      "xz_payload_bytes": 82420,
+      "xz_payload_offset": 9560
+    },
+    "old": {
+      "bytes": 92412,
+      "decompressed_cpio_bytes": 293656,
+      "payload_compressor": "xz",
+      "payload_flags": "5T",
+      "payload_format": "cpio",
+      "rpm_size_tag_bytes": 291714,
+      "sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+      "xz_payload_bytes": 82852,
+      "xz_payload_offset": 9560
+    }
+  },
+  "sources": {
+    "arch/arm/include/asm/page.h": {
+      "old_debugsource_byte_match": true,
+      "sha256": "119c5b022c9b0825dcdc29fc19ac48e2cd90652019967ba71e0b53faa198953c",
+      "srpm_member_before_patches_sha256": "119c5b022c9b0825dcdc29fc19ac48e2cd90652019967ba71e0b53faa198953c",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/arch/arm/include/asm/page.h"
+    },
+    "arch/arm/kernel/module-plts.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "02bbb553eb3b70fb14bdbaec9ec1dcdcae1c7e5715462dbfa4ebf35bca9702fe",
+      "srpm_member_before_patches_sha256": "02bbb553eb3b70fb14bdbaec9ec1dcdcae1c7e5715462dbfa4ebf35bca9702fe",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/arch/arm/kernel/module-plts.c"
+    },
+    "arch/arm/kernel/module.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "75155d7517849d4bcb4157332f7374d07a4abf690700a7ca451e5a25f18f4260",
+      "srpm_member_before_patches_sha256": "75155d7517849d4bcb4157332f7374d07a4abf690700a7ca451e5a25f18f4260",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/arch/arm/kernel/module.c"
+    },
+    "include/linux/module.h": {
+      "old_debugsource_byte_match": true,
+      "sha256": "a644d005815720ee08014a6da52e2de930d40fff8d900636175cee825b907e61",
+      "srpm_member_before_patches_sha256": "972e8336c0e0f04fc69b1bae9c12597046628dfb08ed480095db28836a41f233",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/include/linux/module.h"
+    },
+    "kernel/kallsyms.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "5778a736c4ea840bde420a2aa8b63566500b8b15d650d518ef56657488ef5529",
+      "srpm_member_before_patches_sha256": "5778a736c4ea840bde420a2aa8b63566500b8b15d650d518ef56657488ef5529",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/kernel/kallsyms.c"
+    },
+    "kernel/module/internal.h": {
+      "old_debugsource_byte_match": true,
+      "sha256": "94c981f9242cb7db48a7730b31365b4194253dc29adc650b131529f7cd1de46b",
+      "srpm_member_before_patches_sha256": "94c981f9242cb7db48a7730b31365b4194253dc29adc650b131529f7cd1de46b",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/kernel/module/internal.h"
+    },
+    "kernel/module/kallsyms.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "4a7ab9cbd7a6919d18927d48178c8cecd1bd33be1997b3fa531a26c55380273b",
+      "srpm_member_before_patches_sha256": "4a7ab9cbd7a6919d18927d48178c8cecd1bd33be1997b3fa531a26c55380273b",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/kernel/module/kallsyms.c"
+    },
+    "kernel/module/main.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "6599ab6a74185f8b09351f20a01fdc82d2e2692fcbf99c6fc6a83e25aa02975b",
+      "srpm_member_before_patches_sha256": "6599ab6a74185f8b09351f20a01fdc82d2e2692fcbf99c6fc6a83e25aa02975b",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/kernel/module/main.c"
+    },
+    "kernel/module/strict_rwx.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "ba8a20bf06ca96b279ae80443cd9b554d60bf96158970dac3d377620010b63b5",
+      "srpm_member_before_patches_sha256": "ba8a20bf06ca96b279ae80443cd9b554d60bf96158970dac3d377620010b63b5",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/kernel/module/strict_rwx.c"
+    },
+    "mm/vmalloc.c": {
+      "old_debugsource_byte_match": true,
+      "sha256": "8451e13868edc59ef4d85979d3e5910bb5cfa4678daee6891e1b2f2518a6a3dc",
+      "srpm_member_before_patches_sha256": "8451e13868edc59ef4d85979d3e5910bb5cfa4678daee6891e1b2f2518a6a3dc",
+      "srpm_tar_member": "rpi4-linux-kernel-6.12.80/mm/vmalloc.c"
+    }
+  },
+  "spec_patches_scanned": {
+    "0002-drm-vc4-v3d-Fix-wrong-lock-protecting-filelist-in-ge.patch": {
+      "diff_paths": 2,
+      "inspected_source_files_modified": [],
+      "sha256": "274af1b6ee35b185e90816e535df0d24edf171fe6aa42000550d646e20356083"
+    },
+    "0003-perf-build-Add-make-check-headers-target.patch": {
+      "diff_paths": 2,
+      "inspected_source_files_modified": [],
+      "sha256": "d6c2d011615ddb451fcd177e9ef2e3607ef5c6206cb5655178ba58fec4d916e2"
+    },
+    "0004-ARM-ARM64-configs-tizen_bcm2711-Enable-F2FS-compress.patch": {
+      "diff_paths": 4,
+      "inspected_source_files_modified": [],
+      "sha256": "aebe3a09efa30a5717ed257cbb0c2bcb3a6edf243b5c1f2252a5bea7cc40f529"
+    },
+    "0005-script-build-support-non-sudo-image-creation-and-mou.patch": {
+      "diff_paths": 1,
+      "inspected_source_files_modified": [],
+      "sha256": "f31edc1dbed443cc7b861ad887a5c4b8f6e57e7fa57ac5f9f845c39698ecb6ef"
+    },
+    "0006-USB-serial-cp210x-Add-cp210x-stlink-driver-for-Smart.patch": {
+      "diff_paths": 2,
+      "inspected_source_files_modified": [],
+      "sha256": "dcda344d7790e134aaa1064af172b70caec310f553beb9098f5ecd570bca1e07"
+    },
+    "0007-USB-serial-cp210x-Fix-driver-name-collision-for-cp21.patch": {
+      "diff_paths": 1,
+      "inspected_source_files_modified": [],
+      "sha256": "f3b852f060cdaee3a1fc3b48ee348ec7a7b8b39d123cec6cb490e959a6413d81"
+    },
+    "0008-configs-packaging-modularize-defconfig-with-RT-and-L.patch": {
+      "diff_paths": 6,
+      "inspected_source_files_modified": [],
+      "sha256": "f282f36186525706f6c53f13bc1e60a65588602a8f57bcbde84255901ac6cb9f"
+    },
+    "0009-drivers-media-pci-hailo-Port-Hailo-accelerator-drive.patch.gz": {
+      "diff_paths": 40,
+      "inspected_source_files_modified": [],
+      "sha256": "8234af0684584ee369406a7272f5650c30411e7e3cbcfb0f354eeb5b4630d787"
+    },
+    "00d7934-to-8cdc667.diff.gz": {
+      "command": [
+        "git",
+        "apply",
+        "-p1",
+        "--include=include/linux/module.h",
+        "-"
+      ],
+      "diff_paths": 1349,
+      "exit_status": 0,
+      "inspected_source_files_modified": [
+        "include/linux/module.h"
+      ],
+      "sha256": "259405cdfc3d7d730ada299801cf074433c6755a3fd1c56b522d897771ac5ea0"
+    }
+  }
+}

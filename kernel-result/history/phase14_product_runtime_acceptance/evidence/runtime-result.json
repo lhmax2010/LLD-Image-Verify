@@ -1,0 +1,122 @@
+{
+  "NEW_QB_DEVICE_IDENTITY": "PASS",
+  "KERNEL_BOOT": "PASS",
+  "MODULE_INVENTORY": "PASS_59_OF_59",
+  "MODULE_RUNTIME": "PASS_LIVE_STATE",
+  "KERNEL_ERROR_REVIEW": "PASS_OBSERVED_DMESG_SCOPE",
+  "FUNCTIONAL_REGRESSION": "NOT_RUN_NO_APPROVED_CASE_AVAILABLE",
+  "RUNTIME_REGRESSION": "PARTIAL_PASS_FUNCTIONAL_PENDING",
+  "RUNTIME_MEMORY_BENEFIT": "NOT_MEASURED",
+  "KERNEL_OWNER_TRADEOFF_ACCEPTANCE": "PENDING_OWNER_REVIEW",
+  "PRODUCT_MERGE_READINESS": "PENDING",
+  "device": {
+    "serial": "private-address-03:26101",
+    "image_build_id": "tizen-unified-toolchain_20261125.130358_tizen-headed-armv7l",
+    "model": "Raspberry Pi 4 Model B Rev 1.5",
+    "arch": "armv7l",
+    "release": "6.12.80-arm-rpi4-v7l",
+    "uname": "Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Wed Nov 25 14:04:26 UTC 2026 armv7l GNU/Linux",
+    "boot_id": "[boot-id-redacted]",
+    "uptime": "234.37 651.37"
+  },
+  "kernel_release_binding": {
+    "status": "EXACT_LIVE_NOTES_AND_BANNER_MATCH",
+    "rpm": "arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+    "rpm_published_sha256": "46c00b2a01af0301dad12e56393be72cbf6d8aa87e84633c5622318f615cd52a",
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/repos/standard/packages/armv7l/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+    "rpm_member": "/boot/zImage",
+    "zimage_sha256": "c7bb5ba8a5d7731e9715b4df59daee7308b4931afe3aa365ba62e1a34237ced4",
+    "raw_image_sha256": "2bd412c5bdac45238d8a218457319d557599cb08b388ce97e46a68d51c427378",
+    "raw_image_size": 41721980,
+    "gzip_offset": 33353,
+    "device_note_offset_in_raw": 28707264,
+    "device_note_sha256": "0ae62c21ea77419084385da0888ce9ed32e51acc70ed65c0823a24c3df987652",
+    "device_kernel_build_id": "8d5da0f28ffc7a57a290127a26fc17cbbd103558",
+    "device_note_length": 84,
+    "device_banner_offset_in_raw": 24180028,
+    "device_banner": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-02) (clang version 22.1.8, LLD 22.1.8) #1 SMP Wed Nov 25 14:04:26 UTC 2026",
+    "sdk_vmlinux_build_id_reference": "b0449fe7b89ffc0f19584f789e3c73c6240fba28",
+    "sdk_reference_build_id_same_as_live": false
+  },
+  "module_inventory": {
+    "count": 59,
+    "installed_rpm_header_exit_status": 2,
+    "installed_rpm_file_digest_exit_status": 2,
+    "root": "/usr/lib/modules/6.12.80-arm-rpi4-v7l",
+    "published_member_sha256_match": 59,
+    "in_tree_matches": 52,
+    "out_of_tree_matches": 7,
+    "module_symlinks": [],
+    "old_release_byte_identical_count": 6
+  },
+  "kdbus": {
+    "status": "PASS_LIVE_STATE",
+    "module_sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860",
+    "path": "/usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+    "build_id": "9527dadadaaf6aae09ce7fb483d2878b857375f6",
+    "proc_modules": "kdbus 98304 98 - Live 0x00000000 (O)",
+    "dependencies": [],
+    "sysfs": {
+      "initstate": "live",
+      "refcnt": "98",
+      "coresize": "98304",
+      "initsize": "0",
+      "taint": "O",
+      "srcversion": "82BF5E4477A92EF05AD9A1B"
+    },
+    "holders": [],
+    "mountinfo": [
+      "34 22 0:27 / /sys/fs/kdbus rw,nosuid,nodev,noexec,relatime shared:13 - kdbusfs kdbusfs rw"
+    ],
+    "nodes": [
+      "dr-xr-xr-x 2 root root 0 Jan  1  1970 /sys/fs/kdbus",
+      "total 0",
+      "dr-xr-xr-x 2 root  root  0 Jan  1  1970 0-system",
+      "dr-x------ 2 owner users 0 Jan  1  1970 5001-user",
+      "-rw-rw-rw- 1 root  root  0 Jan  1  1970 control"
+    ],
+    "loaded_module_count": 10,
+    "functional_test_candidate_paths_found": []
+  },
+  "boot_targets": {
+    "sysinit.target": {
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active"
+    },
+    "basic.target": {
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active"
+    },
+    "multi-user.target": {
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active"
+    },
+    "graphical.target": {
+      "LoadState": "loaded",
+      "ActiveState": "active",
+      "SubState": "active"
+    }
+  },
+  "observed_kernel_error_count": 0,
+  "journal_exit_status": 1,
+  "old_qb_baseline": {
+    "image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l",
+    "model": "Raspberry Pi 4 Model B Rev 1.5",
+    "proc_version": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+    "build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+    "module_matches_published": 59,
+    "loaded_module_count": 11,
+    "initial_loaded_module_count": 10,
+    "only_old_loaded_snapshot": [
+      "binfmt_misc"
+    ],
+    "only_new_loaded_snapshot": [],
+    "kdbus_proc_modules": "kdbus 98304 98 - Live 0x00000000 (O)",
+    "kdbus_installed_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+    "kdbus_loaded_build_id": "b85657c98fa68ebf43a90520861cd8f461c0abad"
+  },
+  "device_mutation_performed": false
+}

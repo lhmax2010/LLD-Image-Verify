@@ -1,0 +1,2 @@
+# Preserve imported evidence line endings and historical command/patch whitespace.
+history/** -text whitespace=cr-at-eol,-blank-at-eol,-blank-at-eof,-space-before-tab

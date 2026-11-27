@@ -1,0 +1,25 @@
+{
+  "argv": [
+    [
+      "rpm2cpio",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm"
+    ],
+    [
+      "cpio",
+      "-idu",
+      "--quiet",
+      "--no-absolute-filenames",
+      "-D",
+      "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125/evidence/build/base/tool-extract/clang-accel-x86_64-armv7l",
+      "./emul/usr/bin/ld.lld"
+    ]
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:37:50.654349+00:00",
+  "elapsed_seconds": 2.458,
+  "pipeline_exit_statuses": [
+    0,
+    0
+  ],
+  "exit_status": 0
+}

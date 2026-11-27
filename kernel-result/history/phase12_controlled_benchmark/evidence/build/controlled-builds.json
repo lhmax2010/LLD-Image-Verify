@@ -1,0 +1,641 @@
+{
+  "groups": {
+    "A": {
+      "successful_build": true,
+      "source_files": {
+        "kernel/COPYING": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+        "kernel/Makefile": "4b34db0f76ca1626152b32f7036a718bc15aa179fa7355e57f56fc44a0fe6573",
+        "kernel/dm-bow.c": "ce8babefacf56c660d1dfb74f8d99e047123118484cd41e87c04283b77e2a71c",
+        "kernel/dm-core.h": "a5a681e7e09b8ebb0a466d0cced14a16025ec22591fb87efffbddc7d31a8bb32",
+        "kernel/dm.h": "6e7d025865949d5bb708a6e050492dc3328ef4eda9579106857897ee9d791649",
+        "kernel/extcon-usb-fixed.c": "9bc125949cd66674f56dd416c280aa7663925599b05556a9939815cd2af644b7",
+        "kernel/include/uapi/linux/kdbus.h": "7774b1f57127a36b1f537117eab4ca5061eb4b7ac290003f2acf77091722e9db",
+        "kernel/include/uapi/linux/logger.h": "2480478ee0ecfbb7235577e0e8bcdd8d40c0170a6bbaa1a91b530034b2d2ddad",
+        "kernel/include/uapi/linux/zlogger.h": "e8da9fd9af1ae0a47f3c2e61ed924164e617f7914928afe16ec0a899e3c3d6a2",
+        "kernel/inform-reboot.c": "52d6eca54bfdc451e59549faef9ce493090e084a4a23d24a0e93130dd847169a",
+        "kernel/kdbus/Makefile": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+        "kernel/kdbus/bus.c": "034da0726d289e7e2b90f5530bd211c0d12412a2d0550cc2c87a719f70c81f36",
+        "kernel/kdbus/bus.h": "8d31b8b840f3c2d2e3c05a612f09007b7a21380f451dd27dfea769aa684af106",
+        "kernel/kdbus/connection.c": "de91142fd908954ce771e36290fd25e5ddb3ee031df8aea2172c1d34cbb23721",
+        "kernel/kdbus/connection.h": "e103457a853375c9e45f7207ea9b10095edb645eb3499046665464108fdf1c94",
+        "kernel/kdbus/domain.c": "d74165ee457bfe0f0b57eb1705bf10cb3f996c133704171909fa85e76c492a79",
+        "kernel/kdbus/domain.h": "63dfa61eef20c369b32fa038ef14209ea5e6bfbf8d244e16c96773e117492ea0",
+        "kernel/kdbus/endpoint.c": "b69198de38aa26641a7f90b4a54ef81b50f74847757facc270ebd1e3fad1f21d",
+        "kernel/kdbus/endpoint.h": "083a6ec4215283f44195779532644a057957aa2f0dc513935dc9c164d07f66e9",
+        "kernel/kdbus/fs.c": "812b5196d7ac927c29103f7ccfa0781675a8fcff0d12b0fac21f9432b1e7331f",
+        "kernel/kdbus/fs.h": "4658b87bba6d8d9913e7cbbdf4a8aee115319ffe31fda627db6035ee8818ad7a",
+        "kernel/kdbus/handle.c": "0ec395a8986b21f0bf0a16cdf71fd1c7e0fe3c0f6a0d9614e18541316caeb23c",
+        "kernel/kdbus/handle.h": "b538a130361cc798403a87af3224af2b30e918fc24d368a9532fa89735e90640",
+        "kernel/kdbus/item.c": "9756d272ddae7d251805ee782799b7f99339d749e1483eba085ad1826c3caec3",
+        "kernel/kdbus/item.h": "29c09ee09fe9357de79b072a522a7b6754c20c921b7ca59cae3d47eba2a8b384",
+        "kernel/kdbus/limits.h": "22308795a4775e9322ac896e8db31fddd3befe87f424961c22fc5d11828cd6fd",
+        "kernel/kdbus/main.c": "5f5466191fabf213192713c6232ab323dafab5d78e6cab5b1b50b8d472dd6ec3",
+        "kernel/kdbus/match.c": "53f32eb006c856b5b148b16876ada5b1e890e507c4136e42c2b2bfe2cbe878ec",
+        "kernel/kdbus/match.h": "2e7ddaa0bff599dbeb0de0487c6c0cc7ecd4e1ac4b2e2d7a26f6ab77d55c9399",
+        "kernel/kdbus/message.c": "62d9e4323555d1e8c210c16ec8d211d506bec388f2c841ad92d99261d2c69d14",
+        "kernel/kdbus/message.h": "72480ef2420657c005f692f260714e4bbfc814f676bb06f7f8cce83718fef342",
+        "kernel/kdbus/metadata.c": "ba5d6ff889d08e4a5ff763c4dd386935964a0508222908d59dac0660abee4b40",
+        "kernel/kdbus/metadata.h": "ba3710ed2e63aa9d1994abf65bad0e03487cb8d0c540b736989b1892ce503500",
+        "kernel/kdbus/names.c": "c9f7318d92f442a8b2705371f87890955c843ce89c385a38406b50593d148cad",
+        "kernel/kdbus/names.h": "30c4ef4712cd05d45380aea70c4bfd4e2152d86716640536c2a89417b5141709",
+        "kernel/kdbus/node.c": "964ca51ed2c8c6b46bd63409296c843cc6cebdbb854cb1bd7f404cf6d8f2b848",
+        "kernel/kdbus/node.h": "9943c5974baf683fbaf2fb9ed4cdba108c5f850598bb5221dd8d145d8b982ee1",
+        "kernel/kdbus/notify.c": "60df6aaf2bb8a00195f157356915732a94f20ef49d3084515db2d27876f94553",
+        "kernel/kdbus/notify.h": "552902a258f112a46b44bf22c3743ce6fecee985759ebf4d9d6e88361a6cdb6b",
+        "kernel/kdbus/policy.c": "bbec511a503ce3b502551dd75dda0b505337395724f60489468c54ce2eaffc82",
+        "kernel/kdbus/policy.h": "d8fa23c8fdb57987081ab7bfc1cfc46f3e72058fb7a26ed7e4d9237cb4521e3e",
+        "kernel/kdbus/pool.c": "3334f8c324ac27e247a189aebc1c309340c6a27d0eee282f55d34ea0ced135a8",
+        "kernel/kdbus/pool.h": "09dcc67149a0da1a40e0f586becc53c701828ca934521260d5dc7f968cdf1e57",
+        "kernel/kdbus/queue.c": "6ff5f0319a3751bdd9f6cb28ef2cc0afb481d163060d5effc5e3bef1fe3c3409",
+        "kernel/kdbus/queue.h": "11931ec3a350846fb6dd4c3d99cbb0f29c0c43abd464bef9326c081a0ad19a09",
+        "kernel/kdbus/reply.c": "aa0d78319f2bcd0fd84f1df5a44df57fbecf5a7ace6fe9abba7bd6b02bae1f6f",
+        "kernel/kdbus/reply.h": "26284e600211c965bbb1644d40029e6508b2d2b701361dc2cec2096c630228b8",
+        "kernel/kdbus/util.c": "5afe16c663957bd06e9e5c1d61de26faefa4f91f80e4b7799a1f4c4d05f9953c",
+        "kernel/kdbus/util.h": "0ee32d70d1a4a8625cdfa7b240a32fc8af575b79330e8cba8d317409d5b5fd6d",
+        "kernel/logger.c": "6ca98a18c96d3b47a402ac0fa3787a050879561c5718f203fe6374ea17dc676c",
+        "kernel/proc-tsm.c": "4b16e0d55a5dbbfe5a248792bc87fa7be1f306cf96bfd278ea2ff85e65bb3535",
+        "kernel/zlogger/Makefile": "258a2f49c0de445866adcfb6e2dd253149a8ca497d441c7dbea711e6717711ea",
+        "kernel/zlogger/zlogger.c": "0c523eee797d45ccd641492e16a7caf162a29fa109806319a343b5ddcfdeb87c"
+      },
+      "intermediate": {
+        "executable": "/emul/usr/bin/ld",
+        "argv": [
+          "ld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/A-intermediate.strace",
+          "sha256": "84c645cdfbb4c40d8dd9225ade6dd6205030843df17d9fa52fd182506bf29b20",
+          "size": 18642
+        },
+        "pid": 624057,
+        "executable_sha256": "88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece",
+        "version": "GNU BFD 2.43",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "final": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-r",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "--build-id=sha1",
+          "-T",
+          "scripts/module.lds",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/A-final.strace",
+          "sha256": "2817842bc29a9774605124378e07770bf3f271599b7aebbe36718d1ce172c818",
+          "size": 18731
+        },
+        "pid": 624242,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "postprocessing": {
+        "pahole": {
+          "executable": "/mnt/entry/pahole",
+          "argv": [
+            "pahole",
+            "-J",
+            "-j1",
+            "--btf_features=encode_force,var,float,enum64,decl_tag,type_tag,optimized_func,consistent_func,decl_tag_kfuncs",
+            "--lang_exclude=rust",
+            "--btf_features=distilled_base",
+            "--btf_base",
+            "vmlinux",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/A-pahole.strace",
+            "sha256": "87aa2af887f7e4dd95650eacb0b03fa059fb1f66885a9b0608b9bc2bdef13632",
+            "size": 37408
+          },
+          "pid": 624245
+        },
+        "resolve": {
+          "executable": "tools/bpf/resolve_btfids/resolve_btfids",
+          "argv": [
+            "./tools/bpf/resolve_btfids/resolve_btfids",
+            "-b",
+            "vmlinux",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/A-resolve.strace",
+            "sha256": "bbfe5363758d026fe5a436ba7b0e750b5ce23e11cd386254c1264c9e96084dae",
+            "size": 18322
+          },
+          "pid": 624258
+        },
+        "strip": {
+          "executable": "/emul/usr/bin/llvm-objcopy",
+          "argv": [
+            "llvm-strip",
+            "--strip-debug",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/A-strip.strace",
+            "sha256": "bd29088a20750ab5845cddf0ee081f1b2e21a601dfe1bc8ac40f18d07f336634",
+            "size": 17814
+          },
+          "pid": 624348
+        }
+      },
+      "response": {
+        "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "sha256": "3739db57500615e4f56f763599566b7360fc09ae8cfd5b490dd95fcf7a91a7c1",
+        "size": 1451
+      },
+      "ordered_inputs": [
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+          "sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+          "size": 126728
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+          "sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+          "size": 297516
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+          "sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+          "size": 107788
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+          "sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+          "size": 116188
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+          "sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+          "size": 208396
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+          "sha256": "d3a56b42d0e440cafa0c9ad08ac24e4a664608bd70f67e5d343c1a7157ac7bf6",
+          "size": 13160
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+          "sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+          "size": 87228
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+          "sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+          "size": 105832
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+          "sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+          "size": 279008
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+          "sha256": "fbcd8427483f279a65714c7c550ac7c6246791da44688067c753359799089409",
+          "size": 231428
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+          "sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+          "size": 133044
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+          "sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+          "size": 42996
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+          "sha256": "01ed5e73f3c29cc2758f7f276fe279c21971ff66dac6975fbcae6be29d366fe9",
+          "size": 107012
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+          "sha256": "b1a8efc3f7c7b48056a599e06eb677fb63db66aeaa5ea1e5004760fa17d6b745",
+          "size": 110156
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+          "sha256": "96de74524a3c7aff8e1f91518068cb2a2f203cd6266881390b15e5d751ee0953",
+          "size": 99924
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+          "sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+          "size": 193088
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+          "sha256": "1e20588a49a3448bd3ff942201c035c1bc6459d19ed14c5bb8560bfea86cfb0b",
+          "size": 117184
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+          "sha256": "68133fdb75581c74d3c7832bef7290d20b757d2af3008d766591c6a420f581cc",
+          "size": 192716
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+          "sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+          "size": 22280
+        }
+      ],
+      "final_common_inputs": [
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "sha256": "9c019d659ab350e976633580c72ad0d6cd953fbf39f36843c3821f2544797295",
+          "size": 57564
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o",
+          "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o",
+          "sha256": "0d4686a0020c3dc8b3316632bcba4c59e4b49ab9e36662fc11da951937fd2b5a",
+          "size": 2320
+        }
+      ],
+      "intermediate_object": {
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "sha256": "d9cbcdb42fc276f39d8a93834a34bd5130714ef689b5eab334b492ea7833448a",
+        "size": 2505192
+      },
+      "unstripped_module": {
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "sha256": "10728b2e80dc5a2e971ef4b3d3901a1d8a103331513ba8cbf8bd952856552da4",
+        "size": 2071276
+      },
+      "strip_debug_module": {
+        "path": "work/A/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+        "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+        "size": 162584
+      }
+    },
+    "B": {
+      "successful_build": true,
+      "source_files": {
+        "kernel/COPYING": "32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670",
+        "kernel/Makefile": "dde5b1687fb54df1a002cd88e093f5cc6c92921e359917b615de6befbf6424d2",
+        "kernel/dm-bow.c": "ce8babefacf56c660d1dfb74f8d99e047123118484cd41e87c04283b77e2a71c",
+        "kernel/dm-core.h": "a5a681e7e09b8ebb0a466d0cced14a16025ec22591fb87efffbddc7d31a8bb32",
+        "kernel/dm.h": "6e7d025865949d5bb708a6e050492dc3328ef4eda9579106857897ee9d791649",
+        "kernel/extcon-usb-fixed.c": "9bc125949cd66674f56dd416c280aa7663925599b05556a9939815cd2af644b7",
+        "kernel/include/uapi/linux/kdbus.h": "7774b1f57127a36b1f537117eab4ca5061eb4b7ac290003f2acf77091722e9db",
+        "kernel/include/uapi/linux/logger.h": "2480478ee0ecfbb7235577e0e8bcdd8d40c0170a6bbaa1a91b530034b2d2ddad",
+        "kernel/include/uapi/linux/zlogger.h": "e8da9fd9af1ae0a47f3c2e61ed924164e617f7914928afe16ec0a899e3c3d6a2",
+        "kernel/inform-reboot.c": "52d6eca54bfdc451e59549faef9ce493090e084a4a23d24a0e93130dd847169a",
+        "kernel/kdbus/Makefile": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+        "kernel/kdbus/bus.c": "034da0726d289e7e2b90f5530bd211c0d12412a2d0550cc2c87a719f70c81f36",
+        "kernel/kdbus/bus.h": "8d31b8b840f3c2d2e3c05a612f09007b7a21380f451dd27dfea769aa684af106",
+        "kernel/kdbus/connection.c": "de91142fd908954ce771e36290fd25e5ddb3ee031df8aea2172c1d34cbb23721",
+        "kernel/kdbus/connection.h": "e103457a853375c9e45f7207ea9b10095edb645eb3499046665464108fdf1c94",
+        "kernel/kdbus/domain.c": "d74165ee457bfe0f0b57eb1705bf10cb3f996c133704171909fa85e76c492a79",
+        "kernel/kdbus/domain.h": "63dfa61eef20c369b32fa038ef14209ea5e6bfbf8d244e16c96773e117492ea0",
+        "kernel/kdbus/endpoint.c": "b69198de38aa26641a7f90b4a54ef81b50f74847757facc270ebd1e3fad1f21d",
+        "kernel/kdbus/endpoint.h": "083a6ec4215283f44195779532644a057957aa2f0dc513935dc9c164d07f66e9",
+        "kernel/kdbus/fs.c": "812b5196d7ac927c29103f7ccfa0781675a8fcff0d12b0fac21f9432b1e7331f",
+        "kernel/kdbus/fs.h": "4658b87bba6d8d9913e7cbbdf4a8aee115319ffe31fda627db6035ee8818ad7a",
+        "kernel/kdbus/handle.c": "0ec395a8986b21f0bf0a16cdf71fd1c7e0fe3c0f6a0d9614e18541316caeb23c",
+        "kernel/kdbus/handle.h": "b538a130361cc798403a87af3224af2b30e918fc24d368a9532fa89735e90640",
+        "kernel/kdbus/item.c": "9756d272ddae7d251805ee782799b7f99339d749e1483eba085ad1826c3caec3",
+        "kernel/kdbus/item.h": "29c09ee09fe9357de79b072a522a7b6754c20c921b7ca59cae3d47eba2a8b384",
+        "kernel/kdbus/limits.h": "22308795a4775e9322ac896e8db31fddd3befe87f424961c22fc5d11828cd6fd",
+        "kernel/kdbus/main.c": "5f5466191fabf213192713c6232ab323dafab5d78e6cab5b1b50b8d472dd6ec3",
+        "kernel/kdbus/match.c": "53f32eb006c856b5b148b16876ada5b1e890e507c4136e42c2b2bfe2cbe878ec",
+        "kernel/kdbus/match.h": "2e7ddaa0bff599dbeb0de0487c6c0cc7ecd4e1ac4b2e2d7a26f6ab77d55c9399",
+        "kernel/kdbus/message.c": "62d9e4323555d1e8c210c16ec8d211d506bec388f2c841ad92d99261d2c69d14",
+        "kernel/kdbus/message.h": "72480ef2420657c005f692f260714e4bbfc814f676bb06f7f8cce83718fef342",
+        "kernel/kdbus/metadata.c": "ba5d6ff889d08e4a5ff763c4dd386935964a0508222908d59dac0660abee4b40",
+        "kernel/kdbus/metadata.h": "ba3710ed2e63aa9d1994abf65bad0e03487cb8d0c540b736989b1892ce503500",
+        "kernel/kdbus/names.c": "c9f7318d92f442a8b2705371f87890955c843ce89c385a38406b50593d148cad",
+        "kernel/kdbus/names.h": "30c4ef4712cd05d45380aea70c4bfd4e2152d86716640536c2a89417b5141709",
+        "kernel/kdbus/node.c": "964ca51ed2c8c6b46bd63409296c843cc6cebdbb854cb1bd7f404cf6d8f2b848",
+        "kernel/kdbus/node.h": "9943c5974baf683fbaf2fb9ed4cdba108c5f850598bb5221dd8d145d8b982ee1",
+        "kernel/kdbus/notify.c": "60df6aaf2bb8a00195f157356915732a94f20ef49d3084515db2d27876f94553",
+        "kernel/kdbus/notify.h": "552902a258f112a46b44bf22c3743ce6fecee985759ebf4d9d6e88361a6cdb6b",
+        "kernel/kdbus/policy.c": "bbec511a503ce3b502551dd75dda0b505337395724f60489468c54ce2eaffc82",
+        "kernel/kdbus/policy.h": "d8fa23c8fdb57987081ab7bfc1cfc46f3e72058fb7a26ed7e4d9237cb4521e3e",
+        "kernel/kdbus/pool.c": "3334f8c324ac27e247a189aebc1c309340c6a27d0eee282f55d34ea0ced135a8",
+        "kernel/kdbus/pool.h": "09dcc67149a0da1a40e0f586becc53c701828ca934521260d5dc7f968cdf1e57",
+        "kernel/kdbus/queue.c": "6ff5f0319a3751bdd9f6cb28ef2cc0afb481d163060d5effc5e3bef1fe3c3409",
+        "kernel/kdbus/queue.h": "11931ec3a350846fb6dd4c3d99cbb0f29c0c43abd464bef9326c081a0ad19a09",
+        "kernel/kdbus/reply.c": "aa0d78319f2bcd0fd84f1df5a44df57fbecf5a7ace6fe9abba7bd6b02bae1f6f",
+        "kernel/kdbus/reply.h": "26284e600211c965bbb1644d40029e6508b2d2b701361dc2cec2096c630228b8",
+        "kernel/kdbus/util.c": "5afe16c663957bd06e9e5c1d61de26faefa4f91f80e4b7799a1f4c4d05f9953c",
+        "kernel/kdbus/util.h": "0ee32d70d1a4a8625cdfa7b240a32fc8af575b79330e8cba8d317409d5b5fd6d",
+        "kernel/logger.c": "6ca98a18c96d3b47a402ac0fa3787a050879561c5718f203fe6374ea17dc676c",
+        "kernel/proc-tsm.c": "4b16e0d55a5dbbfe5a248792bc87fa7be1f306cf96bfd278ea2ff85e65bb3535",
+        "kernel/zlogger/Makefile": "258a2f49c0de445866adcfb6e2dd253149a8ca497d441c7dbea711e6717711ea",
+        "kernel/zlogger/zlogger.c": "0c523eee797d45ccd641492e16a7caf162a29fa109806319a343b5ddcfdeb87c"
+      },
+      "intermediate": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "-r",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "@/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/B-intermediate.strace",
+          "sha256": "6e01797d47db841c0a12151fae76682e5b3a2bac5954497965708be420c76696",
+          "size": 18671
+        },
+        "pid": 625147,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "final": {
+        "executable": "/emul/usr/bin/lld",
+        "argv": [
+          "ld.lld",
+          "-r",
+          "-EL",
+          "-z",
+          "noexecstack",
+          "--build-id=sha1",
+          "-T",
+          "scripts/module.lds",
+          "-o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o"
+        ],
+        "exit_status": 0,
+        "exec_trace": {
+          "path": "evidence/build/selected/B-final.strace",
+          "sha256": "2817842bc29a9774605124378e07770bf3f271599b7aebbe36718d1ce172c818",
+          "size": 18731
+        },
+        "pid": 625618,
+        "executable_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "version": "LLVM LLD 22.1.8",
+        "version_probe": "evidence/build/probe-ready.out"
+      },
+      "postprocessing": {
+        "pahole": {
+          "executable": "/mnt/entry/pahole",
+          "argv": [
+            "pahole",
+            "-J",
+            "-j1",
+            "--btf_features=encode_force,var,float,enum64,decl_tag,type_tag,optimized_func,consistent_func,decl_tag_kfuncs",
+            "--lang_exclude=rust",
+            "--btf_features=distilled_base",
+            "--btf_base",
+            "vmlinux",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/B-pahole.strace",
+            "sha256": "7b28833136eeabf2d1ec9925fb52618c4c91335fc60509e52976e8ba89592a02",
+            "size": 37408
+          },
+          "pid": 625621
+        },
+        "resolve": {
+          "executable": "tools/bpf/resolve_btfids/resolve_btfids",
+          "argv": [
+            "./tools/bpf/resolve_btfids/resolve_btfids",
+            "-b",
+            "vmlinux",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/B-resolve.strace",
+            "sha256": "bbfe5363758d026fe5a436ba7b0e750b5ce23e11cd386254c1264c9e96084dae",
+            "size": 18322
+          },
+          "pid": 625644
+        },
+        "strip": {
+          "executable": "/emul/usr/bin/llvm-objcopy",
+          "argv": [
+            "llvm-strip",
+            "--strip-debug",
+            "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko"
+          ],
+          "exit_status": 0,
+          "exec_trace": {
+            "path": "evidence/build/selected/B-strip.strace",
+            "sha256": "bd29088a20750ab5845cddf0ee081f1b2e21a601dfe1bc8ac40f18d07f336634",
+            "size": 17814
+          },
+          "pid": 625811
+        }
+      },
+      "response": {
+        "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod",
+        "sha256": "3739db57500615e4f56f763599566b7360fc09ae8cfd5b490dd95fcf7a91a7c1",
+        "size": 1451
+      },
+      "ordered_inputs": [
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/bus.o",
+          "sha256": "f6611f26104e3c97cda38a773a40f030ca4d8641c6c89e6104cccf20e616f777",
+          "size": 126728
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/connection.o",
+          "sha256": "fa920c06785e6676fd943efa9b34755e4fb1394fabd4ceeb1a2369cbd99cdffd",
+          "size": 297516
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/endpoint.o",
+          "sha256": "c555c8b22fe51de7087822bc71da1cda07a8342c4b671e832636e1b968e4dd9a",
+          "size": 107788
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/fs.o",
+          "sha256": "afdc8450d2746a0c52f708d345268046c583d83cc057f223ad2b8695ea7fdb87",
+          "size": 116188
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/handle.o",
+          "sha256": "70ee04ca91b724d7fea76bb112a028144cc1c2c8cdc3fbb678ea68c7b7f23af4",
+          "size": 208396
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/item.o",
+          "sha256": "d3a56b42d0e440cafa0c9ad08ac24e4a664608bd70f67e5d343c1a7157ac7bf6",
+          "size": 13160
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/main.o",
+          "sha256": "829f52755fe96aee2effe1a320466f1086941739ce77862274570adc88359515",
+          "size": 87228
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/match.o",
+          "sha256": "f2c354af4af1edb17f123d91ec1932934bb45134086c53699ddc79fe604c5cdf",
+          "size": 105832
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/message.o",
+          "sha256": "eb29075b4f2629605572f0ba51e585f4958a54302ecc2a97f4d0f60fc5564b08",
+          "size": 279008
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/metadata.o",
+          "sha256": "fbcd8427483f279a65714c7c550ac7c6246791da44688067c753359799089409",
+          "size": 231428
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/names.o",
+          "sha256": "3c13930659ab7d302a062c47304fc519da1860ad011ad75b1f0e0e717bfa7da7",
+          "size": 133044
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/node.o",
+          "sha256": "353862269b1a8f751d9622730fff438008fc437f8ab8a80445a880645a6779fc",
+          "size": 42996
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/notify.o",
+          "sha256": "01ed5e73f3c29cc2758f7f276fe279c21971ff66dac6975fbcae6be29d366fe9",
+          "size": 107012
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/domain.o",
+          "sha256": "b1a8efc3f7c7b48056a599e06eb677fb63db66aeaa5ea1e5004760fa17d6b745",
+          "size": 110156
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/policy.o",
+          "sha256": "96de74524a3c7aff8e1f91518068cb2a2f203cd6266881390b15e5d751ee0953",
+          "size": 99924
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/pool.o",
+          "sha256": "3771b2501532f5ffcd4d8fb415751ace51bffa171417c1c77f911fe6375f152b",
+          "size": 193088
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/reply.o",
+          "sha256": "1e20588a49a3448bd3ff942201c035c1bc6459d19ed14c5bb8560bfea86cfb0b",
+          "size": 117184
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/queue.o",
+          "sha256": "68133fdb75581c74d3c7832bef7290d20b757d2af3008d766591c6a420f581cc",
+          "size": 192716
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/util.o",
+          "sha256": "2c5dfad686202ea8f6a74ec5687dfda587f5c65036cb3db58a6d743a56e4848e",
+          "size": 22280
+        }
+      ],
+      "final_common_inputs": [
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+          "sha256": "ff94c0bf2fcf61a18625a4dc3e2a5ba416e63296e9e46353f9ad322e8f1a1c56",
+          "size": 57564
+        },
+        {
+          "guest_path": "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o",
+          "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/.module-common.o",
+          "sha256": "0d4686a0020c3dc8b3316632bcba4c59e4b49ab9e36662fc11da951937fd2b5a",
+          "size": 2320
+        }
+      ],
+      "intermediate_object": {
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+        "sha256": "e5b8c3d1bcb0b9ddc180c842269c435ffc95840831ad75c313ba3f42682b7c99",
+        "size": 1998564
+      },
+      "unstripped_module": {
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+        "sha256": "197aba9481e1e66a9d903e62a3ba9f9e0409fe1eda1db106f55cf0cda8cd9267",
+        "size": 2069984
+      },
+      "strip_debug_module": {
+        "path": "work/B/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+        "sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860",
+        "size": 161292
+      }
+    }
+  },
+  "source_delta": [
+    "kernel/Makefile"
+  ],
+  "response_and_ordered_inputs_byte_identical": true,
+  "final_input_differences": [
+    "/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o"
+  ],
+  "modpost_c_source_difference": "Ordering of the same 154 __versions entries",
+  "exec_observation_scope": "PHASE12_LOCAL_CONTROLLED_MODULE_BUILD_ONLY"
+}

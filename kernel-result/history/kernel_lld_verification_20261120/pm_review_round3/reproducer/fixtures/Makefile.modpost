@@ -1,0 +1,8 @@
+# A sibling step. It reads external Kbuild and does not invoke a linker.
+include $(REPRO_DIR)/fixtures/trace.mk
+.DEFAULT_GOAL := modpost
+include $(M)/Makefile
+$(call trace_ld,modpost)
+.PHONY: modpost
+modpost:
+	@:

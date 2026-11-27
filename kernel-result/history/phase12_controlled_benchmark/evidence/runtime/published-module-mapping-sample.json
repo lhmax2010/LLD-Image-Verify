@@ -1,0 +1,290 @@
+{
+  "interpretation": "Historical observation only. Core-filter counts are a source/ELF eligibility model.",
+  "modules": {
+    "extra/dm-bow.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 31868,
+          "sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d"
+        },
+        {
+          "bytes": 31868,
+          "sha256": "2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 5,
+          "d": 2,
+          "t": 0
+        },
+        {
+          "a": 5,
+          "d": 2,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        6,
+        6
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/extcon-usb-fixed.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 6156,
+          "sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb"
+        },
+        {
+          "bytes": 6156,
+          "sha256": "0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 1,
+          "d": 0,
+          "t": 0
+        },
+        {
+          "a": 1,
+          "d": 0,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        1,
+        1
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/inform-reboot.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 7052,
+          "sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f"
+        },
+        {
+          "bytes": 7052,
+          "sha256": "ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 2,
+          "d": 0,
+          "t": 0
+        },
+        {
+          "a": 2,
+          "d": 0,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        1,
+        1
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/kdbus/kdbus.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 162584,
+          "sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576"
+        },
+        {
+          "bytes": 161292,
+          "sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": false,
+      "mapping_counts": [
+        {
+          "a": 122,
+          "d": 183,
+          "t": 0
+        },
+        {
+          "a": 122,
+          "d": 102,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        301,
+        223
+      ],
+      "removed": {
+        ".ARM.extab": 18,
+        ".ARM.extab.init.text": 1,
+        ".data": 2,
+        ".data..once": 3,
+        ".exit.data": 1,
+        ".init.data": 1,
+        ".modinfo": 1,
+        ".rodata": 4,
+        ".rodata.cst16": 5,
+        ".rodata.cst32": 3,
+        ".rodata.cst8": 2,
+        ".rodata.str": 2,
+        ".rodata.str1.1": 17,
+        "__bug_table": 2,
+        "__mcount_loc": 19
+      },
+      "removed_core_filter_eligible": 78,
+      "removed_map_classes": [
+        "d"
+      ],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/logger.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 23664,
+          "sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520"
+        },
+        {
+          "bytes": 23664,
+          "sha256": "69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 7,
+          "d": 4,
+          "t": 0
+        },
+        {
+          "a": 7,
+          "d": 4,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        10,
+        10
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/proc-tsm.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 10680,
+          "sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531"
+        },
+        {
+          "bytes": 10680,
+          "sha256": "cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 8,
+          "d": 5,
+          "t": 0
+        },
+        {
+          "a": 8,
+          "d": 5,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        12,
+        12
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    },
+    "extra/zlogger/zlogger.ko": {
+      "added_map_classes": [],
+      "elfs": [
+        {
+          "bytes": 31628,
+          "sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98"
+        },
+        {
+          "bytes": 31628,
+          "sha256": "22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98"
+        }
+      ],
+      "executable_section_marker_multisets_equal": true,
+      "identical_packaged_elf_bytes": true,
+      "mapping_counts": [
+        {
+          "a": 4,
+          "d": 2,
+          "t": 0
+        },
+        {
+          "a": 4,
+          "d": 2,
+          "t": 0
+        }
+      ],
+      "mapping_counts_eligible_under_core_filter": [
+        6,
+        6
+      ],
+      "removed": {},
+      "removed_core_filter_eligible": 0,
+      "removed_map_classes": [],
+      "symtab_section_flags": [
+        0,
+        0
+      ]
+    }
+  },
+  "scope": "Phase 11 packaged seven-module comparison. Both QB environments differ."
+}

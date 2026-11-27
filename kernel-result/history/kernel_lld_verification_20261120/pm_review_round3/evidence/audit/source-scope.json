@@ -1,0 +1,603 @@
+{
+  "snapshot": "tizen-unified-toolchain_20261120.082536",
+  "kernel_revision": "42aeefac58edeb081aff440f0b60be71cbe49755",
+  "external_revision": "platform/kernel/linux-tizen-modules-source#25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "files": [
+    {
+      "file": "sources/kernel/.config",
+      "origin": "pm_review_round2/evidence/kernel/source/.config",
+      "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/Kbuild",
+      "origin": "pm_review_round2/evidence/kernel/source/Kbuild",
+      "sha256": "339b9ec44fce768d901a27e9e697f8bb5c924508cfd2c578c9fe03c50c3c32cd",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/Makefile",
+      "sha256": "4a4a597bd36c11b465a5041b600fc179df55eb52c9d30d3524646be42849f906",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/arch/arm/Kbuild",
+      "origin": "pm_review_round2/evidence/kernel/source/arch/arm/Kbuild",
+      "sha256": "fea8024fc39c4926dda5a052e40858ec8817ee5f694fc73316544972612c50d9",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/arch/arm/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/arch/arm/Makefile",
+      "sha256": "0774bce3f349c4fe6f4a594bc43f7f80c239c883fc58ec44f199abb3029a4c24",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/arch/arm/boot/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/arch/arm/boot/Makefile",
+      "sha256": "4b73d37c8dd5b300380121e11f74ad40086aecda55f8e987d3025989ea241afd",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/arch/arm/boot/compressed/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/arch/arm/boot/compressed/Makefile",
+      "sha256": "8695b90f22fead3819383081774de888ab781b6006ec0048cc1e44e00d7d0205",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/crypto/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/crypto/Makefile",
+      "sha256": "74e092e89f0121e57ad569c48342cae7f5b1ff3151888740b9edac33b2058971",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/Makefile",
+      "sha256": "05ad8e0e0448b9247f5f15ba02b6ec138e3185cfeb7e5630d1ab63e9116e219d",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/block/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/block/Makefile",
+      "sha256": "13ddc1779c4064557133d78562f2e67b19ba7e98dbcdd6bf0c7bfa0354a6c1e5",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/bluetooth/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/bluetooth/Makefile",
+      "sha256": "3029941aefe5ca9b5f588c27a785910490c8b2c0bd825f2ca145d48278468218",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/char/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/char/Makefile",
+      "sha256": "d9082533c9bb5c47a945e7e9e497b94134534e149fd1f6cb178b2418f300a414",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/char/broadcom/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/char/broadcom/Makefile",
+      "sha256": "c98214b5a7e625f347b061f44b4125bb1b3512d09ee107d1cd5a3b3b419bff3f",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/hid/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/hid/Makefile",
+      "sha256": "34e62f3bf21e073e302a8555c9f830c75edff83a90d056683810e912b3b9182f",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/i2c/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/i2c/Makefile",
+      "sha256": "eef8c14393be4328af4b742e42ce7212d69f1bd2bae214e19b35c1e637c768f2",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/i2c/busses/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/i2c/busses/Makefile",
+      "sha256": "490332deb4cc13ac38fd1568d847e9fdd286fed5438b7554c2578422acb88aeb",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/input/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/input/Makefile",
+      "sha256": "1b920b7f5234e0444c3e1cf53eefbc4064404fff388dbf63cb226757a98a562f",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/leds/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/leds/Makefile",
+      "sha256": "92a1210125cc0d59fcd0402ce93bc408876119b2170340e85622bb82b2c5b292",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/leds/trigger/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/leds/trigger/Makefile",
+      "sha256": "3a0ad678171018d32352d431fb32a10fe630256623effd8b5f751e21d212637e",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/media/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/media/Makefile",
+      "sha256": "88a13a9cdb0a7b382ddaa09ca707e9e674c7fe7f60d3d8d549eebae79b49bd67",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/media/usb/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/media/usb/Makefile",
+      "sha256": "59bb1f8754b479f336ed98b94bfefccc39e65d4eee91ca5c8300f399891da4c6",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/media/usb/gspca/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/media/usb/gspca/Makefile",
+      "sha256": "9e535a80df34b18ab16f0da3526ac0e1571b145e3c1079cb0ac1426dfe1b0b1d",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/mfd/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/mfd/Makefile",
+      "sha256": "21534098e2f997e164fb33f24478a23dd7e5cc796eca56a9d0acc1126a24acc5",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/misc/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/misc/Makefile",
+      "sha256": "06490db27d31fb14114ba8b354fd0e7ada9f19b687628825d0cf817c74926186",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/Makefile",
+      "sha256": "8e1d4f533a71ef1fd3212b3349c9a75b75ed1ddc90c1c9c3c2410629c649d41c",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/Makefile",
+      "sha256": "6f09fd5f787240afd14ab379068087feb0277381feee6d1efc5335e037ea5f72",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/Makefile",
+      "sha256": "f1b6dbb83407dbf753ea3db804e1fe7baea985f0b8675cb48a70fbdbac89f8c2",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/Makefile",
+      "sha256": "8a5ff43aee9f1d230a30a54634f294b6678932a1b3581ba97241dc2062a7f2f2",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/brcmfmac/Makefile",
+      "sha256": "fba4e66e491186c5fdd295d81602a83abc5f8b827a104f9910fe6aa9214f815f",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/Makefile",
+      "sha256": "6c39522eb3de877fcd9970e5931f89118f75d0894d2dc049ca7be602725e52d2",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/Makefile",
+      "sha256": "4778fece953ca85f9d9e46a5f8edc1fa23139e09afcb043929ac1778dde4e6ca",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/Makefile",
+      "sha256": "c5d3e784b7629c9af24ee00bb133047baa6439e47893252e6514b64c38713e37",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/broadcom/brcm80211/brcmutil/Makefile",
+      "sha256": "de13f08a2ba4deb7305d8ce587fa6fbca3d90a216fa831b3c532297b26eefe79",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/mediatek/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/mediatek/Makefile",
+      "sha256": "7947470d6cf0724dcf1da9b45e3fbc4a78470f5b85a4de21ff1872ac66d1be26",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/mediatek/mt76/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/mediatek/mt76/Makefile",
+      "sha256": "108be9e133e3ccff8a9af1e45a2c425cf274fcc89a04985db24e052f8f91859e",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/net/wireless/mediatek/mt76/mt7921/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/net/wireless/mediatek/mt76/mt7921/Makefile",
+      "sha256": "4b324d2b3e469b58e80d4179b36866bece5d244168a9097a769ebcb7651d8d3a",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/spi/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/spi/Makefile",
+      "sha256": "874b486441ef370ae821df8af2c4f3a883484ea8067435e822e807fbec61ed26",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/usb/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/usb/Makefile",
+      "sha256": "8dfda1fe997148cb793a2d9b42ab46bc9fbe47e99d103e4eae7595af2f45f254",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/usb/class/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/usb/class/Makefile",
+      "sha256": "2d6c1118eb0c719334d93890e6d2538fddca93fbe938da85ab1c50028bacb9ef",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/usb/gadget/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/usb/gadget/Makefile",
+      "sha256": "107d435a30207fb1a20820b438c7c6753c3422e1b3e979f8d557afded11af9ae",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/usb/gadget/udc/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/usb/gadget/udc/Makefile",
+      "sha256": "616b8bf12a47a0083e7eeb208edf8c9f6d3fbcbe91a766d539faf834cdbf9c49",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/usb/serial/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/usb/serial/Makefile",
+      "sha256": "03324e7cef1fbd31f1e02aac9aba1fc5f26417e8fd5d251593d106977003dbad",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/drivers/watchdog/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/drivers/watchdog/Makefile",
+      "sha256": "b9b1c86d0ae6585d247318c2948d04ff8ba9e729ec43514fee70b6849e431aa6",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/fs/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/fs/Makefile",
+      "sha256": "2db1160e9bf2e34f2a75d9494626ca54371a31e3b07141362d42459f036c1864",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/fs/ecryptfs/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/fs/ecryptfs/Makefile",
+      "sha256": "59a62a65b4b6e36dc4d0c38d53937a8548a0dbf30226a51a78b633d5532596b1",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/include/config/auto.conf",
+      "origin": "pm_review_round2/evidence/kernel/source/include/config/auto.conf",
+      "sha256": "cc7bbe7e4d68f46bdd1d67e5f033cccfdb1744101c53dac95e035effaeff748e",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/include/generated/compile.h",
+      "origin": "pm_review_round2/evidence/kernel/source/include/generated/compile.h",
+      "sha256": "8be8545243726ed358d872faab32c763edfe25248868e80cf5b99b735b529d07",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/include/generated/utsrelease.h",
+      "origin": "pm_review_round2/evidence/kernel/source/include/generated/utsrelease.h",
+      "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/include/generated/utsversion.h",
+      "origin": "pm_review_round2/evidence/kernel/source/include/generated/utsversion.h",
+      "sha256": "84dbc636615226881511e12f0dd235b2c126e595530bb4f8b4ae6b4cc8b607e1",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/init/Kconfig",
+      "origin": "pm_review_round2/evidence/kernel/source/init/Kconfig",
+      "sha256": "14f13926c4afa5e6d50cc3641380aa9f8382fd3d5281462633cbf4e4a002165c",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/lib/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/lib/Makefile",
+      "sha256": "2fd9a0f6430356359d85d615526e6e78d5b6bc4a2cc86ff1d80f1e95f579c227",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/net/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/net/Makefile",
+      "sha256": "cb57e659d6c8edeef620004a66197a7eff760498e8f168ff8b876f978311072e",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/net/netfilter/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/net/netfilter/Makefile",
+      "sha256": "d59d7a2dba1b13ab4418fadeb33487c987c148301807ab1e15a2d91ee05d08fa",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Kbuild.include",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Kbuild.include",
+      "sha256": "09b5edc648b9aaac1f4b1f25d5ca7ad11195dfc0384fe0ece68196bbc8cd1ccc",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Kconfig.include",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Kconfig.include",
+      "sha256": "cb7062b70e560679428d23a0c7f2bbdd7c6872433b81e9bbedfbe67934531d8c",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.build",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.build",
+      "sha256": "381c1ae0523a5d6ba483e0db0f8dcb785ff89b6be07893fbfc173afeb4e202ae",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.clang",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.clang",
+      "sha256": "af4750f7fe84258d737e3fb37ab6e7cd676930c75e029e5848f2cc462787da53",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.compiler",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.compiler",
+      "sha256": "a8b092d8ca2f3bfdf5316333102088792fb9c528737dd8cd8a2c18faadd2606b",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.lib",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.lib",
+      "sha256": "0cf4cacf6dda85155a5f58c14109ffb059b3c00f185701bd9a890bcb6d778a54",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.modfinal",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.modfinal",
+      "sha256": "1d4894846f2efa55efe0978ac609676842072930770293ae9f8496db9b99ed06",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.modinst",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.modinst",
+      "sha256": "4c4607a2c10b2e843682337c0a4d32c7d31f122361d9e19c5ce1e12997683940",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.modpost",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.modpost",
+      "sha256": "c4863ea111f798f9adf5a0ea17db63a398a9ba819ebf4475bbd59209a9d7229a",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.vmlinux",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.vmlinux",
+      "sha256": "f6fbe02ee6250320c1b48ac8894906af1b3c8591be21857ade612c8474264d36",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/Makefile.vmlinux_o",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/Makefile.vmlinux_o",
+      "sha256": "c871766e2a82a1666be5bd15ea47211715ac60ef71279bf2783f104bc71e9aa6",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/cc-version.sh",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/cc-version.sh",
+      "sha256": "2e7a69d846a36a3aa79db0e3d4910a38d1d1d4627bd69f7498b446b52069ca73",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/ld-version.sh",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/ld-version.sh",
+      "sha256": "2760ed371a6465b365a0a251a879c14d5de21451d6fe99c6090be69845c23c8a",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/scripts/link-vmlinux.sh",
+      "origin": "pm_review_round2/evidence/kernel/source/scripts/link-vmlinux.sh",
+      "sha256": "e29827b981ddd6a3b10487775c68a9a919d24e6ce1cc5846e6351b1c8f6193cc",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/sound/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/sound/Makefile",
+      "sha256": "59cc8a50bfaea505ee7a7f96661d5860284ed28d862657a3acc82c83a2fcccea",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/sound/soc/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/sound/soc/Makefile",
+      "sha256": "7e45f379351fc15a1a17b5e4ad4507f858b8810b4d156b6d15dd4051abf2a515",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/sound/soc/codecs/Makefile",
+      "origin": "pm_review_round2/evidence/kernel/source/sound/soc/codecs/Makefile",
+      "sha256": "7137edd39f375373372fc811275b9bbbf15c36f73cdfe0b3386da1a40b530852",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/spec/linux-rpi.manifest",
+      "origin": "pm_review_round2/evidence/kernel/source/spec/linux-rpi.manifest",
+      "sha256": "fb0fb6cb1bb1797b22de7824aacb4e577b0dfd7da460dfe4875d1bd61e3f688d",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/kernel/spec/linux-rpi.spec",
+      "origin": "pm_review_round2/evidence/kernel/source/spec/linux-rpi.spec",
+      "sha256": "bc39a41bdf0def353a4d5ba2ffcb6eb6eb3200b4c665db2638bd26c0a7925812",
+      "group": "matched-kernel"
+    },
+    {
+      "file": "sources/external/Makefile",
+      "origin": "pm_review_round2/evidence/external/source/Makefile",
+      "sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858",
+      "group": "external-provider"
+    },
+    {
+      "file": "sources/external/kdbus/Makefile",
+      "origin": "pm_review_round2/evidence/external/source/kdbus/Makefile",
+      "sha256": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+      "group": "external-provider"
+    },
+    {
+      "file": "sources/external/zlogger/Makefile",
+      "origin": "pm_review_round2/evidence/external/source/zlogger/Makefile",
+      "sha256": "65b3f7ce8e0b1ee088813588f96c41610719d547670ea9c8116f712631f9b183",
+      "group": "external-provider"
+    },
+    {
+      "file": "sources/external/linux-tizen-modules.spec",
+      "origin": "pm_review_round2/evidence/external/linux-tizen-modules.spec",
+      "sha256": "85e70362ba5a492aff9065e65c7644da18d952201d67b04ee4ed98d7ab0b7a33",
+      "group": "external-wrapper"
+    },
+    {
+      "file": "sources/host-and-tools/scripts/Makefile.host",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.host",
+      "cpio_payload_offset": 883507304,
+      "sha256": "129133d5fc245f72cc8260b9e81af93342ef7677b412242076f44ccbb9112d75",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/scripts/dummy-tools/ld",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/scripts/dummy-tools/ld",
+      "cpio_payload_offset": 885045652,
+      "sha256": "0ce50ae7c6a895e812f1ce246ccb88d3eef034ff87cc0908618de2b555ad3aee",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/bpf/bpftool/Makefile",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/bpf/bpftool/Makefile",
+      "cpio_payload_offset": 900123244,
+      "sha256": "ad7dd80c722f35b6c4534ca18497224e2344d84f14721142c9c238d2695f52d2",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/bpf/resolve_btfids/Makefile",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/bpf/resolve_btfids/Makefile",
+      "cpio_payload_offset": 900194644,
+      "sha256": "f426c9bf0fdc961e00be9e4403569e1c739d83c56e42fe13f6af56c5f3d566e4",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/build/Makefile.build",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/build/Makefile.build",
+      "cpio_payload_offset": 903000536,
+      "sha256": "e84cc1bb0c8413d065e0ca05ac2080f01e4410364be0284e1706553c23503790",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/lib/subcmd/Makefile",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/lib/subcmd/Makefile",
+      "cpio_payload_offset": 904896964,
+      "sha256": "8140d112594045382a834e7147c5a633cc751d332e2b136c686cdf83bb2317f2",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/perf/Makefile",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/perf/Makefile",
+      "cpio_payload_offset": 906336036,
+      "sha256": "a21ad685d8321bfa184ba9ec70195efdd35f83e95c9f3b6f7e9cbe7b56773ba3",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/perf/Makefile.perf",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/perf/Makefile.perf",
+      "cpio_payload_offset": 906383764,
+      "sha256": "3e385caa2ae9a7ba45cb8338c9fff348039b7064aa1b06cbd4f288a4fb298ff9",
+      "group": "host-and-tools"
+    },
+    {
+      "file": "sources/host-and-tools/tools/scripts/Makefile.include",
+      "origin": "evidence/kernel_binary/payload/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l/rpm2cpio.out",
+      "cpio_member": "boot/kernel/devel/kernel-devel-arm-rpi4/tools/scripts/Makefile.include",
+      "cpio_payload_offset": 933264720,
+      "sha256": "892ca56b64f6510127f7a3e432b81511bd2335a6020abd88355599b3bd3e5c6c",
+      "group": "host-and-tools"
+    }
+  ],
+  "archive": {
+    "rpm": "evidence/repository/rpms/rpi4-linux-kernel-6.12.80-0.src.rpm",
+    "rpm_sha256": "b67cdcac268025c6578ed59a679e204536d05c4a361d89aabc2925e3dacdb7e9",
+    "tar_member": "linux-kernel-6.12.80.tar.xz",
+    "archive_members_seen": 92413,
+    "scoped_regular_magic_checked": 5313,
+    "exact_parent_directory_scope": [
+      ".",
+      "crypto",
+      "drivers",
+      "drivers/block",
+      "drivers/bluetooth",
+      "drivers/char",
+      "drivers/char/broadcom",
+      "drivers/hid",
+      "drivers/i2c",
+      "drivers/i2c/busses",
+      "drivers/input",
+      "drivers/leds",
+      "drivers/leds/trigger",
+      "drivers/media",
+      "drivers/media/usb",
+      "drivers/media/usb/gspca",
+      "drivers/mfd",
+      "drivers/misc",
+      "drivers/net",
+      "drivers/net/wireless",
+      "drivers/net/wireless/broadcom",
+      "drivers/net/wireless/broadcom/brcm80211",
+      "drivers/net/wireless/broadcom/brcm80211/brcmfmac",
+      "drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca",
+      "drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw",
+      "drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc",
+      "drivers/net/wireless/broadcom/brcm80211/brcmutil",
+      "drivers/net/wireless/mediatek",
+      "drivers/net/wireless/mediatek/mt76",
+      "drivers/net/wireless/mediatek/mt76/mt7921",
+      "drivers/spi",
+      "drivers/usb",
+      "drivers/usb/class",
+      "drivers/usb/gadget",
+      "drivers/usb/gadget/udc",
+      "drivers/usb/serial",
+      "drivers/watchdog",
+      "fs",
+      "fs/ecryptfs",
+      "lib",
+      "net",
+      "net/netfilter",
+      "sound",
+      "sound/soc",
+      "sound/soc/codecs"
+    ],
+    "supplementary_prefixes": [
+      "arch/arm/boot/compressed",
+      "scripts/basic",
+      "scripts/dummy-tools",
+      "tools/bpf/resolve_btfids",
+      "tools/build",
+      "tools/perf"
+    ],
+    "magic_and_suffix_matches": [],
+    "possibly_prebuilt_matches": [],
+    "round2_external_prebuilt_evidence": "pm_review_round2/evidence/external/source-content-inventory.json"
+  },
+  "external_provider_members": 55,
+  "external_wrapper_source0_members": 16,
+  "external_prebuilt_findings": []
+}

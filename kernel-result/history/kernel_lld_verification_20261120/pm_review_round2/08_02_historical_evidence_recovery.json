@@ -1,0 +1,156 @@
+{
+  "status": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE",
+  "scope": "Search confined to recorded published job roots, pinned snapshot publication/catalog, five relevant RPMs, and sealed prior local candidate comparison.",
+  "snapshot": "tizen-unified-toolchain_20261120.082536",
+  "target": "standard/armv7l non-RT RPi4, 6.12.80-arm-rpi4-v7l",
+  "retrieved": {
+    "generated_headers_and_config": [
+      "/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+      "/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+      "/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h"
+    ],
+    "exact_public_success_logs": {
+      "kernel": {
+        "source": "round1/evidence/build/linux-rpi-armv7l.out",
+        "sha256": "b09bb939e375123e946338e671b65fe0c9d28f9ec447451f1a03b2936f7b6673",
+        "lines": 15276,
+        "command_mentions_candidate_review": [],
+        "build_root": [
+          "round1/evidence/build/linux-rpi-armv7l.out#L2"
+        ],
+        "build_dependency_excerpt": "evidence/recovery/kernel-buildroot-excerpts.txt"
+      },
+      "external": {
+        "source": "round1/evidence/build/linux-tizen-modules-armv7l.out",
+        "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83",
+        "lines": 868,
+        "command_mentions_candidate_review": [],
+        "build_root": [
+          "round1/evidence/build/linux-tizen-modules-armv7l.out#L2"
+        ],
+        "build_dependency_excerpt": "evidence/recovery/external-buildroot-excerpts.txt"
+      }
+    },
+    "rbs_build_metadata": "round1/evidence/repository/publication-build.out",
+    "rbs_project_manifest": "round1/evidence/repository/manifest.out",
+    "toolchain_package_provenance": "evidence/recovery/base-selected-packages.json",
+    "original_build_root_paths": [
+      "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27",
+      "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0"
+    ]
+  },
+  "unresolved": [
+    "verbatim linker argv / full verbose log",
+    "historical PATH or process environment dump",
+    ".vmlinux.cmd",
+    ".vmlinux.o.cmd",
+    ".vmlinux.unstripped.cmd",
+    "arch/arm/boot/compressed/.vmlinux.cmd",
+    "*.ko.cmd",
+    "historical process executable and QEMU dispatch",
+    "matching private worker archive"
+  ],
+  "local_scope": {
+    "exact_paths": [
+      "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.27",
+      "/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "/home/abuild/rpmbuild"
+    ],
+    "receipt": "evidence/recovery/exact-local-build-roots.cmd.json",
+    "stdout": "",
+    "prior_candidate": "round1/evidence/build/rejected-local-gbs-candidate.out"
+  },
+  "archive_membership": [
+    {
+      "round1_rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-6.12.80-0.armv7l.rpm",
+      "matching_members": [],
+      "sha256": "3a5c433d89858a89c1a83a54806bde67e6f0bfa001850188e3b33807185c3a68",
+      "evidence": "evidence/recovery/rpm-command-record-members-arm-rpi4-linux-kernel-6.12.80-0.armv7l.out"
+    },
+    {
+      "round1_rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "matching_members": [
+        "/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+        "/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+        "/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/compile.h"
+      ],
+      "sha256": "bd074cebe72d5c92981933fa9c696d3cc388e4a4cb42eeddfcf1261c9c4df763",
+      "evidence": "evidence/recovery/rpm-command-record-members-arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.out"
+    },
+    {
+      "round1_rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm",
+      "matching_members": [],
+      "sha256": "4906a4e698b7944132fdb74b753875297f9752ec02915e36d13955f3dfa436e0",
+      "evidence": "evidence/recovery/rpm-command-record-members-arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.out"
+    },
+    {
+      "round1_rpm_path": "evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "matching_members": [],
+      "sha256": "ee434f5a9545811fa060f3dfc3b45be7bd4e3e0a09cb5d9b9c2e810d32dd87aa",
+      "evidence": "evidence/recovery/rpm-command-record-members-linux-tizen-modules-rpi4-11.0.0-0.armv7l.out"
+    },
+    {
+      "round1_rpm_path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.rpm",
+      "matching_members": [],
+      "sha256": "e44f25e30cde819eb2dc346bd3a707e3ee7161bb5ae0541b213c48b7dcee49ae",
+      "evidence": "evidence/recovery/rpm-command-record-members-arm-rpi4-linux-kernel-devel-debuginfo-6.12.80-0.armv7l.out"
+    }
+  ],
+  "public_probes": [
+    {
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/profiling_reports/standard/armv7l/sample_data/datasets/default/result_meta.json",
+      "http_status": 200,
+      "receipt": "evidence/recovery/profiling-result-meta.cmd.json",
+      "headers": "evidence/recovery/profiling-result-meta.headers",
+      "data": "evidence/recovery/profiling-result-meta.out"
+    },
+    {
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildinfo/",
+      "http_status": 404,
+      "receipt": "evidence/recovery/buildinfo-index-probe.cmd.json",
+      "headers": "evidence/recovery/buildinfo-index-probe.headers",
+      "data": "evidence/recovery/buildinfo-index-probe.out"
+    },
+    {
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/buildroots/",
+      "http_status": 404,
+      "receipt": "evidence/recovery/buildroot-index-probe.cmd.json",
+      "headers": "evidence/recovery/buildroot-index-probe.headers",
+      "data": "evidence/recovery/buildroot-index-probe.out"
+    },
+    {
+      "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261120.082536/builddata/artifacts/",
+      "http_status": 404,
+      "receipt": "evidence/recovery/artifact-index-probe.cmd.json",
+      "headers": "evidence/recovery/artifact-index-probe.headers",
+      "data": "evidence/recovery/artifact-index-probe.out"
+    }
+  ],
+  "catalog": [
+    {
+      "path": "round1/evidence/repository/publication-build.out",
+      "sha256": "fdad9e4bd5bf30c673fc1ae78022418be286e94805ea1b90223e0fac9d4d34ee"
+    },
+    {
+      "path": "round1/evidence/repository/manifest.out",
+      "sha256": "93753c5dc53b90173cf1fa73389ceac85daa90e3c5d744495d168667437e2162"
+    },
+    {
+      "path": "round1/evidence/build/builddata-index.out",
+      "sha256": "5196acbe6e5d7d2646e87536a28a45a59adad21037d42c0ae2762a2ff6786620"
+    },
+    {
+      "path": "round1/evidence/build/buildlogs-armv7l-index.out",
+      "sha256": "8245e5908f59ae9de3c2cda795f30bddcc038e0589c31f48544f971c98b744de"
+    },
+    {
+      "path": "round1/evidence/build/profiling-default-index.out",
+      "sha256": "d3c158c7cd4c1d84373e94826045c3da7ed72a48c7eb647979dd15ef054aabaa"
+    },
+    {
+      "path": "round1/evidence/build/rejected-local-gbs-candidate.out",
+      "sha256": "ea1836595cd48b4fa4c0a744681963b22dae17e6672ecc0682cbdddf4112bec3"
+    }
+  ],
+  "continuation": "Causal analysis may use shipped rules and matched observations. Do not turn a reconstruction into direct execution evidence."
+}

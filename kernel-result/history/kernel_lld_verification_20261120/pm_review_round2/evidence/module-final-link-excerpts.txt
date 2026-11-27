@@ -1,0 +1,354 @@
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8038 [ 1525s]   LD [M]  fs/binfmt_misc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14130 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/binfmt_misc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8039 [ 1525s]   LD [M]  fs/ecryptfs/ecryptfs.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14132 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/fs/ecryptfs/ecryptfs.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8042 [ 1526s]   LD [M]  crypto/md5.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14134 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/crypto/md5.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8044 [ 1526s]   LD [M]  lib/crc7.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14136 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/lib/crc7.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8045 [ 1526s]   LD [M]  drivers/leds/trigger/ledtrig-transient.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14138 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-transient.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8048 [ 1526s]   LD [M]  drivers/leds/trigger/ledtrig-camera.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14140 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/leds/trigger/ledtrig-camera.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8050 [ 1526s]   LD [M]  drivers/char/broadcom/bcm2835_smi_dev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14142 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/char/broadcom/bcm2835_smi_dev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8052 [ 1526s]   LD [M]  drivers/block/nbd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14144 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/block/nbd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8054 [ 1526s]   LD [M]  drivers/misc/bcm2835_smi.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14146 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/misc/bcm2835_smi.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8055 [ 1527s]   LD [M]  drivers/mfd/wl1273-core.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14148 [ 2719s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/mfd/wl1273-core.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8057 [ 1527s]   LD [M]  drivers/spi/spi-bcm2835aux.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14150 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/spi/spi-bcm2835aux.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8058 [ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14152 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmutil/brcmutil.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8062 [ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14154 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/brcmfmac.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8064 [ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14156 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/wcc/brcmfmac-wcc.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8066 [ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14158 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/cyw/brcmfmac-cyw.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8067 [ 1527s]   LD [M]  drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14160 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/broadcom/brcm80211/brcmfmac/bca/brcmfmac-bca.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8068 [ 1527s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14162 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8072 [ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14164 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8074 [ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14166 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt76-connac-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8076 [ 1528s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14168 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-lib.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8078 [ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14170 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt792x-usb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8080 [ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14172 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921-common.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8082 [ 1529s]   LD [M]  drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14174 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/net/wireless/mediatek/mt76/mt7921/mt7921u.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8085 [ 1529s]   LD [M]  drivers/usb/class/cdc-acm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14176 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/class/cdc-acm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8087 [ 1529s]   LD [M]  drivers/usb/serial/cp210x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14178 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8089 [ 1529s]   LD [M]  drivers/usb/serial/cp210x-stlink.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14180 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/cp210x-stlink.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8091 [ 1529s]   LD [M]  drivers/usb/serial/ftdi_sio.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14182 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/ftdi_sio.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8093 [ 1529s]   LD [M]  drivers/usb/serial/option.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14184 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/option.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8095 [ 1530s]   LD [M]  drivers/usb/serial/pl2303.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14186 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/pl2303.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8097 [ 1530s]   LD [M]  drivers/usb/serial/usb_wwan.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14188 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/serial/usb_wwan.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8099 [ 1530s]   LD [M]  drivers/usb/gadget/udc/dummy_hcd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14190 [ 2720s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/usb/gadget/udc/dummy_hcd.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8100 [ 1530s]   LD [M]  drivers/input/joydev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14192 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/input/joydev.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8103 [ 1530s]   LD [M]  drivers/i2c/busses/i2c-bcm2708.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14194 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/busses/i2c-bcm2708.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8105 [ 1530s]   LD [M]  drivers/i2c/i2c-stub.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14196 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/i2c/i2c-stub.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8107 [ 1530s]   LD [M]  drivers/media/usb/gspca/gspca_main.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14198 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_main.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8109 [ 1531s]   LD [M]  drivers/media/usb/gspca/gspca_zc3xx.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14200 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/media/usb/gspca/gspca_zc3xx.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8111 [ 1531s]   LD [M]  drivers/watchdog/gpio_wdt.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14202 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/watchdog/gpio_wdt.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8113 [ 1531s]   LD [M]  drivers/bluetooth/hci_uart.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14204 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/hci_uart.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8115 [ 1531s]   LD [M]  drivers/bluetooth/bcm203x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14206 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/bcm203x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8117 [ 1531s]   LD [M]  drivers/bluetooth/btusb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14208 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btusb.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8119 [ 1531s]   LD [M]  drivers/bluetooth/btintel.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14210 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btintel.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8121 [ 1531s]   LD [M]  drivers/bluetooth/btbcm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14212 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btbcm.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8123 [ 1531s]   LD [M]  drivers/bluetooth/btrtl.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14214 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/bluetooth/btrtl.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8125 [ 1531s]   LD [M]  drivers/hid/hid-led.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14216 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/drivers/hid/hid-led.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8127 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14218 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8129 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14220 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-cs42xx8-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8131 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14222 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8133 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14224 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-pcm512x-i2c.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8135 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-sgtl5000.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14226 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-sgtl5000.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8137 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-wm8741.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14228 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-wm8741.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8139 [ 1532s]   LD [M]  sound/soc/codecs/snd-soc-tpa6130a2.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14230 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/sound/soc/codecs/snd-soc-tpa6130a2.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko
+  round1/evidence/build/linux-rpi-armv7l.out:1677 [   65s] + export LLVM=1
+  round1/evidence/build/linux-rpi-armv7l.out:8142 [ 1533s]   LD [M]  net/netfilter/xt_LED.ko
+  round1/evidence/build/linux-rpi-armv7l.out:14232 [ 2721s]   INSTALL /home/abuild/rpmbuild/BUILDROOT/rpi4-linux-kernel-6.12.80-0.arm/lib/modules/6.12.80-arm-rpi4-v7l/kernel/net/netfilter/xt_LED.ko
+  round1/evidence/build/linux-rpi-armv7l.out:15253 [ 6114s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/arm-rpi4-linux-kernel-modules-6.12.80-0.armv7l.rpm
+  round1/evidence/build/linux-rpi-armv7l.out:15275 [ 6210s] qb-build-host-01 finished "build linux-rpi.spec" at Fri Nov 20 10:42:44 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:621 [   97s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/dm-bow.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:647 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:624 [   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/extcon-usb-fixed.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:649 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:627 [   99s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/inform-reboot.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:651 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:630 [  101s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/logger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:653 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:633 [  102s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/proc-tsm.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:655 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:636 [  103s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:657 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.
+linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm /lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:565 [   77s] + export LLVM=1
+  round1/evidence/build/linux-tizen-modules-armv7l.out:639 [  105s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/zlogger/zlogger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:659 [  106s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko
+  round1/evidence/build/linux-tizen-modules-armv7l.out:853 [  138s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm
+  round1/evidence/build/linux-tizen-modules-armv7l.out:867 [  139s] qb-build-host-01 finished "build linux-tizen-modules.spec" at Fri Nov 20 10:45:07 UTC 2026.

@@ -1,0 +1,173 @@
+{
+  "status": "SANDBOX_PUSH_VERIFIED",
+  "repository": "platform/kernel/linux-tizen-modules-source",
+  "remote_url": "https://review.tizen.org/gerrit/platform/kernel/linux-tizen-modules-source",
+  "base_commit": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "historical_image_source_commit": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "base_selection": "verified image revision equals authenticated tizen HEAD",
+  "branch_ref": "refs/heads/sandbox/liushanshan/lld",
+  "sandbox_branch_created": true,
+  "original_remote_head": null,
+  "new_commit_sha": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "remote_head": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "remote_head_contains_commit": true,
+  "gerrit_change_id": "Ic0b9efb5c514bb6e18dbc270aa269211ec514375",
+  "author": "liushanshan <[email-redacted]>",
+  "commit_message": "kbuild: Remove redundant LD override in external modules\n\nThe external module Makefile explicitly assigns LD to\n$(CROSS_COMPILE)ld, which can override the linker selected\nand exported by the top-level Kbuild system.\n\nWhen building with LLVM=1, this assignment may cause GNU\nBFD to be used for intermediate relocatable linking\ninstead of the configured LLVM LLD linker.\n\nRemove the redundant LD assignment and allow external\nmodules to inherit the linker selected by Kbuild.\n\nThis preserves the caller's toolchain selection and\nimproves build consistency across GCC and LLVM\nconfigurations.\n\nChange-Id: Ic0b9efb5c514bb6e18dbc270aa269211ec514375\nSigned-off-by: liushanshan <[email-redacted]>",
+  "changed_file": "kernel/Makefile",
+  "before": [
+    "PWD := $(shell pwd)",
+    "LD = ${CROSS_COMPILE}ld",
+    "",
+    "LOGGER_MAIN_BUFFER_SIZE ?= 256",
+    "LOGGER_EVENTS_BUFFER_SIZE ?= 256"
+  ],
+  "after": [
+    "PWD := $(shell pwd)",
+    "",
+    "LOGGER_MAIN_BUFFER_SIZE ?= 256",
+    "LOGGER_EVENTS_BUFFER_SIZE ?= 256"
+  ],
+  "changed_lines": {
+    "added": 0,
+    "deleted": 1
+  },
+  "validation": {
+    "STATIC_VALIDATION": "PASS",
+    "REAL_BUILD_VALIDATION": "PENDING",
+    "RUNTIME_VALIDATION": "PENDING",
+    "PRODUCT_MERGE_APPROVAL": "PENDING",
+    "original_historical_intermediate_link": "BFD_PATH_POSSIBLE",
+    "scope": "one-line Makefile change and six isolated routing cases"
+  },
+  "make_validation": {
+    "status": "PASS",
+    "real_build": false,
+    "model": "Phase 9 fixtures on the exact Git candidate Makefile and kdbus sub-Makefile",
+    "GNU_make": "GNU Make 4.3",
+    "base_sha256": "d4d92cf9f894883a8202ee9288de6b0460075c51cb4226b7231bbceac756e858",
+    "candidate_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6",
+    "kdbus_submake_sha256": "b63ae82a3a8a206e98819e077eece09f9660b39352f4edf48ee7095520379b50",
+    "cases": [
+      {
+        "case": "armv7l-gcc-bfd",
+        "configuration": "ARMv7l GCC + BFD",
+        "expected_family": "GNU BFD",
+        "expected_command": "armv7l-tizen-linux-gnueabi-ld",
+        "intermediate_ld": "armv7l-tizen-linux-gnueabi-ld",
+        "final_ld": "armv7l-tizen-linux-gnueabi-ld",
+        "intermediate_origin": "environment",
+        "final_origin": "environment",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      },
+      {
+        "case": "armv7l-clang-llvm",
+        "configuration": "ARMv7l Clang + LLVM=1",
+        "expected_family": "LLD",
+        "expected_command": "ld.lld",
+        "intermediate_ld": "ld.lld",
+        "final_ld": "ld.lld",
+        "intermediate_origin": "environment",
+        "final_origin": "environment",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      },
+      {
+        "case": "aarch64-gcc-bfd",
+        "configuration": "AArch64 GCC + BFD",
+        "expected_family": "GNU BFD",
+        "expected_command": "aarch64-tizen-linux-gnu-ld",
+        "intermediate_ld": "aarch64-tizen-linux-gnu-ld",
+        "final_ld": "aarch64-tizen-linux-gnu-ld",
+        "intermediate_origin": "environment",
+        "final_origin": "environment",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      },
+      {
+        "case": "aarch64-clang-llvm",
+        "configuration": "AArch64 Clang + LLVM=1",
+        "expected_family": "LLD",
+        "expected_command": "ld.lld",
+        "intermediate_ld": "ld.lld",
+        "final_ld": "ld.lld",
+        "intermediate_origin": "environment",
+        "final_origin": "environment",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      },
+      {
+        "case": "explicit-ld-bfd",
+        "configuration": "Explicit LD=ld.bfd",
+        "expected_family": "GNU BFD",
+        "expected_command": "ld.bfd",
+        "intermediate_ld": "ld.bfd",
+        "final_ld": "ld.bfd",
+        "intermediate_origin": "command line",
+        "final_origin": "command line",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      },
+      {
+        "case": "explicit-ld-lld",
+        "configuration": "Explicit LD=ld.lld",
+        "expected_family": "LLD",
+        "expected_command": "ld.lld",
+        "intermediate_ld": "ld.lld",
+        "final_ld": "ld.lld",
+        "intermediate_origin": "command line",
+        "final_origin": "command line",
+        "actual_linker_executed": false,
+        "status": "PASS"
+      }
+    ]
+  },
+  "actual_kernel_or_module_build_run": false,
+  "push": {
+    "status": "PASS",
+    "warning": "subject >50 characters",
+    "exact_requested_subject_preserved": true
+  },
+  "remote_verification": {
+    "status": "PASS",
+    "method": "fresh authenticated Git fetch into an empty bare repository",
+    "remote_url": "https://review.tizen.org/gerrit/platform/kernel/linux-tizen-modules-source",
+    "ref": "refs/heads/sandbox/liushanshan/lld",
+    "remote_head": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+    "remote_head_contains_commit": true,
+    "remote_head_exact_commit": true,
+    "expected_commit": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+    "parent": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+    "diff_equals_local": true,
+    "changed_file": "kernel/Makefile",
+    "added_lines": 0,
+    "deleted_lines": 1,
+    "makefile_sha256": "d220705fbc7078189b6b3bcc7ed5a2e4e171f617eed8c2f11404a01a1f226fa6",
+    "commit_message_equals_local": true
+  },
+  "gerrit_pages": {
+    "branch": {
+      "url": "https://review.tizen.org/gerrit/gitweb?p=platform/kernel/linux-tizen-modules-source.git;a=shortlog;h=refs/heads/sandbox/liushanshan/lld",
+      "http_status": 401,
+      "effective_url": "https://review.tizen.org/gerrit/login/%2Fgitweb%3Fp%3Dplatform%2Fkernel%2Flinux-tizen-modules-source.git%3Ba%3Dshortlog%3Bh%3Drefs%2Fheads%2Fsandbox%2Fliushanshan%2Flld",
+      "status": "LOGIN_REQUIRED"
+    },
+    "commit": {
+      "url": "https://review.tizen.org/gerrit/gitweb?p=platform/kernel/linux-tizen-modules-source.git;a=commit;h=1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "http_status": 401,
+      "effective_url": "https://review.tizen.org/gerrit/login/%2Fgitweb%3Fp%3Dplatform%2Fkernel%2Flinux-tizen-modules-source.git%3Ba%3Dcommit%3Bh%3D1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+      "status": "LOGIN_REQUIRED"
+    }
+  },
+  "product_tizen_head_before": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "product_tizen_head_after": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "product_push_performed": false,
+  "commit_msg_hook_sha256": "3c7e9b5fbe0b7ed945abd74248913c912ee0464abb416c18278bc5811dbb6f50",
+  "remaining": [
+    "Matched targeted module build with both linker exec events",
+    "Runtime verification",
+    "Separate product merge approval",
+    "Signed-in Gitweb page rendering"
+  ]
+}

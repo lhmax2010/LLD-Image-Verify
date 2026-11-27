@@ -1,0 +1,23 @@
+/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/../kernel_lld_verification_20261125/evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm: OK
+/local-user/lss/kernel_lld_check/phase12_controlled_benchmark/../kernel_lld_verification_20261125/evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm: OK
+work/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/basic/fixdep: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, stripped
+work/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/mod/modpost:  ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, stripped
+work/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/vmlinux:              ELF 32-bit LSB executable, ARM, EABI5 version 1 (SYSV), statically linked, BuildID[sha1]=b0449fe7b89ffc0f19584f789e3c73c6240fba28, stripped
+16d28c8e83b92f85edaa2eda69488be58bd3d4e68ae939b175bcf79046888145  /local-user/lss/LLD_Optimization/experiments/build_env_recovery/attempt-02/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/usr/bin/make
+/local-user/lss/LLD_Optimization/experiments/build_env_recovery/attempt-02/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/usr/bin/make: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, stripped
+d3fbf8e82e019182675ec373a7af8c046743fde5c00294441f34392a3dd28af9  /local-user/lss/LLD_Optimization/experiments/build_env_recovery/attempt-02/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/usr/bin/ld
+/local-user/lss/LLD_Optimization/experiments/build_env_recovery/attempt-02/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0/usr/bin/ld: ELF 32-bit LSB pie executable, ARM, EABI5 version 1 (SYSV), dynamically linked, interpreter /lib/ld-linux.so.3, for GNU/Linux 3.2.0, stripped
+75ca0210e0a0e3084dcd0d0c237124ffc3c9b0b9d9a51f3a2ff7a91d7e6d4af2  work/tool-overlays/emul/usr/bin/clang
+work/tool-overlays/emul/usr/bin/clang: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+75ca0210e0a0e3084dcd0d0c237124ffc3c9b0b9d9a51f3a2ff7a91d7e6d4af2  work/tool-overlays/emul/usr/bin/clang-22
+work/tool-overlays/emul/usr/bin/clang-22: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+88db782c0b6891579b4baa674f6eaa289ee8168e39c75a07b943c6e555d8fece  work/tool-overlays/emul/usr/bin/ld
+work/tool-overlays/emul/usr/bin/ld: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3  work/tool-overlays/emul/usr/bin/ld.lld
+work/tool-overlays/emul/usr/bin/ld.lld: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+d5e4f9f27bd3e25795d360fdc12cbc4a836ab55364ed33712e367d4103773b05  work/tool-overlays/emul/usr/bin/llvm-strip
+work/tool-overlays/emul/usr/bin/llvm-strip: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+0f0a0d53e0c8db436a7df78d967a23707dd1359bcbf1068175b6f7abd1c5f129  work/tool-overlays/emul/usr/bin/llvm-objdump
+work/tool-overlays/emul/usr/bin/llvm-objdump: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped
+9af81526548eabf3b05f801dd54801a5468edb55872466ced9b06d2bf9e59e4c  work/tool-overlays/emul/usr/bin/objdump
+work/tool-overlays/emul/usr/bin/objdump: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /emul/usr/lib64/ld-linux-x86-64.so.2, for GNU/Linux 3.2.0, stripped

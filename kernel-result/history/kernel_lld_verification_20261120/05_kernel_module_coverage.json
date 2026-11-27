@@ -1,0 +1,67 @@
+{
+  "repository": {
+    "inventory_available": true,
+    "total_module_files": 59,
+    "successfully_parsed": 59,
+    "counts": {
+      "LLD_CONFIRMED": 0,
+      "LLD_INDICATED": 59,
+      "BFD_CONFIRMED": 0,
+      "BFD_INDICATED": 0,
+      "OTHER_LINKER": 0,
+      "CONFLICTING_EVIDENCE": 0,
+      "UNKNOWN": 0,
+      "PARSE_FAILED": 0
+    },
+    "confirmed_lld_coverage": 0.0,
+    "lld_evidence_coverage": 1.0,
+    "elf_parsing_coverage": 1.0,
+    "duplicate_paths": [],
+    "distinct_paths": 59,
+    "elf_linker_marker_files": 0,
+    "per_output_quiet_build_files": 59,
+    "vermagic_match": 59,
+    "expected_arm_rel": 59,
+    "duplicate_names": [],
+    "duplicate_raw_sha256": []
+  },
+  "device": {
+    "inventory_available": true,
+    "total_module_files": 59,
+    "successfully_parsed": 59,
+    "counts": {
+      "LLD_CONFIRMED": 0,
+      "LLD_INDICATED": 59,
+      "BFD_CONFIRMED": 0,
+      "BFD_INDICATED": 0,
+      "OTHER_LINKER": 0,
+      "CONFLICTING_EVIDENCE": 0,
+      "UNKNOWN": 0,
+      "PARSE_FAILED": 0
+    },
+    "confirmed_lld_coverage": 0.0,
+    "lld_evidence_coverage": 1.0,
+    "elf_parsing_coverage": 1.0,
+    "duplicate_paths": [],
+    "distinct_paths": 59,
+    "elf_linker_marker_files": 0,
+    "per_output_quiet_build_files": 59,
+    "vermagic_match": 59,
+    "expected_arm_rel": 59,
+    "duplicate_names": [],
+    "duplicate_raw_sha256": []
+  },
+  "repository_excluded": [],
+  "device_excluded": [],
+  "runtime_loaded": 11,
+  "live_module_build_id_counts": {
+    "MATCH": 11
+  },
+  "device_repo_mapping_counts": {
+    "EXACT_PATH_AND_SHA256": 59
+  },
+  "repository_from_filelists_expected": 59,
+  "repository_expected_inventory_met": true,
+  "release": "6.12.80-arm-rpi4-v7l",
+  "denominator_rule": "All regular target-release .ko payload paths, including compressed files; distinct paths and package instances retained; file symlinks and debug sidecars listed separately."
+}

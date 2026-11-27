@@ -1,0 +1,137 @@
+{
+  "status": "PASS_REAL_GCC_BFD_BUILD",
+  "gcc_real_build": "PASS",
+  "gcc_compatibility": "PASS",
+  "gcc_simulation": "PASS_PHASE11",
+  "qb": "tizen-unified-dev_20261120.082616",
+  "kernel_release": "6.12.80-arm-rpi4-v7l",
+  "architecture": "ARMv7l non-RT",
+  "same_kernel_commit_as_llvm_qb": "42aeefac58edeb081aff440f0b60be71cbe49755",
+  "gcc_wrapper_commit": "46316fa8f9dd0d0d51726ad5fbe299daa2d16af6",
+  "kernel_config_sha256": "04bc96c3d6a5d1e919136044cfd5028ab74e61c39b89893c82c3b694124b6ef3",
+  "module_symvers_sha256": "03ba234e249cbe3a988d3a5cd8c2568df387711c88c7baa5fb456946688793e3",
+  "module_symvers_symbols": 14129,
+  "module_linker_script_sha256": "8dfae136cfd0bf2c3943ef45997fca1ff424df24b3ab5f5329fa4fc1f5c59713",
+  "compiler": "Tizen GCC 14.2.0-1.6.armv7l",
+  "linker_package": "binutils-2.43-1.6.armv7l.rpm",
+  "runs": {
+    "qb_native": {
+      "groups": [
+        "C",
+        "D"
+      ],
+      "compared": {
+        "ordered_input_sha256": true,
+        "installed_modules": true,
+        "gc_unstripped_sha256": true,
+        "gc_intermediate_sha256": true,
+        "gc_installed_sha256": true,
+        "normalized_disassembly_sha256": true
+      },
+      "both_linkers": "GNU BFD 2.43",
+      "module_count": 7,
+      "module_import_crcs_each": 345,
+      "kdbus_import_crcs_each": 153,
+      "kdbus_installed_bytes": 150032,
+      "kdbus_unstripped_sha256": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff",
+      "kdbus_intermediate_sha256": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf",
+      "kdbus_installed_sha256": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042",
+      "kdbus_relocations": {
+        "R_ARM_CALL": 1384,
+        "R_ARM_JUMP24": 58,
+        "R_ARM_MOVW_ABS_NC": 181,
+        "R_ARM_MOVT_ABS": 181,
+        "R_ARM_ABS32": 241,
+        "R_ARM_REL32": 83,
+        "R_ARM_PREL31": 202,
+        "R_ARM_NONE": 22
+      },
+      "kdbus_modules_build_ids": [
+        "21938929024bcc09898121d69a08c5b19259bd79"
+      ],
+      "linker_execution_receipts": [
+        "evidence/gcc/builds/C/linker-execution.json",
+        "evidence/gcc/builds/D/linker-execution.json"
+      ]
+    },
+    "explicit_packaged_binutils_prefix": {
+      "groups": [
+        "C-prefix",
+        "D-prefix"
+      ],
+      "compared": {
+        "ordered_input_sha256": true,
+        "installed_modules": true,
+        "gc_unstripped_sha256": true,
+        "gc_intermediate_sha256": true,
+        "gc_installed_sha256": true,
+        "normalized_disassembly_sha256": true
+      },
+      "both_linkers": "GNU BFD 2.43",
+      "module_count": 7,
+      "module_import_crcs_each": 345,
+      "kdbus_import_crcs_each": 153,
+      "kdbus_installed_bytes": 150032,
+      "kdbus_unstripped_sha256": "cd1275c22a5b97e6eeb5508a2d0cc37fef8c050ae542cf7f30af6394f2fd23ff",
+      "kdbus_intermediate_sha256": "5f1e9608e0bccfd09832ef3c02a722f746aca7ab130f605ec79c6f845bcc3daf",
+      "kdbus_installed_sha256": "c02246087a33416c1b62ed989b858b86bba0ef3dd948cc43e73161edea8e4042",
+      "kdbus_relocations": {
+        "R_ARM_CALL": 1384,
+        "R_ARM_JUMP24": 58,
+        "R_ARM_MOVW_ABS_NC": 181,
+        "R_ARM_MOVT_ABS": 181,
+        "R_ARM_ABS32": 241,
+        "R_ARM_REL32": 83,
+        "R_ARM_PREL31": 202,
+        "R_ARM_NONE": 22
+      },
+      "kdbus_modules_build_ids": [
+        "21938929024bcc09898121d69a08c5b19259bd79"
+      ],
+      "linker_execution_receipts": [
+        "evidence/gcc/builds/C-prefix/linker-execution.json",
+        "evidence/gcc/builds/D-prefix/linker-execution.json"
+      ]
+    },
+    "exact_publication_acceleration": {
+      "groups": [
+        "C-accel",
+        "D-accel"
+      ],
+      "compared": {
+        "ordered_input_sha256": true,
+        "installed_modules": true,
+        "gc_unstripped_sha256": true,
+        "gc_intermediate_sha256": true,
+        "gc_installed_sha256": true,
+        "normalized_disassembly_sha256": true
+      },
+      "both_linkers": "GNU BFD 2.43",
+      "module_count": 7,
+      "module_import_crcs_each": 345,
+      "kdbus_import_crcs_each": 153,
+      "kdbus_installed_bytes": 150032,
+      "kdbus_unstripped_sha256": "782e61d70ff0e190d85c10eb7cd9060d684c0971a04e6068a2655ea9c4412336",
+      "kdbus_intermediate_sha256": "9a4380a52bda54d84514f63cbf9ae23f97b4ce90c4ee3e7133a6aa28ecc7b763",
+      "kdbus_installed_sha256": "fb8ea9b8e48c602850d24ce85fd1062f2db05a5aeee6c817c70eb75f0b5c1fc1",
+      "kdbus_relocations": {
+        "R_ARM_CALL": 1384,
+        "R_ARM_JUMP24": 58,
+        "R_ARM_MOVW_ABS_NC": 181,
+        "R_ARM_MOVT_ABS": 181,
+        "R_ARM_ABS32": 241,
+        "R_ARM_REL32": 83,
+        "R_ARM_PREL31": 202,
+        "R_ARM_NONE": 22
+      },
+      "kdbus_modules_build_ids": [
+        "64e3d4603cc3e6d5571496fe72bcd5798ab6ed44"
+      ],
+      "linker_execution_receipts": [
+        "evidence/gcc/builds/C-accel/linker-execution.json",
+        "evidence/gcc/builds/D-accel/linker-execution.json"
+      ]
+    }
+  },
+  "scope": "C/D targeted external-module build and Kbuild modules_install, not RPM packaging or runtime"
+}

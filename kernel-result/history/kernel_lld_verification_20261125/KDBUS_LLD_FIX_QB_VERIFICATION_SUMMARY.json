@@ -1,0 +1,100 @@
+{
+  "NEW_QB_PATCH_INCLUDED": "PATCH_INCLUDED",
+  "NEW_QB_SOURCE_COMMIT": "1c26a4781d7813abd9ab2fb4c3fad35c52ec8fc8",
+  "NEW_QB_KERNEL_RELEASE": "6.12.80-arm-rpi4-v7l",
+  "NEW_QB_COMPILER": "Clang 22.1.8",
+  "NEW_QB_LINKER": "LLVM LLD 22.1.8",
+  "KDBUS_INTERMEDIATE_LINKER": "LLVM LLD 22.1.8",
+  "KDBUS_INTERMEDIATE_EVIDENCE": "E3",
+  "KDBUS_FINAL_LINKER": "LLVM LLD 22.1.8",
+  "KDBUS_FINAL_EVIDENCE": "E3",
+  "ORIGINAL_LD_OVERRIDE": "REMOVED",
+  "BFD_BYPASS_RISK": "NO_REASONABLE_BFD_PATH_IDENTIFIED",
+  "STATIC_ABI_COMPATIBILITY": "PASS",
+  "GCC_SIMULATION": "PASS",
+  "GCC_REAL_BUILD": "PENDING",
+  "RUNTIME_VALIDATION": "PENDING_NEW_IMAGE_DEPLOYMENT",
+  "ENGINEERING_ACCEPTANCE": "PASS",
+  "STRICT_ACCEPTANCE": "CONDITIONAL_PASS",
+  "LLD_KERNEL_001": "RECOMMEND_ENGINEERING_CLOSE_PM_DECISION_PENDING",
+  "PRODUCT_MERGE_READINESS": "PENDING",
+  "PM_REVIEW_REQUIRED": "YES",
+  "old_qb": "tizen-unified-toolchain_20261120.082536",
+  "new_qb": "tizen-unified-toolchain_20261125.130358",
+  "platform": "RPi4 ARMv7l non-RT",
+  "repository": "platform/kernel/linux-tizen-modules-source",
+  "sandbox_ref": "refs/heads/sandbox/liushanshan/lld",
+  "historical_source_commit": "25797e8af7ed95a5783bbe84c11959560aaf7e92",
+  "old_qb_intermediate_linker": "BFD_PATH_POSSIBLE",
+  "direct_evidence": "HISTORICAL_EXECUTION_EVIDENCE_UNAVAILABLE",
+  "runtime_observed_image": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l",
+  "module_counts": {
+    "old": {
+      "in-tree": 52,
+      "out-of-tree": 7
+    },
+    "new": {
+      "in-tree": 52,
+      "out-of-tree": 7
+    },
+    "old_total": 59,
+    "new_total": 59,
+    "new_parsed": 59,
+    "old_new_payload_status": {
+      "IDENTICAL": 6,
+      "CHANGED": 53
+    }
+  },
+  "static_scope": "Released ELF and module ABI, seven out-of-tree modules in detail",
+  "kdbus": {
+    "old_sha256": "1186ce63d4c7c5f995fd0099becfe8834d52da35939d285f5c0bd9d62042a576",
+    "new_sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860",
+    "old_size_bytes": 162584,
+    "new_size_bytes": 161292,
+    "delta_bytes": -1292,
+    "relocations_each": 2972,
+    "import_crcs_each": 154
+  },
+  "make_model": {
+    "runs": 46,
+    "observations": 322,
+    "mock_calls": 92
+  },
+  "new_unified_rpms_checksum_verified": 7,
+  "gates": {
+    "A": {
+      "engineering": "PASS",
+      "strict_or_remaining": "PASS"
+    },
+    "B": {
+      "engineering": "PASS",
+      "strict_or_remaining": "PENDING_E4"
+    },
+    "C": {
+      "engineering": "PASS",
+      "strict_or_remaining": "PASS"
+    },
+    "D": {
+      "engineering": "PASS",
+      "strict_or_remaining": "PASS"
+    },
+    "E": {
+      "engineering": "PASS_SIMULATION",
+      "strict_or_remaining": "PENDING_REAL_BUILD"
+    },
+    "F": {
+      "engineering": "PENDING_NEW_IMAGE_DEPLOYMENT",
+      "strict_or_remaining": "PENDING_NEW_IMAGE_DEPLOYMENT"
+    },
+    "G": {
+      "engineering": "PASS",
+      "strict_or_remaining": "PASS"
+    }
+  },
+  "limitations": [
+    "E4 historical direct execution unavailable for the composite link.",
+    "Real GCC/BFD build and new device deployment runtime remain pending.",
+    "The current device is a separate old QB control.",
+    "Base QB, build host and toolchain package revisions changed. Binary differences cannot be attributed solely to the one-line patch."
+  ]
+}

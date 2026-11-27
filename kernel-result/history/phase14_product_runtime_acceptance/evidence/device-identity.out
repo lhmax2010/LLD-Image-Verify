@@ -1,0 +1,30 @@
+[UNAME]
+Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Wed Nov 25 14:04:26 UTC 2026 armv7l GNU/Linux
+6.12.80-arm-rpi4-v7l
+armv7l
+[PROC_VERSION]
+Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-02) (clang version 22.1.8, LLD 22.1.8) #1 SMP Wed Nov 25 14:04:26 UTC 2026
+[IMAGE_BUILD_ID]
+BUILD_ID=tizen-unified-toolchain_20261125.130358_tizen-headed-armv7l
+[DEVICE_MODEL]
+Raspberry Pi 4 Model B Rev 1.5
+[BOOT_BANNER]
+[    0.000000] Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-02) (clang version 22.1.8, LLD 22.1.8) #1 SMP Wed Nov 25 14:04:26 UTC 2026
+[KERNEL_NOTES]
+0ae62c21ea77419084385da0888ce9ed32e51acc70ed65c0823a24c3df987652  /sys/kernel/notes
+ 06 00 00 00 01 00 00 00 00 01 00 00 4c 69 6e 75
+ 78 00 00 00 00 00 00 00 06 00 00 00 04 00 00 00
+ 01 01 00 00 4c 69 6e 75 78 00 00 00 00 00 00 00
+ 04 00 00 00 14 00 00 00 03 00 00 00 47 4e 55 00
+ 8d 5d a0 f2 8f fc 7a 57 a2 90 12 7a 26 fc 17 cb
+ bd 10 35 58
+[KDBUS_FILES]
+1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860  /usr/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko
+[KDBUS_LOADED]
+kdbus 98304 98 - Live 0x00000000 (O)
+[KDBUS_NOTE]
+83bd7ddedf0ec2873ff6b92a563caea951721eafc3ff4af8381fc32fbe7bb3ac  /sys/module/kdbus/notes/.note.gnu.build-id
+ 04 00 00 00 14 00 00 00 03 00 00 00 47 4e 55 00
+ 95 27 da da da af 6a ae 09 ce 7f b4 83 d2 87 8b
+ 85 73 75 f6
+[END]

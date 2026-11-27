@@ -1,0 +1,11 @@
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/dm-bow.ko 31868 1795617973 2e08bfebb490c028cba4ccdfd9947a42a72f8ec6f6d96e14de17f61619e7646d 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/extcon-usb-fixed.ko 6156 1795617973 0f212c133b5eb91b11914500e9fbf9693ac78d9ea8ca15ea018d33f797a1c6bb 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/inform-reboot.ko 7052 1795617973 ee5212750b3d5439cea779cc0b24aafe00fc575cfee28767df7e706aa49e1b6f 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko 161292 1795617973 1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/logger.ko 23664 1795617973 69a7dc21287b5c7850251b512e06a4bddc0ff0d5376101d51cd2c6745f5c7520 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/proc-tsm.ko 10680 1795617973 cae6d5fa1a4a8f2dc70caf944a3e29f42847e429e7df2500e0b08372eac29531 0100644 root root 0 0 0 X
+/lib/modules/6.12.80-arm-rpi4-v7l/extra/zlogger/zlogger.ko 31628 1795617973 22481d75d58437a041b98dc4a5398d6b9d9b7fe839e126412ba0a246f3c96e98 0100644 root root 0 0 0 X
+/lib/modules/modprobe.d/tizen-modprobe-rpi4.conf 39 1795618014 2f2e0993bd11d75f08e5d8d73813a710af49e15246670c8a87135ac7e6713e9c 0100644 root root 0 0 0 X
+/lib/modules/modules-load.d/tizen-modules-rpi4.conf 51 1795618014 faeccd87b2d8fbbf8022134ddd7ea8dc167f6cc19092c600c43503099d40ef72 0100644 root root 0 0 0 X
+/usr/share/licenses/linux-tizen-modules-rpi4 0 1795618015 0000000000000000000000000000000000000000000000000000000000000000 040755 root root 0 0 0 X
+/usr/share/licenses/linux-tizen-modules-rpi4/COPYING 17992 1793092270 32b1062f7da84967e7019d01ab805935caa7ab7321a7ced0e30ebe75e5df1670 0100644 root root 0 0 0 X

@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "curl",
+    "-fLsS",
+    "--max-time",
+    "40",
+    "-D",
+    "evidence/build/base/repomd.headers",
+    "https://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/repodata/repomd.xml"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/kernel_lld_verification_20261125",
+  "started_utc": "2026-11-26T00:25:10.222080+00:00",
+  "elapsed_seconds": 0.804,
+  "exit_status": 0
+}

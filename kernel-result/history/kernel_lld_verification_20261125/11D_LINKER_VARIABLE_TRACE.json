@@ -1,0 +1,331 @@
+{
+  "status": "E3_ENGINEERING_VERIFIED",
+  "evidence_level": "E3",
+  "variant": "RPi4 ARMv7l non-RT",
+  "new_qb": "tizen-unified-toolchain_20261125.130358",
+  "intermediate": {
+    "target": "kdbus/kdbus.o",
+    "observed_log_line": 505,
+    "linker": "LLVM LLD",
+    "version": "22.1.8",
+    "selected_command_name": "ld.lld",
+    "evidence_level": "E3",
+    "historical_executable_path_observed": false
+  },
+  "final": {
+    "target": "kdbus/kdbus.ko",
+    "observed_log_line": 529,
+    "linker": "LLVM LLD",
+    "version": "22.1.8",
+    "selected_command_name": "ld.lld",
+    "evidence_level": "E3",
+    "historical_executable_path_observed": false
+  },
+  "original_ld_override": "REMOVED",
+  "bfd_bypass_risk": "NO_REASONABLE_BFD_PATH_IDENTIFIED",
+  "historical_resolution_limit": "PATH, resolved executable, original .cmd and execve unavailable",
+  "old_qb": {
+    "intermediate_status": "BFD_PATH_POSSIBLE",
+    "log": {
+      "path": "../kernel_lld_verification_20261120/evidence/build/linux-tizen-modules-armv7l.out",
+      "sha256": "41163ea6c43b4f04f1dfcdb4c0997e5d1cb2149f3e14a6c1bf57f65771061b83"
+    }
+  },
+  "source_provenance": {
+    "path": "11B_SOURCE_PROVENANCE.json",
+    "sha256": "199fc6ee07526f063cccb77b3c408b8894bed79e54a1e5f464e099a7d5efef60"
+  },
+  "actual_matched_sdk": {
+    "rpm": {
+      "path": "evidence/repository/rpms/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "sha256": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020"
+    },
+    "metadata": {
+      "name": "arm-rpi4-linux-kernel-devel",
+      "arch": "armv7l",
+      "nevra": {
+        "epoch": "0",
+        "ver": "6.12.80",
+        "rel": "0",
+        "vcs": "platform/kernel/linux-rpi#42aeefac58edeb081aff440f0b60be71cbe49755"
+      },
+      "sha256": "26a83164e3753d10486dac237e3a42cec58d9c3c82c6b8efa806a572579f0020",
+      "checksum_type": "sha256",
+      "size": 115585324,
+      "metadata": "evidence/repository/packages-primary.out",
+      "href": "armv7l/arm-rpi4-linux-kernel-devel-6.12.80-0.armv7l.rpm",
+      "sourcerpm": "rpi4-linux-kernel-6.12.80-0.src.rpm"
+    },
+    "verified_rules": {
+      "Makefile": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/Makefile",
+        "sha256": "4a4a597bd36c11b465a5041b600fc179df55eb52c9d30d3524646be42849f906"
+      },
+      "scripts/Kbuild.include": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Kbuild.include",
+        "sha256": "09b5edc648b9aaac1f4b1f25d5ca7ad11195dfc0384fe0ece68196bbc8cd1ccc"
+      },
+      "scripts/Makefile.build": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.build",
+        "sha256": "381c1ae0523a5d6ba483e0db0f8dcb785ff89b6be07893fbfc173afeb4e202ae"
+      },
+      "scripts/Makefile.modfinal": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.modfinal",
+        "sha256": "1d4894846f2efa55efe0978ac609676842072930770293ae9f8496db9b99ed06"
+      },
+      "scripts/Makefile.lib": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.lib",
+        "sha256": "0cf4cacf6dda85155a5f58c14109ffb059b3c00f185701bd9a890bcb6d778a54"
+      },
+      "scripts/Makefile.compiler": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.compiler",
+        "sha256": "a8b092d8ca2f3bfdf5316333102088792fb9c528737dd8cd8a2c18faadd2606b"
+      },
+      "scripts/Makefile.clang": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/scripts/Makefile.clang",
+        "sha256": "af4750f7fe84258d737e3fb37ab6e7cd676930c75e029e5848f2cc462787da53"
+      },
+      "arch/arm/Makefile": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/arch/arm/Makefile",
+        "sha256": "0774bce3f349c4fe6f4a594bc43f7f80c239c883fc58ec44f199abb3029a4c24"
+      },
+      "include/config/auto.conf": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/include/config/auto.conf",
+        "sha256": "cc7bbe7e4d68f46bdd1d67e5f033cccfdb1744101c53dac95e035effaeff748e"
+      },
+      ".config": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/.config",
+        "sha256": "688e66c3d0c2e31c09fb563d9905420475319787c4d6764cd7b7e210a4f6d33c"
+      },
+      "include/generated/utsrelease.h": {
+        "path": "evidence/repository/sdk/boot/kernel/devel/kernel-devel-arm-rpi4/include/generated/utsrelease.h",
+        "sha256": "d7672fea8b725cbb1519ef34b1ae82ccf82ffcfd43f5286bcb2c2330febcf82e"
+      }
+    }
+  },
+  "sdk_config_lines": [
+    "5:CONFIG_CC_VERSION_TEXT=\"clang version 22.1.8\"",
+    "7:CONFIG_CC_IS_CLANG=y",
+    "9:CONFIG_AS_IS_LLVM=y",
+    "12:CONFIG_LD_IS_LLD=y",
+    "13:CONFIG_LLD_VERSION=220108",
+    "650:CONFIG_LTO_NONE=y"
+  ],
+  "sdk_ld_bypass_scan": {
+    "path": "evidence/build/new-sdk-ld-bypass-scan.out",
+    "sha256": "44897181f3623c2a7627bdcd2b0cabaa490eb6b6f1aeb128174a8f6db40af875"
+  },
+  "variables": {
+    "LLVM": {
+      "observed": "1",
+      "scope": "exported by wrapper SPEC to both recorded non-RT make levels",
+      "log_lines": [
+        458,
+        459
+      ],
+      "kbuild": "Makefile:425–437 and 477–496",
+      "inference": "non-empty LLVM, no LLVM_PREFIX or LLVM_SUFFIX derived from 1"
+    },
+    "LD": {
+      "observed": null,
+      "command_line_ld_override_observed": false,
+      "assignment": "$(LLVM_PREFIX)ld.lld$(LLVM_SUFFIX)",
+      "kbuild": "Makefile:480,593",
+      "effective_inferred": "ld.lld",
+      "external_override_deleted": true
+    },
+    "CC": {
+      "observed_in_rpm_shell": "armv7l-tizen-linux-gnueabi-clang",
+      "log_lines": [
+        427,
+        428
+      ],
+      "kbuild": "Makefile:479",
+      "effective_inferred": "clang",
+      "actual_executable_path_observed": false
+    },
+    "CROSS_COMPILE": {
+      "observed": null,
+      "kbuild": "Makefile:489,593 and scripts/Makefile.clang",
+      "inference": "can affect target flags, but cannot choose $(CROSS_COMPILE)ld in LLVM=1 branch"
+    },
+    "MAKEFLAGS": {
+      "observed_append": "-k",
+      "log_lines": [
+        430,
+        431
+      ],
+      "kbuild": "Makefile:49 adds -rR",
+      "complete_historical_value_available": false
+    },
+    "PATH": {
+      "observed": null,
+      "linker_candidate_rpms": {
+        "path": "evidence/build/base/linker-payload-identities.json",
+        "sha256": "099567bec8ea9d2c3bf302fb732bbb9f6af43ebea21e2ee935a5cda635ea2be4"
+      },
+      "filelist_coverage": {
+        "path": "evidence/build/base/repository-filelists-linker-paths.json",
+        "sha256": "5c745bf47f82c6e8e2794bd0293e8f485ec3f3de3cf7a36ca6ab329b6983afa1"
+      },
+      "inference": "available root/linker package candidates with the selected basename are LLVM LLD"
+    }
+  },
+  "successful_external_log": {
+    "url": "https://download.tizen.org/RBS/TIZEN/Tizen/Tizen-Unified-Toolchain/tizen-unified-toolchain_20261125.130358/builddata/buildlogs/standard/armv7l/succeeded/linux-tizen-modules.buildlog.txt",
+    "path": "evidence/build/linux-tizen-modules-armv7l.out",
+    "sha256": "d69033984e78cd161766ccd237354fa52b4506234b1bee72d6027048e74f2879",
+    "observed_lines": {
+      "2": "[    0s] Using BUILD_ROOT=/data/workspace/gbsbuild-ROOT/GBS-ROOT/local/BUILD-ROOTS/scratch.armv7l.0",
+      "6": "[    0s] qb-build-host-02 started \"build linux-tizen-modules.spec\" at Wed Nov 25 14:44:43 UTC 2026.",
+      "10": "[    0s] init_buildsystem --configdir /usr/lib/build/configs --cachedir /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/cache --define jobs 8 --define _smp_mflags -j8 --define _costomized_smp_mflags -j20 --repository /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/repos/tizen_unified_toolchain_standard/armv7l/RPMS --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/packages/ --repository http://download.tizen.org/snapshots/TIZEN/Tizen/Tizen-Base-Toolchain/tizen-base-toolchain_20261030.120529/repos/standard/debug/ /data/workspace/gbsbuild-ROOT/GBS-ROOT/local/sources/tizen_unified_toolchain_standard/linux-tizen-modules-11.0.0-0/linux-tizen-modules.spec build ...",
+      "298": "[   19s] [51/119] keeping clang-accel-x86_64-armv7l-0.4-2.3",
+      "314": "[   19s] [67/119] keeping make-4.4.1-1.14",
+      "331": "[   19s] [84/119] keeping binutils-2.43-1.16",
+      "341": "[   19s] [94/119] keeping qemu-accel-x86_64-armv7l-0.4-2.3",
+      "360": "[   19s] [113/119] keeping llvm-22.1.8-4.1",
+      "362": "[   19s] [115/119] keeping clang-22.1.8-4.1",
+      "370": "[   20s] linux-tizen-modules-source-11.0.0-0   ########################################",
+      "378": "[   30s] arm-rpi4-linux-kernel-devel-6.12.80-0 ########################################",
+      "402": "[   58s] + cp -a /usr/src/linux-tizen-modules-source ./kernel",
+      "427": "[   59s] + export CC=armv7l-tizen-linux-gnueabi-clang CXX=armv7l-tizen-linux-gnueabi-clang++",
+      "430": "[   59s] + export 'MAKEFLAGS+= -k'",
+      "448": "[   59s] + export BUILD_kdbus=m",
+      "458": "[   59s] + export LLVM=1",
+      "460": "[   59s] + find kernel -name Makefile -exec sed -i s/-Wno-error=missing-attributes//g '{}' ';'",
+      "467": "[   59s] + make -C kernel KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4",
+      "469": "[   59s] make -C /boot/kernel/devel/kernel-devel-arm-rpi4 M=/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel CFLAGS_MODULE=-I/home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/include modules",
+      "505": "[   78s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.o",
+      "511": "[   80s]   MODPOST /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/Module.symvers",
+      "528": "[   87s]   CC [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.mod.o",
+      "529": "[   88s]   LD [M]  /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+      "530": "[   88s]   BTF [M] /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/kdbus/kdbus.ko",
+      "550": "[   90s]   INSTALL /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "551": "[   90s]   STRIP   /home/abuild/rpmbuild/BUILD/linux-tizen-modules-11.0.0/kernel/..//lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "557": "[   91s] + make -C kernel clean KERNELDIR=/boot/kernel/devel/kernel-devel-arm-rpi4-rt",
+      "746": "[  132s] Wrote: /home/abuild/rpmbuild/RPMS/armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "760": "[  133s] qb-build-host-02 finished \"build linux-tizen-modules.spec\" at Wed Nov 25 14:46:56 UTC 2026."
+    }
+  },
+  "rules": {
+    "path": "11D_LINKER_RULE_MATRIX.csv",
+    "sha256": "1ae32ddf352c62bb648cb5285489e49e42a3c5571cde6b81d4fb7954f9c97c2b"
+  },
+  "released_module": {
+    "rpm": {
+      "path": "evidence/repository/rpms/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "sha256": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de"
+    },
+    "metadata": {
+      "name": "linux-tizen-modules-rpi4",
+      "arch": "armv7l",
+      "nevra": {
+        "epoch": "0",
+        "ver": "11.0.0",
+        "rel": "0",
+        "vcs": "platform/kernel/linux-tizen-modules#458baad02d812098938663971d1b8560a4813375"
+      },
+      "sha256": "92a3a372dd9ead740720f209918c27a88f04329c3a2a45d62c4196762954a2de",
+      "checksum_type": "sha256",
+      "size": 91980,
+      "metadata": "evidence/repository/packages-primary.out",
+      "href": "armv7l/linux-tizen-modules-rpi4-11.0.0-0.armv7l.rpm",
+      "sourcerpm": "linux-tizen-modules-11.0.0-0.src.rpm"
+    },
+    "path_in_rpm": "/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+    "module": {
+      "path": "evidence/binary/modules/new/lib/modules/6.12.80-arm-rpi4-v7l/extra/kdbus/kdbus.ko",
+      "sha256": "1f851deb321d6f9fde822d67ffa17ff0eb3b443349f3ce210c737327116fe860"
+    },
+    "rpm_file_digest_verified": true,
+    "rpm_member_size_bytes": 161292,
+    "rpm_member_mtime_utc": "2026-11-25T14:46:13+00:00",
+    "observed_install_log_line": 550,
+    "observed_strip_log_line": 551,
+    "observed_rpm_log_line": 746
+  },
+  "toolchain": {
+    "payloads": [
+      {
+        "rpm": "evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm",
+        "package": {
+          "name": "llvm",
+          "arch": "armv7l",
+          "version": {
+            "epoch": "0",
+            "ver": "22.1.8",
+            "rel": "4.1",
+            "vcs": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a"
+          },
+          "href": "armv7l/llvm-22.1.8-4.1.armv7l.rpm",
+          "size": "6329233",
+          "sha256": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+          "source_rpm": "llvm-22.1.8-4.1.src.rpm",
+          "linker_members": [
+            "/usr/bin/ld.lld"
+          ]
+        },
+        "rpm_sha256_verified": true,
+        "member": "/usr/bin/ld.lld",
+        "resolved_in_package": "/usr/bin/lld",
+        "payload_sha256": "14141d7469471bc653b6f5521071c038af59a348beb0066c28eaca9ab65715f4",
+        "rpm_file_digest_verified": true,
+        "elf_machine": "ARM",
+        "version_strings": [
+          "LLD 22.1.8"
+        ],
+        "version_method": "embedded exact version string",
+        "build_id_lines": [],
+        "payload_evidence": "evidence/build/base/tool-extract/llvm/usr/bin/lld",
+        "scriptlet_lines": [],
+        "verification_method": "RPM header/membership, SHA256 and static ELF inspection"
+      },
+      {
+        "rpm": "evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+        "package": {
+          "name": "clang-accel-x86_64-armv7l",
+          "arch": "armv7l",
+          "version": {
+            "epoch": "0",
+            "ver": "0.4",
+            "rel": "2.3",
+            "vcs": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467"
+          },
+          "href": "armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+          "size": "54808241",
+          "sha256": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+          "source_rpm": "qemu-accel-0.4-2.3.src.rpm",
+          "linker_members": [
+            "/emul/usr/bin/ld.lld"
+          ]
+        },
+        "rpm_sha256_verified": true,
+        "member": "/emul/usr/bin/ld.lld",
+        "resolved_in_package": "/emul/usr/bin/ld.lld",
+        "payload_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+        "rpm_file_digest_verified": true,
+        "elf_machine": "Advanced Micro Devices X86-64",
+        "version_strings": [
+          "LLD 22.1.8"
+        ],
+        "version_method": "ELF dynsyms plus decoded immediate bytes in lld::getLLDVersion()",
+        "build_id_lines": [],
+        "payload_evidence": "evidence/build/base/tool-extract/clang-accel-x86_64-armv7l/emul/usr/bin/ld.lld",
+        "scriptlet_lines": [
+          "postinstall scriptlet (using /bin/sh):",
+          "/sbin/ldconfig",
+          "#CLANG_POSTIN#"
+        ],
+        "verification_method": "RPM header/membership, SHA256 and static ELF inspection"
+      }
+    ],
+    "package_competition": {
+      "path": "evidence/build/base/toolchain-primary-package-candidates.json",
+      "sha256": "7e32fbc2cf06801a8f46371b7eabfbf607ad459a787bab5eeb748c862197b2ee"
+    },
+    "filelists": {
+      "path": "evidence/build/base/repository-filelists-linker-paths.json",
+      "sha256": "5c745bf47f82c6e8e2794bd0293e8f485ec3f3de3cf7a36ca6ab329b6983afa1"
+    }
+  }
+}

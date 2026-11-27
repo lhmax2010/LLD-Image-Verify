@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "status_scope": "live device and recorded toolchain metadata",
+  "device": {
+    "ip": "private-address-02",
+    "serial": "private-address-02:26101",
+    "authorized_sdb": true,
+    "ip_evidence_path": "evidence/runtime/ip-fallback.out",
+    "model": "Raspberry Pi 4 Model B Rev 1.5",
+    "model_evidence_path": "evidence/runtime/boot-dtb.out",
+    "image_build_id": "tizen-unified-toolchain_20261120.082536_tizen-headed-armv7l"
+  },
+  "kernel": {
+    "is_running": true,
+    "uname": "Linux localhost 6.12.80-arm-rpi4-v7l #1 SMP Fri Nov 20 09:22:45 UTC 2026 armv7l Toybox",
+    "release": "6.12.80-arm-rpi4-v7l",
+    "architecture": "armv7l",
+    "proc_version": "Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+    "boot_banner": "[    0.000000] Linux version 6.12.80-arm-rpi4-v7l (abuild@qb-build-host-01) (clang version 22.1.8, LLD 22.1.8) #1 SMP Fri Nov 20 09:22:45 UTC 2026",
+    "compiler": "Clang",
+    "clang_version": "22.1.8",
+    "linker": "LLD",
+    "lld_version": "22.1.8",
+    "build_timestamp": "Fri Nov 20 09:22:45 UTC 2026",
+    "build_user_and_host": "abuild@qb-build-host-01",
+    "toolchain_evidence": "recorded build metadata",
+    "final_link_verified": false,
+    "notes": {
+      "gnu_build_id": "99ba05b664f7ece7686ab5f087bf54680bb172e6",
+      "size_bytes": 84,
+      "sha256": "a6b307af55ad01ae5fd722ad86700411ac629297fe5cb77b4eb995021d8fb8f7",
+      "notes": [
+        {
+          "offset": 0,
+          "type": 256,
+          "owner": "Linux",
+          "description_hex": "00"
+        },
+        {
+          "offset": 24,
+          "type": 257,
+          "owner": "Linux",
+          "description_hex": "00000000"
+        },
+        {
+          "offset": 48,
+          "type": 3,
+          "owner": "GNU",
+          "description_hex": "99ba05b664f7ece7686ab5f087bf54680bb172e6"
+        }
+      ],
+      "evidence_path": "evidence/runtime/notes.out",
+      "bytes_path": "evidence/runtime/kernel-notes.bin"
+    },
+    "banner_evidence_path": "evidence/runtime/banner.out"
+  },
+  "runtime_config": {
+    "available": false,
+    "paths": [
+      "/boot/config-6.12.80-arm-rpi4-v7l",
+      "/proc/config.gz"
+    ],
+    "evidence_path": "evidence/runtime/files.out"
+  },
+  "installed_kernel_rpm": {
+    "status": "UNVERIFIABLE",
+    "active_database_query_completed": true,
+    "queried_rpm_database_records": 1229,
+    "matching_packages": [],
+    "evidence_path": "evidence/runtime/rpm-list.out",
+    "explicit_query_evidence_path": "evidence/runtime/kernel-package-names.out",
+    "pinned_query_evidence_path": "evidence/runtime/pinned-rpm-device-queries.out",
+    "pinned_package_names_without_device_rpm_record": [
+      "arm-rpi4-linux-kernel",
+      "arm-rpi4-linux-kernel-modules",
+      "linux-tizen-modules-rpi4",
+      "arm-rpi4-linux-kernel-devel"
+    ],
+    "installed_metadata_fields": [
+      "name",
+      "epoch",
+      "version",
+      "release",
+      "architecture",
+      "source_rpm",
+      "build_time",
+      "install_time"
+    ],
+    "mounted_files_evidence_path": "evidence/runtime/partition-metadata.out",
+    "owner_query_evidence_path": "evidence/runtime/module-owners.out"
+  },
+  "installed_module_inventory": {
+    "total_unique_paths": 59,
+    "file_type_counts": {
+      "regular": 59
+    },
+    "rpm_owned_files": 0,
+    "inventory_path": "evidence/runtime/installed-modules.json"
+  },
+  "loaded_module_inventory": {
+    "total": 11,
+    "initial_snapshot_total": 10,
+    "inventory_path": "evidence/runtime/loaded-modules.json"
+  },
+  "repository_identity_status": "DEFERRED_TO_PHASE_6"
+}

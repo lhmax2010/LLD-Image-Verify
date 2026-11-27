@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "bash",
+    "scripts/run_thread_sweep.sh"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase13_final_acceptance",
+  "started_utc": "2026-11-27T09:01:24.043105+00:00",
+  "elapsed_seconds": 7.813,
+  "exit_status": 0
+}

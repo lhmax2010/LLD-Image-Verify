@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "cc",
+    "-std=c11",
+    "-Wall",
+    "-Wextra",
+    "-Werror",
+    "-O2",
+    "scripts/bench_timer.c",
+    "-o",
+    "evidence/benchmark/bench-timer"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark",
+  "started_utc": "2026-11-27T06:30:19.991003+00:00",
+  "elapsed_seconds": 0.057,
+  "exit_status": 0
+}

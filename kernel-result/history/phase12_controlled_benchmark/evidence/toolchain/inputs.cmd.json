@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "python3",
+    "-B",
+    "scripts/get_base_inputs.py",
+    "clang-accel-x86_64-armv7l:armv7l",
+    "qemu-accel-x86_64-armv7l:armv7l",
+    "qemu-linux-user-x86_64-cross:armv7l",
+    "binutils-armv7l:x86_64",
+    "binutils:armv7l",
+    "binutils-libs:x86_64",
+    "glibc:x86_64",
+    "libgcc:x86_64",
+    "libstdc++:x86_64",
+    "libxml2:x86_64",
+    "libzstd1:x86_64",
+    "zlib:x86_64",
+    "liblzma:x86_64",
+    "glibc:armv7l",
+    "libgcc:armv7l",
+    "libstdc++:armv7l",
+    "libelf:armv7l",
+    "libdw:armv7l"
+  ],
+  "cwd": "/local-user/lss/kernel_lld_check/phase12_controlled_benchmark",
+  "started_utc": "2026-11-27T06:20:59.916549+00:00",
+  "elapsed_seconds": 3.027,
+  "exit_status": 1
+}

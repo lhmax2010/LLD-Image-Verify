@@ -1,0 +1,12 @@
+binfmt_misc 16384 1 - Live 0x00000000
+proc_tsm 12288 0 - Live 0x00000000 (O)
+brcmfmac 352256 0 - Live 0x00000000
+hci_uart 32768 0 - Live 0x00000000
+brcmutil 16384 1 brcmfmac, Live 0x00000000
+btbcm 20480 1 hci_uart, Live 0x00000000
+kdbus 98304 98 - Live 0x00000000 (O)
+logger 16384 234 - Live 0x00000000 (O)
+dm_bow 20480 0 - Live 0x00000000 (O)
+extcon_usb_fixed 12288 0 - Live 0x00000000 (O)
+inform_reboot 12288 0 - Live 0x00000000 (O)
+[PROC_MODULES_EXIT=0]

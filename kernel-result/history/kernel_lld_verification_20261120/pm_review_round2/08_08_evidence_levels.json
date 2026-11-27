@@ -1,0 +1,172 @@
+{
+  "status": "CONDITIONAL_PASS",
+  "engineering_acceptance": "PASS",
+  "coverage": {
+    "in-tree": {
+      "total": 52,
+      "levels": {
+        "E4": 0,
+        "E3": 52,
+        "E2": 0,
+        "E1": 0,
+        "UNKNOWN": 0
+      },
+      "original_classifications": {
+        "LLD_INDICATED": 52
+      },
+      "original_confirmed_lld": {
+        "numerator": 0,
+        "denominator": 52,
+        "coverage": 0.0
+      },
+      "original_lld_evidence": {
+        "numerator": 52,
+        "denominator": 52,
+        "coverage": 1.0
+      },
+      "e4_direct_execution": {
+        "numerator": 0,
+        "denominator": 52,
+        "coverage": 0.0
+      },
+      "e3_engineering_verified": {
+        "numerator": 52,
+        "denominator": 52,
+        "coverage": 1.0
+      },
+      "e3_plus_e4_engineering_acceptance": {
+        "numerator": 52,
+        "denominator": 52,
+        "coverage": 1.0
+      }
+    },
+    "out-of-tree": {
+      "total": 7,
+      "levels": {
+        "E4": 0,
+        "E3": 7,
+        "E2": 0,
+        "E1": 0,
+        "UNKNOWN": 0
+      },
+      "original_classifications": {
+        "LLD_INDICATED": 7
+      },
+      "original_confirmed_lld": {
+        "numerator": 0,
+        "denominator": 7,
+        "coverage": 0.0
+      },
+      "original_lld_evidence": {
+        "numerator": 7,
+        "denominator": 7,
+        "coverage": 1.0
+      },
+      "e4_direct_execution": {
+        "numerator": 0,
+        "denominator": 7,
+        "coverage": 0.0
+      },
+      "e3_engineering_verified": {
+        "numerator": 7,
+        "denominator": 7,
+        "coverage": 1.0
+      },
+      "e3_plus_e4_engineering_acceptance": {
+        "numerator": 7,
+        "denominator": 7,
+        "coverage": 1.0
+      }
+    },
+    "repository": {
+      "total": 59,
+      "levels": {
+        "E4": 0,
+        "E3": 59,
+        "E2": 0,
+        "E1": 0,
+        "UNKNOWN": 0
+      },
+      "original_classifications": {
+        "LLD_INDICATED": 59
+      },
+      "original_confirmed_lld": {
+        "numerator": 0,
+        "denominator": 59,
+        "coverage": 0.0
+      },
+      "original_lld_evidence": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      },
+      "e4_direct_execution": {
+        "numerator": 0,
+        "denominator": 59,
+        "coverage": 0.0
+      },
+      "e3_engineering_verified": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      },
+      "e3_plus_e4_engineering_acceptance": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      }
+    },
+    "device": {
+      "total": 59,
+      "levels": {
+        "E4": 0,
+        "E3": 59,
+        "E2": 0,
+        "E1": 0,
+        "UNKNOWN": 0
+      },
+      "original_classifications": {
+        "LLD_INDICATED": 59
+      },
+      "original_confirmed_lld": {
+        "numerator": 0,
+        "denominator": 59,
+        "coverage": 0.0
+      },
+      "original_lld_evidence": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      },
+      "e4_direct_execution": {
+        "numerator": 0,
+        "denominator": 59,
+        "coverage": 0.0
+      },
+      "e3_engineering_verified": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      },
+      "e3_plus_e4_engineering_acceptance": {
+        "numerator": 59,
+        "denominator": 59,
+        "coverage": 1.0
+      }
+    }
+  },
+  "level_definitions": {
+    "E4": "DIRECT_EXECUTION_CONFIRMED",
+    "E3": "ENGINEERING_VERIFIED",
+    "E2": "METADATA_SUPPORTED",
+    "E1": "INTENT_ONLY",
+    "UNKNOWN": "UNKNOWN"
+  },
+  "kernel_rule_levels": {
+    "vmlinux.o": "E3",
+    "vmlinux": "E3",
+    "arch/arm/boot/compressed/vmlinux": "E3",
+    "52 in-tree .ko": "E3"
+  },
+  "scope": "Verified 59 final .ko outputs, main kernel final link and ARM decompressor final link; intermediate kdbus.o is assessed separately."
+}

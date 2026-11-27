@@ -1,0 +1,78 @@
+{
+  "candidates": [
+    {
+      "rpm": "evidence/build/base/rpms/llvm-22.1.8-4.1.armv7l.rpm",
+      "package": {
+        "name": "llvm",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "22.1.8",
+          "rel": "4.1",
+          "vcs": "platform/upstream/llvm#f999bd406c0a70fe8107aa992164fe6945c5d46a"
+        },
+        "href": "armv7l/llvm-22.1.8-4.1.armv7l.rpm",
+        "size": "6329233",
+        "sha256": "6c1603a8b07f4c315144a56c26c258664d6f0188137b5245f42ef6f669aad313",
+        "source_rpm": "llvm-22.1.8-4.1.src.rpm",
+        "linker_members": [
+          "/usr/bin/ld.lld"
+        ]
+      },
+      "rpm_sha256_verified": true,
+      "member": "/usr/bin/ld.lld",
+      "resolved_in_package": "/usr/bin/lld",
+      "payload_sha256": "14141d7469471bc653b6f5521071c038af59a348beb0066c28eaca9ab65715f4",
+      "rpm_file_digest_verified": true,
+      "elf_machine": "ARM",
+      "version_strings": [
+        "LLD 22.1.8"
+      ],
+      "version_method": "embedded exact version string",
+      "build_id_lines": [],
+      "payload_evidence": "evidence/build/base/tool-extract/llvm/usr/bin/lld",
+      "scriptlet_lines": [],
+      "verification_method": "RPM header/membership, SHA256 and static ELF inspection"
+    },
+    {
+      "rpm": "evidence/build/base/rpms/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+      "package": {
+        "name": "clang-accel-x86_64-armv7l",
+        "arch": "armv7l",
+        "version": {
+          "epoch": "0",
+          "ver": "0.4",
+          "rel": "2.3",
+          "vcs": "platform/upstream/qemu-accel#2737f3bf78ed33be4333114c0e5c741a1deca467"
+        },
+        "href": "armv7l/clang-accel-x86_64-armv7l-0.4-2.3.armv7l.rpm",
+        "size": "54808241",
+        "sha256": "11a6a94b835f83c47f724fdfbe77b1e307311b9cec9f5f992b2f878369e64638",
+        "source_rpm": "qemu-accel-0.4-2.3.src.rpm",
+        "linker_members": [
+          "/emul/usr/bin/ld.lld"
+        ]
+      },
+      "rpm_sha256_verified": true,
+      "member": "/emul/usr/bin/ld.lld",
+      "resolved_in_package": "/emul/usr/bin/ld.lld",
+      "payload_sha256": "232f8cee392bbe63ff94d7bb58beb580de080f8e6f8c6263d1ddccb81a540ca3",
+      "rpm_file_digest_verified": true,
+      "elf_machine": "Advanced Micro Devices X86-64",
+      "version_strings": [
+        "LLD 22.1.8"
+      ],
+      "version_method": "ELF dynsyms plus decoded immediate bytes in lld::getLLDVersion()",
+      "build_id_lines": [],
+      "payload_evidence": "evidence/build/base/tool-extract/clang-accel-x86_64-armv7l/emul/usr/bin/ld.lld",
+      "scriptlet_lines": [
+        "postinstall scriptlet (using /bin/sh):",
+        "/sbin/ldconfig",
+        "#CLANG_POSTIN#"
+      ],
+      "verification_method": "RPM header/membership, SHA256 and static ELF inspection"
+    }
+  ],
+  "new_base_snapshot": "tizen-base-toolchain_20261030.120529",
+  "path_or_executable_actually_run_observed": false
+}

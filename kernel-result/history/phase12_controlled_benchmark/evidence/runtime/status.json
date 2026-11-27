@@ -1,0 +1,30 @@
+{
+  "runtime_memory_benefit": "NOT_MEASURED",
+  "runtime_regression": "PENDING_NEW_IMAGE_DEPLOYMENT",
+  "generalization_potential": "TARGETED_RESEARCH_ONLY",
+  "runtime_static_mechanism": "CORE_KALLSYMS_CAN_RETAIN_ARM_MAPPING_SYMBOLS_PAGE_EFFECT_UNVERIFIED",
+  "runtime_device_operations": false,
+  "matched_kernel_release": "6.12.80-arm-rpi4-v7l",
+  "matched_kernel_revision": "42aeefac58edeb081aff440f0b60be71cbe49755",
+  "kernel_page_size_bytes": 4096,
+  "historical_packaged_kdbus_file_size_bytes": {
+    "old": 162584,
+    "new": 161292
+  },
+  "historical_rpm_xz_payload_bytes": {
+    "old": 82852,
+    "new": 82420
+  },
+  "historical_kdbus_mapping_d_removed": 81,
+  "historical_removed_mapping_d_core_filter_eligible": 78,
+  "runtime_measurement_available": false,
+  "reference_paths": {
+    "runtime_report": "RUNTIME_MEMORY_FEASIBILITY.md",
+    "generalization_report": "evidence/runtime/generalization.md",
+    "provenance": "evidence/runtime/provenance.json",
+    "packaged_sample": "evidence/runtime/published-module-mapping-sample.json",
+    "script": "scripts/collect_runtime_static.py",
+    "controlled_sample": "evidence/runtime/controlled-seven-module-sample.json"
+  },
+  "controlled_sibling_modules_unchanged_after_strip": 6
+}
